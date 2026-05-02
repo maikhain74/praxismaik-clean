@@ -6,19 +6,26 @@ const themen = await getCollection("themen");
 
 const categoryEntry = themen.find((entry) => entry.slug === "vitalzeichen");
 
-if (!categoryEntry) {
-  throw new Error('Kategorie "vitalzeichen" nicht gefunden.');
-}
-
-const subtopics = themen
+const vitalzeichenThemen = themen
   .filter((entry) => entry.slug.startsWith("vitalzeichen/"))
   .sort((a, b) => a.data.title.localeCompare(b.data.title, "de"));
 
-const { Content } = await categoryEntry.render();
+const topicDescriptions = {
+  "vitalzeichen/atmung": "Lerne Atemfrequenz, Atemtiefe und Auffälligkeiten sicher zu beobachten und pflegerisch einzuordnen.",
+  "vitalzeichen/blutdruck": "Verstehe Blutdruckwerte, Abweichungen und typische pflegerische Reaktionen.",
+  "vitalzeichen/blutzucker": "Lerne Blutzuckerwerte einzuschätzen und Hypo- sowie Hyperglykämien früh zu erkennen.",
+  "vitalzeichen/koerpertemperatur": "Verstehe Temperaturmessung, Fieberzeichen und sinnvolle pflegerische Maßnahmen.",
+  "vitalzeichen/puls": "Lerne Pulsfrequenz, Rhythmus und Qualität sicher zu beurteilen.",
+  "vitalzeichen/sauerstoffsaettigung": "Verstehe Sauerstoffsättigung, Warnzeichen und den Zusammenhang mit Atmung und Kreislauf.",
+  "vitalzeichen/schmerzskala": "Lerne Schmerz systematisch einzuschätzen und nachvollziehbar zu dokumentieren."
+};
 ---
 
-<BaseLayout title="Vitalzeichen" description={categoryEntry.data.description}>
-  <article class="content">
+<BaseLayout
+  title="Vitalzeichen | PraxisMaik"
+  description="Vitalzeichen in der Pflege sicher messen, beobachten und bewerten."
+>
+  <section class="category-page">
     <nav class="breadcrumbs" aria-label="Breadcrumb">
       <a href="/">Start</a>
       <span class="breadcrumb-sep">›</span>
@@ -27,18 +34,306 @@ const { Content } = await categoryEntry.render();
       <span class="current">Vitalzeichen</span>
     </nav>
 
-    <Content />
+    <header class="category-hero">
+      <span class="category-eyebrow">Themenbereich</span>
+      <h1>Vitalzeichen</h1>
+      <p class="category-intro">
+        Vitalzeichen zeigen dir früh, ob sich der Zustand eines Menschen verändert.
+        In diesem Bereich lernst du, Werte nicht nur zu messen, sondern richtig zu
+        beobachten, einzuordnen und pflegerisch zu reagieren.
+      </p>
+    </header>
 
-    <section class="related-topics" style="margin-top:32px;">
-      <h2>Unterthemen</h2>
-      <div class="topic-grid" style="margin-top:16px;">
-        {subtopics.map((item) => (
-          <a class="topic-card" href={`/themen/${item.slug}/`}>
-            <h3>{item.data.title}</h3>
-            {item.data.description ? <p>{item.data.description}</p> : null}
-          </a>
-        ))}
+    <section class="category-panel">
+      <h2>Warum Vitalzeichen wichtig sind</h2>
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>Veränderungen früh erkennen</h3>
+          <p>
+            Du lernst, Warnzeichen rechtzeitig wahrzunehmen und nicht erst zu reagieren, wenn es kritisch wird.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h3>Werte richtig einordnen</h3>
+          <p>
+            Messwerte allein reichen nicht. Entscheidend ist, sie mit Situation, Symptomen und Verlauf zu verbinden.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h3>Sicher handeln</h3>
+          <p>
+            Vitalzeichen sind in Pflegealltag, Notfällen und Prüfungen eine zentrale Grundlage für Entscheidungen.
+          </p>
+        </div>
       </div>
     </section>
-  </article>
+
+    <section class="category-panel">
+      <h2>Was du in diesem Bereich können solltest</h2>
+      <ul class="learning-list">
+        <li>Vitalzeichen korrekt messen und beobachten</li>
+        <li>Normalwerte und auffällige Abweichungen erkennen</li>
+        <li>Messwerte mit Symptomen und Situation verbinden</li>
+        <li>bei kritischen Veränderungen fachlich sinnvoll reagieren</li>
+      </ul>
+    </section>
+
+    <section class="category-panel">
+      <div class="topics-head">
+        <div>
+          <h2>Alle Vitalzeichen-Themen</h2>
+          <p class="muted">
+            Lerne die wichtigsten Vitalzeichen Schritt für Schritt und pflegebezogen.
+          </p>
+        </div>
+
+        <div class="topic-count-badge">
+          {vitalzeichenThemen.length} {vitalzeichenThemen.length === 1 ? "Thema" : "Themen"}
+        </div>
+      </div>
+
+      {vitalzeichenThemen.length > 0 ? (
+        <div class="topic-grid">
+          {vitalzeichenThemen.map((topic, index) => (
+            <a class="topic-card" href={`/themen/${topic.slug}/`}>
+              <div class="topic-card-top">
+                <span class="topic-step">Thema {index + 1}</span>
+                <span class="topic-type">Beobachtung</span>
+              </div>
+
+              <h3>{topic.data.title}</h3>
+
+              <p>
+                {topic.data.beschreibung ??
+                  topic.data.description ??
+                  topicDescriptions[topic.slug] ??
+                  "Lerne dieses Vitalzeichen sicher zu messen und pflegerisch einzuordnen."}
+              </p>
+
+              <span class="topic-card-link">Thema öffnen →</span>
+            </a>
+          ))}
+        </div>
+      ) : (
+        <div class="empty-state">
+          <p>Noch keine Vitalzeichen-Themen vorhanden.</p>
+        </div>
+      )}
+    </section>
+  </section>
 </BaseLayout>
+
+<style is:global>
+.category-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem 3.5rem;
+}
+
+.category-hero {
+  max-width: 760px;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.category-eyebrow {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: #eef5ff;
+  color: #2f5f9b;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.category-hero h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(2rem, 3vw, 2.7rem);
+  line-height: 1.12;
+}
+
+.category-intro {
+  max-width: 58ch;
+  margin: 0;
+  color: #5b6b7a;
+  line-height: 1.7;
+}
+
+.category-panel + .category-panel {
+  margin-top: 2rem;
+}
+
+.category-panel {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.04);
+}
+
+.category-panel h2 {
+  margin-top: 0;
+  margin-bottom: 0.9rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.info-card {
+  background: #f8fbff;
+  border: 1px solid #dbe7f5;
+  border-radius: 16px;
+  padding: 1.1rem;
+}
+
+.info-card h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+}
+
+.info-card p {
+  margin: 0;
+  color: #556270;
+  line-height: 1.55;
+}
+
+.learning-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.learning-list li + li {
+  margin-top: 0.55rem;
+}
+
+.topics-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.topic-count-badge {
+  flex-shrink: 0;
+  padding: 0.5rem 0.8rem;
+  border-radius: 999px;
+  background: #eef5ff;
+  color: #2f5f9b;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.topic-card,
+.topic-card:link,
+.topic-card:visited {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 250px;
+  padding: 1.35rem;
+  border-radius: 18px;
+  border: 1px solid #e5e5e5;
+  background: #ffffff;
+  text-decoration: none;
+  color: inherit !important;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.topic-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(24, 50, 74, 0.08);
+  border-color: #cfdceb;
+}
+
+.topic-card-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.9rem;
+}
+
+.topic-step,
+.topic-type {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.32rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.topic-step {
+  background: #eef5ff;
+  color: #18324a;
+}
+
+.topic-type {
+  background: #fff4e8;
+  color: #9a3412;
+}
+
+.topic-card h3 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.08rem;
+  line-height: 1.35;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.topic-card p {
+  margin: 0;
+  color: #556270 !important;
+  line-height: 1.6;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.topic-card-link {
+  margin-top: auto;
+  color: #18324a;
+  font-weight: 700;
+}
+
+.empty-state {
+  padding: 1rem 0 0;
+  color: #5b6b7a;
+}
+
+@media (max-width: 900px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topic-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .topics-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .topic-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>

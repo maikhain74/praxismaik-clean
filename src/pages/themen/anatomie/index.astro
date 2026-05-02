@@ -9,6 +9,22 @@ const categoryEntry = entries.find((entry) => entry.slug === "anatomie");
 const anatomyTopics = entries
   .filter((entry) => entry.slug.startsWith("anatomie/"))
   .sort((a, b) => a.data.title.localeCompare(b.data.title, "de"));
+
+const topicDescriptions = {
+  "anatomie/atmungssystem": "Verstehe Aufbau und Funktion der Atemwege als Grundlage für Atmung, Dyspnoe und Sauerstoffversorgung.",
+  "anatomie/bewegungsapparat": "Lerne Knochen, Gelenke und Muskeln einzuordnen, wichtig für Mobilisation, Sturzrisiko und Lagerung.",
+  "anatomie/blut-grundlagen": "Grundlagen zu Blutbestandteilen, Transportfunktionen und pflegerisch relevanten Beobachtungen.",
+  "anatomie/blutdruck": "Verstehe, wie Blutdruck entsteht und warum Veränderungen pflegerisch wichtig sind.",
+  "anatomie/blutkreislauf": "Lerne den Kreislauf als Versorgungssystem des Körpers kennen, von Herzleistung bis Durchblutung.",
+  "anatomie/gasaustausch": "Verstehe, wie Sauerstoff aufgenommen und Kohlendioxid abgegeben wird.",
+  "anatomie/gewebearten": "Grundlagen zu Gewebearten, Heilung, Haut, Organen und strukturellem Körperaufbau.",
+  "anatomie/herz": "Aufbau und Funktion des Herzens als Basis für Puls, Kreislauf und Herzinsuffizienz.",
+  "anatomie/hormonsystem": "Überblick über Hormone, Regulation und wichtige Zusammenhänge, zum Beispiel beim Blutzucker.",
+  "anatomie/nervensystem": "Grundlagen zu Gehirn, Rückenmark und Nerven, wichtig für Wahrnehmung, Bewegung und Pflegebeobachtung.",
+  "anatomie/organsysteme": "Einordnung der wichtigsten Organsysteme und ihrer Aufgaben im Körper.",
+  "anatomie/verdauungssystem": "Aufbau und Funktion der Verdauung, wichtig für Ernährung, Ausscheidung und Pflegeprobleme.",
+  "anatomie/zelle": "Die Zelle als kleinste Funktionseinheit des Körpers, Grundlage für Gewebe, Organe und Erkrankungen."
+};
 ---
 
 <BaseLayout
@@ -87,20 +103,33 @@ const anatomyTopics = entries
         </div>
       </div>
 
-      {anatomyTopics.length > 0 ? (
-        <div class="topic-grid">
-          {anatomyTopics.map((topic) => (
-            <a class="topic-card" href={`/themen/${topic.slug}/`}>
-              <h3>{topic.data.title}</h3>
-              <p>{topic.data.description}</p>
-            </a>
-          ))}
+{anatomyTopics.length > 0 ? (
+  <div class="topic-grid">
+    {anatomyTopics.map((topic, index) => (
+      <a class="topic-card" href={`/themen/${topic.slug}/`}>
+        <div class="topic-card-top">
+          <span class="topic-step">Thema {index + 1}</span>
+          <span class="topic-type">Grundlage</span>
         </div>
-      ) : (
-        <div class="empty-state">
-          <p>Noch keine Anatomie-Themen vorhanden.</p>
-        </div>
-      )}
+
+        <h3>{topic.data.title}</h3>
+
+        <p>
+          {topic.data.beschreibung ??
+            topic.data.description ??
+            topicDescriptions[topic.slug] ??
+            "Lerne dieses Thema verständlich und pflegebezogen einzuordnen."}
+        </p>
+
+        <span class="topic-card-link">Thema öffnen →</span>
+      </a>
+    ))}
+  </div>
+) : (
+  <div class="empty-state">
+    <p>Noch keine Anatomie-Themen vorhanden.</p>
+  </div>
+)}
     </section>
   </section>
 </BaseLayout>
@@ -241,6 +270,34 @@ const anatomyTopics = entries
   border-color: #cfdceb;
 }
 
+.topic-card-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.9rem;
+}
+
+.topic-step,
+.topic-type {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.32rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.topic-step {
+  background: #eef5ff;
+  color: #18324a;
+}
+
+.topic-type {
+  background: #fff4e8;
+  color: #9a3412;
+}
+
 .topic-card h3 {
   margin: 0 0 0.75rem 0;
   font-size: 1.08rem;
@@ -256,6 +313,13 @@ const anatomyTopics = entries
   word-break: break-word;
   overflow-wrap: anywhere;
 }
+
+.topic-card-link {
+  margin-top: auto;
+  color: #18324a;
+  font-weight: 700;
+}
+
 .empty-state {
   padding: 1rem 0 0;
   color: #5b6b7a;

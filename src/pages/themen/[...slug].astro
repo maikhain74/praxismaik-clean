@@ -85,24 +85,6 @@ const premiumExamQuiz = examQuizZumThema.filter((item) => item.data.premium === 
         {thema.data.beschreibung ?? "Zu diesem Thema findest du Lernskripte, Prüfungsfälle und passende Quiz-Inhalte."}
       </p>
 
-      <div class="topic-stats">
-        <div class="topic-stat">
-          <strong>{skripteZumThema.length}</strong>
-          <span>Lernskripte</span>
-        </div>
-        <div class="topic-stat">
-          <strong>{pruefungZumThema.length}</strong>
-          <span>Prüfungsfälle</span>
-        </div>
-        <div class="topic-stat">
-          <strong>{quizZumThema.length}</strong>
-          <span>Quizfragen</span>
-        </div>
-        <div class="topic-stat">
-          <strong>{examQuizZumThema.length}</strong>
-          <span>Examensfragen</span>
-        </div>
-      </div>
     </header>
 
     {!isCategoryPage && (
@@ -111,117 +93,113 @@ const premiumExamQuiz = examQuizZumThema.filter((item) => item.data.premium === 
       </article>
     )}
 
-    <section class="topic-section">
-      <div class="section-head">
-        <div>
-          <h2>Lernskripte zum Thema</h2>
-          <p class="section-intro-text">
-            Kompakt, strukturiert und auf das Wesentliche fokussiert.
-          </p>
-        </div>
+   {skripteZumThema.length > 0 && (
+  <section class="topic-section">
+    <div class="section-head">
+      <div>
+        <h2>Lernskripte zum Thema</h2>
+        <p class="section-intro-text">
+          Kompakt, strukturiert und auf das Wesentliche fokussiert.
+        </p>
       </div>
+    </div>
 
-      {skripteZumThema.length === 0 ? (
-        <p class="empty-text">Zu diesem Thema sind noch keine Lernskripte vorhanden.</p>
-      ) : (
-        <div class="topic-grid">
-          {skripteZumThema.map((item) => {
-            const isPremium = item.data.premium === true;
+    <div class="topic-grid">
+      {skripteZumThema.map((item) => {
+        const isPremium = item.data.premium === true;
 
-            return (
-              <a class={`topic-card ${isPremium ? "topic-card-premium" : "topic-card-free"}`} href={`/lernskripte/${item.slug}/`}>
-                <div class="topic-card-top">
-                  {isPremium ? (
-                    <span class="card-badge card-badge-premium">🔒 Premium</span>
-                  ) : (
-                    <span class="card-badge card-badge-free">Kostenlos</span>
-                  )}
+        return (
+          <a class={`topic-card ${isPremium ? "topic-card-premium" : "topic-card-free"}`} href={`/lernskripte/${item.slug}/`}>
+            <div class="topic-card-top">
+              {isPremium ? (
+                <span class="card-badge card-badge-premium">🔒 Premium</span>
+              ) : (
+                <span class="card-badge card-badge-free">Kostenlos</span>
+              )}
 
-                  {typeof item.data.reihenfolge === "number" && (
-                    <span class="card-step">Schritt {item.data.reihenfolge}</span>
-                  )}
-                </div>
+              {typeof item.data.reihenfolge === "number" && (
+                <span class="card-step">Schritt {item.data.reihenfolge}</span>
+              )}
+            </div>
 
-                <h3>{item.data.title}</h3>
-                <p>{item.data.beschreibung ?? "Kein Beschreibungstext vorhanden."}</p>
+            <h3>{item.data.title}</h3>
+            <p>{item.data.beschreibung ?? "Kein Beschreibungstext vorhanden."}</p>
 
-                {isPremium ? (
-                  <div class="premium-hint">
-                    <strong>Nur Vorschau frei</strong>
-                    <span>Kompletter Inhalt nur mit Premium</span>
-                  </div>
-                ) : (
-                  <div class="free-hint">
-                    <strong>Direkt verfügbar</strong>
-                    <span>Ohne Freischaltung lesbar</span>
-                  </div>
-                )}
+            {isPremium ? (
+              <div class="premium-hint">
+                <strong>Nur Vorschau frei</strong>
+                <span>Kompletter Inhalt nur mit Premium</span>
+              </div>
+            ) : (
+              <div class="free-hint">
+                <strong>Direkt verfügbar</strong>
+                <span>Ohne Freischaltung lesbar</span>
+              </div>
+            )}
 
-                <span class="topic-card-link-text">
-                  {isPremium ? "Vorschau öffnen" : "Lernskript öffnen"}
-                </span>
-              </a>
-            );
-          })}
-        </div>
-      )}
-    </section>
+            <span class="topic-card-link-text">
+              {isPremium ? "Vorschau öffnen" : "Lernskript öffnen"}
+            </span>
+          </a>
+        );
+      })}
+    </div>
+  </section>
+)}
 
-    <section class="topic-section">
-      <div class="section-head">
-        <div>
-          <h2>Prüfungsfälle zum Thema</h2>
-          <p class="section-intro-text">
-            Wende das Gelernte in typischen Prüfungssituationen an.
-          </p>
-        </div>
+   {pruefungZumThema.length > 0 && (
+  <section class="topic-section">
+    <div class="section-head">
+      <div>
+        <h2>Prüfungsfälle zum Thema</h2>
+        <p class="section-intro-text">
+          Wende das Gelernte in typischen Prüfungssituationen an.
+        </p>
       </div>
+    </div>
 
-      {pruefungZumThema.length === 0 ? (
-        <p class="empty-text">Zu diesem Thema sind noch keine Prüfungsfälle vorhanden.</p>
-      ) : (
-        <div class="topic-grid">
-          {pruefungZumThema.map((item) => {
-            const isPremium = item.data.premium === true;
+    <div class="topic-grid">
+      {pruefungZumThema.map((item) => {
+        const isPremium = item.data.premium === true;
 
-            return (
-              <a class={`topic-card ${isPremium ? "topic-card-premium" : "topic-card-free"}`} href={`/pruefung/${item.slug}/`}>
-                <div class="topic-card-top">
-                  {isPremium ? (
-                    <span class="card-badge card-badge-premium">🔒 Premium</span>
-                  ) : (
-                    <span class="card-badge card-badge-free">Kostenlos</span>
-                  )}
+        return (
+          <a class={`topic-card ${isPremium ? "topic-card-premium" : "topic-card-free"}`} href={`/pruefung/${item.slug}/`}>
+            <div class="topic-card-top">
+              {isPremium ? (
+                <span class="card-badge card-badge-premium">🔒 Premium</span>
+              ) : (
+                <span class="card-badge card-badge-free">Kostenlos</span>
+              )}
 
-                  {typeof item.data.reihenfolge === "number" && (
-                    <span class="card-step">Fall {item.data.reihenfolge}</span>
-                  )}
-                </div>
+              {typeof item.data.reihenfolge === "number" && (
+                <span class="card-step">Fall {item.data.reihenfolge}</span>
+              )}
+            </div>
 
-                <h3>{item.data.title}</h3>
-                <p>{item.data.beschreibung ?? "Kein Beschreibungstext vorhanden."}</p>
+            <h3>{item.data.title}</h3>
+            <p>{item.data.beschreibung ?? "Kein Beschreibungstext vorhanden."}</p>
 
-                {isPremium ? (
-                  <div class="premium-hint">
-                    <strong>Die Lösung ist gesperrt</strong>
-                    <span>Komplette Denkstruktur und Prüfungsantwort nur mit Premium</span>
-                  </div>
-                ) : (
-                  <div class="free-hint">
-                    <strong>Direkt verfügbar</strong>
-                    <span>Ohne Freischaltung lesbar</span>
-                  </div>
-                )}
+            {isPremium ? (
+              <div class="premium-hint">
+                <strong>Die Lösung ist gesperrt</strong>
+                <span>Komplette Denkstruktur und Prüfungsantwort nur mit Premium</span>
+              </div>
+            ) : (
+              <div class="free-hint">
+                <strong>Direkt verfügbar</strong>
+                <span>Ohne Freischaltung lesbar</span>
+              </div>
+            )}
 
-                <span class="topic-card-link-text">
-                  {isPremium ? "Vorschau öffnen" : "Prüfungsfall öffnen"}
-                </span>
-              </a>
-            );
-          })}
-        </div>
-      )}
-    </section>
+            <span class="topic-card-link-text">
+              {isPremium ? "Vorschau öffnen" : "Prüfungsfall öffnen"}
+            </span>
+          </a>
+        );
+      })}
+    </div>
+  </section>
+)}
 
     <section class="topic-section">
       <div class="section-head">

@@ -4,12 +4,27 @@ import { getCollection } from "astro:content";
 
 const themen = await getCollection("themen");
 
-const hygieneThemen = themen.filter((t) =>
-  t.slug.toLowerCase().startsWith("hygiene/")
-);
+const hygieneThemen = themen
+  .filter((t) => t.slug.toLowerCase().startsWith("hygiene/"))
+  .sort((a, b) => a.data.title.localeCompare(b.data.title, "de"));
+
+const topicDescriptions = {
+  "hygiene/haendedesinfektion": "Lerne, wann und wie hygienische Händedesinfektion korrekt durchgeführt wird.",
+  "hygiene/haendewaschen": "Verstehe, wann Händewaschen sinnvoll ist und wann Desinfektion wichtiger ist.",
+  "hygiene/standardhygiene": "Die wichtigsten Grundregeln der Hygiene für jeden Pflegekontakt.",
+  "hygiene/infektion-und-infektionskette": "Verstehe, wie Infektionen entstehen und wo Pflege die Infektionskette unterbrechen kann.",
+  "hygiene/flaechendesinfektion": "Lerne, wie Flächen sicher desinfiziert werden und welche Fehler häufig passieren.",
+  "hygiene/isolationsmassnahmen": "Grundlagen zu Isolation, Schutzmaßnahmen und sicherem Umgang mit Infektionsrisiken.",
+  "hygiene/nosokomiale-infektionen": "Verstehe Krankenhausinfektionen und warum Prävention im Pflegealltag entscheidend ist.",
+  "hygiene/persoenliche-schutzausruestung": "Lerne den richtigen Einsatz von Handschuhen, Schutzkittel, Maske und weiterer Schutzausrüstung.",
+  "hygiene/sterile-und-unsterile-arbeitsweise": "Unterscheide sterile und unsterile Tätigkeiten sicher im Pflegealltag."
+};
 ---
 
-<BaseLayout title="Hygiene">
+<BaseLayout
+  title="Hygiene | PraxisMaik"
+  description="Hygiene und Infektionsprävention für die Pflegeausbildung verständlich und praxisnah lernen."
+>
   <section class="category-page">
     <nav class="breadcrumbs" aria-label="Breadcrumb">
       <a href="/">Start</a>
@@ -23,19 +38,90 @@ const hygieneThemen = themen.filter((t) =>
       <span class="category-eyebrow">Themenbereich</span>
       <h1>Hygiene</h1>
       <p class="category-intro">
-        Grundlagen der Infektionsprävention in der Pflege.
+        Hygiene schützt Pflegeempfänger, Angehörige und Pflegefachpersonen.
+        In diesem Bereich lernst du die wichtigsten Grundlagen der Infektionsprävention
+        verständlich, prüfungsnah und praxisbezogen.
       </p>
     </header>
 
-    <div class="topic-grid">
-      {hygieneThemen.map((t) => (
-        <a class="topic-card" href={`/themen/${t.slug}/`}>
-          <h2>{t.data.title}</h2>
-          <p>{t.data.description}</p>
-          <span class="topic-link">Öffnen</span>
-        </a>
-      ))}
-    </div>
+    <section class="category-panel">
+      <h2>Warum Hygiene wichtig ist</h2>
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>Infektionen vermeiden</h3>
+          <p>
+            Du verstehst, wie Erreger übertragen werden und wie du Infektionsketten gezielt unterbrichst.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h3>Sicher handeln</h3>
+          <p>
+            Du lernst, welche Hygienemaßnahmen in typischen Pflegesituationen wirklich notwendig sind.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h3>Prüfungsrelevant denken</h3>
+          <p>
+            Hygiene taucht in Fallbeispielen häufig indirekt auf, zum Beispiel bei Wunden, Kathetern oder Isolation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-panel">
+      <h2>Was du in diesem Bereich können solltest</h2>
+      <ul class="learning-list">
+        <li>die hygienische Händedesinfektion sicher begründen</li>
+        <li>Infektionswege und Infektionsketten erklären</li>
+        <li>Schutzkleidung situationsgerecht einsetzen</li>
+        <li>Hygienemaßnahmen im Pflegealltag korrekt anwenden</li>
+      </ul>
+    </section>
+
+    <section class="category-panel">
+      <div class="topics-head">
+        <div>
+          <h2>Alle Hygiene-Themen</h2>
+          <p class="muted">
+            Arbeite dich Schritt für Schritt durch die wichtigsten Hygienethemen der Pflege.
+          </p>
+        </div>
+
+        <div class="topic-count-badge">
+          {hygieneThemen.length} {hygieneThemen.length === 1 ? "Thema" : "Themen"}
+        </div>
+      </div>
+
+      {hygieneThemen.length > 0 ? (
+        <div class="topic-grid">
+          {hygieneThemen.map((topic, index) => (
+            <a class="topic-card" href={`/themen/${topic.slug}/`}>
+              <div class="topic-card-top">
+                <span class="topic-step">Thema {index + 1}</span>
+                <span class="topic-type">Praxis</span>
+              </div>
+
+              <h3>{topic.data.title}</h3>
+
+              <p>
+                {topic.data.beschreibung ??
+                  topic.data.description ??
+                  topicDescriptions[topic.slug] ??
+                  "Lerne dieses Hygienethema verständlich und pflegebezogen einzuordnen."}
+              </p>
+
+              <span class="topic-card-link">Thema öffnen →</span>
+            </a>
+          ))}
+        </div>
+      ) : (
+        <div class="empty-state">
+          <p>Noch keine Hygiene-Themen vorhanden.</p>
+        </div>
+      )}
+    </section>
   </section>
 </BaseLayout>
 
@@ -43,44 +129,113 @@ const hygieneThemen = themen.filter((t) =>
 .category-page {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 2.25rem 1rem 3rem;
+  padding: 2.5rem 1rem 3.5rem;
 }
 
 .category-hero {
   max-width: 760px;
-  margin-top: 0.75rem;
+  margin-top: 0.5rem;
   margin-bottom: 2rem;
 }
 
 .category-eyebrow {
   display: inline-block;
+  margin-bottom: 0.6rem;
   padding: 0.35rem 0.65rem;
   border-radius: 999px;
   background: #eef5ff;
   color: #2f5f9b;
   font-size: 0.72rem;
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .category-hero h1 {
-  margin: 0.7rem 0 0.7rem;
-  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  margin: 0 0 0.75rem;
+  font-size: clamp(2rem, 3vw, 2.7rem);
   line-height: 1.12;
 }
 
 .category-intro {
+  max-width: 58ch;
   margin: 0;
   color: #5b6b7a;
   line-height: 1.7;
 }
 
+.category-panel + .category-panel {
+  margin-top: 2rem;
+}
+
+.category-panel {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.04);
+}
+
+.category-panel h2 {
+  margin-top: 0;
+  margin-bottom: 0.9rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.info-card {
+  background: #f8fbff;
+  border: 1px solid #dbe7f5;
+  border-radius: 16px;
+  padding: 1.1rem;
+}
+
+.info-card h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+}
+
+.info-card p {
+  margin: 0;
+  color: #556270;
+  line-height: 1.55;
+}
+
+.learning-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.learning-list li + li {
+  margin-top: 0.55rem;
+}
+
+.topics-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.topic-count-badge {
+  flex-shrink: 0;
+  padding: 0.5rem 0.8rem;
+  border-radius: 999px;
+  background: #eef5ff;
+  color: #2f5f9b;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
 .topic-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.2rem;
-  margin-top: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 
 .topic-card,
@@ -106,7 +261,35 @@ const hygieneThemen = themen.filter((t) =>
   border-color: #cfdceb;
 }
 
-.topic-card h2 {
+.topic-card-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.9rem;
+}
+
+.topic-step,
+.topic-type {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.32rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.topic-step {
+  background: #eef5ff;
+  color: #18324a;
+}
+
+.topic-type {
+  background: #fff4e8;
+  color: #9a3412;
+}
+
+.topic-card h3 {
   margin: 0 0 0.75rem 0;
   font-size: 1.08rem;
   line-height: 1.35;
@@ -122,33 +305,35 @@ const hygieneThemen = themen.filter((t) =>
   overflow-wrap: anywhere;
 }
 
-.topic-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+.topic-card-link {
   margin-top: auto;
-  padding: 0.42rem 0.8rem;
-  border-radius: 999px;
-  background: #eef5ff;
-  color: #2f5f9b !important;
-  font-size: 0.84rem;
+  color: #18324a;
   font-weight: 700;
-  white-space: nowrap;
+}
+
+.empty-state {
+  padding: 1rem 0 0;
+  color: #5b6b7a;
 }
 
 @media (max-width: 900px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
   .topic-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .topics-head {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
 @media (max-width: 640px) {
   .topic-grid {
     grid-template-columns: 1fr;
-  }
-
-  .topic-card {
-    min-height: unset;
   }
 }
 </style>
