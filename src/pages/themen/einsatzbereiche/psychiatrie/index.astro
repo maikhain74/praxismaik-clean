@@ -1,0 +1,131 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Psychiatrie">
+  <section class="einsatzbereich-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Start</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="/themen/">Themen</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="/themen/einsatzbereiche/">Einsatzbereiche</a>
+      <span class="breadcrumb-sep">›</span>
+      <span class="current">Psychiatrie</span>
+    </nav>
+
+    <h1>Psychiatrie</h1>
+
+    <p class="muted intro-text">
+      In der psychiatrischen Pflege stehen Beziehung, Beobachtung, Kommunikation und
+      professioneller Umgang mit Krisen im Mittelpunkt.
+    </p>
+
+    <section class="einsatzbereich-block">
+      <h2>Worum es in diesem Bereich geht</h2>
+      <p>
+        Psychiatrische Pflege begleitet Menschen mit psychischen Erkrankungen in belastenden
+        Lebenssituationen. Ziel ist nicht nur Sicherheit, sondern auch Stabilisierung,
+        Orientierung und Förderung von Selbstbestimmung.
+      </p>
+    </section>
+
+    <section class="einsatzbereich-block">
+      <h2>Was Auszubildende hier lernen</h2>
+      <div class="einsatzbereich-grid">
+        <div class="einsatzbereich-card">
+          <h3>Beziehungen professionell gestalten</h3>
+          <p>Vertrauen aufbauen, Grenzen wahren und gleichzeitig präsent bleiben.</p>
+        </div>
+
+        <div class="einsatzbereich-card">
+          <h3>Verhalten beobachten</h3>
+          <p>Stimmung, Rückzug, Anspannung oder Krisensignale früh erkennen.</p>
+        </div>
+
+        <div class="einsatzbereich-card">
+          <h3>Krisen sicher begleiten</h3>
+          <p>Deeskalierend handeln und Gefährdungen fachlich einschätzen.</p>
+        </div>
+
+        <div class="einsatzbereich-card">
+          <h3>Kommunikation bewusst einsetzen</h3>
+          <p>Gespräche, Haltung und Sprache professionell an Situation und Person anpassen.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="einsatzbereich-block">
+      <h2>Typische pflegerische Schwerpunkte</h2>
+      <ul class="einsatzbereich-list">
+        <li>Beziehungsgestaltung</li>
+        <li>Krisenintervention und Deeskalation</li>
+        <li>Suizidalität einschätzen</li>
+        <li>Beobachtung von Stimmung und Verhalten</li>
+        <li>Förderung von Orientierung und Tagesstruktur</li>
+        <li>Zusammenarbeit im multiprofessionellen Team</li>
+      </ul>
+    </section>
+
+    <section class="einsatzbereich-block">
+      <h2>Typische Themen für diesen Bereich</h2>
+      <div class="einsatzbereich-links">
+        <a class="einsatzbereich-link" href="/themen/kommunikation/">Kommunikation</a>
+        <a class="einsatzbereich-link" href="/themen/recht/">Recht in der Pflege</a>
+        <a class="einsatzbereich-link" href="/themen/pflegeprozess/">Pflegeprozess</a>
+        <a class="einsatzbereich-link" href="/themen/notfaelle/">Notfälle</a>
+      </div>
+    </section>
+
+    <section class="einsatzbereich-block einsatzbereich-note">
+      <h2>Prüfungsbezug</h2>
+      <p>
+        In Prüfungen geht es in der Psychiatrie oft um Gesprächsführung, Krisensituationen,
+        Beziehungsarbeit und professionelle Haltung im Umgang mit psychischer Belastung.
+      </p>
+    </section>
+  </section>
+
+  <style is:global>
+    .einsatzbereich-page { max-width: 1100px; margin: 0 auto; }
+    .intro-text { max-width: 70ch; }
+    .einsatzbereich-block {
+      margin-top: 2rem;
+      background: #ffffff;
+      border: 1px solid #eadccd;
+      border-radius: 20px;
+      padding: 1.4rem;
+      box-shadow: 0 10px 24px rgba(24, 50, 74, 0.06);
+    }
+    .einsatzbereich-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .einsatzbereich-card {
+      background: #fffaf5;
+      border: 1px solid #eadccd;
+      border-radius: 16px;
+      padding: 1rem;
+    }
+    .einsatzbereich-card h3 { margin: 0 0 0.45rem 0; font-size: 1.02rem; color: #18324a; }
+    .einsatzbereich-card p { margin: 0; color: #5b6b7a; line-height: 1.55; }
+    .einsatzbereich-list { margin: 1rem 0 0 1.2rem; }
+    .einsatzbereich-list li { margin-bottom: 0.5rem; color: #18324a; }
+    .einsatzbereich-links { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1rem; }
+    .einsatzbereich-link {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.7rem 1rem;
+      border-radius: 999px;
+      background: #eef5ff;
+      color: #2f5f9b !important;
+      text-decoration: none !important;
+      font-weight: 700;
+      border: 1px solid #d9e6f7;
+    }
+    .einsatzbereich-link:hover { background: #e4f0ff; }
+    .einsatzbereich-note { background: #fff3ea; }
+  </style>
+</BaseLayout>

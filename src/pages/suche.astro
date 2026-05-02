@@ -1,0 +1,127 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Suche" description="Suche in allen Themen von PraxisMaik.">
+  <section class="search-page">
+    <h1>Suche</h1>
+    <p class="muted">Suche nach Titel, Stichwort, Kategorie oder Inhalt.</p>
+
+    <input
+      id="q"
+      class="searchbox"
+      type="search"
+      placeholder="z.B. Händedesinfektion, Demenz, Sturz…"
+      autocomplete="off"
+    />
+
+    <p id="search-info" class="muted" style="margin-top:12px;"></p>
+
+    <div id="results" class="topic-grid" style="margin-top:16px;"></div>
+  </section>
+
+  <script>
+    async function run() {
+      const res = await fetch("/search-index.json");
+      const data = await res.json();
+
+      const q = document.getElementById("q");
+      const out = document.getElementById("results");
+      const info = document.getElementById("search-info");
+
+      function esc(s) {
+        return String(s || "")
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;");
+      }
+
+      function snippet(text, term) {
+        const source = String(text || "");
+        const lower = source.toLowerCase();
+        const t = term.toLowerCase();
+
+        const pos = lower.indexOf(t);
+        if (pos === -1) {
+          return source.slice(0, 140) + (source.length > 140 ? "..." : "");
+        }
+
+        const start = Math.max(0, pos - 45);
+        const end = Math.min(source.length, pos + 95);
+        let part = source.slice(start, end).trim();
+
+        if (start > 0) part = "..." + part;
+        if (end < source.length) part = part + "...";
+
+        return part;
+      }
+
+      function scoreItem(item, term) {
+        const t = term.toLowerCase();
+        let score = 0;
+
+        const title = (item.title || "").toLowerCase();
+        const description = (item.description || "").toLowerCase();
+        const category = (item.category || "").toLowerCase();
+        const content = (item.content || "").toLowerCase();
+
+        if (title.includes(t)) score += 10;
+        if (description.includes(t)) score += 6;
+        if (category.includes(t)) score += 4;
+        if (content.includes(t)) score += 2;
+
+        if (title.startsWith(t)) score += 5;
+        if (category.startsWith(t)) score += 2;
+
+        return score;
+      }
+
+      function render(list, term) {
+        if (!list.length) {
+          out.innerHTML = "";
+          info.textContent = `Keine Treffer für "${term}".`;
+          return;
+        }
+
+        info.textContent = `${list.length} Treffer für "${term}".`;
+
+        out.innerHTML = list.map(item => {
+          const preview = item.description && item.description.trim()
+            ? item.description
+            : snippet(item.content || "", term);
+
+          return `
+            <a class="topic-card" href="${item.url}">
+              <h3>${esc(item.title)}</h3>
+              <p>${esc(preview)}</p>
+              <p class="muted" style="margin-top:8px;">${esc(item.category)}</p>
+            </a>
+          `;
+        }).join("");
+      }
+
+      function search(term) {
+        const t = term.trim().toLowerCase();
+
+        if (!t) {
+          out.innerHTML = "";
+          info.textContent = "Gib einen Suchbegriff ein.";
+          return;
+        }
+
+        const hits = data
+          .map(item => ({ ...item, _score: scoreItem(item, t) }))
+          .filter(item => item._score > 0)
+          .sort((a, b) => b._score - a._score)
+          .slice(0, 50);
+
+        render(hits, term);
+      }
+
+      q.addEventListener("input", () => search(q.value));
+      info.textContent = "Gib einen Suchbegriff ein.";
+    }
+
+    run();
+  </script>
+</BaseLayout>

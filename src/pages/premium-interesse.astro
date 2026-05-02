@@ -1,0 +1,460 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const hasPremiumCookie = Astro.cookies.get("praxismaik_premium")?.value === "1";
+---
+
+<BaseLayout
+  title="Premium freischalten"
+  description="Schalte PraxisMaik Premium frei und erhalte sofort Zugriff auf alle Premium-Inhalte."
+>
+  <section class="premium-interest-page">
+    <div class="premium-interest-box">
+      {hasPremiumCookie ? (
+        <>
+          <span class="premium-label">PraxisMaik Premium</span>
+          <h1>Dein Premium-Zugang ist bereits aktiv</h1>
+          <p class="premium-lead">
+            Du hast schon Zugriff auf alle freigeschalteten Premium-Inhalte.
+          </p>
+
+          <div class="premium-active-box">
+            <strong>Alles ist bereits freigeschaltet.</strong>
+            <span>Du musst nicht erneut bezahlen.</span>
+          </div>
+
+          <div class="premium-actions">
+            <a href="/lernskripte" class="btn premium-buy-btn">Zu den Lernskripten</a>
+            <a href="/pruefung" class="btn secondary">Zu den Prüfungsfällen</a>
+          </div>
+        </>
+      ) : (
+        <>
+          <span class="premium-label">PraxisMaik Premium</span>
+
+          <div class="premium-alert">
+            Du siehst aktuell nur Vorschauen und abgeschnittene Inhalte.
+          </div>
+
+          <h1>Premium jetzt freischalten und sicherer lernen</h1>
+
+          <p class="premium-lead">
+            Du lernst wahrscheinlich nicht zu wenig, sondern oft ohne klare Struktur.
+            Genau das macht Prüfungen unnötig schwer.
+          </p>
+
+          <p class="premium-loss">
+            Ohne klare Denklogik verlierst du Zeit, wiederholst unnötig und gehst unsicher in Prüfungen.
+          </p>
+
+         <div class="premium-price-box">
+  <strong>39 € einmalig</strong>
+  <span>entspricht weniger als 1 € pro Lerntag</span>
+  <span>kein Abo, keine laufenden Kosten</span>
+
+  <p class="premium-value">
+    Du investierst einmal und hast Zugriff auf deinen gesamten Lernweg durch die Ausbildung.
+  </p>
+
+  <p class="premium-risk">
+    Du kannst sofort starten und direkt prüfen, ob es dir hilft.
+  </p>
+</div>
+
+          <div class="premium-compare">
+            <div class="compare-box">
+              <h2>Ohne Premium</h2>
+              <ul>
+                <li>nur Vorschauen statt kompletter Inhalte</li>
+                <li>keine vollständigen Falllösungen</li>
+                <li>mehr Unsicherheit in Prüfungen</li>
+              </ul>
+            </div>
+
+            <div class="compare-box highlight">
+              <h2>Mit Premium</h2>
+              <ul>
+                <li>komplette Lernskripte und E-Books</li>
+                <li>vollständige Prüfungsfälle mit Denklogik</li>
+                <li>mehr Sicherheit für Ausbildung und Examen</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 class="benefits-title">Was du sofort bekommst</h2>
+
+          <ul class="premium-list">
+            <li>Zugriff auf alle Premium-Lernskripte</li>
+            <li>Zugriff auf alle Premium-E-Books</li>
+            <li>Zugriff auf den Premium-Examensbereich</li>
+            <li>Sofort freischalten nach Zahlung</li>
+          </ul>
+
+          <div class="premium-proof">
+            <strong>Wichtiger Punkt:</strong>
+            Viele merken erst kurz vor der Prüfung, dass ihnen Struktur, Falllogik und klare Antworten fehlen.
+          </div>
+
+<section class="objection-box">
+  <h2>Falls du dir noch unsicher bist</h2>
+
+  <div class="objection-grid">
+    <div class="objection-card">
+      <h3>„Brauche ich das wirklich?“</h3>
+      <p>
+        Wenn du planlos lernst, verlierst du Zeit. Premium gibt dir Struktur, Fälle und klare Denklogik.
+      </p>
+    </div>
+
+    <div class="objection-card">
+      <h3>„Ich bin noch nicht kurz vor der Prüfung.“</h3>
+      <p>
+        Genau deshalb lohnt es sich. Du baust Verständnis früh auf, statt erst kurz vor dem Examen zu kämpfen.
+      </p>
+    </div>
+
+    <div class="objection-card">
+      <h3>„Reichen kostenlose Inhalte nicht?“</h3>
+      <p>
+        Für den Einstieg ja. Für vollständige Fälle, Lösungen und Prüfungstraining brauchst du Premium.
+      </p>
+    </div>
+  </div>
+</section>
+
+          <form class="premium-checkout-form" action="/api/checkout" method="get">
+  <label class="withdrawal-consent">
+    <input type="checkbox" required />
+    <span>
+      Ich stimme zu, dass der Zugriff auf die digitalen Premium-Inhalte sofort nach dem Kauf beginnt.
+      Mir ist bekannt, dass mein Widerrufsrecht dadurch erlischt.
+    </span>
+  </label>
+
+ <div class="premium-actions">
+ <button type="submit" id="premium-checkout-button" class="btn premium-buy-btn">
+  Jetzt sicher durch die Prüfung lernen
+</button>
+
+  <a href="/premium" class="btn secondary">Zurück zur Premium-Seite</a>
+</div>
+
+<p class="cta-sub">
+  Sofort freigeschaltet, kein Abo.
+</p>
+
+    <a href="/premium" class="btn secondary">Zurück zur Premium-Seite</a>
+  </div>
+</form>
+
+          <p class="premium-trust">
+            Du wirst für die Zahlung sicher zu Stripe weitergeleitet.
+          </p>
+
+          <p class="premium-note">
+            Einmal zahlen, sofort Zugriff. Kein Abo, kein Warten.
+          </p>
+        </>
+      )}
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    console.log('[premium page opened]');
+
+    const button = document.getElementById('premium-checkout-button');
+
+    if (button) {
+      button.addEventListener('click', () => {
+        console.log('[premium checkout clicked]');
+      });
+    }
+  });
+</script>
+
+<script>
+  console.log('[premium page opened]');
+</script>
+
+<script>
+  const button = document.getElementById('premium-checkout-button');
+
+  if (button) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          console.log('[premium button visible]');
+        }
+      });
+    });
+
+    observer.observe(button);
+  }
+</script>
+
+<style>
+  .premium-interest-page {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem;
+  }
+
+  .premium-interest-box {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  }
+
+  .premium-label {
+    display: inline-block;
+    margin-bottom: 0.8rem;
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    background: #eef5ff;
+    color: #2f5f9b;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .premium-alert {
+    margin-bottom: 1rem;
+    padding: 0.8rem 1rem;
+    border-radius: 12px;
+    background: #fee2e2;
+    color: #991b1b;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  h1 {
+    margin: 0 0 0.8rem;
+    font-size: clamp(2rem, 3vw, 2.7rem);
+    line-height: 1.1;
+  }
+
+  .premium-lead {
+    margin: 0;
+    color: #5b6b7a;
+    line-height: 1.75;
+  }
+
+  .premium-loss {
+    margin-top: 0.9rem;
+    color: #7f1d1d;
+    font-weight: 600;
+    line-height: 1.7;
+  }
+
+  .premium-price-box {
+    margin-top: 1.5rem;
+    padding: 1rem 1.2rem;
+    border-radius: 16px;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+  }
+
+  .premium-price-box strong {
+    display: block;
+    font-size: 1.7rem;
+    line-height: 1.2;
+    color: #111827;
+  }
+
+  .premium-price-box span {
+    display: block;
+    margin-top: 0.35rem;
+    color: #6b7280;
+  }
+
+  .premium-compare {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .compare-box {
+    padding: 1rem 1.1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    background: #ffffff;
+  }
+
+  .compare-box.highlight {
+    border-color: rgba(24, 50, 74, 0.22);
+    background: #f8fbff;
+  }
+
+  .compare-box h2 {
+    margin: 0 0 0.8rem;
+    font-size: 1.15rem;
+    line-height: 1.3;
+  }
+
+  .compare-box ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
+  .compare-box li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+
+  .benefits-title {
+    margin-top: 1.7rem;
+    margin-bottom: 0.7rem;
+    font-size: 1.25rem;
+    line-height: 1.3;
+  }
+
+  .premium-list {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
+  .premium-list li {
+    margin-bottom: 0.55rem;
+    line-height: 1.6;
+  }
+
+  .premium-proof {
+    margin-top: 1.5rem;
+    padding: 1rem 1.1rem;
+    border-radius: 14px;
+    background: #fff7ed;
+    border: 1px solid #fed7aa;
+    color: #9a3412;
+    line-height: 1.6;
+  }
+
+  .premium-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin-top: 1.7rem;
+  }
+
+  .premium-buy-btn {
+    display: inline-block;
+  }
+
+  .premium-trust {
+    margin-top: 1rem;
+    color: #6b7280;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .premium-note {
+    margin-top: 0.5rem;
+    color: #6b7280;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .premium-active-box {
+    margin-top: 1.2rem;
+    padding: 1rem 1.1rem;
+    border-radius: 14px;
+    background: #ecfdf5;
+    border: 1px solid #bbf7d0;
+    color: #166534;
+  }
+
+  .premium-active-box strong {
+    display: block;
+    line-height: 1.4;
+  }
+
+  .premium-active-box span {
+    display: block;
+    margin-top: 0.2rem;
+    line-height: 1.5;
+  }
+
+ @media (max-width: 640px) {
+  .premium-actions {
+    flex-direction: column;
+  }
+
+  .premium-compare {
+    grid-template-columns: 1fr;
+  }
+}
+
+.premium-checkout-form {
+  margin-top: 1.7rem;
+}
+
+.withdrawal-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  padding: 1rem 1.1rem;
+  border-radius: 14px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.withdrawal-consent input {
+  margin-top: 0.35rem;
+  flex: 0 0 auto;
+}
+
+.premium-checkout-form .premium-actions {
+  margin-top: 1.2rem;
+}
+
+.premium-checkout-form button.premium-buy-btn {
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+}
+.objection-box {
+  margin-top: 1.7rem;
+  padding: 1.2rem;
+  border-radius: 18px;
+  background: #f8fbff;
+  border: 1px solid #dbe7f5;
+}
+
+.objection-box h2 {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+.objection-grid {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.objection-card {
+  padding: 1rem;
+  border-radius: 14px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+}
+
+.objection-card h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+  color: #18324a;
+}
+
+.objection-card p {
+  margin: 0;
+  color: #556270;
+  line-height: 1.6;
+}
+  }
+</style>

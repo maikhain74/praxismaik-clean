@@ -1,0 +1,122 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const simulationen = [
+  {
+    nummer: 1,
+    titel: "Prüfungssimulation 1",
+    beschreibung: "Akutpflege und stationäre Langzeitpflege kombinieren.",
+    zeit: "90 Minuten",
+    faelle: [
+      {
+        titel: "Fall 1 – Postoperative Pflege nach Kehlkopfoperation",
+        href: "/fallbeispiele/fall-laryngektomie-akutpflege/",
+      },
+      {
+        titel: "Fall 2 – Chronische Wunde bei Herzschwäche im Pflegeheim",
+        href: "/fallbeispiele/fall-ulcus-cruris-langzeitpflege/",
+      },
+    ],
+  },
+  {
+    nummer: 2,
+    titel: "Prüfungssimulation 2",
+    beschreibung: "Ambulante Pflege und Psychiatrie kombinieren.",
+    zeit: "90 Minuten",
+    faelle: [
+      {
+        titel: "Fall 3 – Sturzereignis bei Multipler Sklerose",
+        href: "/fallbeispiele/fall-multiple-sklerose-ambulant/",
+      },
+      {
+        titel: "Fall 4 – Erschöpfungssyndrom in der Psychiatrie",
+        href: "/fallbeispiele/fall-burnout-psychiatrie/",
+      },
+    ],
+  },
+  {
+    nummer: 3,
+    titel: "Prüfungssimulation 3",
+    beschreibung: "Zwei pädiatrische Fallsituationen als Trainingspaket.",
+    zeit: "90 Minuten",
+    faelle: [
+      {
+        titel: "Fall 5 – Mukoviszidose bei einem Kind",
+        href: "/fallbeispiele/fall-mukoviszidose-paediatrie/",
+      },
+      {
+        titel: "Fall 6 – Postoperative Pflege nach Darmoperation",
+        href: "/fallbeispiele/fall-ileus-paediatrie/",
+      },
+    ],
+  },
+  {
+    nummer: 4,
+    titel: "Prüfungssimulation 4",
+    beschreibung: "Palliative Versorgung mit zwei unterschiedlichen Schwerpunkten.",
+    zeit: "90 Minuten",
+    faelle: [
+      {
+        titel: "Fall 7 – Atemnot bei Herzinsuffizienz",
+        href: "/fallbeispiele/fall-herzinsuffizienz-palliative-versorgung/",
+      },
+      {
+        titel: "Fall 8 – Hoffnungslosigkeit in der palliativen Begleitung",
+        href: "/fallbeispiele/fall-palliativ-hoffnungslosigkeit/",
+      },
+    ],
+  },
+  {
+    nummer: 5,
+    titel: "Prüfungssimulation 5",
+    beschreibung: "Langzeitpflege und akute psychiatrische Situation kombinieren.",
+    zeit: "90 Minuten",
+    faelle: [
+      {
+        titel: "Fall 9 – Mobilität und Selbstversorgung bei Morbus Parkinson",
+        href: "/fallbeispiele/fall-parkinson-langzeitpflege/",
+      },
+      {
+        titel: "Fall 10 – Akute psychotische Episode",
+        href: "/fallbeispiele/fall-schizophrenie-akutpsychiatrie/",
+      },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="Prüfungssimulation – PraxisMaik"
+  description="Prüfungsnahe Kombinationen aus zwei Fallbeispielen zur Vorbereitung auf die Abschlussprüfung."
+>
+  <section class="section">
+    <h1>Prüfungssimulation</h1>
+
+    <p class="muted">
+      Trainiere zwei Fallsituationen am Stück, wie in einer echten Prüfung. Jede Simulation kombiniert zwei Fallbeispiele aus unterschiedlichen oder zusammengehörigen Einsatzbereichen.
+    </p>
+
+    <div class="simulation-grid">
+      {simulationen.map((simulation) => (
+        <div class="simulation-card">
+          <p class="simulation-number">Simulation {simulation.nummer}</p>
+          <h2>{simulation.titel}</h2>
+          <p>{simulation.beschreibung}</p>
+
+          <div class="simulation-meta">
+            <span>2 Fälle</span>
+            <span>{simulation.zeit}</span>
+          </div>
+
+          <div class="simulation-fall-list">
+            {simulation.faelle.map((fall) => (
+              <a class="simulation-fall-link" href={fall.href}>
+                {fall.titel}
+              </a>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

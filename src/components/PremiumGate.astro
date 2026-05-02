@@ -1,0 +1,96 @@
+---
+interface Props {
+  title?: string;
+  text?: string;
+  buttonText?: string;
+  buttonHref?: string;
+}
+
+const {
+  title = 'Premium-Inhalt',
+  text = 'Dieser Bereich ist nur mit Premium freigeschaltet.',
+  buttonText = 'Jetzt Premium freischalten',
+  buttonHref = '/premium'
+} = Astro.props;
+
+const gateId = `premium-gate-${Math.random().toString(36).slice(2, 10)}`;
+---
+
+<div class="premium-gate" id={gateId}>
+  <!-- FREIGESCHALTETER INHALT -->
+  <div data-state="unlocked" hidden>
+    <slot />
+  </div>
+
+  <!-- GESPERRTER INHALT -->
+  <div data-state="locked">
+    <div class="premium-gate__icon">🔒</div>
+    <h2>{title}</h2>
+    <p>{text}</p>
+    <a href={buttonHref} class="premium-gate__button">{buttonText}</a>
+  </div>
+</div>
+
+<script is:inline define:vars={{ gateId }}>
+  const STORAGE_KEY = 'praxismaik_premium';
+
+  const root = document.getElementById(gateId);
+
+  if (root) {
+    const locked = root.querySelector('[data-state="locked"]');
+    const unlocked = root.querySelector('[data-state="unlocked"]');
+
+    const isUnlocked = localStorage.getItem(STORAGE_KEY) === '1';
+
+    if (isUnlocked) {
+      if (locked) locked.hidden = true;
+      if (unlocked) unlocked.hidden = false;
+    } else {
+      if (locked) locked.hidden = false;
+      if (unlocked) unlocked.hidden = true;
+    }
+  }
+</script>
+
+<style>
+  .premium-gate {
+    margin-top: 2rem;
+  }
+
+  .premium-gate [data-state="unlocked"] {
+    margin-bottom: 1rem;
+  }
+
+  .premium-gate [data-state="locked"] {
+    padding: 1.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    background: #f9fafb;
+    text-align: center;
+  }
+
+  .premium-gate__icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .premium-gate h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.4rem;
+  }
+
+  .premium-gate p {
+    margin: 0 0 1rem;
+    color: #4b5563;
+  }
+
+  .premium-gate__button {
+    display: inline-block;
+    padding: 0.8rem 1.2rem;
+    border-radius: 10px;
+    background: #111827;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+  }
+</style>

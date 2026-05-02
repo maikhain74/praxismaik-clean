@@ -1,0 +1,176 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const pageTags = [
+  "hygiene",
+  "infektionsschutz",
+  "praevention",
+  "medikamente",
+  "pflege"
+];
+
+const allThemen = await getCollection("themen");
+
+const relatedThemen = allThemen
+  .filter((item) => (item.data.tags ?? []).length > 0)
+  .map((item) => {
+    const itemTags = item.data.tags ?? [];
+    const sharedTags = itemTags.filter((tag) => pageTags.includes(tag));
+
+    return {
+      ...item,
+      sharedCount: sharedTags.length,
+    };
+  })
+  .filter((item) => item.sharedCount > 0)
+  .sort((a, b) => b.sharedCount - a.sharedCount)
+  .slice(0, 4);
+
+const allLernskripte = await getCollection("lernskripte");
+
+const relatedLernskripte = allLernskripte
+  .filter((item) => (item.data.tags ?? []).length > 0)
+  .map((item) => {
+    const itemTags = item.data.tags ?? [];
+    const sharedTags = itemTags.filter((tag) => pageTags.includes(tag));
+
+    return {
+      ...item,
+      sharedCount: sharedTags.length,
+    };
+  })
+  .filter((item) => item.sharedCount > 0)
+  .sort((a, b) => b.sharedCount - a.sharedCount)
+  .slice(0, 3);
+---
+
+<BaseLayout
+  title="Hygiene, Prävention und Medikamente"
+  description="Prüfungsfragen zu Hygiene, Prävention, 10-R-Regel und Umgang mit Betäubungsmitteln."
+>
+  <section class="exam-detail-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Start</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="/pruefung/">Prüfung</a>
+      <span class="breadcrumb-sep">›</span>
+      <span class="current">Hygiene, Prävention und Medikamente</span>
+    </nav>
+
+    <h1>Hygiene, Prävention und Medikamente</h1>
+    <p class="muted">
+      Typische Prüfungsfragen zu Infektionsschutz, Präventionsarten und sicherem Medikamentenumgang.
+    </p>
+
+    <details class="exam-question">
+      <summary>1. Wie wird der Begriff Hygiene definiert, welche Aufgabengebiete gibt es und welche Übertragungswege sind relevant?</summary>
+      <div class="quiz-answer">
+        Hygiene umfasst alle Maßnahmen zur Erhaltung der Gesundheit sowie zur Verhütung und Bekämpfung von Krankheiten, insbesondere Infektionen.
+        <br /><br />
+        Wichtige Aufgabengebiete sind:
+        <ul>
+          <li>Personalhygiene</li>
+          <li>Umgebungshygiene</li>
+          <li>Krankenhaushygiene</li>
+          <li>Lebensmittelhygiene</li>
+          <li>Infektionshygiene</li>
+        </ul>
+        <br />
+        Relevante Übertragungswege sind:
+        <ul>
+          <li>Kontaktübertragung</li>
+          <li>Tröpfchenübertragung</li>
+          <li>aerogene Übertragung</li>
+          <li>Schmierinfektion</li>
+          <li>Übertragung über kontaminierte Gegenstände</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="exam-question">
+      <summary>2. Was versteht man unter Prävention?</summary>
+      <div class="quiz-answer">
+        Prävention umfasst alle Maßnahmen, die dazu dienen, Krankheiten, gesundheitliche Schäden oder deren Folgen zu verhindern, zu verzögern oder zu verringern.
+        <br /><br />
+        Ziel ist es, Gesundheit zu fördern und Risiken frühzeitig zu erkennen oder zu vermeiden.
+      </div>
+    </details>
+
+    <details class="exam-question">
+      <summary>3. Worin unterscheiden sich Primär-, Sekundär- und Tertiärprävention?</summary>
+      <div class="quiz-answer">
+        <strong>Primärprävention</strong> soll das Entstehen einer Krankheit verhindern, zum Beispiel durch Impfungen oder Gesundheitsförderung.
+        <br /><br />
+        <strong>Sekundärprävention</strong> dient der Früherkennung von Krankheiten, um sie frühzeitig zu behandeln, zum Beispiel durch Screenings.
+        <br /><br />
+        <strong>Tertiärprävention</strong> soll Folgeschäden, Rückfälle oder Verschlechterungen bei bereits bestehender Erkrankung vermeiden.
+      </div>
+    </details>
+
+    <details class="exam-question">
+      <summary>4. Was besagt die 10-R-Regel in der Pflege?</summary>
+      <div class="quiz-answer">
+        Die 10-R-Regel beschreibt wichtige Sicherheitsprinzipien bei der Medikamentengabe.
+        <br /><br />
+        Dazu gehören:
+        <ol>
+          <li>richtiger Patient</li>
+          <li>richtiges Medikament</li>
+          <li>richtige Dosierung</li>
+          <li>richtiger Zeitpunkt</li>
+          <li>richtiger Applikationsweg</li>
+          <li>richtige Dokumentation</li>
+          <li>richtige Indikation</li>
+          <li>richtige Wirkung</li>
+          <li>richtige Aufbewahrung</li>
+          <li>richtige Information des Patienten</li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="exam-question">
+      <summary>5. Wie erfolgt der sachgerechte Umgang mit Betäubungsmitteln?</summary>
+      <div class="quiz-answer">
+        Der Umgang mit Betäubungsmitteln erfolgt besonders streng und nachvollziehbar.
+        <br /><br />
+        Wichtige Punkte sind:
+        <ul>
+          <li>verschlossene und sichere Aufbewahrung</li>
+          <li>lückenlose Dokumentation</li>
+          <li>regelmäßige Bestandskontrolle</li>
+          <li>Vier-Augen-Prinzip bei Entnahme oder Kontrolle</li>
+          <li>korrekte Übergabe und Nachweis</li>
+        </ul>
+      </div>
+    </details>
+
+    {relatedThemen.length > 0 ? (
+      <section class="related-topics">
+        <h2>Passende Themen</h2>
+        <div class="related-topics-grid">
+          {relatedThemen.map((item) => (
+            <a class="related-topic-card" href={`/themen/${item.slug}/`}>
+              <h3>{item.data.title}</h3>
+              {item.data.description ? <p>{item.data.description}</p> : null}
+            </a>
+          ))}
+        </div>
+      </section>
+    ) : null}
+
+    {relatedLernskripte.length > 0 ? (
+      <section class="related-topics">
+        <h2>Passende Lernskripte</h2>
+        <div class="related-topics-grid">
+          {relatedLernskripte.map((item) => (
+            <a class="related-topic-card" href={`/lernskripte/${item.slug}/`}>
+              <h3>{item.data.title}</h3>
+              {item.data.description ? <p>{item.data.description}</p> : null}
+            </a>
+          ))}
+        </div>
+      </section>
+    ) : null}
+  </section>
+</BaseLayout>

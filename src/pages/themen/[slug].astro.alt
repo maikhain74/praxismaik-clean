@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const themen = await getCollection('themen');
+
+  console.log("THEMEN-SLUGS:", themen.map((t) => t.slug));
+
+  return themen.map((t) => ({
+    params: { slug: t.slug },
+    props: { thema: t },
+  }));
+}
+
+const { thema } = Astro.props;
+---
+
+<BaseLayout title={thema.data.title}>
+  <section class="container">
+    <h1>{thema.data.title}</h1>
+    <p>Slug: {thema.slug}</p>
+    <p>{thema.data.description}</p>
+  </section>
+</BaseLayout>

@@ -1,0 +1,41 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const themen = await getCollection("themen");
+
+const items = themen
+  .filter((t) => t.slug.toLowerCase().startsWith("expertenstandards/"))
+  .sort((a, b) => (a.data.order ?? 999) - (b.data.order ?? 999));
+---
+
+<BaseLayout
+  title="Expertenstandards"
+  description="Alle Expertenstandards im Überblick."
+>
+  <section class="category-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Start</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="/themen/">Themen</a>
+      <span class="breadcrumb-sep">›</span>
+      <span class="current">Expertenstandards</span>
+    </nav>
+
+    <h1>Expertenstandards</h1>
+    <p class="muted">Alle Inhalte aus dem Bereich Expertenstandards.</p>
+
+    {items.length === 0 ? (
+      <p class="muted">Noch keine Inhalte in diesem Bereich.</p>
+    ) : (
+      <div class="topic-grid" style="margin-top:20px;">
+        {items.map((item) => (
+          <a class="topic-card" href={`/themen/${item.slug}/`}>
+            <h3>{item.data.title}</h3>
+            {item.data.description ? <p>{item.data.description}</p> : null}
+          </a>
+        ))}
+      </div>
+    )}
+  </section>
+</BaseLayout>

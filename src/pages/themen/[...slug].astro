@@ -1,0 +1,600 @@
+---
+export const prerender = true;
+
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+export async function getStaticPaths() {
+  const themen = await getCollection("themen");
+  const lernskripte = await getCollection("lernskripte");
+  const pruefung = await getCollection("pruefung");
+  const quiz = await getCollection("quiz");
+  const examQuiz = await getCollection("examQuiz");
+
+  return themen.map((thema) => {
+    const slugParts = thema.slug.split("/");
+    const topicKey = slugParts[slugParts.length - 1];
+
+    const skripteZumThema = lernskripte
+      .filter((item) => item.data.topic === thema.slug || item.data.topic === topicKey)
+      .sort((a, b) => (a.data.reihenfolge ?? 999) - (b.data.reihenfolge ?? 999));
+
+    const pruefungZumThema = pruefung
+      .filter((item) => item.data.topic === thema.slug || item.data.topic === topicKey)
+      .sort((a, b) => (a.data.reihenfolge ?? 999) - (b.data.reihenfolge ?? 999));
+
+    const quizZumThema = quiz
+      .filter((item) => item.data.topic === thema.slug || item.data.topic === topicKey);
+
+    const examQuizZumThema = examQuiz
+      .filter((item) => item.data.topic === thema.slug || item.data.topic === topicKey);
+
+    return {
+      params: { slug: thema.slug },
+      props: {
+        thema,
+        skripteZumThema,
+        pruefungZumThema,
+        quizZumThema,
+        examQuizZumThema,
+      },
+    };
+  });
+}
+
+const {
+  thema,
+  skripteZumThema,
+  pruefungZumThema,
+  quizZumThema,
+  examQuizZumThema,
+} = Astro.props;
+
+if (!thema) {
+  throw new Error("Thema nicht gefunden.");
+}
+
+const { Content } = await render(thema);
+
+const slugParts = thema.slug.split("/");
+const topicKey = slugParts[slugParts.length - 1];
+const isCategoryPage = slugParts.length === 1;
+
+const premiumSkripte = skripteZumThema.filter((item) => item.data.premium === true).length;
+const premiumPruefung = pruefungZumThema.filter((item) => item.data.premium === true).length;
+const premiumExamQuiz = examQuizZumThema.filter((item) => item.data.premium === true).length;
+---
+
+<BaseLayout
+  title={thema.data.title}
+  description={thema.data.beschreibung ?? `${thema.data.title} auf PraxisMaik`}
+>
+  <section class="topic-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Start</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="/themen/">Themen</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>{thema.data.title}</span>
+    </nav>
+
+    <header class="topic-hero">
+      <span class="topic-eyebrow">Themenbereich</span>
+      <h1>{thema.data.title}</h1>
+      <p class="topic-intro">
+        {thema.data.beschreibung ?? "Zu diesem Thema findest du Lernskripte, Prüfungsfälle und passende Quiz-Inhalte."}
+      </p>
+
+      <div class="topic-stats">
+        <div class="topic-stat">
+          <strong>{skripteZumThema.length}</strong>
+          <span>Lernskripte</span>
+        </div>
+        <div class="topic-stat">
+          <strong>{pruefungZumThema.length}</strong>
+          <span>Prüfungsfälle</span>
+        </div>
+        <div class="topic-stat">
+          <strong>{quizZumThema.length}</strong>
+          <span>Quizfragen</span>
+        </div>
+        <div class="topic-stat">
+          <strong>{examQuizZumThema.length}</strong>
+          <span>Examensfragen</span>
+        </div>
+      </div>
+    </header>
+
+    {!isCategoryPage && (
+      <article class="topic-content">
+        <Content />
+      </article>
+    )}
+
+    <section class="topic-section">
+      <div class="section-head">
+        <div>
+          <h2>Lernskripte zum Thema</h2>
+          <p class="section-intro-text">
+            Kompakt, strukturiert und auf das Wesentliche fokussiert.
+          </p>
+        </div>
+      </div>
+
+      {skripteZumThema.length === 0 ? (
+        <p class="empty-text">Zu diesem Thema sind noch keine Lernskripte vorhanden.</p>
+      ) : (
+        <div class="topic-grid">
+          {skripteZumThema.map((item) => {
+            const isPremium = item.data.premium === true;
+
+            return (
+              <a class={`topic-card ${isPremium ? "topic-card-premium" : "topic-card-free"}`} href={`/lernskripte/${item.slug}/`}>
+                <div class="topic-card-top">
+                  {isPremium ? (
+                    <span class="card-badge card-badge-premium">🔒 Premium</span>
+                  ) : (
+                    <span class="card-badge card-badge-free">Kostenlos</span>
+                  )}
+
+                  {typeof item.data.reihenfolge === "number" && (
+                    <span class="card-step">Schritt {item.data.reihenfolge}</span>
+                  )}
+                </div>
+
+                <h3>{item.data.title}</h3>
+                <p>{item.data.beschreibung ?? "Kein Beschreibungstext vorhanden."}</p>
+
+                {isPremium ? (
+                  <div class="premium-hint">
+                    <strong>Nur Vorschau frei</strong>
+                    <span>Kompletter Inhalt nur mit Premium</span>
+                  </div>
+                ) : (
+                  <div class="free-hint">
+                    <strong>Direkt verfügbar</strong>
+                    <span>Ohne Freischaltung lesbar</span>
+                  </div>
+                )}
+
+                <span class="topic-card-link-text">
+                  {isPremium ? "Vorschau öffnen" : "Lernskript öffnen"}
+                </span>
+              </a>
+            );
+          })}
+        </div>
+      )}
+    </section>
+
+    <section class="topic-section">
+      <div class="section-head">
+        <div>
+          <h2>Prüfungsfälle zum Thema</h2>
+          <p class="section-intro-text">
+            Wende das Gelernte in typischen Prüfungssituationen an.
+          </p>
+        </div>
+      </div>
+
+      {pruefungZumThema.length === 0 ? (
+        <p class="empty-text">Zu diesem Thema sind noch keine Prüfungsfälle vorhanden.</p>
+      ) : (
+        <div class="topic-grid">
+          {pruefungZumThema.map((item) => {
+            const isPremium = item.data.premium === true;
+
+            return (
+              <a class={`topic-card ${isPremium ? "topic-card-premium" : "topic-card-free"}`} href={`/pruefung/${item.slug}/`}>
+                <div class="topic-card-top">
+                  {isPremium ? (
+                    <span class="card-badge card-badge-premium">🔒 Premium</span>
+                  ) : (
+                    <span class="card-badge card-badge-free">Kostenlos</span>
+                  )}
+
+                  {typeof item.data.reihenfolge === "number" && (
+                    <span class="card-step">Fall {item.data.reihenfolge}</span>
+                  )}
+                </div>
+
+                <h3>{item.data.title}</h3>
+                <p>{item.data.beschreibung ?? "Kein Beschreibungstext vorhanden."}</p>
+
+                {isPremium ? (
+                  <div class="premium-hint">
+                    <strong>Die Lösung ist gesperrt</strong>
+                    <span>Komplette Denkstruktur und Prüfungsantwort nur mit Premium</span>
+                  </div>
+                ) : (
+                  <div class="free-hint">
+                    <strong>Direkt verfügbar</strong>
+                    <span>Ohne Freischaltung lesbar</span>
+                  </div>
+                )}
+
+                <span class="topic-card-link-text">
+                  {isPremium ? "Vorschau öffnen" : "Prüfungsfall öffnen"}
+                </span>
+              </a>
+            );
+          })}
+        </div>
+      )}
+    </section>
+
+    <section class="topic-section">
+      <div class="section-head">
+        <div>
+          <h2>Quiz zum Thema</h2>
+          <p class="section-intro-text">
+            Festige dein Wissen direkt im Quizmodus.
+          </p>
+        </div>
+      </div>
+
+      <div class="topic-grid">
+        <a class="topic-card topic-card-free" href={`/quiz?topic=${encodeURIComponent(topicKey)}`}>
+          <div class="topic-card-top">
+            <span class="card-badge card-badge-free">Kostenlos</span>
+          </div>
+          <h3>Quiz starten</h3>
+          <p>Frage für Frage wiederholen und dein Wissen direkt prüfen.</p>
+          <div class="free-hint">
+            <strong>Direkt verfügbar</strong>
+            <span>Ohne Freischaltung nutzbar</span>
+          </div>
+          <span class="topic-card-link-text">
+            {quizZumThema.length > 0 ? `${quizZumThema.length} Quizfragen verfügbar` : "Zum Quiz"}
+          </span>
+        </a>
+
+  <a class="topic-card topic-card-premium" href={`/quiz-exam?topic=${encodeURIComponent(topicKey)}`}>
+  <div class="topic-card-top">
+    <span class="card-badge card-badge-premium">🔒 Premium</span>
+  </div>
+
+  <h3>Examensquiz</h3>
+  <p>Prüfungsnah trainieren mit Auswahlantworten und realistischem Format.</p>
+
+  <div class="premium-hint">
+    <strong>Prüfungsmodus gesperrt</strong>
+    <span>Examensfragen und vertieftes Training nur mit Premium</span>
+  </div>
+
+  <span class="topic-card-link-text">
+    {examQuizZumThema.length > 0 
+      ? `${examQuizZumThema.length} Examensfragen verfügbar` 
+      : "Zum Examensquiz"}
+  </span>
+</a>
+      </div>
+    </section>
+
+    <section class="topic-section">
+      <div class="section-head">
+        <div>
+          <h2>Nächster sinnvoller Schritt</h2>
+          <p class="section-intro-text">
+            Nach dem Thema direkt anwenden und wiederholen.
+          </p>
+        </div>
+      </div>
+
+      <div class="topic-grid">
+        <a class="topic-card topic-card-free" href={`/quiz?topic=${encodeURIComponent(topicKey)}`}>
+          <div class="topic-card-top">
+            <span class="card-badge card-badge-free">Kostenlos</span>
+          </div>
+          <h3>Mit dem Quiz weitermachen</h3>
+          <p>Prüfe direkt, ob die wichtigsten Inhalte schon sitzen.</p>
+          <div class="free-hint">
+            <strong>Direkt verfügbar</strong>
+            <span>Ohne Freischaltung nutzbar</span>
+          </div>
+          <span class="topic-card-link-text">Zum Quiz</span>
+        </a>
+
+        <a class="topic-card topic-card-free" href="/lernskripte">
+          <div class="topic-card-top">
+            <span class="card-badge card-badge-free">Übersicht</span>
+          </div>
+          <h3>Weitere Lernskripte ansehen</h3>
+          <p>Springe zurück in die Übersicht und lerne themenübergreifend weiter.</p>
+          <div class="free-hint">
+            <strong>Weiterlernen</strong>
+            <span>Alle Themen und Lernskripte im Überblick</span>
+          </div>
+          <span class="topic-card-link-text">Zur Übersicht</span>
+        </a>
+      </div>
+    </section>
+  </section>
+</BaseLayout>
+
+<style>
+.topic-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.2rem 1rem 3rem;
+}
+
+.breadcrumbs {
+  margin-bottom: 1.2rem;
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.breadcrumbs a {
+  color: #18324a;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-sep {
+  margin: 0 0.4rem;
+}
+
+.topic-hero {
+  max-width: 760px;
+  margin-bottom: 2rem;
+}
+
+.topic-eyebrow {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: #eef5ff;
+  color: #18324a;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.topic-hero h1 {
+  margin: 0 0 0.7rem;
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  line-height: 1.12;
+}
+
+.topic-intro {
+  margin: 0;
+  color: #5b6b7a;
+  line-height: 1.7;
+  max-width: 62ch;
+}
+
+.topic-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 1.4rem;
+}
+
+.topic-stat {
+  min-width: 120px;
+  padding: 0.9rem 1rem;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+}
+
+.topic-stat strong {
+  display: block;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  color: #18324a;
+}
+
+.topic-stat span {
+  display: block;
+  margin-top: 0.25rem;
+  color: #5b6b7a;
+  font-size: 0.92rem;
+}
+
+.topic-content {
+  margin: 0 0 2.5rem;
+  padding: 1.5rem;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  line-height: 1.8;
+}
+
+.topic-content :global(h2),
+.topic-content :global(h3),
+.topic-content :global(h4) {
+  margin-top: 2rem;
+  line-height: 1.3;
+}
+
+.topic-content :global(p),
+.topic-content :global(li) {
+  line-height: 1.8;
+}
+
+.topic-content :global(ul),
+.topic-content :global(ol) {
+  padding-left: 1.4rem;
+}
+
+.topic-section + .topic-section {
+  margin-top: 2.8rem;
+}
+
+.section-head {
+  margin-bottom: 1rem;
+}
+
+.section-head h2 {
+  margin: 0 0 0.35rem;
+}
+
+.section-intro-text {
+  margin: 0;
+  color: #5b6b7a;
+  line-height: 1.6;
+}
+
+.empty-text {
+  margin: 0;
+  color: #5b6b7a;
+  line-height: 1.6;
+}
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+}
+
+.topic-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  min-height: 250px;
+  padding: 1.25rem;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  text-decoration: none;
+  color: inherit !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  overflow: hidden;
+}
+
+.topic-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(24, 50, 74, 0.08);
+  border-color: #cfdceb;
+  text-decoration: none;
+}
+
+.topic-card-premium {
+  border-color: rgba(154, 52, 18, 0.22);
+  background: linear-gradient(180deg, #fffaf6 0%, #ffffff 100%);
+}
+
+.topic-card-premium::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 70px;
+  background: linear-gradient(to top, rgba(255, 244, 232, 0.9), rgba(255, 244, 232, 0));
+  pointer-events: none;
+}
+
+.topic-card-free {
+  border-color: rgba(22, 101, 52, 0.15);
+}
+
+.topic-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.card-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.card-badge-premium {
+  background: #fff4e8;
+  color: #9a3412;
+}
+
+.card-badge-free {
+  background: #ecfdf5;
+  color: #166534;
+}
+
+.card-step {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  background: #f5f7fb;
+  color: #556270;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.topic-card h3 {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.35;
+}
+
+.topic-card p {
+  margin: 0;
+  color: #556270;
+  line-height: 1.6;
+}
+
+.premium-hint,
+.free-hint {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.8rem 0.9rem;
+  border-radius: 14px;
+  margin-top: 0.1rem;
+}
+
+.premium-hint {
+  background: rgba(255, 244, 232, 0.95);
+  border: 1px solid rgba(154, 52, 18, 0.14);
+}
+
+.free-hint {
+  background: rgba(236, 253, 245, 0.95);
+  border: 1px solid rgba(22, 101, 52, 0.12);
+}
+
+.premium-hint strong,
+.free-hint strong {
+  font-size: 0.92rem;
+  line-height: 1.2;
+  color: #18324a;
+}
+
+.premium-hint span,
+.free-hint span {
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: #5b6b7a;
+}
+
+.topic-card-link-text {
+  position: relative;
+  z-index: 1;
+  margin-top: auto;
+  font-weight: 700;
+  color: #18324a;
+}
+
+@media (max-width: 900px) {
+  .topic-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>

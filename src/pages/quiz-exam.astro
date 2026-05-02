@@ -1,0 +1,873 @@
+---
+export const prerender = false;
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import PremiumGate from "../components/PremiumGate.astro";
+
+const examEntries = await getCollection("examQuiz");
+
+const isLocalhost =
+  Astro.url.hostname === "localhost" || Astro.url.hostname === "127.0.0.1";
+
+const devUnlock =
+  Astro.url.searchParams.get("freischalten") === "1" && isLocalhost;
+
+const hasPremiumCookie =
+  Astro.cookies.get("praxismaik_premium")?.value === "1";
+const examQuestions = examEntries.map((entry) => ({
+  id: entry.id,
+  slug: entry.slug,
+  question: entry.data.question,
+  answers: entry.data.answers,
+  correctAnswer: entry.data.correctAnswer,
+  explanation: entry.data.explanation || "",
+  topic: entry.data.topic || "Allgemein",
+  difficulty: entry.data.difficulty || "",
+  premium: entry.data.premium === true,
+}));
+
+const visibleQuestions = (devUnlock || hasPremiumCookie)
+  ? examQuestions
+  : examQuestions.filter((question) => !question.premium);
+
+const freeQuestionCount = examQuestions.filter((question) => !question.premium).length;
+const premiumQuestionCount = examQuestions.filter((question) => question.premium).length;
+
+const availableModes = [
+  { count: 20, label: "20 Fragen, 25 Minuten" },
+  { count: 40, label: "40 Fragen, 45 Minuten" },
+  { count: 60, label: "60 Fragen, 60 Minuten" },
+].filter((mode) => visibleQuestions.length >= mode.count);
+
+const hasVisibleQuestions = visibleQuestions.length > 0;
+const hasEnoughForExam = availableModes.length > 0;
+---
+
+<BaseLayout
+  title="Examensmodus Pflege"
+  description="Simuliere deine Abschlussprüfung mit 20, 40 oder 60 Fragen unter Zeitdruck."
+>
+  <section class="quiz-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Start</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="/quiz">Quiz</a>
+      <span class="breadcrumb-sep">›</span>
+      <span class="current">Examensmodus</span>
+    </nav>
+
+    {devUnlock && (
+      <div class="dev-box">
+        Testmodus aktiv, alle Examensfragen sind lokal freigeschaltet.
+      </div>
+    )}
+
+{hasPremiumCookie && !devUnlock && (
+  <div class="dev-box">
+    Premium ist aktiv, alle Examensfragen sind freigeschaltet.
+  </div>
+)}
+
+    {!hasVisibleQuestions ? (
+      <div class="exam-card">
+        <div class="exam-label">Premium-Prüfungssimulation</div>
+        <h1>Examensmodus</h1>
+        <p class="muted">
+          Aktuell sind keine kostenlosen Examensfragen verfügbar.
+        </p>
+
+        <PremiumGate
+          title="Examensmodus nur mit Premium"
+          text="Die vollständige Prüfungssimulation mit allen Examensfragen ist nur für Premium freigeschaltet."
+          buttonText="Premium freischalten"
+          buttonHref="/premium"
+        />
+      </div>
+    ) : !hasEnoughForExam ? (
+      <div class="exam-card">
+        <div class="exam-label">Prüfungssimulation</div>
+        <h1>Examensmodus</h1>
+        <p class="muted">
+          Aktuell sind {visibleQuestions.length} sichtbare Examensfragen verfügbar.
+          Für den Examensmodus brauchst du mindestens 20 Fragen.
+        </p>
+
+        {!devUnlock && premiumQuestionCount > 0 && (
+          <PremiumGate
+            title="Mehr Examensfragen mit Premium"
+            text={`Du hast aktuell ${freeQuestionCount} kostenlose Frage${freeQuestionCount === 1 ? "" : "n"} sichtbar. Mit Premium werden weitere Fragen freigeschaltet.`}
+            buttonText="Premium freischalten"
+            buttonHref="/premium"
+          />
+        )}
+      </div>
+    ) : (
+      <>
+        <div id="setup-screen" class="exam-card">
+          <div class="exam-label">Prüfungssimulation</div>
+          <h1>Examensmodus</h1>
+          <p class="muted">
+            Simuliere deine Abschlussprüfung unter Zeitdruck. Die Auswertung erscheint erst am Ende.
+          </p>
+
+          {!devUnlock && premiumQuestionCount > 0 && (
+            <div class="notice-box">
+              Kostenlos sichtbar: {freeQuestionCount} Frage{freeQuestionCount === 1 ? "" : "n"}.
+              Premium-Fragen bleiben gesperrt.
+            </div>
+          )}
+
+          <div class="count-grid">
+            {availableModes.map((mode, index) => (
+              <button
+                class={`count-btn ${index === 0 ? "active" : ""}`}
+                data-count={String(mode.count)}
+                type="button"
+              >
+                {mode.label}
+              </button>
+            ))}
+          </div>
+
+          <p class="muted">Bestehensgrenze: 60 %</p>
+
+          <button id="start-exam-btn" class="primary-btn" type="button">
+            Prüfung jetzt starten
+          </button>
+        </div>
+
+        <div id="exam-screen" class="exam-card" hidden>
+          <div class="top-row">
+            <div id="question-status" class="exam-label">Frage 1 von 20</div>
+            <div id="timer" class="exam-label">25:00</div>
+          </div>
+
+          <div class="progress">
+            <div id="progress-fill" class="progress-fill"></div>
+          </div>
+
+          <p id="question-topic" class="muted">Thema</p>
+          <h2 id="question-text">Frage wird geladen...</h2>
+
+          <div id="answers-container" class="answers"></div>
+
+          <button id="next-question-btn" class="primary-btn" type="button">Weiter</button>
+        </div>
+
+        <div id="result-screen" class="exam-card" hidden>
+          <div class="exam-label">Auswertung</div>
+          <h2>Prüfung beendet</h2>
+
+          <div id="result-badge" class="result-badge">Ergebnis</div>
+
+          <div class="summary-grid">
+            <div class="summary-card">
+              <strong>Punkte</strong>
+              <p id="result-score">0 von 0</p>
+            </div>
+            <div class="summary-card">
+              <strong>Prozent</strong>
+              <p id="result-percent">0 %</p>
+            </div>
+            <div class="summary-card">
+              <strong>Fehlerfragen</strong>
+              <p id="result-wrong">0</p>
+            </div>
+          </div>
+
+          <p id="result-text"></p>
+          <p id="result-advice" class="muted"></p>
+          <div id="topic-analysis"></div>
+          <div id="adaptive-recommendation"></div>
+          <div id="wrong-answers-review"></div>
+
+          <div class="action-row">
+            <a href="/quiz-fehler" class="secondary-link">Fehlerfragen wiederholen</a>
+            <button id="restart-btn" class="primary-btn" type="button">Neue Prüfung starten</button>
+          </div>
+        </div>
+      </>
+    )}
+  </section>
+
+  <script is:inline define:vars={{ visibleQuestions, availableModes }}>
+    document.addEventListener("DOMContentLoaded", function () {
+      const STORAGE_KEY = "wrong-quiz-questions";
+
+      const allQuestions = Array.isArray(visibleQuestions) ? visibleQuestions : [];
+      const examModes = Array.isArray(availableModes) ? availableModes : [];
+
+      const setupScreen = document.getElementById("setup-screen");
+      const examScreen = document.getElementById("exam-screen");
+      const resultScreen = document.getElementById("result-screen");
+
+      const startExamBtn = document.getElementById("start-exam-btn");
+      const nextQuestionBtn = document.getElementById("next-question-btn");
+      const restartBtn = document.getElementById("restart-btn");
+
+      const countButtons = Array.from(document.querySelectorAll(".count-btn"));
+
+      const questionStatus = document.getElementById("question-status");
+      const timerEl = document.getElementById("timer");
+      const questionTopic = document.getElementById("question-topic");
+      const questionText = document.getElementById("question-text");
+      const answersContainer = document.getElementById("answers-container");
+      const progressFill = document.getElementById("progress-fill");
+
+      const resultBadge = document.getElementById("result-badge");
+      const resultScore = document.getElementById("result-score");
+      const resultPercent = document.getElementById("result-percent");
+      const resultWrong = document.getElementById("result-wrong");
+      const resultText = document.getElementById("result-text");
+      const resultAdvice = document.getElementById("result-advice");
+      const topicAnalysis = document.getElementById("topic-analysis");
+      const adaptiveRecommendation = document.getElementById("adaptive-recommendation");
+      const wrongAnswersReview = document.getElementById("wrong-answers-review");
+
+      if (!setupScreen || !examScreen || !resultScreen || !progressFill) {
+        return;
+      }
+
+      let selectedQuestionCount = examModes.length ? Number(examModes[0].count) : 20;
+      let selectedQuestionIndex = 0;
+      let activeQuestions = [];
+      let userAnswers = [];
+      let timeRemaining = 25 * 60;
+      let timerInterval = null;
+
+      function shuffleArray(array) {
+        const copy = [...array];
+        for (let i = copy.length - 1; i > 0; i -= 1) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [copy[i], copy[j]] = [copy[j], copy[i]];
+        }
+        return copy;
+      }
+
+      function formatTopicLabel(topic) {
+        const value = String(topic || "").trim().toLowerCase();
+
+        const topicLabels = {
+          anatomie: "Anatomie",
+          atmung: "Atmung",
+          demenz: "Demenz",
+          dokumentation: "Dokumentation",
+          ernaehrung: "Ernährung",
+          hygiene: "Hygiene",
+          kommunikation: "Kommunikation",
+          kreislauf: "Kreislauf",
+          medikation: "Medikation",
+          mobilisation: "Mobilisation",
+          mobilitaet: "Mobilität",
+          neurologie: "Neurologie",
+          notfall: "Notfall",
+          notfaelle: "Notfälle",
+          palliativ: "Palliativ",
+          "palliativ-care": "Palliativ-Care",
+          pflegeprozess: "Pflegeprozess",
+          prioritaet: "Priorität",
+          prophylaxe: "Prophylaxe",
+          psychiatrie: "Psychiatrie",
+          schmerz: "Schmerz",
+          sicherheit: "Sicherheit",
+          "sterben-tod-trauer": "Sterben-Tod-Trauer",
+          vitalzeichen: "Vitalzeichen",
+          wundversorgung: "Wundversorgung"
+        };
+
+        if (topicLabels[value]) {
+          return topicLabels[value];
+        }
+
+        return value
+          .split("-")
+          .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+          .join("-");
+      }
+
+      function getExamTime(questionCount) {
+        if (questionCount === 20) return 25 * 60;
+        if (questionCount === 40) return 45 * 60;
+        if (questionCount === 60) return 60 * 60;
+        return 25 * 60;
+      }
+
+      function formatTime(seconds) {
+        const minutes = Math.floor(seconds / 60);
+        const remainingSeconds = seconds % 60;
+        return minutes + ":" + String(remainingSeconds).padStart(2, "0");
+      }
+
+      function updateTimerDisplay() {
+        if (timerEl) {
+          timerEl.textContent = formatTime(timeRemaining);
+        }
+      }
+
+      function updateProgress() {
+        const percent = activeQuestions.length
+          ? (selectedQuestionIndex / activeQuestions.length) * 100
+          : 0;
+        progressFill.style.width = percent + "%";
+      }
+
+      function renderQuestion() {
+        const question = activeQuestions[selectedQuestionIndex];
+        if (!question || !questionStatus || !questionTopic || !questionText || !answersContainer || !nextQuestionBtn) {
+          return;
+        }
+
+        questionStatus.textContent =
+          "Frage " + (selectedQuestionIndex + 1) + " von " + activeQuestions.length;
+        questionTopic.textContent = "Thema: " + formatTopicLabel(question.topic || "Allgemein");
+        questionText.textContent = question.question;
+
+        const selectedAnswer = userAnswers[selectedQuestionIndex] || "";
+        answersContainer.innerHTML = "";
+
+        question.answers.forEach((answer) => {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "answer-btn";
+          btn.textContent = answer;
+
+          if (selectedAnswer === answer) {
+            btn.classList.add("selected");
+          }
+
+          btn.addEventListener("click", function () {
+            userAnswers[selectedQuestionIndex] = answer;
+
+            answersContainer
+              .querySelectorAll(".answer-btn")
+              .forEach((button) => button.classList.remove("selected"));
+
+            btn.classList.add("selected");
+          });
+
+          answersContainer.appendChild(btn);
+        });
+
+        nextQuestionBtn.textContent =
+          selectedQuestionIndex === activeQuestions.length - 1
+            ? "Prüfung beenden"
+            : "Weiter";
+
+        updateProgress();
+      }
+
+      function startTimer() {
+        clearInterval(timerInterval);
+        updateTimerDisplay();
+
+        timerInterval = setInterval(function () {
+          timeRemaining -= 1;
+          updateTimerDisplay();
+
+          if (timeRemaining <= 0) {
+            clearInterval(timerInterval);
+            finishExam(true);
+          }
+        }, 1000);
+      }
+
+      function saveWrongQuestions(wrongQuestions) {
+        let existing = [];
+
+        try {
+          const raw = localStorage.getItem(STORAGE_KEY);
+          existing = raw ? JSON.parse(raw) : [];
+        } catch (error) {
+          existing = [];
+        }
+
+        const merged = Array.isArray(existing) ? [...existing] : [];
+        const seen = new Set(
+          merged.map((item) => item?.id || item?.slug || item?.question || "")
+        );
+
+        wrongQuestions.forEach((question) => {
+          const key = question.id || question.slug || question.question;
+          if (!key || seen.has(key)) return;
+
+          merged.push({
+            id: question.id,
+            slug: question.slug,
+            question: question.question,
+            answer: question.correctAnswer,
+            topic: question.topic,
+            difficulty: question.difficulty
+          });
+
+          seen.add(key);
+        });
+
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(merged));
+      }
+
+      function renderTopicAnalysis(wrongQuestions) {
+        if (!topicAnalysis) return;
+
+        const topicCounts = {};
+
+        wrongQuestions.forEach((q) => {
+          const topic = q.topic || "Allgemein";
+          topicCounts[topic] = (topicCounts[topic] || 0) + 1;
+        });
+
+        const sortedTopics = Object.entries(topicCounts)
+          .sort((a, b) => b[1] - a[1])
+          .slice(0, 3);
+
+        if (!sortedTopics.length) {
+          topicAnalysis.innerHTML = "";
+          return;
+        }
+
+        topicAnalysis.innerHTML =
+          "<strong>Deine schwächsten Themen:</strong><ul>" +
+          sortedTopics
+            .map(([topic, count]) => "<li>" + formatTopicLabel(topic) + " (" + count + " Fehler)</li>")
+            .join("") +
+          "</ul>";
+      }
+
+           function renderAdaptiveRecommendation(wrongQuestions) {
+        if (!adaptiveRecommendation) return;
+
+        if (!wrongQuestions.length) {
+          adaptiveRecommendation.innerHTML =
+            "<div class='exam-summary-card'>" +
+            "<strong>Empfehlung</strong>" +
+            "<p>Starkes Ergebnis. Du hast aktuell keine Fehlerfragen. Starte als Nächstes eine neue Prüfung, um dein Niveau zu halten.</p>" +
+            "</div>";
+          return;
+        }
+
+        const topicCounts = {};
+
+        wrongQuestions.forEach((q) => {
+          const topic = (q.topic || "Allgemein").trim().toLowerCase();
+          topicCounts[topic] = (topicCounts[topic] || 0) + 1;
+        });
+
+        const sortedTopics = Object.entries(topicCounts).sort((a, b) => b[1] - a[1]);
+        const weakestTopic = sortedTopics[0] ? sortedTopics[0][0] : "allgemein";
+        const weakestCount = sortedTopics[0] ? sortedTopics[0][1] : 0;
+
+        let recommendationText = "";
+
+        if (weakestTopic === "atmung") {
+          recommendationText = "Wiederhole zuerst Atembeobachtung, Dyspnoe, Atemfrequenz und pflegerische Sofortmaßnahmen.";
+        } else if (weakestTopic === "schmerz") {
+          recommendationText = "Wiederhole Schmerzeinschätzung, Schmerzskalen und pflegerische Maßnahmen bei akuten Schmerzen.";
+        } else if (weakestTopic === "hygiene") {
+          recommendationText = "Wiederhole Händedesinfektion, Schutzmaßnahmen und die Unterbrechung von Infektionsketten.";
+        } else if (weakestTopic === "kreislauf") {
+          recommendationText = "Wiederhole Blutdruck, Puls, Schwindel, Hypotonie und pflegerische Erstmaßnahmen.";
+        } else if (weakestTopic === "kommunikation") {
+          recommendationText = "Wiederhole aktives Zuhören, empathische Gesprächsführung und den Umgang mit Angst und Unsicherheit.";
+        } else if (weakestTopic === "pflegeprozess") {
+          recommendationText = "Wiederhole Informationssammlung, Pflegeplanung, Durchführung und Evaluation.";
+        } else if (weakestTopic === "prophylaxe") {
+          recommendationText = "Wiederhole Dekubitus-, Thrombose- und Pneumonieprophylaxe mit den jeweiligen Maßnahmen.";
+        } else if (weakestTopic === "mobilisation") {
+          recommendationText = "Wiederhole sichere Mobilisation, Hilfsmittel und die Vorbeugung von Kontrakturen.";
+        } else if (weakestTopic === "ernaehrung") {
+          recommendationText = "Wiederhole Dehydratation, Trinkmengenbeobachtung und Anzeichen von Mangelernährung.";
+        } else if (weakestTopic === "vitalzeichen") {
+          recommendationText = "Wiederhole Puls, Blutdruck, Temperatur und die richtige Einschätzung von Veränderungen.";
+        } else if (weakestTopic === "sicherheit") {
+          recommendationText = "Wiederhole Sturzprophylaxe, Notfallsituationen und Sofortmaßnahmen bei akuten Ereignissen.";
+        } else if (weakestTopic === "notfall") {
+          recommendationText = "Wiederhole Reaktionskontrolle, Hilfe holen und die ersten Schritte in Notfallsituationen.";
+        } else if (weakestTopic === "wundversorgung") {
+          recommendationText = "Wiederhole Wundbeobachtung, Entzündungszeichen und hygienisches Arbeiten in der Wundversorgung.";
+        } else if (weakestTopic === "medikation") {
+          recommendationText = "Wiederhole die sichere Medikamentengabe, besonders die 6-R-Regel.";
+        } else if (weakestTopic === "neurologie") {
+          recommendationText = "Wiederhole Bewusstseinsveränderungen, Beobachtung und schnelles Erkennen von Auffälligkeiten.";
+        } else if (weakestTopic === "psychiatrie") {
+          recommendationText = "Wiederhole Delir, Desorientierung und den sicheren Umgang mit psychischen Auffälligkeiten.";
+        } else if (weakestTopic === "prioritaet") {
+          recommendationText = "Wiederhole pflegerische Prioritätensetzung bei akuten Beschwerden und kritischen Veränderungen.";
+        } else {
+          recommendationText = "Wiederhole zuerst dieses Thema gezielt und bearbeite danach erneut deine Fehlerfragen.";
+        }
+
+        adaptiveRecommendation.innerHTML =
+          "<div class='exam-summary-card'>" +
+          "<strong>Dein größter Schwachpunkt</strong>" +
+          "<p><strong>" + formatTopicLabel(weakestTopic) + "</strong> mit " + weakestCount + " Fehler" + (weakestCount === 1 ? "" : "n") + ".</p>" +
+          "<p><strong>Empfehlung:</strong> " + recommendationText + "</p>" +
+          "<div style='margin-top:12px;'>" +
+          "<a href='/quiz?topic=" + encodeURIComponent(weakestTopic) + "' style='display:inline-flex;align-items:center;justify-content:center;text-decoration:none !important;background:#ffffff !important;color:#18324a !important;border:1px solid rgba(24,50,74,0.12) !important;border-radius:14px !important;padding:0.9rem 1.2rem !important;font-weight:600 !important;'>" +
+          "<span style='color:#18324a !important;'>Thema jetzt trainieren</span>" +
+          "</a>" +
+          "</div>" +
+          "</div>";
+      }
+
+      function renderWrongAnswersReview(wrongQuestions) {
+        if (!wrongAnswersReview) return;
+
+        if (!wrongQuestions.length) {
+          wrongAnswersReview.innerHTML = "<p class='muted'>Keine Fehler, stark!</p>";
+          return;
+        }
+
+        wrongAnswersReview.innerHTML =
+          "<h3>Deine Fehler im Überblick</h3>" +
+          wrongQuestions
+            .map((q, i) => {
+              return `
+                <div class="exam-summary-card">
+                  <strong>Frage ${i + 1}</strong>
+                  <p><strong>Frage:</strong> ${q.question}</p>
+                  <p><strong>Richtige Antwort:</strong> ${q.correctAnswer}</p>
+                  ${
+                    q.explanation
+                      ? `<p class="muted"><strong>Erklärung:</strong> ${q.explanation}</p>`
+                      : ""
+                  }
+                </div>
+              `;
+            })
+            .join("");
+      }
+
+      function finishExam(timeUp) {
+        clearInterval(timerInterval);
+
+        let correctCount = 0;
+        const wrongQuestions = [];
+
+        activeQuestions.forEach((question, index) => {
+          const answer = userAnswers[index] || "";
+          if (answer === question.correctAnswer) {
+            correctCount += 1;
+          } else {
+            wrongQuestions.push(question);
+          }
+        });
+
+        saveWrongQuestions(wrongQuestions);
+
+        const percentage = Math.round((correctCount / activeQuestions.length) * 100);
+        const passed = percentage >= 60;
+
+        setupScreen.hidden = true;
+        examScreen.hidden = true;
+        resultScreen.hidden = false;
+
+        if (resultScore) resultScore.textContent = correctCount + " von " + activeQuestions.length;
+        if (resultPercent) resultPercent.textContent = percentage + " %";
+        if (resultWrong) resultWrong.textContent = String(wrongQuestions.length);
+
+        if (resultBadge) {
+          resultBadge.textContent = passed ? "Bestanden" : "Nicht bestanden";
+          resultBadge.className = passed ? "result-badge passed" : "result-badge failed";
+        }
+
+        if (resultText && resultAdvice) {
+          if (percentage >= 85) {
+            resultText.textContent = "Sehr starkes Ergebnis. Du bist aktuell klar auf Prüfungsniveau.";
+            resultAdvice.textContent = "Empfehlung: Niveau halten und gezielt einzelne Fehlerfragen wiederholen.";
+          } else if (percentage >= 70) {
+            resultText.textContent = "Gutes Ergebnis. Du bist auf einem ordentlichen Weg Richtung Prüfungssicherheit.";
+            resultAdvice.textContent = "Empfehlung: Fehlerfragen wiederholen und danach direkt eine neue Prüfung starten.";
+          } else if (percentage >= 60) {
+            resultText.textContent = "Knapp bestanden. Das reicht formal, ist aber noch nicht stabil genug.";
+            resultAdvice.textContent = "Empfehlung: Fehlerfragen sofort wiederholen und kritische Themen gezielt üben.";
+          } else if (percentage >= 40) {
+            resultText.textContent = "Noch nicht bestanden. Es gibt mehrere prüfungsrelevante Lücken.";
+            resultAdvice.textContent = "Empfehlung: Erst Fehlerfragen durcharbeiten, dann schwache Themen wiederholen.";
+          } else {
+            resultText.textContent = "Dein Ergebnis ist aktuell noch deutlich vom Prüfungsniveau entfernt.";
+            resultAdvice.textContent = "Empfehlung: Grundlagen festigen und erst danach erneut in den Examensmodus gehen.";
+          }
+
+          if (timeUp) {
+            resultAdvice.textContent += " Zusätzlich war Zeitdruck ein Problem.";
+          }
+        }
+
+        renderWrongAnswersReview(wrongQuestions);
+        renderTopicAnalysis(wrongQuestions);
+        renderAdaptiveRecommendation(wrongQuestions);
+        progressFill.style.width = "100%";
+      }
+
+      function startExam() {
+        if (!Array.isArray(allQuestions) || allQuestions.length < 20) {
+          alert("Es sind nicht genug sichtbare Examensfragen vorhanden. Du brauchst mindestens 20 Fragen.");
+          return;
+        }
+
+        const shuffled = shuffleArray(allQuestions);
+
+        if (shuffled.length < selectedQuestionCount) {
+          alert("Für " + selectedQuestionCount + " Fragen sind aktuell nicht genug sichtbare Examensfragen vorhanden.");
+          return;
+        }
+
+        activeQuestions = shuffled.slice(0, selectedQuestionCount);
+        userAnswers = new Array(activeQuestions.length).fill("");
+        selectedQuestionIndex = 0;
+        timeRemaining = getExamTime(selectedQuestionCount);
+
+        setupScreen.hidden = true;
+        resultScreen.hidden = true;
+        examScreen.hidden = false;
+
+        if (topicAnalysis) topicAnalysis.innerHTML = "";
+        if (adaptiveRecommendation) adaptiveRecommendation.innerHTML = "";
+        if (wrongAnswersReview) wrongAnswersReview.innerHTML = "";
+
+        renderQuestion();
+        startTimer();
+      }
+
+      countButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+          countButtons.forEach((btn) => btn.classList.remove("active"));
+          button.classList.add("active");
+          selectedQuestionCount = Number(button.getAttribute("data-count") || "20");
+        });
+      });
+
+      if (startExamBtn) {
+        startExamBtn.addEventListener("click", function () {
+          startExam();
+        });
+      }
+
+      if (nextQuestionBtn) {
+        nextQuestionBtn.addEventListener("click", function () {
+          const currentAnswer = userAnswers[selectedQuestionIndex] || "";
+
+          if (!currentAnswer) {
+            alert("Bitte wähle zuerst eine Antwort aus.");
+            return;
+          }
+
+          if (selectedQuestionIndex === activeQuestions.length - 1) {
+            finishExam(false);
+            return;
+          }
+
+          selectedQuestionIndex += 1;
+          renderQuestion();
+        });
+      }
+
+      if (restartBtn) {
+        restartBtn.addEventListener("click", function () {
+          clearInterval(timerInterval);
+          setupScreen.hidden = false;
+          examScreen.hidden = true;
+          resultScreen.hidden = true;
+          progressFill.style.width = "0%";
+          if (topicAnalysis) topicAnalysis.innerHTML = "";
+          if (adaptiveRecommendation) adaptiveRecommendation.innerHTML = "";
+          if (wrongAnswersReview) wrongAnswersReview.innerHTML = "";
+        });
+      }
+    });
+  </script>
+
+  <style>
+    .dev-box {
+      margin-bottom: 1.5rem;
+      padding: 0.9rem 1rem;
+      border: 1px solid #d1fae5;
+      background: #ecfdf5;
+      color: #065f46;
+      border-radius: 12px;
+      font-weight: 700;
+    }
+
+    .notice-box {
+      margin: 1rem 0 0;
+      padding: 0.9rem 1rem;
+      border: 1px solid rgba(201, 122, 99, 0.2);
+      background: rgba(201, 122, 99, 0.08);
+      color: #18324a;
+      border-radius: 12px;
+      font-weight: 600;
+    }
+
+    .exam-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 30px rgba(24, 50, 74, 0.08);
+      border: 1px solid rgba(24, 50, 74, 0.08);
+      margin-bottom: 1.5rem;
+    }
+
+    .exam-label {
+      display: inline-block;
+      padding: 0.5rem 0.9rem;
+      border-radius: 999px;
+      background: rgba(14, 165, 164, 0.1);
+      color: #18324a;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .count-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin: 1.25rem 0;
+    }
+
+    .count-btn {
+      border: 1px solid rgba(24, 50, 74, 0.12);
+      background: #fff;
+      color: #18324a;
+      border-radius: 14px;
+      padding: 1rem;
+      cursor: pointer;
+      font: inherit;
+    }
+
+    .count-btn.active {
+      background: rgba(14, 165, 164, 0.08);
+      border-color: rgba(14, 165, 164, 0.35);
+      box-shadow: 0 0 0 2px rgba(14, 165, 164, 0.08);
+    }
+
+    .primary-btn {
+      border: none;
+      background: #c97a63;
+      color: white;
+      border-radius: 14px;
+      padding: 0.9rem 1.2rem;
+      font: inherit;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .secondary-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border: 1px solid rgba(24, 50, 74, 0.12);
+      color: #18324a;
+      background: #fff;
+      border-radius: 14px;
+      padding: 0.9rem 1.2rem;
+      font-weight: 600;
+    }
+
+    .top-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+
+    .progress {
+      width: 100%;
+      height: 12px;
+      border-radius: 999px;
+      background: rgba(24, 50, 74, 0.12);
+      overflow: hidden;
+      margin-bottom: 1.25rem;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: #0ea5a4;
+      transition: width 0.2s ease;
+    }
+
+    .answers {
+      display: grid;
+      gap: 0.75rem;
+      margin: 1.25rem 0;
+    }
+
+    .answer-btn {
+      width: 100%;
+      border: 1px solid rgba(24, 50, 74, 0.12);
+      background: #fff;
+      color: #18324a;
+      border-radius: 14px;
+      padding: 0.95rem 1rem;
+      text-align: left;
+      font: inherit;
+      cursor: pointer;
+      transition: background 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .answer-btn:hover {
+      background: rgba(14, 165, 164, 0.05);
+      border-color: rgba(14, 165, 164, 0.22);
+    }
+
+    .answer-btn.selected {
+      background: rgba(14, 165, 164, 0.09);
+      border-color: rgba(14, 165, 164, 0.35);
+      box-shadow: 0 0 0 2px rgba(14, 165, 164, 0.08);
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin: 1rem 0 1.25rem;
+    }
+
+    .summary-card,
+    .exam-summary-card {
+      background: #fff;
+      border: 1px solid rgba(24, 50, 74, 0.08);
+      border-radius: 16px;
+      padding: 1rem;
+      box-shadow: 0 6px 20px rgba(24, 50, 74, 0.06);
+      margin-top: 1rem;
+    }
+
+    .result-badge {
+      display: inline-block;
+      padding: 0.6rem 1rem;
+      border-radius: 999px;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: rgba(14, 165, 164, 0.12);
+      color: #18324a;
+    }
+
+    .result-badge.passed {
+      background: rgba(21, 128, 61, 0.12);
+      color: #15803d;
+    }
+
+    .result-badge.failed {
+      background: rgba(220, 38, 38, 0.12);
+      color: #dc2626;
+    }
+
+    .action-row {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 700px) {
+      .count-grid,
+      .summary-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</BaseLayout>

@@ -1,0 +1,166 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const faelleRaw = await getCollection("faelle");
+
+const reihenfolge = [
+  "Stationäre Akutpflege",
+  "Stationäre Langzeitpflege",
+  "Ambulante Pflege",
+  "Psychiatrie",
+  "Pädiatrie",
+  "Palliative Care",
+];
+
+const faelle = [...faelleRaw].sort((a, b) => {
+  const bereichA = reihenfolge.indexOf(a.data.einsatzbereich);
+  const bereichB = reihenfolge.indexOf(b.data.einsatzbereich);
+
+  if (bereichA !== bereichB) {
+    return (bereichA === -1 ? 999 : bereichA) - (bereichB === -1 ? 999 : bereichB);
+  }
+
+  return a.data.title.localeCompare(b.data.title, "de");
+});
+
+const gruppen = {};
+let fallNummer = 1;
+
+for (const fall of faelle) {
+  const bereich = fall.data.einsatzbereich;
+
+  if (!gruppen[bereich]) {
+    gruppen[bereich] = [];
+  }
+
+  gruppen[bereich].push({
+    ...fall,
+    nummer: fallNummer,
+  });
+
+  fallNummer++;
+}
+
+const filterOptionen = Object.keys(gruppen);
+---
+
+<BaseLayout title="Fallbeispiele – PraxisMaik">
+  <section class="section">
+    <h1>Fallbeispiele</h1>
+
+    <p class="muted">
+      Praxisnahe Fallsituationen zur Vorbereitung auf die schriftliche und mündliche Abschlussprüfung.
+    </p>
+
+<div class="fall-progress-card">
+  <p class="fall-progress-label">Dein Fortschritt</p>
+  <h2 id="fall-progress-text">Du hast 0 von {faelle.length} Fällen bearbeitet</h2>
+<button id="reset-fall-progress" class="btn secondary">
+Fortschritt zurücksetzen
+</button>
+  <div class="fall-progress-bar">
+    <div id="fall-progress-fill" class="fall-progress-fill"></div>
+  </div>
+</div>
+
+    <div class="fall-filter-box">
+      <label for="einsatzbereich-filter">Einsatzbereich filtern</label>
+      <select id="einsatzbereich-filter" class="fall-filter-select">
+        <option value="alle">Alle Einsatzbereiche</option>
+        {filterOptionen.map((bereich) => (
+          <option value={bereich}>{bereich}</option>
+        ))}
+      </select>
+    </div>
+
+    {Object.entries(gruppen).map(([bereich, gruppenFaelle]) => (
+      <div class="fallgruppe" data-bereich={bereich}>
+        <h2>{bereich}</h2>
+
+        <div class="fall-grid">
+          {gruppenFaelle.map((fall) => (
+            <div class="fall-card">
+            <p class="fall-number">Fall {fall.nummer}</p>
+<p class="fall-status-overview" data-fall-status={fall.slug}>Noch kein Status</p>
+<h3>{fall.data.title}</h3>
+<p>{fall.data.beschreibung}</p>
+
+<a class="btn" href={`/fallbeispiele/${fall.slug}/`}>
+  Fall öffnen
+</a>
+            </div>
+          ))}
+        </div>
+      </div>
+    ))}
+  </section>
+
+<script define:vars={{ totalFaelle: faelle.length }}>
+  const filterSelect = document.getElementById("einsatzbereich-filter");
+  const gruppen = document.querySelectorAll(".fallgruppe");
+
+  if (filterSelect) {
+    filterSelect.addEventListener("change", (event) => {
+      const wert = event.target.value;
+
+      gruppen.forEach((gruppe) => {
+        const bereich = gruppe.getAttribute("data-bereich");
+
+        if (wert === "alle" || bereich === wert) {
+          gruppe.style.display = "";
+        } else {
+          gruppe.style.display = "none";
+        }
+      });
+    });
+  }
+
+  const progressText = document.getElementById("fall-progress-text");
+  const progressFill = document.getElementById("fall-progress-fill");
+  const gespeichert = JSON.parse(localStorage.getItem("opened-fall-cases") || "[]");
+  const bearbeitet = Array.isArray(gespeichert) ? gespeichert.length : 0;
+  const prozent = totalFaelle > 0 ? Math.min((bearbeitet / totalFaelle) * 100, 100) : 0;
+
+  if (progressText) {
+    progressText.textContent = `Du hast ${bearbeitet} von ${totalFaelle} Fällen bearbeitet`;
+  }
+
+  if (progressFill) {
+    progressFill.style.width = `${prozent}%`;
+  }
+
+  const resetButton = document.getElementById("reset-fall-progress");
+
+  if (resetButton) {
+    resetButton.addEventListener("click", () => {
+      localStorage.removeItem("opened-fall-cases");
+      localStorage.removeItem("fall-case-status");
+      location.reload();
+    });
+  }
+
+  const statusFelder = document.querySelectorAll(".fall-status-overview");
+  const statusDaten = JSON.parse(localStorage.getItem("fall-case-status") || "{}");
+
+  statusFelder.forEach((feld) => {
+    const slug = feld.getAttribute("data-fall-status");
+    const status = statusDaten[slug];
+
+    if (status === "gewusst") {
+      feld.textContent = "Status: Gewusst";
+      feld.classList.add("status-gewusst");
+    }
+
+    if (status === "unsicher") {
+      feld.textContent = "Status: Unsicher";
+      feld.classList.add("status-unsicher");
+    }
+
+    if (status === "nochmal-lernen") {
+      feld.textContent = "Status: Nochmal lernen";
+      feld.classList.add("status-nochmal-lernen");
+    }
+  });
+</script>
+</BaseLayout>

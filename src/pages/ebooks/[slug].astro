@@ -1,0 +1,233 @@
+---
+export const prerender = true;
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import PremiumGate from "../../components/PremiumGate.astro";
+
+export async function getStaticPaths() {
+  const ebooks = await getCollection("ebooks");
+
+  const mainEntries = ebooks.filter((entry) => entry.id.endsWith("/index.md"));
+
+  return mainEntries.map((entry) => {
+    const slug = entry.id.replace("/index.md", "");
+
+    return {
+      params: { slug },
+      props: { slug },
+    };
+  });
+}
+
+const { slug } = Astro.props;
+
+const allEbookEntries = await getCollection("ebooks");
+
+const mainEntry = allEbookEntries.find((entry) => entry.id === `${slug}/index.md`);
+
+if (!mainEntry) {
+  throw new Error(`E-Book nicht gefunden: ${slug}`);
+}
+
+const isPremium = mainEntry.data.premium === true;
+
+const isLocalhost =
+  Astro.url.hostname === "localhost" || Astro.url.hostname === "127.0.0.1";
+
+const devUnlock =
+  Astro.url.searchParams.get("freischalten") === "1" && isLocalhost;
+
+const showFullContent = !isPremium || devUnlock;
+
+const chapterEntries = allEbookEntries
+  .filter((entry) => {
+    return entry.id.startsWith(`${slug}/`) && !entry.id.endsWith("/index.md");
+  })
+  .sort((a, b) => a.id.localeCompare(b.id, "de"));
+
+const { Content: IntroContent } = await mainEntry.render();
+
+const renderedChapters = await Promise.all(
+  chapterEntries.map(async (chapter) => {
+    const { Content } = await chapter.render();
+
+    return {
+      id: chapter.id,
+      data: chapter.data,
+      Content,
+    };
+  })
+);
+---
+
+<BaseLayout title={mainEntry.data.title} description={mainEntry.data.beschreibung}>
+  <article class="ebook">
+    <header class="ebook-header">
+      <p class="ebook-kicker">
+        {isPremium ? "Premium E-Book" : "E-Book"}
+      </p>
+
+      <h1>{mainEntry.data.title}</h1>
+
+      {mainEntry.data.beschreibung && (
+        <p class="ebook-description">{mainEntry.data.beschreibung}</p>
+      )}
+
+      {mainEntry.data.tags?.length > 0 && (
+        <ul class="ebook-tags">
+          {mainEntry.data.tags.map((tag) => <li>{tag}</li>)}
+        </ul>
+      )}
+
+      {devUnlock && (
+        <div class="dev-box">
+          Testmodus aktiv, Premium-Inhalt lokal freigeschaltet.
+        </div>
+      )}
+    </header>
+
+    <section class="ebook-intro">
+      <IntroContent />
+    </section>
+
+    <nav class="ebook-toc" aria-label="Inhaltsverzeichnis">
+      <h2>Inhaltsverzeichnis</h2>
+      <ol>
+        {renderedChapters.map((chapter, index) => (
+          <li>
+            {showFullContent ? (
+              <a href={`#kapitel-${index + 1}`}>
+                {chapter.data.title ?? `Kapitel ${index + 1}`}
+              </a>
+            ) : (
+              <span class="locked-chapter-title">
+                {chapter.data.title ?? `Kapitel ${index + 1}`}
+              </span>
+            )}
+          </li>
+        ))}
+      </ol>
+    </nav>
+
+    {showFullContent ? (
+      <div class="ebook-content">
+        {renderedChapters.map((chapter, index) => (
+          <section class="ebook-chapter" id={`kapitel-${index + 1}`}>
+            <chapter.Content />
+          </section>
+        ))}
+      </div>
+    ) : (
+      <PremiumGate
+  title="Du siehst nur die Einleitung"
+  text="Die vollständigen Kapitel mit allen Inhalten sind nur im Premium-Bereich verfügbar."
+  buttonText="Jetzt freischalten"
+  buttonHref="/premium"
+/>
+    )}
+  </article>
+</BaseLayout>
+
+<style>
+  .ebook {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem;
+  }
+
+  .ebook-header {
+    margin-bottom: 2rem;
+  }
+
+  .ebook-kicker {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-bottom: 0.5rem;
+  }
+
+  .ebook-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 70ch;
+  }
+
+  .ebook-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+  }
+
+  .ebook-tags li {
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    background: #f3f4f6;
+    font-size: 0.9rem;
+  }
+
+  .dev-box {
+    margin-top: 1rem;
+    padding: 0.9rem 1rem;
+    border: 1px solid #d1fae5;
+    background: #ecfdf5;
+    color: #065f46;
+    border-radius: 12px;
+    font-weight: 700;
+  }
+
+  .ebook-intro {
+    margin: 2rem 0 3rem;
+  }
+
+  .ebook-toc {
+    margin: 0 0 3rem;
+    padding: 1.25rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #fafafa;
+  }
+
+  .ebook-toc ol {
+    margin: 0.75rem 0 0;
+    padding-left: 1.25rem;
+  }
+
+  .ebook-toc li + li {
+    margin-top: 0.5rem;
+  }
+
+  .ebook-toc a,
+  .ebook-toc a:link,
+  .ebook-toc a:visited,
+  .ebook-toc a:active {
+    color: #18324a !important;
+    text-decoration: none !important;
+  }
+
+  .ebook-toc a:hover {
+    text-decoration: underline !important;
+  }
+
+  .locked-chapter-title {
+    color: #18324a;
+    opacity: 0.85;
+  }
+
+  .ebook-content {
+    display: grid;
+    gap: 3rem;
+  }
+
+  .ebook-chapter {
+    scroll-margin-top: 100px;
+    padding: 1.5rem;
+    border-radius: 14px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 1.5rem;
+  }
+</style>

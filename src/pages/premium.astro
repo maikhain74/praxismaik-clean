@@ -1,0 +1,692 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const ebooks = await getCollection("ebooks");
+const lernskripte = await getCollection("lernskripte");
+const pruefung = await getCollection("pruefung");
+const examQuiz = await getCollection("examQuiz");
+
+const hasPremiumCookie = Astro.cookies.get("praxismaik_premium")?.value === "1";
+
+/* Nur index.md zählen = echte E-Books */
+const premiumEbooks = ebooks.filter(
+  (entry) => entry.id.endsWith("/index.md") && entry.data.premium === true
+);
+
+const premiumLernskripte = lernskripte.filter(
+  (entry) => entry.data.premium === true
+);
+
+const premiumPruefungsfaelle = pruefung.filter(
+  (entry) => entry.data.premium === true
+);
+
+const premiumExamQuiz = examQuiz.filter(
+  (entry) => entry.data.premium === true
+);
+
+const premiumEbookCount = premiumEbooks.length;
+const premiumLernskriptCount = premiumLernskripte.length;
+const premiumPruefungsfallCount = premiumPruefungsfaelle.length;
+const premiumExamQuizCount = premiumExamQuiz.length;
+---
+
+<BaseLayout
+  title="PraxisMaik Premium"
+  description="Alle Premium-Inhalte für die Pflegeausbildung, E-Books, Examensquiz, Lernskripte und Prüfungsfälle für Ausbildung, Praxis und Examen."
+>
+  <section class="premium-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Start</a>
+      <span class="breadcrumb-sep">›</span>
+      <span class="current">Premium</span>
+    </nav>
+
+    <header class="premium-hero">
+      {hasPremiumCookie ? (
+        <div class="premium-active-box">
+          <strong>Premium ist bereits aktiv.</strong>
+          <span>Du hast bereits Zugriff auf alle freigeschalteten Premium-Inhalte.</span>
+        </div>
+      ) : (
+        <div class="premium-urgency">
+          <strong>Du siehst aktuell nur Vorschauen.</strong>
+        </div>
+      )}
+
+     <span class="premium-eyebrow">PraxisMaik Premium</span>
+<h1>Dein kompletter Lernweg durch die Pflegeausbildung</h1>
+<p class="premium-lead">
+  Die meisten lernen viel, aber nicht gezielt genug und genau das wird in Prüfungen zum Problem.
+</p>
+
+<p class="premium-loss">
+  Ohne klare Struktur, Falllogik und sichere Begründungen gehst du unsicher in Prüfungen,
+  selbst wenn du eigentlich viel gelernt hast.
+</p>
+
+<p class="premium-loss">
+  Premium zeigt dir, was wirklich zählt und wie du in Fallsituationen sicher denkst und handelst.
+</p>
+      <div class="premium-price-inline">
+  <strong>39 € einmalig</strong>
+  <span>entspricht weniger als 1 € pro Lerntag</span>
+  <span>kein Abo, keine laufenden Kosten</span>
+
+  <p class="premium-value">
+    Du investierst einmal und hast Zugriff auf deinen gesamten Lernweg durch die Ausbildung.
+  </p>
+
+  <p class="premium-risk">
+    Du kannst sofort starten und direkt prüfen, ob es dir hilft.
+  </p>
+</div>
+
+<p class="premium-pressure">
+  Viele merken erst kurz vor der Prüfung, dass ihnen genau diese Sicherheit fehlt.
+</p>
+
+      <div class="premium-hero-actions">
+        {hasPremiumCookie ? (
+          <a href="/lernskripte" class="btn premium-main-btn">Zu den Lernskripten</a>
+        ) : (
+          <a href="/premium-interesse" class="btn premium-main-btn">Jetzt sicher durch die Prüfung lernen</a>
+        )}
+      </div>
+{!hasPremiumCookie && (
+  <p class="premium-trust">
+    Sofortiger Zugriff nach dem Kauf, kein Abo, keine laufenden Kosten.
+  </p>
+)}
+    </header>
+
+    <section class="premium-section premium-overview-section">
+      <div class="section-headline">
+        <h2>Was du mit Premium freischaltest</h2>
+<p class="section-intro">
+  Du bekommst nicht einfach mehr Inhalte, sondern genau den Teil, der in Prüfungen entscheidet, ob du bestehst oder unsicher bleibst.
+</p>
+      </div>
+
+{!hasPremiumCookie && (
+  <div class="premium-compare">
+<div class="compare-box">
+  <h3>Ohne Premium</h3>
+  <ul>
+    <li>du siehst nur Vorschauen und Einstiegstexte</li>
+    <li>viele Lernwege bleiben unvollständig</li>
+    <li>Prüfungsfälle und Lösungen sind nur eingeschränkt nutzbar</li>
+  </ul>
+</div>
+
+<div class="compare-box highlight">
+  <h3>Mit Premium</h3>
+  <ul>
+    <li>du lernst Grundlagen, Themen und Zusammenhänge vollständig</li>
+    <li>du trainierst Pflegefälle mit Denkstruktur und Lösung</li>
+    <li>du bereitest dich Schritt für Schritt auf Ausbildung, Praxis und Prüfung vor</li>
+  </ul>
+</div>
+  </div>
+)}
+
+
+      <div class="premium-overview-grid">
+        <article class="premium-overview-card">
+          <strong>{premiumEbookCount}</strong>
+          <span>Premium-E-Books</span>
+        </article>
+
+        <article class="premium-overview-card">
+          <strong>{premiumLernskriptCount}</strong>
+          <span>Premium-Lernskripte</span>
+        </article>
+
+        <article class="premium-overview-card">
+          <strong>{premiumPruefungsfallCount}</strong>
+          <span>Premium-Prüfungsfälle</span>
+        </article>
+
+        <article class="premium-overview-card">
+          <strong>{premiumExamQuizCount}</strong>
+          <span>Examensfragen</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="premium-section">
+      <div class="section-headline">
+        <h2>Warum sich Premium lohnt</h2>
+      </div>
+
+      <div class="premium-benefits-grid">
+  <article class="premium-benefit-card">
+    <h3>Vom Anfang bis zur Prüfung</h3>
+    <p>
+      Premium ist nicht nur Prüfungsvorbereitung. Du bekommst Inhalte für den gesamten Weg
+      durch die generalistische Pflegeausbildung.
+    </p>
+  </article>
+
+  <article class="premium-benefit-card">
+    <h3>Pflege wirklich verstehen</h3>
+    <p>
+      Du lernst Zusammenhänge, Pflegeprobleme, Ziele und Maßnahmen so, dass du sie im Alltag
+      und in Prüfungen sicher anwenden kannst.
+    </p>
+  </article>
+
+  <article class="premium-benefit-card">
+    <h3>Sicherer in Fallsituationen</h3>
+    <p>
+      Du trainierst, Probleme zu erkennen, Prioritäten zu setzen und dein Handeln nachvollziehbar
+      zu begründen.
+    </p>
+  </article>
+</div>
+    </section>
+
+<section class="premium-section trust-conversion-section">
+  <div class="trust-conversion-box">
+    <h2>Warum du PraxisMaik vertrauen kannst</h2>
+
+    <div class="trust-conversion-grid">
+      <div>
+        <h3>Pflegeausbildung im Fokus</h3>
+        <p>
+          Die Inhalte sind auf die generalistische Pflegeausbildung ausgerichtet,
+          nicht auf beliebige Theorie.
+        </p>
+      </div>
+
+      <div>
+        <h3>Prüfungsnah aufgebaut</h3>
+        <p>
+          Du lernst nicht nur Fakten, sondern Denklogik, Prioritäten und begründetes Handeln.
+        </p>
+      </div>
+
+      <div>
+        <h3>Klar statt überladen</h3>
+        <p>
+          Die Inhalte sind so aufgebaut, dass du schnell erkennst, was wirklich wichtig ist.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HIER NEU EINFÜGEN -->
+<section class="premium-section fit-section">
+  <div class="fit-box">
+    <h2>Ist Premium das Richtige für dich?</h2>
+
+    <div class="fit-grid">
+      <div class="fit-yes">
+        <h3>Das passt für dich, wenn du</h3>
+        <ul>
+          <li>unsicher bist, wie du Fälle richtig löst</li>
+          <li>nicht nur auswendig lernen willst</li>
+          <li>Prüfungen endlich sicher bestehen willst</li>
+          <li>klare Struktur statt Chaos brauchst</li>
+        </ul>
+      </div>
+
+      <div class="fit-no">
+        <h3>Das passt eher nicht, wenn du</h3>
+        <ul>
+          <li>nur schnell etwas nachlesen willst</li>
+          <li>keine Prüfungsrelevanz brauchst</li>
+          <li>ohne Struktur lernen willst</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="premium-section price-explain-section">
+  <div class="price-explain-box">
+    <h2>Warum 39 € sinnvoll investiert sind</h2>
+
+    <div class="price-explain-grid">
+      <div class="price-card">
+        <h3>Einmal zahlen</h3>
+        <p>
+          Kein Abo, keine monatlichen Kosten. Du zahlst einmal und bekommst Zugriff auf den Premium-Bereich.
+        </p>
+      </div>
+
+      <div class="price-card">
+        <h3>Kompletter Lernweg</h3>
+        <p>
+          Du bekommst Lernskripte, E-Books, Prüfungsfälle und Quiztraining zusammen, statt einzelne Inhalte mühsam zu suchen.
+        </p>
+      </div>
+
+      <div class="price-card">
+        <h3>Weniger Lernchaos</h3>
+        <p>
+          39 € sparen dir Zeit, Unsicherheit und unnötiges Wiederholen, weil du klarer weißt, was wichtig ist.
+        </p>
+      </div>
+    </div>
+
+    <p class="price-explain-note">
+      Anders gesagt: Du kaufst nicht nur Inhalte, sondern einen klaren Lernweg durch Ausbildung, Praxis und Prüfung.
+    </p>
+  </div>
+</section>
+
+<section class="premium-section" id="premium-inhalte">
+
+    <section class="premium-section" id="premium-inhalte">
+      <div class="section-headline">
+        <h2>Das ist in Premium enthalten</h2>
+        <p class="section-intro">
+          Premium gibt dir genau die Bereiche, die dich wirklich nach vorne bringen.
+        </p>
+      </div>
+
+      <div class="premium-content-grid">
+       <a href="/ebooks/" class="premium-content-card premium-content-link">
+          <span class="premium-card-label">E-Books</span>
+          <h3>Vertiefte Premium-E-Books</h3>
+          <p>
+            Verständlich, praxisnah und so aufgebaut, dass du Zusammenhänge wirklich verstehst.
+          </p>
+       </a>
+
+        <a href="/lernskripte/" class="premium-content-card premium-content-link">
+  <span class="premium-card-label">Lernskripte</span>
+  <h3>Kompakt lernen und gezielt wiederholen</h3>
+  <p>
+    Für kurze Lerneinheiten, klare Wiederholung und schnellen Zugriff auf das wirklich Relevante.
+  </p>
+</a>
+
+        <a href="/pruefung/" class="premium-content-card premium-content-link">
+  <span class="premium-card-label">Prüfungsfälle</span>
+  <h3>Prüfungsfälle mit echter Denklogik</h3>
+  <p>
+    Trainiere pflegerisches Denken, Prioritäten und begründetes Handeln mit typischen Fallsituationen.
+  </p>
+</a>
+
+        <a href="/quiz-exam/" class="premium-content-card premium-content-link">
+  <span class="premium-card-label">Examensmodus</span>
+  <h3>Prüfungsnahes Quiztraining</h3>
+  <p>
+    Teste dein Wissen aktiv, unter Zeitdruck und näher an der echten Prüfungssituation.
+  </p>
+</a>
+
+      </div>
+    </section>
+
+    <section class="premium-section premium-proof-section">
+      <div class="premium-proof-box">
+       <h2>Was nach der Freischaltung anders ist</h2>
+<ul class="premium-proof-list">
+  <li>du lernst mit vollständigen Inhalten statt Vorschauen</li>
+  <li>du bekommst komplette Falllösungen mit Denkstruktur</li>
+  <li>du kannst Themen, Skripte, E-Books, Fälle und Quiz zusammen nutzen</li>
+  <li>du hast einen klaren Lernweg von den Grundlagen bis zur Prüfung</li>
+</ul>
+
+{!hasPremiumCookie && (
+  <p class="premium-pressure">
+    Viele merken erst kurz vor der Prüfung, dass ihnen Struktur und klare Falllogik fehlen.
+  </p>
+)}
+
+        <div class="premium-price-actions">
+          {hasPremiumCookie ? (
+            <a href="/pruefung/" class="btn premium-buy-btn">Zu den Prüfungsfällen</a>
+          ) : (
+            <a href="/premium-interesse" class="btn premium-buy-btn">Jetzt Premium freischalten und sicher lernen</a>
+          )}
+        </div>
+
+        <p class="premium-price-note">
+          {hasPremiumCookie ? "Dein Zugang ist aktiv." : "Einmal zahlen, sofort freischalten."}
+        </p>
+      </div>
+    </section>
+  </section>
+</BaseLayout>
+
+<style>
+  .premium-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2.2rem 1rem 3.5rem;
+  }
+
+  .breadcrumbs {
+    margin-bottom: 1.2rem;
+    font-size: 0.95rem;
+    color: #6b7280;
+  }
+
+  .breadcrumbs a {
+    color: #18324a;
+    text-decoration: none;
+  }
+
+  .breadcrumbs a:hover {
+    text-decoration: underline;
+  }
+
+  .breadcrumb-sep {
+    margin: 0 0.4rem;
+  }
+
+  .premium-hero {
+    max-width: 780px;
+    margin-bottom: 2.8rem;
+  }
+
+  .premium-urgency {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.7rem 0.9rem;
+    border-radius: 12px;
+    background: #fee2e2;
+    color: #991b1b;
+    font-weight: 700;
+  }
+
+  .premium-active-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 1rem;
+    padding: 0.9rem 1rem;
+    border-radius: 12px;
+    background: #ecfdf5;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+    font-weight: 700;
+  }
+
+  .premium-active-box span {
+    font-weight: 400;
+  }
+
+  .premium-eyebrow {
+    display: inline-block;
+    margin-bottom: 0.7rem;
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    background: #eef5ff;
+    color: #2f5f9b;
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  .premium-hero h1 {
+    margin: 0 0 0.9rem;
+    font-size: clamp(2rem, 3vw, 3rem);
+    line-height: 1.1;
+  }
+
+  .premium-lead {
+    max-width: 62ch;
+    margin: 0;
+    color: #5b6b7a;
+    line-height: 1.75;
+  }
+
+  .premium-price-inline {
+    margin-top: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .premium-price-inline strong {
+    font-size: 2rem;
+    line-height: 1.1;
+    color: #111827;
+  }
+
+  .premium-price-inline span {
+    color: #6b7280;
+  }
+
+  .premium-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin-top: 1.4rem;
+  }
+
+  .premium-main-btn,
+  .premium-buy-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.95rem 1.2rem;
+    border-radius: 12px;
+    background: #111827;
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+.premium-main-btn {
+  width: 100%;
+  max-width: 420px;
+  font-size: 1.05rem;
+  padding: 1.1rem 1.2rem;
+}
+  .premium-main-btn:hover,
+  .premium-buy-btn:hover {
+    opacity: 0.95;
+    text-decoration: none;
+  }
+
+  .premium-section + .premium-section {
+    margin-top: 3rem;
+  }
+
+  .section-headline {
+    max-width: 760px;
+    margin-bottom: 1rem;
+  }
+
+  .section-headline h2 {
+    margin-bottom: 0.45rem;
+  }
+
+  .section-intro {
+    margin: 0;
+    color: #5b6b7a;
+    line-height: 1.7;
+  }
+
+  .premium-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+
+  .premium-overview-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  .premium-overview-card {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 18px;
+    padding: 1.2rem;
+    box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+    text-align: center;
+  }
+
+  .premium-overview-card strong {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    color: #18324a;
+  }
+
+  .premium-overview-card span {
+    display: block;
+    margin-top: 0.35rem;
+    color: #5b6b7a;
+    font-size: 0.95rem;
+  }
+
+  .premium-content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+
+  .premium-benefit-card,
+  .premium-content-card,
+  .premium-proof-box {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 20px;
+    padding: 1.35rem;
+    box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  }
+
+  .premium-benefit-card h3,
+  .premium-content-card h3,
+  .premium-proof-box h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .premium-benefit-card p,
+  .premium-content-card p {
+    margin: 0;
+    color: #556270;
+    line-height: 1.65;
+  }
+
+  .premium-card-label {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 0.7rem;
+    padding: 0.35rem 0.65rem;
+    border-radius: 999px;
+    background: #f5f7fb;
+    color: #556270;
+    font-size: 0.78rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .premium-proof-list {
+    margin: 1rem 0 0;
+    padding-left: 1.2rem;
+  }
+
+  .premium-proof-list li {
+    margin-bottom: 0.45rem;
+    line-height: 1.6;
+  }
+
+  .premium-proof-section {
+    margin-top: 3.5rem;
+  }
+
+  .premium-proof-box {
+    max-width: 620px;
+  }
+
+  .premium-price-actions {
+    margin-top: 1.2rem;
+  }
+
+  .premium-price-note {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #6b7280;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 900px) {
+    .premium-benefits-grid,
+    .premium-overview-grid,
+    .premium-content-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+.premium-loss {
+  margin-top: 0.8rem;
+  color: #7f1d1d;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.premium-trust {
+  margin-top: 0.8rem;
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.premium-compare {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.compare-box {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 18px;
+  padding: 1.15rem;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+}
+
+.compare-box h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.compare-box ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.compare-box li {
+  margin-bottom: 0.45rem;
+  line-height: 1.6;
+}
+
+.compare-box.highlight {
+  border-color: rgba(24, 50, 74, 0.22);
+  background: #f8fbff;
+}
+
+.premium-pressure {
+  margin: 0.8rem 0 0;
+  color: #7f1d1d;
+  font-weight: 600;
+  line-height: 1.7;
+}
+.premium-content-link {
+  display: block;
+  text-decoration: none;
+  color: inherit !important;
+}
+
+.premium-content-link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(24, 50, 74, 0.08);
+  border-color: #cfdceb;
+  text-decoration: none;
+}
+</style>

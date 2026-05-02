@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const faelle = await getCollection("faelle");
+
+const faelleClient = faelle.map((f) => ({
+  slug: f.slug,
+  title: f.data.title,
+}));
+---
+
+<BaseLayout
+  title="Fälle wiederholen – PraxisMaik"
+  description="Diese Fallbeispiele solltest du noch einmal bearbeiten."
+>
+  <section class="section">
+    <h1>Fälle wiederholen</h1>
+
+    <p class="muted">
+      Hier erscheinen alle Fälle, die du als „Unsicher“ oder „Nochmal lernen“
+      markiert hast.
+    </p>
+
+    <div id="fall-wiederholen-grid" class="simulation-grid"></div>
+
+    <p id="fall-empty" class="muted"></p>
+  </section>
+
+  <script define:vars={{ faelleClient }}>
+    const grid = document.getElementById("fall-wiederholen-grid");
+    const empty = document.getElementById("fall-empty");
+
+    const gespeichert = JSON.parse(localStorage.getItem("fall-case-status") || "{}");
+
+    const wiederholen = Object.entries(gespeichert)
+      .filter(([slug, status]) => status === "unsicher" || status === "nochmal-lernen")
+      .map(([slug]) => slug);
+
+    if (wiederholen.length === 0) {
+      empty.textContent = "Du hast aktuell keine Fälle zum Wiederholen markiert.";
+    } else {
+      const faelleListe = faelleClient.filter((f) => wiederholen.includes(f.slug));
+
+      grid.innerHTML = faelleListe
+        .map(
+          (f) => `
+            <a class="simulation-fall-link" href="/fallbeispiele/${f.slug}/">
+              ${f.title}
+            </a>
+          `
+        )
+        .join("");
+    }
+  </script>
+</BaseLayout>

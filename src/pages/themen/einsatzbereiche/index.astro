@@ -1,0 +1,84 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const themen = await getCollection("themen");
+
+const einsatzbereiche = themen
+  .filter((item) => item.slug.startsWith("einsatzbereiche/"))
+  .sort((a, b) => (a.data.order ?? 999) - (b.data.order ?? 999));
+---
+
+<BaseLayout title="Einsatzbereiche in der Pflege">
+
+  <section class="container">
+    <h1>Einsatzbereiche in der Pflege</h1>
+
+    <p class="intro">
+      Einsatzbereiche zeigen dir, <strong>wo Pflege stattfindet</strong> und
+      <strong>wie sich der Alltag je nach Setting unterscheidet</strong>.
+    </p>
+
+    <p class="intro">
+      Wichtig: Hier lernst du <strong>keine einzelnen Krankheitsbilder oder Maßnahmen</strong>,
+      sondern den <strong>Kontext der Pflegepraxis</strong>.
+    </p>
+  </section>
+
+  <section class="container cards">
+    {einsatzbereiche.map((bereich) => (
+      <a href={`/themen/${bereich.slug}/`} class="card">
+        <h2>{bereich.data.title}</h2>
+        {bereich.data.description ? <p>{bereich.data.description}</p> : null}
+      </a>
+    ))}
+  </section>
+
+</BaseLayout>
+
+<style>
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.intro {
+  line-height: 1.7;
+  color: #556270;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  display: block;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(24, 50, 74, 0.08);
+  border-color: #cfdceb;
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  margin: 0;
+  color: #5b6b7a;
+  line-height: 1.6;
+}
+</style>

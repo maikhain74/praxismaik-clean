@@ -1,0 +1,126 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const faelle = await getCollection("faelle");
+
+  return faelle.map((fall) => ({
+    params: { slug: fall.slug },
+    props: { fall },
+  }));
+}
+
+const { fall } = Astro.props;
+const { Content } = await fall.render();
+---
+
+<BaseLayout title={`${fall.data.title} – PraxisMaik`} description={fall.data.beschreibung}>
+  <section class="section fall-detail">
+    <div class="fall-detail-top">
+      <a href="/fallbeispiele" class="btn secondary">← Zurück zur Übersicht</a>
+    </div>
+
+    <div class="fall-header-card">
+      <p class="fall-einsatzbereich">{fall.data.einsatzbereich}</p>
+      <h1>{fall.data.title}</h1>
+      <p class="muted">{fall.data.beschreibung}</p>
+    </div>
+
+    <article class="fall-content">
+      <Content />
+    </article>
+
+<div class="fall-status-box">
+  <p class="fall-status-label">Wie sicher fühlst du dich bei diesem Fall?</p>
+
+  <div class="fall-status-actions">
+    <button type="button" class="fall-status-btn" data-status="gewusst">
+      Gewusst
+    </button>
+
+    <button type="button" class="fall-status-btn" data-status="unsicher">
+      Unsicher
+    </button>
+
+    <button type="button" class="fall-status-btn" data-status="nochmal-lernen">
+      Nochmal lernen
+    </button>
+  </div>
+
+  <p id="fall-status-feedback" class="fall-status-feedback"></p>
+</div>
+  </section>
+
+<script define:vars={{ slug: fall.slug }}>
+  const openedKey = "opened-fall-cases";
+  const statusKey = "fall-case-status";
+
+  const gespeichert = JSON.parse(localStorage.getItem(openedKey) || "[]");
+
+  if (Array.isArray(gespeichert) && !gespeichert.includes(slug)) {
+    gespeichert.push(slug);
+    localStorage.setItem(openedKey, JSON.stringify(gespeichert));
+  }
+
+  const statusButtons = document.querySelectorAll(".fall-status-btn");
+  const feedback = document.getElementById("fall-status-feedback");
+
+  const alleStatus = JSON.parse(localStorage.getItem(statusKey) || "{}");
+  const aktuellerStatus = alleStatus[slug];
+
+  const setActiveStatus = (status) => {
+    statusButtons.forEach((button) => {
+      if (button.dataset.status === status) {
+        button.classList.add("is-active");
+      } else {
+        button.classList.remove("is-active");
+      }
+    });
+  };
+
+  if (aktuellerStatus) {
+    setActiveStatus(aktuellerStatus);
+
+    if (feedback) {
+      if (aktuellerStatus === "gewusst") {
+        feedback.textContent = "Status gespeichert: Gewusst";
+      }
+
+      if (aktuellerStatus === "unsicher") {
+        feedback.textContent = "Status gespeichert: Unsicher";
+      }
+
+      if (aktuellerStatus === "nochmal-lernen") {
+        feedback.textContent = "Status gespeichert: Nochmal lernen";
+      }
+    }
+  }
+
+  statusButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const status = button.dataset.status;
+      const gespeicherteStatus = JSON.parse(localStorage.getItem(statusKey) || "{}");
+
+      gespeicherteStatus[slug] = status;
+      localStorage.setItem(statusKey, JSON.stringify(gespeicherteStatus));
+
+      setActiveStatus(status);
+
+      if (feedback) {
+        if (status === "gewusst") {
+          feedback.textContent = "Status gespeichert: Gewusst";
+        }
+
+        if (status === "unsicher") {
+          feedback.textContent = "Status gespeichert: Unsicher";
+        }
+
+        if (status === "nochmal-lernen") {
+          feedback.textContent = "Status gespeichert: Nochmal lernen";
+        }
+      }
+    });
+  });
+</script>
+</BaseLayout>

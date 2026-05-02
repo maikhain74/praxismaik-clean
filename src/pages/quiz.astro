@@ -1,0 +1,636 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PremiumGate from '../components/PremiumGate.astro';
+
+const allQuizQuestions = await getCollection('quiz');
+
+const isLocalhost =
+  Astro.url.hostname === 'localhost' || Astro.url.hostname === '127.0.0.1';
+
+const devUnlock =
+  Astro.url.searchParams.get('freischalten') === '1' && isLocalhost;
+
+const visibleQuizQuestions = devUnlock
+  ? allQuizQuestions
+  : allQuizQuestions.filter((item) => item.data.premium !== true);
+
+const freeCount = allQuizQuestions.filter((item) => item.data.premium !== true).length;
+const premiumCount = allQuizQuestions.filter((item) => item.data.premium === true).length;
+
+const availableTopics = [...new Set(
+  visibleQuizQuestions
+    .map((item) => item.data.topic?.trim())
+    .filter(Boolean)
+)].sort((a, b) => a.localeCompare(b, 'de'));
+
+const pageTitle = 'Prüfungsquiz Pflege';
+const hasVisibleQuestions = visibleQuizQuestions.length > 0;
+
+function formatTopicLabel(topic) {
+  const value = String(topic || "").trim().toLowerCase();
+
+  const topicLabels = {
+    anatomie: "Anatomie",
+    atmung: "Atmung",
+    demenz: "Demenz",
+    dokumentation: "Dokumentation",
+    ernaehrung: "Ernährung",
+    hygiene: "Hygiene",
+    kommunikation: "Kommunikation",
+    kreislauf: "Kreislauf",
+    medikation: "Medikation",
+    mobilisation: "Mobilisation",
+    mobilitaet: "Mobilität",
+    neurologie: "Neurologie",
+    notfall: "Notfall",
+    notfaelle: "Notfälle",
+    palliativ: "Palliativ",
+    "palliativ-care": "Palliativ-Care",
+    pflegeprozess: "Pflegeprozess",
+    prioritaet: "Priorität",
+    prophylaxe: "Prophylaxe",
+    psychiatrie: "Psychiatrie",
+    schmerz: "Schmerz",
+    sicherheit: "Sicherheit",
+    "sterben-tod-trauer": "Sterben-Tod-Trauer",
+    vitalzeichen: "Vitalzeichen",
+    wundversorgung: "Wundversorgung"
+  };
+
+  if (topicLabels[value]) {
+    return topicLabels[value];
+  }
+
+  return value
+    .split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join("-");
+}
+---
+
+<BaseLayout title="Prüfungsquiz" description="Lernmodus für Prüfungsfragen in der Pflegeausbildung.">
+  <section class="quiz-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Start</a>
+      <span class="breadcrumb-sep">›</span>
+      <span class="current">Quiz</span>
+    </nav>
+
+    <h1>{pageTitle}</h1>
+
+    {devUnlock && (
+      <div class="dev-box">
+        Testmodus aktiv, alle Quizfragen sind lokal freigeschaltet.
+      </div>
+    )}
+
+    {!hasVisibleQuestions ? (
+      <div class="quiz-empty-state">
+        <p class="muted">
+          Aktuell sind keine kostenlosen Quizfragen verfügbar.
+        </p>
+
+        <PremiumGate
+          title="Quiz nur mit Premium"
+          text="Die vollständigen Quizfragen sind nur für Premium freigeschaltet."
+          buttonText="Premium freischalten"
+          buttonHref="/premium"
+        />
+      </div>
+    ) : (
+      <>
+        <div class="quiz-topic-filter">
+          <a
+            href="/quiz"
+            class="quiz-topic-link btn secondary"
+            data-topic="all"
+          >
+            Alle Themen
+          </a>
+
+          {availableTopics.map((topic) => (
+            <a
+              href={`/quiz?topic=${encodeURIComponent(topic)}`}
+              class="quiz-topic-link btn secondary"
+              data-topic={String(topic).trim().toLowerCase()}
+            >
+              {formatTopicLabel(topic)}
+            </a>
+          ))}
+        </div>
+
+        <p class="muted">
+          Lerne Frage für Frage. Zeige dir die Antwort erst an, wenn du selbst nachgedacht hast.
+        </p>
+
+        {!devUnlock && premiumCount > 0 && (
+          <div class="notice-box">
+            Kostenlos sichtbar: {freeCount} Frage{freeCount === 1 ? '' : 'n'}, Premium schaltet mehr frei.
+          </div>
+        )}
+
+        <div class="quiz-mode-actions">
+          <a href="/quiz-exam" class="primary-btn quiz-exam-link">
+            <span style="color:#ffffff !important; text-decoration:none !important;">Zum Examensmodus</span>
+          </a>
+        </div>
+
+        <div class="quiz-status">
+          <span id="progressText">0 gewusst / 0 beantwortet</span>
+          <span id="quiz-counter">Frage 1 von {visibleQuizQuestions.length}</span>
+          <span id="quiz-progress">Beantwortet: 0</span>
+          <span id="quiz-score">Gewusst: 0</span>
+          <span id="quiz-rate">Quote: 0%</span>
+        </div>
+
+        <div class="quiz-actions-top">
+          <button id="resetProgressBtn" class="btn secondary" type="button">
+            Fortschritt zurücksetzen
+          </button>
+        </div>
+
+        <div class="quiz-progress-wrap">
+          <div class="quiz-progress-label">
+            <span id="quiz-progress-text">0 / 0 Fragen gelernt</span>
+            <span id="quiz-progress-percent">0%</span>
+          </div>
+
+          <div class="quiz-progressbar">
+            <div id="quiz-progress-fill" class="quiz-progressbar-fill"></div>
+          </div>
+        </div>
+
+        <div class="quiz-stack">
+          {visibleQuizQuestions.map((q, index) => (
+            <article
+              class={`quiz-slide${index === 0 ? " active" : ""}`}
+              data-index={index}
+              data-slug={q.slug}
+              data-question={q.data.question}
+              data-answer={q.data.answer}
+              data-difficulty={q.data.difficulty ?? ""}
+              data-topic={q.data.topic ? String(q.data.topic).trim().toLowerCase() : ""}
+            >
+              <div class="quiz-card-main">
+                <div class="quiz-card-label">
+                  {q.data.topic ? `Thema: ${formatTopicLabel(q.data.topic)}` : "Prüfungsfrage"}
+                </div>
+
+                <h2 class="quiz-question-title">
+                  {q.data.question}
+                </h2>
+
+                <button class="btn quiz-toggle-answer" type="button">
+                  Antwort anzeigen
+                </button>
+
+                <div class="quiz-result-actions">
+                  <button class="btn secondary quiz-mark-known" type="button">
+                    Gewusst
+                  </button>
+                  <button class="btn secondary quiz-mark-unknown" type="button">
+                    Nicht gewusst
+                  </button>
+                </div>
+
+                <div class="quiz-answer-panel" hidden>
+                  <p>{q.data.answer}</p>
+
+                  {q.data.difficulty ? (
+                    <p class="muted quiz-meta">Schwierigkeit: {q.data.difficulty}</p>
+                  ) : null}
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <div class="quiz-nav">
+          <button id="quiz-prev" class="btn secondary" type="button">Vorherige Frage</button>
+          <button id="quiz-next" class="btn" type="button">Nächste Frage</button>
+          <button id="quiz-shuffle" class="btn secondary" type="button">Fragen mischen</button>
+        </div>
+      </>
+    )}
+  </section>
+
+  <script>
+    const QUIZ_ANSWERS_STORAGE_KEY = "quiz-answers";
+    const WRONG_QUIZ_STORAGE_KEY = "wrong-quiz-questions";
+
+    const allSlides = Array.from(document.querySelectorAll(".quiz-slide"));
+    const topicButtons = Array.from(document.querySelectorAll(".quiz-topic-link"));
+
+    const counter = document.getElementById("quiz-counter");
+    const prevBtn = document.getElementById("quiz-prev");
+    const nextBtn = document.getElementById("quiz-next");
+    const shuffleBtn = document.getElementById("quiz-shuffle");
+    const resetBtn = document.getElementById("resetProgressBtn");
+
+    const progressTextTopEl = document.getElementById("progressText");
+    const progressEl = document.getElementById("quiz-progress");
+    const scoreEl = document.getElementById("quiz-score");
+    const rateEl = document.getElementById("quiz-rate");
+    const progressTextEl = document.getElementById("quiz-progress-text");
+    const progressPercentEl = document.getElementById("quiz-progress-percent");
+    const progressFillEl = document.getElementById("quiz-progress-fill");
+
+    let activeTopic = "all";
+    let visibleSlides = [...allSlides];
+    let currentIndex = 0;
+
+    const answers = new Map();
+
+    function loadSavedAnswers() {
+      try {
+        const raw = localStorage.getItem(QUIZ_ANSWERS_STORAGE_KEY);
+        if (!raw) return;
+
+        const parsed = JSON.parse(raw);
+        Object.entries(parsed).forEach(([key, value]) => {
+          if (value === "known" || value === "unknown") {
+            answers.set(Number(key), value);
+          }
+        });
+      } catch (error) {
+        console.error("Fehler beim Laden der Quiz-Antworten:", error);
+      }
+    }
+
+    function saveAnswers() {
+      localStorage.setItem(QUIZ_ANSWERS_STORAGE_KEY, JSON.stringify(Object.fromEntries(answers)));
+    }
+
+    function getWrongQuestions() {
+      try {
+        const raw = localStorage.getItem(WRONG_QUIZ_STORAGE_KEY);
+        if (!raw) return [];
+        const parsed = JSON.parse(raw);
+        return Array.isArray(parsed) ? parsed : [];
+      } catch (error) {
+        console.error("Fehler beim Laden der Fehlerfragen:", error);
+        return [];
+      }
+    }
+
+    function saveWrongQuestions(items) {
+      localStorage.setItem(WRONG_QUIZ_STORAGE_KEY, JSON.stringify(items));
+    }
+
+    function addWrongQuestion(questionData) {
+      const existing = getWrongQuestions();
+      const alreadyExists = existing.some((item) => item.slug === questionData.slug);
+
+      if (alreadyExists) return;
+
+      existing.push(questionData);
+      saveWrongQuestions(existing);
+    }
+
+    function removeWrongQuestion(slug) {
+      const existing = getWrongQuestions();
+      const filtered = existing.filter((item) => item.slug !== slug);
+      saveWrongQuestions(filtered);
+    }
+
+    function prioritizeWrongQuestions(slides) {
+      const wrongQuestions = getWrongQuestions();
+      const wrongSlugs = new Set(wrongQuestions.map((item) => item.slug));
+
+      const wrongSlides = [];
+      const normalSlides = [];
+
+      slides.forEach((slide) => {
+        const slug = slide.dataset.slug || "";
+        if (wrongSlugs.has(slug)) {
+          wrongSlides.push(slide);
+        } else {
+          normalSlides.push(slide);
+        }
+      });
+
+      return [...wrongSlides, ...normalSlides];
+    }
+
+    function getVisibleGlobalIndexes() {
+      return visibleSlides.map((slide) => Number(slide.dataset.index));
+    }
+
+    function updateStats() {
+      const visibleIndexes = getVisibleGlobalIndexes();
+
+      const answeredCount = visibleIndexes.filter((index) => answers.has(index)).length;
+
+      let knownCount = 0;
+      visibleIndexes.forEach((index) => {
+        if (answers.get(index) === "known") {
+          knownCount += 1;
+        }
+      });
+
+      const rate = answeredCount > 0
+        ? Math.round((knownCount / answeredCount) * 100)
+        : 0;
+
+      const progressPercent = visibleIndexes.length > 0
+        ? Math.round((answeredCount / visibleIndexes.length) * 100)
+        : 0;
+
+      if (progressTextTopEl) {
+        progressTextTopEl.textContent = `${knownCount} gewusst / ${answeredCount} beantwortet`;
+      }
+
+      if (progressEl) {
+        progressEl.textContent = `Beantwortet: ${answeredCount}`;
+      }
+
+      if (scoreEl) {
+        scoreEl.textContent = `Gewusst: ${knownCount}`;
+      }
+
+      if (rateEl) {
+        rateEl.textContent = `Quote: ${rate}%`;
+      }
+
+      if (progressTextEl) {
+        progressTextEl.textContent = `${answeredCount} / ${visibleIndexes.length} Fragen gelernt`;
+      }
+
+      if (progressPercentEl) {
+        progressPercentEl.textContent = `${progressPercent}%`;
+      }
+
+      if (progressFillEl) {
+        progressFillEl.style.width = `${progressPercent}%`;
+      }
+    }
+
+    function resetSlideUi(slide) {
+      const answerPanel = slide.querySelector(".quiz-answer-panel");
+      const toggleBtn = slide.querySelector(".quiz-toggle-answer");
+      const knownBtn = slide.querySelector(".quiz-mark-known");
+      const unknownBtn = slide.querySelector(".quiz-mark-unknown");
+
+      if (answerPanel) {
+        answerPanel.setAttribute("hidden", "");
+      }
+
+      if (toggleBtn) {
+        toggleBtn.textContent = "Antwort anzeigen";
+      }
+
+      knownBtn?.classList.remove("active-known");
+      unknownBtn?.classList.remove("active-unknown");
+    }
+
+    function applyTopicFilter(topic) {
+      activeTopic = topic;
+
+      visibleSlides = allSlides.filter((slide) => {
+        const slideTopic = (slide.dataset.topic || "").trim().toLowerCase();
+        return activeTopic === "all" || slideTopic === activeTopic;
+      });
+
+      visibleSlides = prioritizeWrongQuestions(visibleSlides);
+      currentIndex = 0;
+
+      topicButtons.forEach((btn) => {
+        btn.classList.toggle("active", btn.dataset.topic === activeTopic);
+      });
+
+      updateView();
+    }
+
+    function updateView() {
+      allSlides.forEach((slide) => {
+        slide.classList.remove("active");
+        slide.style.display = "none";
+      });
+
+      if (visibleSlides.length === 0) {
+        if (counter) {
+          counter.textContent = "Keine Fragen in diesem Thema";
+        }
+
+        if (prevBtn) prevBtn.disabled = true;
+        if (nextBtn) nextBtn.disabled = true;
+
+        updateStats();
+        return;
+      }
+
+      if (currentIndex < 0) currentIndex = 0;
+      if (currentIndex > visibleSlides.length - 1) currentIndex = visibleSlides.length - 1;
+
+      const activeSlide = visibleSlides[currentIndex];
+      activeSlide.style.display = "";
+      activeSlide.classList.add("active");
+
+      allSlides.forEach((slide) => {
+        const globalIndex = Number(slide.dataset.index);
+        const knownBtn = slide.querySelector(".quiz-mark-known");
+        const unknownBtn = slide.querySelector(".quiz-mark-unknown");
+
+        knownBtn?.classList.remove("active-known");
+        unknownBtn?.classList.remove("active-unknown");
+
+        if (answers.get(globalIndex) === "known") {
+          knownBtn?.classList.add("active-known");
+        }
+
+        if (answers.get(globalIndex) === "unknown") {
+          unknownBtn?.classList.add("active-unknown");
+        }
+      });
+
+      if (counter) {
+        counter.textContent = `Frage ${currentIndex + 1} von ${visibleSlides.length}`;
+      }
+
+      if (prevBtn) {
+        prevBtn.disabled = currentIndex === 0;
+      }
+
+      if (nextBtn) {
+        nextBtn.disabled = currentIndex === visibleSlides.length - 1;
+      }
+
+      updateStats();
+    }
+
+    function shuffleVisibleSlides() {
+      for (let i = visibleSlides.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [visibleSlides[i], visibleSlides[j]] = [visibleSlides[j], visibleSlides[i]];
+      }
+
+      visibleSlides = prioritizeWrongQuestions(visibleSlides);
+
+      visibleSlides.forEach((slide) => {
+        resetSlideUi(slide);
+      });
+
+      currentIndex = 0;
+      updateView();
+    }
+
+    function markAnswer(globalIndex, value, slide, knownBtn, unknownBtn) {
+      const previousValue = answers.get(globalIndex);
+
+      answers.set(globalIndex, value);
+      saveAnswers();
+
+      const slug = slide.dataset.slug || "";
+
+      if (value === "known") {
+        if (slug) {
+          removeWrongQuestion(slug);
+        }
+
+        knownBtn?.classList.add("active-known");
+        unknownBtn?.classList.remove("active-unknown");
+      }
+
+      if (value === "unknown") {
+        const wrongQuestion = {
+          slug: slide.dataset.slug || "",
+          question: slide.dataset.question || "",
+          answer: slide.dataset.answer || "",
+          topic: slide.dataset.topic || "",
+          difficulty: slide.dataset.difficulty || ""
+        };
+
+        if (wrongQuestion.slug && wrongQuestion.question && wrongQuestion.answer) {
+          addWrongQuestion(wrongQuestion);
+        }
+
+        unknownBtn?.classList.add("active-unknown");
+        knownBtn?.classList.remove("active-known");
+      }
+
+      if (previousValue && previousValue !== value && value === "known" && slug) {
+        removeWrongQuestion(slug);
+      }
+
+      visibleSlides = prioritizeWrongQuestions(visibleSlides);
+      updateView();
+    }
+
+    function resetProgress() {
+      localStorage.removeItem(QUIZ_ANSWERS_STORAGE_KEY);
+      localStorage.removeItem(WRONG_QUIZ_STORAGE_KEY);
+      location.reload();
+    }
+
+    loadSavedAnswers();
+
+    allSlides.forEach((slide) => {
+      const globalIndex = Number(slide.dataset.index);
+      const toggleBtn = slide.querySelector(".quiz-toggle-answer");
+      const answerPanel = slide.querySelector(".quiz-answer-panel");
+      const knownBtn = slide.querySelector(".quiz-mark-known");
+      const unknownBtn = slide.querySelector(".quiz-mark-unknown");
+
+      if (toggleBtn && answerPanel) {
+        toggleBtn.addEventListener("click", () => {
+          const isHidden = answerPanel.hasAttribute("hidden");
+
+          if (isHidden) {
+            answerPanel.removeAttribute("hidden");
+            toggleBtn.textContent = "Antwort ausblenden";
+          } else {
+            answerPanel.setAttribute("hidden", "");
+            toggleBtn.textContent = "Antwort anzeigen";
+          }
+        });
+      }
+
+      if (knownBtn) {
+        knownBtn.addEventListener("click", () => {
+          markAnswer(globalIndex, "known", slide, knownBtn, unknownBtn);
+        });
+      }
+
+      if (unknownBtn) {
+        unknownBtn.addEventListener("click", () => {
+          markAnswer(globalIndex, "unknown", slide, knownBtn, unknownBtn);
+        });
+      }
+    });
+
+    if (prevBtn) {
+      prevBtn.addEventListener("click", () => {
+        if (currentIndex > 0) {
+          currentIndex -= 1;
+          updateView();
+        }
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener("click", () => {
+        if (currentIndex < visibleSlides.length - 1) {
+          currentIndex += 1;
+          updateView();
+        }
+      });
+    }
+
+    if (shuffleBtn) {
+      shuffleBtn.addEventListener("click", () => {
+        shuffleVisibleSlides();
+      });
+    }
+
+    if (resetBtn) {
+      resetBtn.addEventListener("click", () => {
+        const confirmReset = confirm("Willst du wirklich deinen Fortschritt löschen?");
+        if (confirmReset) {
+          resetProgress();
+        }
+      });
+    }
+
+    topicButtons.forEach((button) => {
+      button.addEventListener("click", (event) => {
+        event.preventDefault();
+
+        const topic = button.dataset.topic || "all";
+        const url = topic === "all"
+          ? "/quiz"
+          : `/quiz?topic=${encodeURIComponent(topic)}`;
+
+        window.history.replaceState({}, "", url);
+        applyTopicFilter(topic);
+      });
+    });
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialTopic = (urlParams.get("topic") || "all").trim().toLowerCase();
+
+    applyTopicFilter(initialTopic);
+  </script>
+
+  <style>
+    .dev-box {
+      margin-bottom: 1.5rem;
+      padding: 0.9rem 1rem;
+      border: 1px solid #d1fae5;
+      background: #ecfdf5;
+      color: #065f46;
+      border-radius: 12px;
+      font-weight: 700;
+    }
+
+    .notice-box {
+      margin: 1rem 0 1.25rem;
+      padding: 0.9rem 1rem;
+      border: 1px solid rgba(201, 122, 99, 0.2);
+      background: rgba(201, 122, 99, 0.08);
+      color: #18324a;
+      border-radius: 12px;
+      font-weight: 600;
+    }
+  </style>
+</BaseLayout>

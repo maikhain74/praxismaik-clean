@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const themen = await getCollection("themen");
+const items = themen.filter((t) => t.slug.toLowerCase().startsWith("demenz/"));
+---
+
+<BaseLayout title="Demenz">
+  <h1>Demenz</h1>
+  <p class="muted">Beziehung, Kommunikation, Verständnis, praktische Ansätze.</p>
+
+  {items.length === 0 ? (
+    <p class="muted">Noch keine Inhalte in diesem Bereich.</p>
+  ) : (
+    <div class="topic-grid" style="margin-top:20px;">
+      {items.map((t) => (
+        <a class="topic-card" href={`/themen/${t.slug}/`}>
+          <h2>{t.data.title}</h2>
+          <p>{t.data.description}</p>
+        </a>
+      ))}
+    </div>
+  )}
+</BaseLayout>

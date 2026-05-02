@@ -1,0 +1,805 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const pruefungen = await getCollection("pruefung");
+
+const sortedPruefungen = [...pruefungen].sort((a, b) => {
+  const topicCompare = (a.data.topic ?? "").localeCompare(b.data.topic ?? "");
+  if (topicCompare !== 0) return topicCompare;
+
+  return (a.data.reihenfolge ?? 999) - (b.data.reihenfolge ?? 999);
+});
+
+const groupedPruefungenMap = new Map();
+
+for (const item of sortedPruefungen) {
+  const topicKey = item.data.topic?.trim() || "ohne-thema";
+
+  if (!groupedPruefungenMap.has(topicKey)) {
+    groupedPruefungenMap.set(topicKey, []);
+  }
+
+  groupedPruefungenMap.get(topicKey).push(item);
+}
+
+const groupedPruefungen = Array.from(groupedPruefungenMap.entries()).map(([topic, items]) => ({
+  topic,
+  items,
+}));
+
+const premiumCount = pruefungen.filter((item) => item.data.premium === true).length;
+const freeCount = pruefungen.filter((item) => item.data.premium !== true).length;
+
+const hasPremiumCookie = Astro.cookies.get("praxismaik_premium")?.value === "1";
+
+const startablePruefungen = hasPremiumCookie
+  ? sortedPruefungen
+  : sortedPruefungen.filter((item) => item.data.premium !== true);
+
+const firstStartableCase = startablePruefungen[0] ?? sortedPruefungen[0];
+
+const startableCases = startablePruefungen.map((item, index) => ({
+  slug: item.slug,
+  title: item.data.title ?? "Prüfungsfall",
+  order: index + 1,
+}));function formatTopicLabel(topic) {
+  if (topic === "ohne-thema") return "Ohne Themenzuordnung";
+
+  return topic
+    .split("-")
+    .map((teil) => teil.charAt(0).toUpperCase() + teil.slice(1))
+    .join(" ");
+}
+---
+
+<BaseLayout
+  title="Prüfung | PraxisMaik"
+  description="Prüfungsvorbereitung für die Pflegeausbildung mit strukturierten Prüfungsfällen und klarer Lernlogik."
+>
+  <section class="exam-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Start</a>
+      <span class="breadcrumb-sep">›</span>
+      <span class="current">Prüfung</span>
+    </nav>
+
+   <header class="exam-hero">
+  <span class="exam-eyebrow">Prüfungsbereich</span>
+  <h1>Prüfungsfälle</h1>
+  <p class="exam-lead">
+    Hier trainierst du prüfungsnahe Fallsituationen für die Pflegeausbildung,
+    mit klarer Struktur und echter Prüfungslogik.
+  </p>
+
+     <div class="exam-hero-actions">
+    <a
+      href={`/pruefung/${firstStartableCase.slug}/`}
+      class="btn exam-main-btn"
+      id="smart-start-button"
+      data-default-text="Jetzt mit dem ersten Fall starten"
+      data-repeat-text="Alle Fälle abgeschlossen, ersten Fall wiederholen"
+    >
+      Jetzt mit dem ersten Fall starten
+    </a>
+    <a href="/premium/" class="btn secondary">Premium ansehen</a>
+  </div>
+
+  <div class="overview-stats">
+        <div class="overview-stat">
+          <strong>{pruefungen.length}</strong>
+          <span>Prüfungsfälle gesamt</span>
+        </div>
+        <div class="overview-stat">
+          <strong>{freeCount}</strong>
+          <span>kostenlos</span>
+        </div>
+        <div class="overview-stat">
+          <strong>{premiumCount}</strong>
+          <span>Premium</span>
+        </div>
+      </div>
+
+      <div class="cases-progress-overview" id="cases-progress-overview" hidden>
+        <p class="cases-progress-label">Dein Fortschritt</p>
+        <p class="cases-progress-text">
+          <strong id="cases-progress-count">0</strong> von <strong>{pruefungen.length}</strong> Fällen abgeschlossen
+        </p>
+      </div>
+       </header>
+
+       <div
+      id="smart-start-data"
+      data-cases={JSON.stringify(startableCases)}
+      data-default-href={`/pruefung/${firstStartableCase.slug}/`}
+      hidden
+    ></div>
+
+    <section class="exam-logic">
+      <div class="section-headline">
+        <h2>So denkst du in der Prüfung</h2>
+        <p class="section-intro">
+          Gute Prüfungsantworten entstehen nicht durch Auswendiglernen, sondern durch
+          klares pflegerisches Denken.
+        </p>
+      </div>
+
+      <div class="exam-logic-grid">
+        <div class="exam-logic-card">
+          <span class="logic-step">1</span>
+          <h3>Situation erfassen</h3>
+          <p>Was ist das eigentliche Problem und was fällt sofort auf?</p>
+        </div>
+
+        <div class="exam-logic-card">
+          <span class="logic-step">2</span>
+          <h3>Probleme erkennen</h3>
+          <p>Welche Risiken, Symptome oder Pflegeprobleme stehen im Vordergrund?</p>
+        </div>
+
+        <div class="exam-logic-card">
+          <span class="logic-step">3</span>
+          <h3>Prioritäten setzen</h3>
+          <p>Was ist jetzt am wichtigsten und was folgt danach?</p>
+        </div>
+
+        <div class="exam-logic-card">
+          <span class="logic-step">4</span>
+          <h3>Maßnahmen begründen</h3>
+          <p>Welche Handlung ist fachlich richtig und warum?</p>
+        </div>
+      </div>
+    </section>
+
+    {groupedPruefungen.length === 0 ? (
+      <section class="exam-empty">
+        <h2>Noch keine Prüfungsfälle vorhanden</h2>
+        <p>Lege zuerst Inhalte in <code>src/content/pruefung</code> an.</p>
+      </section>
+    ) : (
+      <>
+        {groupedPruefungen.map((group) => (
+          <section class="exam-group">
+            <div class="exam-group-head">
+              <div>
+                <h2>{formatTopicLabel(group.topic)}</h2>
+                <p>
+                  {group.topic === "ohne-thema"
+                    ? "Diese Prüfungsfälle haben noch kein topic im Frontmatter."
+                    : "Prüfungsfälle zu diesem Themenbereich."}
+                </p>
+              </div>
+            </div>
+
+            <div class="exam-grid">
+              {group.items.map((item, index) => {
+                const isPremium = item.data.premium === true;
+
+                return (
+
+                <a
+                    class={`exam-card ${isPremium ? "exam-card-premium" : "exam-card-free"}`}
+                    href={`/pruefung/${item.slug}/`}
+                    data-case-card
+                    data-case-slug={item.slug}
+                  >
+                      <div class="exam-card-top">
+                      <div class="exam-card-badges">
+                        {isPremium ? (
+                          <span class="card-badge card-badge-premium">🔒 Premium</span>
+                        ) : (
+                          <span class="card-badge card-badge-free">Kostenlos</span>
+                        )}
+
+                        <span class="card-badge card-badge-completed" data-case-completed hidden>
+                          ✓ Abgeschlossen
+                        </span>
+                      </div>
+
+                   <span class="exam-order">
+  Fall {sortedPruefungen.findIndex((f) => f.slug === item.slug) + 1}
+</span>
+                    </div>
+
+                    <h3>{item.data.title}</h3>
+
+                    {item.data.beschreibung ? (
+                      <p>{item.data.beschreibung}</p>
+                    ) : (
+                      <p>Kein Beschreibungstext vorhanden.</p>
+                    )}
+
+                    {isPremium ? (
+                      <div class="premium-hint">
+                        <strong>Die Lösung ist gesperrt</strong>
+                        <span>Komplette Denkstruktur und Prüfungsantwort nur mit Premium</span>
+                      </div>
+                    ) : (
+                      <div class="free-hint">
+                        <strong>Direkt verfügbar</strong>
+                        <span>Ohne Freischaltung lesbar</span>
+                      </div>
+                    )}
+
+                    <span class="exam-link">
+                      {isPremium ? "Vorschau öffnen" : "Prüfungsfall öffnen"}
+                    </span>
+                  </a>
+                );
+              })}
+            </div>
+          </section>
+        ))}
+
+        <section class="exam-premium-box">
+          <div class="exam-premium-inner">
+            <div>
+              <span class="exam-premium-kicker">PraxisMaik Premium</span>
+              <h2>Mehr Fälle, mehr Tiefe, mehr Prüfungssicherheit</h2>
+              <p>
+                Im freien Bereich übst du die Grundlagen. Mit Premium bekommst du
+                weitere Prüfungsfälle, vollständige Lösungen und die Denklogik hinter
+                den richtigen Antworten.
+              </p>
+            </div>
+
+            <div class="exam-premium-actions">
+              <a href="/premium-interesse" class="btn exam-main-btn">
+                Premium freischalten
+              </a>
+              <a href="/premium/" class="btn secondary">
+                Erst ansehen
+              </a>
+            </div>
+          </div>
+        </section>
+      </>
+    )}
+  </section>
+
+   <script>
+    const STORAGE_KEY = 'praxismaik_completed_cases';
+
+    function getCompletedCases() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        const parsed = raw ? JSON.parse(raw) : [];
+        return Array.isArray(parsed) ? parsed : [];
+      } catch {
+        return [];
+      }
+    }
+
+    const completedCases = getCompletedCases();
+    const uniqueCompletedCases = [...new Set(completedCases)];
+
+    const progressOverview = document.getElementById('cases-progress-overview');
+    const progressCount = document.getElementById('cases-progress-count');
+    const caseCards = document.querySelectorAll('[data-case-card]');
+    const smartStartButton = document.getElementById('smart-start-button');
+    const smartStartData = document.getElementById('smart-start-data');
+
+    if (progressOverview && progressCount) {
+      progressCount.textContent = String(uniqueCompletedCases.length);
+      progressOverview.hidden = false;
+    }
+
+    caseCards.forEach((card) => {
+      const slug = card.getAttribute('data-case-slug') ?? '';
+      const completedBadge = card.querySelector('[data-case-completed]');
+
+      if (uniqueCompletedCases.includes(slug)) {
+        card.classList.add('exam-card-completed');
+
+        if (completedBadge) {
+          completedBadge.hidden = false;
+        }
+      }
+    });
+
+    if (smartStartButton && smartStartData) {
+      let cases = [];
+
+      try {
+        cases = JSON.parse(smartStartData.dataset.cases ?? '[]');
+      } catch {
+        cases = [];
+      }
+
+      const defaultHref =
+        smartStartData.dataset.defaultHref ??
+        smartStartButton.getAttribute('href') ??
+        '/pruefung/';
+
+      const defaultText =
+        smartStartButton.dataset.defaultText ??
+        'Jetzt mit dem ersten Fall starten';
+
+      const repeatText =
+        smartStartButton.dataset.repeatText ??
+        'Alle Fälle abgeschlossen, ersten Fall wiederholen';
+
+      const nextOpenCase = cases.find((item) => !uniqueCompletedCases.includes(item.slug));
+
+      if (nextOpenCase) {
+        smartStartButton.setAttribute('href', `/pruefung/${nextOpenCase.slug}/`);
+
+        if (uniqueCompletedCases.length === 0) {
+          smartStartButton.textContent = defaultText;
+        } else {
+          smartStartButton.textContent = `Weiter mit Fall ${nextOpenCase.order}`;
+        }
+      } else {
+        smartStartButton.setAttribute('href', defaultHref);
+        smartStartButton.textContent = repeatText;
+      }
+    }
+  </script>
+</BaseLayout>
+
+<style>
+.exam-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.2rem 1rem 3rem;
+}
+
+.breadcrumbs {
+  margin-bottom: 1.2rem;
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.breadcrumbs a {
+  color: #18324a;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-sep {
+  margin: 0 0.4rem;
+}
+
+.exam-hero {
+  max-width: 780px;
+  margin-bottom: 2.4rem;
+}
+
+.exam-eyebrow {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: #eef5ff;
+  color: #18324a;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.exam-hero h1 {
+  margin-bottom: 0.7rem;
+  font-size: clamp(1.9rem, 3vw, 2.5rem);
+  line-height: 1.12;
+}
+
+.exam-lead {
+  max-width: 58ch;
+  margin: 0;
+  color: #5b6b7a;
+  line-height: 1.7;
+}
+
+.exam-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 1.4rem;
+}
+
+.exam-main-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cases-progress-overview {
+  margin-top: 1.1rem;
+  padding: 1rem 1.1rem;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+}
+
+.cases-progress-label {
+  margin: 0 0 0.35rem 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+.cases-progress-text {
+  margin: 0;
+  color: #18324a;
+  line-height: 1.5;
+}
+
+.overview-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 1.4rem;
+}
+
+.overview-stat {
+  min-width: 140px;
+  padding: 0.9rem 1rem;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+}
+
+.overview-stat strong {
+  display: block;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  color: #18324a;
+}
+
+.overview-stat span {
+  display: block;
+  margin-top: 0.25rem;
+  color: #5b6b7a;
+  font-size: 0.92rem;
+}
+
+.section-headline {
+  max-width: 760px;
+  margin-bottom: 1rem;
+}
+
+.section-headline h2 {
+  margin-bottom: 0.45rem;
+}
+
+.section-intro {
+  margin: 0;
+  color: #5b6b7a;
+  line-height: 1.65;
+}
+
+.exam-logic {
+  margin-top: 2.5rem;
+}
+
+.exam-logic-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.4rem;
+}
+.exam-logic-card {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 18px;
+  padding: 1.5rem 1.4rem;
+ box-shadow: 0 12px 28px rgba(24, 50, 74, 0.06);
+  text-align: center;
+}
+.exam-logic-card:nth-child(1) {
+  background: linear-gradient(180deg, #fff7e0 0%, #ffffff 100%);
+  border-color: rgba(242, 201, 76, 0.3);
+}
+
+.exam-logic-card:nth-child(2) {
+  background: linear-gradient(180deg, #f4fbe6 0%, #ffffff 100%);
+  border-color: rgba(155, 207, 76, 0.3);
+}
+
+.exam-logic-card:nth-child(3) {
+  background: linear-gradient(180deg, #fff3e8 0%, #ffffff 100%);
+  border-color: rgba(242, 153, 74, 0.3);
+}
+
+.exam-logic-card:nth-child(4) {
+  background: linear-gradient(180deg, #f2f1ff 0%, #ffffff 100%);
+  border-color: rgba(142, 140, 230, 0.3);
+}
+
+.logic-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 0.6rem;
+  color: #2b2b2b;
+}
+
+.exam-logic-card:nth-child(1) .logic-step {
+  background: #f2c94c;
+}
+
+.exam-logic-card:nth-child(2) .logic-step {
+  background: #9bcf4c;
+}
+
+.exam-logic-card:nth-child(3) .logic-step {
+  background: #f2994a;
+}
+
+.exam-logic-card:nth-child(4) .logic-step {
+  background: #8e8ce6;
+}
+
+.exam-logic-card h3 {
+  margin: 0.6rem 0 0.5rem 0;
+  font-size: 1.08rem;
+  line-height: 1.3;
+}
+.exam-logic-card p {
+  margin: 0;
+  color: #5b6b7a;
+  line-height: 1.6;
+}
+.exam-empty {
+  margin-top: 2rem;
+  padding: 1.4rem;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+}
+
+.exam-group {
+  margin-top: 2.8rem;
+}
+
+.exam-group-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.exam-group-head h2 {
+  margin: 0 0 0.35rem 0;
+}
+
+.exam-group-head p {
+  margin: 0;
+  color: #5b6b7a;
+  line-height: 1.6;
+}
+
+.exam-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.exam-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  min-height: 260px;
+  padding: 1.25rem;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  text-decoration: none;
+  color: inherit !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  overflow: hidden;
+}
+
+.exam-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(24, 50, 74, 0.08);
+  border-color: #cfdceb;
+  text-decoration: none;
+}
+
+.exam-card-premium {
+  border-color: rgba(154, 52, 18, 0.22);
+  background: linear-gradient(180deg, #fffaf6 0%, #ffffff 100%);
+}
+
+.exam-card-premium::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 70px;
+  background: linear-gradient(to top, rgba(255, 244, 232, 0.9), rgba(255, 244, 232, 0));
+  pointer-events: none;
+}
+
+.exam-card-free {
+  border-color: rgba(22, 101, 52, 0.15);
+}
+
+.exam-card-completed {
+  border-color: rgba(24, 50, 74, 0.2);
+}
+
+.exam-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.exam-card-badges {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.card-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.card-badge-premium {
+  background: #fff4e8;
+  color: #9a3412;
+}
+
+.card-badge-free {
+  background: #ecfdf5;
+  color: #166534;
+}
+
+.card-badge-completed {
+  background: #eef5ff;
+  color: #18324a;
+}
+
+.exam-order {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  background: #f5f7fb;
+  color: #556270;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.exam-card h3 {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.35;
+}
+
+.exam-card p {
+  margin: 0;
+  color: #556270;
+  line-height: 1.6;
+}
+
+.premium-hint,
+.free-hint {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.8rem 0.9rem;
+  border-radius: 14px;
+  margin-top: 0.1rem;
+}
+
+.premium-hint {
+  background: rgba(255, 244, 232, 0.95);
+  border: 1px solid rgba(154, 52, 18, 0.14);
+}
+
+.free-hint {
+  background: rgba(236, 253, 245, 0.95);
+  border: 1px solid rgba(22, 101, 52, 0.12);
+}
+
+.premium-hint strong,
+.free-hint strong {
+  font-size: 0.92rem;
+  line-height: 1.2;
+  color: #18324a;
+}
+
+.premium-hint span,
+.free-hint span {
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: #5b6b7a;
+}
+
+.exam-link {
+  position: relative;
+  z-index: 1;
+  margin-top: auto;
+  font-weight: 700;
+  color: #18324a;
+}
+
+.exam-premium-box {
+  margin-top: 3rem;
+}
+
+.exam-premium-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1.2rem;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #fffaf6 0%, #ffffff 100%);
+  border: 1px solid rgba(154, 52, 18, 0.16);
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+}
+
+.exam-premium-kicker {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: #fff4e8;
+  color: #9a3412;
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.exam-premium-inner h2 {
+  margin: 0 0 0.55rem 0;
+}
+
+.exam-premium-inner p {
+  margin: 0;
+  color: #556270;
+  line-height: 1.65;
+}
+
+.exam-premium-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+@media (max-width: 900px) {
+  .exam-grid,
+  .exam-logic-grid,
+  .exam-premium-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .exam-group-head {
+    flex-direction: column;
+  }
+
+  .exam-premium-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+</style>

@@ -1,0 +1,207 @@
+---
+import { getCollection, render } from 'astro:content';
+import PremiumGate from '../../components/PremiumGate.astro';
+
+const slug = Astro.params.slug;
+
+if (!slug) {
+  throw new Error('Slug fehlt.');
+}
+
+const lernskripte = await getCollection('lernskripte');
+const eintrag = lernskripte.find((item) => item.slug === slug);
+
+if (!eintrag) {
+  return Astro.redirect('/lernskripte');
+}
+
+const { Content } = await render(eintrag);
+
+const isPremium = eintrag.data.premium === true;
+const title = eintrag.data.title ?? 'Lernskript';
+const beschreibung = eintrag.data.beschreibung ?? '';
+const preview = eintrag.data.preview ?? '';
+
+const isLocalhost =
+  Astro.url.hostname === 'localhost' || Astro.url.hostname === '127.0.0.1';
+
+const devUnlock =
+  Astro.url.searchParams.get('freischalten') === '1' && isLocalhost;
+
+const hasPremiumCookie = Astro.cookies.get('praxismaik_premium')?.value === '1';
+
+const showFullContent = !isPremium || devUnlock || hasPremiumCookie;
+---
+
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} | PraxisMaik</title>
+    <meta name="description" content={beschreibung} />
+  </head>
+
+  <body>
+    <main class="container">
+      <a href="/lernskripte" class="back-link">← Zurück zu den Lernskripten</a>
+
+      <article class="content-card">
+        <header class="content-header">
+          <p class="content-badge">
+            {isPremium ? 'Premium-Lernskript' : 'Lernskript'}
+          </p>
+
+          <h1>{title}</h1>
+
+          {beschreibung && <p class="content-description">{beschreibung}</p>}
+
+          {devUnlock && (
+            <div class="status-box">
+              Testmodus aktiv, Premium-Inhalt lokal freigeschaltet.
+            </div>
+          )}
+
+          {hasPremiumCookie && (
+            <div class="status-box">
+              Premium ist aktiv.
+            </div>
+          )}
+        </header>
+
+        {showFullContent ? (
+          <section class="markdown-content">
+            <Content />
+          </section>
+        ) : (
+          <>
+            {preview && (
+              <section class="preview-box">
+                <h2>Vorschau</h2>
+                <p>{preview}</p>
+              </section>
+            )}
+
+            <PremiumGate
+              title="Du siehst nur einen Teil dieses Lernskripts"
+              text="Die entscheidenden Inhalte, Prüfungslogik und konkreten Antworten sind nur im Premium-Bereich freigeschaltet."
+              buttonText="Jetzt freischalten"
+              buttonHref="/premium"
+            />
+          </>
+        )}
+      </article>
+    </main>
+  </body>
+</html>
+
+<style>
+  :global(body) {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f4f6;
+    color: #111827;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem;
+  }
+
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: #18324a;
+  }
+
+  .back-link:hover {
+    text-decoration: underline;
+  }
+
+  .content-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  }
+
+  .content-header {
+    margin-bottom: 2rem;
+  }
+
+  .content-badge {
+    display: inline-block;
+    margin: 0 0 1rem;
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    background: #eef2ff;
+    color: #3730a3;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  h1 {
+    margin: 0 0 0.75rem;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .content-description {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #4b5563;
+  }
+
+  .status-box {
+    margin-top: 1rem;
+    padding: 0.9rem 1rem;
+    border: 1px solid #d1fae5;
+    background: #ecfdf5;
+    color: #065f46;
+    border-radius: 12px;
+    font-weight: 700;
+  }
+
+  .preview-box {
+    padding: 1.25rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    background: #fafafa;
+  }
+
+  .preview-box h2 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+  }
+
+  .preview-box p {
+    margin: 0;
+    line-height: 1.8;
+    white-space: pre-line;
+  }
+
+  .markdown-content {
+    line-height: 1.8;
+  }
+
+  .markdown-content :global(h2),
+  .markdown-content :global(h3),
+  .markdown-content :global(h4) {
+    margin-top: 2rem;
+    line-height: 1.3;
+  }
+
+  .markdown-content :global(p),
+  .markdown-content :global(li) {
+    line-height: 1.8;
+  }
+
+  .markdown-content :global(ul),
+  .markdown-content :global(ol) {
+    padding-left: 1.4rem;
+  }
+</style>

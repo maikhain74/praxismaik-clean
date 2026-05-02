@@ -1,0 +1,133 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Langzeitpflege">
+  <section class="einsatzbereich-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Start</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="/themen/">Themen</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="/themen/einsatzbereiche/">Einsatzbereiche</a>
+      <span class="breadcrumb-sep">›</span>
+      <span class="current">Langzeitpflege</span>
+    </nav>
+
+    <h1>Langzeitpflege</h1>
+
+    <p class="muted intro-text">
+      In der Langzeitpflege begleitest du Menschen über längere Zeit. Dabei geht es um
+      Alltag, Beziehung, chronische Erkrankungen und den Erhalt von Lebensqualität.
+    </p>
+
+    <section class="einsatzbereich-block">
+      <h2>Worum es in diesem Bereich geht</h2>
+      <p>
+        Langzeitpflege findet häufig im Pflegeheim oder in vergleichbaren Wohnformen statt.
+        Menschen brauchen dort nicht nur Unterstützung bei der Pflege, sondern auch Struktur,
+        Orientierung, Sicherheit und soziale Begleitung im Alltag.
+      </p>
+    </section>
+
+    <section class="einsatzbereich-block">
+      <h2>Was Auszubildende hier lernen</h2>
+      <div class="einsatzbereich-grid">
+        <div class="einsatzbereich-card">
+          <h3>Alltag begleiten</h3>
+          <p>Pflege und Alltagsgestaltung verbinden, statt nur einzelne Aufgaben zu erledigen.</p>
+        </div>
+
+        <div class="einsatzbereich-card">
+          <h3>Chronische Situationen einschätzen</h3>
+          <p>Veränderungen bei langandauernden Erkrankungen erkennen und begleiten.</p>
+        </div>
+
+        <div class="einsatzbereich-card">
+          <h3>Beziehungen aufbauen</h3>
+          <p>Vertrauen, Biografiearbeit und professionelle Nähe im Pflegealltag gestalten.</p>
+        </div>
+
+        <div class="einsatzbereich-card">
+          <h3>Ressourcen erhalten</h3>
+          <p>Selbstständigkeit, Mobilität und Orientierung so weit wie möglich fördern.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="einsatzbereich-block">
+      <h2>Typische pflegerische Schwerpunkte</h2>
+      <ul class="einsatzbereich-list">
+        <li>Körperpflege und Unterstützung im Alltag</li>
+        <li>Mobilisation und Sturzprophylaxe</li>
+        <li>Umgang mit Demenz und Orientierungslosigkeit</li>
+        <li>Ernährung und Flüssigkeitsversorgung</li>
+        <li>Hautbeobachtung und Dekubitusprophylaxe</li>
+        <li>Begleitung chronisch kranker Menschen</li>
+      </ul>
+    </section>
+
+    <section class="einsatzbereich-block">
+      <h2>Typische Themen für diesen Bereich</h2>
+      <div class="einsatzbereich-links">
+        <a class="einsatzbereich-link" href="/themen/demenz/">Demenz</a>
+        <a class="einsatzbereich-link" href="/themen/prophylaxen/">Prophylaxen</a>
+        <a class="einsatzbereich-link" href="/themen/pflegeprozess/">Pflegeprozess</a>
+        <a class="einsatzbereich-link" href="/themen/kommunikation/">Kommunikation</a>
+        <a class="einsatzbereich-link" href="/themen/vitalzeichen/">Vitalzeichen</a>
+        <a class="einsatzbereich-link" href="/themen/expertenstandards/">Expertenstandards</a>
+      </div>
+    </section>
+
+    <section class="einsatzbereich-block einsatzbereich-note">
+      <h2>Prüfungsbezug</h2>
+      <p>
+        In Prüfungen steht Langzeitpflege oft für den Umgang mit chronischen Belastungen,
+        eingeschränkter Selbstständigkeit, Demenz und pflegerischer Alltagsgestaltung.
+      </p>
+    </section>
+  </section>
+
+  <style is:global>
+    .einsatzbereich-page { max-width: 1100px; margin: 0 auto; }
+    .intro-text { max-width: 70ch; }
+    .einsatzbereich-block {
+      margin-top: 2rem;
+      background: #ffffff;
+      border: 1px solid #eadccd;
+      border-radius: 20px;
+      padding: 1.4rem;
+      box-shadow: 0 10px 24px rgba(24, 50, 74, 0.06);
+    }
+    .einsatzbereich-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .einsatzbereich-card {
+      background: #fffaf5;
+      border: 1px solid #eadccd;
+      border-radius: 16px;
+      padding: 1rem;
+    }
+    .einsatzbereich-card h3 { margin: 0 0 0.45rem 0; font-size: 1.02rem; color: #18324a; }
+    .einsatzbereich-card p { margin: 0; color: #5b6b7a; line-height: 1.55; }
+    .einsatzbereich-list { margin: 1rem 0 0 1.2rem; }
+    .einsatzbereich-list li { margin-bottom: 0.5rem; color: #18324a; }
+    .einsatzbereich-links { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1rem; }
+    .einsatzbereich-link {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.7rem 1rem;
+      border-radius: 999px;
+      background: #eef5ff;
+      color: #2f5f9b !important;
+      text-decoration: none !important;
+      font-weight: 700;
+      border: 1px solid #d9e6f7;
+    }
+    .einsatzbereich-link:hover { background: #e4f0ff; }
+    .einsatzbereich-note { background: #fff3ea; }
+  </style>
+</BaseLayout>

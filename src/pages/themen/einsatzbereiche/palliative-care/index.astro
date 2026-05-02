@@ -1,0 +1,131 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Palliative Care">
+  <section class="einsatzbereich-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Start</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="/themen/">Themen</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="/themen/einsatzbereiche/">Einsatzbereiche</a>
+      <span class="breadcrumb-sep">›</span>
+      <span class="current">Palliative Care</span>
+    </nav>
+
+    <h1>Palliative Care</h1>
+
+    <p class="muted intro-text">
+      Palliative Care bedeutet Begleitung, Symptomlinderung und Orientierung am Willen
+      des Menschen, nicht an maximaler Therapie.
+    </p>
+
+    <section class="einsatzbereich-block">
+      <h2>Worum es in diesem Bereich geht</h2>
+      <p>
+        Palliative Versorgung begleitet Menschen mit unheilbaren oder weit fortgeschrittenen
+        Erkrankungen. Im Mittelpunkt stehen Lebensqualität, Symptomkontrolle, Kommunikation
+        und die Unterstützung von Angehörigen.
+      </p>
+    </section>
+
+    <section class="einsatzbereich-block">
+      <h2>Was Auszubildende hier lernen</h2>
+      <div class="einsatzbereich-grid">
+        <div class="einsatzbereich-card">
+          <h3>Symptome lindern</h3>
+          <p>Schmerzen, Atemnot, Angst oder Übelkeit erkennen und begleiten.</p>
+        </div>
+
+        <div class="einsatzbereich-card">
+          <h3>Gespräche führen</h3>
+          <p>Belastende Themen professionell ansprechen und Unsicherheit aushalten.</p>
+        </div>
+
+        <div class="einsatzbereich-card">
+          <h3>Angehörige begleiten</h3>
+          <p>Belastung wahrnehmen, informieren und Unterstützung anbieten.</p>
+        </div>
+
+        <div class="einsatzbereich-card">
+          <h3>Patientenwillen beachten</h3>
+          <p>Autonomie, Vorausverfügungen und ethische Fragen ernst nehmen.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="einsatzbereich-block">
+      <h2>Typische pflegerische Schwerpunkte</h2>
+      <ul class="einsatzbereich-list">
+        <li>Schmerzmanagement</li>
+        <li>Atemerleichterung</li>
+        <li>Begleitung bei Angst und Belastung</li>
+        <li>Gespräche mit Patient und Angehörigen</li>
+        <li>Berücksichtigung von Patientenverfügung und Therapiezielen</li>
+        <li>Interprofessionelle Zusammenarbeit</li>
+      </ul>
+    </section>
+
+    <section class="einsatzbereich-block">
+      <h2>Typische Themen für diesen Bereich</h2>
+      <div class="einsatzbereich-links">
+        <a class="einsatzbereich-link" href="/themen/palliative-care/">Palliative Care</a>
+        <a class="einsatzbereich-link" href="/themen/kommunikation/">Kommunikation</a>
+        <a class="einsatzbereich-link" href="/themen/recht/">Recht in der Pflege</a>
+        <a class="einsatzbereich-link" href="/themen/medikamente/">Medikamente</a>
+      </div>
+    </section>
+
+    <section class="einsatzbereich-block einsatzbereich-note">
+      <h2>Prüfungsbezug</h2>
+      <p>
+        Prüfungen in diesem Bereich verlangen oft, Symptome zu priorisieren, Gespräche
+        professionell zu führen und den Patientenwillen ethisch und fachlich einzuordnen.
+      </p>
+    </section>
+  </section>
+
+  <style is:global>
+    .einsatzbereich-page { max-width: 1100px; margin: 0 auto; }
+    .intro-text { max-width: 70ch; }
+    .einsatzbereich-block {
+      margin-top: 2rem;
+      background: #ffffff;
+      border: 1px solid #eadccd;
+      border-radius: 20px;
+      padding: 1.4rem;
+      box-shadow: 0 10px 24px rgba(24, 50, 74, 0.06);
+    }
+    .einsatzbereich-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .einsatzbereich-card {
+      background: #fffaf5;
+      border: 1px solid #eadccd;
+      border-radius: 16px;
+      padding: 1rem;
+    }
+    .einsatzbereich-card h3 { margin: 0 0 0.45rem 0; font-size: 1.02rem; color: #18324a; }
+    .einsatzbereich-card p { margin: 0; color: #5b6b7a; line-height: 1.55; }
+    .einsatzbereich-list { margin: 1rem 0 0 1.2rem; }
+    .einsatzbereich-list li { margin-bottom: 0.5rem; color: #18324a; }
+    .einsatzbereich-links { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1rem; }
+    .einsatzbereich-link {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.7rem 1rem;
+      border-radius: 999px;
+      background: #eef5ff;
+      color: #2f5f9b !important;
+      text-decoration: none !important;
+      font-weight: 700;
+      border: 1px solid #d9e6f7;
+    }
+    .einsatzbereich-link:hover { background: #e4f0ff; }
+    .einsatzbereich-note { background: #fff3ea; }
+  </style>
+</BaseLayout>

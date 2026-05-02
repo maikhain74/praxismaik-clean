@@ -1,0 +1,187 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const allEntries = await getCollection("ebooks");
+
+const books = allEntries.filter((entry) => entry.id.endsWith("/index.md"));
+
+const sortedBooks = books.sort(
+  (a, b) => (a.data.order ?? 999) - (b.data.order ?? 999)
+);
+---
+
+<BaseLayout
+  title="E-Books | PraxisMaik"
+  description="Praxisnahe E-Books für die Pflegeausbildung, prüfungsorientiert und direkt nutzbar."
+>
+  <section class="ebooks-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Start</a>
+      <span class="breadcrumb-sep">›</span>
+      <span class="current">E-Books</span>
+    </nav>
+
+    <header class="ebooks-hero">
+      <span class="ebooks-eyebrow">Premium-E-Books</span>
+      <h1>E-Books</h1>
+      <p class="ebooks-lead">
+        Hier findest du vertiefende E-Books für die Pflegeausbildung, praxisnah,
+        strukturiert und prüfungsorientiert aufgebaut.
+      </p>
+    </header>
+
+    {sortedBooks.length === 0 ? (
+      <section class="ebooks-empty">
+        <h2>Noch keine E-Books vorhanden</h2>
+        <p>Lege zuerst Inhalte in <code>src/content/ebooks</code> an.</p>
+      </section>
+    ) : (
+      <div class="ebooks-grid">
+        {sortedBooks.map((book) => {
+          const slug = book.id.replace("/index.md", "");
+
+          return (
+            <a class="ebook-card" href={`/ebooks/${slug}/`}>
+              <div class="ebook-card-top">
+                {typeof book.data.order === "number" && (
+                  <span class="ebook-order">E-Book {book.data.order}</span>
+                )}
+              </div>
+
+              <h2>{book.data.title}</h2>
+
+              {book.data.beschreibung ? (
+                <p>{book.data.beschreibung}</p>
+              ) : (
+                <p>Kein Beschreibungstext vorhanden.</p>
+              )}
+
+              <span class="ebook-link">E-Book öffnen</span>
+            </a>
+          );
+        })}
+      </div>
+    )}
+  </section>
+</BaseLayout>
+
+<style>
+.ebooks-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.2rem 1rem 3rem;
+}
+
+.ebooks-hero {
+  max-width: 760px;
+  margin-bottom: 2.4rem;
+}
+
+.ebooks-eyebrow {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: #eef5ff;
+  color: #18324a;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.ebooks-hero h1 {
+  margin-bottom: 0.7rem;
+  font-size: clamp(1.9rem, 3vw, 2.5rem);
+  line-height: 1.12;
+}
+
+.ebooks-lead {
+  max-width: 58ch;
+  margin: 0;
+  color: #5b6b7a;
+  line-height: 1.7;
+}
+
+.ebooks-empty {
+  margin-top: 2rem;
+  padding: 1.4rem;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+}
+
+.ebooks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.ebook-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  min-height: 240px;
+  padding: 1.25rem;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  text-decoration: none;
+  color: inherit !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.ebook-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(24, 50, 74, 0.08);
+  border-color: #cfdceb;
+  text-decoration: none;
+}
+
+.ebook-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.ebook-order {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  background: #f5f7fb;
+  color: #556270;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.ebook-card h2 {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.35;
+}
+
+.ebook-card p {
+  margin: 0;
+  color: #556270;
+  line-height: 1.6;
+}
+
+.ebook-link {
+  margin-top: auto;
+  font-weight: 700;
+  color: #18324a;
+}
+
+@media (max-width: 900px) {
+  .ebooks-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>

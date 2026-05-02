@@ -1,0 +1,182 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const pageTags = [
+  "palliative-care",
+  "sterben",
+  "tod",
+  "trauer",
+  "pflege"
+];
+
+const allThemen = await getCollection("themen");
+
+const relatedThemen = allThemen
+  .filter((item) => (item.data.tags ?? []).length > 0)
+  .map((item) => {
+    const itemTags = item.data.tags ?? [];
+    const sharedTags = itemTags.filter((tag) => pageTags.includes(tag));
+    return { ...item, sharedCount: sharedTags.length };
+  })
+  .filter((item) => item.sharedCount > 0)
+  .sort((a, b) => b.sharedCount - a.sharedCount)
+  .slice(0, 4);
+
+const allLernskripte = await getCollection("lernskripte");
+
+const relatedLernskripte = allLernskripte
+  .filter((item) => (item.data.tags ?? []).length > 0)
+  .map((item) => {
+    const itemTags = item.data.tags ?? [];
+    const sharedTags = itemTags.filter((tag) => pageTags.includes(tag));
+    return { ...item, sharedCount: sharedTags.length };
+  })
+  .filter((item) => item.sharedCount > 0)
+  .sort((a, b) => b.sharedCount - a.sharedCount)
+  .slice(0, 3);
+---
+
+<BaseLayout
+  title="Palliative Care, Sterben, Tod und Trauer"
+  description="Prüfungsfragen zu Palliative Care, Sterbephasen, Trauer, Todeszeichen und Versorgung Verstorbener."
+>
+  <section class="exam-detail-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Start</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="/pruefung/">Prüfung</a>
+      <span class="breadcrumb-sep">›</span>
+      <span class="current">Palliative Care, Sterben, Tod und Trauer</span>
+    </nav>
+
+    <h1>Palliative Care, Sterben, Tod und Trauer</h1>
+    <p class="muted">
+      Typische Prüfungsfragen zu Begleitung am Lebensende, Trauer und Versorgung Verstorbener.
+    </p>
+
+    <details class="exam-question">
+      <summary>1. Was versteht man unter Palliative Care?</summary>
+      <div class="quiz-answer">
+        Palliative Care ist die ganzheitliche Versorgung von Menschen mit einer lebensbegrenzenden oder unheilbaren Erkrankung.
+        <br /><br />
+        Im Mittelpunkt stehen:
+        <ul>
+          <li>Linderung belastender Symptome</li>
+          <li>Erhalt der Lebensqualität</li>
+          <li>psychosoziale und spirituelle Begleitung</li>
+          <li>Unterstützung von Angehörigen</li>
+        </ul>
+        <br />
+        Ziel ist nicht Heilung, sondern eine bestmögliche Lebensqualität bis zum Lebensende.
+      </div>
+    </details>
+
+    <details class="exam-question">
+      <summary>2. Welche Sterbephasen beschreibt Kübler-Ross und wie sind sie zu erklären?</summary>
+      <div class="quiz-answer">
+        Nach Elisabeth Kübler-Ross werden fünf Sterbephasen beschrieben:
+        <ol>
+          <li><strong>Verleugnung</strong>, die Situation wird zunächst nicht wahrhaben wollen</li>
+          <li><strong>Zorn</strong>, Reaktionen wie Wut, Ärger oder Protest</li>
+          <li><strong>Verhandeln</strong>, Hoffnung auf Aufschub oder Veränderung</li>
+          <li><strong>Depression</strong>, Trauer, Rückzug und Verzweiflung</li>
+          <li><strong>Akzeptanz</strong>, Annahme der Situation</li>
+        </ol>
+        <br />
+        Wichtig: Diese Phasen verlaufen nicht zwingend linear und können sich überschneiden.
+      </div>
+    </details>
+
+    <details class="exam-question">
+      <summary>3. Welche Trauerphasen beschreibt Verena Kast und wie verlaufen sie?</summary>
+      <div class="quiz-answer">
+        Verena Kast beschreibt vier Trauerphasen:
+        <ol>
+          <li><strong>Nicht-wahrhaben-wollen</strong></li>
+          <li><strong>Aufbrechende Emotionen</strong></li>
+          <li><strong>Suchen und Sich-Trennen</strong></li>
+          <li><strong>Neuer Selbst- und Weltbezug</strong></li>
+        </ol>
+        <br />
+        Der Verlauf ist individuell. Nicht jede Person durchläuft alle Phasen gleich oder in derselben Reihenfolge.
+      </div>
+    </details>
+
+    <details class="exam-question">
+      <summary>4. Wie wird der klinische Tod definiert?</summary>
+      <div class="quiz-answer">
+        Der klinische Tod ist der Zustand nach dem Stillstand von Atmung und Kreislauf.
+        <br /><br />
+        In dieser Phase ist der Tod grundsätzlich noch reversibel, wenn schnell Reanimationsmaßnahmen eingeleitet werden.
+      </div>
+    </details>
+
+    <details class="exam-question">
+      <summary>5. Worin unterscheiden sich sichere und unsichere Todeszeichen?</summary>
+      <div class="quiz-answer">
+        <strong>Unsichere Todeszeichen</strong> sind Zeichen, die auch bei reversiblen Zuständen vorkommen können:
+        <ul>
+          <li>Atemstillstand</li>
+          <li>Pulsstillstand</li>
+          <li>Bewusstlosigkeit</li>
+        </ul>
+        <br />
+        <strong>Sichere Todeszeichen</strong> sind eindeutige Hinweise auf den eingetretenen Tod:
+        <ul>
+          <li>Totenflecken</li>
+          <li>Totenstarre</li>
+          <li>Fäulnis</li>
+          <li>mit dem Leben nicht vereinbare Verletzungen</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="exam-question">
+      <summary>6. Wie erfolgt die pflegerische Versorgung Verstorbener? Beschreiben Sie den Ablauf.</summary>
+      <div class="quiz-answer">
+        Die pflegerische Versorgung Verstorbener erfolgt würdevoll, ruhig und nach den Vorgaben der Einrichtung.
+        <br /><br />
+        Der Ablauf umfasst typischerweise:
+        <ol>
+          <li>Todesfeststellung durch den Arzt abwarten</li>
+          <li>Identität sichern</li>
+          <li>würdevolle Körperpflege durchführen</li>
+          <li>Hilfsmittel, Verbände oder Zugänge nach Vorgabe versorgen oder entfernen</li>
+          <li>den Verstorbenen lagern und herrichten</li>
+          <li>Dokumentation durchführen</li>
+          <li>Angehörige begleiten und unterstützen</li>
+        </ol>
+        <br />
+        Dabei stehen Würde, Respekt und ein angemessener Abschied im Vordergrund.
+      </div>
+    </details>
+    {relatedThemen.length > 0 ? (
+      <section class="related-topics">
+        <h2>Passende Themen</h2>
+        <div class="related-topics-grid">
+          {relatedThemen.map((item) => (
+            <a class="related-topic-card" href={`/themen/${item.slug}/`}>
+              <h3>{item.data.title}</h3>
+              {item.data.description ? <p>{item.data.description}</p> : null}
+            </a>
+          ))}
+        </div>
+      </section>
+    ) : null}
+
+    {relatedLernskripte.length > 0 ? (
+      <section class="related-topics">
+        <h2>Passende Lernskripte</h2>
+        <div class="related-topics-grid">
+          {relatedLernskripte.map((item) => (
+            <a class="related-topic-card" href={`/lernskripte/${item.slug}/`}>
+              <h3>{item.data.title}</h3>
+              {item.data.description ? <p>{item.data.description}</p> : null}
+            </a>
+          ))}
+        </div>
+      </section>
+    ) : null}
+  </section>
+</BaseLayout>

@@ -1,0 +1,72 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("lernskripte");
+
+  return entries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+
+const { Content } = await entry.render();
+
+const allThemen = await getCollection("themen");
+
+const scriptTags = entry.data.tags ?? [];
+
+const relatedThemen = allThemen
+  .filter((item) => item.data.tags && item.data.tags.length > 0)
+  .map((item) => {
+    const itemTags = item.data.tags ?? [];
+    const sharedTags = itemTags.filter((tag) => scriptTags.includes(tag));
+
+    return {
+      ...item,
+      sharedCount: sharedTags.length,
+    };
+  })
+  .filter((item) => item.sharedCount > 0)
+  .sort((a, b) => b.sharedCount - a.sharedCount)
+  .slice(0, 4);
+---
+
+<BaseLayout title={entry.data.title} description={entry.data.description}>
+  <article class="content">
+
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Start</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="/lernskripte/">Lernskripte</a>
+      <span class="breadcrumb-sep">›</span>
+      <span class="current">{entry.data.title}</span>
+    </nav>
+
+    <h1>{entry.data.title}</h1>
+
+    {entry.data.description ? (
+      <p class="muted">{entry.data.description}</p>
+    ) : null}
+
+    <Content />
+
+    {relatedThemen.length > 0 ? (
+      <section class="related-topics">
+        <h2>Passende Themen</h2>
+        <div class="related-topics-grid">
+          {relatedThemen.map((item) => (
+            <a class="related-topic-card" href={`/themen/${item.slug}/`}>
+              <h3>{item.data.title}</h3>
+              {item.data.description ? <p>{item.data.description}</p> : null}
+            </a>
+          ))}
+        </div>
+      </section>
+    ) : null}
+
+  </article>
+</BaseLayout>

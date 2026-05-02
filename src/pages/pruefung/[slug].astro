@@ -1,0 +1,645 @@
+---
+export const prerender = false;
+
+import { getCollection, render } from 'astro:content';
+import PremiumGate from '../../components/PremiumGate.astro';
+
+const slug = Astro.params.slug;
+
+if (!slug) {
+  throw new Error('Slug fehlt.');
+}
+
+const pruefungen = await getCollection('pruefung');
+
+const sortiertePruefungen = [...pruefungen].sort((a, b) => {
+  const topicCompare = (a.data.topic ?? '').localeCompare(b.data.topic ?? '');
+  if (topicCompare !== 0) return topicCompare;
+
+  return (a.data.reihenfolge ?? 999) - (b.data.reihenfolge ?? 999);
+});
+
+const aktuellerIndex = sortiertePruefungen.findIndex((item) => item.slug === slug);
+const eintrag = aktuellerIndex >= 0 ? sortiertePruefungen[aktuellerIndex] : null;
+
+if (!eintrag) {
+  return Astro.redirect('/pruefung/');
+}
+
+const vorherigerFall = aktuellerIndex > 0 ? sortiertePruefungen[aktuellerIndex - 1] : null;
+const naechsterFall =
+  aktuellerIndex < sortiertePruefungen.length - 1
+    ? sortiertePruefungen[aktuellerIndex + 1]
+    : null;
+
+const { Content } = await render(eintrag);
+
+const isPremium = eintrag.data.premium === true;
+const title = eintrag.data.title ?? 'Prüfungsfall';
+const beschreibung = eintrag.data.beschreibung ?? '';
+const preview = eintrag.data.preview ?? '';
+
+const isLocalhost =
+  Astro.url.hostname === 'localhost' || Astro.url.hostname === '127.0.0.1';
+
+const devUnlock =
+  Astro.url.searchParams.get('freischalten') === '1' && isLocalhost;
+
+const hasPremiumCookie = Astro.cookies.get('praxismaik_premium')?.value === '1';
+
+const showFullContent = !isPremium || devUnlock || hasPremiumCookie;
+
+const referer = Astro.request.headers.get('referer') ?? '';
+const sameOriginReferer = referer.startsWith(Astro.url.origin) ? referer : '';
+
+const backHref = sameOriginReferer || '/pruefung';
+const backLabel = sameOriginReferer.includes('/themen/')
+  ? '← Zurück zum Thema'
+  : '← Zurück zu den Prüfungsfällen';
+---
+
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} | PraxisMaik</title>
+    <meta name="description" content={beschreibung} />
+  </head>
+
+  <body>
+    <main class="container">
+      <a href={backHref} class="back-link">{backLabel}</a>
+
+      <article class="content-card">
+        <header class="content-header">
+          <p class="content-badge">
+            {isPremium ? 'Premium-Prüfungsfall' : 'Prüfungsfall'}
+          </p>
+
+          <h1>{title}</h1>
+
+          {beschreibung && <p class="content-description">{beschreibung}</p>}
+
+          {devUnlock && (
+            <div class="status-box">
+              Testmodus aktiv, Premium-Inhalt lokal freigeschaltet.
+            </div>
+          )}
+
+          {hasPremiumCookie && !devUnlock && (
+            <div class="status-box">
+              Premium ist aktiv.
+            </div>
+          )}
+        </header>
+
+        {showFullContent ? (
+  <>
+    <section class="markdown-content">
+      <Content />
+    </section>
+
+    <section class="case-progress-box">
+      <p class="case-progress-label">Fortschritt</p>
+
+      <div class="case-progress-actions">
+        <p id="case-complete-status" class="case-progress-status">
+          Noch nicht als abgeschlossen markiert
+        </p>
+
+        <button
+          type="button"
+          id="case-complete-button"
+          class="case-complete-button"
+        >
+          Fall als abgeschlossen markieren
+        </button>
+      </div>
+    </section>
+
+    <div class="fall-navigation">
+      {vorherigerFall ? (
+        <a href={`/pruefung/${vorherigerFall.slug}/`} class="fall-nav-card">
+          <span class="nav-label">Vorheriger Fall</span>
+          <strong>← {vorherigerFall.data.title}</strong>
+        </a>
+      ) : (
+        <a href="/pruefung/" class="fall-nav-card">
+          <span class="nav-label">Zurück</span>
+          <strong>← Übersicht</strong>
+        </a>
+      )}
+
+      {naechsterFall ? (
+        <a href={`/pruefung/${naechsterFall.slug}/`} class="fall-nav-card">
+          <span class="nav-label">Nächster Fall</span>
+          <strong>{naechsterFall.data.title} →</strong>
+        </a>
+      ) : (
+        <a href="/pruefung/" class="fall-nav-card">
+          <span class="nav-label">Fertig</span>
+          <strong>Zurück zur Übersicht →</strong>
+        </a>
+      )}
+    </div>
+  </>
+) : (
+  <>
+    {preview && (
+      <section class="preview-box">
+        <h2>Vorschau</h2>
+        <p>{preview}</p>
+      </section>
+    )}
+
+   <PremiumGate
+  title="Hier entscheidet sich, ob du den Fall wirklich verstehst"
+  text="Die Vorschau zeigt dir nur die Situation. Die entscheidende Denklogik, Prioritäten und Begründung fehlen hier. Genau das ist der Teil, der in Prüfungen bewertet wird."
+  buttonText="Jetzt sicher durch die Prüfung lernen"
+  buttonHref="/premium-interesse"
+/>
+<p class="preview-warning">
+  Wenn du nur bis hier lernst, fehlt dir genau der Teil, der in der Prüfung bewertet wird.
+</p>
+  </>
+)}
+      </article>
+    </main>
+
+    <div
+      id="case-tracking-data"
+      data-slug={slug}
+      data-title={title}
+      hidden
+    ></div>
+
+    <script>
+      import { trackCaseOpened, trackCaseCompleted } from '../../lib/analytics';
+
+      const trackingElement = document.getElementById('case-tracking-data');
+      const completeButton = document.getElementById('case-complete-button');
+      const completeStatus = document.getElementById('case-complete-status');
+
+      const STORAGE_KEY = 'praxismaik_completed_cases';
+
+      function getCompletedCases() {
+        try {
+          const raw = localStorage.getItem(STORAGE_KEY);
+          const parsed = raw ? JSON.parse(raw) : [];
+          return Array.isArray(parsed) ? parsed : [];
+        } catch {
+          return [];
+        }
+      }
+
+      function saveCompletedCases(cases) {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(cases));
+      }
+
+      function updateCompleteUi(isCompleted) {
+        if (!completeButton || !completeStatus) return;
+
+        if (isCompleted) {
+          completeStatus.textContent = 'Dieser Fall ist als abgeschlossen markiert';
+          completeButton.textContent = 'Abgeschlossen';
+          completeButton.disabled = true;
+          completeButton.setAttribute('aria-disabled', 'true');
+        } else {
+          completeStatus.textContent = 'Noch nicht als abgeschlossen markiert';
+          completeButton.textContent = 'Fall als abgeschlossen markieren';
+          completeButton.disabled = false;
+          completeButton.removeAttribute('aria-disabled');
+        }
+      }
+
+      if (trackingElement) {
+        const slug = trackingElement.dataset.slug ?? '';
+        const title = trackingElement.dataset.title ?? '';
+
+        console.log('[case page loaded]', { slug, title });
+        trackCaseOpened(slug, title);
+
+        const completedCases = getCompletedCases();
+        const isAlreadyCompleted = completedCases.includes(slug);
+
+        updateCompleteUi(isAlreadyCompleted);
+
+        if (completeButton && !isAlreadyCompleted) {
+          completeButton.addEventListener('click', () => {
+            const currentCases = getCompletedCases();
+
+            if (!currentCases.includes(slug)) {
+              const nextCases = [...currentCases, slug];
+              saveCompletedCases(nextCases);
+              updateCompleteUi(true);
+              trackCaseCompleted(slug, title);
+              console.log('[case completed]', { slug, title });
+            }
+          });
+        }
+      }
+    </script>
+  </body>
+</html>
+
+<style>
+  :global(body) {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f4f6;
+    color: #111827;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem;
+  }
+
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: #18324a;
+  }
+
+  .back-link:hover {
+    text-decoration: underline;
+  }
+
+  .content-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  }
+
+  .content-header {
+    margin-bottom: 2rem;
+  }
+
+  .content-badge {
+    display: inline-block;
+    margin: 0 0 1rem;
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    background: #eef2ff;
+    color: #3730a3;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  h1 {
+    margin: 0 0 0.75rem;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .content-description {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #4b5563;
+  }
+
+  .status-box {
+    margin-top: 1rem;
+    padding: 0.9rem 1rem;
+    border: 1px solid #d1fae5;
+    background: #ecfdf5;
+    color: #065f46;
+    border-radius: 12px;
+    font-weight: 700;
+  }
+
+  .preview-box {
+    padding: 1.25rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    background: #fafafa;
+  }
+
+  .preview-box h2 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+  }
+
+  .preview-box p {
+    margin: 0;
+    line-height: 1.8;
+    white-space: pre-line;
+  }
+
+  .markdown-content {
+    line-height: 1.8;
+  }
+
+  .markdown-content :global(h2),
+  .markdown-content :global(h3),
+  .markdown-content :global(h4) {
+    margin-top: 2rem;
+    line-height: 1.3;
+  }
+
+  .markdown-content :global(p),
+  .markdown-content :global(li) {
+    line-height: 1.8;
+  }
+
+  .markdown-content :global(ul),
+  .markdown-content :global(ol) {
+    padding-left: 1.4rem;
+  }
+
+  .markdown-content :global(.fall-progress) {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    background: #eef5ff;
+    color: #18324a;
+    font-size: 0.82rem;
+    font-weight: 700;
+  }
+
+  .markdown-content :global(.denk-stop) {
+    margin: 1.2rem 0;
+    padding: 1rem 1.1rem;
+    border-radius: 16px;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+    color: #18324a;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  .markdown-content :global(.fall-block) {
+    margin: 1.2rem 0;
+    padding: 1.25rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  }
+
+  .markdown-content :global(.fall-answers) {
+    display: grid;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .markdown-content :global(.fall-answer-card) {
+    padding: 1rem 1.05rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+    color: #18324a;
+    font-weight: 600;
+    line-height: 1.55;
+  }
+
+  .markdown-content :global(details.fall-block) {
+    margin: 1.2rem 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .markdown-content :global(details.fall-block > summary) {
+    display: block;
+    list-style: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 1.1rem 1.25rem;
+    font-weight: 700;
+    color: #18324a;
+    line-height: 1.5;
+  }
+
+  .markdown-content :global(details.fall-block > summary::-webkit-details-marker) {
+    display: none;
+  }
+
+  .markdown-content :global(details.fall-block[open] > summary) {
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .markdown-content :global(details.fall-block > *:not(summary)) {
+    padding: 1.25rem;
+  }
+
+  .markdown-content :global(details.fall-block > *:not(summary):first-child) {
+    margin-top: 0;
+  }
+
+  .markdown-content :global(.fall-bewertung) {
+    background: linear-gradient(180deg, #fffaf6 0%, #ffffff 100%);
+    border: 1px solid rgba(154, 52, 18, 0.18);
+  }
+
+  .markdown-content :global(.fall-fragen) {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+  }
+
+  .markdown-content :global(.fall-loesung) {
+    background: linear-gradient(180deg, #fffaf6 0%, #ffffff 100%);
+    border: 1px solid rgba(154, 52, 18, 0.18);
+  }
+
+  .case-progress-box {
+    margin-top: 2rem;
+    padding: 1.2rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  }
+
+  .case-progress-label {
+    margin: 0 0 0.75rem;
+    font-size: 0.8rem;
+    color: #6b7280;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .case-progress-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .case-progress-status {
+    margin: 0;
+    color: #18324a;
+    font-weight: 600;
+  }
+
+  .case-complete-button {
+    border: 0;
+    border-radius: 12px;
+    padding: 0.85rem 1rem;
+    background: #18324a;
+    color: #ffffff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+  }
+
+  .case-complete-button:hover {
+    transform: translateY(-1px);
+  }
+
+  .case-complete-button:disabled,
+  .case-complete-button[aria-disabled='true'] {
+    opacity: 0.7;
+    cursor: default;
+    transform: none;
+  }
+
+  .fall-navigation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .fall-nav-card,
+  .fall-nav-card:visited,
+  .fall-nav-card:hover,
+  .fall-nav-card:active {
+    display: block;
+    padding: 1.2rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 18px;
+    background: #ffffff;
+    text-decoration: none;
+    color: #18324a !important;
+    box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .fall-nav-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 30px rgba(24, 50, 74, 0.08);
+    border-color: #cfdceb;
+  }
+
+  .nav-label {
+    display: block;
+    font-size: 0.8rem;
+    color: #6b7280;
+    margin-bottom: 0.3rem;
+  }
+
+  .fall-nav-card strong {
+    display: block;
+    font-size: 1rem;
+    color: #18324a;
+  }
+
+  @media (max-width: 640px) {
+    .content-card {
+      padding: 1.25rem;
+    }
+
+    .markdown-content :global(.fall-block) {
+      padding: 1rem;
+    }
+
+    .markdown-content :global(details.fall-block) {
+      padding: 0;
+    }
+
+    .markdown-content :global(details.fall-block > summary) {
+      padding: 1rem;
+    }
+
+    .markdown-content :global(details.fall-block > *:not(summary)) {
+      padding: 1rem;
+    }
+
+    .fall-navigation {
+      grid-template-columns: 1fr;
+    }
+  }
+.premium-preview-content {
+  max-height: 720px;
+  overflow: hidden;
+  position: relative;
+}
+
+.premium-preview-content::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 180px;
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, #ffffff 85%);
+}
+
+.premium-lock-box {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #fffaf6 0%, #ffffff 100%);
+  border: 1px solid rgba(154, 52, 18, 0.18);
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  text-align: center;
+}
+
+.premium-lock-box h2 {
+  margin: 0 0 0.7rem;
+  color: #18324a;
+}
+
+.premium-lock-box p {
+  margin: 0 auto;
+  max-width: 58ch;
+  line-height: 1.7;
+  color: #556270;
+}
+
+.premium-lock-loss {
+  margin-top: 0.8rem !important;
+  color: #7f1d1d !important;
+  font-weight: 700;
+}
+
+.premium-lock-button,
+.premium-lock-button:visited,
+.premium-lock-button:hover,
+.premium-lock-button:active {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.1rem;
+  padding: 0.95rem 1.25rem;
+  border-radius: 12px;
+  background: #18324a;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-weight: 700;
+}
+
+.premium-lock-button:hover {
+  opacity: 0.95;
+}
+
+.premium-lock-box span {
+  display: block;
+  margin-top: 0.8rem;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+</style>

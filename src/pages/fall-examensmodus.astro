@@ -1,0 +1,146 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const simulationen = [
+  {
+    titel: "Examenssimulation 1",
+    zeit: 90,
+    faelle: [
+      { titel: "Fall 1 – Postoperative Pflege nach Kehlkopfoperation", slug: "fall-laryngektomie-akutpflege" },
+      { titel: "Fall 2 – Chronische Wunde bei Herzschwäche im Pflegeheim", slug: "fall-ulcus-cruris-langzeitpflege" }
+    ]
+  },
+  {
+    titel: "Examenssimulation 2",
+    zeit: 90,
+    faelle: [
+      { titel: "Fall 3 – Sturzereignis bei Multipler Sklerose", slug: "fall-multiple-sklerose-ambulant" },
+      { titel: "Fall 4 – Erschöpfungssyndrom in der Psychiatrie", slug: "fall-burnout-psychiatrie" }
+    ]
+  },
+  {
+    titel: "Examenssimulation 3",
+    zeit: 90,
+    faelle: [
+      { titel: "Fall 5 – Mukoviszidose bei einem Kind", slug: "fall-mukoviszidose-paediatrie" },
+      { titel: "Fall 6 – Postoperative Pflege nach Darmoperation", slug: "fall-ileus-paediatrie" }
+    ]
+  },
+  {
+    titel: "Examenssimulation 4",
+    zeit: 90,
+    faelle: [
+      { titel: "Fall 7 – Atemnot bei fortgeschrittener Herzinsuffizienz", slug: "fall-herzinsuffizienz-palliative-versorgung" },
+      { titel: "Fall 8 – Hoffnungslosigkeit bei einer schwer erkrankten Patientin", slug: "fall-palliativ-hoffnungslosigkeit" }
+    ]
+  },
+  {
+    titel: "Examenssimulation 5",
+    zeit: 90,
+    faelle: [
+      { titel: "Fall 9 – Mobilität und Selbstversorgung bei Morbus Parkinson", slug: "fall-parkinson-langzeitpflege" },
+      { titel: "Fall 10 – Akute psychotische Episode in der psychiatrischen Pflege", slug: "fall-schizophrenie-akutpsychiatrie" }
+    ]
+  }
+];
+---
+
+<BaseLayout title="Examensmodus – PraxisMaik">
+  <section class="section">
+    <h1>Examensmodus – Fallanalyse</h1>
+
+    <p class="muted">
+      Bearbeite zwei Fallbeispiele unter realistischen Prüfungsbedingungen.
+    </p>
+
+    <div id="exam-start-grid" class="simulation-grid">
+      {simulationen.map((sim, index) => (
+        <div class="simulation-card">
+          <h2>{sim.titel}</h2>
+          <p>2 Fälle</p>
+          <p>Bearbeitungszeit: {sim.zeit} Minuten</p>
+
+          <button class="btn" onclick={`startExam(${index})`}>
+            Simulation starten
+          </button>
+        </div>
+      ))}
+    </div>
+
+    <div id="exam-session" class="exam-session" style="display:none;">
+      <div class="exam-session-card">
+        <p class="simulation-number" id="exam-session-number">Simulation</p>
+        <h2 id="exam-session-title">Examenssimulation</h2>
+        <p class="muted">
+          Bearbeite jetzt beide Fälle. Der Timer läuft weiter, während du zwischen den Fällen wechselst.
+        </p>
+
+        <div id="exam-fall-list" class="exam-fall-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <div id="exam-timer" class="exam-timer"></div>
+
+  <script define:vars={{ simulationen }}>
+    let timerInterval;
+
+    window.startExam = function (index) {
+      const sim = simulationen[index];
+      let zeit = sim.zeit * 60;
+
+      const timerBox = document.getElementById("exam-timer");
+      const startGrid = document.getElementById("exam-start-grid");
+      const examSession = document.getElementById("exam-session");
+      const examTitle = document.getElementById("exam-session-title");
+      const examNumber = document.getElementById("exam-session-number");
+      const examFallList = document.getElementById("exam-fall-list");
+
+      if (timerInterval) {
+        clearInterval(timerInterval);
+      }
+
+      startGrid.style.display = "none";
+      examSession.style.display = "block";
+      timerBox.style.display = "block";
+
+      examTitle.textContent = sim.titel;
+      examNumber.textContent = "2 Fälle • " + sim.zeit + " Minuten";
+
+      examFallList.innerHTML = sim.faelle
+        .map(
+          (fall, idx) => `
+            <a class="simulation-fall-link exam-fall-link" href="/fallbeispiele/${fall.slug}/">
+              Fall ${idx + 1}: ${fall.titel}
+            </a>
+          `
+        )
+        .join("");
+
+      const updateTimer = () => {
+        const minuten = Math.floor(zeit / 60);
+        const sekunden = zeit % 60;
+
+        timerBox.textContent =
+          "Restzeit: " +
+          minuten.toString().padStart(2, "0") +
+          ":" +
+          sekunden.toString().padStart(2, "0");
+      };
+
+      updateTimer();
+
+      timerInterval = setInterval(() => {
+        zeit--;
+
+        updateTimer();
+
+        if (zeit <= 0) {
+          clearInterval(timerInterval);
+          timerBox.textContent = "Bearbeitungszeit beendet";
+          alert("Die Bearbeitungszeit ist abgelaufen.");
+        }
+      }, 1000);
+    };
+  </script>
+</BaseLayout>

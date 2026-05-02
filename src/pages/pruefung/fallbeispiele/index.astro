@@ -1,0 +1,110 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const pruefung = await getCollection("pruefung");
+
+const groupedPruefung = pruefung.reduce((groups, item) => {
+  const einsatzbereich = item.data.einsatzbereich || "Sonstige";
+
+  if (!groups[einsatzbereich]) {
+    groups[einsatzbereich] = [];
+  }
+
+  groups[einsatzbereich].push(item);
+  return groups;
+}, {});
+
+const einsatzbereiche = Object.entries(groupedPruefung)
+  .map(([einsatzbereich, items]) => ({
+    einsatzbereich,
+    items: items.sort((a, b) => (a.data.order ?? 999) - (b.data.order ?? 999)),
+  }))
+  .sort((a, b) => a.einsatzbereich.localeCompare(b.einsatzbereich));
+
+const levelLabels = {
+  grundlagen: "🟢 Grundlagen",
+  vertiefung: "🟡 Vertiefung",
+  pruefung: "🔴 Prüfung",
+};
+---
+
+<BaseLayout
+  title="Prüfungsfallbeispiele | PraxisMaik"
+  description="Prüfungsnahe Fallbeispiele für die generalistische Pflegeausbildung, geordnet nach Einsatzbereich."
+>
+  <section class="pruefung-fall-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Start</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="/pruefung/">Prüfung</a>
+      <span class="breadcrumb-sep">›</span>
+      <span class="current">Fallbeispiele</span>
+    </nav>
+
+    <header class="pruefung-fall-hero">
+      <span class="pruefung-fall-eyebrow">Premium-Prüfungsbereich</span>
+      <h1>Prüfungsfallbeispiele</h1>
+      <p class="pruefung-fall-lead">
+        Trainiere typische Entscheidungssituationen für die generalistische Pflegeausbildung.
+        Die Fälle sind nach Einsatzbereich geordnet, damit du realitätsnah und strukturiert üben kannst.
+      </p>
+    </header>
+
+    {einsatzbereiche.length === 0 ? (
+      <section class="pruefung-fall-empty">
+        <h2>Noch keine Prüfungsfälle vorhanden</h2>
+        <p>
+          Lege Inhalte in <code>src/content/pruefung</code> an.
+        </p>
+      </section>
+    ) : (
+      einsatzbereiche.map((group) => (
+        <section class="pruefung-fall-group">
+          <div class="pruefung-fall-group-head">
+            <div>
+              <h2>{group.einsatzbereich}</h2>
+              <p>
+                Prüfungsfälle aus diesem Einsatzbereich, sortiert nach Reihenfolge.
+              </p>
+            </div>
+          </div>
+
+          <div class="pruefung-fall-grid">
+            {group.items.map((item) => (
+              <a class="pruefung-fall-card" href={`/pruefung/fallbeispiele/${item.slug}/`}>
+                <div class="pruefung-fall-card-top">
+                  {item.data.level && (
+                    <span class={`card-level card-level-${item.data.level}`}>
+                      {levelLabels[item.data.level]}
+                    </span>
+                  )}
+
+                  {typeof item.data.order === "number" && (
+                    <span class="pruefung-order-badge">
+                      Fall {item.data.order}
+                    </span>
+                  )}
+                </div>
+
+                <h3>{item.data.title}</h3>
+
+                <p>
+                  {item.data.beschreibung ?? "Kein Beschreibungstext vorhanden."}
+                </p>
+
+                <div class="pruefung-fall-card-meta">
+                  {item.data.premium === true && (
+                    <span class="premium-mini-badge">Premium</span>
+                  )}
+                </div>
+
+                <span class="pruefung-fall-link">Fall öffnen</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))
+    )}
+  </section>
+</BaseLayout>

@@ -1,0 +1,34 @@
+---
+Astro.cookies.set("praxismaik_premium", "1", {
+  path: "/",
+  maxAge: 60 * 60 * 24 * 365 // 1 Jahr
+});
+---
+
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Premium freigeschaltet</title>
+  </head>
+ <body>
+  <main style="text-align:center; padding:2rem;">
+    <h1>Danke für deinen Kauf</h1>
+
+    <p><strong>Dein Premium-Zugang ist jetzt aktiv.</strong></p>
+
+    <p>Du wirst automatisch weitergeleitet...</p>
+
+    <p>
+      Falls nichts passiert:
+      <a href="/premium">Hier klicken</a>
+    </p>
+  </main>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = "/premium";
+    }, 1500);
+  </script>
+</body>
+</html>

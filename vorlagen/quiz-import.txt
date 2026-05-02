@@ -1,0 +1,55 @@
+pflegepraxis-11;Warum ist regelmäßige Beobachtung im Pflegealltag wichtig?;Sie ermöglicht das frühzeitige Erkennen von Veränderungen.;pflegeprozess;leicht
+pflegepraxis-12;Warum müssen Pflegekräfte Auffälligkeiten dokumentieren?;Damit andere Teammitglieder informiert sind.;pflegeprozess;leicht
+pflegepraxis-13;Warum ist eine klare Aufgabenverteilung im Team wichtig?;Sie verhindert Missverständnisse.;pflegeprozess;mittel
+pflegepraxis-14;Warum müssen Pflegekräfte Prioritäten setzen können?;Damit dringende Probleme zuerst behandelt werden.;pflegeprozess;mittel
+pflegepraxis-15;Warum müssen Pflegehandlungen nachvollziehbar sein?;Damit Qualität überprüft werden kann.;pflegeprozess;mittel
+pflegepraxis-16;Warum ist Rückmeldung im Team wichtig?;Informationen müssen vollständig weitergegeben werden.;kommunikation;leicht
+pflegepraxis-17;Warum ist Aufmerksamkeit im Pflegealltag entscheidend?;Kleine Veränderungen können wichtig sein.;pflegeprozess;mittel
+pflegepraxis-18;Warum müssen Risiken im Pflegealltag erkannt werden?;Damit Gefahren vermieden werden.;pflegeprozess;mittel
+pflegepraxis-19;Warum ist Geduld im Umgang mit Patienten wichtig?;Viele Patienten brauchen Zeit und Unterstützung.;kommunikation;leicht
+pflegepraxis-20;Warum müssen Pflegekräfte ihre Grenzen kennen?;Damit sie sichere Entscheidungen treffen können.;recht;mittel
+gesundheit-16;Warum ist ausreichende Flüssigkeit wichtig für den Kreislauf?;Sie unterstützt Blutvolumen und Durchblutung.;krankheitslehre;leicht
+gesundheit-17;Warum ist Bewegung wichtig für die Durchblutung?;Sie aktiviert den Kreislauf.;krankheitslehre;leicht
+gesundheit-18;Warum ist Ernährung wichtig für die Wundheilung?;Der Körper benötigt Nährstoffe für Reparaturprozesse.;krankheitslehre;mittel
+gesundheit-19;Warum ist ausreichend Schlaf wichtig für Gesundheit?;Er unterstützt Regeneration.;krankheitslehre;leicht
+gesundheit-20;Warum ist Stressreduktion wichtig für Gesundheit?;Dauerstress kann Krankheiten fördern.;krankheitslehre;mittel
+beobachtung-06;Warum müssen Pflegekräfte auf Hauttemperatur achten?;Sie kann Hinweise auf Durchblutungsstörungen geben.;pflegeprozess;mittel
+beobachtung-07;Warum sind Veränderungen im Gangbild auffällig?;Sie können auf neurologische oder muskuläre Probleme hinweisen.;pflegeprozess;mittel
+beobachtung-08;Warum ist Beobachtung der Atmung im Schlaf wichtig?;Störungen können erkannt werden.;pflegeprozess;mittel
+beobachtung-09;Warum kann Unruhe ein wichtiges Zeichen sein?;Sie kann Schmerzen oder Angst anzeigen.;pflegeprozess;leicht
+beobachtung-10;Warum sind Veränderungen im Bewusstsein wichtig?;Sie können auf akute Erkrankungen hinweisen.;pflegeprozess;mittel
+anatomie-31;Warum ist der Körper auf Sauerstoff angewiesen?;Zellen benötigen Sauerstoff für Energieproduktion.;anatomie;leicht
+anatomie-32;Warum ist das Herz ein lebenswichtiges Organ?;Es pumpt Blut durch den Körper.;anatomie;leicht
+anatomie-33;Warum arbeitet das Herz ständig?;Der Körper benötigt kontinuierliche Versorgung.;anatomie;leicht
+anatomie-34;Warum ist der Blutkreislauf wichtig für Organe?;Er bringt Sauerstoff und Nährstoffe.;anatomie;leicht
+anatomie-35;Warum sind Nervenzellen wichtig?;Sie übertragen Signale im Körper.;anatomie;mittel
+anatomie-36;Warum sind Muskeln für Bewegung notwendig?;Sie ermöglichen Körperbewegungen.;anatomie;leicht
+anatomie-37;Warum sind Knochen wichtig für Schutz der Organe?;Sie schützen empfindliche Strukturen.;anatomie;leicht
+anatomie-38;Warum sind Lungenbläschen wichtig?;Dort findet der Gasaustausch statt.;anatomie;mittel
+anatomie-39;Warum braucht der Körper Energie?;Für Bewegung und Stoffwechsel.;anatomie;leicht
+anatomie-40;Warum ist Blut wichtig für den Körper?;Es transportiert lebenswichtige Stoffe.;anatomie;leicht
+prophylaxe-21;Warum ist regelmäßige Lagerung wichtig?;Sie verhindert Druckschäden.;prophylaxen;leicht
+prophylaxe-22;Warum hilft Bewegung gegen Muskelabbau?;Muskeln werden aktiv genutzt.;prophylaxen;leicht
+prophylaxe-23;Warum ist Atemtraining wichtig bei Bettlägerigkeit?;Die Lunge wird besser belüftet.;prophylaxen;mittel
+prophylaxe-24;Warum ist ausreichendes Trinken wichtig gegen Verstopfung?;Flüssigkeit unterstützt Darmfunktion.;prophylaxen;leicht
+prophylaxe-25;Warum müssen Pflegekräfte auf Sturzrisiken achten?;Stürze können schwere Verletzungen verursachen.;prophylaxen;leicht
+prophylaxe-26;Warum ist Hautpflege Teil der Dekubitusprophylaxe?;Gesunde Haut ist widerstandsfähiger.;prophylaxen;mittel
+prophylaxe-27;Warum sind Bewegungsübungen wichtig für Gelenke?;Sie erhalten Beweglichkeit.;prophylaxen;leicht
+prophylaxe-28;Warum ist sichere Umgebung wichtig für Sturzprophylaxe?;Gefahrenquellen werden reduziert.;prophylaxen;leicht
+prophylaxe-29;Warum sind Risikobewertungen wichtig?;Gefährdete Patienten können erkannt werden.;prophylaxen;mittel
+prophylaxe-30;Warum ist Vorbeugung oft effektiver als Behandlung?;Komplikationen können verhindert werden.;prophylaxen;mittel
+kommunikation-27;Warum ist klare Sprache wichtig im Pflegealltag?;Sie verhindert Missverständnisse.;kommunikation;leicht
+kommunikation-28;Warum sollten Pflegekräfte aufmerksam zuhören?;Patienten fühlen sich ernst genommen.;kommunikation;leicht
+kommunikation-29;Warum ist respektvolle Kommunikation wichtig?;Sie stärkt Vertrauen.;kommunikation;leicht
+kommunikation-30;Warum sind kurze Informationen oft besser verständlich?;Sie sind leichter zu merken.;kommunikation;leicht
+kommunikation-31;Warum müssen wichtige Informationen weitergegeben werden?;Damit das Team informiert bleibt.;kommunikation;mittel
+kommunikation-32;Warum sind Übergaben wichtig?;Sie sichern Informationsfluss.;kommunikation;leicht
+kommunikation-33;Warum ist Empathie wichtig im Gespräch?;Sie zeigt Verständnis.;kommunikation;leicht
+kommunikation-34;Warum ist Geduld im Gespräch wichtig?;Manche Patienten brauchen mehr Zeit.;kommunikation;leicht
+kommunikation-35;Warum sind offene Fragen hilfreich?;Sie fördern ausführliche Antworten.;kommunikation;leicht
+kommunikation-36;Warum ist Blickkontakt wichtig?;Er signalisiert Aufmerksamkeit.;kommunikation;leicht
+wissen-06;Warum ist Fachwissen in der Pflege wichtig?;Es ermöglicht sichere Entscheidungen.;pflegeprozess;leicht
+wissen-07;Warum müssen Pflegekräfte Verantwortung übernehmen?;Pflege beeinflusst Gesundheit.;pflegeprozess;mittel
+wissen-08;Warum sind Leitlinien wichtig im Pflegeberuf?;Sie geben Orientierung.;pflegeprozess;leicht
+wissen-09;Warum müssen Pflegekräfte aufmerksam arbeiten?;Fehler können Folgen haben.;pflegeprozess;mittel
+wissen-10;Warum ist Weiterbildung im Pflegeberuf wichtig?;Medizinisches Wissen entwickelt sich.;pflegeprozess;mittel

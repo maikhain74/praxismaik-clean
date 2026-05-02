@@ -1,0 +1,205 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const pageTags = [
+  "wunde",
+  "wundheilung",
+  "schmerz",
+  "dekubitus",
+  "pflege"
+];
+
+const allThemen = await getCollection("themen");
+
+const relatedThemen = allThemen
+  .filter((item) => (item.data.tags ?? []).length > 0)
+  .map((item) => {
+    const itemTags = item.data.tags ?? [];
+    const sharedTags = itemTags.filter((tag) => pageTags.includes(tag));
+    return { ...item, sharedCount: sharedTags.length };
+  })
+  .filter((item) => item.sharedCount > 0)
+  .sort((a, b) => b.sharedCount - a.sharedCount)
+  .slice(0, 4);
+
+const allLernskripte = await getCollection("lernskripte");
+
+const relatedLernskripte = allLernskripte
+  .filter((item) => (item.data.tags ?? []).length > 0)
+  .map((item) => {
+    const itemTags = item.data.tags ?? [];
+    const sharedTags = itemTags.filter((tag) => pageTags.includes(tag));
+    return { ...item, sharedCount: sharedTags.length };
+  })
+  .filter((item) => item.sharedCount > 0)
+  .sort((a, b) => b.sharedCount - a.sharedCount)
+  .slice(0, 3);
+---
+
+<BaseLayout
+  title="Wunden, Schmerz und Dekubitus"
+  description="Prüfungsfragen zu Schmerz, Wunden, Wundheilung und Dekubitus."
+>
+  <section class="exam-detail-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Start</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="/pruefung/">Prüfung</a>
+      <span class="breadcrumb-sep">›</span>
+      <span class="current">Wunden, Schmerz und Dekubitus</span>
+    </nav>
+
+    <h1>Wunden, Schmerz und Dekubitus</h1>
+    <p class="muted">
+      Typische Prüfungsfragen zu Schmerzarten, Wundheilung und Dekubitus.
+    </p>
+
+    <details class="exam-question">
+      <summary>1. Welche Arten von Schmerz werden unterschieden?</summary>
+      <div class="quiz-answer">
+        Es werden unter anderem folgende Schmerzarten unterschieden:
+        <ul>
+          <li>akuter Schmerz</li>
+          <li>chronischer Schmerz</li>
+          <li>nozizeptiver Schmerz</li>
+          <li>neuropathischer Schmerz</li>
+          <li>psychogener Schmerz</li>
+        </ul>
+        <br />
+        Diese Einteilung hilft bei der Einschätzung und Auswahl geeigneter Maßnahmen.
+      </div>
+    </details>
+
+    <details class="exam-question">
+      <summary>2. Worin unterscheiden sich akute und chronische Schmerzen?</summary>
+      <div class="quiz-answer">
+        <strong>Akuter Schmerz</strong> tritt plötzlich auf, ist zeitlich begrenzt und hat eine Warn- und Schutzfunktion.
+        <br /><br />
+        <strong>Chronischer Schmerz</strong> besteht über einen längeren Zeitraum, meist über 3 bis 6 Monate, und kann sich zu einem eigenständigen Krankheitsbild entwickeln.
+      </div>
+    </details>
+
+    <details class="exam-question">
+      <summary>3. Was ist der Unterschied zwischen einer akuten und einer chronischen Wunde?</summary>
+      <div class="quiz-answer">
+        <strong>Akute Wunden</strong> entstehen plötzlich, zum Beispiel durch Operationen oder Verletzungen, und heilen in der Regel regelgerecht.
+        <br /><br />
+        <strong>Chronische Wunden</strong> bestehen über längere Zeit und zeigen eine gestörte Heilung, meist länger als 8 Wochen.
+      </div>
+    </details>
+
+    <details class="exam-question">
+      <summary>4. Welche Faktoren beeinflussen die Wundheilung und wie wirken sie sich aus?</summary>
+      <div class="quiz-answer">
+        Die Wundheilung wird durch endogene und exogene Faktoren beeinflusst.
+        <br /><br />
+        <strong>Endogene Faktoren</strong> sind zum Beispiel:
+        <ul>
+          <li>Alter</li>
+          <li>Durchblutung</li>
+          <li>Ernährungszustand</li>
+          <li>Grunderkrankungen</li>
+        </ul>
+        <br />
+        <strong>Exogene Faktoren</strong> sind zum Beispiel:
+        <ul>
+          <li>Druck</li>
+          <li>Infektionen</li>
+          <li>Hygiene</li>
+          <li>Pflegequalität</li>
+        </ul>
+        <br />
+        Ungünstige Faktoren verzögern die Wundheilung und erhöhen das Risiko für Komplikationen.
+      </div>
+    </details>
+
+    <details class="exam-question">
+      <summary>5. Worin unterscheiden sich aseptische und septische Wunden?</summary>
+      <div class="quiz-answer">
+        <strong>Aseptische Wunden</strong> sind keimfrei oder nicht infiziert, zum Beispiel saubere Operationswunden.
+        <br /><br />
+        <strong>Septische Wunden</strong> sind infiziert und zeigen Entzündungszeichen oder Keimbesiedlung.
+      </div>
+    </details>
+
+    <details class="exam-question">
+      <summary>6. Welche Wundheilungsphasen gibt es und wie sind sie gekennzeichnet?</summary>
+      <div class="quiz-answer">
+        Die Wundheilung verläuft in drei klassischen Phasen:
+        <ol>
+          <li><strong>Exsudationsphase</strong>, Reinigung der Wunde und Entzündungsreaktion</li>
+          <li><strong>Granulationsphase</strong>, Bildung von neuem Gewebe</li>
+          <li><strong>Epithelisierungsphase</strong>, Abschluss der Wundheilung durch Hautneubildung</li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="exam-question">
+      <summary>7. Was versteht man unter einem Dekubitus? Gehen Sie auf Definition, Ursachen, Risikofaktoren, Prädilektionsstellen und Kategorien ein.</summary>
+      <div class="quiz-answer">
+        Ein Dekubitus ist eine lokale Schädigung der Haut und des darunterliegenden Gewebes infolge von Druck oder Druck in Verbindung mit Scherkräften.
+        <br /><br />
+        <strong>Ursachen:</strong>
+        <ul>
+          <li>langanhaltender Druck</li>
+          <li>Scherkräfte</li>
+          <li>mangelnde Entlastung</li>
+        </ul>
+        <br />
+        <strong>Risikofaktoren:</strong>
+        <ul>
+          <li>Immobilität</li>
+          <li>Mangelernährung</li>
+          <li>Feuchtigkeit</li>
+          <li>Durchblutungsstörungen</li>
+          <li>vermindertes Schmerzempfinden</li>
+        </ul>
+        <br />
+        <strong>Prädilektionsstellen:</strong>
+        <ul>
+          <li>Kreuzbein</li>
+          <li>Fersen</li>
+          <li>Trochanter</li>
+          <li>Ellenbogen</li>
+          <li>Schulterblätter</li>
+        </ul>
+        <br />
+        <strong>Kategorien:</strong>
+        <ul>
+          <li>Kategorie 1: nicht wegdrückbare Rötung</li>
+          <li>Kategorie 2: Teilverlust der Haut</li>
+          <li>Kategorie 3: Verlust aller Hautschichten</li>
+          <li>Kategorie 4: tiefer Gewebeverlust bis Muskel, Knochen oder Sehnen</li>
+        </ul>
+      </div>
+    </details>
+    {relatedThemen.length > 0 ? (
+      <section class="related-topics">
+        <h2>Passende Themen</h2>
+        <div class="related-topics-grid">
+          {relatedThemen.map((item) => (
+            <a class="related-topic-card" href={`/themen/${item.slug}/`}>
+              <h3>{item.data.title}</h3>
+              {item.data.description ? <p>{item.data.description}</p> : null}
+            </a>
+          ))}
+        </div>
+      </section>
+    ) : null}
+
+    {relatedLernskripte.length > 0 ? (
+      <section class="related-topics">
+        <h2>Passende Lernskripte</h2>
+        <div class="related-topics-grid">
+          {relatedLernskripte.map((item) => (
+            <a class="related-topic-card" href={`/lernskripte/${item.slug}/`}>
+              <h3>{item.data.title}</h3>
+              {item.data.description ? <p>{item.data.description}</p> : null}
+            </a>
+          ))}
+        </div>
+      </section>
+    ) : null}
+  </section>
+</BaseLayout>

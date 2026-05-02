@@ -1,0 +1,527 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const quizEntries = await getCollection("quiz");
+
+function shuffleArray<T>(array: T[]) {
+  const copy = [...array];
+
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+
+  return copy;
+}
+
+const examCount = 40;
+
+const examEntries = shuffleArray(quizEntries).slice(0, examCount);
+const questions = examEntries.map((entry) => ({
+  id: entry.id,
+  question: entry.data.question,
+  answer: entry.data.answer,
+  topic: entry.data.topic,
+  difficulty: entry.data.difficulty,
+}));
+
+function formatTopicLabel(topic: string) {
+  return String(topic ?? "")
+    .trim()
+    .toLowerCase()
+    .split("-")
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" ");
+}
+
+function getExamDurationMinutes(questionCount: number | null) {
+  if (questionCount === 20) return 25;
+  if (questionCount === 40) return 45;
+  if (questionCount === 60) return 60;
+  return 25;
+}
+
+const examMinutes = getExamDurationMinutes(examCount);
+---
+
+<BaseLayout title="Examensmodus Pflege" description="Prüfungsmodus für Pflegefragen mit Zeitlimit und Ergebnis.">
+  <section class="quiz-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Start</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="/quiz">Quiz</a>
+      <span class="breadcrumb-sep">›</span>
+      <span class="current">Examensmodus</span>
+    </nav>
+
+    <h1>Examensmodus Pflege</h1>
+
+    {!examCount ? (
+      <>
+        <p class="muted">
+          Wähle eine Examenssimulation. Je mehr Fragen, desto realistischer die Prüfungssituation.
+        </p>
+
+        <div class="exam-mode-select">
+  <article class="exam-mode-card">
+    <h2>20 Fragen</h2>
+    <p class="muted">Kurze Prüfungssimulation, ideal zum schnellen Trainieren.</p>
+    <p><strong>Zeitlimit:</strong> 25 Minuten</p>
+    <form action="/quiz-exam" method="get">
+      <input type="hidden" name="count" value="20" />
+      <button class="btn" type="submit">20 Fragen starten</button>
+    </form>
+  </article>
+
+  <article class="exam-mode-card">
+    <h2>40 Fragen</h2>
+    <p class="muted">Mittlere Prüfungssimulation mit mehr Ausdauer und Fokus.</p>
+    <p><strong>Zeitlimit:</strong> 45 Minuten</p>
+    <form action="/quiz-exam" method="get">
+      <input type="hidden" name="count" value="40" />
+      <button class="btn" type="submit">40 Fragen starten</button>
+    </form>
+  </article>
+
+  <article class="exam-mode-card">
+    <h2>60 Fragen</h2>
+    <p class="muted">Längere und deutlich realistischere Examenssimulation.</p>
+    <p><strong>Zeitlimit:</strong> 60 Minuten</p>
+    <form action="/quiz-exam" method="get">
+      <input type="hidden" name="count" value="60" />
+      <button class="btn" type="submit">60 Fragen starten</button>
+    </form>
+  </article>
+</div>
+      </>
+    ) : questions.length > 0 ? (
+      <>
+        <p class="muted">
+          Examensmodus aktiv. Du bearbeitest <strong>{examCount} Fragen</strong> mit einem Zeitlimit von <strong>{examMinutes} Minuten</strong>. Bestehensgrenze: <strong>60 %</strong>.
+        </p>
+
+        <div class="quiz-status">
+          <span id="quiz-counter">Frage 1 von {questions.length}</span>
+          <span id="quiz-progress">Beantwortet: 0</span>
+          <span id="quiz-score">Gewusst: 0</span>
+          <span id="quiz-rate">Quote: 0%</span>
+          <span id="exam-timer" class="exam-timer">Restzeit: {String(examMinutes).padStart(2, "0")}:00</span>
+        </div>
+
+        <div class="quiz-progressbar" aria-hidden="true">
+          <div id="quiz-progress-fill" class="quiz-progressbar-fill"></div>
+        </div>
+
+        <div class="quiz-stack">
+          {questions.map((q, index) => (
+            <article
+              class={`quiz-slide${index === 0 ? " active" : ""}`}
+              data-index={index}
+              data-question-id={q.id}
+            >
+              <div class="quiz-card-main">
+                <div class="quiz-card-label">
+                  {q.topic ? `Thema: ${formatTopicLabel(q.topic)}` : "Prüfungsfrage"}
+                </div>
+
+                <h2 class="quiz-question-title">
+                  {q.question}
+                </h2>
+
+                <button class="btn quiz-toggle-answer" type="button">
+                  Antwort anzeigen
+                </button>
+
+                <div class="quiz-result-actions">
+                  <button class="btn secondary quiz-mark-known" type="button">
+                    Gewusst
+                  </button>
+                  <button class="btn secondary quiz-mark-unknown" type="button">
+                    Nicht gewusst
+                  </button>
+                </div>
+
+                <div class="quiz-answer-panel" hidden>
+                  <p>{q.answer}</p>
+
+                  {q.difficulty ? (
+                    <p class="muted quiz-meta">Schwierigkeit: {q.difficulty}</p>
+                  ) : null}
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <div class="quiz-nav">
+          <button id="quiz-prev" class="btn secondary" type="button">Vorherige Frage</button>
+          <button id="quiz-next" class="btn" type="button">Nächste Frage</button>
+        </div>
+
+        <div id="exam-result" class="exam-result" hidden>
+          <h2>Ergebnis</h2>
+          <p id="exam-result-summary"></p>
+          <p id="exam-result-status" class="exam-result-status"></p>
+          <div class="quiz-result-actions">
+            <button id="exam-restart" class="btn" type="button">Neue Examenssimulation starten</button>
+            <a href="/quiz-fehler" class="btn secondary">Nur meine Fehler üben</a>
+          </div>
+        </div>
+      </>
+    ) : (
+      <p>Es sind nicht genug Quizfragen vorhanden.</p>
+    )}
+  </section>
+
+  {examCount ? (
+    <script define:vars={{ examMinutes }}>
+      const slides = Array.from(document.querySelectorAll(".quiz-slide"));
+      const counter = document.getElementById("quiz-counter");
+      const prevBtn = document.getElementById("quiz-prev");
+      const nextBtn = document.getElementById("quiz-next");
+      const progressEl = document.getElementById("quiz-progress");
+      const scoreEl = document.getElementById("quiz-score");
+      const rateEl = document.getElementById("quiz-rate");
+      const progressFillEl = document.getElementById("quiz-progress-fill");
+      const examResultBox = document.getElementById("exam-result");
+      const examResultSummary = document.getElementById("exam-result-summary");
+      const examResultStatus = document.getElementById("exam-result-status");
+      const examRestartBtn = document.getElementById("exam-restart");
+      const examTimerEl = document.getElementById("exam-timer");
+
+      const wrongAnswersKey = "wrong-quiz-questions";
+      const answers = new Map();
+      const passRate = 60;
+      const examDurationSeconds = examMinutes * 60;
+
+      let currentIndex = 0;
+      let remainingSeconds = examDurationSeconds;
+      let examTimerInterval = null;
+      let examFinished = false;
+
+      function getWrongQuestions() {
+        try {
+          const raw = localStorage.getItem(wrongAnswersKey);
+          const parsed = raw ? JSON.parse(raw) : [];
+          return Array.isArray(parsed) ? parsed : [];
+        } catch (error) {
+          console.error("Fehler beim Laden der Fehlerfragen:", error);
+          return [];
+        }
+      }
+
+      function saveWrongQuestions(items) {
+        localStorage.setItem(wrongAnswersKey, JSON.stringify(items));
+      }
+
+      function addWrongQuestion(questionData) {
+        const existing = getWrongQuestions();
+        const alreadyExists = existing.some((item) => item.slug === questionData.slug);
+
+        if (alreadyExists) return;
+
+        existing.push(questionData);
+        saveWrongQuestions(existing);
+      }
+
+      function removeWrongQuestion(slug) {
+        const existing = getWrongQuestions();
+        const filtered = existing.filter((item) => item.slug !== slug);
+        saveWrongQuestions(filtered);
+      }
+
+      function formatTime(seconds) {
+        const minutes = Math.floor(seconds / 60);
+        const secs = seconds % 60;
+        return `${String(minutes).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
+      }
+
+      function updateTimerDisplay() {
+        if (!examTimerEl) return;
+
+        examTimerEl.textContent = `Restzeit: ${formatTime(remainingSeconds)}`;
+
+        if (remainingSeconds <= 300) {
+          examTimerEl.classList.add("is-warning");
+        } else {
+          examTimerEl.classList.remove("is-warning");
+        }
+      }
+
+      function updateExamResult(forceShow = false) {
+        if (!examResultBox || !examResultSummary || !examResultStatus) return;
+
+        const totalCount = slides.length;
+        const answeredCount = answers.size;
+
+        let knownCount = 0;
+        answers.forEach((value) => {
+          if (value === "known") {
+            knownCount += 1;
+          }
+        });
+
+        const rate = totalCount > 0
+          ? Math.round((knownCount / totalCount) * 100)
+          : 0;
+
+        if (!forceShow && answeredCount < totalCount) {
+          examResultBox.setAttribute("hidden", "");
+          return;
+        }
+
+        examResultSummary.textContent =
+          `Du hast ${knownCount} von ${totalCount} Fragen als gewusst markiert. Quote: ${rate}%.`;
+
+        if (rate >= passRate) {
+          examResultStatus.textContent = `Bestanden, Bestehensgrenze ${passRate}% erreicht`;
+          examResultStatus.classList.add("passed");
+          examResultStatus.classList.remove("failed");
+        } else {
+          examResultStatus.textContent = `Nicht bestanden, Bestehensgrenze ${passRate}% nicht erreicht`;
+          examResultStatus.classList.add("failed");
+          examResultStatus.classList.remove("passed");
+        }
+
+        examResultBox.removeAttribute("hidden");
+      }
+
+      function finishExam() {
+        if (examFinished) return;
+
+        examFinished = true;
+
+        if (examTimerInterval) {
+          clearInterval(examTimerInterval);
+        }
+
+        if (prevBtn) prevBtn.disabled = true;
+        if (nextBtn) nextBtn.disabled = true;
+
+        slides.forEach((slide) => {
+          const toggleBtn = slide.querySelector(".quiz-toggle-answer");
+          const knownBtn = slide.querySelector(".quiz-mark-known");
+          const unknownBtn = slide.querySelector(".quiz-mark-unknown");
+
+          if (toggleBtn) toggleBtn.disabled = true;
+          if (knownBtn) knownBtn.disabled = true;
+          if (unknownBtn) unknownBtn.disabled = true;
+        });
+
+        updateExamResult(true);
+      }
+
+      function finishExamBecauseTimeIsUp() {
+        if (examFinished) return;
+
+        remainingSeconds = 0;
+        updateTimerDisplay();
+        finishExam();
+      }
+
+      function startExamTimer() {
+        updateTimerDisplay();
+
+        examTimerInterval = window.setInterval(() => {
+          if (examFinished) {
+            clearInterval(examTimerInterval);
+            return;
+          }
+
+          if (remainingSeconds > 0) {
+            remainingSeconds -= 1;
+            updateTimerDisplay();
+          }
+
+          if (remainingSeconds <= 0) {
+            finishExamBecauseTimeIsUp();
+          }
+        }, 1000);
+      }
+
+      function updateStats() {
+        const answeredCount = answers.size;
+
+        let knownCount = 0;
+        answers.forEach((value) => {
+          if (value === "known") {
+            knownCount += 1;
+          }
+        });
+
+        const rate = answeredCount > 0
+          ? Math.round((knownCount / answeredCount) * 100)
+          : 0;
+
+        const progressPercent = slides.length > 0
+          ? Math.round(((currentIndex + 1) / slides.length) * 100)
+          : 0;
+
+        if (progressEl) {
+          progressEl.textContent = `Beantwortet: ${answeredCount}`;
+        }
+
+        if (scoreEl) {
+          scoreEl.textContent = `Gewusst: ${knownCount}`;
+        }
+
+        if (rateEl) {
+          rateEl.textContent = `Quote: ${rate}%`;
+        }
+
+        if (progressFillEl) {
+          progressFillEl.style.width = `${progressPercent}%`;
+        }
+
+        if (answers.size === slides.length) {
+          finishExam();
+        } else {
+          updateExamResult(false);
+        }
+      }
+
+      function updateView() {
+        slides.forEach((slide, index) => {
+          slide.classList.toggle("active", index === currentIndex);
+        });
+
+        slides.forEach((slide, index) => {
+          const knownBtn = slide.querySelector(".quiz-mark-known");
+          const unknownBtn = slide.querySelector(".quiz-mark-unknown");
+
+          knownBtn?.classList.remove("active-known");
+          unknownBtn?.classList.remove("active-unknown");
+
+          if (answers.get(index) === "known") {
+            knownBtn?.classList.add("active-known");
+          }
+
+          if (answers.get(index) === "unknown") {
+            unknownBtn?.classList.add("active-unknown");
+          }
+        });
+
+        if (counter) {
+          counter.textContent = `Frage ${currentIndex + 1} von ${slides.length}`;
+        }
+
+        if (prevBtn) {
+          prevBtn.disabled = currentIndex === 0 || examFinished;
+        }
+
+        if (nextBtn) {
+          nextBtn.disabled = currentIndex === slides.length - 1 || examFinished;
+        }
+
+        updateStats();
+      }
+
+      slides.forEach((slide, index) => {
+        const toggleBtn = slide.querySelector(".quiz-toggle-answer");
+        const answerPanel = slide.querySelector(".quiz-answer-panel");
+        const knownBtn = slide.querySelector(".quiz-mark-known");
+        const unknownBtn = slide.querySelector(".quiz-mark-unknown");
+
+        if (toggleBtn && answerPanel) {
+          toggleBtn.addEventListener("click", () => {
+            if (examFinished) return;
+
+            const isHidden = answerPanel.hasAttribute("hidden");
+
+            if (isHidden) {
+              answerPanel.removeAttribute("hidden");
+              toggleBtn.textContent = "Antwort ausblenden";
+            } else {
+              answerPanel.setAttribute("hidden", "");
+              toggleBtn.textContent = "Antwort anzeigen";
+            }
+          });
+        }
+
+        if (knownBtn) {
+          knownBtn.addEventListener("click", () => {
+            if (examFinished) return;
+
+            const questionId = slide.dataset.questionId || "";
+            const wrongQuestion = {
+              slug: questionId,
+              question: slide.querySelector(".quiz-question-title")?.textContent?.trim() || "",
+              answer: answerPanel?.querySelector("p")?.textContent?.trim() || "",
+              topic: slide.querySelector(".quiz-card-label")?.textContent?.replace("Thema:", "").trim().toLowerCase() || "",
+              difficulty: slide.querySelector(".quiz-meta")?.textContent?.replace("Schwierigkeit:", "").trim().toLowerCase() || ""
+            };
+
+            answers.set(index, "known");
+            knownBtn.classList.add("active-known");
+            unknownBtn?.classList.remove("active-unknown");
+
+            if (wrongQuestion.slug) {
+              removeWrongQuestion(wrongQuestion.slug);
+            }
+
+            updateStats();
+            updateView();
+          });
+        }
+
+        if (unknownBtn) {
+          unknownBtn.addEventListener("click", () => {
+            if (examFinished) return;
+
+            const questionId = slide.dataset.questionId || "";
+            const wrongQuestion = {
+              slug: questionId,
+              question: slide.querySelector(".quiz-question-title")?.textContent?.trim() || "",
+              answer: answerPanel?.querySelector("p")?.textContent?.trim() || "",
+              topic: slide.querySelector(".quiz-card-label")?.textContent?.replace("Thema:", "").trim().toLowerCase() || "",
+              difficulty: slide.querySelector(".quiz-meta")?.textContent?.replace("Schwierigkeit:", "").trim().toLowerCase() || ""
+            };
+
+            answers.set(index, "unknown");
+            unknownBtn.classList.add("active-unknown");
+            knownBtn?.classList.remove("active-known");
+
+            if (wrongQuestion.slug && wrongQuestion.question && wrongQuestion.answer) {
+              addWrongQuestion(wrongQuestion);
+            }
+
+            updateStats();
+            updateView();
+          });
+        }
+      });
+
+      if (prevBtn) {
+        prevBtn.addEventListener("click", () => {
+          if (examFinished) return;
+
+          if (currentIndex > 0) {
+            currentIndex -= 1;
+            updateView();
+          }
+        });
+      }
+
+      if (nextBtn) {
+        nextBtn.addEventListener("click", () => {
+          if (examFinished) return;
+
+          if (currentIndex < slides.length - 1) {
+            currentIndex += 1;
+            updateView();
+          }
+        });
+      }
+
+      if (examRestartBtn) {
+        examRestartBtn.addEventListener("click", () => {
+          window.location.href = "/quiz-exam";
+        });
+      }
+
+      updateView();
+      startExamTimer();
+    </script>
+  ) : null}
+</BaseLayout>

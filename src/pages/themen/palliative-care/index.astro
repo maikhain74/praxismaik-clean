@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const themen = await getCollection("themen");
+
+const categoryEntry = themen.find((entry) => entry.slug === "palliative-care");
+
+if (!categoryEntry) {
+  throw new Error('Kategorie "palliative-care" nicht gefunden.');
+}
+
+const subtopics = themen
+  .filter((entry) => entry.slug.startsWith("palliative-care/"))
+  .sort((a, b) => a.data.title.localeCompare(b.data.title, "de"));
+
+const { Content } = await categoryEntry.render();
+---
+
+<BaseLayout title="Palliative Care" description={categoryEntry.data.description}>
+  <article class="content">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Start</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="/themen/">Themen</a>
+      <span class="breadcrumb-sep">›</span>
+      <span class="current">Palliative Care</span>
+    </nav>
+
+    <Content />
+
+    <section class="related-topics" style="margin-top:32px;">
+      <h2>Unterthemen</h2>
+
+      <div class="topic-grid" style="margin-top:16px;">
+        {subtopics.map((item) => (
+          <a class="topic-card" href={`/themen/${item.slug}/`}>
+            <h3>{item.data.title}</h3>
+            {item.data.description ? <p>{item.data.description}</p> : null}
+          </a>
+        ))}
+      </div>
+    </section>
+  </article>
+</BaseLayout>

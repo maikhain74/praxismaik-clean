@@ -1,0 +1,168 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const pruefung = await getCollection('pruefung');
+
+  return pruefung.map((item) => ({
+    params: { slug: item.slug },
+    props: { item },
+  }));
+}
+
+const { item } = Astro.props;
+const { Content } = await render(item);
+
+const allPruefung = await getCollection('pruefung');
+
+// Diese Slugs sind kostenlos sichtbar
+const freePreviewSlugs = ['fall-burnout-premium'];
+
+// true = komplett sichtbar
+// false = verschwommen + Hinweisbox
+const isDev = true;
+
+const isUnlocked = isDev || freePreviewSlugs.includes(item.slug);
+
+const currentEinsatzbereich = item.data.einsatzbereich;
+
+const sameBereichFaelle = allPruefung
+  .filter((entry) => entry.data.einsatzbereich === currentEinsatzbereich && entry.slug !== item.slug)
+  .sort((a, b) => (a.data.order ?? 999) - (b.data.order ?? 999));
+
+const nextCase =
+  sameBereichFaelle.find(
+    (entry) => (entry.data.order ?? 999) > (item.data.order ?? 999)
+  ) ?? sameBereichFaelle[0] ?? null;
+
+const weitereFaelleImBereich = sameBereichFaelle.slice(0, 3);
+
+const levelLabels = {
+  grundlagen: '🟢 Grundlagen',
+  vertiefung: '🟡 Vertiefung',
+  pruefung: '🔴 Prüfung',
+};
+---
+
+<BaseLayout title={item.data.title} description={item.data.beschreibung}>
+  <section class="container">
+    <article class="pruefung-content content-card">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="/">Start</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="/pruefung/">Prüfung</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="/pruefung/fallbeispiele/">Fallbeispiele</a>
+        <span class="breadcrumb-sep">›</span>
+        <span class="current">{item.data.title}</span>
+      </nav>
+
+      <header class="fall-page-header">
+        <div class="fall-page-meta">
+          {item.data.level && (
+            <span class={`card-level card-level-${item.data.level}`}>
+              {levelLabels[item.data.level]}
+            </span>
+          )}
+
+          {item.data.einsatzbereich && (
+            <span class="topic-context-badge">
+              {item.data.einsatzbereich}
+            </span>
+          )}
+
+          {typeof item.data.order === 'number' && (
+            <span class="pruefung-order-badge">
+              Fall {item.data.order}
+            </span>
+          )}
+        </div>
+
+        <h1>{item.data.title}</h1>
+
+        {item.data.beschreibung && (
+          <p class="fall-page-lead">{item.data.beschreibung}</p>
+        )}
+      </header>
+
+      {isUnlocked ? (
+        <>
+          <Content />
+
+          <section class="fall-next-steps">
+            <h2>So gehst du sinnvoll weiter</h2>
+
+            <div class="fall-next-grid">
+              <a class="fall-next-card" href="/pruefung/fallbeispiele/">
+                <span class="fall-next-label">Zur Übersicht</span>
+                <h3>Alle Prüfungsfälle</h3>
+                <p>
+                  Zurück zur Übersicht aller Prüfungsfälle nach Einsatzbereich.
+                </p>
+                <span class="fall-next-link">Zur Übersicht</span>
+              </a>
+
+              {nextCase && (
+                <a class="fall-next-card" href={`/pruefung/fallbeispiele/${nextCase.slug}/`}>
+                  <span class="fall-next-label">Nächster Fall</span>
+                  <h3>{nextCase.data.title}</h3>
+                  <p>
+                    {nextCase.data.beschreibung ?? 'Trainiere direkt die nächste Entscheidungssituation.'}
+                  </p>
+                  <span class="fall-next-link">Zum nächsten Fall</span>
+                </a>
+              )}
+
+              {weitereFaelleImBereich.length > 0 && (
+                <div class="fall-next-card">
+                  <span class="fall-next-label">Gleicher Einsatzbereich</span>
+                  <h3>Weitere Fälle</h3>
+
+                  <div class="fall-next-list">
+                    {weitereFaelleImBereich.map((entry) => (
+                      <a class="fall-inline-link" href={`/pruefung/fallbeispiele/${entry.slug}/`}>
+                        {entry.data.title}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </section>
+        </>
+      ) : (
+        <div class="premium-locked">
+          <div class="premium-preview">
+            <Content />
+          </div>
+
+          <div class="premium-overlay">
+            <h2>Premium-Inhalt</h2>
+
+            <p>
+              Dieser Prüfungsfall ist Teil des Premium-Bereichs.
+            </p>
+
+            <p>
+              Trainiere echte Entscheidungssituationen und entwickle Sicherheit
+              für deine Abschlussprüfung.
+            </p>
+
+            <div style="margin-top: 1rem;">
+              <a href="/premium" class="btn primary">
+                Premium freischalten
+              </a>
+            </div>
+
+            <div style="margin-top: 0.75rem;">
+              <a href="/pruefung/fallbeispiele" class="btn secondary">
+                Zurück zur Übersicht
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
+    </article>
+  </section>
+</BaseLayout>

@@ -1,0 +1,154 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const themen = await getCollection("themen");
+
+const hygieneThemen = themen.filter((t) =>
+  t.slug.toLowerCase().startsWith("hygiene/")
+);
+---
+
+<BaseLayout title="Hygiene">
+  <section class="category-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Start</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="/themen/">Themen</a>
+      <span class="breadcrumb-sep">›</span>
+      <span class="current">Hygiene</span>
+    </nav>
+
+    <header class="category-hero">
+      <span class="category-eyebrow">Themenbereich</span>
+      <h1>Hygiene</h1>
+      <p class="category-intro">
+        Grundlagen der Infektionsprävention in der Pflege.
+      </p>
+    </header>
+
+    <div class="topic-grid">
+      {hygieneThemen.map((t) => (
+        <a class="topic-card" href={`/themen/${t.slug}/`}>
+          <h2>{t.data.title}</h2>
+          <p>{t.data.description}</p>
+          <span class="topic-link">Öffnen</span>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
+
+<style is:global>
+.category-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.25rem 1rem 3rem;
+}
+
+.category-hero {
+  max-width: 760px;
+  margin-top: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.category-eyebrow {
+  display: inline-block;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: #eef5ff;
+  color: #2f5f9b;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.category-hero h1 {
+  margin: 0.7rem 0 0.7rem;
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  line-height: 1.12;
+}
+
+.category-intro {
+  margin: 0;
+  color: #5b6b7a;
+  line-height: 1.7;
+}
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.topic-card,
+.topic-card:link,
+.topic-card:visited {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 250px;
+  padding: 1.35rem;
+  border-radius: 18px;
+  border: 1px solid #e5e5e5;
+  background: #ffffff;
+  text-decoration: none;
+  color: inherit !important;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.topic-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(24, 50, 74, 0.08);
+  border-color: #cfdceb;
+}
+
+.topic-card h2 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.08rem;
+  line-height: 1.35;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.topic-card p {
+  margin: 0;
+  color: #556270 !important;
+  line-height: 1.6;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.topic-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  padding: 0.42rem 0.8rem;
+  border-radius: 999px;
+  background: #eef5ff;
+  color: #2f5f9b !important;
+  font-size: 0.84rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .topic-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .topic-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topic-card {
+    min-height: unset;
+  }
+}
+</style>

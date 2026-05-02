@@ -1,0 +1,161 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const pageTags = [
+  "ethik",
+  "charta",
+  "recht",
+  "pflege",
+  "pflegegrad"
+];
+
+const allThemen = await getCollection("themen");
+
+const relatedThemen = allThemen
+  .filter((item) => (item.data.tags ?? []).length > 0)
+  .map((item) => {
+    const itemTags = item.data.tags ?? [];
+    const sharedTags = itemTags.filter((tag) => pageTags.includes(tag));
+    return { ...item, sharedCount: sharedTags.length };
+  })
+  .filter((item) => item.sharedCount > 0)
+  .sort((a, b) => b.sharedCount - a.sharedCount)
+  .slice(0, 4);
+
+const allLernskripte = await getCollection("lernskripte");
+
+const relatedLernskripte = allLernskripte
+  .filter((item) => (item.data.tags ?? []).length > 0)
+  .map((item) => {
+    const itemTags = item.data.tags ?? [];
+    const sharedTags = itemTags.filter((tag) => pageTags.includes(tag));
+    return { ...item, sharedCount: sharedTags.length };
+  })
+  .filter((item) => item.sharedCount > 0)
+  .sort((a, b) => b.sharedCount - a.sharedCount)
+  .slice(0, 3);
+---
+
+<BaseLayout
+  title="Ethik, Charta und Recht"
+  description="Prüfungsfragen zu Ethik, Pflege-Charta, EACH-Charta, Pflegebedürftigkeit und Pflegegraden."
+>
+  <section class="exam-detail-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Start</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="/pruefung/">Prüfung</a>
+      <span class="breadcrumb-sep">›</span>
+      <span class="current">Ethik, Charta und Recht</span>
+    </nav>
+
+    <h1>Ethik, Charta und Recht</h1>
+    <p class="muted">
+      Typische Prüfungsfragen zu ethischen Grundlagen, Charta und rechtlichen Pflegebegriffen.
+    </p>
+
+    <details class="exam-question">
+      <summary>1. Welche ethischen Prinzipien nach Beauchamp und Childress gibt es und was bedeuten sie?</summary>
+      <div class="quiz-answer">
+        Die vier ethischen Prinzipien nach Beauchamp und Childress sind:
+        <ul>
+          <li><strong>Autonomie</strong>, die Selbstbestimmung des Menschen respektieren</li>
+          <li><strong>Nichtschaden</strong>, Schaden vermeiden</li>
+          <li><strong>Fürsorge</strong>, Gutes tun und das Wohl fördern</li>
+          <li><strong>Gerechtigkeit</strong>, fair und gleichbehandelnd handeln</li>
+        </ul>
+        <br />
+        Diese Prinzipien helfen, ethische Konflikte in der Pflege zu reflektieren und Entscheidungen zu begründen.
+      </div>
+    </details>
+
+    <details class="exam-question">
+      <summary>2. Was ist der ICN-Ethikkodex und welche Bedeutung hat er für die Pflegepraxis?</summary>
+      <div class="quiz-answer">
+        Der ICN-Ethikkodex ist eine berufsethische Grundlage für Pflegende.
+        Er beschreibt zentrale Werte, Haltungen und Verantwortlichkeiten in der Pflege.
+        <br /><br />
+        Er bezieht sich auf die Verantwortung gegenüber:
+        <ul>
+          <li>pflegebedürftigen Menschen</li>
+          <li>der Gesellschaft</li>
+          <li>dem Beruf</li>
+          <li>Kolleginnen und Kollegen</li>
+        </ul>
+        <br />
+        Für die Praxis bedeutet das, dass Pflege nicht nur fachlich korrekt, sondern auch ethisch verantwortungsvoll erfolgen muss.
+      </div>
+    </details>
+
+    <details class="exam-question">
+      <summary>3. Was ist die Pflege-Charta und was ist die EACH-Charta? Worin unterscheiden sie sich?</summary>
+      <div class="quiz-answer">
+        Die <strong>Pflege-Charta</strong> beschreibt die Rechte hilfe- und pflegebedürftiger Menschen.
+        Sie betont unter anderem Würde, Selbstbestimmung, Information, Privatheit und Teilhabe.
+        <br /><br />
+        Die <strong>EACH-Charta</strong> beschreibt die Rechte kranker Kinder und ihrer Familien im Krankenhaus.
+        Sie betont insbesondere die Begleitung durch Eltern, kindgerechte Information und altersgerechte Versorgung.
+        <br /><br />
+        Der Unterschied liegt also vor allem in der Zielgruppe:
+        <ul>
+          <li>Pflege-Charta = pflegebedürftige Menschen allgemein</li>
+          <li>EACH-Charta = kranke Kinder im Krankenhaus</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="exam-question">
+      <summary>4. Was bedeutet Pflegebedürftigkeit im Sinne des SGB XI?</summary>
+      <div class="quiz-answer">
+        Pflegebedürftigkeit im Sinne des SGB XI bedeutet, dass eine Person gesundheitlich bedingte Beeinträchtigungen der Selbstständigkeit oder der Fähigkeiten aufweist
+        und deshalb Hilfe durch andere benötigt.
+        <br /><br />
+        Diese Einschränkungen müssen auf Dauer, in der Regel für mindestens sechs Monate, bestehen.
+      </div>
+    </details>
+
+    <details class="exam-question">
+      <summary>5. Welche Pflegegrade gibt es und wie werden sie unterschieden?</summary>
+      <div class="quiz-answer">
+        Es gibt fünf Pflegegrade:
+        <ol>
+          <li>Pflegegrad 1 = geringe Beeinträchtigung der Selbstständigkeit</li>
+          <li>Pflegegrad 2 = erhebliche Beeinträchtigung</li>
+          <li>Pflegegrad 3 = schwere Beeinträchtigung</li>
+          <li>Pflegegrad 4 = schwerste Beeinträchtigung</li>
+          <li>Pflegegrad 5 = schwerste Beeinträchtigung mit besonderen Anforderungen an die pflegerische Versorgung</li>
+        </ol>
+        <br />
+        Die Einstufung erfolgt nach dem Grad der Selbstständigkeit in verschiedenen Lebensbereichen.
+      </div>
+    </details>
+    {relatedThemen.length > 0 ? (
+      <section class="related-topics">
+        <h2>Passende Themen</h2>
+        <div class="related-topics-grid">
+          {relatedThemen.map((item) => (
+            <a class="related-topic-card" href={`/themen/${item.slug}/`}>
+              <h3>{item.data.title}</h3>
+              {item.data.description ? <p>{item.data.description}</p> : null}
+            </a>
+          ))}
+        </div>
+      </section>
+    ) : null}
+
+    {relatedLernskripte.length > 0 ? (
+      <section class="related-topics">
+        <h2>Passende Lernskripte</h2>
+        <div class="related-topics-grid">
+          {relatedLernskripte.map((item) => (
+            <a class="related-topic-card" href={`/lernskripte/${item.slug}/`}>
+              <h3>{item.data.title}</h3>
+              {item.data.description ? <p>{item.data.description}</p> : null}
+            </a>
+          ))}
+        </div>
+      </section>
+    ) : null}
+  </section>
+</BaseLayout>

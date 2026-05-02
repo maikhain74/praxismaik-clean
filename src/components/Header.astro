@@ -1,0 +1,30 @@
+---
+const { pathname, navItems } = Astro.props;
+---
+
+<header class="site-header">
+  <div class="topbar wrap">
+    <a class="brand" href="/">
+      <img src="/PraxisMaik.jpg" alt="PraxisMaik Logo" />
+      <div class="brand-text">
+        <span class="brand-title">PraxisMaik</span>
+        <span class="brand-subtitle">Lernplattform für Pflegeausbildung</span>
+      </div>
+    </a>
+
+    <nav class="nav">
+      {navItems.map((item) => {
+        const isActive =
+          item.href === "/"
+            ? pathname === "/"
+            : pathname.startsWith(item.href);
+
+        return (
+          <a href={item.href} aria-current={isActive ? "page" : undefined}>
+            {item.label}
+          </a>
+        );
+      })}
+    </nav>
+  </div>
+</header>

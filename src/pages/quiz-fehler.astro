@@ -1,0 +1,200 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Fehlerquiz Pflege"
+  description="Wiederhole alle Fragen, die du im Quiz nicht gewusst hast."
+>
+  <section class="quiz-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Start</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="/quiz">Quiz</a>
+      <span class="breadcrumb-sep">›</span>
+      <span class="current">Fehlerquiz</span>
+    </nav>
+
+    <h1>Fehlerquiz</h1>
+    <p class="muted">
+      Hier erscheinen automatisch alle Fragen, die du im Quiz mit
+      <strong>Nicht gewusst</strong> markiert hast.
+    </p>
+
+    <div class="quiz-status">
+      <span id="wrong-quiz-count">Fehlerfragen: 0</span>
+    </div>
+
+    <div class="quiz-nav" style="margin-bottom: 1rem;">
+      <a class="btn secondary" href="/quiz">Zum normalen Quiz</a>
+      <button id="clear-wrong-questions" class="btn secondary" type="button">
+        Fehlerquiz leeren
+      </button>
+    </div>
+
+    <div id="wrong-quiz-empty" class="quiz-card-main" hidden>
+      <div class="quiz-card-label">Fehlerquiz</div>
+      <h2 class="quiz-question-title">Keine Fehlerfragen vorhanden</h2>
+      <p class="muted">
+        Sobald du im normalen Quiz auf <strong>Nicht gewusst</strong> klickst,
+        erscheinen die Fragen hier.
+      </p>
+    </div>
+
+    <div id="wrong-quiz-list" class="quiz-stack"></div>
+  </section>
+
+  <script>
+    const WRONG_QUIZ_STORAGE_KEY = "wrong-quiz-questions";
+
+    function getWrongQuestions() {
+      try {
+        const raw = localStorage.getItem(WRONG_QUIZ_STORAGE_KEY);
+        if (!raw) return [];
+        const parsed = JSON.parse(raw);
+        return Array.isArray(parsed) ? parsed : [];
+      } catch (error) {
+        console.error("Fehler beim Laden der Fehlerfragen:", error);
+        return [];
+      }
+    }
+
+    function saveWrongQuestions(items) {
+      localStorage.setItem(WRONG_QUIZ_STORAGE_KEY, JSON.stringify(items));
+    }
+
+    function removeWrongQuestion(slug) {
+      const items = getWrongQuestions().filter((item) => item.slug !== slug);
+      saveWrongQuestions(items);
+      renderWrongQuiz();
+    }
+
+    function clearWrongQuestions() {
+      localStorage.removeItem(WRONG_QUIZ_STORAGE_KEY);
+      renderWrongQuiz();
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#39;");
+    }
+
+    function formatTopicLabel(topic) {
+      return String(topic ?? "")
+        .trim()
+        .toLowerCase()
+        .split("-")
+        .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+        .join(" ");
+    }
+
+    function renderWrongQuiz() {
+      const listEl = document.getElementById("wrong-quiz-list");
+      const emptyEl = document.getElementById("wrong-quiz-empty");
+      const countEl = document.getElementById("wrong-quiz-count");
+
+      if (!listEl || !emptyEl || !countEl) return;
+
+      const items = getWrongQuestions();
+
+      countEl.textContent = `Fehlerfragen: ${items.length}`;
+
+      if (items.length === 0) {
+        listEl.innerHTML = "";
+        emptyEl.hidden = false;
+        return;
+      }
+
+      emptyEl.hidden = true;
+
+      listEl.innerHTML = items
+        .map((item, index) => {
+          const safeSlug = escapeHtml(item.slug || "");
+          const safeQuestion = escapeHtml(item.question || "");
+          const safeAnswer = escapeHtml(item.answer || "");
+          const safeTopic = escapeHtml(formatTopicLabel(item.topic || ""));
+          const safeDifficulty = escapeHtml(item.difficulty || "");
+
+          return `
+            <article class="quiz-slide active" style="display:block;">
+              <div class="quiz-card-main">
+                <div class="quiz-card-label">
+                  ${safeTopic ? `Thema: ${safeTopic}` : "Fehlerfrage"}${safeDifficulty ? ` · Schwierigkeit: ${safeDifficulty}` : ""}
+                </div>
+
+                <h2 class="quiz-question-title">
+                  ${index + 1}. ${safeQuestion}
+                </h2>
+
+                <button
+                  class="btn quiz-toggle-wrong-answer"
+                  type="button"
+                  data-target="wrong-answer-${index}"
+                >
+                  Antwort anzeigen
+                </button>
+
+                <div id="wrong-answer-${index}" class="quiz-answer-panel" hidden>
+                  <p>${safeAnswer}</p>
+                </div>
+
+                <div class="quiz-result-actions">
+                  <button
+                    class="btn secondary remove-wrong-question"
+                    type="button"
+                    data-slug="${safeSlug}"
+                  >
+                    Aus Fehlerquiz entfernen
+                  </button>
+                </div>
+              </div>
+            </article>
+          `;
+        })
+        .join("");
+
+      bindWrongQuizEvents();
+    }
+
+    function bindWrongQuizEvents() {
+      document.querySelectorAll(".quiz-toggle-wrong-answer").forEach((button) => {
+        button.addEventListener("click", () => {
+          const targetId = button.getAttribute("data-target");
+          const panel = targetId ? document.getElementById(targetId) : null;
+          if (!panel) return;
+
+          const isHidden = panel.hasAttribute("hidden");
+
+          if (isHidden) {
+            panel.removeAttribute("hidden");
+            button.textContent = "Antwort ausblenden";
+          } else {
+            panel.setAttribute("hidden", "");
+            button.textContent = "Antwort anzeigen";
+          }
+        });
+      });
+
+      document.querySelectorAll(".remove-wrong-question").forEach((button) => {
+        button.addEventListener("click", () => {
+          const slug = button.getAttribute("data-slug");
+          if (!slug) return;
+          removeWrongQuestion(slug);
+        });
+      });
+    }
+
+    const clearBtn = document.getElementById("clear-wrong-questions");
+    if (clearBtn) {
+      clearBtn.addEventListener("click", () => {
+        clearWrongQuestions();
+      });
+    }
+
+    renderWrongQuiz();
+  </script>
+</BaseLayout>
