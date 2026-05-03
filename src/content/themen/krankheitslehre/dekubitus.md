@@ -6,126 +6,175 @@ level: pruefung
 
 # Dekubitus
 
-## Kurz erklärt
+Ein Dekubitus ist eine Schädigung der Haut und des darunterliegenden Gewebes, die durch anhaltenden Druck oder Druck in Kombination mit Scherkräften entsteht.
 
-Ein Dekubitus ist eine Schädigung der Haut und des darunterliegenden Gewebes durch anhaltenden Druck.
+Er gehört zu den häufigsten und wichtigsten Problemen in der Pflege und ist in vielen Fällen vermeidbar.
 
----
+## Warum Dekubitus wichtig ist
 
-## Warum ist das wichtig für die Pflege?
+Ein Dekubitus kann schwerwiegende Folgen haben.
 
-- häufiges Problem im Pflegealltag  
-- kann schwere Wunden verursachen  
-- ist oft vermeidbar  
-- sehr prüfungsrelevant  
+Für die Pflege ist er besonders relevant, weil:
 
----
+- er häufig bei immobilen Menschen auftritt
+- er starke Schmerzen verursachen kann
+- er schwer zu behandeln ist
+- er die Lebensqualität deutlich einschränkt
+- er als Pflegefehler gewertet werden kann
 
-## Was passiert im Körper?
+Deshalb hat die Vorbeugung einen sehr hohen Stellenwert.
 
-Durch anhaltenden Druck wird die Durchblutung gestört.
+## Was passiert im Körper
 
-👉 Folge:
+Durch anhaltenden Druck wird die Durchblutung des Gewebes gestört.
 
-- Gewebe wird nicht mehr ausreichend mit Sauerstoff versorgt  
-- Zellen sterben ab  
+Die Folge:
 
----
+- Sauerstoffversorgung ist eingeschränkt
+- Stoffwechselprodukte werden nicht abtransportiert
+- Zellen sterben ab
+- es entsteht eine Wunde
+
+Besonders gefährdet sind Stellen, an denen Knochen direkt unter der Haut liegen.
 
 ## Ursachen
 
-- langanhaltender Druck  
-- Reibung und Scherkräfte  
-- Immobilität  
+Die Hauptursache ist Druck.
 
----
+Weitere wichtige Faktoren sind:
+
+- Scherkräfte (z. B. beim Rutschen im Bett)
+- Reibung
+- mangelnde Bewegung
+
+Druck über längere Zeit ist entscheidend für die Entstehung.
 
 ## Risikofaktoren
 
-- Bettlägerigkeit  
-- eingeschränkte Mobilität  
-- schlechte Durchblutung  
-- Mangelernährung  
-- Feuchtigkeit der Haut  
+Bestimmte Faktoren erhöhen das Risiko für einen Dekubitus.
 
----
+Wichtige Risikofaktoren sind:
+
+- Bettlägerigkeit
+- eingeschränkte Mobilität
+- eingeschränkte Wahrnehmung (z. B. Schmerz)
+- schlechte Durchblutung
+- Mangelernährung
+- Flüssigkeitsmangel
+- Feuchtigkeit der Haut (z. B. Inkontinenz)
+- höheres Lebensalter
 
 ## Typische Stellen
 
-- Fersen  
-- Steißbein  
-- Hüfte  
-- Ellenbogen  
-- Hinterkopf  
+Dekubitus entsteht häufig an Stellen mit hohem Druck.
 
----
+Typische Körperstellen sind:
+
+- Fersen
+- Steißbein
+- Hüfte
+- Ellenbogen
+- Schulterblätter
+- Hinterkopf
 
 ## Stadien des Dekubitus
 
+Ein Dekubitus wird in vier Stadien eingeteilt.
+
 ### Stadium 1
 
-- Haut ist gerötet  
-- Rötung bleibt bestehen  
-
----
+- Haut ist gerötet
+- Rötung ist nicht wegdrückbar
+- Haut ist noch intakt
 
 ### Stadium 2
 
-- oberflächliche Hautschädigung  
-- Blasen oder offene Stelle  
-
----
+- oberflächliche Hautschädigung
+- Blasen oder offene Stelle
+- betrifft obere Hautschichten
 
 ### Stadium 3
 
-- tiefe Wunde  
-- Gewebe ist geschädigt  
-
----
+- tiefe Wunde
+- Schädigung von Haut und darunterliegendem Gewebe
+- Fettgewebe kann sichtbar sein
 
 ### Stadium 4
 
-- sehr tiefe Wunde  
-- Muskeln oder Knochen können betroffen sein  
+- sehr tiefe Wunde
+- Muskeln, Sehnen oder Knochen können betroffen sein
+- hohes Infektionsrisiko
 
----
+<div class="merkbox">
+<div class="merkbox-title">Merke: Stadium 1 ist entscheidend</div>
+
+Ein Dekubitus ist im Anfangsstadium noch vermeidbar.
+
+Frühes Erkennen verhindert schwere Verläufe.
+
+</div>
 
 ## Beobachtungen in der Pflege
 
-- Rötungen  
-- Hautveränderungen  
-- offene Stellen  
-- Schmerzen  
+Pflegekräfte müssen Hautveränderungen frühzeitig erkennen.
 
----
+Wichtige Beobachtungen sind:
+
+- Rötungen
+- Druckstellen
+- Hautveränderungen
+- offene Stellen
+- Schmerzen oder Unwohlsein
+- Veränderung der Hauttemperatur
 
 ## Pflegebezug
 
-- Haut regelmäßig kontrollieren  
-- Druckstellen früh erkennen  
-- Patienten mobilisieren  
-- Lagewechsel durchführen  
-- Hautpflege sicherstellen  
+Die Pflege konzentriert sich vor allem auf die Vorbeugung.
 
----
+Wichtige Aufgaben sind:
+
+- Haut regelmäßig kontrollieren
+- Risiko einschätzen
+- Mobilität fördern
+- Druckbelastung reduzieren
+- Hautpflege durchführen
+- Ernährung berücksichtigen
 
 ## Wichtige pflegerische Maßnahmen
 
-- regelmäßige Umlagerung  
-- Druckentlastung  
-- geeignete Hilfsmittel einsetzen  
-- Haut sauber und trocken halten  
-- Ernährung berücksichtigen  
+- regelmäßige Umlagerung
+- Druckentlastung (z. B. durch Lagerung)
+- Einsatz von Hilfsmitteln (z. B. Spezialmatratzen)
+- Förderung der Bewegung
+- Haut sauber und trocken halten
+- ausreichende Ernährung und Flüssigkeit
 
----
+## Rolle der Pflege
+
+Pflegekräfte haben eine zentrale Verantwortung.
+
+Wichtige Aufgaben sind:
+
+- Risiken erkennen
+- Maßnahmen planen und durchführen
+- Hautzustand beobachten
+- Veränderungen dokumentieren
+- interprofessionell zusammenarbeiten
 
 ## Prüfungsrelevant
 
-Typische Fragen:
+In Prüfungen zählt vor allem:
 
-- „Was ist ein Dekubitus?“  
-- „Nennen Sie Stadien.“  
-- „Welche Risikofaktoren gibt es?“  
-- „Welche Maßnahmen sind wichtig?“  
+- Definition des Dekubitus
+- Entstehung (Druck → Durchblutung → Gewebeschaden)
+- Risikofaktoren erkennen
+- Stadien benennen
+- Maßnahmen zur Vorbeugung erklären
 
-👉 Wichtig: Druck → Durchblutung → Gewebeschaden verstehen
+Typische Prüfungsfragen:
+
+- Was ist ein Dekubitus?
+- Wie entsteht ein Dekubitus?
+- Nennen Sie die Stadien.
+- Welche Risikofaktoren gibt es?
+- Welche Maßnahmen sind wichtig?

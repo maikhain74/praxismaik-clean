@@ -10,72 +10,102 @@ Die Sturzprophylaxe umfasst alle pflegerischen Maßnahmen, die dazu dienen, Stü
 
 Ein Sturz ist ein Ereignis, bei dem eine Person unbeabsichtigt auf den Boden oder eine tiefere Ebene fällt.
 
+Der Expertenstandard „Sturzprophylaxe in der Pflege“ beschreibt, wie Pflegekräfte Sturzrisiken systematisch erkennen und geeignete Maßnahmen umsetzen.
+
 ## Warum Sturzprophylaxe wichtig ist
 
-Stürze können schwere Folgen haben. Besonders ältere Menschen sind gefährdet.
+Stürze gehören zu den häufigsten Risiken im Pflegealltag, besonders bei älteren und pflegebedürftigen Menschen.
 
-Mögliche Folgen eines Sturzes sind:
+Mögliche Folgen sind:
 
-- Knochenbrüche
-- Schmerzen
-- Angst vor erneuten Stürzen
-- eingeschränkte Beweglichkeit
+- Knochenbrüche (z. B. Oberschenkelhalsfraktur)
+- Schmerzen und Verletzungen
+- Angst vor weiteren Stürzen
+- Bewegungseinschränkung
 - Verlust von Selbstständigkeit
+- erhöhte Pflegebedürftigkeit
 
-Deshalb gehört die Sturzprophylaxe zu den wichtigen Aufgaben der Pflege.
+Ein Sturz kann den gesamten Gesundheitszustand deutlich verschlechtern.
 
 ## Risikofaktoren für Stürze
 
-Ein erhöhtes Sturzrisiko besteht zum Beispiel bei:
+Sturzrisiken entstehen meist durch mehrere Faktoren gleichzeitig.
 
-- eingeschränkter Mobilität
+Wichtige Risikofaktoren sind:
+
+- eingeschränkte Mobilität
 - Muskelschwäche
 - Gleichgewichtsstörungen
-- Sehproblemen
+- Gangunsicherheit
+- Seh- oder Hörprobleme
 - Schwindel
-- bestimmten Medikamenten
-- ungeeigneter Umgebung
+- Nebenwirkungen von Medikamenten (z. B. Sedierung)
+- kognitive Einschränkungen (z. B. Demenz)
+- ungeeignete Umgebung (z. B. Stolperfallen, schlechte Beleuchtung)
 
 ## Ziele der Sturzprophylaxe
 
-Die Pflege soll helfen,
+Die Pflege verfolgt mehrere zentrale Ziele:
 
-- Sturzrisiken zu erkennen
-- Gefahren zu reduzieren
-- Mobilität zu fördern
-- Sicherheit im Alltag zu erhöhen
+- Sturzrisiken frühzeitig erkennen
+- Gefahren reduzieren oder beseitigen
+- sichere Bewegung ermöglichen
+- Mobilität fördern und erhalten
+- Selbstständigkeit unterstützen
+- Verletzungen vermeiden
 
 ## Wichtige Maßnahmen
 
-Zu den wichtigsten Maßnahmen gehören:
+Sturzprophylaxe ist ein geplanter und individueller Prozess.
 
-- Einschätzung des Sturzrisikos
-- sichere Umgebung schaffen
-- passende Hilfsmittel einsetzen
-- Mobilität fördern
-- geeignetes Schuhwerk verwenden
+Wichtige Maßnahmen sind:
+
+- Einschätzung des Sturzrisikos (z. B. durch Assessmentinstrumente)
+- sichere Umgebung schaffen (z. B. Stolperfallen entfernen)
 - Beleuchtung verbessern
-- Stolperfallen entfernen
+- geeignete Hilfsmittel einsetzen (z. B. Rollator)
+- korrektes und passendes Schuhwerk sicherstellen
+- Mobilität und Muskelkraft fördern
+- sichere Transfers unterstützen
+- Orientierungshilfen anbieten
+- regelmäßige Überprüfung der Maßnahmen
 
 <div class="merkbox">
 <div class="merkbox-title">Merke: Sicherheit und Mobilität gehören zusammen</div>
 
-Sturzprophylaxe bedeutet nicht, Menschen unnötig einzuschränken.
+Sturzprophylaxe bedeutet nicht, Bewegung zu verhindern.
 
-Ziel ist es, **Bewegung sicher zu ermöglichen**, nicht sie zu verhindern.
+Ziel ist es, Bewegung sicher zu ermöglichen und gleichzeitig Risiken zu reduzieren.
 
 </div>
 
 ## Rolle der Pflege
 
-Pflegekräfte beobachten Patienten oder Bewohner genau und erkennen mögliche Sturzrisiken frühzeitig.
+Pflegekräfte haben eine zentrale Rolle bei der Sturzprophylaxe.
 
-Sie planen geeignete Maßnahmen und überprüfen regelmäßig, ob diese wirksam sind.
+Wichtige Aufgaben sind:
 
-Auch die Beratung von Patienten und Angehörigen gehört zur Sturzprophylaxe.
+- Sturzrisiko erkennen und einschätzen
+- individuelle Maßnahmen planen und umsetzen
+- Veränderungen im Zustand frühzeitig wahrnehmen
+- Betroffene motivieren und unterstützen
+- Angehörige beraten
+- Maßnahmen dokumentieren und überprüfen
+- interprofessionell zusammenarbeiten (z. B. mit Physiotherapie)
 
-## Typische Prüfungsfragen
+## Prüfungsrelevant
+
+In Prüfungen zählt vor allem:
+
+- Definition von Sturz und Sturzprophylaxe
+- wichtige Risikofaktoren benennen
+- Maßnahmen zur Sturzvermeidung erklären
+- Zusammenhang zwischen Mobilität und Sturzrisiko verstehen
+- Rolle der Pflege darstellen
+
+Typische Prüfungsfragen:
 
 - Was versteht man unter Sturzprophylaxe?
-- Nennen Sie Risikofaktoren für Stürze.
+- Welche Risikofaktoren begünstigen Stürze?
 - Welche Maßnahmen können Stürze verhindern?
+- Warum ist Mobilitätsförderung Teil der Sturzprophylaxe?

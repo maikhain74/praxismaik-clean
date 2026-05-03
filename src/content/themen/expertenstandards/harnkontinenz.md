@@ -8,84 +8,124 @@ level: vertiefung
 
 Die Förderung der Harnkontinenz umfasst alle pflegerischen Maßnahmen, die dazu beitragen, die Blasenkontrolle zu erhalten oder zu verbessern.
 
-Kontinenz bedeutet, Urin bewusst und kontrolliert zurückhalten zu können.
+Der Expertenstandard „Förderung der Harnkontinenz in der Pflege“ beschreibt, wie Pflegekräfte Kontinenz systematisch unterstützen und Inkontinenz gezielt begegnen.
+
+Kontinenz bedeutet, Urin bewusst und kontrolliert zurückhalten zu können. Ziel der Pflege ist es, diese Fähigkeit möglichst lange zu erhalten.
 
 ## Warum Kontinenzförderung wichtig ist
 
-Harninkontinenz kann für Betroffene sehr belastend sein.
+Harninkontinenz ist nicht nur ein körperliches Problem, sondern hat auch psychosoziale Auswirkungen.
 
 Mögliche Folgen sind:
 
-- Schamgefühle
+- Scham und Unsicherheit
 - sozialer Rückzug
-- Hautprobleme
-- Einschränkung der Lebensqualität
+- Einschränkung der Selbstständigkeit
+- Hautprobleme durch Feuchtigkeit
+- erhöhte Pflegebedürftigkeit
+- verminderte Lebensqualität
 
-Deshalb ist es wichtig, Kontinenz so lange wie möglich zu erhalten oder zu fördern.
+Deshalb ist es wichtig, Kontinenz aktiv zu fördern und nicht nur Inkontinenz zu versorgen.
 
 ## Ursachen von Harninkontinenz
 
-Harninkontinenz kann verschiedene Ursachen haben, zum Beispiel:
+Harninkontinenz kann viele Ursachen haben, die oft zusammenwirken.
+
+Häufige Ursachen sind:
 
 - Schwäche der Beckenbodenmuskulatur
-- neurologische Erkrankungen
+- neurologische Erkrankungen (z. B. Schlaganfall, Parkinson)
 - Nebenwirkungen von Medikamenten
 - eingeschränkte Mobilität
-- kognitive Einschränkungen
+- kognitive Einschränkungen (z. B. Demenz)
 - altersbedingte Veränderungen
+- Infektionen der Harnwege
+
+Für die Pflege ist wichtig: Ursache erkennen, nicht nur Symptome behandeln.
 
 ## Ziele der Kontinenzförderung
 
-Die Pflege soll helfen,
+Die Pflege verfolgt mehrere zentrale Ziele:
 
-- vorhandene Kontinenz zu erhalten
-- Inkontinenz zu reduzieren
-- Selbstständigkeit zu fördern
-- Hautschäden zu vermeiden
-- Lebensqualität zu verbessern
+- vorhandene Kontinenz erhalten
+- Inkontinenz reduzieren oder vermeiden
+- Selbstständigkeit fördern
+- Hautschäden verhindern
+- Würde und Lebensqualität sichern
+- sichere Ausscheidung ermöglichen
 
 ## Maßnahmen zur Kontinenzförderung
 
-Zu den wichtigen Maßnahmen gehören:
+Maßnahmen müssen individuell angepasst werden.
 
-- regelmäßige Toilettengänge ermöglichen
-- Toilettentraining unterstützen
-- Mobilität fördern
-- ausreichend trinken
-- geeignete Kleidung wählen
+Wichtige Maßnahmen sind:
+
+- regelmäßige und geplante Toilettengänge ermöglichen
+- Toilettentraining durchführen
+- individuelle Toilettenzeiten berücksichtigen
+- Mobilität fördern, um Toilettengänge zu erleichtern
+- Umgebung anpassen (z. B. kurze Wege, gute Erreichbarkeit der Toilette)
+- ausreichend trinken fördern
+- geeignete Kleidung wählen (leicht zu öffnen)
 - Unterstützung beim Toilettengang anbieten
+- Intimsphäre respektieren
 
-Auch Hilfsmittel können eingesetzt werden, zum Beispiel Inkontinenzmaterial oder Toilettenstühle.
+Hilfsmittel können ergänzend eingesetzt werden, z. B.:
+
+- Inkontinenzmaterial
+- Toilettenstühle
+- Urinflaschen
+
+<div class="merkbox">
+<div class="merkbox-title">Merke: Kontinenz fördern statt nur versorgen</div>
+
+Inkontinenzmaterial ersetzt keine Kontinenzförderung.
+
+Ziel ist immer, vorhandene Fähigkeiten zu erhalten und zu stärken.
+
+</div>
 
 ## Hautschutz
 
 Bei Inkontinenz ist der Schutz der Haut besonders wichtig.
 
-Feuchtigkeit und Hautkontakt mit Urin können zu Hautreizungen oder Entzündungen führen.
+Feuchtigkeit und Kontakt mit Urin können zu Hautschäden führen.
 
 Wichtige Maßnahmen sind:
 
-- regelmäßige Hautpflege
-- rechtzeitiger Wechsel von Inkontinenzmaterial
-- Beobachtung der Haut
-
-<div class="merkbox">
-<div class="merkbox-title">Merke: Kontinenz fördern statt nur versorgen</div>
-
-Ziel der Pflege ist nicht nur die Versorgung mit Inkontinenzmaterial.
-
-Wichtiger ist es, vorhandene Fähigkeiten zu erhalten und die Kontinenz möglichst zu fördern.
-
-</div>
+- regelmäßige und sorgfältige Hautpflege
+- Haut trocken halten
+- Inkontinenzmaterial rechtzeitig wechseln
+- Hautveränderungen früh erkennen
+- geeignete Hautschutzprodukte einsetzen
 
 ## Rolle der Pflege
 
-Pflegekräfte beobachten Veränderungen im Ausscheidungsverhalten und erkennen mögliche Probleme frühzeitig.
+Pflegekräfte haben eine zentrale Rolle bei der Kontinenzförderung.
 
-Sie planen geeignete Maßnahmen, beraten Betroffene und arbeiten bei Bedarf mit anderen Berufsgruppen zusammen.
+Wichtige Aufgaben sind:
 
-## Typische Prüfungsfragen
+- Ausscheidungsverhalten beobachten
+- Veränderungen früh erkennen
+- Ursachen einschätzen
+- Maßnahmen planen und umsetzen
+- Betroffene anleiten und motivieren
+- Angehörige einbeziehen
+- interprofessionell zusammenarbeiten (z. B. mit Ärztinnen, Ärzten, Therapie)
+
+## Prüfungsrelevant
+
+In Prüfungen zählt vor allem:
+
+- Definition von Kontinenz und Inkontinenz
+- Ursachen von Harninkontinenz erkennen
+- Maßnahmen zur Kontinenzförderung erklären
+- Bedeutung von Selbstständigkeit und Würde darstellen
+- Unterschied zwischen Förderung und reiner Versorgung verstehen
+
+Typische Prüfungsfragen:
 
 - Was bedeutet Harnkontinenz?
 - Welche Ursachen kann Harninkontinenz haben?
-- Nennen Sie Maßnahmen zur Förderung der Kontinenz.
+- Welche Maßnahmen fördern die Kontinenz?
+- Warum ist Hautschutz bei Inkontinenz wichtig?

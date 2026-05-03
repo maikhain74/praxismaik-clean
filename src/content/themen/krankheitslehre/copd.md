@@ -6,95 +6,176 @@ level: pruefung
 
 # COPD
 
-## Kurz erklärt
+COPD (chronisch obstruktive Lungenerkrankung) ist eine dauerhafte und fortschreitende Erkrankung der Atemwege, bei der die Atmung zunehmend erschwert wird.
 
-COPD (chronisch obstruktive Lungenerkrankung) ist eine dauerhaft fortschreitende Erkrankung der Atemwege, bei der die Atmung zunehmend erschwert wird.
+Der Begriff „obstruktiv“ bedeutet, dass die Atemwege verengt sind.
 
----
+## Warum COPD wichtig ist
 
-## Warum ist das wichtig für die Pflege?
+COPD gehört zu den häufigsten chronischen Erkrankungen.
 
-- sehr häufig bei älteren Menschen  
-- chronische Erkrankung mit zunehmender Verschlechterung  
-- Atemnot ist ein zentrales Problem  
-- kommt sehr häufig in Prüfungen vor  
+Für die Pflege ist sie besonders relevant, weil:
 
----
+- viele ältere Menschen betroffen sind
+- die Erkrankung nicht heilbar ist
+- Atemnot ein zentrales Problem darstellt
+- sich der Zustand schrittweise verschlechtert
+- akute Verschlechterungen auftreten können
 
-## Was passiert im Körper?
+Dieses Thema ist sehr prüfungsrelevant.
 
-Die Atemwege sind dauerhaft verengt und entzündet.
+## Was passiert im Körper
 
-👉 Folge:
+Bei COPD sind die Atemwege dauerhaft entzündet und verengt.
 
-- Luft kann schlechter ein- und vor allem ausgeatmet werden  
-- es kommt zu Luftstau in der Lunge  
+Zusätzlich kann es zu einer Zerstörung von Lungengewebe kommen (Emphysem).
 
----
+Die Folgen sind:
+
+- erschwerte Einatmung
+- vor allem erschwerte Ausatmung
+- Luft bleibt in der Lunge (Luftstau)
+- schlechterer Gasaustausch
+
+Die Ausatmung ist meist deutlich verlängert.
 
 ## Ursachen
 
-- Rauchen (häufigste Ursache)  
-- Luftverschmutzung  
-- berufliche Belastung (Staub, Chemikalien)  
+Die häufigste Ursache ist Rauchen.
 
----
+Weitere mögliche Ursachen sind:
+
+- Luftverschmutzung
+- berufliche Belastung (z. B. Staub, Chemikalien)
+- wiederholte Atemwegsinfektionen
+- selten genetische Faktoren
 
 ## Typische Symptome
 
-- Atemnot (vor allem bei Belastung)  
-- chronischer Husten  
-- Auswurf  
-- verlängerte Ausatmung  
+COPD entwickelt sich meist schleichend.
 
----
+Typische Symptome sind:
+
+- Atemnot (zunächst bei Belastung, später auch in Ruhe)
+- chronischer Husten
+- Auswurf (vor allem morgens)
+- verlängerte Ausatmung
+- eingeschränkte Belastbarkeit
+
+Viele Patienten entwickeln eine sogenannte „Schonatmung“.
 
 ## Verlauf
 
-COPD ist eine chronische Erkrankung:
+COPD ist eine chronische Erkrankung mit fortschreitendem Verlauf.
 
-- Symptome verschlechtern sich im Laufe der Zeit  
-- akute Verschlechterungen (Exazerbationen) möglich  
+Typisch sind:
 
----
+- langsame Verschlechterung über Jahre
+- zunehmende Atemnot
+- eingeschränkte Leistungsfähigkeit
+
+Besonders wichtig sind sogenannte Exazerbationen.
+
+### Exazerbation
+
+Eine Exazerbation ist eine akute Verschlechterung der Symptome.
+
+Mögliche Auslöser:
+
+- Infektionen
+- Umweltfaktoren
+
+Typische Zeichen:
+
+- plötzlich stärkere Atemnot
+- vermehrter Husten
+- veränderter Auswurf
+
+<div class="merkbox">
+<div class="merkbox-title">Merke: Exazerbationen verschlechtern den Verlauf</div>
+
+Jede akute Verschlechterung kann den Zustand dauerhaft verschlechtern.
+
+</div>
 
 ## Beobachtungen in der Pflege
 
-- angestrengte Atmung  
-- Einsatz der Atemhilfsmuskulatur  
-- verlängerte Ausatmung  
-- reduzierte Belastbarkeit  
-- Angst durch Atemnot  
+Pflegekräfte müssen typische Zeichen erkennen.
 
----
+Wichtige Beobachtungen sind:
+
+- angestrengte Atmung
+- Einsatz der Atemhilfsmuskulatur
+- verlängerte Ausatmung
+- flache Atmung
+- Zyanose (Blaufärbung der Lippen)
+- Unruhe oder Angst
+- reduzierte Belastbarkeit
+
+Atemnot führt oft zu Angst, was die Situation zusätzlich verschlechtert.
 
 ## Pflegebezug
 
-- Atmung beobachten  
-- Patienten beruhigen (Atemnot reduziert Angst nicht von selbst)  
-- atemerleichternde Positionen unterstützen  
-- Lippenbremse anleiten  
-- Energie sparendes Verhalten fördern  
+Die Pflege konzentriert sich auf die Unterstützung der Atmung und den Umgang mit Atemnot.
 
----
+Wichtige Aspekte sind:
+
+- Atmung beobachten und einschätzen
+- Ruhe und Sicherheit vermitteln
+- Patienten anleiten
+- Selbstständigkeit fördern
+- Energie sparen helfen
 
 ## Wichtige pflegerische Maßnahmen
 
-- Oberkörperhochlagerung  
-- Atemtechniken (z. B. Lippenbremse)  
-- Mobilisation im Rahmen der Möglichkeiten  
-- Unterstützung bei der Sekretlösung  
-- Beobachtung von Verschlechterungen  
+- Oberkörperhochlagerung
+- atemerleichternde Positionen (z. B. Kutschersitz)
+- Lippenbremse anleiten
+- Atemübungen unterstützen
+- Mobilisation im Rahmen der Möglichkeiten
+- Unterstützung bei der Sekretlösung
+- ausreichende Flüssigkeitszufuhr (wenn möglich)
+- Beobachtung von Verschlechterungen
 
----
+## Umgang mit Atemnot
+
+Atemnot ist für Betroffene sehr belastend.
+
+Wichtig ist:
+
+- ruhig bleiben
+- Patienten beruhigen
+- Atemtechniken anleiten
+- keine Hektik erzeugen
+- bei Verschlechterung sofort reagieren
+
+## Rolle der Pflege
+
+Pflegekräfte haben eine zentrale Rolle im Umgang mit COPD.
+
+Wichtige Aufgaben sind:
+
+- Symptome erkennen
+- Atmung überwachen
+- Maßnahmen durchführen
+- Patienten anleiten (z. B. Atemtechniken)
+- Exazerbationen früh erkennen
+- interprofessionell zusammenarbeiten
 
 ## Prüfungsrelevant
 
-Typische Fragen:
+In Prüfungen zählt vor allem:
 
-- „Was ist COPD?“  
-- „Welche Symptome treten auf?“  
-- „Was ist eine Exazerbation?“  
-- „Welche pflegerischen Maßnahmen sind wichtig?“  
+- Definition von COPD
+- typische Symptome erkennen
+- Unterschied Ein- und Ausatmung verstehen
+- Bedeutung von Exazerbationen
+- pflegerische Maßnahmen benennen
 
-👉 Wichtig: Atemnot + chronischer Verlauf verstehen
+Typische Prüfungsfragen:
+
+- Was ist COPD?
+- Welche Symptome treten auf?
+- Was ist eine Exazerbation?
+- Welche pflegerischen Maßnahmen sind wichtig?
+- Warum ist die Ausatmung erschwert?

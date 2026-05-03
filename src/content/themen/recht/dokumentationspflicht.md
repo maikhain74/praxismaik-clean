@@ -6,99 +6,120 @@ level: grundlagen
 
 # Dokumentationspflicht
 
-Die Dokumentationspflicht gehört zu den wichtigsten rechtlichen Grundlagen in der Pflege. Pflegekräfte sind verpflichtet, ihre Maßnahmen und Beobachtungen nachvollziehbar zu dokumentieren.
+Die Dokumentationspflicht gehört zu den wichtigsten rechtlichen Grundlagen in der Pflege. Pflegekräfte sind verpflichtet, alle Maßnahmen, Beobachtungen und relevanten Informationen nachvollziehbar festzuhalten.
 
-Die Pflegedokumentation dient der Information, der Qualitätssicherung und der rechtlichen Absicherung.
+Die Pflegedokumentation ist ein fester Bestandteil jeder Pflegehandlung und dient sowohl der Versorgung als auch der rechtlichen Absicherung.
 
 ## Warum Dokumentation wichtig ist
 
-Eine sorgfältige Dokumentation erfüllt mehrere wichtige Funktionen:
+Eine sorgfältige Dokumentation erfüllt mehrere zentrale Funktionen:
 
-- Information für das Behandlungsteam
+- Informationsweitergabe im Team
 - Nachvollziehbarkeit der Pflege
-- Sicherstellung der Kontinuität der Versorgung
-- rechtliche Absicherung für Pflegekräfte
-- Grundlage für Qualitätskontrollen
+- Sicherstellung der Kontinuität
+- Grundlage für Pflegeplanung
+- Qualitätssicherung
+- rechtliche Absicherung
+
+Ohne Dokumentation ist eine strukturierte und sichere Versorgung nicht möglich.
 
 ## Was dokumentiert werden muss
 
-In der Pflegedokumentation müssen verschiedene Informationen festgehalten werden.
+In der Pflegedokumentation müssen alle pflegerelevanten Informationen festgehalten werden.
 
-Zum Beispiel:
+Dazu gehören:
 
 - durchgeführte Pflegemaßnahmen
 - Beobachtungen und Veränderungen
+- Vitalwerte
 - Medikamentengaben
+- Reaktionen auf Maßnahmen
 - Besonderheiten oder Auffälligkeiten
-- Gespräche mit Patienten oder Angehörigen
+- Gespräche mit Patientinnen, Patienten oder Angehörigen
+
+Wichtig: Nur relevante Informationen dokumentieren, aber vollständig.
 
 ## Grundsätze der Pflegedokumentation
 
-Eine gute Dokumentation sollte folgende Grundsätze erfüllen:
+Eine fachgerechte Dokumentation muss bestimmte Kriterien erfüllen:
 
-- vollständig
-- sachlich
-- zeitnah
-- nachvollziehbar
+- vollständig (keine wichtigen Informationen fehlen)
+- sachlich (keine persönlichen Meinungen)
+- zeitnah (möglichst direkt nach der Maßnahme)
+- nachvollziehbar (für andere verständlich)
+- korrekt und eindeutig
 - lesbar
 
-Die Dokumentation muss so erfolgen, dass andere Pflegekräfte den Verlauf der Pflege verstehen können.
+Die Dokumentation muss so gestaltet sein, dass jede Pflegekraft den Verlauf verstehen kann.
+
+<div class="merkbox">
+<div class="merkbox-title">Merke: Was nicht dokumentiert ist, gilt als nicht gemacht</div>
+
+Im rechtlichen Kontext wird davon ausgegangen, dass nicht dokumentierte Maßnahmen nicht durchgeführt wurden.
+
+</div>
 
 ## Dokumentation im Pflegealltag
 
-Im Pflegealltag wird die Dokumentation häufig in verschiedenen Bereichen durchgeführt:
+Im Pflegealltag erfolgt Dokumentation in verschiedenen Bereichen:
 
 - Pflegebericht
-- Medikamentendokumentation
 - Pflegeplanung
 - Verlaufsdokumentation
+- Medikamentendokumentation
+- Assessmentbögen
 
-Viele Einrichtungen nutzen heute digitale Dokumentationssysteme.
+Heute wird häufig digital dokumentiert, die Grundsätze bleiben jedoch gleich.
 
 ## Rechtliche Bedeutung
 
-Die Pflegedokumentation hat auch eine rechtliche Bedeutung.
+Die Pflegedokumentation hat eine große rechtliche Bedeutung.
 
-Im Streitfall gilt häufig der Grundsatz:
+Sie dient als Nachweis:
 
-„Was nicht dokumentiert ist, gilt als nicht durchgeführt.“
+- dass Maßnahmen durchgeführt wurden
+- dass Pflege fachgerecht erfolgt ist
+- dass Veränderungen erkannt wurden
 
-Deshalb ist eine sorgfältige Dokumentation besonders wichtig.
+Im Streitfall ist die Dokumentation ein zentrales Beweismittel.
 
-<div class="info-box info-box-merke">
-<div class="info-box-title">💡 Merke</div>
+## Fehler in der Dokumentation
 
-Dokumentation gehört immer zur Pflegehandlung dazu.
+Typische Fehler, die vermieden werden müssen:
 
-Eine Maßnahme ist erst vollständig abgeschlossen, wenn sie dokumentiert wurde.
+- Dokumentation im Voraus
+- unklare oder ungenaue Formulierungen
+- fehlende Einträge
+- nachträgliche Änderungen ohne Kennzeichnung
+- subjektive Bewertungen statt Beobachtungen
 
-</div>
+Dokumentation muss immer korrekt und ehrlich erfolgen.
 
-<div class="info-box info-box-achtung">
-<div class="info-box-title">⚠️ Achtung</div>
+## Rolle der Pflege
 
-Die Dokumentation darf nicht im Voraus erfolgen.
+Pflegekräfte sind direkt verantwortlich für die Dokumentation.
 
-Eintragungen müssen immer nach der tatsächlichen Durchführung erfolgen.
+Wichtige Aufgaben sind:
 
-</div>
+- relevante Informationen erfassen
+- Maßnahmen dokumentieren
+- Veränderungen festhalten
+- Informationen weitergeben
+- Dokumentation regelmäßig überprüfen
 
-<div class="info-box info-box-praxis">
-<div class="info-box-title">🩺 Praxis-Tipp</div>
+Dokumentation ist Teil der professionellen Pflege.
 
-Dokumentation sollte möglichst zeitnah erfolgen.
+## Prüfungsrelevant
 
-So wird verhindert, dass wichtige Informationen vergessen oder verwechselt werden.
+In Prüfungen zählt vor allem:
 
-</div>
+- Bedeutung der Dokumentationspflicht erklären
+- Inhalte der Dokumentation benennen
+- Grundsätze der Dokumentation kennen
+- rechtliche Bedeutung verstehen
+- typische Fehler erkennen
 
-## Bedeutung für die Pflegepraxis
-
-Eine gute Dokumentation hilft dem gesamten Behandlungsteam, den Zustand eines Patienten oder Bewohners richtig einzuschätzen.
-
-Sie trägt wesentlich zur Patientensicherheit bei.
-
-## Typische Prüfungsfragen
+Typische Prüfungsfragen:
 
 - Warum ist die Pflegedokumentation wichtig?
 - Welche Inhalte müssen dokumentiert werden?

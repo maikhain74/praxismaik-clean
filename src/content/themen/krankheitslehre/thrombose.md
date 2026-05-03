@@ -8,15 +8,17 @@ level: vertiefung
 
 ## Kurz erklärt
 
-Eine Thrombose ist die Bildung eines Blutgerinnsels (Thrombus) in einem Blutgefäß, meist in den Venen.  
-Dadurch wird der Blutfluss behindert oder vollständig blockiert.
+Eine Thrombose ist die Bildung eines Blutgerinnsels (Thrombus) in einem Blutgefäß, meist in den tiefen Beinvenen.
+
+👉 Folge: Der Blutfluss wird behindert oder vollständig blockiert.
 
 ---
 
 ## Warum ist das wichtig für die Pflege?
 
 - häufig im Pflegealltag  
-- kann lebensbedrohlich werden (z. B. Lungenembolie)  
+- kann lebensbedrohliche Komplikationen verursachen  
+- entsteht oft bei immobilen Patienten  
 - frühzeitiges Erkennen ist entscheidend  
 - sehr prüfungsrelevant  
 
@@ -24,32 +26,41 @@ Dadurch wird der Blutfluss behindert oder vollständig blockiert.
 
 ## Was passiert im Körper?
 
-In einem Blutgefäß bildet sich ein Gerinnsel.
+- Blutfluss verlangsamt sich oder steht still  
+- Blut gerinnt im Gefäß  
+- es bildet sich ein Thrombus  
 
 👉 Folge:
 
-- Blut kann schlechter abfließen  
-- es kommt zu einem Rückstau  
+- Blut staut sich zurück  
+- Gewebe wird schlechter versorgt  
 
 ---
 
 ## Ursachen (Virchow-Trias)
 
-Die wichtigsten Faktoren sind:
+Die Entstehung einer Thrombose wird durch drei Faktoren begünstigt:
 
-- verlangsamter Blutfluss (z. B. Immobilität)  
-- Gefäßwandschäden  
-- veränderte Blutzusammensetzung  
+- **verlangsamter Blutfluss** (z. B. Immobilität)  
+- **Gefäßwandschäden** (z. B. Verletzungen, Operationen)  
+- **veränderte Blutzusammensetzung** (z. B. erhöhte Gerinnungsneigung)  
+
+<div class="merkbox">
+<div class="merkbox-title">Merke: Virchow-Trias</div>
+
+Diese drei Faktoren erklären die meisten Thrombosen.
+
+</div>
 
 ---
 
 ## Typische Symptome
 
-- Schwellung (meist einseitig)  
-- Schmerzen  
+- einseitige Schwellung (z. B. Bein)  
+- Schmerzen (oft in der Wade)  
 - Spannungsgefühl  
 - Überwärmung  
-- Rötung  
+- Rötung oder bläuliche Verfärbung  
 
 ---
 
@@ -57,39 +68,81 @@ Die wichtigsten Faktoren sind:
 
 ### Lungenembolie
 
-Ein Teil des Thrombus kann sich lösen und in die Lunge gelangen.
+- Teil des Thrombus löst sich  
+- gelangt über den Blutstrom in die Lunge  
+- verstopft dort ein Gefäß  
 
-👉 lebensbedrohlich!
+👉 lebensbedrohlicher Notfall!
 
 ---
 
 ## Risikofaktoren
 
 - Bettlägerigkeit  
+- eingeschränkte Mobilität  
 - Operationen  
 - langes Sitzen (z. B. Reisen)  
 - Schwangerschaft  
+- höheres Lebensalter  
 - bestimmte Erkrankungen  
+
+---
+
+## Beobachtungen in der Pflege
+
+Pflegekräfte achten besonders auf:
+
+- Schwellungen (einseitig!)  
+- Schmerzen beim Gehen oder Druck  
+- Hautveränderungen  
+- Temperaturunterschiede der Beine  
 
 ---
 
 ## Pflegebezug
 
-- auf Bewegung achten  
-- Patienten mobilisieren  
-- auf Schwellungen achten  
-- Schmerzen ernst nehmen  
-- Risikopatienten erkennen  
+Zentrale Aufgabe ist:
+
+- Risiko erkennen  
+- Prophylaxe durchführen  
+- Veränderungen früh wahrnehmen  
 
 ---
 
 ## Wichtige pflegerische Maßnahmen
 
 - Mobilisation fördern  
-- Thromboseprophylaxe durchführen  
+- Bewegungsübungen durchführen  
+- ausreichende Flüssigkeitszufuhr  
 - Kompressionsmaßnahmen unterstützen  
 - Beobachtung und Dokumentation  
-- Arzt informieren bei Verdacht  
+
+---
+
+## Verhalten bei Verdacht (sehr wichtig!)
+
+- Patient ruhig lagern  
+- betroffene Extremität nicht massieren!  
+- sofort Arzt informieren  
+- Bewegung vermeiden  
+
+<div class="merkbox">
+<div class="merkbox-title">Achtung: Emboliegefahr</div>
+
+Bei Verdacht auf Thrombose darf der Patient nicht unnötig bewegt werden.
+
+</div>
+
+---
+
+## Rolle der Pflege
+
+Pflegekräfte müssen:
+
+- Risikopatienten erkennen  
+- Prophylaxen konsequent umsetzen  
+- Symptome ernst nehmen  
+- schnell reagieren  
 
 ---
 
@@ -97,9 +150,10 @@ Ein Teil des Thrombus kann sich lösen und in die Lunge gelangen.
 
 Typische Fragen:
 
-- „Was ist eine Thrombose?“  
-- „Was ist die Virchow-Trias?“  
-- „Welche Symptome treten auf?“  
-- „Welche Komplikation ist gefährlich?“  
+- Was ist eine Thrombose?  
+- Was ist die Virchow-Trias?  
+- Welche Symptome treten auf?  
+- Was ist die gefährlichste Komplikation?  
+- Wie verhält man sich bei Verdacht?  
 
-👉 Wichtig: Ursachen + Symptome + Risiko verstehen
+👉 Wichtig: Entstehung + Risiko + richtiges Handeln verstehen

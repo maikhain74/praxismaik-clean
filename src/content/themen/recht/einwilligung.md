@@ -1,224 +1,148 @@
 ---
-
 title: Einwilligung
-
 description: Bedeutung der Einwilligung bei medizinischen und pflegerischen Maßnahmen.
-
 level: grundlagen
-
 ---
-
-
 
 # Einwilligung
 
+Eine Einwilligung bedeutet, dass eine Patientin oder ein Patient einer medizinischen oder pflegerischen Maßnahme zustimmt.
 
+Ohne Einwilligung darf eine Maßnahme grundsätzlich nicht durchgeführt werden. Jede Behandlung stellt rechtlich einen Eingriff in den Körper dar und ist nur mit Zustimmung erlaubt.
 
-Eine Einwilligung bedeutet, dass ein Patient oder Bewohner einer medizinischen oder pflegerischen Maßnahme zustimmt.
-
-
-
-Ohne Einwilligung darf eine Behandlung grundsätzlich nicht durchgeführt werden.
-
-
+Die Einwilligung ist ein zentraler Bestandteil des Selbstbestimmungsrechts.
 
 ## Warum Einwilligung wichtig ist
 
+Jeder Mensch hat das Recht, über seinen eigenen Körper zu entscheiden.
 
+Die Einwilligung schützt:
 
-Die Einwilligung schützt das Selbstbestimmungsrecht des Patienten.
+- die Selbstbestimmung
+- die Würde der Person
+- die körperliche Unversehrtheit
 
-
-
-Jeder Mensch hat das Recht, über seinen eigenen Körper und über medizinische Maßnahmen zu entscheiden.
-
-
+Auch einfache pflegerische Maßnahmen benötigen die Zustimmung der betroffenen Person.
 
 ## Voraussetzungen für eine Einwilligung
 
-
-
-Damit eine Einwilligung gültig ist, müssen mehrere Voraussetzungen erfüllt sein.
-
-
+Damit eine Einwilligung gültig ist, müssen mehrere Bedingungen erfüllt sein.
 
 ### Aufklärung
 
+Die Patientin oder der Patient muss ausreichend informiert werden.
 
-
-Der Patient muss ausreichend über die Maßnahme informiert sein.
-
-
-
-Dazu gehören zum Beispiel:
-
-
+Dazu gehören:
 
 - Zweck der Maßnahme
-
+- Ablauf der Maßnahme
 - mögliche Risiken
-
 - mögliche Alternativen
 
-
+Nur wer informiert ist, kann eine Entscheidung treffen.
 
 ### Freiwilligkeit
 
+Die Entscheidung muss freiwillig erfolgen.
 
+Das bedeutet:
 
-Die Entscheidung muss freiwillig getroffen werden.
-
-
-
-Es darf kein Druck ausgeübt werden.
-
-
+- kein Druck
+- keine Drohung
+- keine Täuschung
 
 ### Einwilligungsfähigkeit
 
-
-
-Der Patient muss in der Lage sein, die Informationen zu verstehen und eine Entscheidung zu treffen.
-
-
+Die Person muss in der Lage sein, die Entscheidung zu verstehen und zu treffen.
 
 ## Einwilligungsfähigkeit
 
-
-
-Einwilligungsfähig ist eine Person, wenn sie:
-
-
+Eine Person ist einwilligungsfähig, wenn sie:
 
 - die Situation versteht
-
+- die Informationen erfassen kann
 - die Folgen der Entscheidung einschätzen kann
-
 - eine eigene Entscheidung treffen kann
 
+Einwilligungsfähigkeit ist nicht vom Alter abhängig, sondern vom Zustand der Person.
 
-
-Nicht jede Person ist in jeder Situation einwilligungsfähig.
-
-
-
-Zum Beispiel kann die Einwilligungsfähigkeit eingeschränkt sein bei:
-
-
+Sie kann eingeschränkt sein bei:
 
 - Bewusstseinsstörungen
-
-- schweren kognitiven Einschränkungen
-
+- Demenz oder kognitiven Einschränkungen
 - akuten Erkrankungen
+- starken Schmerzen oder Stress
 
+<div class="merkbox">
+<div class="merkbox-title">Merke: Einwilligungsfähigkeit ist situationsabhängig</div>
 
+Eine Person kann in einer Situation einwilligungsfähig sein und in einer anderen nicht.
+
+</div>
 
 ## Stellvertretende Einwilligung
 
+Wenn eine Person nicht einwilligungsfähig ist, muss eine andere Person entscheiden.
 
+Das können sein:
 
-Wenn ein Patient nicht einwilligungsfähig ist, kann eine andere Person stellvertretend entscheiden.
+- gesetzliche Betreuerinnen oder Betreuer
+- bevollmächtigte Personen (Vorsorgevollmacht)
 
-
-
-Das kann zum Beispiel sein:
-
-
-
-- ein gesetzlicher Betreuer
-
-- eine bevollmächtigte Person
-
-
-
-Diese Personen müssen im Interesse des Patienten entscheiden.
-
-
+Diese müssen im Sinne und Interesse der betroffenen Person entscheiden.
 
 ## Mutmaßliche Einwilligung
 
+In Notfällen kann keine Einwilligung eingeholt werden.
 
+Dann gilt die mutmaßliche Einwilligung.
 
-In Notfällen kann eine mutmaßliche Einwilligung angenommen werden.
+Das bedeutet:
 
+Es wird davon ausgegangen, dass die Person der Maßnahme zustimmen würde, wenn sie dazu in der Lage wäre.
 
+Typisches Beispiel: lebensrettende Maßnahmen bei Bewusstlosigkeit.
 
-Das bedeutet, dass davon ausgegangen wird, dass der Patient der Maßnahme zustimmen würde, wenn er dazu in der Lage wäre.
+## Ablehnung von Maßnahmen
 
+Wichtig: Eine Person darf eine Maßnahme auch ablehnen.
 
+Das gilt auch dann, wenn die Ablehnung medizinisch nicht sinnvoll erscheint.
 
-<div class="info-box info-box-merke">
+Pflegekräfte müssen:
 
-<div class="info-box-title">💡 Merke</div>
+- die Entscheidung respektieren
+- informieren und aufklären
+- keine Maßnahmen gegen den Willen durchführen
 
+## Rolle der Pflege
 
+Pflegekräfte haben im Alltag eine wichtige Rolle.
 
-Medizinische und pflegerische Maßnahmen dürfen grundsätzlich nur mit Einwilligung des Patienten durchgeführt werden.
+Aufgaben sind:
 
+- Einwilligung einholen (bei pflegerischen Maßnahmen)
+- auf ausreichende Aufklärung achten
+- Einwilligungsfähigkeit einschätzen
+- Entscheidungen respektieren
+- Auffälligkeiten weitergeben
 
+Pflege ist oft die erste, die erkennt, ob eine Person unsicher oder überfordert ist.
 
-</div>
+## Prüfungsrelevant
 
+In Prüfungen zählt vor allem:
 
+- Definition der Einwilligung
+- Voraussetzungen (Aufklärung, Freiwilligkeit, Einwilligungsfähigkeit)
+- Bedeutung der Einwilligungsfähigkeit
+- Unterschied zwischen Einwilligung und mutmaßlicher Einwilligung
+- Umgang mit Ablehnung
 
-<div class="info-box info-box-achtung">
-
-<div class="info-box-title">⚠️ Achtung</div>
-
-
-
-Auch scheinbar einfache Maßnahmen dürfen nicht gegen den Willen eines Patienten durchgeführt werden.
-
-
-
-Das Selbstbestimmungsrecht steht im Mittelpunkt.
-
-
-
-</div>
-
-
-
-<div class="info-box info-box-praxis">
-
-<div class="info-box-title">🩺 Praxis-Tipp</div>
-
-
-
-Wenn ein Patient eine Maßnahme ablehnt, sollte immer ruhig nach den Gründen gefragt werden.
-
-
-
-Oft können Missverständnisse durch ein Gespräch geklärt werden.
-
-
-
-</div>
-
-
-
-## Bedeutung für die Pflege
-
-
-
-Pflegekräfte müssen im Alltag beachten, dass jede Maßnahme das Selbstbestimmungsrecht des Patienten berührt.
-
-
-
-Ein respektvoller Umgang mit Entscheidungen der Patienten gehört zu professioneller Pflege.
-
-
-
-## Typische Prüfungsfragen
-
-
+Typische Prüfungsfragen:
 
 - Was versteht man unter Einwilligung?
-
 - Welche Voraussetzungen muss eine Einwilligung erfüllen?
-
 - Was bedeutet Einwilligungsfähigkeit?
-
 - Was ist eine mutmaßliche Einwilligung?
-
+- Was tun Sie, wenn ein Patient eine Maßnahme ablehnt?

@@ -1,142 +1,115 @@
 ---
-
 title: Kontrakturprophylaxe
-
 description: Maßnahmen zur Vorbeugung von Gelenkversteifungen bei pflegebedürftigen Menschen.
-
 level: vertiefung
-
 ---
-
-
 
 # Kontrakturprophylaxe
 
+Die Kontrakturprophylaxe umfasst alle pflegerischen Maßnahmen, die dazu dienen, eine Versteifung von Gelenken zu verhindern.
 
+Eine Kontraktur entsteht, wenn ein Gelenk über längere Zeit nicht ausreichend bewegt wird. Muskeln, Sehnen und Bänder verkürzen sich, wodurch die Beweglichkeit dauerhaft eingeschränkt sein kann.
 
-Die Kontrakturprophylaxe umfasst alle Maßnahmen, die dazu dienen, eine Versteifung von Gelenken zu verhindern.
+Kontrakturen sind häufig vermeidbar und gehören deshalb zu den wichtigen Aufgaben der Pflege.
 
+## Warum Kontrakturprophylaxe wichtig ist
 
+Eine Kontraktur hat weitreichende Folgen für den Alltag.
 
-Eine Kontraktur entsteht, wenn ein Gelenk über längere Zeit nicht ausreichend bewegt wird. Dadurch können sich Muskeln, Sehnen und Bänder verkürzen.
+Mögliche Auswirkungen sind:
 
+- dauerhafte Bewegungseinschränkungen
+- Schmerzen bei Bewegung
+- erschwerte Körperpflege
+- eingeschränkte Mobilität
+- Verlust von Selbstständigkeit
 
-
-Die Beweglichkeit des Gelenks wird dadurch dauerhaft eingeschränkt.
-
-
-
----
-
-
+Je früher gegengesteuert wird, desto besser lassen sich diese Folgen vermeiden.
 
 ## Risikofaktoren
 
-
-
 Bestimmte Faktoren erhöhen das Risiko für eine Kontraktur.
-
-
 
 Wichtige Risikofaktoren sind:
 
-
-
 - eingeschränkte Mobilität
-
 - Bettlägerigkeit
-
 - Lähmungen
-
 - Schmerzen bei Bewegung
+- Schonhaltung
+- längere Ruhigstellung von Gelenken (z. B. durch Verbände oder Schienen)
 
-- längere Ruhigstellung von Gelenken
+## Ziele der Kontrakturprophylaxe
 
+Die Pflege verfolgt mehrere zentrale Ziele:
 
-
----
-
-
-
-## Folgen einer Kontraktur
-
-
-
-Eine Kontraktur kann verschiedene Folgen haben.
-
-
-
-Beispiele:
-
-
-
-- eingeschränkte Beweglichkeit
-
-- Schmerzen bei Bewegung
-
-- Schwierigkeiten bei der Körperpflege
-
-- Verlust von Selbstständigkeit
-
-
-
----
-
-
+- Beweglichkeit der Gelenke erhalten
+- Schmerzen vermeiden
+- Selbstständigkeit fördern
+- Pflegehandlungen erleichtern
+- Lebensqualität verbessern
 
 ## Maßnahmen der Kontrakturprophylaxe
 
-
-
-Zur Vorbeugung einer Kontraktur können verschiedene Maßnahmen durchgeführt werden.
-
-
+Zur Vorbeugung werden verschiedene Maßnahmen kombiniert.
 
 Wichtige Maßnahmen sind:
 
-
-
 - regelmäßige Bewegung der Gelenke
+- aktive Bewegungsübungen (Patient bewegt selbst)
+- passive Bewegungsübungen (Pflege bewegt das Gelenk)
+- Mobilisation im Alltag (z. B. Aufsetzen, Aufstehen)
+- korrekte und physiologische Lagerung
+- Vermeidung von Schonhaltungen
+- Nutzung vorhandener Bewegungsressourcen
 
-- aktive und passive Bewegungsübungen
+<div class="merkbox">
+<div class="merkbox-title">Merke: Bewegung ist die wichtigste Prophylaxe</div>
 
-- Förderung der Mobilität
+Gelenke, die nicht bewegt werden, versteifen.
 
-- korrekte Lagerung
+Regelmäßige Bewegung ist deshalb die zentrale Maßnahme zur Vorbeugung von Kontrakturen.
 
-- Unterstützung bei Bewegungsübungen
-
-
-
----
-
-
+</div>
 
 ## Förderung der Beweglichkeit
 
+Pflegekräfte unterstützen die Beweglichkeit gezielt im Alltag.
 
+Wichtige Maßnahmen sind:
 
-Pflegekräfte unterstützen die Beweglichkeit der pflegebedürftigen Person durch:
+- Mobilisation fördern (z. B. Sitzen, Stehen, Gehen)
+- Bewegungsübungen anleiten
+- Eigenaktivität unterstützen
+- Bewegungsabläufe in die Pflege integrieren (z. B. beim Waschen oder Anziehen)
+- Motivation zur Bewegung stärken
 
+## Rolle der Pflege
 
+Pflegekräfte haben eine zentrale Rolle bei der Kontrakturprophylaxe.
 
-- Mobilisation
+Wichtige Aufgaben sind:
 
-- Bewegungsübungen
+- Bewegungsfähigkeit beobachten
+- Risiken frühzeitig erkennen
+- geeignete Maßnahmen planen und durchführen
+- Bewegungsübungen korrekt ausführen
+- Betroffene anleiten und motivieren
+- Veränderungen dokumentieren
 
-- Anleitung zur Eigenbewegung
+## Prüfungsrelevant
 
-- Nutzung vorhandener Ressourcen
+In Prüfungen zählt vor allem:
 
+- Entstehung einer Kontraktur erklären
+- Risikofaktoren erkennen
+- Unterschied zwischen aktiver und passiver Bewegung kennen
+- Maßnahmen zur Kontrakturprophylaxe benennen
+- Bedeutung von Mobilisation verstehen
 
+Typische Prüfungsfragen:
 
----
-
-
-
-## Ziel der Kontrakturprophylaxe
-
-
-
-Das Ziel der Kontrakturprophylaxe ist es, die Beweglichkeit der Gelenke zu erhalten und dauerhafte Bewegungseinschränkungen zu verhindern.
-
+- Wie entsteht eine Kontraktur?
+- Welche Risikofaktoren begünstigen Kontrakturen?
+- Was ist der Unterschied zwischen aktiver und passiver Bewegung?
+- Welche Maßnahmen gehören zur Kontrakturprophylaxe?

@@ -3,23 +3,354 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 
 const themen = await getCollection("themen");
-const items = themen.filter((t) => t.slug.toLowerCase().startsWith("pflegeprozess/"));
+
+const items = themen
+  .filter((t) => t.slug.toLowerCase().startsWith("pflegeprozess/"))
+  .sort((a, b) => a.data.title.localeCompare(b.data.title, "de"));
+
+const topicDescriptions = {
+  "pflegeprozess/pflegeprozess-grundlagen": {
+    badge: "Grundlage",
+    description:
+      "Verstehe den Aufbau und die Logik des Pflegeprozesses als zentrales Arbeitsmodell.",
+  },
+  "pflegeprozess/informationssammlung": {
+    badge: "Assessment",
+    description:
+      "Lerne, wie du Informationen systematisch erhebst und für die Pflegeplanung nutzt.",
+  },
+  "pflegeprozess/pflegeprobleme-ressourcen": {
+    badge: "Analyse",
+    description:
+      "Erkenne Pflegeprobleme und Ressourcen als Grundlage für gezielte Maßnahmen.",
+  },
+  "pflegeprozess/pflegediagnosen": {
+    badge: "Diagnostik",
+    description:
+      "Verstehe, wie Pflegediagnosen formuliert und im Pflegeprozess eingesetzt werden.",
+  },
+  "pflegeprozess/pflegeziele": {
+    badge: "Planung",
+    description:
+      "Formuliere klare, erreichbare Pflegeziele als Orientierung für Maßnahmen.",
+  },
+  "pflegeprozess/pflegemassnahmen": {
+    badge: "Umsetzung",
+    description:
+      "Plane konkrete pflegerische Maßnahmen passend zu Problemen und Zielen.",
+  },
+  "pflegeprozess/durchfuehrung": {
+    badge: "Praxis",
+    description:
+      "Setze geplante Maßnahmen fachgerecht im Pflegealltag um.",
+  },
+  "pflegeprozess/evaluation": {
+    badge: "Kontrolle",
+    description:
+      "Überprüfe, ob Pflegeziele erreicht wurden und passe die Planung an.",
+  },
+};
+
+const getTopicInfo = (item) => {
+  return (
+    topicDescriptions[item.slug] ?? {
+      badge: "Pflegeprozess",
+      description:
+        item.data.description ||
+        "Lerne diesen Schritt im Pflegeprozess und seine Bedeutung im Pflegealltag kennen.",
+    }
+  );
+};
 ---
 
 <BaseLayout title="Pflegeprozess">
-  <h1>Pflegeprozess</h1>
-  <p class="muted">Assessment, Planung, Durchführung, Evaluation, Logik.</p>
+  <main class="bereich-page">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Startseite</a>
+      <span>›</span>
+      <a href="/themen/">Themen</a>
+      <span>›</span>
+      <span>Pflegeprozess</span>
+    </nav>
 
-  {items.length === 0 ? (
-    <p class="muted">Noch keine Inhalte in diesem Bereich.</p>
-  ) : (
-    <div class="topic-grid" style="margin-top:20px;">
-      {items.map((t) => (
-        <a class="topic-card" href={`/themen/${t.slug}/`}>
-          <h2>{t.data.title}</h2>
-          <p>{t.data.description}</p>
-        </a>
-      ))}
-    </div>
-  )}
+    <section class="hero-panel">
+      <p class="eyebrow">Themenbereich</p>
+      <h1>Pflegeprozess</h1>
+      <p class="hero-text">
+        Der Pflegeprozess ist das zentrale Arbeitsmodell in der Pflege. Hier lernst du,
+        Pflege systematisch zu planen, durchzuführen und zu überprüfen.
+      </p>
+    </section>
+
+    <section class="info-panel">
+      <h2>Warum der Pflegeprozess wichtig ist</h2>
+      <p>
+        Ohne Struktur wird Pflege unsystematisch und fehleranfällig. Der Pflegeprozess hilft dir,
+        Informationen zu ordnen, Probleme zu erkennen und gezielt Maßnahmen abzuleiten.
+        Er ist die Grundlage für professionelles pflegerisches Handeln.
+      </p>
+    </section>
+
+    <section class="info-grid">
+      <article class="info-card">
+        <h3>Strukturiert arbeiten</h3>
+        <p>Du lernst, Pflege logisch und nachvollziehbar aufzubauen.</p>
+      </article>
+
+      <article class="info-card">
+        <h3>Gezielt planen</h3>
+        <p>Du entwickelst klare Ziele und passende Maßnahmen für jede Situation.</p>
+      </article>
+
+      <article class="info-card">
+        <h3>Ergebnisse prüfen</h3>
+        <p>Du überprüfst systematisch, ob deine Pflege wirksam ist.</p>
+      </article>
+    </section>
+
+    <section class="info-panel">
+      <h2>Was du in diesem Bereich können solltest</h2>
+      <ul class="goal-list">
+        <li>Den Aufbau des Pflegeprozesses erklären.</li>
+        <li>Informationen strukturiert erheben und auswerten.</li>
+        <li>Pflegeprobleme und Ressourcen erkennen.</li>
+        <li>Pflegeziele formulieren und Maßnahmen planen.</li>
+        <li>Pflegehandlungen durchführen und evaluieren.</li>
+      </ul>
+    </section>
+
+    <section class="topics-panel">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Übersicht</p>
+          <h2>Alle Pflegeprozess-Themen</h2>
+        </div>
+        <span class="count-badge">{items.length} Themen</span>
+      </div>
+
+      <div class="topic-grid">
+        {items.map((t, index) => {
+          const info = getTopicInfo(t);
+
+          return (
+            <a class="topic-card" href={`/themen/${t.slug}/`}>
+              <div class="badge-row">
+                <span class="topic-badge">Thema {index + 1}</span>
+                <span class="type-badge">{info.badge}</span>
+              </div>
+
+              <h3>{t.data.title}</h3>
+              <p>{info.description}</p>
+              <span class="open-link">Thema öffnen →</span>
+            </a>
+          );
+        })}
+      </div>
+    </section>
+  </main>
 </BaseLayout>
+
+<style>
+  .bereich-page {
+    display: grid;
+    gap: 24px;
+  }
+
+  .breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    color: #64748b;
+    font-size: 0.95rem;
+  }
+
+  .breadcrumb a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  .hero-panel,
+  .info-panel,
+  .topics-panel {
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
+    background: #ffffff;
+    padding: 28px;
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+  }
+
+  .hero-panel {
+    background: linear-gradient(135deg, #eff6ff 0%, #ffffff 58%, #f8fafc 100%);
+  }
+
+  .eyebrow {
+    margin: 0 0 10px;
+    color: #2563eb;
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(2.1rem, 4vw, 3.4rem);
+    line-height: 1.05;
+    color: #0f172a;
+  }
+
+  .hero-text {
+    max-width: 760px;
+    margin: 16px 0 0;
+    color: #475569;
+    font-size: 1.08rem;
+    line-height: 1.7;
+  }
+
+  .info-panel h2,
+  .topics-panel h2 {
+    margin: 0 0 12px;
+    color: #0f172a;
+    font-size: 1.45rem;
+  }
+
+  .info-panel p {
+    margin: 0;
+    color: #475569;
+    line-height: 1.75;
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .info-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 22px;
+    background: #ffffff;
+    padding: 22px;
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.05);
+  }
+
+  .info-card h3 {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 1.08rem;
+  }
+
+  .info-card p {
+    margin: 0;
+    color: #64748b;
+    line-height: 1.65;
+  }
+
+  .goal-list {
+    margin: 0;
+    padding-left: 20px;
+    color: #475569;
+    line-height: 1.8;
+  }
+
+  .section-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .count-badge {
+    flex: 0 0 auto;
+    border-radius: 999px;
+    background: #dbeafe;
+    color: #1d4ed8;
+    padding: 8px 14px;
+    font-size: 0.9rem;
+    font-weight: 800;
+  }
+
+  .topic-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .topic-card {
+    display: flex;
+    min-height: 220px;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #e2e8f0;
+    border-radius: 22px;
+    background: #ffffff;
+    padding: 22px;
+    text-decoration: none;
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.05);
+    transition:
+      transform 0.18s ease,
+      box-shadow 0.18s ease,
+      border-color 0.18s ease;
+  }
+
+  .topic-card:hover {
+    transform: translateY(-3px);
+    border-color: #bfdbfe;
+    box-shadow: 0 18px 38px rgba(37, 99, 235, 0.12);
+  }
+
+  .badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .topic-badge,
+  .type-badge {
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-size: 0.78rem;
+    font-weight: 800;
+  }
+
+  .topic-badge {
+    background: #eff6ff;
+    color: #2563eb;
+  }
+
+  .type-badge {
+    background: #f1f5f9;
+    color: #475569;
+  }
+
+  .topic-card h3 {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 1.12rem;
+  }
+
+  .topic-card p {
+    margin: 0 0 20px;
+    color: #64748b;
+    line-height: 1.65;
+  }
+
+  .open-link {
+    margin-top: auto;
+    color: #2563eb;
+    font-weight: 800;
+  }
+
+  @media (max-width: 900px) {
+    .info-grid,
+    .topic-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .section-head {
+      flex-direction: column;
+    }
+  }
+</style>

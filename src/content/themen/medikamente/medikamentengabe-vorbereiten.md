@@ -1,258 +1,185 @@
 ---
-
 title: Medikamentengabe vorbereiten
-
 description: Wichtige Schritte zur sicheren Vorbereitung der Medikamentengabe in der Pflege.
-
+level: grundlagen
 ---
-
-
 
 # Medikamentengabe vorbereiten
 
+## Kurz erklärt
 
+Die Vorbereitung der Medikamentengabe ist ein sicherheitskritischer Schritt im Pflegealltag.
 
-Die Vorbereitung der Medikamentengabe ist ein wichtiger Teil der pflegerischen Arbeit. Fehler in diesem Schritt können dazu führen, dass Medikamente falsch, zu spät oder gar nicht verabreicht werden.
+👉 Fehler entstehen häufig **vor** der eigentlichen Gabe.
 
-
-
-Deshalb muss die Vorbereitung sorgfältig, ruhig und konzentriert erfolgen.
-
-
+---
 
 ## Warum die Vorbereitung wichtig ist
 
+Bereits bei der Vorbereitung können schwerwiegende Fehler passieren:
 
+- falscher Patient  
+- falsches Medikament  
+- falsche Dosierung  
+- falscher Zeitpunkt  
 
-Schon vor der eigentlichen Gabe können Fehler entstehen, zum Beispiel durch:
+👉 Gute Vorbereitung verhindert die meisten Medikationsfehler.
 
+---
 
+## Grundprinzip
 
-- Verwechslung von Patienten
+Medikamente vorbereiten heißt:
 
-- Verwechslung von Medikamenten
+- prüfen  
+- vergleichen  
+- absichern  
 
-- falsche Dosierung
+👉 niemals „einfach machen“
 
-- unklare Anordnungen
-
-- Ablenkung oder Zeitdruck
-
-
-
-Eine gute Vorbereitung erhöht die Sicherheit für Patienten und Pflegekräfte.
-
-
+---
 
 ## Wichtige Vorbereitungsschritte
 
+### 1. Ärztliche Anordnung prüfen
 
+- ist die Anordnung vollständig?  
+- ist sie verständlich?  
+- stimmt Dosierung und Zeitpunkt?  
+- ist die Applikationsform klar?  
 
-Vor der Medikamentengabe müssen mehrere Punkte geprüft werden.
+👉 Unklare Anordnungen dürfen **nicht umgesetzt werden**
 
+---
 
+### 2. Medikamente kontrollieren
 
-### Ärztliche Anordnung prüfen
+- richtiger Name  
+- richtige Dosierung  
+- richtige Darreichungsform  
+- Verfallsdatum prüfen  
+- Besonderheiten beachten (z. B. Retardtabletten)  
 
+---
 
+### 3. 6-R-Regel anwenden
 
-Zuerst muss die aktuelle ärztliche Anordnung kontrolliert werden.
+Bereits bei der Vorbereitung prüfen:
 
+- richtiger Patient  
+- richtiges Medikament  
+- richtige Dosierung  
+- richtiger Zeitpunkt  
+- richtige Applikationsform  
+- richtige Dokumentation (vorbereiten)  
 
+---
 
-Wichtig ist:
+### 4. Patient eindeutig zuordnen
 
+- Identität sicherstellen  
+- Verwechslungen ausschließen  
 
+👉 besonders wichtig in Einrichtungen mit mehreren Patienten
 
-- Ist das Medikament korrekt angeordnet?
+---
 
-- Stimmt die Dosierung?
+### 5. Hygienisch arbeiten
 
-- Ist der Zeitpunkt klar?
+- Händedesinfektion  
+- saubere Arbeitsfläche  
+- strukturierte Arbeitsweise  
+- Unterbrechungen vermeiden  
 
-- Ist die Applikationsform eindeutig?
+---
 
+### 6. Materialien bereitlegen
 
+Vor Beginn vollständig vorbereiten:
 
-Unklare Anordnungen dürfen nicht einfach übernommen werden.
+- Medikamente  
+- Medikamentenbecher  
+- Wasser  
+- Dokumentation  
+- ggf. Hilfsmittel  
 
+👉 verhindert Fehler durch Unterbrechung
 
-
-### Medikamente kontrollieren
-
-
-
-Vor dem Stellen oder Verabreichen müssen Medikamente sorgfältig geprüft werden.
-
-
-
-Dabei wird kontrolliert:
-
-
-
-- Name des Medikaments
-
-- Dosierung
-
-- Darreichungsform
-
-- Verfallsdatum
-
-- Besonderheiten der Anwendung
-
-
-
-### Patient zuordnen
-
-
-
-Vor jeder Gabe muss klar sein, für welchen Patienten oder Bewohner das Medikament bestimmt ist.
-
-
-
-Verwechslungen müssen sicher ausgeschlossen werden.
-
-
-
-### Hygienisch arbeiten
-
-
-
-Auch bei der Vorbereitung ist hygienisches Arbeiten wichtig.
-
-
-
-Dazu gehören:
-
-
-
-- Händedesinfektion
-
-- saubere Arbeitsfläche
-
-- keine unnötigen Unterbrechungen
-
-- ordentliche Arbeitsweise
-
-
-
-### Materialien bereitlegen
-
-
-
-Alle benötigten Materialien sollten vor Beginn vollständig bereitliegen.
-
-
-
-Zum Beispiel:
-
-
-
-- Medikamente
-
-- Medikamentenbecher
-
-- Wasser
-
-- Dokumentation
-
-- ggf. Hilfsmittel für die Applikation
-
-
+---
 
 ## Typische Fehlerquellen
 
+- Zeitdruck  
+- Ablenkung  
+- Routine  
+- unklare Anordnungen  
+- ähnlich aussehende Medikamente  
 
+<div class="merkbox">
+<div class="merkbox-title">Merke: Vorbereitung ist der kritischste Schritt</div>
 
-Fehler bei der Vorbereitung entstehen oft durch:
-
-
-
-- Hektik
-
-- Ablenkung
-
-- schlechte Lesbarkeit von Anordnungen
-
-- ähnlich aussehende Medikamente
-
-- unvollständige Dokumentation
-
-
-
-<div class="info-box info-box-merke">
-
-<div class="info-box-title">💡 Merke</div>
-
-
-
-Eine sichere Medikamentengabe beginnt nicht erst bei der Verabreichung, sondern schon bei der Vorbereitung.
-
-
-
-Sorgfalt in diesem Schritt verhindert viele Fehler.
-
-
+Die meisten Fehler entstehen nicht bei der Gabe, sondern davor.
 
 </div>
 
+---
 
+## Pflegebezug
+
+Pflegekräfte müssen:
+
+- sorgfältig prüfen  
+- strukturiert arbeiten  
+- Verantwortung übernehmen  
+- bei Unsicherheit nachfragen  
+
+---
+
+## Verantwortung der Pflege
+
+- Pflege trägt **Durchführungsverantwortung**  
+- darf keine unklaren Anordnungen umsetzen  
+- muss Fehlerquellen erkennen  
+
+---
+
+## Praxis
+
+Wichtige Regel:
+
+- Medikamente **immer in Ruhe vorbereiten**  
+- Unterbrechungen vermeiden  
+- keine Gespräche während des Stellens  
+
+---
 
 <div class="info-box info-box-achtung">
-
 <div class="info-box-title">⚠️ Achtung</div>
 
-
-
-Medikamente dürfen niemals auf Zuruf, aus Gewohnheit oder bei unklarer Anordnung vorbereitet werden.
-
-
-
-Unklare Angaben müssen immer geklärt werden.
-
-
+Medikamente niemals auf Zuruf, aus Gewohnheit oder ohne klare Anordnung vorbereiten.
 
 </div>
 
+---
 
+## Rolle der Pflege
 
-<div class="info-box info-box-praxis">
+Pflegekräfte sind verantwortlich für:
 
-<div class="info-box-title">🩺 Praxis-Tipp</div>
+- sichere Vorbereitung  
+- Fehlervermeidung  
+- korrekte Durchführung  
+- Patientensicherheit  
 
+---
 
+## Prüfungsrelevant
 
-Wenn möglich, Medikamente immer in einer ruhigen Umgebung vorbereiten.
+Typische Fragen:
 
+- Warum ist die Vorbereitung wichtig?  
+- Welche Schritte gehören dazu?  
+- Welche Fehlerquellen gibt es?  
+- Wie gehen Sie mit unklaren Anordnungen um?  
 
-
-Unterbrechungen und Gespräche während des Stellens erhöhen das Fehlerrisiko deutlich.
-
-
-
-</div>
-
-
-
-## Bedeutung für die Pflege
-
-
-
-Pflegekräfte tragen eine hohe Verantwortung bei der Vorbereitung von Medikamenten.
-
-
-
-Eine sichere Vorbereitung ist die Grundlage dafür, dass Medikamente korrekt und verantwortungsvoll verabreicht werden können.
-
-
-
-## Typische Prüfungsfragen
-
-
-
-- Warum ist die Vorbereitung der Medikamentengabe wichtig?
-
-- Welche Punkte müssen vor der Medikamentengabe geprüft werden?
-
-- Nennen Sie typische Fehlerquellen bei der Vorbereitung von Medikamenten.
-
+👉 Wichtig: strukturiertes Vorgehen + Verantwortung verstehen

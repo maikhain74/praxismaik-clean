@@ -6,84 +6,150 @@ level: grundlagen
 
 # Entzündung
 
-## Kurz erklärt
+Eine Entzündung ist eine natürliche Abwehrreaktion des Körpers auf schädliche Reize wie Krankheitserreger, Verletzungen oder Fremdkörper.
 
-Eine Entzündung ist eine Abwehrreaktion des Körpers auf schädliche Reize wie Krankheitserreger, Verletzungen oder Fremdkörper.
+Ziel der Entzündung ist es, die Ursache zu beseitigen, geschädigtes Gewebe zu reparieren und die Heilung einzuleiten.
 
----
+## Warum Entzündung wichtig ist
 
-## Warum ist das wichtig für die Pflege?
+Entzündungen spielen bei vielen Erkrankungen eine zentrale Rolle.
 
-- Entzündungen kommen bei sehr vielen Krankheiten vor  
-- Du erkennst typische Anzeichen frühzeitig  
-- Du kannst Pflegehandlungen besser begründen  
-- Du verstehst Heilungsprozesse  
+Für die Pflege ist das wichtig, weil:
 
----
+- Entzündungen sehr häufig auftreten
+- sie ein Hinweis auf eine Erkrankung sind
+- sie den Heilungsverlauf beeinflussen
+- sie Schmerzen verursachen können
+- sie früh erkannt werden müssen
 
 ## Ursachen einer Entzündung
 
-- Bakterien  
-- Viren  
-- Verletzungen  
-- chemische Reize  
-- Fremdkörper  
+Eine Entzündung kann durch verschiedene Auslöser entstehen.
 
----
+Typische Ursachen sind:
+
+- Bakterien
+- Viren
+- Pilze
+- Verletzungen (z. B. Wunden)
+- chemische Reize
+- Fremdkörper
+- Verbrennungen
 
 ## Die 5 klassischen Entzündungszeichen
 
-- Rötung (Rubor)  
-- Wärme (Calor)  
-- Schwellung (Tumor)  
-- Schmerz (Dolor)  
-- Funktionsverlust (Functio laesa)  
+Eine Entzündung erkennt man an typischen Merkmalen.
 
----
+Die fünf klassischen Entzündungszeichen sind:
+
+- Rötung (Rubor)
+- Wärme (Calor)
+- Schwellung (Tumor)
+- Schmerz (Dolor)
+- Funktionsverlust (Functio laesa)
+
+<div class="merkbox">
+<div class="merkbox-title">Merke: Die 5 Zeichen gehören zusammen</div>
+
+Rötung, Wärme, Schwellung, Schmerz und Funktionsverlust sind typische Hinweise auf eine Entzündung.
+
+</div>
+
+## Was passiert im Körper
+
+Bei einer Entzündung laufen verschiedene Prozesse ab:
+
+- Blutgefäße erweitern sich
+- die Durchblutung nimmt zu
+- Flüssigkeit tritt ins Gewebe aus
+- Abwehrzellen werden aktiviert
+- Krankheitserreger werden bekämpft
+
+Diese Reaktionen führen zu den typischen Entzündungszeichen.
 
 ## Ablauf einer Entzündung
 
-1. Schädigung des Gewebes  
-2. Erweiterung der Blutgefäße  
-3. vermehrte Durchblutung  
-4. Austritt von Flüssigkeit ins Gewebe  
-5. Abwehrreaktion durch Immunzellen  
+Der Ablauf lässt sich vereinfacht so darstellen:
 
----
+1. Schädigung des Gewebes
+2. Erweiterung der Blutgefäße
+3. verstärkte Durchblutung
+4. Austritt von Flüssigkeit ins Gewebe (Schwellung)
+5. Aktivierung von Abwehrzellen
+6. Reparatur des Gewebes
 
 ## Akute und chronische Entzündung
 
 ### Akute Entzündung
 
-- beginnt plötzlich  
-- oft mit starken Symptomen  
-- heilt meist vollständig ab  
-
----
+- beginnt plötzlich
+- oft deutlich erkennbare Symptome
+- meist zeitlich begrenzt
+- heilt oft vollständig aus
 
 ### Chronische Entzündung
 
-- dauert länger an  
-- oft weniger auffällig  
-- kann zu Gewebeschäden führen  
+- dauert länger an
+- oft weniger auffällig
+- kann zu dauerhaften Gewebeschäden führen
+- tritt z. B. bei chronischen Erkrankungen auf
 
----
+## Beobachtungen in der Pflege
+
+Pflegekräfte achten auf:
+
+- Rötung und Überwärmung
+- Schwellungen
+- Schmerzen
+- Funktionsveränderungen
+- Wundveränderungen
+- allgemeine Verschlechterung des Zustands
 
 ## Pflegebezug
 
-- Entzündungszeichen erkennen (z. B. bei Wunden)  
-- Veränderungen beobachten und dokumentieren  
-- Hygienemaßnahmen einhalten  
-- Schmerzen einschätzen und berücksichtigen  
+Für die Pflege ist es wichtig, Entzündungen früh zu erkennen und richtig einzuordnen.
 
----
+Wichtige Aufgaben sind:
+
+- Entzündungszeichen erkennen
+- Veränderungen beobachten
+- Symptome dokumentieren
+- Hygienemaßnahmen einhalten
+- Schmerzen berücksichtigen
+- Informationen weitergeben
+
+## Maßnahmen in der Pflege
+
+- regelmäßige Kontrolle von Wunden und Haut
+- Einhaltung von Hygieneregeln
+- Beobachtung des Allgemeinzustands
+- Unterstützung bei der Behandlung
+- Dokumentation von Veränderungen
+
+## Rolle der Pflege
+
+Pflegekräfte sind oft die ersten, die eine Entzündung bemerken.
+
+Sie müssen:
+
+- Veränderungen früh erkennen
+- richtig reagieren
+- Informationen weitergeben
+- den Verlauf beobachten
 
 ## Prüfungsrelevant
 
-Typische Fragen:
+In Prüfungen zählt vor allem:
 
-- „Nennen Sie die 5 Entzündungszeichen.“  
-- „Unterschied zwischen akut und chronisch?“  
-- „Wie entsteht eine Entzündung?“  
+- Definition der Entzündung
+- die 5 klassischen Entzündungszeichen
+- Ursachen benennen
+- Unterschied zwischen akut und chronisch
+- Ablauf grob erklären
 
-👉 Wichtig: Ablauf + Zeichen verstehen
+Typische Prüfungsfragen:
+
+- Was ist eine Entzündung?
+- Nennen Sie die 5 Entzündungszeichen.
+- Welche Ursachen gibt es?
+- Was ist der Unterschied zwischen akut und chronisch?

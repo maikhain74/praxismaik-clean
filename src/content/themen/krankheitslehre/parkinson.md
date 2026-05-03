@@ -1,160 +1,194 @@
 ---
-
 title: Morbus Parkinson
-
-description: Ursachen, Symptome und pflegerische Aspekte bei Morbus Parkinson.
-
+description: Ursachen, Symptome und pflegerische Bedeutung bei Morbus Parkinson verständlich erklärt.
+level: pruefung
 ---
-
-
 
 # Morbus Parkinson
 
+## Kurz erklärt
 
+Morbus Parkinson ist eine chronische, fortschreitende Erkrankung des Nervensystems.
 
-Morbus Parkinson ist eine chronische Erkrankung des Nervensystems. Dabei sterben bestimmte Nervenzellen im Gehirn ab, die für die Steuerung von Bewegungen verantwortlich sind.
+Dabei gehen Nervenzellen im Gehirn zugrunde, die den Botenstoff **Dopamin** produzieren. Dopamin ist wichtig für die Steuerung von Bewegungen.
 
-
-
-Dadurch kommt es zu typischen Bewegungsstörungen.
-
-
+👉 Folge: Bewegungen werden langsamer, steifer und unsicherer.
 
 ---
 
+## Warum ist das wichtig für die Pflege?
 
+- häufige Erkrankung im höheren Alter  
+- betrifft Bewegung, Alltag und Selbstständigkeit  
+- Verlauf ist langsam fortschreitend  
+- starke Auswirkungen auf Lebensqualität  
+- sehr häufiges Prüfungsthema  
+
+---
+
+## Was passiert im Körper?
+
+Im Gehirn fehlt Dopamin.
+
+👉 Folge:
+
+- Bewegungen können nicht mehr richtig gesteuert werden  
+- Muskelspannung verändert sich  
+- Bewegungsabläufe werden verlangsamt oder blockiert  
+
+---
 
 ## Ursachen
 
+Die genaue Ursache ist nicht vollständig geklärt.
 
+Mögliche Faktoren:
 
-Die genaue Ursache der Erkrankung ist nicht vollständig geklärt.
-
-
-
-Bei Parkinson kommt es zu einem Mangel des Botenstoffes **Dopamin** im Gehirn. Dopamin ist wichtig für die Steuerung von Bewegungen.
-
-
-
-Risikofaktoren können sein:
-
-
-
-- höheres Lebensalter
-
-- genetische Faktoren
-
-- Umweltfaktoren
-
-
+- höheres Lebensalter  
+- genetische Einflüsse  
+- Umweltfaktoren  
 
 ---
 
-
-
-## Hauptsymptome
-
-
-
-Die vier wichtigsten Symptome werden häufig als **Parkinson-Trias** bezeichnet.
-
-
+## Hauptsymptome (Parkinson-Trias)
 
 ### Tremor
 
+- Zittern, meist in Ruhe  
+- häufig an Händen („Pillendreher-Tremor“)  
 
-
-Ein Zittern der Hände oder anderer Körperteile, das vor allem in Ruhe auftritt.
-
-
+---
 
 ### Rigor
 
+- Muskelsteifheit  
+- Bewegungen wirken „zäh“ oder blockiert  
 
+---
 
-Eine Muskelsteifheit, die Bewegungen erschwert.
+### Akinese (Bradykinese)
 
+- verlangsamte Bewegungen  
+- Startprobleme („Freezing“)  
 
-
-### Akinese
-
-
-
-Eine Verlangsamung oder Verminderung der Bewegungen.
-
-
+---
 
 ### Posturale Instabilität
 
-
-
-Eine Störung des Gleichgewichts und der Körperhaltung.
-
-
+- Gleichgewichtsstörungen  
+- erhöhte Sturzgefahr  
 
 ---
 
+## Weitere typische Symptome
 
-
-## Weitere mögliche Symptome
-
-
-
-Neben den Hauptsymptomen können weitere Beschwerden auftreten.
-
-
-
-Beispiele:
-
-
-
-- kleine, schlurfende Schritte
-
-- verminderte Mimik
-
-- leise Stimme
-
-- Schluckstörungen
-
-- Schlafstörungen
-
-
+- kleine, schlurfende Schritte  
+- vornübergebeugte Haltung  
+- verminderte Mimik („Maskengesicht“)  
+- leise, monotone Stimme  
+- Schluckstörungen  
+- Speichelfluss  
+- Verstopfung  
+- Schlafstörungen  
 
 ---
 
+## Verlauf
 
+Morbus Parkinson verläuft chronisch und fortschreitend.
 
-## Pflegerische Aufgaben
-
-
-
-Pflegekräfte unterstützen Menschen mit Parkinson durch verschiedene Maßnahmen.
-
-
-
-Wichtige Aufgaben sind:
-
-
-
-- Unterstützung bei Bewegungen
-
-- Förderung der Mobilität
-
-- Sturzprophylaxe
-
-- Unterstützung bei der Körperpflege
-
-- Beobachtung der Medikamentenwirkung
-
-
+- Symptome nehmen im Laufe der Zeit zu  
+- Selbstständigkeit wird eingeschränkt  
+- Therapie kann Symptome lindern, aber nicht heilen  
 
 ---
 
+## Beobachtungen in der Pflege
 
+Pflegekräfte achten besonders auf:
 
-## Ziel der Pflege
+- Beweglichkeit und Gangbild  
+- Sturzrisiko  
+- Schluckstörungen  
+- Veränderungen im Alltag  
+- Wirkung von Medikamenten  
+- Schwankungen im Zustand („On-Off-Phänomen“)  
 
+<div class="merkbox">
+<div class="merkbox-title">Merke: On-Off-Phänomen</div>
 
+Patienten wechseln plötzlich zwischen guter Beweglichkeit („On“) und starker Einschränkung („Off“).
 
-Das Ziel der Pflege ist es, die Selbstständigkeit der betroffenen Person möglichst lange zu erhalten und die Lebensqualität zu verbessern.
+</div>
 
+---
+
+## Pflegebezug
+
+Pflege richtet sich stark nach den individuellen Einschränkungen.
+
+Wichtige Ziele sind:
+
+- Selbstständigkeit erhalten  
+- Sicherheit im Alltag erhöhen  
+- Komplikationen vermeiden  
+
+---
+
+## Wichtige pflegerische Maßnahmen
+
+- Mobilisation fördern  
+- Sturzprophylaxe durchführen  
+- genügend Zeit für Bewegungen geben  
+- Unterstützung bei der Körperpflege  
+- Schlucken beobachten (Aspirationsgefahr!)  
+- Essenssituation anpassen  
+- Hilfsmittel einsetzen  
+- Tagesstruktur geben  
+
+---
+
+## Bedeutung der Medikamente
+
+Medikamente (z. B. L-Dopa) ersetzen den Dopaminmangel.
+
+👉 Wichtig in der Pflege:
+
+- **exakte Einnahmezeiten einhalten**  
+- Wirkung beobachten  
+- Nebenwirkungen erkennen  
+
+<div class="merkbox">
+<div class="merkbox-title">Merke: Medikamente sind zentral</div>
+
+Schon kleine Abweichungen bei der Einnahme können die Beweglichkeit deutlich verschlechtern.
+
+</div>
+
+---
+
+## Rolle der Pflege
+
+Pflegekräfte begleiten Betroffene oft langfristig.
+
+Wichtige Aufgaben:
+
+- Veränderungen früh erkennen  
+- Alltag strukturieren  
+- Sicherheit gewährleisten  
+- Angehörige einbeziehen  
+- Motivation fördern  
+
+---
+
+## Prüfungsrelevant
+
+Typische Fragen:
+
+- Was ist Morbus Parkinson?  
+- Nennen Sie die Hauptsymptome.  
+- Was bedeutet Akinese?  
+- Welche pflegerischen Maßnahmen sind wichtig?  
+- Warum ist die Medikamenteneinnahme so entscheidend?  
+
+👉 Wichtig: Dopaminmangel + Bewegung + Pflege zusammen verstehen

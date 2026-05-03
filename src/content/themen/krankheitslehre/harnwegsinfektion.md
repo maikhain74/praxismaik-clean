@@ -6,102 +6,152 @@ level: vertiefung
 
 # Harnwegsinfektion
 
-## Kurz erklärt
+Eine Harnwegsinfektion (HWI) ist eine Infektion der ableitenden Harnwege, die meist durch Bakterien verursacht wird.
 
-Eine Harnwegsinfektion (HWI) ist eine Infektion der ableitenden Harnwege, meist verursacht durch Bakterien.  
-Sie gehört zu den häufigsten Infektionen im Pflegealltag.
+Sie gehört zu den häufigsten Infektionen im Pflegealltag und betrifft besonders ältere und pflegebedürftige Menschen.
 
----
+## Warum Harnwegsinfektionen wichtig sind
 
-## Warum ist das wichtig für die Pflege?
+Für die Pflege sind Harnwegsinfektionen besonders relevant, weil:
 
-- sehr häufig bei älteren Menschen  
-- kann zu schweren Komplikationen führen  
-- oft unspezifische Symptome  
-- kommt häufig in Prüfungen vor  
+- sie sehr häufig auftreten
+- sie bei älteren Menschen oft untypisch verlaufen
+- sie sich schnell verschlechtern können
+- sie zu schweren Komplikationen führen können (z. B. Niereninfektion)
+- sie häufig im Zusammenhang mit Kathetern auftreten
 
----
-
-## Was ist betroffen?
+## Aufbau der Harnwege
 
 Die Harnwege bestehen aus:
 
-- Harnröhre  
-- Harnblase  
-- Harnleiter  
-- Nieren  
+- Harnröhre
+- Harnblase
+- Harnleiter
+- Nieren
 
----
+Eine Infektion kann sich auf verschiedene Bereiche ausbreiten.
 
 ## Ursachen
 
-- Bakterien (meist aus dem Darm)  
-- unzureichende Hygiene  
-- Harnverhalt  
-- Katheter  
-- geschwächtes Immunsystem  
+Die häufigste Ursache sind Bakterien, meist aus dem Darm (z. B. Escherichia coli).
 
----
+Weitere Ursachen sind:
+
+- unzureichende Hygiene
+- Restharn in der Blase
+- Blasenkatheter
+- geschwächtes Immunsystem
+- eingeschränkte Blasenentleerung
 
 ## Risikofaktoren
 
-- weibliches Geschlecht  
-- hohes Alter  
-- Immobilität  
-- Blasenkatheter  
-- geringe Flüssigkeitsaufnahme  
+Bestimmte Faktoren erhöhen das Risiko:
 
----
+- weibliches Geschlecht (kürzere Harnröhre)
+- höheres Lebensalter
+- Immobilität
+- Blasenkatheter
+- geringe Flüssigkeitsaufnahme
+- Inkontinenz
+- Diabetes mellitus
 
 ## Typische Symptome
 
-- Brennen beim Wasserlassen  
-- häufiger Harndrang  
-- kleine Urinmengen  
-- Unterbauchschmerzen  
-- trüber oder übelriechender Urin  
-- Fieber (bei schwerem Verlauf)  
+Die Symptome können unterschiedlich stark sein.
 
----
+Typische Anzeichen sind:
+
+- Brennen beim Wasserlassen
+- häufiger Harndrang
+- kleine Urinmengen
+- Unterbauchschmerzen
+- trüber oder übelriechender Urin
+- eventuell Fieber
 
 ## Besonderheiten bei älteren Menschen
 
-- oft keine typischen Symptome  
-- Verwirrtheit  
-- Unruhe  
-- Verschlechterung des Allgemeinzustands  
+Bei älteren Menschen zeigen sich oft keine typischen Symptome.
 
-👉 Wichtig: HWI kann sich „untypisch“ zeigen
+Stattdessen treten häufig auf:
 
----
+- Verwirrtheit (Delir)
+- Unruhe
+- plötzliche Verschlechterung des Allgemeinzustands
+- Müdigkeit oder Rückzug
+
+<div class="merkbox">
+<div class="merkbox-title">Merke: HWI oft ohne typische Beschwerden</div>
+
+Bei älteren Menschen kann eine Harnwegsinfektion nur durch Verwirrtheit oder Verhaltensänderung auffallen.
+
+</div>
+
+## Mögliche Komplikationen
+
+Unbehandelt kann eine Harnwegsinfektion zu Problemen führen:
+
+- Ausbreitung auf die Nieren (Pyelonephritis)
+- Fieber
+- Blutvergiftung (Sepsis)
+- Verschlechterung bestehender Erkrankungen
+
+## Pflegebeobachtung
+
+Pflegekräfte achten auf:
+
+- Veränderungen beim Wasserlassen
+- Urinmenge, Farbe und Geruch
+- Schmerzen oder Beschwerden
+- Fieber
+- Verhaltensänderungen
+- Allgemeinzustand
 
 ## Pflegebezug
 
-- Urin beobachten (Farbe, Geruch, Menge)  
-- auf Schmerzen beim Wasserlassen achten  
-- Flüssigkeitszufuhr fördern  
-- Intimhygiene unterstützen  
-- Katheterpflege korrekt durchführen  
+Pflegekräfte spielen eine wichtige Rolle bei der Vorbeugung und Erkennung.
 
----
+Wichtige Aufgaben sind:
+
+- Urin beobachten
+- Symptome früh erkennen
+- Flüssigkeitsaufnahme fördern
+- Intimhygiene unterstützen
+- Katheterpflege durchführen
+- Veränderungen weitergeben
 
 ## Wichtige pflegerische Maßnahmen
 
-- ausreichendes Trinken fördern  
-- regelmäßige Toilettengänge unterstützen  
-- hygienisches Arbeiten sicherstellen  
-- Beobachtungen dokumentieren  
-- Arzt informieren bei Auffälligkeiten  
+- ausreichendes Trinken fördern
+- regelmäßige Toilettengänge ermöglichen
+- vollständige Blasenentleerung unterstützen
+- hygienisches Arbeiten sicherstellen
+- Intimhygiene beachten
+- Katheterpflege korrekt durchführen
+- Beobachtungen dokumentieren
 
----
+## Rolle der Pflege
+
+Pflegekräfte müssen:
+
+- Risikopersonen erkennen
+- Veränderungen früh wahrnehmen
+- Maßnahmen einleiten
+- Komplikationen verhindern
+- interprofessionell zusammenarbeiten
 
 ## Prüfungsrelevant
 
-Typische Fragen:
+In Prüfungen zählt vor allem:
 
-- „Was ist eine Harnwegsinfektion?“  
-- „Nennen Sie Symptome.“  
-- „Warum sind ältere Menschen besonders gefährdet?“  
-- „Welche pflegerischen Maßnahmen sind wichtig?“  
+- Definition der Harnwegsinfektion
+- typische und untypische Symptome
+- Risikofaktoren erkennen
+- Besonderheiten bei älteren Menschen
+- pflegerische Maßnahmen erklären
 
-👉 Wichtig: typische + untypische Symptome erkennen
+Typische Prüfungsfragen:
+
+- Was ist eine Harnwegsinfektion?
+- Welche Symptome treten auf?
+- Warum sind ältere Menschen besonders gefährdet?
+- Welche pflegerischen Maßnahmen sind wichtig?

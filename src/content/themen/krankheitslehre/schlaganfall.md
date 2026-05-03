@@ -8,82 +8,132 @@ level: pruefung
 
 ## Kurz erklärt
 
-Ein Schlaganfall (Apoplex) ist eine plötzliche Durchblutungsstörung im Gehirn, die zu Ausfällen von Körperfunktionen führt.
+Ein Schlaganfall (Apoplex) ist eine plötzliche Durchblutungsstörung im Gehirn, die zu einem Ausfall von Gehirnfunktionen führt.
+
+👉 Folge: Nervenzellen werden nicht mehr ausreichend mit Sauerstoff versorgt und sterben ab.
 
 ---
 
 ## Warum ist das wichtig für die Pflege?
 
-- absoluter Notfall  
-- schnelle Reaktion entscheidet über Prognose  
-- häufige Erkrankung im Pflegealltag  
+- absoluter medizinischer Notfall  
+- Zeit entscheidet über bleibende Schäden („Time is Brain“)  
+- häufig im Pflegealltag  
+- viele Patienten haben langfristige Einschränkungen  
 - sehr prüfungsrelevant  
 
 ---
 
 ## Was passiert im Körper?
 
-Teile des Gehirns werden nicht mehr ausreichend mit Sauerstoff versorgt.
+- Durchblutung im Gehirn wird unterbrochen  
+- Sauerstoffversorgung fällt aus  
+- Nervenzellen werden geschädigt oder sterben ab  
 
-👉 Folge:
-
-- Nervenzellen sterben ab  
-- Körperfunktionen fallen aus  
+👉 Je länger die Unterversorgung, desto größer der Schaden
 
 ---
 
 ## Ursachen
 
-- Gefäßverschluss (ischämischer Schlaganfall)  
-- Hirnblutung (hämorrhagischer Schlaganfall)  
+### Ischämischer Schlaganfall (häufigste Form)
+
+- Gefäß wird durch ein Blutgerinnsel verschlossen  
+- Gehirnareal wird nicht mehr durchblutet  
+
+---
+
+### Hämorrhagischer Schlaganfall
+
+- Blutgefäß im Gehirn reißt  
+- Blut tritt ins Gewebe aus und schädigt es  
 
 ---
 
 ## Typische Symptome
 
-- plötzliche Lähmung (oft einseitig)  
-- Sprachstörungen  
+- plötzliche einseitige Lähmung (Arm, Bein, Gesicht)  
+- hängender Mundwinkel  
+- Sprachstörungen (verwaschene Sprache, Wortfindungsstörung)  
 - Sehstörungen  
 - Schwindel  
-- Bewusstseinsveränderung  
+- Bewusstseinsveränderungen  
 
 ---
 
 ## FAST-Regel (sehr wichtig)
 
-- F = Face (hängender Mundwinkel)  
-- A = Arms (Arm kann nicht gehoben werden)  
-- S = Speech (verwaschene Sprache)  
-- T = Time (sofort handeln!)  
+- F = Face → hängt ein Mundwinkel?  
+- A = Arms → kann ein Arm nicht gehoben werden?  
+- S = Speech → ist die Sprache verwaschen?  
+- T = Time → sofort handeln, Notruf!  
+
+<div class="merkbox">
+<div class="merkbox-title">Merke: Time is Brain</div>
+
+Jede Minute zählt. Je schneller behandelt wird, desto mehr Gehirngewebe kann gerettet werden.
+
+</div>
 
 ---
 
 ## Beobachtungen in der Pflege
 
-- plötzliche Veränderungen  
-- einseitige Schwäche  
+- plötzlich auftretende Symptome  
+- einseitige Schwäche oder Lähmung  
 - Schluckstörungen  
 - Verwirrtheit  
+- Veränderungen der Sprache  
+- Bewusstseinslage  
 
 ---
 
-## Pflegebezug
+## Akuter Pflegebezug (Notfall!)
 
-- Notfall sofort erkennen  
-- Vitalzeichen überwachen  
-- Patienten beruhigen  
-- Komplikationen vermeiden (z. B. Aspiration)  
-- Mobilisation und Rehabilitation unterstützen  
+Wichtige Maßnahmen:
 
----
-
-## Wichtige pflegerische Maßnahmen
-
-- sofort Arzt / Notruf informieren  
+- sofort Notruf / Arzt informieren  
+- Patient nicht allein lassen  
 - Oberkörper leicht hoch lagern  
-- nichts zu essen oder trinken geben (Aspirationsgefahr!)  
-- Beobachtung und Dokumentation  
-- Unterstützung bei der Rehabilitation  
+- nichts essen oder trinken geben (Aspirationsgefahr!)  
+- Vitalzeichen überwachen  
+- beruhigend auf den Patienten einwirken  
+
+---
+
+## Komplikationen
+
+- Aspirationspneumonie  
+- Thrombosen durch Immobilität  
+- Dekubitus  
+- Schluckstörungen  
+- Sprachstörungen  
+- dauerhafte Lähmungen  
+
+---
+
+## Pflege im weiteren Verlauf
+
+Nach dem akuten Ereignis:
+
+- Mobilisation fördern  
+- Schlucken überprüfen  
+- Sturzprophylaxe  
+- Unterstützung bei der Körperpflege  
+- Kommunikation fördern  
+- Rehabilitation unterstützen  
+
+---
+
+## Rolle der Pflege
+
+Pflegekräfte haben eine zentrale Rolle:
+
+- Notfall erkennen  
+- schnell reagieren  
+- Komplikationen vermeiden  
+- Patienten langfristig begleiten  
+- Selbstständigkeit fördern  
 
 ---
 
@@ -91,9 +141,10 @@ Teile des Gehirns werden nicht mehr ausreichend mit Sauerstoff versorgt.
 
 Typische Fragen:
 
-- „Was ist ein Schlaganfall?“  
-- „Unterschied ischämisch vs. hämorrhagisch?“  
-- „Was ist die FAST-Regel?“  
-- „Welche pflegerischen Maßnahmen sind wichtig?“  
+- Was ist ein Schlaganfall?  
+- Unterschied zwischen ischämisch und hämorrhagisch?  
+- Was bedeutet die FAST-Regel?  
+- Welche Maßnahmen im Notfall?  
+- Welche Komplikationen können auftreten?  
 
-👉 Wichtig: Symptome erkennen + schnell handeln
+👉 Wichtig: Symptome erkennen + sofort handeln + Folgen verstehen

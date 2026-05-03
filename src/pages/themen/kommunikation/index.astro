@@ -4,42 +4,337 @@ import { getCollection } from "astro:content";
 
 const themen = await getCollection("themen");
 
-const categoryEntry = themen.find((entry) => entry.slug === "kommunikation");
-
-if (!categoryEntry) {
-  throw new Error('Kategorie "kommunikation" nicht gefunden.');
-}
-
-const subtopics = themen
-  .filter((entry) => entry.slug.startsWith("kommunikation/"))
+const items = themen
+  .filter((t) => t.slug.toLowerCase().startsWith("kommunikation/"))
   .sort((a, b) => a.data.title.localeCompare(b.data.title, "de"));
 
-const { Content } = await categoryEntry.render();
+const topicDescriptions = {
+  "kommunikation/grundlagen": {
+    badge: "Grundlage",
+    description:
+      "Verstehe die Grundlagen professioneller Kommunikation im Pflegealltag.",
+  },
+  "kommunikation/aktives-zuhoeren": {
+    badge: "Gesprächsführung",
+    description:
+      "Lerne, wie aktives Zuhören Vertrauen schafft und Gespräche strukturiert.",
+  },
+  "kommunikation/schwierige-gespraeche": {
+    badge: "Praxis",
+    description:
+      "Bereite dich auf belastende Gespräche mit Patientinnen, Patienten und Angehörigen vor.",
+  },
+  "kommunikation/gespraech-mit-angehoerigen": {
+    badge: "Angehörige",
+    description:
+      "Lerne, Angehörigengespräche klar, respektvoll und professionell zu führen.",
+  },
+  "kommunikation/deeskalation": {
+    badge: "Konflikt",
+    description:
+      "Erkenne angespannte Situationen frühzeitig und handle deeskalierend.",
+  },
+};
+
+const getTopicInfo = (item) => {
+  return (
+    topicDescriptions[item.slug] ?? {
+      badge: "Kommunikation",
+      description:
+        item.data.description ||
+        "Lerne, wie du in Pflegesituationen klar, respektvoll und professionell kommunizierst.",
+    }
+  );
+};
 ---
 
-<BaseLayout title="Kommunikation in der Pflege" description={categoryEntry.data.description}>
-  <article class="content">
-    <nav class="breadcrumbs">
-      <a href="/">Start</a>
-      <span class="breadcrumb-sep">›</span>
+<BaseLayout title="Kommunikation in der Pflege">
+  <main class="bereich-page">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Startseite</a>
+      <span>›</span>
       <a href="/themen/">Themen</a>
-      <span class="breadcrumb-sep">›</span>
-      <span class="current">Kommunikation in der Pflege</span>
+      <span>›</span>
+      <span>Kommunikation in der Pflege</span>
     </nav>
 
-    <Content />
+    <section class="hero-panel">
+      <p class="eyebrow">Themenbereich</p>
+      <h1>Kommunikation in der Pflege</h1>
+      <p class="hero-text">
+        Kommunikation ist eine zentrale Pflegekompetenz. Hier lernst du, Gespräche klar,
+        respektvoll und situationsgerecht zu führen.
+      </p>
+    </section>
 
-    <section class="related-topics" style="margin-top:32px;">
-      <h2>Unterthemen</h2>
+    <section class="info-panel">
+      <h2>Warum Kommunikation wichtig ist</h2>
+      <p>
+        Gute Pflege funktioniert nicht ohne gute Kommunikation. Du musst Informationen verstehen,
+        weitergeben, Vertrauen aufbauen und auch in schwierigen Situationen professionell bleiben.
+      </p>
+    </section>
 
-      <div class="topic-grid" style="margin-top:16px;">
-        {subtopics.map((item) => (
-          <a class="topic-card" href={`/themen/${item.slug}/`}>
-            <h3>{item.data.title}</h3>
-            {item.data.description ? <p>{item.data.description}</p> : null}
-          </a>
-        ))}
+    <section class="info-grid">
+      <article class="info-card">
+        <h3>Vertrauen aufbauen</h3>
+        <p>Du lernst, wie Sprache, Haltung und Zuhören Sicherheit vermitteln.</p>
+      </article>
+
+      <article class="info-card">
+        <h3>Informationen sichern</h3>
+        <p>Du führst Gespräche so, dass wichtige Informationen nicht verloren gehen.</p>
+      </article>
+
+      <article class="info-card">
+        <h3>Konflikte entschärfen</h3>
+        <p>Du erkennst Anspannung früh und reagierst ruhig, klar und professionell.</p>
+      </article>
+    </section>
+
+    <section class="info-panel">
+      <h2>Was du in diesem Bereich können solltest</h2>
+      <ul class="goal-list">
+        <li>Grundlagen professioneller Kommunikation erklären.</li>
+        <li>Aktiv zuhören und gezielt nachfragen.</li>
+        <li>Gespräche mit Patientinnen, Patienten und Angehörigen führen.</li>
+        <li>Schwierige Gesprächssituationen professionell bewältigen.</li>
+        <li>Deeskalierend kommunizieren und Grenzen klar setzen.</li>
+      </ul>
+    </section>
+
+    <section class="topics-panel">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Übersicht</p>
+          <h2>Alle Kommunikations-Themen</h2>
+        </div>
+        <span class="count-badge">{items.length} Themen</span>
+      </div>
+
+      <div class="topic-grid">
+        {items.map((t, index) => {
+          const info = getTopicInfo(t);
+
+          return (
+            <a class="topic-card" href={`/themen/${t.slug}/`}>
+              <div class="badge-row">
+                <span class="topic-badge">Thema {index + 1}</span>
+                <span class="type-badge">{info.badge}</span>
+              </div>
+
+              <h3>{t.data.title}</h3>
+              <p>{info.description}</p>
+              <span class="open-link">Thema öffnen →</span>
+            </a>
+          );
+        })}
       </div>
     </section>
-  </article>
+  </main>
 </BaseLayout>
+
+<style>
+  .bereich-page {
+    display: grid;
+    gap: 24px;
+  }
+
+  .breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    color: #64748b;
+    font-size: 0.95rem;
+  }
+
+  .breadcrumb a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  .hero-panel,
+  .info-panel,
+  .topics-panel {
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
+    background: #ffffff;
+    padding: 28px;
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+  }
+
+  .hero-panel {
+    background: linear-gradient(135deg, #eff6ff 0%, #ffffff 58%, #f8fafc 100%);
+  }
+
+  .eyebrow {
+    margin: 0 0 10px;
+    color: #2563eb;
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(2.1rem, 4vw, 3.4rem);
+    line-height: 1.05;
+    color: #0f172a;
+  }
+
+  .hero-text {
+    max-width: 760px;
+    margin: 16px 0 0;
+    color: #475569;
+    font-size: 1.08rem;
+    line-height: 1.7;
+  }
+
+  .info-panel h2,
+  .topics-panel h2 {
+    margin: 0 0 12px;
+    color: #0f172a;
+    font-size: 1.45rem;
+  }
+
+  .info-panel p {
+    margin: 0;
+    color: #475569;
+    line-height: 1.75;
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .info-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 22px;
+    background: #ffffff;
+    padding: 22px;
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.05);
+  }
+
+  .info-card h3 {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 1.08rem;
+  }
+
+  .info-card p {
+    margin: 0;
+    color: #64748b;
+    line-height: 1.65;
+  }
+
+  .goal-list {
+    margin: 0;
+    padding-left: 20px;
+    color: #475569;
+    line-height: 1.8;
+  }
+
+  .section-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .count-badge {
+    flex: 0 0 auto;
+    border-radius: 999px;
+    background: #dbeafe;
+    color: #1d4ed8;
+    padding: 8px 14px;
+    font-size: 0.9rem;
+    font-weight: 800;
+  }
+
+  .topic-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .topic-card {
+    display: flex;
+    min-height: 220px;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #e2e8f0;
+    border-radius: 22px;
+    background: #ffffff;
+    padding: 22px;
+    text-decoration: none;
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.05);
+    transition:
+      transform 0.18s ease,
+      box-shadow 0.18s ease,
+      border-color 0.18s ease;
+  }
+
+  .topic-card:hover {
+    transform: translateY(-3px);
+    border-color: #bfdbfe;
+    box-shadow: 0 18px 38px rgba(37, 99, 235, 0.12);
+  }
+
+  .badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .topic-badge,
+  .type-badge {
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-size: 0.78rem;
+    font-weight: 800;
+  }
+
+  .topic-badge {
+    background: #eff6ff;
+    color: #2563eb;
+  }
+
+  .type-badge {
+    background: #f1f5f9;
+    color: #475569;
+  }
+
+  .topic-card h3 {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 1.12rem;
+  }
+
+  .topic-card p {
+    margin: 0 0 20px;
+    color: #64748b;
+    line-height: 1.65;
+  }
+
+  .open-link {
+    margin-top: auto;
+    color: #2563eb;
+    font-weight: 800;
+  }
+
+  @media (max-width: 900px) {
+    .info-grid,
+    .topic-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .section-head {
+      flex-direction: column;
+    }
+  }
+</style>

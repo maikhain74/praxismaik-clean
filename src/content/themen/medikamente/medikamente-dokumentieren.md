@@ -1,216 +1,159 @@
 ---
-
 title: Medikamente dokumentieren
-
 description: Bedeutung und Grundlagen der Dokumentation bei der Medikamentengabe.
-
+level: grundlagen
 ---
-
-
 
 # Medikamente dokumentieren
 
+## Kurz erklärt
 
+Die Dokumentation der Medikamentengabe ist ein verpflichtender Teil der Pflegehandlung.
 
-Die Dokumentation der Medikamentengabe gehört zu den wichtigsten Aufgaben in der Pflege. Sie dient der Nachvollziehbarkeit, der Patientensicherheit und der rechtlichen Absicherung.
+👉 Eine Medikamentengabe gilt erst als vollständig, wenn sie dokumentiert wurde.
 
-
-
-Nach jeder Medikamentengabe muss die Verabreichung korrekt dokumentiert werden.
-
-
+---
 
 ## Warum Dokumentation wichtig ist
 
+Die Dokumentation erfüllt mehrere Funktionen:
 
+- Nachvollziehbarkeit der Behandlung  
+- Informationsweitergabe im Team  
+- Patientensicherheit  
+- rechtliche Absicherung  
+- Grundlage für ärztliche Entscheidungen  
 
-Die Dokumentation erfüllt mehrere wichtige Funktionen:
+👉 Ohne Dokumentation kann nicht bewiesen werden, dass ein Medikament gegeben wurde.
 
+---
 
+## Rechtliche Bedeutung
 
-- Nachvollziehbarkeit der Behandlung
+Im Pflegealltag gilt der Grundsatz:
 
-- Informationsweitergabe im Team
+👉 „Was nicht dokumentiert ist, gilt als nicht durchgeführt.“
 
-- Sicherheit für Patienten
+Das bedeutet:
 
-- rechtliche Absicherung für Pflegekräfte
+- fehlende Dokumentation = rechtliches Risiko  
+- kann im Schadensfall Folgen haben  
 
-- Grundlage für ärztliche Entscheidungen
-
-
-
-Ohne Dokumentation kann nicht nachvollzogen werden, ob ein Medikament tatsächlich gegeben wurde.
-
-
+---
 
 ## Was dokumentiert werden muss
 
+Bei jeder Medikamentengabe müssen festgehalten werden:
 
+- Name des Medikaments  
+- Dosierung  
+- Zeitpunkt der Gabe  
+- Applikationsform  
+- Kürzel oder Unterschrift  
 
-Bei der Medikamentengabe müssen verschiedene Informationen festgehalten werden.
-
-
-
-Dazu gehören zum Beispiel:
-
-
-
-- Name des Medikaments
-
-- Dosierung
-
-- Zeitpunkt der Gabe
-
-- Applikationsform
-
-- Besonderheiten oder Auffälligkeiten
-
-- Unterschrift oder Kürzel der Pflegekraft
-
-
-
-In vielen Einrichtungen erfolgt die Dokumentation heute digital.
-
-
+---
 
 ## Dokumentation bei Besonderheiten
 
+Besondere Situationen müssen immer dokumentiert werden:
 
+- Medikament verweigert  
+- Gabe nicht möglich  
+- verspätete Gabe  
+- Nebenwirkungen oder Auffälligkeiten  
 
-Auch besondere Situationen müssen dokumentiert werden.
+👉 besonders wichtig für die weitere Behandlung
 
+---
 
+## Typische Fehlerquellen
 
-Zum Beispiel:
+- Dokumentation vergessen  
+- zu spät dokumentiert  
+- unvollständig  
+- unklare oder unleserliche Einträge  
+- Besonderheiten nicht festgehalten  
 
+<div class="merkbox">
+<div class="merkbox-title">Merke: Dokumentation ist Pflicht</div>
 
+Eine korrekte Medikamentengabe ohne Dokumentation gilt als unvollständig.
 
-- Medikament wurde verweigert
+</div>
 
-- Medikament konnte nicht gegeben werden
+---
 
-- Medikament wurde verspätet gegeben
+## Grundregeln der Dokumentation
 
-- Auffällige Reaktionen nach der Gabe
+- **zeitnah** dokumentieren  
+- **vollständig** dokumentieren  
+- **sachlich** dokumentieren  
+- **nachvollziehbar** dokumentieren  
 
+---
 
+## Pflegebezug
 
-Diese Informationen sind wichtig für die weitere Behandlung.
+Pflegekräfte müssen:
 
+- jede Gabe dokumentieren  
+- Besonderheiten festhalten  
+- Informationen weitergeben  
+- sorgfältig und korrekt arbeiten  
 
+---
 
 ## Dokumentation im Team
 
+Die Dokumentation ist ein zentrales Kommunikationsmittel.
 
+Andere müssen erkennen können:
 
-Die Pflegedokumentation ist ein wichtiges Kommunikationsmittel im Team.
+- was wurde gegeben  
+- wann wurde es gegeben  
+- gab es Probleme  
 
+---
 
+## Praxis
 
-Andere Pflegekräfte und Ärzte müssen nachvollziehen können:
+Dokumentation erfolgt heute häufig:
 
+- digital (Pflegesoftware)  
+- oder schriftlich (Medikamentenplan, Kurve)  
 
+---
 
-- welche Medikamente gegeben wurden
-
-- wann sie gegeben wurden
-
-- ob Probleme aufgetreten sind
-
-
-
-## Typische Fehler bei der Dokumentation
-
-
-
-Fehler entstehen häufig durch:
-
-
-
-- verspätete Dokumentation
-
-- unvollständige Angaben
-
-- unleserliche Einträge
-
-- fehlende Information bei Besonderheiten
-
-
-
-<div class="info-box info-box-merke">
-
-<div class="info-box-title">💡 Merke</div>
-
-
-
-Eine Medikamentengabe gilt nur dann als sicher durchgeführt, wenn sie korrekt dokumentiert wurde.
-
-
-
-Dokumentation gehört immer zur Medikamentengabe dazu.
-
-
-
-</div>
-
-
+## Wichtige Regel
 
 <div class="info-box info-box-achtung">
-
 <div class="info-box-title">⚠️ Achtung</div>
 
+Dokumentation darf niemals im Voraus erfolgen.
 
-
-Die Dokumentation darf nicht im Voraus erfolgen.
-
-
-
-Ein Medikament darf erst dokumentiert werden, nachdem es tatsächlich verabreicht wurde.
-
-
+Nur tatsächlich durchgeführte Maßnahmen dürfen dokumentiert werden.
 
 </div>
 
+---
 
+## Rolle der Pflege
 
-<div class="info-box info-box-praxis">
+Pflegekräfte tragen Verantwortung für:
 
-<div class="info-box-title">🩺 Praxis-Tipp</div>
+- korrekte Durchführung  
+- vollständige Dokumentation  
+- sichere Weitergabe von Informationen  
 
+---
 
+## Prüfungsrelevant
 
-Die Dokumentation sollte möglichst direkt nach der Medikamentengabe erfolgen.
+Typische Fragen:
 
+- Warum ist Dokumentation wichtig?  
+- Was muss dokumentiert werden?  
+- Welche Fehler können auftreten?  
+- Warum darf nicht im Voraus dokumentiert werden?  
 
-
-So wird vermieden, dass Einträge vergessen oder verwechselt werden.
-
-
-
-</div>
-
-
-
-## Bedeutung für die Pflegepraxis
-
-
-
-Eine sorgfältige Dokumentation unterstützt die sichere Versorgung von Patienten und Bewohnern.
-
-
-
-Sie hilft dem gesamten Behandlungsteam, den Überblick über die Medikation zu behalten.
-
-
-
-## Typische Prüfungsfragen
-
-
-
-- Warum ist die Dokumentation der Medikamentengabe wichtig?
-
-- Welche Informationen müssen dokumentiert werden?
-
-- Warum darf die Dokumentation nicht im Voraus erfolgen?
-
+👉 Wichtig: Recht + Sicherheit + Praxis verstehen

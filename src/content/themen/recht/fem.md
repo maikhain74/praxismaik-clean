@@ -1,121 +1,137 @@
 ---
 title: Freiheitsentziehende Maßnahmen
 description: Rechtliche Grundlagen freiheitsentziehender Maßnahmen in der Pflege.
+level: vertiefung
 ---
 
 # Freiheitsentziehende Maßnahmen
 
-Freiheitsentziehende Maßnahmen (FEM) sind Maßnahmen, die die Bewegungsfreiheit eines Menschen einschränken oder verhindern.
+Freiheitsentziehende Maßnahmen (FEM) sind Maßnahmen, die die Bewegungsfreiheit eines Menschen einschränken oder vollständig verhindern.
 
-Sie dürfen nur unter bestimmten rechtlichen Voraussetzungen angewendet werden.
+Sie greifen direkt in die Grundrechte ein, insbesondere in das Recht auf Freiheit und Selbstbestimmung. Deshalb dürfen sie nur unter strengen rechtlichen Voraussetzungen angewendet werden.
 
-## Beispiele für freiheitsentziehende Maßnahmen
+## Was als freiheitsentziehende Maßnahme gilt
+
+Eine Maßnahme gilt als freiheitsentziehend, wenn eine Person daran gehindert wird, ihren Aufenthaltsort frei zu verlassen.
+
+Wichtig: Es kommt immer auf die konkrete Situation an.
 
 Typische Beispiele sind:
 
-- Bettgitter
-- Fixierungen
-- Gurtsysteme
+- Bettgitter (wenn die Person nicht selbst herauskommt)
+- Fixierungen (z. B. Gurte im Bett oder Stuhl)
+- Tischbretter am Rollstuhl
 - verschlossene Türen
-- Tabletttische am Rollstuhl
 - Weglaufschutzsysteme
+- sedierende Medikamente, wenn sie gezielt zur Ruhigstellung eingesetzt werden
 
-Auch scheinbar kleine Maßnahmen können bereits eine Freiheitsentziehung darstellen.
+Auch scheinbar „harmlose“ Maßnahmen können eine Freiheitsentziehung darstellen.
 
 ## Warum freiheitsentziehende Maßnahmen problematisch sind
 
-Freiheitsentziehende Maßnahmen greifen stark in die persönlichen Rechte eines Menschen ein.
+FEM haben erhebliche Auswirkungen auf die betroffene Person.
 
-Sie können außerdem Risiken mit sich bringen, zum Beispiel:
+Mögliche Folgen sind:
 
-- Verletzungen
-- Angst oder Unruhe
+- Angst und Unruhe
+- Vertrauensverlust
 - Verschlechterung der Mobilität
-- Verlust von Selbstständigkeit
+- erhöhte Sturzgefahr
+- Verletzungen (z. B. bei Fixierungen)
+- Verlust von Selbstständigkeit und Würde
 
-Deshalb müssen sie immer kritisch geprüft werden.
+Deshalb müssen sie immer kritisch hinterfragt werden.
 
 ## Rechtliche Voraussetzungen
 
-Freiheitsentziehende Maßnahmen sind nur erlaubt, wenn bestimmte Voraussetzungen erfüllt sind.
+Freiheitsentziehende Maßnahmen sind nur erlaubt, wenn klare Voraussetzungen erfüllt sind.
 
-Dazu gehören zum Beispiel:
+Dazu gehören:
 
-- Einwilligung der betroffenen Person
-- Zustimmung eines gesetzlichen Betreuers
-- gerichtliche Genehmigung
+- Einwilligung der betroffenen Person (wenn einwilligungsfähig)
+- oder stellvertretende Einwilligung (z. B. durch Betreuer)
+- gerichtliche Genehmigung durch das Betreuungsgericht
 
-In vielen Fällen ist eine Genehmigung durch das Betreuungsgericht erforderlich.
+Ohne diese Voraussetzungen ist die Maßnahme rechtswidrig.
+
+<div class="merkbox">
+<div class="merkbox-title">Merke: FEM brauchen fast immer eine richterliche Genehmigung</div>
+
+Ohne Genehmigung sind freiheitsentziehende Maßnahmen in der Regel unzulässig.
+
+</div>
 
 ## Freiheitsentziehende Maßnahmen im Notfall
 
-In akuten Notfällen kann eine freiheitsentziehende Maßnahme kurzfristig notwendig sein.
+In akuten Notfallsituationen kann eine FEM kurzfristig notwendig sein.
 
-Zum Beispiel wenn:
+Zum Beispiel bei:
 
-- eine akute Selbstgefährdung besteht
-- eine erhebliche Fremdgefährdung vorliegt
+- akuter Selbstgefährdung (z. B. Sturzgefahr, Herausziehen von Zugängen)
+- erheblicher Fremdgefährdung
 
-Auch in solchen Situationen muss die Maßnahme so schnell wie möglich rechtlich geprüft werden.
+Wichtig:
 
-## Aufgaben der Pflege
-
-Pflegekräfte müssen besonders sorgfältig prüfen, ob eine freiheitsentziehende Maßnahme wirklich notwendig ist.
-
-Wichtige Aufgaben sind:
-
-- Risiko einschätzen
-- Alternativen prüfen
-- Beobachtungen dokumentieren
-- Maßnahmen regelmäßig überprüfen
+- Maßnahme nur so kurz wie möglich anwenden
+- sofort ärztliche und rechtliche Klärung einleiten
+- Situation dokumentieren
 
 ## Alternativen zu freiheitsentziehenden Maßnahmen
 
-Oft können andere Maßnahmen helfen, ohne die Freiheit einzuschränken.
+FEM dürfen nur eingesetzt werden, wenn keine andere Möglichkeit besteht.
 
-Beispiele:
+Deshalb müssen immer Alternativen geprüft werden.
 
-- Anpassung der Umgebung
+Mögliche Alternativen sind:
+
+- Anpassung der Umgebung (z. B. niedriges Bett)
 - Bewegungsförderung
 - engmaschige Betreuung
-- technische Hilfsmittel
+- Orientierungshilfen
+- Einsatz von Hilfsmitteln (z. B. Sensormatten)
+- Gespräche und Beruhigung
 
-<div class="info-box info-box-merke">
-<div class="info-box-title">💡 Merke</div>
+Ziel ist es, Sicherheit zu schaffen, ohne die Freiheit unnötig einzuschränken.
 
-Freiheitsentziehende Maßnahmen greifen in die Grundrechte eines Menschen ein und dürfen nur unter strengen Voraussetzungen angewendet werden.
+## Rolle der Pflege
 
-</div>
+Pflegekräfte tragen eine hohe Verantwortung im Umgang mit FEM.
 
-<div class="info-box info-box-achtung">
-<div class="info-box-title">⚠️ Achtung</div>
+Wichtige Aufgaben sind:
 
-Auch Bettgitter können bereits eine freiheitsentziehende Maßnahme darstellen.
+- Risiken einschätzen (z. B. Sturzgefahr)
+- Alternativen prüfen und umsetzen
+- Maßnahmen kritisch hinterfragen
+- Beobachtungen dokumentieren
+- regelmäßig überprüfen, ob die Maßnahme noch notwendig ist
+- interprofessionell zusammenarbeiten
 
-Ob eine Maßnahme als freiheitsentziehend gilt, hängt immer von der konkreten Situation ab.
-
-</div>
-
-<div class="info-box info-box-praxis">
-<div class="info-box-title">🩺 Praxis-Tipp</div>
-
-Bevor eine freiheitsentziehende Maßnahme eingesetzt wird, sollte immer geprüft werden:
-
-- Gibt es eine weniger einschränkende Alternative?
-- Kann die Umgebung angepasst werden?
-- Kann zusätzliche Betreuung helfen?
-
-</div>
+Pflegekräfte müssen immer zwischen Sicherheit und Selbstbestimmung abwägen.
 
 ## Bedeutung für die Pflegepraxis
 
-Pflegekräfte stehen häufig vor schwierigen Entscheidungen zwischen Sicherheit und Selbstbestimmung.
+FEM gehören zu den sensibelsten Themen in der Pflege.
 
-Ein verantwortungsvoller Umgang mit freiheitsentziehenden Maßnahmen ist deshalb ein wichtiger Teil professioneller Pflege.
+Ein professioneller Umgang bedeutet:
 
-## Typische Prüfungsfragen
+- Rechte der Betroffenen achten
+- Maßnahmen nur im Ausnahmefall einsetzen
+- Entscheidungen begründen können
+- regelmäßig überprüfen
 
-- Was versteht man unter freiheitsentziehenden Maßnahmen?
-- Nennen Sie Beispiele für freiheitsentziehende Maßnahmen.
-- Wann sind freiheitsentziehende Maßnahmen erlaubt?
+## Prüfungsrelevant
+
+In Prüfungen zählt vor allem:
+
+- Definition freiheitsentziehender Maßnahmen
+- typische Beispiele erkennen
+- rechtliche Voraussetzungen kennen
+- Bedeutung von Alternativen verstehen
+- Rolle der Pflege erklären
+
+Typische Prüfungsfragen:
+
+- Was sind freiheitsentziehende Maßnahmen?
+- Nennen Sie Beispiele für FEM.
+- Wann sind FEM erlaubt?
 - Warum müssen Alternativen geprüft werden?

@@ -3,23 +3,344 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 
 const themen = await getCollection("themen");
-const items = themen.filter((t) => t.slug.toLowerCase().startsWith("krankheitslehre/"));
+
+const items = themen
+  .filter((t) => t.slug.toLowerCase().startsWith("krankheitslehre/"))
+  .sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+const topicDescriptions = {
+  "krankheitslehre/diabetes-mellitus": {
+    badge: "Stoffwechsel",
+    description:
+      "Verstehe Diabetes mellitus, typische Symptome, Beobachtungsschwerpunkte, Risiken und pflegerische Maßnahmen im Alltag.",
+  },
+  "krankheitslehre/herzinsuffizienz": {
+    badge: "Herz-Kreislauf",
+    description:
+      "Lerne, woran du eine Herzinsuffizienz erkennst und welche pflegerischen Beobachtungen besonders wichtig sind.",
+  },
+  "krankheitslehre/copd": {
+    badge: "Atmung",
+    description:
+      "Erkenne typische Beschwerden bei COPD und verstehe, wie Pflege bei Atemnot, Belastung und Exazerbationen unterstützt.",
+  },
+  "krankheitslehre/pneumonie": {
+    badge: "Infektion",
+    description:
+      "Verstehe Ursachen, Symptome, Risiken und pflegerische Maßnahmen bei einer Lungenentzündung.",
+  },
+  "krankheitslehre/schlaganfall": {
+    badge: "Neurologie",
+    description:
+      "Lerne Warnzeichen, Folgen und pflegerische Schwerpunkte bei Menschen nach einem Schlaganfall kennen.",
+  },
+  "krankheitslehre/demenz": {
+    badge: "Neurologie",
+    description:
+      "Verstehe Demenz als Krankheitsbild und lerne, worauf es bei Beobachtung, Kommunikation und Pflege ankommt.",
+  },
+};
+
+const getTopicInfo = (item) => {
+  return (
+    topicDescriptions[item.slug] ?? {
+      badge: "Krankheitsbild",
+      description:
+        item.data.description ||
+        "Lerne dieses Krankheitsbild mit Symptomen, Beobachtung, Pflegefokus und wichtigen Maßnahmen kennen.",
+    }
+  );
+};
 ---
 
 <BaseLayout title="Krankheitslehre">
-  <h1>Krankheitslehre</h1>
-  <p class="muted">Krankheitsbilder verstehen, Symptome, Pflegefokus, Maßnahmen.</p>
+  <main class="bereich-page">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Startseite</a>
+      <span>›</span>
+      <a href="/themen/">Themen</a>
+      <span>›</span>
+      <span>Krankheitslehre</span>
+    </nav>
 
-  {items.length === 0 ? (
-    <p class="muted">Noch keine Inhalte in diesem Bereich.</p>
-  ) : (
-    <div class="topic-grid" style="margin-top:20px;">
-      {items.map((t) => (
-        <a class="topic-card" href={`/themen/${t.slug}/`}>
-          <h2>{t.data.title}</h2>
-          <p>{t.data.description}</p>
-        </a>
-      ))}
-    </div>
-  )}
+    <section class="hero-panel">
+      <p class="eyebrow">Themenbereich</p>
+      <h1>Krankheitslehre</h1>
+      <p class="hero-text">
+        In der Krankheitslehre lernst du, Krankheitsbilder zu verstehen, Symptome einzuordnen
+        und daraus sinnvolle pflegerische Beobachtungen und Maßnahmen abzuleiten.
+      </p>
+    </section>
+
+    <section class="info-panel">
+      <h2>Warum Krankheitslehre wichtig ist</h2>
+      <p>
+        Pflege bedeutet nicht nur Maßnahmen auszuführen. Du musst erkennen, was sich bei einem
+        Menschen verändert, welche Risiken entstehen und wann du handeln oder weitergeben musst.
+        Dafür brauchst du ein klares Verständnis von Krankheitsbildern.
+      </p>
+    </section>
+
+    <section class="info-grid">
+      <article class="info-card">
+        <h3>Symptome erkennen</h3>
+        <p>Du lernst typische Krankheitszeichen zu beobachten und richtig einzuordnen.</p>
+      </article>
+
+      <article class="info-card">
+        <h3>Risiken verstehen</h3>
+        <p>Du erkennst mögliche Komplikationen und weißt, worauf du achten musst.</p>
+      </article>
+
+      <article class="info-card">
+        <h3>Pflege ableiten</h3>
+        <p>Du verbindest Wissen über Krankheiten mit konkretem pflegerischem Handeln.</p>
+      </article>
+    </section>
+
+    <section class="info-panel">
+      <h2>Was du in diesem Bereich können solltest</h2>
+      <ul class="goal-list">
+        <li>Krankheitsbilder mit Ursachen, Symptomen und Verlauf erklären.</li>
+        <li>Wichtige Beobachtungsschwerpunkte benennen.</li>
+        <li>Pflegerische Maßnahmen passend zum Krankheitsbild ableiten.</li>
+        <li>Warnzeichen und Komplikationen frühzeitig erkennen.</li>
+        <li>Fachwissen verständlich in Pflegeberichte und Übergaben einbringen.</li>
+      </ul>
+    </section>
+
+    <section class="topics-panel">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Übersicht</p>
+          <h2>Alle Krankheitslehre-Themen</h2>
+        </div>
+        <span class="count-badge">{items.length} Themen</span>
+      </div>
+
+      <div class="topic-grid">
+        {items.map((t, index) => {
+          const info = getTopicInfo(t);
+
+          return (
+            <a class="topic-card" href={`/themen/${t.slug}/`}>
+              <div class="badge-row">
+                <span class="topic-badge">Thema {index + 1}</span>
+                <span class="type-badge">{info.badge}</span>
+              </div>
+
+              <h3>{t.data.title}</h3>
+              <p>{info.description}</p>
+              <span class="open-link">Thema öffnen →</span>
+            </a>
+          );
+        })}
+      </div>
+    </section>
+  </main>
 </BaseLayout>
+
+<style>
+  .bereich-page {
+    display: grid;
+    gap: 24px;
+  }
+
+  .breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    color: #64748b;
+    font-size: 0.95rem;
+  }
+
+  .breadcrumb a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  .hero-panel,
+  .info-panel,
+  .topics-panel {
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
+    background: #ffffff;
+    padding: 28px;
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+  }
+
+  .hero-panel {
+    background: linear-gradient(135deg, #eff6ff 0%, #ffffff 58%, #f8fafc 100%);
+  }
+
+  .eyebrow {
+    margin: 0 0 10px;
+    color: #2563eb;
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(2.1rem, 4vw, 3.4rem);
+    line-height: 1.05;
+    color: #0f172a;
+  }
+
+  .hero-text {
+    max-width: 760px;
+    margin: 16px 0 0;
+    color: #475569;
+    font-size: 1.08rem;
+    line-height: 1.7;
+  }
+
+  .info-panel h2,
+  .topics-panel h2 {
+    margin: 0 0 12px;
+    color: #0f172a;
+    font-size: 1.45rem;
+  }
+
+  .info-panel p {
+    margin: 0;
+    color: #475569;
+    line-height: 1.75;
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .info-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 22px;
+    background: #ffffff;
+    padding: 22px;
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.05);
+  }
+
+  .info-card h3 {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 1.08rem;
+  }
+
+  .info-card p {
+    margin: 0;
+    color: #64748b;
+    line-height: 1.65;
+  }
+
+  .goal-list {
+    margin: 0;
+    padding-left: 20px;
+    color: #475569;
+    line-height: 1.8;
+  }
+
+  .section-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .count-badge {
+    flex: 0 0 auto;
+    border-radius: 999px;
+    background: #dbeafe;
+    color: #1d4ed8;
+    padding: 8px 14px;
+    font-size: 0.9rem;
+    font-weight: 800;
+  }
+
+  .topic-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .topic-card {
+    display: flex;
+    min-height: 220px;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #e2e8f0;
+    border-radius: 22px;
+    background: #ffffff;
+    padding: 22px;
+    text-decoration: none;
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.05);
+    transition:
+      transform 0.18s ease,
+      box-shadow 0.18s ease,
+      border-color 0.18s ease;
+  }
+
+  .topic-card:hover {
+    transform: translateY(-3px);
+    border-color: #bfdbfe;
+    box-shadow: 0 18px 38px rgba(37, 99, 235, 0.12);
+  }
+
+  .badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .topic-badge,
+  .type-badge {
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-size: 0.78rem;
+    font-weight: 800;
+  }
+
+  .topic-badge {
+    background: #eff6ff;
+    color: #2563eb;
+  }
+
+  .type-badge {
+    background: #f1f5f9;
+    color: #475569;
+  }
+
+  .topic-card h3 {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 1.12rem;
+  }
+
+  .topic-card p {
+    margin: 0 0 20px;
+    color: #64748b;
+    line-height: 1.65;
+  }
+
+  .open-link {
+    margin-top: auto;
+    color: #2563eb;
+    font-weight: 800;
+  }
+
+  @media (max-width: 900px) {
+    .info-grid,
+    .topic-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .section-head {
+      flex-direction: column;
+    }
+  }
+</style>

@@ -4,81 +4,368 @@ import { getCollection } from "astro:content";
 
 const themen = await getCollection("themen");
 
-const einsatzbereiche = themen
-  .filter((item) => item.slug.startsWith("einsatzbereiche/"))
+const items = themen
+  .filter((t) => t.slug.toLowerCase().startsWith("einsatzbereiche/"))
   .sort((a, b) => (a.data.order ?? 999) - (b.data.order ?? 999));
+
+const topicDescriptions = {
+  "einsatzbereiche/krankenhaus": {
+    badge: "Akutpflege",
+    description:
+      "Lerne den Pflegealltag im Krankenhaus mit Diagnostik, Behandlung und interprofessioneller Zusammenarbeit kennen.",
+  },
+  "einsatzbereiche/stationaere-langzeitpflege": {
+    badge: "Langzeitpflege",
+    description:
+      "Verstehe Pflege in stationären Einrichtungen mit Beziehungsgestaltung, Alltag und dauerhafter Begleitung.",
+  },
+  "einsatzbereiche/ambulante-pflege": {
+    badge: "Häuslichkeit",
+    description:
+      "Lerne die Besonderheiten der ambulanten Pflege im häuslichen Umfeld kennen.",
+  },
+  "einsatzbereiche/tagespflege": {
+    badge: "Betreuung",
+    description:
+      "Verstehe Tagespflege als Bindeglied zwischen häuslicher Versorgung, Betreuung und Entlastung.",
+  },
+  "einsatzbereiche/intensivpflege": {
+    badge: "Intensiv",
+    description:
+      "Lerne Besonderheiten der Intensivpflege mit Überwachung, Technik und hoher Verantwortung kennen.",
+  },
+  "einsatzbereiche/psychiatrie": {
+    badge: "Psychiatrie",
+    description:
+      "Verstehe Pflege in psychiatrischen Settings mit Beziehung, Sicherheit und Kommunikation.",
+  },
+  "einsatzbereiche/paediatrie": {
+    badge: "Kinderpflege",
+    description:
+      "Lerne Besonderheiten der Pflege von Kindern und Jugendlichen sowie den Einbezug der Familie kennen.",
+  },
+  "einsatzbereiche/rehabilitation": {
+    badge: "Reha",
+    description:
+      "Verstehe Rehabilitation mit Förderung von Selbstständigkeit, Mobilität und Teilhabe.",
+  },
+  "einsatzbereiche/palliative-care": {
+    badge: "Palliativ",
+    description:
+      "Lerne den Einsatzbereich Palliative Care mit Symptomlinderung, Würde und Begleitung kennen.",
+  },
+  "einsatzbereiche/hospiz": {
+    badge: "Hospiz",
+    description:
+      "Verstehe Hospizarbeit mit Sterbebegleitung, Angehörigenarbeit und würdevoller Versorgung.",
+  },
+  "einsatzbereiche/interprofessionelle-zusammenarbeit": {
+    badge: "Teamarbeit",
+    description:
+      "Lerne, wie Pflege mit anderen Berufsgruppen zusammenarbeitet und Informationen sicher weitergibt.",
+  },
+};
+
+const getTopicInfo = (item) => {
+  return (
+    topicDescriptions[item.slug] ?? {
+      badge: "Einsatzbereich",
+      description:
+        item.data.description ||
+        "Lerne diesen Einsatzbereich und seine Bedeutung für die Pflegepraxis kennen.",
+    }
+  );
+};
 ---
 
 <BaseLayout title="Einsatzbereiche in der Pflege">
+  <main class="bereich-page">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Startseite</a>
+      <span>›</span>
+      <a href="/themen/">Themen</a>
+      <span>›</span>
+      <span>Einsatzbereiche in der Pflege</span>
+    </nav>
 
-  <section class="container">
-    <h1>Einsatzbereiche in der Pflege</h1>
+    <section class="hero-panel">
+      <p class="eyebrow">Themenbereich</p>
+      <h1>Einsatzbereiche in der Pflege</h1>
+      <p class="hero-text">
+        Einsatzbereiche zeigen dir, wo Pflege stattfindet und wie sich Aufgaben,
+        Verantwortung und Alltag je nach Setting unterscheiden.
+      </p>
+    </section>
 
-    <p class="intro">
-      Einsatzbereiche zeigen dir, <strong>wo Pflege stattfindet</strong> und
-      <strong>wie sich der Alltag je nach Setting unterscheidet</strong>.
-    </p>
+    <section class="info-panel">
+      <h2>Warum Einsatzbereiche wichtig sind</h2>
+      <p>
+        Pflege sieht nicht überall gleich aus. Krankenhaus, Langzeitpflege,
+        ambulante Pflege, Psychiatrie oder Hospiz haben unterschiedliche Abläufe,
+        Schwerpunkte und Anforderungen an dich als Pflegefachperson.
+      </p>
+    </section>
 
-    <p class="intro">
-      Wichtig: Hier lernst du <strong>keine einzelnen Krankheitsbilder oder Maßnahmen</strong>,
-      sondern den <strong>Kontext der Pflegepraxis</strong>.
-    </p>
-  </section>
+    <section class="info-grid">
+      <article class="info-card">
+        <h3>Settings verstehen</h3>
+        <p>Du lernst, wie sich Pflege je nach Einsatzort verändert.</p>
+      </article>
 
-  <section class="container cards">
-    {einsatzbereiche.map((bereich) => (
-      <a href={`/themen/${bereich.slug}/`} class="card">
-        <h2>{bereich.data.title}</h2>
-        {bereich.data.description ? <p>{bereich.data.description}</p> : null}
-      </a>
-    ))}
-  </section>
+      <article class="info-card">
+        <h3>Rollen erkennen</h3>
+        <p>Du verstehst Aufgaben, Verantwortung und Zusammenarbeit im jeweiligen Bereich.</p>
+      </article>
 
+      <article class="info-card">
+        <h3>Praxis einordnen</h3>
+        <p>Du kannst Erfahrungen aus Einsätzen besser verstehen und reflektieren.</p>
+      </article>
+    </section>
+
+    <section class="info-panel">
+      <h2>Was du in diesem Bereich können solltest</h2>
+      <ul class="goal-list">
+        <li>Wichtige Einsatzbereiche der Pflege unterscheiden.</li>
+        <li>Typische Aufgaben und Schwerpunkte benennen.</li>
+        <li>Besondere Anforderungen einzelner Settings erklären.</li>
+        <li>Interprofessionelle Zusammenarbeit einordnen.</li>
+        <li>Pflegepraxis je nach Einsatzort reflektieren.</li>
+      </ul>
+    </section>
+
+    <section class="topics-panel">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Übersicht</p>
+          <h2>Alle Einsatzbereich-Themen</h2>
+        </div>
+        <span class="count-badge">{items.length} Themen</span>
+      </div>
+
+      <div class="topic-grid">
+        {items.map((t, index) => {
+          const info = getTopicInfo(t);
+
+          return (
+            <a class="topic-card" href={`/themen/${t.slug}/`}>
+              <div class="badge-row">
+                <span class="topic-badge">Thema {index + 1}</span>
+                <span class="type-badge">{info.badge}</span>
+              </div>
+
+              <h3>{t.data.title}</h3>
+              <p>{info.description}</p>
+              <span class="open-link">Thema öffnen →</span>
+            </a>
+          );
+        })}
+      </div>
+    </section>
+  </main>
 </BaseLayout>
 
 <style>
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
+  .bereich-page {
+    display: grid;
+    gap: 24px;
+  }
 
-.intro {
-  line-height: 1.7;
-  color: #556270;
-}
+  .breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    color: #64748b;
+    font-size: 0.95rem;
+  }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
-}
+  .breadcrumb a {
+    color: #2563eb;
+    text-decoration: none;
+  }
 
-.card {
-  display: block;
-  padding: 1.5rem;
-  border-radius: 12px;
-  background: #ffffff;
-  border: 1px solid #e5e5e5;
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
-}
+  .hero-panel,
+  .info-panel,
+  .topics-panel {
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
+    background: #ffffff;
+    padding: 28px;
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+  }
 
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(24, 50, 74, 0.08);
-  border-color: #cfdceb;
-}
+  .hero-panel {
+    background: linear-gradient(135deg, #eff6ff 0%, #ffffff 58%, #f8fafc 100%);
+  }
 
-.card h2 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
+  .eyebrow {
+    margin: 0 0 10px;
+    color: #2563eb;
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
 
-.card p {
-  margin: 0;
-  color: #5b6b7a;
-  line-height: 1.6;
-}
+  h1 {
+    margin: 0;
+    font-size: clamp(2.1rem, 4vw, 3.4rem);
+    line-height: 1.05;
+    color: #0f172a;
+  }
+
+  .hero-text {
+    max-width: 760px;
+    margin: 16px 0 0;
+    color: #475569;
+    font-size: 1.08rem;
+    line-height: 1.7;
+  }
+
+  .info-panel h2,
+  .topics-panel h2 {
+    margin: 0 0 12px;
+    color: #0f172a;
+    font-size: 1.45rem;
+  }
+
+  .info-panel p {
+    margin: 0;
+    color: #475569;
+    line-height: 1.75;
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .info-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 22px;
+    background: #ffffff;
+    padding: 22px;
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.05);
+  }
+
+  .info-card h3 {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 1.08rem;
+  }
+
+  .info-card p {
+    margin: 0;
+    color: #64748b;
+    line-height: 1.65;
+  }
+
+  .goal-list {
+    margin: 0;
+    padding-left: 20px;
+    color: #475569;
+    line-height: 1.8;
+  }
+
+  .section-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .count-badge {
+    flex: 0 0 auto;
+    border-radius: 999px;
+    background: #dbeafe;
+    color: #1d4ed8;
+    padding: 8px 14px;
+    font-size: 0.9rem;
+    font-weight: 800;
+  }
+
+  .topic-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .topic-card {
+    display: flex;
+    min-height: 220px;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #e2e8f0;
+    border-radius: 22px;
+    background: #ffffff;
+    padding: 22px;
+    text-decoration: none;
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.05);
+    transition:
+      transform 0.18s ease,
+      box-shadow 0.18s ease,
+      border-color 0.18s ease;
+  }
+
+  .topic-card:hover {
+    transform: translateY(-3px);
+    border-color: #bfdbfe;
+    box-shadow: 0 18px 38px rgba(37, 99, 235, 0.12);
+  }
+
+  .badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .topic-badge,
+  .type-badge {
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-size: 0.78rem;
+    font-weight: 800;
+  }
+
+  .topic-badge {
+    background: #eff6ff;
+    color: #2563eb;
+  }
+
+  .type-badge {
+    background: #f1f5f9;
+    color: #475569;
+  }
+
+  .topic-card h3 {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 1.12rem;
+  }
+
+  .topic-card p {
+    margin: 0 0 20px;
+    color: #64748b;
+    line-height: 1.65;
+  }
+
+  .open-link {
+    margin-top: auto;
+    color: #2563eb;
+    font-weight: 800;
+  }
+
+  @media (max-width: 900px) {
+    .info-grid,
+    .topic-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .section-head {
+      flex-direction: column;
+    }
+  }
 </style>

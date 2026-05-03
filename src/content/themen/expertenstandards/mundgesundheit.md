@@ -1,68 +1,89 @@
 ---
-
 title: Förderung der Mundgesundheit in der Pflege
-
 description: Erhaltung und Förderung einer guten Mundgesundheit bei pflegebedürftigen Menschen.
-
 level: grundlagen
-
 ---
 
+# Förderung der Mundgesundheit in der Pflege
 
+Mundgesundheit beeinflusst Wohlbefinden, Ernährung, Kommunikation und Lebensqualität.
 
-Mundgesundheit beeinflusst Wohlbefinden, Ernährung, Kommunikation und Lebensqualität. Gerade pflegebedürftige Menschen haben oft ein erhöhtes Risiko für Probleme im Mundraum.
+Der Expertenstandard „Förderung der Mundgesundheit in der Pflege“ beschreibt, wie Pflegekräfte den Mundraum systematisch beobachten und pflegen.
 
+Gerade pflegebedürftige Menschen haben ein erhöhtes Risiko für Probleme im Mundraum, z. B. durch eingeschränkte Selbstpflege, Erkrankungen oder Medikamente.
 
+## Ziele
 
- ## Ziele
+Die Pflege verfolgt mehrere zentrale Ziele:
 
-
-
-- Mundgesundheit erhalten
-
-- Beschwerden vermeiden
-
+- Mundgesundheit erhalten oder verbessern
+- Beschwerden und Schmerzen vermeiden
 - Nahrungsaufnahme unterstützen
-
 - Infektionen vorbeugen
+- Lebensqualität fördern
 
+## Wichtige Inhalte
 
+Mundpflege umfasst mehr als Zähneputzen. Entscheidend ist eine regelmäßige und strukturierte Beobachtung.
 
- ## Wichtige Inhalte
+Wichtige Inhalte sind:
 
-
-
-- Mundraumbeobachtung
-
+- Mundraumbeobachtung (Zähne, Schleimhaut, Zunge, Zahnfleisch)
+- Erkennen von Veränderungen (z. B. Rötung, Beläge, Wunden)
 - Prothesenpflege
+- Unterstützung bei der täglichen Mundhygiene
+- Einschätzung von Schmerzen oder Beschwerden
+- Einfluss von Mundtrockenheit (z. B. durch Medikamente)
+- Zusammenarbeit mit Zahnärztinnen und Zahnärzten
 
-- Unterstützung bei der Mundhygiene
+<div class="merkbox">
+<div class="merkbox-title">Merke: Mundpflege ist Teil der Grundpflege</div>
 
-- Erkennen von Schmerzen und Entzündungen
+Eine gute Mundhygiene verhindert nicht nur Beschwerden, sondern unterstützt auch Ernährung und Kommunikation.
 
-- Zusammenarbeit mit Zahnmedizin
+</div>
 
+## Pflegerische Maßnahmen
 
+Maßnahmen müssen individuell angepasst werden.
 
- ## Pflegerische Maßnahmen
+Wichtige Maßnahmen sind:
 
-
-
-- Mundpflege regelmäßig durchführen
-
+- Mundpflege regelmäßig und gründlich durchführen
+- Zähne, Zahnfleisch und Schleimhäute reinigen
 - Mundschleimhaut beobachten
-
 - Prothesen reinigen und korrekt einsetzen
+- Mund trocken halten oder bei Bedarf befeuchten
+- ausreichend trinken fördern
+- Schmerzen oder Auffälligkeiten ernst nehmen
+- bei Bedarf Fachpersonal einbeziehen
 
-- Trinkmenge und Beschwerden beachten
+## Rolle der Pflege
 
-- Auffälligkeiten weitergeben
+Pflegekräfte haben eine zentrale Rolle bei der Mundgesundheit.
 
+Wichtige Aufgaben sind:
 
+- Mundraum regelmäßig beobachten
+- Veränderungen früh erkennen
+- Maßnahmen planen und durchführen
+- Betroffene anleiten und unterstützen
+- Angehörige einbeziehen
+- Zusammenarbeit mit Zahnmedizin organisieren
 
- ## Prüfungsrelevant
+## Prüfungsrelevant
 
+In Prüfungen zählt vor allem:
 
+- Bedeutung der Mundgesundheit erklären
+- typische Probleme im Mundraum erkennen
+- Maßnahmen der Mundpflege benennen
+- Unterschied zwischen Pflege und Beobachtung verstehen
+- Zusammenhang zwischen Mundgesundheit und Ernährung darstellen
 
-Wichtig ist, dass Mundpflege nicht nur Zähneputzen bedeutet, sondern Beobachtung, Einschätzung und individuelle Unterstützung umfasst.
+Typische Prüfungsfragen:
 
+- Warum ist Mundgesundheit in der Pflege wichtig?
+- Welche Bereiche gehören zur Mundpflege?
+- Welche Probleme können im Mundraum auftreten?
+- Welche Aufgaben hat die Pflege bei der Mundgesundheit?

@@ -1,194 +1,191 @@
 ---
-
 title: Applikationsformen
-
-description: Verschiedene Wege der Medikamentengabe in der Pflege.
-
+description: Verschiedene Wege der Medikamentengabe und ihre Bedeutung in der Pflege.
 level: grundlagen
-
 ---
-
-
 
 # Applikationsformen
 
+## Kurz erklärt
 
+Applikationsformen beschreiben den Weg, über den ein Medikament in den Körper gelangt.
 
-Applikationsformen beschreiben den Weg, über den ein Medikament in den Körper gelangt. Die Wahl der Applikationsform beeinflusst, wie schnell und wie stark ein Medikament wirkt.
+👉 Sie beeinflussen:
 
+- Wirkungseintritt  
+- Wirkstärke  
+- Wirkungsdauer  
 
+---
 
-In der Pflege ist es wichtig, die verschiedenen Applikationsformen zu kennen, um Medikamente korrekt zu verabreichen.
+## Warum ist das wichtig für die Pflege?
 
+- falsche Applikation kann Wirkung verändern  
+- kann zu Über- oder Unterdosierung führen  
+- beeinflusst Sicherheit des Patienten  
+- sehr prüfungsrelevant  
 
+---
 
-## Orale Applikation
+## Überblick: Wirkungsgeschwindigkeit
 
+- **intravenös (i.v.)** → sofort  
+- **intramuskulär (i.m.)** → schnell  
+- **subkutan (s.c.)** → verzögert  
+- **oral (p.o.)** → langsam  
 
+👉 wichtig für Verständnis in Prüfungen
 
-Bei der oralen Applikation wird das Medikament über den Mund eingenommen.
+---
 
+## Orale Applikation (p.o.)
 
+Medikament wird geschluckt und über den Magen-Darm-Trakt aufgenommen.
 
-Typische Beispiele sind:
+Beispiele:
 
+- Tabletten  
+- Kapseln  
+- Tropfen  
+- Säfte  
 
+**Vorteile:**
 
-- Tabletten
+- einfach  
+- schmerzfrei  
 
-- Kapseln
+**Nachteile:**
 
-- Tropfen
+- Wirkung verzögert  
+- abhängig von Verdauung  
 
-- Säfte
-
-
-
-Diese Form wird häufig verwendet, weil sie einfach anzuwenden ist.
-
-
+---
 
 ## Sublinguale Applikation
 
+Medikament wird unter die Zunge gelegt.
 
+👉 Aufnahme direkt über die Schleimhaut
 
-Hier wird das Medikament unter die Zunge gelegt.
+**Vorteil:**
 
+- sehr schneller Wirkungseintritt  
 
+**Beispiel:**
 
-Der Wirkstoff wird über die Mundschleimhaut aufgenommen und gelangt schnell in den Blutkreislauf.
+- Nitroglycerin bei Angina pectoris  
 
-
-
-Ein bekanntes Beispiel ist **Nitroglycerin bei Angina pectoris**.
-
-
+---
 
 ## Rektale Applikation
 
+Medikament wird über den Enddarm verabreicht.
 
+Beispiele:
 
-Das Medikament wird über den Enddarm verabreicht.
+- Zäpfchen  
+- Klistiere  
 
+**Anwendung:**
 
+- bei Schluckstörungen  
+- bei Kindern  
+- bei Übelkeit/Erbrechen  
 
-Typische Formen sind:
+---
 
+## Subkutane Applikation (s.c.)
 
+Injektion in das Unterhautfettgewebe.
 
-- Zäpfchen
+Beispiele:
 
-- Klistiere
+- Insulin  
+- Heparin  
 
+**Eigenschaften:**
 
+- langsame, gleichmäßige Wirkung  
 
-Diese Applikationsform wird häufig verwendet, wenn Patienten nichts schlucken können oder bei Kindern.
+---
 
+## Intramuskuläre Applikation (i.m.)
 
+Injektion in den Muskel.
 
-## Subkutane Applikation
+**Eigenschaften:**
 
+- schnellere Wirkung als s.c.  
+- Depotwirkung möglich  
 
+---
 
-Das Medikament wird in das Unterhautfettgewebe gespritzt.
+## Intravenöse Applikation (i.v.)
 
+Medikament wird direkt in die Vene gegeben.
 
+👉 Wirkung tritt sofort ein
 
-Typische Beispiele:
+**Besonderheiten:**
 
+- höchste Wirkungsgeschwindigkeit  
+- auch höchstes Risiko  
 
+---
 
-- Insulin
+## Typische Fehlerquellen
 
-- Heparin
+- falsche Applikationsform  
+- Tabletten zerkleinern ohne Prüfung  
+- Schluckstörungen übersehen  
+- Verwechslung von s.c. und i.m.  
 
+<div class="merkbox">
+<div class="merkbox-title">Merke: Applikationsform bestimmt Wirkung</div>
 
-
-Diese Form ermöglicht eine relativ langsame und gleichmäßige Aufnahme des Wirkstoffs.
-
-
-
-## Intramuskuläre Applikation
-
-
-
-Das Medikament wird in einen Muskel gespritzt.
-
-
-
-Diese Methode wird verwendet, wenn Medikamente schneller wirken sollen als bei der subkutanen Gabe.
-
-
-
-## Intravenöse Applikation
-
-
-
-Das Medikament wird direkt in eine Vene verabreicht.
-
-
-
-Der Wirkstoff gelangt sofort in den Blutkreislauf und wirkt sehr schnell.
-
-
-
-Diese Form wird häufig im Krankenhaus verwendet.
-
-
-
-<div class="info-box info-box-merke">
-<div class="info-box-title">💡 Merke</div>
-
-Die Applikationsform beeinflusst, wie schnell und wie stark ein Medikament wirkt.
-
-Deshalb darf sie nicht verwechselt oder eigenmächtig geändert werden.
+Ein und dasselbe Medikament kann je nach Applikation völlig unterschiedlich wirken.
 
 </div>
 
-<div class="info-box info-box-achtung">
-<div class="info-box-title">⚠️ Achtung</div>
+---
 
-Nicht jede Tablette darf geteilt, zerkleinert oder aufgelöst werden.
+## Wichtige pflegerische Aspekte
 
-Retardtabletten und magensaftresistente Medikamente sind typische Beispiele, bei denen Änderungen problematisch sein können.
+Pflegekräfte müssen prüfen:
 
-</div>
+- kann der Patient schlucken?  
+- ist die verordnete Form geeignet?  
+- gibt es Risiken (z. B. Aspiration)?  
+- wird die Anwendung korrekt durchgeführt?  
 
-<div class="info-box info-box-praxis">
-<div class="info-box-title">🩺 Praxis-Tipp</div>
+---
 
-Vor dem Verabreichen immer prüfen:
+## Besondere Hinweise
 
-- Welche Applikationsform ist verordnet?
-- Kann der Patient sicher schlucken?
-- Gibt es Besonderheiten bei der Anwendung?
+- Retardtabletten dürfen nicht zerkleinert werden  
+- magensaftresistente Tabletten nicht zerstören  
+- bei Dysphagie alternative Applikationsformen prüfen  
 
-Das ist besonders wichtig bei älteren, multimorbiden oder dysphagischen Patienten.
+---
 
-</div>
+## Rolle der Pflege
 
+Pflegekräfte sind verantwortlich für:
 
-## Bedeutung für die Pflege
+- korrekte Durchführung  
+- Beobachtung der Wirkung  
+- Erkennen von Problemen  
+- sichere Anwendung  
 
+---
 
+## Prüfungsrelevant
 
-Pflegekräfte müssen wissen, welche Applikationsform vorgesehen ist und wie sie korrekt durchgeführt wird.
+Typische Fragen:
 
+- Was sind Applikationsformen?  
+- Welche Formen gibt es?  
+- Welche wirkt am schnellsten?  
+- Wann wird welche Form verwendet?  
 
-
-Fehler bei der Applikation können die Wirkung eines Medikaments verändern oder Komplikationen verursachen.
-
-
-
-## Typische Prüfungsfragen
-
-
-
-- Was versteht man unter Applikationsformen?
-
-- Nennen Sie Beispiele für orale Applikationsformen.
-
-- Was bedeutet subkutane Applikation?
-
-- Welche Applikationsform wirkt am schnellsten?
-
+👉 Wichtig: Wirkungsgeschwindigkeit + Anwendung verstehen

@@ -6,84 +6,124 @@ level: grundlagen
 
 # Schweigepflicht
 
-Die Schweigepflicht bedeutet, dass persönliche und gesundheitliche Informationen von Patienten oder Bewohnern nicht unbefugt weitergegeben werden dürfen.
+Die Schweigepflicht bedeutet, dass persönliche, gesundheitliche und soziale Informationen von Patientinnen und Patienten nicht unbefugt weitergegeben werden dürfen.
 
-Sie gehört zu den wichtigsten rechtlichen Grundlagen in der Pflege.
+Sie ist gesetzlich geregelt und gehört zu den zentralen beruflichen Pflichten in der Pflege.
 
 ## Warum die Schweigepflicht wichtig ist
 
-Patienten und Bewohner müssen sich darauf verlassen können, dass persönliche Informationen vertraulich behandelt werden.
+Die Schweigepflicht schützt das Vertrauen zwischen Pflegekraft und Patient.
 
-Die Schweigepflicht schützt:
+Ohne Vertrauen würden viele Menschen wichtige Informationen nicht mitteilen.
 
-- die Privatsphäre
-- die Würde
-- das Vertrauensverhältnis zwischen Pflegekraft und Patient
+Geschützt werden:
+
+- Privatsphäre
+- persönliche Daten
+- gesundheitliche Informationen
+- Würde der Person
+
+Vertrauen ist die Grundlage jeder guten Pflege.
 
 ## Was unter die Schweigepflicht fällt
 
-Zur Schweigepflicht gehören zum Beispiel:
+Alle Informationen, die im Rahmen der Pflege bekannt werden, unterliegen der Schweigepflicht.
 
-- Diagnosen
+Dazu gehören zum Beispiel:
+
+- Diagnosen und Erkrankungen
 - Pflegebedürftigkeit
 - persönliche Lebensumstände
-- Gespräche mit Patienten
+- Gespräche mit Patientinnen und Patienten
 - Beobachtungen aus der Pflege
+- soziale und familiäre Situationen
+
+Wichtig: Auch scheinbar „unwichtige“ Informationen sind geschützt.
 
 ## Wann Informationen weitergegeben werden dürfen
 
-Informationen dürfen nicht einfach an andere Personen weitergegeben werden.
+Eine Weitergabe von Informationen ist nur erlaubt, wenn eine rechtliche Grundlage besteht.
 
-Eine Weitergabe ist nur erlaubt, wenn:
+Das ist der Fall, wenn:
 
-- der Patient eingewilligt hat
-- eine gesetzliche Grundlage besteht
-- die Information für die Behandlung notwendig ist
+- die betroffene Person eingewilligt hat
+- eine gesetzliche Verpflichtung besteht
+- die Weitergabe für die Behandlung notwendig ist (innerhalb des Teams)
+
+Ohne diese Voraussetzungen darf keine Weitergabe erfolgen.
+
+<div class="merkbox">
+<div class="merkbox-title">Merke: Schweigepflicht gilt auch gegenüber Angehörigen</div>
+
+Auch enge Angehörige haben kein automatisches Recht auf Informationen.
+
+Ohne Einwilligung darf nichts weitergegeben werden.
+
+</div>
 
 ## Schweigepflicht im Pflegealltag
 
-Besonders wichtig ist die Schweigepflicht bei:
+Im Alltag gibt es viele Situationen, in denen die Schweigepflicht beachtet werden muss.
 
-- Gesprächen auf dem Flur
-- Telefonaten
-- Gesprächen mit Angehörigen
-- digitalen Dokumentationen
+Typische Beispiele:
 
-<div class="info-box info-box-merke">
-<div class="info-box-title">💡 Merke</div>
+- Gespräche auf dem Flur oder im Zimmer
+- Telefonate
+- Gespräche mit Angehörigen
+- Nutzung von digitalen Dokumentationssystemen
+- Austausch im öffentlichen Raum (z. B. Aufzug, Kantine)
 
-Schweigepflicht gilt auch gegenüber Angehörigen, wenn keine Einwilligung des Patienten vorliegt.
+Schon beiläufige Aussagen können eine Verletzung darstellen.
 
-</div>
+## Verletzung der Schweigepflicht
 
-<div class="info-box info-box-achtung">
-<div class="info-box-title">⚠️ Achtung</div>
+Eine Verletzung liegt vor, wenn Informationen unbefugt weitergegeben werden.
 
-Auch beiläufige Gespräche können bereits eine Verletzung der Schweigepflicht sein.
+Das kann Folgen haben:
 
-Informationen dürfen niemals aus Gewohnheit weitergegeben werden.
+- Vertrauensverlust
+- arbeitsrechtliche Konsequenzen
+- strafrechtliche Konsequenzen
 
-</div>
+Die Schweigepflicht ist kein „Nice-to-have“, sondern Pflicht.
 
-<div class="info-box info-box-praxis">
-<div class="info-box-title">🩺 Praxis-Tipp</div>
+## Rolle der Pflege
 
-Wenn Angehörige nach Informationen fragen, zuerst prüfen:
+Pflegekräfte tragen eine direkte Verantwortung.
 
-- Liegt eine Einwilligung vor?
-- Darf ich diese Information weitergeben?
-- Ist Rücksprache nötig?
+Wichtige Aufgaben sind:
 
-</div>
+- Informationen schützen
+- Weitergaben kritisch prüfen
+- Einwilligungen beachten
+- sensible Gespräche schützen
+- im Zweifel nachfragen
 
-## Bedeutung für die Pflege
+Pflegekräfte müssen aktiv darauf achten, dass keine Informationen ungewollt nach außen gelangen.
 
-Pflegekräfte müssen täglich entscheiden, welche Informationen vertraulich bleiben und welche berechtigt weitergegeben werden dürfen.
+## Bedeutung für die Pflegepraxis
 
-Ein sicherer Umgang mit der Schweigepflicht ist deshalb Teil professioneller Pflege.
+Die Schweigepflicht ist Teil professionellen Handelns.
 
-## Typische Prüfungsfragen
+Ein sicherer Umgang bedeutet:
+
+- bewusst mit Informationen umgehen
+- Datenschutz ernst nehmen
+- Kommunikation reflektieren
+
+## Prüfungsrelevant
+
+In Prüfungen zählt vor allem:
+
+- Definition der Schweigepflicht
+- Beispiele für geschützte Informationen
+- Voraussetzungen für Weitergabe
+- Bedeutung gegenüber Angehörigen
+- Folgen bei Verstößen
+
+Typische Prüfungsfragen:
 
 - Was bedeutet Schweigepflicht?
 - Welche Informationen unterliegen der Schweigepflicht?
+- Wann dürfen Informationen weitergegeben werden?
 - Dürfen Angehörige immer Auskunft erhalten?

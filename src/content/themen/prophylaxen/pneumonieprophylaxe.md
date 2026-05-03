@@ -1,152 +1,132 @@
 ---
-
 title: Pneumonieprophylaxe
-
 description: Maßnahmen zur Vorbeugung einer Lungenentzündung bei pflegebedürftigen Menschen.
-
 level: vertiefung
-
 ---
-
-
 
 # Pneumonieprophylaxe
 
+Die Pneumonieprophylaxe umfasst alle pflegerischen Maßnahmen, die dazu dienen, eine Lungenentzündung (Pneumonie) zu verhindern.
 
+Eine Pneumonie entsteht, wenn Krankheitserreger in die Lunge gelangen und dort eine Entzündung auslösen. Häufig spielt eine unzureichende Belüftung der Lunge eine zentrale Rolle.
 
-Die Pneumonieprophylaxe umfasst alle Maßnahmen, die dazu dienen, eine Lungenentzündung (Pneumonie) zu verhindern.
+Besonders gefährdet sind ältere, immobile oder schwerkranke Menschen.
 
+## Warum Pneumonieprophylaxe wichtig ist
 
+Eine Pneumonie kann einen schweren Verlauf nehmen und lebensbedrohlich werden.
 
-Eine Pneumonie entsteht häufig, wenn Krankheitserreger in die Lunge gelangen und dort eine Entzündung auslösen.
+Mögliche Folgen sind:
 
+- Atemnot
+- starke Schwächung des Körpers
+- verlängerte Genesung
+- Komplikationen bis hin zum Tod
 
-
-Besonders gefährdet sind ältere oder immobile Menschen.
-
-
-
----
-
-
+Deshalb ist die Vorbeugung ein wichtiger Bestandteil der Pflege.
 
 ## Risikofaktoren
 
-
-
 Bestimmte Faktoren erhöhen das Risiko für eine Pneumonie.
-
-
 
 Wichtige Risikofaktoren sind:
 
-
-
 - Bettlägerigkeit
-
 - eingeschränkte Mobilität
-
+- flache Atmung
 - geschwächtes Immunsystem
-
-- Schluckstörungen
-
+- Schluckstörungen (Aspirationsgefahr)
 - mangelnde Belüftung der Lunge
+- chronische Erkrankungen (z. B. COPD)
 
-- chronische Erkrankungen
+## Ziele der Pneumonieprophylaxe
 
+Die Pflege verfolgt mehrere zentrale Ziele:
 
-
----
-
-
+- Belüftung der Lunge verbessern
+- Sekret lösen und Abhusten fördern
+- Infektionen verhindern
+- Atemarbeit unterstützen
+- allgemeine Stabilität fördern
 
 ## Maßnahmen der Pneumonieprophylaxe
 
-
-
-Zur Vorbeugung einer Lungenentzündung können verschiedene Maßnahmen durchgeführt werden.
-
-
+Die Maßnahmen müssen individuell angepasst werden.
 
 Wichtige Maßnahmen sind:
 
-
-
-- Förderung der Mobilität
-
-- regelmäßiges Aufsetzen oder Aufstehen
-
-- Atemübungen
-
-- ausreichende Flüssigkeitszufuhr
-
-- gründliche Mundpflege
-
+- Mobilisation fördern (z. B. Aufsetzen, Aufstehen, Gehen)
+- regelmäßige Positionswechsel durchführen
+- Oberkörperhochlagerung
 - tiefes Ein- und Ausatmen fördern
+- ausreichende Flüssigkeitszufuhr sicherstellen
+- Mundpflege durchführen (wichtig zur Keimreduktion)
+- Husten anregen und unterstützen
+- Schluckstörungen beachten (Aspirationsprophylaxe)
 
+<div class="merkbox">
+<div class="merkbox-title">Merke: Bewegung ist der wichtigste Schutz</div>
 
+Je weniger sich ein Mensch bewegt, desto schlechter wird die Lunge belüftet.
 
----
+Mobilisation ist deshalb eine zentrale Maßnahme der Pneumonieprophylaxe.
 
-
+</div>
 
 ## Atemfördernde Maßnahmen
 
+Atemfördernde Maßnahmen verbessern die Lungenbelüftung gezielt.
 
-
-Atemfördernde Maßnahmen helfen, die Belüftung der Lunge zu verbessern.
-
-
-
-Beispiele:
-
-
+Beispiele sind:
 
 - Lippenbremse
-
 - Atemübungen
-
-- tiefes Durchatmen
-
+- bewusstes tiefes Durchatmen
 - Kontaktatmung
+- Atemtrainer (wenn vorhanden)
 
-
-
----
-
-
+Diese Maßnahmen helfen, die Atmung zu vertiefen und Sekret zu mobilisieren.
 
 ## Beobachtung möglicher Anzeichen
 
+Pflegekräfte müssen Veränderungen frühzeitig erkennen.
 
-
-Pflegekräfte achten auf mögliche Anzeichen einer Pneumonie.
-
-
-
-Typische Hinweise können sein:
-
-
+Typische Anzeichen einer Pneumonie sind:
 
 - Fieber
-
 - Husten
-
 - Atemnot
-
-- vermehrter Auswurf
-
+- vermehrter oder veränderter Auswurf
+- beschleunigte Atmung
 - Schmerzen beim Atmen
+- allgemeine Verschlechterung des Zustands
 
+## Rolle der Pflege
 
+Pflegekräfte haben eine zentrale Rolle bei der Pneumonieprophylaxe.
 
----
+Wichtige Aufgaben sind:
 
+- Risikofaktoren erkennen
+- geeignete Maßnahmen planen und durchführen
+- Atmung beobachten
+- Veränderungen frühzeitig weitergeben
+- Betroffene anleiten und motivieren
+- Maßnahmen dokumentieren
 
+## Prüfungsrelevant
 
-## Ziel der Pneumonieprophylaxe
+In Prüfungen zählt vor allem:
 
+- Entstehung einer Pneumonie verstehen
+- Risikofaktoren erkennen
+- Maßnahmen zur Vorbeugung erklären
+- Zusammenhang zwischen Immobilität und Pneumonie verstehen
+- Beobachtung der Atmung darstellen
 
+Typische Prüfungsfragen:
 
-Das Ziel der Pneumonieprophylaxe ist es, die Belüftung der Lunge zu verbessern und Infektionen der Atemwege zu verhindern.
-
+- Wie entsteht eine Pneumonie?
+- Welche Risikofaktoren begünstigen eine Pneumonie?
+- Welche Maßnahmen gehören zur Pneumonieprophylaxe?
+- Warum ist Mobilisation so wichtig?

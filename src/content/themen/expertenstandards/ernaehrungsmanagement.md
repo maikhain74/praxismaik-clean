@@ -8,91 +8,128 @@ level: vertiefung
 
 Das Ernährungsmanagement umfasst alle pflegerischen Maßnahmen, die dazu dienen, eine ausreichende und bedarfsgerechte Ernährung sicherzustellen.
 
-Eine gute Ernährung ist wichtig für Gesundheit, Wohlbefinden und Genesung.
+Der Expertenstandard „Ernährungsmanagement zur Sicherung und Förderung der oralen Ernährung in der Pflege“ beschreibt, wie Pflegekräfte systematisch Risiken erkennen und gezielt gegensteuern.
+
+Eine bedarfsgerechte Ernährung ist entscheidend für Gesundheit, Genesung, Immunsystem und Lebensqualität.
 
 ## Warum Ernährungsmanagement wichtig ist
 
 Viele pflegebedürftige Menschen haben ein erhöhtes Risiko für Mangelernährung.
 
-Ursachen können zum Beispiel sein:
+Häufige Ursachen sind:
 
 - Appetitlosigkeit
-- Schluckstörungen
-- Erkrankungen
+- Schluckstörungen (Dysphagie)
+- akute oder chronische Erkrankungen
 - Schmerzen
-- Probleme beim Essen
-- eingeschränkte Beweglichkeit
+- Übelkeit oder Nebenwirkungen von Medikamenten
+- Probleme beim Essen (z. B. motorische Einschränkungen)
+- eingeschränkte Beweglichkeit oder Abhängigkeit von Hilfe
 
-Mangelernährung kann zu Schwäche, Infektionen und verzögerter Wundheilung führen.
+Mangelernährung kann schwerwiegende Folgen haben:
+
+- Gewichtsverlust und Muskelschwäche
+- erhöhte Infektanfälligkeit
+- verzögerte Wundheilung
+- allgemeine Schwächung
+- erhöhtes Risiko für Komplikationen
 
 ## Ziele des Ernährungsmanagements
 
-Die Pflege soll dabei helfen,
+Die Pflege verfolgt mehrere zentrale Ziele:
 
-- Mangelernährung frühzeitig zu erkennen
-- eine ausreichende Nahrungsaufnahme zu fördern
-- die Selbstständigkeit beim Essen zu unterstützen
-- die Lebensqualität zu verbessern
+- Mangelernährung frühzeitig erkennen
+- ausreichende Energie- und Nährstoffzufuhr sichern
+- Flüssigkeitszufuhr gewährleisten
+- Selbstständigkeit beim Essen erhalten oder fördern
+- Essverhalten stabilisieren
+- Lebensqualität verbessern
 
 ## Risiko erkennen
 
-Pflegekräfte beobachten, ob Hinweise auf eine mögliche Mangelernährung bestehen.
+Ein wichtiger Bestandteil ist die systematische Einschätzung des Ernährungszustands.
 
-Typische Anzeichen sind:
+Pflegekräfte achten auf typische Anzeichen:
 
-- Gewichtsverlust
+- ungewollter Gewichtsverlust
 - verminderter Appetit
-- geringe Nahrungsaufnahme
-- Schwäche
-- Müdigkeit
+- geringe oder unregelmäßige Nahrungsaufnahme
+- Schwäche und Leistungsabfall
+- Müdigkeit oder Antriebslosigkeit
+- auffälliges Essverhalten
 
-Auch regelmäßige Gewichtskontrollen können wichtig sein.
+Zusätzlich wichtig:
+
+- regelmäßige Gewichtskontrollen
+- Dokumentation der Nahrungs- und Flüssigkeitsaufnahme
+- Einsatz von Assessmentinstrumenten
+
+<div class="merkbox">
+<div class="merkbox-title">Merke: Mangelernährung wird oft zu spät erkannt</div>
+
+Frühe Beobachtung und regelmäßige Kontrolle sind entscheidend, um rechtzeitig Maßnahmen einzuleiten.
+
+</div>
 
 ## Maßnahmen zur Unterstützung der Ernährung
 
-Zu den wichtigen Maßnahmen gehören:
+Maßnahmen müssen individuell angepasst werden.
 
-- angenehme Essatmosphäre schaffen
-- Hilfe beim Essen anbieten
-- passende Konsistenz der Nahrung wählen
+Wichtige Maßnahmen sind:
+
+- angenehme und ruhige Essatmosphäre schaffen
+- ausreichend Zeit für Mahlzeiten einplanen
+- Hilfe beim Essen anbieten, wenn nötig
+- passende Konsistenz der Nahrung wählen (z. B. bei Schluckstörungen)
+- kleine, häufige Mahlzeiten anbieten
 - Essenszeiten strukturieren
-- individuelle Vorlieben berücksichtigen
-- ausreichende Flüssigkeitsaufnahme fördern
+- individuelle Vorlieben und Gewohnheiten berücksichtigen
+- Getränke regelmäßig anbieten und sichtbar platzieren
+- Hilfsmittel einsetzen (z. B. rutschfeste Teller, Spezialbesteck)
 
 ## Bedeutung der Selbstständigkeit
 
-Wenn möglich, sollten Menschen beim Essen selbstständig bleiben.
+Selbstständigkeit beim Essen hat einen hohen Stellenwert.
 
-Die Pflege unterstützt nur dort, wo Hilfe notwendig ist.
+Pflege sollte nur so viel Unterstützung geben wie nötig.
 
 Selbstständiges Essen fördert:
 
 - Selbstwertgefühl
-- Selbstständigkeit
+- Autonomie
+- Motivation zur Nahrungsaufnahme
 - Lebensqualität
-
-<div class="merkbox">
-<div class="merkbox-title">Merke: Ernährung ist Teil der Lebensqualität</div>
-
-Essen bedeutet nicht nur Nährstoffaufnahme.  
-Es ist auch mit Genuss, Gewohnheiten und sozialen Kontakten verbunden.
-
-Deshalb sollten individuelle Wünsche und Vorlieben berücksichtigt werden.
-
-</div>
 
 ## Rolle der Pflege
 
-Pflegekräfte beobachten Essverhalten und erkennen Veränderungen frühzeitig.
+Pflegekräfte übernehmen eine zentrale Rolle im Ernährungsmanagement.
 
-Sie planen geeignete Maßnahmen und arbeiten bei Bedarf mit anderen Berufsgruppen zusammen, zum Beispiel:
+Wichtige Aufgaben sind:
 
-- Ärzten
-- Ernährungsberatung
-- Logopädie bei Schluckstörungen
+- Essverhalten beobachten und Veränderungen erkennen
+- Risiken einschätzen und dokumentieren
+- geeignete Maßnahmen planen und umsetzen
+- Betroffene motivieren und unterstützen
+- Angehörige einbeziehen
+- interprofessionell zusammenarbeiten, z. B. mit:
+  - Ärztinnen und Ärzten
+  - Ernährungsberatung
+  - Logopädie bei Schluckstörungen
 
-## Typische Prüfungsfragen
+## Prüfungsrelevant
+
+In Prüfungen zählt vor allem:
+
+- Risikofaktoren für Mangelernährung erkennen
+- typische Anzeichen benennen
+- Maßnahmen zur Förderung der Ernährung erklären
+- Bedeutung der Selbstständigkeit darstellen
+- interprofessionelle Zusammenarbeit einordnen
+
+Typische Prüfungsfragen:
 
 - Was versteht man unter Ernährungsmanagement?
-- Welche Anzeichen können auf Mangelernährung hinweisen?
+- Welche Ursachen kann Mangelernährung haben?
+- Welche Anzeichen weisen auf Mangelernährung hin?
 - Nennen Sie Maßnahmen zur Unterstützung der Nahrungsaufnahme.
+- Warum ist Selbstständigkeit beim Essen wichtig?

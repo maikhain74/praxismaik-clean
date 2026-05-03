@@ -8,22 +8,27 @@ level: grundlagen
 
 ## Kurz erklärt
 
-Schmerz ist ein unangenehmes Sinnes- und Gefühlserlebnis, das auf eine mögliche oder tatsächliche Schädigung des Körpers hinweist.
+Schmerz ist ein unangenehmes Sinnes- und Gefühlserlebnis, das auf eine tatsächliche oder mögliche Schädigung des Körpers hinweist.
+
+👉 Schmerz ist immer **subjektiv** und wird von jedem Menschen unterschiedlich wahrgenommen.
 
 ---
 
 ## Warum ist das wichtig für die Pflege?
 
-- Schmerz ist eines der häufigsten Symptome im Pflegealltag  
-- Du kannst den Zustand von Patienten besser einschätzen  
-- Du kannst gezielt Maßnahmen zur Linderung ergreifen  
-- Schmerz beeinflusst Mobilität, Schlaf und Wohlbefinden  
+- eines der häufigsten Symptome im Pflegealltag  
+- beeinflusst Mobilität, Schlaf und Wohlbefinden  
+- kann Heilungsprozesse verzögern  
+- muss aktiv erfasst und behandelt werden  
+- sehr prüfungsrelevant  
 
 ---
 
 ## Aufgaben von Schmerz
 
-- Warnsignal des Körpers  
+Schmerz hat wichtige Funktionen:
+
+- Warnsignal für den Körper  
 - Schutz vor weiteren Schäden  
 - Hinweis auf Erkrankungen oder Verletzungen  
 
@@ -34,37 +39,65 @@ Schmerz ist ein unangenehmes Sinnes- und Gefühlserlebnis, das auf eine möglich
 ### Akuter Schmerz
 
 - tritt plötzlich auf  
-- meist klarer Auslöser  
+- meist klare Ursache  
 - klingt nach Behandlung wieder ab  
 
 ---
 
 ### Chronischer Schmerz
 
-- besteht länger als 3 Monate  
+- dauert länger als 3 Monate  
 - oft kein klarer Auslöser mehr  
-- belastet den Patienten dauerhaft  
+- beeinflusst den Alltag stark  
 
 ---
 
 ### Weitere Einteilungen
 
-- somatischer Schmerz (z. B. Haut, Muskeln)  
-- viszeraler Schmerz (z. B. Organe)  
-- neuropathischer Schmerz (Nervenschädigung)  
+- **somatischer Schmerz** (z. B. Haut, Muskeln, Knochen)  
+- **viszeraler Schmerz** (z. B. Organe, schwer lokalisierbar)  
+- **neuropathischer Schmerz** (Nervenschädigung, z. B. brennend)  
 
 ---
 
 ## Schmerzwahrnehmung
 
-Schmerz ist individuell und wird unterschiedlich erlebt.
+Schmerz ist individuell und wird beeinflusst durch:
 
-Einflussfaktoren:
-
-- körperlicher Zustand  
+- körperlichen Zustand  
 - psychische Verfassung  
 - Erfahrungen  
-- Angst  
+- Angst oder Stress  
+
+<div class="merkbox">
+<div class="merkbox-title">Merke: Schmerz ist subjektiv</div>
+
+Schmerz ist das, was der Betroffene sagt, dass er empfindet.
+
+</div>
+
+---
+
+## Schmerzen erkennen
+
+### Bei ansprechbaren Patienten
+
+- gezielt nach Schmerz fragen  
+- Schmerzskalen nutzen (z. B. 0–10)  
+
+---
+
+### Bei nicht ansprechbaren Patienten
+
+Pflegekräfte achten auf:
+
+- Gesichtsausdruck  
+- Unruhe oder Abwehr  
+- Schonhaltung  
+- Stöhnen oder Schreien  
+- Veränderungen von Puls oder Blutdruck  
+
+👉 besonders wichtig bei Demenz oder Bewusstseinsstörungen
 
 ---
 
@@ -72,20 +105,58 @@ Einflussfaktoren:
 
 Wichtige Aspekte:
 
-- Ort des Schmerzes  
-- Stärke (z. B. Skala 0–10)  
+- Ort  
+- Stärke  
 - Dauer  
 - Art (stechend, dumpf, brennend)  
+- Auslöser und Linderung  
+
+---
+
+## Folgen von unbehandeltem Schmerz
+
+- eingeschränkte Bewegung  
+- Schonhaltung  
+- Schlafstörungen  
+- Angst und Unruhe  
+- verzögerte Heilung  
+- verminderte Lebensqualität  
 
 ---
 
 ## Pflegebezug
 
+Pflegekräfte haben eine zentrale Rolle:
+
 - Schmerzen aktiv erfragen  
-- Schmerzskalen nutzen  
+- Schmerz systematisch erfassen  
 - Veränderungen dokumentieren  
-- Maßnahmen zur Linderung unterstützen  
-- Patienten ernst nehmen  
+- Maßnahmen unterstützen  
+- Wirkung überprüfen  
+
+---
+
+## Wichtige pflegerische Maßnahmen
+
+- Schmerzerfassung durchführen  
+- Beobachtung und Dokumentation  
+- Weitergabe an das Behandlungsteam  
+- Unterstützung bei Medikamentengabe  
+- nicht medikamentöse Maßnahmen anwenden  
+
+(z. B. Lagerung, Ruhe, Wärme/Kälte, Zuwendung)
+
+---
+
+## Bedeutung für die Pflege
+
+Schmerz ist ein wichtiges Pflegeproblem.
+
+Er muss:
+
+- ernst genommen werden  
+- regelmäßig überprüft werden  
+- aktiv behandelt werden  
 
 ---
 
@@ -93,8 +164,9 @@ Wichtige Aspekte:
 
 Typische Fragen:
 
-- „Unterschied zwischen akutem und chronischem Schmerz?“  
-- „Welche Schmerzarten gibt es?“  
-- „Wie wird Schmerz erfasst?“  
+- Unterschied zwischen akutem und chronischem Schmerz?  
+- Welche Schmerzarten gibt es?  
+- Wie wird Schmerz erfasst?  
+- Warum ist Schmerz subjektiv?  
 
-👉 Wichtig: Schmerz ist subjektiv und muss immer ernst genommen werden
+👉 Wichtig: Schmerz erkennen + einschätzen + handeln

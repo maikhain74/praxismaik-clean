@@ -6,104 +6,145 @@ level: pruefung
 
 # Lungenembolie
 
-## Kurz erklärt
+Eine Lungenembolie entsteht, wenn ein Blutgerinnsel (Thrombus), meist aus den Beinvenen, in die Lunge gelangt und dort ein Blutgefäß verstopft.
 
-Eine Lungenembolie entsteht, wenn ein Blutgerinnsel (meist aus den Beinvenen) in die Lunge gelangt und dort ein Blutgefäß verstopft.
+Sie ist ein akuter medizinischer Notfall und kann lebensbedrohlich sein.
 
----
+## Warum Lungenembolie wichtig ist
 
-## Warum ist das wichtig für die Pflege?
+Für die Pflege ist die Lungenembolie besonders relevant, weil:
 
-- akuter Notfall  
-- kann lebensbedrohlich sein  
-- häufige Komplikation bei Thrombose  
-- sehr prüfungsrelevant  
+- sie plötzlich auftritt
+- sie lebensbedrohlich sein kann
+- sie häufig als Komplikation einer Thrombose entsteht
+- schnelles Handeln erforderlich ist
+- sie ein zentrales Prüfungsthema ist
 
----
+## Was passiert im Körper
 
-## Was passiert im Körper?
+Ein Blutgerinnsel löst sich und wird mit dem Blutstrom in die Lunge transportiert.
 
-Ein Thrombus löst sich und wird mit dem Blutstrom in die Lunge transportiert.
+Dort verstopft es ein Blutgefäß.
 
-👉 Folge:
+Die Folgen:
 
-- Gefäß in der Lunge wird verstopft  
-- Durchblutung wird gestört  
-- Sauerstoffaufnahme wird eingeschränkt  
+- Durchblutung der Lunge ist gestört
+- Sauerstoffaufnahme ist eingeschränkt
+- Herz und Kreislauf werden belastet
 
----
+Je größer das Gefäß, desto schwerer die Auswirkungen.
 
-## Ursache
+<div class="merkbox">
+<div class="merkbox-title">Merke: Thrombose → Embolie</div>
 
-- meist Folge einer Thrombose (z. B. Beinvenen)  
+Die häufigste Ursache einer Lungenembolie ist eine Thrombose, meist in den Beinvenen.
 
----
+</div>
+
+## Ursachen
+
+Die häufigste Ursache ist:
+
+- Thrombose der tiefen Beinvenen
+
+Das Blutgerinnsel löst sich und wandert in die Lunge.
 
 ## Risikofaktoren
 
-- Immobilität  
-- Operationen  
-- Thrombose  
-- Schwangerschaft  
-- lange Reisen  
+Bestimmte Faktoren erhöhen das Risiko:
 
----
+- Immobilität (z. B. Bettlägerigkeit)
+- Operationen
+- bestehende Thrombose
+- lange Reisen (z. B. Flug)
+- Schwangerschaft
+- Krebserkrankungen
+- höheres Lebensalter
 
 ## Typische Symptome
 
-- plötzliche Atemnot  
-- schnelle Atmung  
-- Brustschmerzen  
-- Angst  
-- schneller Puls  
-- eventuell Husten  
+Die Symptome treten meist plötzlich auf.
 
----
+Typische Anzeichen sind:
 
-## Schwere Symptome (Notfall!)
+- plötzliche Atemnot
+- schnelle Atmung
+- Brustschmerzen
+- Angst oder Unruhe
+- schneller Puls
+- Husten (teilweise mit Blut)
 
-- starke Atemnot  
-- Bewusstseinsverlust  
-- Kreislaufzusammenbruch  
+## Schwere Symptome (Notfall)
 
----
+Bei schweren Verläufen können auftreten:
+
+- starke Atemnot
+- Bewusstseinsverlust
+- Kreislaufzusammenbruch
+- Schock
+
+Diese Situation ist lebensbedrohlich.
 
 ## Beobachtungen in der Pflege
 
-- plötzlich verschlechterte Atmung  
-- Unruhe oder Angst  
-- blasse oder bläuliche Haut  
-- Abfall der Sauerstoffsättigung  
+Pflegekräfte achten auf:
 
----
+- plötzlich verschlechterte Atmung
+- Unruhe oder Angst
+- blasse oder bläuliche Haut (Zyanose)
+- schnellen Puls
+- Abfall der Sauerstoffsättigung
+- Brustschmerzen
 
 ## Pflegebezug
 
-- Notfall sofort erkennen  
-- Vitalzeichen überwachen  
-- Patienten beruhigen  
-- Notruf / Arzt informieren  
-- Sauerstoffgabe vorbereiten  
+Bei Verdacht auf Lungenembolie gilt:
 
----
+- sofort handeln
+- Notfall erkennen
+- Hilfe holen
+
+Wichtige Aufgaben sind:
+
+- Vitalzeichen überwachen
+- Patienten beruhigen
+- Arzt oder Notruf informieren
+- Maßnahmen vorbereiten
 
 ## Wichtige pflegerische Maßnahmen
 
-- sofort handeln  
-- Oberkörper hoch lagern  
-- Patienten nicht allein lassen  
-- Beobachtung und Dokumentation  
-- Unterstützung der medizinischen Maßnahmen  
+- Patienten nicht allein lassen
+- Oberkörperhochlagerung
+- körperliche Belastung vermeiden
+- Sauerstoffgabe vorbereiten
+- Vitalzeichen eng überwachen
+- Beobachtungen dokumentieren
+- ärztliche Maßnahmen unterstützen
 
----
+## Rolle der Pflege
+
+Pflegekräfte müssen:
+
+- Symptome sofort erkennen
+- schnell reagieren
+- Notfallmaßnahmen einleiten
+- den Patienten überwachen
+- Sicherheit gewährleisten
 
 ## Prüfungsrelevant
 
-Typische Fragen:
+In Prüfungen zählt vor allem:
 
-- „Was ist eine Lungenembolie?“  
-- „Woher kommt der Thrombus?“  
-- „Welche Symptome treten auf?“  
-- „Welche Maßnahmen sind wichtig?“  
+- Definition der Lungenembolie
+- Zusammenhang mit Thrombose
+- typische Symptome erkennen
+- Notfallsituation einschätzen
+- pflegerische Maßnahmen benennen
 
-👉 Wichtig: Zusammenhang Thrombose → Embolie verstehen
+Typische Prüfungsfragen:
+
+- Was ist eine Lungenembolie?
+- Woher stammt der Thrombus?
+- Welche Symptome treten auf?
+- Warum ist sie lebensbedrohlich?
+- Welche Maßnahmen sind wichtig?

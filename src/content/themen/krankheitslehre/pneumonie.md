@@ -8,24 +8,32 @@ level: pruefung
 
 ## Kurz erklärt
 
-Eine Pneumonie ist eine Entzündung des Lungengewebes.  
-Sie gehört zu den häufigen und potenziell schweren Erkrankungen, besonders bei älteren, geschwächten oder immoblen Menschen.
+Eine Pneumonie ist eine Entzündung des Lungengewebes.
+
+Dabei sind die Lungenbläschen (Alveolen) betroffen, die sich mit Flüssigkeit oder Sekret füllen.
+
+👉 Folge: Der Gasaustausch wird gestört und der Körper bekommt weniger Sauerstoff.
 
 ---
 
 ## Warum ist das wichtig für die Pflege?
 
-- Pneumonien treten häufig im Pflegealltag auf  
-- sie können schnell lebensbedrohlich werden  
-- frühe Beobachtung ist entscheidend  
-- das Thema verbindet Atmung, Infektion, Fieber und Pflegebeobachtung  
+- häufige Erkrankung im Pflegealltag  
+- besonders gefährlich für ältere und geschwächte Menschen  
+- kann schnell lebensbedrohlich werden  
+- erfordert genaue Beobachtung  
+- sehr prüfungsrelevant  
 
 ---
 
-## Was ist eine Pneumonie?
+## Was passiert im Körper?
 
-Bei einer Pneumonie ist das Lungengewebe entzündet.  
-Der Gasaustausch in der Lunge wird dadurch erschwert, sodass der Körper schlechter mit Sauerstoff versorgt wird.
+- Krankheitserreger gelangen in die Lunge  
+- es entsteht eine Entzündung  
+- Flüssigkeit sammelt sich in den Alveolen  
+- Sauerstoffaufnahme wird eingeschränkt  
+
+👉 Folge: Atemnot und verminderte Sauerstoffversorgung
 
 ---
 
@@ -33,11 +41,10 @@ Der Gasaustausch in der Lunge wird dadurch erschwert, sodass der Körper schlech
 
 Häufige Ursachen sind:
 
-- Bakterien  
+- Bakterien (häufigste Ursache)  
 - Viren  
-- Aspiration  
+- Aspiration (z. B. Nahrung, Speichel)  
 - geschwächtes Immunsystem  
-- Immobilität  
 
 ---
 
@@ -45,52 +52,118 @@ Häufige Ursachen sind:
 
 - hohes Alter  
 - Bettlägerigkeit  
-- chronische Erkrankungen  
+- eingeschränkte Mobilität  
 - Schluckstörungen  
-- geschwächte Abwehrlage  
+- chronische Erkrankungen  
+- schlechte Mundhygiene  
 
 ---
 
-## Typische Symptome
+## Typische Symptome (klassische Pneumonie)
 
 - Fieber  
 - Husten  
-- Auswurf  
+- eitriger Auswurf  
 - Atemnot  
-- beschleunigte Atmung  
-- Schwächegefühl  
 - Schmerzen beim Atmen  
+- beschleunigte Atmung  
 
 ---
 
-## Mögliche Beobachtungen in der Pflege
+## Atypische Symptome (wichtig in der Pflege!)
 
-- flache oder angestrengte Atmung  
-- reduzierte Sauerstoffsättigung  
-- Unruhe  
-- Zyanose  
-- verminderte Belastbarkeit  
+Vor allem bei älteren Menschen:
+
+- kein oder nur leichtes Fieber  
+- Verwirrtheit  
+- Schwäche  
+- reduzierte Belastbarkeit  
+- Appetitlosigkeit  
+
+<div class="merkbox">
+<div class="merkbox-title">Merke: Alte Menschen zeigen oft keine typischen Symptome</div>
+
+Eine Pneumonie kann sich nur durch Verwirrtheit oder Verschlechterung des Allgemeinzustands zeigen.
+
+</div>
+
+---
+
+## Formen der Pneumonie
+
+### Aspirationspneumonie
+
+- entsteht durch Einatmen von Nahrung oder Flüssigkeit  
+- häufig bei Schluckstörungen  
+
+---
+
+### Nosokomiale Pneumonie
+
+- im Krankenhaus oder in Pflegeeinrichtungen erworben  
+
+---
+
+### Ambulant erworbene Pneumonie
+
+- außerhalb von Einrichtungen entstanden  
+
+---
+
+## Beobachtungen in der Pflege
+
+Pflegekräfte achten besonders auf:
+
+- Atemfrequenz und Atemarbeit  
+- Sauerstoffsättigung  
+- Husten und Auswurf  
+- Hautfarbe (Zyanose)  
+- Temperatur  
+- Allgemeinzustand  
 
 ---
 
 ## Pflegebezug
 
-- Atmung genau beobachten  
-- Atemfrequenz und Sauerstoffsättigung kontrollieren  
-- Patienten mobilisieren, wenn möglich  
-- Oberkörperhochlagerung unterstützen  
-- ausreichende Flüssigkeitszufuhr fördern  
-- auf Husten, Auswurf und Allgemeinzustand achten  
+Pflege hat eine zentrale Rolle bei:
+
+- frühzeitiger Erkennung  
+- Überwachung des Verlaufs  
+- Unterstützung der Therapie  
+- Vermeidung von Komplikationen  
 
 ---
 
 ## Wichtige pflegerische Maßnahmen
 
-- Beobachtung und Dokumentation  
-- atemerleichternde Positionen  
-- Mobilisation nach Zustand  
-- Unterstützung bei der Sekretlösung  
+- Oberkörperhochlagerung  
+- Mobilisation (so früh wie möglich)  
+- Atemübungen fördern  
+- ausreichende Flüssigkeitszufuhr  
+- Sekretlösung unterstützen  
+- Mundpflege durchführen  
 - Hygienemaßnahmen einhalten  
+- Vitalzeichen überwachen  
+- Beobachtungen dokumentieren  
+
+---
+
+## Komplikationen
+
+- Atemversagen  
+- Sepsis  
+- Verschlechterung chronischer Erkrankungen  
+
+---
+
+## Rolle der Pflege
+
+Pflegekräfte müssen:
+
+- Veränderungen früh erkennen  
+- Symptome richtig deuten  
+- schnell reagieren  
+- interprofessionell arbeiten  
 
 ---
 
@@ -98,9 +171,10 @@ Häufige Ursachen sind:
 
 Typische Fragen:
 
-- „Was ist eine Pneumonie?“  
-- „Nennen Sie Symptome einer Pneumonie.“  
-- „Welche pflegerischen Maßnahmen sind wichtig?“  
-- „Warum ist eine Pneumonie für ältere Menschen besonders gefährlich?“  
+- Was ist eine Pneumonie?  
+- Welche Symptome treten auf?  
+- Warum sind ältere Menschen besonders gefährdet?  
+- Was ist eine Aspirationspneumonie?  
+- Welche pflegerischen Maßnahmen sind wichtig?  
 
-👉 Wichtig: Symptome + Beobachtung + Pflegehandlung zusammen denken
+👉 Wichtig: Gasaustausch + Symptome + Pflege zusammen verstehen

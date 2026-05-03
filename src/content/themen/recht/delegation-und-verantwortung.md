@@ -6,106 +6,131 @@ level: vertiefung
 
 # Delegation und Verantwortung
 
-In der Pflege werden viele medizinische Maßnahmen von Ärzten an Pflegekräfte delegiert. Delegation bedeutet, dass eine Aufgabe von einer Person auf eine andere übertragen wird.
+In der Pflege werden viele medizinische Maßnahmen von Ärztinnen und Ärzten an Pflegekräfte delegiert.
 
-Dabei müssen die Verantwortlichkeiten klar geregelt sein.
+Delegation bedeutet, dass eine Aufgabe von einer Person auf eine andere übertragen wird. Die Verantwortung wird dabei jedoch aufgeteilt, nicht vollständig abgegeben.
+
+Für die Praxis ist entscheidend: Wer ist wofür verantwortlich?
 
 ## Was Delegation bedeutet
 
-Delegation bedeutet, dass ein Arzt eine medizinische Maßnahme an eine Pflegekraft überträgt.
+Delegation liegt vor, wenn eine ärztliche Maßnahme durch eine Pflegekraft durchgeführt wird.
 
-Die Pflegekraft führt diese Maßnahme eigenständig durch.
+Die Pflegekraft handelt dabei eigenständig innerhalb der Anordnung.
 
 Typische Beispiele sind:
 
 - Medikamentengabe
-- Injektionen
+- Injektionen (z. B. subkutan)
 - Blutdruckmessung
 - Blutzuckermessung
 - Wundversorgung
 
+Wichtig: Die Aufgabe wird übertragen, aber die Gesamtverantwortung bleibt aufgeteilt.
+
 ## Anordnungsverantwortung
 
-Die Anordnungsverantwortung liegt beim Arzt.
+Die Anordnungsverantwortung liegt bei der Ärztin oder beim Arzt.
 
-Der Arzt entscheidet:
+Das bedeutet:
 
-- welche Maßnahme durchgeführt wird
-- welches Medikament gegeben wird
-- welche Dosierung verwendet wird
+- Auswahl der Maßnahme
+- Entscheidung über Notwendigkeit
+- Auswahl des Medikaments
+- Festlegung von Dosierung und Durchführung
 
-Der Arzt trägt die Verantwortung für diese Entscheidung.
+Fehler in der Anordnung fallen in den Verantwortungsbereich des Arztes.
 
 ## Durchführungsverantwortung
 
-Die Pflegekraft trägt die Verantwortung für die korrekte Durchführung der Maßnahme.
+Die Pflegekraft trägt die Verantwortung für die korrekte Durchführung.
 
-Das bedeutet zum Beispiel:
+Das umfasst:
 
-- richtige Technik anwenden
-- hygienisch arbeiten
-- Patient beobachten
-- Auffälligkeiten melden
+- fachgerechte Durchführung der Maßnahme
+- Einhaltung von Hygienevorschriften
+- richtige Technik
+- Beobachtung der Patientin oder des Patienten
+- Erkennen und Weitergeben von Auffälligkeiten
+
+Fehler bei der Durchführung liegen im Verantwortungsbereich der Pflege.
 
 ## Übernahmeverantwortung
 
-Pflegekräfte müssen prüfen, ob sie eine Aufgabe überhaupt übernehmen können.
+Die Übernahmeverantwortung liegt ebenfalls bei der Pflegekraft.
 
-Wichtige Fragen sind zum Beispiel:
+Bevor eine Maßnahme durchgeführt wird, muss geprüft werden:
 
-- Habe ich die notwendige Qualifikation?
-- Habe ich genügend Erfahrung?
-- Ist die Anordnung verständlich?
+- Habe ich die nötige Qualifikation?
+- Habe ich ausreichende Erfahrung?
+- Ist die Anordnung klar und eindeutig?
+- Ist die Maßnahme sicher durchführbar?
 
-Wenn Zweifel bestehen, muss die Maßnahme geklärt werden.
+Wenn Zweifel bestehen, darf die Maßnahme nicht einfach durchgeführt werden.
+
+<div class="merkbox">
+<div class="merkbox-title">Merke: Übernahmeverantwortung schützt dich</div>
+
+Du bist verpflichtet zu prüfen, ob du eine Maßnahme sicher durchführen kannst.
+
+Im Zweifel: nachfragen, nicht handeln.
+
+</div>
 
 ## Grenzen der Delegation
 
-Nicht alle medizinischen Tätigkeiten dürfen delegiert werden.
+Nicht alle ärztlichen Tätigkeiten dürfen delegiert werden.
 
-Bestimmte Aufgaben müssen immer vom Arzt durchgeführt werden.
-
-Zum Beispiel:
+Nicht delegierbar sind insbesondere:
 
 - Diagnosestellung
 - Therapieentscheidungen
 - komplexe medizinische Eingriffe
+- invasive Maßnahmen mit hohem Risiko
+
+Diese Aufgaben müssen immer durch Ärztinnen oder Ärzte erfolgen.
 
 ## Bedeutung für die Pflegepraxis
 
-Im Pflegealltag ist Delegation sehr häufig.
+Delegation ist fester Bestandteil des Pflegealltags.
 
-Eine klare Kommunikation zwischen Ärzten und Pflegekräften ist deshalb besonders wichtig.
+Deshalb sind wichtig:
 
-<div class="info-box info-box-merke">
-<div class="info-box-title">💡 Merke</div>
+- klare und verständliche Anordnungen
+- sichere Kommunikation im Team
+- Rückfragen bei Unklarheiten
+- saubere Dokumentation
 
-Bei delegierten Maßnahmen bleibt die Anordnungsverantwortung beim Arzt.
+Fehlkommunikation ist eine häufige Fehlerquelle.
 
-Die Pflegekraft trägt jedoch die Verantwortung für die korrekte Durchführung.
+## Rolle der Pflege
 
-</div>
+Pflegekräfte haben eine aktive Verantwortung.
 
-<div class="info-box info-box-achtung">
-<div class="info-box-title">⚠️ Achtung</div>
+Wichtige Aufgaben sind:
 
-Pflegekräfte dürfen eine Maßnahme nicht durchführen, wenn sie sich unsicher sind oder die notwendige Qualifikation fehlt.
+- Anordnungen prüfen
+- Maßnahmen korrekt durchführen
+- Veränderungen beobachten
+- Auffälligkeiten sofort weitergeben
+- eigene Grenzen erkennen
 
-</div>
+Pflege ist hier nicht „ausführend“, sondern mitverantwortlich.
 
-<div class="info-box info-box-praxis">
-<div class="info-box-title">🩺 Praxis-Tipp</div>
+## Prüfungsrelevant
 
-Wenn eine Anordnung unklar ist, sollte immer Rücksprache mit dem Arzt gehalten werden.
+In Prüfungen zählt vor allem:
 
-Unklare Anordnungen dürfen nicht einfach umgesetzt werden.
+- Definition von Delegation
+- Unterschiede der Verantwortungsbereiche
+- Bedeutung der Übernahmeverantwortung
+- Grenzen der Delegation
+- korrektes Verhalten bei Unsicherheit
 
-</div>
+Typische Prüfungsfragen:
 
-## Typische Prüfungsfragen
-
-- Was bedeutet Delegation?
+- Was bedeutet Delegation in der Pflege?
 - Was ist die Anordnungsverantwortung?
 - Was ist die Durchführungsverantwortung?
 - Was versteht man unter Übernahmeverantwortung?
-
+- Was tun Sie bei unklarer Anordnung?

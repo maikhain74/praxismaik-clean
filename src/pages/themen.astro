@@ -9,487 +9,198 @@ const categoryDefinitions = [
     slug: "anatomie",
     title: "Anatomie",
     icon: "🫀",
-    description: "Grundlagen des Körpers, um pflegerische Beobachtungen und Maßnahmen sicher einzuordnen.",
+    description: "Grundlagen des Körpers verstehen.",
     group: "Grundlagen verstehen",
   },
   {
     slug: "hygiene",
     title: "Hygiene",
     icon: "🧼",
-    description: "Hygiene, Infektionsschutz und Desinfektion im Pflegealltag sicher verstehen.",
+    description: "Infektionen vermeiden und sicher arbeiten.",
     group: "Grundlagen verstehen",
   },
   {
     slug: "kommunikation",
     title: "Kommunikation",
     icon: "💬",
-    description: "Professionelle Kommunikation mit Patienten, Angehörigen und im Team.",
+    description: "Professionell mit Patienten und Team sprechen.",
     group: "Menschen begleiten",
   },
   {
     slug: "vitalzeichen",
     title: "Vitalzeichen",
     icon: "💓",
-    description: "Puls, Blutdruck, Atmung, Temperatur und Sauerstoffsättigung sicher erfassen und einordnen.",
+    description: "Puls, Blutdruck und Atmung richtig einschätzen.",
     group: "Grundlagen verstehen",
   },
   {
     slug: "pflegeprozess",
     title: "Pflegeprozess",
     icon: "📝",
-    description: "Pflege planen, durchführen, begründen und systematisch auswerten.",
+    description: "Pflege planen und durchführen.",
     group: "Pflegerisch handeln",
   },
   {
     slug: "recht",
     title: "Recht in der Pflege",
     icon: "⚖️",
-    description: "Wichtige rechtliche Grundlagen für sicheres und korrektes Handeln in der Pflege.",
+    description: "Rechtlich sicher handeln.",
     group: "Qualität und Verantwortung",
   },
   {
     slug: "krankheitslehre",
     title: "Krankheitslehre",
     icon: "🩺",
-    description: "Wichtige Krankheitsbilder verständlich erklärt und pflegerisch eingeordnet.",
+    description: "Krankheiten verstehen und einordnen.",
     group: "Grundlagen verstehen",
   },
   {
     slug: "demenz",
     title: "Demenz",
     icon: "🧠",
-    description: "Menschen mit Demenz verstehen, begleiten und typische Herausforderungen einordnen.",
+    description: "Menschen mit Demenz begleiten.",
     group: "Menschen begleiten",
   },
   {
     slug: "medikamente",
     title: "Medikamente",
     icon: "💊",
-    description: "Sicherer Umgang mit Medikamenten in der Pflege, von Wirkung bis Verantwortung.",
+    description: "Sicherer Umgang mit Medikamenten.",
     group: "Grundlagen verstehen",
   },
   {
     slug: "notfaelle",
-    title: "Notfälle in der Pflege",
+    title: "Notfälle",
     icon: "🚑",
-    description: "Kritische Situationen erkennen, priorisieren und richtig handeln.",
+    description: "Notfälle erkennen und handeln.",
     group: "Pflegerisch handeln",
   },
   {
     slug: "palliative-care",
     title: "Palliative Care",
     icon: "🕊️",
-    description: "Grundlagen der palliativen Versorgung fachlich und menschlich verständlich erklärt.",
+    description: "Menschen am Lebensende begleiten.",
     group: "Menschen begleiten",
   },
   {
     slug: "prophylaxen",
     title: "Prophylaxen",
     icon: "🛡️",
-    description: "Pflegeprobleme wie Dekubitus, Sturz oder Thrombose vorbeugend erkennen und handeln.",
+    description: "Komplikationen vorbeugen.",
+    group: "Pflegerisch handeln",
+  },
+   {
+    slug: "mobilitaet",
+    title: "Mobilität",
+    icon: "🚶",
+    description: "Bewegung fördern, Selbstständigkeit erhalten und Komplikationen vermeiden.",
     group: "Pflegerisch handeln",
   },
   {
     slug: "expertenstandards",
     title: "Expertenstandards",
     icon: "📘",
-    description: "Die Expertenstandards kompakt, verständlich und praxisbezogen erklärt.",
+    description: "Pflege nach Standards durchführen.",
     group: "Qualität und Verantwortung",
   },
   {
     slug: "einsatzbereiche",
     title: "Einsatzbereiche",
     icon: "🏥",
-    description: "Pflege im jeweiligen Setting verstehen, Krankenhaus, Heim, ambulant oder Psychiatrie.",
+    description: "Pflege in verschiedenen Settings verstehen.",
     group: "Menschen begleiten",
   },
 ];
 
 const categories = categoryDefinitions.map((category) => {
-  const categoryEntry = entries.find((entry) => entry.slug === category.slug);
-
-  const subtopics = entries
-    .filter((entry) => entry.slug.startsWith(`${category.slug}/`))
-    .sort((a, b) => a.data.title.localeCompare(b.data.title, "de"));
+  const subtopics = entries.filter((entry) =>
+    entry.slug.startsWith(`${category.slug}/`)
+  );
 
   return {
     ...category,
-    description: categoryEntry?.data.description ?? category.description,
     count: subtopics.length,
-    items: subtopics,
   };
 });
 
-const groupedCategories = [
+const grouped = [
   {
     title: "Grundlagen verstehen",
-    description:
-      "Hier lernst du die fachlichen Grundlagen, die du im Pflegealltag und in Prüfungen ständig brauchst.",
-    items: categories.filter((category) => category.group === "Grundlagen verstehen"),
+    items: categories.filter((c) => c.group === "Grundlagen verstehen"),
   },
   {
     title: "Pflegerisch handeln",
-    description:
-      "Diese Bereiche helfen dir, typische pflegerische Situationen strukturiert zu erkennen und richtig zu bearbeiten.",
-    items: categories.filter((category) => category.group === "Pflegerisch handeln"),
+    items: categories.filter((c) => c.group === "Pflegerisch handeln"),
   },
   {
     title: "Menschen begleiten",
-    description:
-      "Pflege ist mehr als Maßnahmen, hier geht es um Kommunikation, Begleitung und den jeweiligen Versorgungskontext.",
-    items: categories.filter((category) => category.group === "Menschen begleiten"),
+    items: categories.filter((c) => c.group === "Menschen begleiten"),
   },
   {
     title: "Qualität und Verantwortung",
-    description:
-      "Diese Themen sichern professionelles, begründetes und rechtlich korrektes Handeln ab.",
-    items: categories.filter((category) => category.group === "Qualität und Verantwortung"),
+    items: categories.filter((c) => c.group === "Qualität und Verantwortung"),
   },
 ];
 ---
 
-<BaseLayout title="Themen" description="Alle Themenbereiche und Lerninhalte von PraxisMaik.">
-  <section class="topics-page">
-    <nav class="breadcrumbs" aria-label="Breadcrumb">
-      <a href="/">Start</a>
-      <span class="breadcrumb-sep">›</span>
-      <span class="current">Themen</span>
-    </nav>
+<BaseLayout title="Themen">
+  <main class="container">
+    <h1>Alle Themen</h1>
 
-    <header class="topics-hero">
-      <span class="topics-eyebrow">Themenübersicht</span>
-      <h1>Alle Themen deiner Pflegeausbildung, klar geordnet</h1>
-      <p class="topics-intro">
-        PraxisMaik bündelt die Inhalte der generalistischen Pflegeausbildung so,
-        dass du schneller verstehst, gezielter lernst und Themen nicht ungeordnet durcharbeitest.
-      </p>
-    </header>
+    {grouped.map((group) => (
+      <section>
+        <h2>{group.title}</h2>
 
-    {groupedCategories.map((group) => (
-      <section class="topic-group">
-        <div class="topic-group-head">
-          <h2>{group.title}</h2>
-          <p>{group.description}</p>
-        </div>
-
-        <div class="topic-grid">
-          {group.items.map((category) => (
-            <a
-              class={`topic-card ${category.slug === "einsatzbereiche" ? "context-card" : ""}`}
-              href={`/themen/${category.slug}/`}
-            >
-              <div class="topic-card-top">
-                <div class="topic-card-heading">
-                  <span class="category-icon" aria-hidden="true">{category.icon}</span>
-                  <h3 class="category-card-title">{category.title}</h3>
-                </div>
-
-                {category.items.some((item) => item.data.level === "pruefung") && (
-                  <span class="card-level card-level-pruefung">🔴 Prüfung</span>
-                )}
-
-                {!category.items.some((item) => item.data.level === "pruefung") &&
-                  category.items.some((item) => item.data.level === "vertiefung") && (
-                    <span class="card-level card-level-vertiefung">🟡 Vertiefung</span>
-                  )}
-
-                {!category.items.some((item) => item.data.level === "pruefung") &&
-                  !category.items.some((item) => item.data.level === "vertiefung") && (
-                    <span class="card-level card-level-grundlagen">🟢 Grundlagen</span>
-                  )}
-              </div>
-
-              <p class="topic-card-text">{category.description}</p>
-
-              <div class="topic-card-meta">
-                <span class="topic-count">
-                  {category.count} {category.count === 1 ? "Thema" : "Themen"}
-                </span>
-                <span class="topic-link">Öffnen</span>
-              </div>
+        <div class="grid">
+          {group.items.map((cat) => (
+            <a class="card" href={`/themen/${cat.slug}/`}>
+              <span class="icon">{cat.icon}</span>
+              <h3>{cat.title}</h3>
+              <p>{cat.description}</p>
+              <small>{cat.count === 0 ? "Übersicht" : cat.count === 1 ? "1 Thema" : `${cat.count} Themen`}</small>
             </a>
           ))}
         </div>
       </section>
     ))}
-  </section>
+  </main>
 </BaseLayout>
 
-<style is:global>
-.topics-page {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2.25rem 1rem 3.5rem;
-}
-
-.topics-hero {
+<style>
+.container {
   max-width: 1100px;
-  margin-top: 1rem;
-  margin-bottom: 2.5rem;
-}
-.topics-eyebrow {
-  display: inline-block;
-  padding: 0.38rem 0.72rem;
-  border-radius: 999px;
-  background: #eef5ff;
-  color: #2f5f9b;
-  font-size: 0.74rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
+  margin: auto;
+  padding: 2rem 1rem;
 }
 
-.topics-hero h1 {
-  margin: 0.7rem 0 0.8rem;
-  max-width: 22ch;   /* vorher 17ch */
-  font-size: clamp(1.9rem, 3.3vw, 2.7rem);
-  line-height: 1.12;
-}
-.topic-group + .topic-group {
-  margin-top: 3rem;
+h1 {
+  margin-bottom: 2rem;
 }
 
-.topic-group-head {
-  margin-bottom: 1.1rem;
+h2 {
+  margin-top: 2rem;
 }
 
-.topic-group-head h2 {
-  margin: 0 0 0.45rem;
-}
-
-.topic-group-head p {
-  margin: 0;
-  max-width: 64ch;
-  color: #5b6b7a;
-  line-height: 1.65;
-}
-
-.topic-grid {
+.grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 
-.topic-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 240px;
-  padding: 1.35rem;
-  border-radius: 18px;
-  border: 1px solid #e5e5e5;
-  background: #ffffff;
+.card {
+  display: block;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
   text-decoration: none;
   color: inherit;
-  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
-  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
 }
 
-.topic-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 30px rgba(24, 50, 74, 0.08);
-  border-color: #cfdceb;
+.card:hover {
+  background: #f5f5f5;
 }
 
-.context-card {
-  background: #f8fbff;
-  border-color: #dbe7f5;
-}
-
-.topic-card-top {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.7rem;
-  margin-bottom: 0.8rem;
-}
-
-.topic-card-heading {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-}
-
-.category-icon {
-  font-size: 1.25rem;
-  line-height: 1;
-}
-
-.category-card-title {
-  margin: 0;
-  font-size: 1.05rem;
-  line-height: 1.3;
-word-break: break-word;
-}
-
-.card-level {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.3rem 0.65rem;
-  border-radius: 999px;
-  font-size: 0.78rem;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.card-level-grundlagen {
-  background: #e6f6ea;
-  color: #1f7a3f;
-}
-
-.card-level-vertiefung {
-  background: #fff4d6;
-  color: #9a6a00;
-}
-
-.card-level-pruefung {
-  background: #fdecea;
-  color: #a12b2b;
-}
-
-.topic-card-text {
-  margin: 0;
-  color: #556270;
-  font-size: 0.95rem;
-  line-height: 1.58;
-
-  /* FIX */
-  word-break: break-word;
-  overflow-wrap: anywhere;
-}
-.topic-card-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.8rem;
-  margin-top: 1.1rem;
-}
-
-.topic-count {
-  color: #6b7785;
-  font-size: 0.9rem;
-}
-
-.topic-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.38rem 0.7rem;
-  border-radius: 999px;
-  background: #eef5ff;
-  color: #2f5f9b;
-  font-size: 0.84rem;
-  font-weight: 700;
-}
-
-@media (max-width: 1100px) {
-  .topic-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 820px) {
-  .topic-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 640px) {
-  .topics-page {
-    padding: 2rem 1rem 3rem;
-  }
-
-  .topics-hero h1 {
-    max-width: none;
-  }
-
-  .topic-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .topic-card {
-    min-height: unset;
-  }
-
-  .topic-card-meta {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-}
-<style is:global>
-  ... dein bestehendes CSS ...
-
-  /* HIER EINFÜGEN ↓↓↓ */
-
-  .category-card-title {
-    word-break: break-word;
-  }
-
-  .topic-card-text {
-    word-break: break-word;
-    overflow-wrap: anywhere;
-  }
-
-  .topics-hero {
-    max-width: 1000px;
-  }
-
-  .topics-hero h1 {
-    max-width: 22ch;
-  }
-/* ===== KARTEN-FIX FÜR LANGE TITEL ===== */
-
-.topic-card {
-  min-height: 290px;
-}
-
-.topic-card-top {
-  align-items: stretch;
-}
-
-.topic-card-heading {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.7rem;
-  width: 100%;
-}
-
-.category-card-title {
-  flex: 1;
-  min-width: 0;
-  word-break: break-word;
-  overflow-wrap: anywhere;
-}
-
-.topic-card-text {
-  word-break: break-word;
-  overflow-wrap: anywhere;
-}
-
-.topic-card-meta {
-  margin-top: auto;
-  padding-top: 1rem;
-}
-
-.topic-link {
-  flex-shrink: 0;
-  white-space: nowrap;
-}
-
-/* ===== HERO BREITER ===== */
-
-.topics-hero {
-  max-width: 1100px;
-}
-
-.topics-hero h1 {
-  max-width: 22ch;
-}
-.topics-hero {
-  max-width: 1000px !important;
-}
-
-.topics-hero h1 {
-  max-width: 22ch !important;
+.icon {
+  font-size: 1.5rem;
 }
 </style>

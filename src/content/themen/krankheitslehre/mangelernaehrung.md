@@ -6,96 +6,141 @@ level: vertiefung
 
 # Mangelernährung
 
-## Kurz erklärt
+Mangelernährung bedeutet, dass der Körper nicht ausreichend mit Energie, Eiweiß und wichtigen Nährstoffen versorgt wird.
 
-Mangelernährung bedeutet, dass der Körper nicht ausreichend mit Energie und Nährstoffen versorgt wird.
+Sie tritt besonders häufig bei älteren, kranken oder pflegebedürftigen Menschen auf und wird oft zu spät erkannt.
 
----
+## Warum Mangelernährung wichtig ist
 
-## Warum ist das wichtig für die Pflege?
+Für die Pflege ist Mangelernährung besonders relevant, weil:
 
-- häufig bei älteren und kranken Menschen  
-- wird oft spät erkannt  
-- verschlechtert den Gesundheitszustand  
-- beeinflusst Heilungsprozesse (z. B. Wunden)  
-- sehr prüfungsrelevant  
-
----
+- sie häufig vorkommt
+- sie sich schleichend entwickelt
+- sie den Gesundheitszustand deutlich verschlechtert
+- sie Heilungsprozesse negativ beeinflusst
+- sie zu weiteren Komplikationen führen kann
 
 ## Ursachen
 
-- verminderter Appetit  
-- Schluckstörungen  
-- Erkrankungen  
-- psychische Faktoren  
-- Probleme beim Essen und Trinken  
+Mangelernährung kann viele Ursachen haben.
 
----
+Häufige Gründe sind:
+
+- verminderter Appetit
+- Schluckstörungen (Dysphagie)
+- Erkrankungen
+- Schmerzen
+- Übelkeit
+- psychische Faktoren (z. B. Depression)
+- Probleme beim Essen und Trinken
+- fehlende Unterstützung
+
+Oft treten mehrere Ursachen gleichzeitig auf.
 
 ## Risikofaktoren
 
-- hohes Alter  
-- Demenz  
-- Immobilität  
-- chronische Erkrankungen  
-- soziale Isolation  
+Bestimmte Personen sind besonders gefährdet:
 
----
+- hohes Alter
+- Demenz
+- Immobilität
+- chronische Erkrankungen
+- Krebserkrankungen
+- soziale Isolation
+- Pflegebedürftigkeit
 
 ## Typische Anzeichen
 
-- Gewichtsverlust  
-- Schwäche  
-- Müdigkeit  
-- verminderte Muskelmasse  
-- trockene Haut  
+Mangelernährung zeigt sich oft schleichend.
 
----
+Typische Hinweise sind:
+
+- ungewollter Gewichtsverlust
+- verminderter Appetit
+- Schwäche
+- Müdigkeit
+- reduzierte Muskelmasse
+- trockene Haut
+- langsame Wundheilung
 
 ## Mögliche Folgen
 
-- erhöhte Infektanfälligkeit  
-- schlechte Wundheilung  
-- erhöhte Sturzgefahr  
-- allgemeine Verschlechterung  
+Unbehandelte Mangelernährung kann schwerwiegende Folgen haben:
 
----
+- erhöhte Infektanfälligkeit
+- schlechte Wundheilung
+- Muskelabbau
+- erhöhte Sturzgefahr
+- allgemeine Verschlechterung des Zustands
+- längere Genesungszeit
+
+<div class="merkbox">
+<div class="merkbox-title">Merke: Ernährung beeinflusst den ganzen Körper</div>
+
+Mangelernährung wirkt sich auf fast alle Körperfunktionen aus.
+
+</div>
 
 ## Beobachtungen in der Pflege
 
-- Essverhalten beobachten  
-- Gewicht kontrollieren  
-- Nahrungsaufnahme dokumentieren  
-- Veränderungen früh erkennen  
+Pflegekräfte achten auf:
 
----
+- Essverhalten
+- Nahrungsmenge
+- Gewichtsverlauf
+- körperliche Veränderungen
+- Allgemeinzustand
+- Trinkmenge
+
+Veränderungen müssen früh erkannt werden.
 
 ## Pflegebezug
 
-- ausreichende Ernährung sicherstellen  
-- Unterstützung beim Essen anbieten  
-- individuelle Bedürfnisse berücksichtigen  
-- Essumgebung angenehm gestalten  
+Pflegekräfte spielen eine zentrale Rolle bei der Vorbeugung und Behandlung.
 
----
+Wichtige Aufgaben sind:
+
+- ausreichende Ernährung sicherstellen
+- Unterstützung beim Essen anbieten
+- individuelle Bedürfnisse berücksichtigen
+- Esssituation verbessern
+- Veränderungen dokumentieren
 
 ## Wichtige pflegerische Maßnahmen
 
-- regelmäßige Gewichtskontrolle  
-- Ess- und Trinkprotokolle führen  
-- kleine, energiereiche Mahlzeiten anbieten  
-- Hilfe beim Essen leisten  
-- interdisziplinär arbeiten  
+- regelmäßige Gewichtskontrollen
+- Ess- und Trinkprotokolle führen
+- kleine, energiereiche Mahlzeiten anbieten
+- Zwischenmahlzeiten einplanen
+- Hilfe beim Essen leisten
+- angenehme Essatmosphäre schaffen
+- Vorlieben berücksichtigen
+- Flüssigkeitszufuhr fördern
+- interdisziplinär zusammenarbeiten (z. B. Ernährungsberatung)
 
----
+## Rolle der Pflege
+
+Pflegekräfte müssen:
+
+- Risikopersonen erkennen
+- Veränderungen früh wahrnehmen
+- Maßnahmen planen und umsetzen
+- Patienten unterstützen und anleiten
+- den Verlauf beobachten
 
 ## Prüfungsrelevant
 
-Typische Fragen:
+In Prüfungen zählt vor allem:
 
-- „Was ist Mangelernährung?“  
-- „Nennen Sie Ursachen.“  
-- „Welche Folgen kann sie haben?“  
-- „Welche pflegerischen Maßnahmen sind wichtig?“  
+- Definition der Mangelernährung
+- Ursachen erkennen
+- typische Anzeichen benennen
+- Folgen verstehen
+- pflegerische Maßnahmen erklären
 
-👉 Wichtig: Ernährung + Zustand + Pflege zusammen denken
+Typische Prüfungsfragen:
+
+- Was ist Mangelernährung?
+- Welche Ursachen gibt es?
+- Welche Folgen kann Mangelernährung haben?
+- Welche Aufgaben hat die Pflege?

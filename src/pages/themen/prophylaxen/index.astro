@@ -2,263 +2,340 @@
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 
-const entries = await getCollection("themen");
+const themen = await getCollection("themen");
 
-const categoryEntry = entries.find((entry) => entry.slug === "prophylaxen");
-
-const prophylaxenTopics = entries
-  .filter((entry) => entry.slug.startsWith("prophylaxen/"))
+const items = themen
+  .filter(
+    (t) =>
+      t.slug.toLowerCase().startsWith("prophylaxen/") &&
+      t.slug !== "prophylaxen/dekubitusprophylaxe" &&
+      t.slug !== "prophylaxen/sturzprophylaxe"
+  )
   .sort((a, b) => a.data.title.localeCompare(b.data.title, "de"));
+const topicDescriptions = {
+  
+  "prophylaxen/thromboseprophylaxe": {
+    badge: "Gefäße",
+    description:
+      "Verstehe Risikofaktoren für Thrombosen und pflegerische Maßnahmen zur Vorbeugung.",
+  },
+  "prophylaxen/pneumonieprophylaxe": {
+    badge: "Atmung",
+    description:
+      "Lerne Maßnahmen kennen, die die Atmung fördern und einer Pneumonie vorbeugen.",
+  },
+  
+  "prophylaxen/kontrakturprophylaxe": {
+    badge: "Bewegung",
+    description:
+      "Verstehe, wie Bewegung, Lagerung und Mobilisation Kontrakturen vorbeugen.",
+  },
+  "prophylaxen/obstipationsprophylaxe": {
+    badge: "Ausscheidung",
+    description:
+      "Lerne, wie Ernährung, Bewegung und Beobachtung einer Obstipation vorbeugen können.",
+  },
+};
+
+const getTopicInfo = (item) => {
+  return (
+    topicDescriptions[item.slug] ?? {
+      badge: "Prophylaxe",
+      description:
+        item.data.description ||
+        "Lerne Risiko, Ziel und passende Maßnahmen dieser Prophylaxe kennen.",
+    }
+  );
+};
 ---
 
-<BaseLayout
-  title="Prophylaxen | PraxisMaik"
-  description={categoryEntry?.data.description ?? "Prophylaxen für die Pflegeausbildung verständlich und strukturiert lernen."}
->
-  <section class="category-page">
-    <nav class="breadcrumbs" aria-label="Breadcrumb">
-      <a href="/">Start</a>
-      <span class="breadcrumb-sep">›</span>
+<BaseLayout title="Prophylaxen">
+  <main class="bereich-page">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Startseite</a>
+      <span>›</span>
       <a href="/themen/">Themen</a>
-      <span class="breadcrumb-sep">›</span>
-      <span class="current">Prophylaxen</span>
+      <span>›</span>
+      <span>Prophylaxen</span>
     </nav>
 
-    <header class="category-hero">
-      <span class="category-eyebrow">Themenbereich</span>
+    <section class="hero-panel">
+      <p class="eyebrow">Themenbereich</p>
       <h1>Prophylaxen</h1>
-      <p class="category-intro">
-        Prophylaxen gehören zum pflegerischen Kern. Du musst Risiken früh erkennen,
-        gefährdete Personen einschätzen und passende Maßnahmen sicher ableiten.
+      <p class="hero-text">
+        Prophylaxen gehören zum pflegerischen Kern. Hier lernst du, Risiken früh zu erkennen,
+        gefährdete Personen einzuschätzen und passende Maßnahmen sicher abzuleiten.
       </p>
-    </header>
-
-    <section class="category-panel">
-      <h2>Warum Prophylaxen wichtig sind</h2>
-      <div class="info-grid">
-        <div class="info-card">
-          <h3>Risiken früh erkennen</h3>
-          <p>
-            Viele pflegerische Probleme entstehen nicht plötzlich, sondern kündigen
-            sich an. Gute Pflege beginnt deshalb mit genauer Beobachtung.
-          </p>
-        </div>
-
-        <div class="info-card">
-          <h3>Komplikationen vermeiden</h3>
-          <p>
-            Prophylaxen helfen, Schäden wie Dekubitus, Stürze oder Thrombosen
-            möglichst früh zu verhindern.
-          </p>
-        </div>
-
-        <div class="info-card">
-          <h3>Prüfungsrelevant in fast allen Bereichen</h3>
-          <p>
-            Prophylaxen tauchen in Prüfungen ständig auf, oft eingebettet in
-            Fallsituationen und pflegerische Entscheidungen.
-          </p>
-        </div>
-      </div>
     </section>
 
-    <section class="category-panel">
+    <section class="info-panel">
+      <h2>Warum Prophylaxen wichtig sind</h2>
+      <p>
+        Gute Pflege beginnt, bevor ein Schaden entsteht. Prophylaxen helfen dir,
+        Komplikationen wie Dekubitus, Stürze, Thrombosen oder Pneumonien frühzeitig zu vermeiden.
+      </p>
+    </section>
+
+    <section class="info-grid">
+      <article class="info-card">
+        <h3>Risiken erkennen</h3>
+        <p>Du lernst, gefährdete Personen und Situationen frühzeitig einzuschätzen.</p>
+      </article>
+
+      <article class="info-card">
+        <h3>Schäden vermeiden</h3>
+        <p>Du leitest passende Maßnahmen ab, bevor Komplikationen entstehen.</p>
+      </article>
+
+      <article class="info-card">
+        <h3>Pflege begründen</h3>
+        <p>Du kannst erklären, warum eine Maßnahme sinnvoll und notwendig ist.</p>
+      </article>
+    </section>
+
+    <section class="info-panel">
       <h2>Was du in diesem Bereich können solltest</h2>
-      <ul class="learning-list">
-        <li>Risikofaktoren systematisch erkennen</li>
-        <li>gefährdete Personen und Situationen richtig einschätzen</li>
-        <li>passende prophylaktische Maßnahmen begründet auswählen</li>
-        <li>Pflegehandlungen nachvollziehbar erklären und priorisieren</li>
+      <ul class="goal-list">
+        <li>Risikofaktoren systematisch erkennen.</li>
+        <li>Gefährdete Personen und Situationen richtig einschätzen.</li>
+        <li>Passende prophylaktische Maßnahmen auswählen.</li>
+        <li>Pflegehandlungen fachlich begründen.</li>
+        <li>Prophylaxen im Pflegeprozess sinnvoll einordnen.</li>
       </ul>
     </section>
 
-    <section class="category-panel">
-      <div class="topics-head">
+    <section class="topics-panel">
+      <div class="section-head">
         <div>
-          <h2>Alle Themen zu Prophylaxen</h2>
-          <p class="muted">
-            Arbeite die einzelnen Prophylaxen Schritt für Schritt durch und achte
-            immer auf Risiko, Ziel und Maßnahme.
-          </p>
+          <p class="eyebrow">Übersicht</p>
+          <h2>Alle Prophylaxen-Themen</h2>
         </div>
-        <div class="topic-count-badge">
-          {prophylaxenTopics.length} {prophylaxenTopics.length === 1 ? "Thema" : "Themen"}
-        </div>
+        <span class="count-badge">{items.length} Themen</span>
       </div>
 
-      {prophylaxenTopics.length > 0 ? (
-        <div class="topic-grid">
-          {prophylaxenTopics.map((topic) => (
-            <a class="topic-card" href={`/themen/${topic.slug}/`}>
-              <h3>{topic.data.title}</h3>
-              <p>{topic.data.description}</p>
+      <div class="topic-grid">
+        {items.map((t, index) => {
+          const info = getTopicInfo(t);
+
+          return (
+            <a class="topic-card" href={`/themen/${t.slug}/`}>
+              <div class="badge-row">
+                <span class="topic-badge">Thema {index + 1}</span>
+                <span class="type-badge">{info.badge}</span>
+              </div>
+
+              <h3>{t.data.title}</h3>
+              <p>{info.description}</p>
+              <span class="open-link">Thema öffnen →</span>
             </a>
-          ))}
-        </div>
-      ) : (
-        <div class="empty-state">
-          <p>Noch keine Prophylaxen-Themen vorhanden.</p>
-        </div>
-      )}
+          );
+        })}
+      </div>
     </section>
-  </section>
+  </main>
 </BaseLayout>
 
-<style is:global>
-.category-page {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2.5rem 1rem 3.5rem;
-}
-
-.category-hero {
-  max-width: 760px;
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
-}
-
-.category-eyebrow {
-  display: inline-block;
-  margin-bottom: 0.6rem;
-  padding: 0.35rem 0.65rem;
-  border-radius: 999px;
-  background: #eef5ff;
-  color: #2f5f9b;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.category-hero h1 {
-  margin: 0 0 0.75rem;
-  font-size: clamp(2rem, 3vw, 2.7rem);
-  line-height: 1.12;
-}
-
-.category-intro {
-  max-width: 58ch;
-  margin: 0;
-  color: #5b6b7a;
-  line-height: 1.7;
-}
-
-.category-panel + .category-panel {
-  margin-top: 2rem;
-}
-
-.category-panel {
-  background: #ffffff;
-  border: 1px solid #e5e5e5;
-  border-radius: 20px;
-  padding: 1.5rem;
-  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.04);
-}
-
-.category-panel h2 {
-  margin-top: 0;
-  margin-bottom: 0.9rem;
-}
-
-.info-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-
-.info-card {
-  background: #f8fbff;
-  border: 1px solid #dbe7f5;
-  border-radius: 16px;
-  padding: 1.1rem;
-}
-
-.info-card h3 {
-  margin: 0 0 0.45rem;
-  font-size: 1rem;
-}
-
-.info-card p {
-  margin: 0;
-  color: #556270;
-  line-height: 1.55;
-}
-
-.learning-list {
-  margin: 0;
-  padding-left: 1.2rem;
-}
-
-.learning-list li + li {
-  margin-top: 0.55rem;
-}
-
-.topics-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.topic-count-badge {
-  flex-shrink: 0;
-  padding: 0.5rem 0.8rem;
-  border-radius: 999px;
-  background: #eef5ff;
-  color: #2f5f9b;
-  font-size: 0.9rem;
-  font-weight: 700;
-}
-
-.topic-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-
-.topic-card {
-  display: block;
-  background: #ffffff;
-  border: 1px solid #e5e5e5;
-  border-radius: 16px;
-  padding: 1.2rem;
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
-}
-
-.topic-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 28px rgba(24, 50, 74, 0.08);
-  border-color: #cfdceb;
-}
-
-.topic-card h3 {
-  margin: 0 0 0.45rem;
-  font-size: 1.02rem;
-}
-
-.topic-card p {
-  margin: 0;
-  color: #556270;
-  line-height: 1.55;
-}
-
-.empty-state {
-  padding: 1rem 0 0;
-  color: #5b6b7a;
-}
-
-@media (max-width: 900px) {
-  .info-grid,
-  .topic-grid {
-    grid-template-columns: 1fr;
+<style>
+  .bereich-page {
+    display: grid;
+    gap: 24px;
   }
 
-  .topics-head {
-    flex-direction: column;
+  .breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    color: #64748b;
+    font-size: 0.95rem;
+  }
+
+  .breadcrumb a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  .hero-panel,
+  .info-panel,
+  .topics-panel {
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
+    background: #ffffff;
+    padding: 28px;
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+  }
+
+  .hero-panel {
+    background: linear-gradient(135deg, #eff6ff 0%, #ffffff 58%, #f8fafc 100%);
+  }
+
+  .eyebrow {
+    margin: 0 0 10px;
+    color: #2563eb;
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(2.1rem, 4vw, 3.4rem);
+    line-height: 1.05;
+    color: #0f172a;
+  }
+
+  .hero-text {
+    max-width: 760px;
+    margin: 16px 0 0;
+    color: #475569;
+    font-size: 1.08rem;
+    line-height: 1.7;
+  }
+
+  .info-panel h2,
+  .topics-panel h2 {
+    margin: 0 0 12px;
+    color: #0f172a;
+    font-size: 1.45rem;
+  }
+
+  .info-panel p {
+    margin: 0;
+    color: #475569;
+    line-height: 1.75;
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .info-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 22px;
+    background: #ffffff;
+    padding: 22px;
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.05);
+  }
+
+  .info-card h3 {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 1.08rem;
+  }
+
+  .info-card p {
+    margin: 0;
+    color: #64748b;
+    line-height: 1.65;
+  }
+
+  .goal-list {
+    margin: 0;
+    padding-left: 20px;
+    color: #475569;
+    line-height: 1.8;
+  }
+
+  .section-head {
+    display: flex;
     align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 20px;
   }
-}
+
+  .count-badge {
+    flex: 0 0 auto;
+    border-radius: 999px;
+    background: #dbeafe;
+    color: #1d4ed8;
+    padding: 8px 14px;
+    font-size: 0.9rem;
+    font-weight: 800;
+  }
+
+  .topic-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .topic-card {
+    display: flex;
+    min-height: 220px;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #e2e8f0;
+    border-radius: 22px;
+    background: #ffffff;
+    padding: 22px;
+    text-decoration: none;
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.05);
+    transition:
+      transform 0.18s ease,
+      box-shadow 0.18s ease,
+      border-color 0.18s ease;
+  }
+
+  .topic-card:hover {
+    transform: translateY(-3px);
+    border-color: #bfdbfe;
+    box-shadow: 0 18px 38px rgba(37, 99, 235, 0.12);
+  }
+
+  .badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .topic-badge,
+  .type-badge {
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-size: 0.78rem;
+    font-weight: 800;
+  }
+
+  .topic-badge {
+    background: #eff6ff;
+    color: #2563eb;
+  }
+
+  .type-badge {
+    background: #f1f5f9;
+    color: #475569;
+  }
+
+  .topic-card h3 {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 1.12rem;
+  }
+
+  .topic-card p {
+    margin: 0 0 20px;
+    color: #64748b;
+    line-height: 1.65;
+  }
+
+  .open-link {
+    margin-top: auto;
+    color: #2563eb;
+    font-weight: 800;
+  }
+
+  @media (max-width: 900px) {
+    .info-grid,
+    .topic-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .section-head {
+      flex-direction: column;
+    }
+  }
 </style>

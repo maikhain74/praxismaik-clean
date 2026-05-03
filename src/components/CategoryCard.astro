@@ -1,0 +1,24 @@
+---
+const { title, description, slug } = Astro.props;
+---
+
+<a href={`/kategorie/${slug}`} class="card">
+  <h3>{title}</h3>
+  <p>{description}</p>
+</a>
+
+<style>
+.card {
+  display: block;
+  padding: 20px;
+  border-radius: 12px;
+  background: #1e1e1e;
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.card:hover {
+  background: #2a2a2a;
+}
+</style>

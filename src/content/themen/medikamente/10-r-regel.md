@@ -1,198 +1,180 @@
 ---
-
 title: 10-R-Regel
-
 description: Erweiterte Sicherheitsregel für eine sichere Medikamentengabe in der Pflege.
-
 level: grundlagen
-
 ---
-
-
 
 # 10-R-Regel
 
+## Kurz erklärt
 
+Die 10-R-Regel ist eine Erweiterung der 6-R-Regel und dient der sicheren Medikamentengabe im Pflegealltag.
 
-Die 10-R-Regel ist eine erweiterte Sicherheitsregel für den Umgang mit Medikamenten. Sie baut auf der 6-R-Regel auf und ergänzt wichtige Punkte, die in der pflegerischen Praxis besonders relevant sind.
+👉 Sie ergänzt die klassischen Sicherheitsprüfungen um Beobachtung, Information und Verantwortung.
 
-
-
-Gerade in der stationären Langzeitpflege ist die 10-R-Regel wichtig, weil Medikamente dort häufig bereits verblistert vorbereitet sind. Dadurch entfällt zwar oft ein Teil der Vorbereitung, die Verantwortung für die sichere Verabreichung bleibt aber bestehen.
-
-
+---
 
 ## Warum die 10-R-Regel wichtig ist
 
+Medikamentengaben sind fehleranfällig, auch wenn Medikamente vorbereitet sind.
 
+Gerade in der Praxis gilt:
 
-Auch bei verblisterten Medikamenten können Fehler passieren. Deshalb reicht es nicht aus, sich nur auf die vorbereitete Medikation zu verlassen.
+- Fehler passieren oft durch Routine  
+- vorbereitete Medikamente ersetzen keine Kontrolle  
+- Pflege trägt weiterhin Verantwortung  
 
+---
 
+## Zusammenhang zur 6-R-Regel
 
-Pflegekräfte müssen weiterhin sorgfältig prüfen, ob:
+Die 6-R-Regel bildet die Grundlage:
 
+- richtiger Patient  
+- richtiges Medikament  
+- richtige Dosierung  
+- richtiger Zeitpunkt  
+- richtige Applikationsform  
+- richtige Dokumentation  
 
+👉 Die 10-R-Regel erweitert diese um wichtige pflegerische Aspekte.
 
-- der richtige Bewohner das Medikament erhält
-
-- die Gabe zum richtigen Zeitpunkt erfolgt
-
-- die richtige Darreichungsform vorliegt
-
-- Wirkung und Nebenwirkungen beobachtet werden
-
-- die Gabe korrekt dokumentiert wird
-
-
+---
 
 ## Die 10 R
 
-
-
 ### 1. Richtiger Patient
 
+- Identität sicherstellen  
+- Verwechslungen vermeiden  
 
-
-Das Medikament muss der richtigen Person gegeben werden.
-
-
+---
 
 ### 2. Richtiges Medikament
 
+- Name und Wirkstoff prüfen  
+- auf Verwechslungen achten  
 
-
-Es muss geprüft werden, ob das vorgesehene Medikament tatsächlich verabreicht wird.
-
-
+---
 
 ### 3. Richtige Dosierung
 
+- korrekte Menge verabreichen  
+- besonders wichtig bei Hochrisikomedikamenten  
 
-
-Die Dosierung muss stimmen.
-
-
+---
 
 ### 4. Richtiger Zeitpunkt
 
+- Einnahmezeit beachten  
+- Zusammenhang mit Mahlzeiten berücksichtigen  
 
-
-Das Medikament muss zur richtigen Zeit gegeben werden.
-
-
+---
 
 ### 5. Richtige Applikationsform
 
+- Verabreichungsweg prüfen  
+- z. B. oral, subkutan, intravenös  
 
-
-Es muss geprüft werden, auf welchem Weg das Medikament verabreicht werden soll, zum Beispiel oral, subkutan oder als Tropfen.
-
-
+---
 
 ### 6. Richtige Dokumentation
 
+- Gabe sofort dokumentieren  
+- Grundlage für Nachvollziehbarkeit  
 
-
-Die Gabe muss korrekt dokumentiert werden.
-
-
+---
 
 ### 7. Richtige Information
 
+- Patient informieren  
+- Verständnis fördern  
+- Fragen klären  
 
-
-Der Patient oder Bewohner soll, wenn möglich, über die Medikamentengabe informiert werden.
-
-
+---
 
 ### 8. Richtige Aufbewahrung
 
+- Medikamente korrekt lagern  
+- z. B. Kühlung, Lichtschutz  
 
-
-Medikamente müssen sachgerecht gelagert werden.
-
-
+---
 
 ### 9. Richtige Wirkung
 
+- gewünschte Wirkung beobachten  
+- beurteilen, ob Medikament wirkt  
 
-
-Pflegekräfte müssen beobachten, ob das Medikament die gewünschte Wirkung zeigt.
-
-
+---
 
 ### 10. Richtige Beobachtung von Nebenwirkungen
 
+- Nebenwirkungen früh erkennen  
+- Veränderungen weitergeben  
 
+<div class="merkbox">
+<div class="merkbox-title">Merke: Gabe endet nicht mit der Einnahme</div>
 
-Auch mögliche Nebenwirkungen oder Unverträglichkeiten müssen erkannt und weitergegeben werden.
-
-
-
-<div class="info-box info-box-merke">
-<div class="info-box-title">💡 Merke</div>
-
-Die 10-R-Regel erweitert die 6-R-Regel um wichtige Punkte wie Wirkung, Nebenwirkungen, Information und Aufbewahrung.
-
-Sie ist besonders praxisnah für den Pflegealltag.
+Zur Medikamentengabe gehört immer auch die Beobachtung von Wirkung und Nebenwirkungen.
 
 </div>
 
-<div class="info-box info-box-achtung">
-<div class="info-box-title">⚠️ Achtung</div>
+---
 
-Verblisterte Medikamente bedeuten nicht automatisch Sicherheit.
+## Typische Fehlerquellen
 
-Auch bei vorbereiteten Medikamenten müssen Patient, Zeitpunkt, Einnahme und Beobachtung weiterhin kontrolliert werden.
+- Routine und Unachtsamkeit  
+- Zeitdruck  
+- Unterbrechungen  
+- unklare Anordnungen  
+- falsche Annahme „ist ja schon vorbereitet“  
 
-</div>
+---
 
-<div class="info-box info-box-praxis">
-<div class="info-box-title">🩺 Praxis-Tipp</div>
+## Bedeutung für die Praxis
 
-In der stationären Langzeitpflege sollte nach der Gabe nicht nur dokumentiert, sondern auch beobachtet werden:
+Auch bei:
 
-- wurde das Medikament wirklich eingenommen?
-- zeigt sich eine Wirkung?
-- treten Auffälligkeiten auf?
+- verblisterten Medikamenten  
+- vorbereiteten Tabletten  
+- standardisierten Abläufen  
 
-</div>
+gilt:
 
+👉 Kontrolle bleibt Pflicht der Pflegekraft
+
+---
+
+## Rolle der Pflege
+
+Pflegekräfte müssen:
+
+- jede Gabe prüfen  
+- Verantwortung übernehmen  
+- Patienten beobachten  
+- Auffälligkeiten weitergeben  
+
+---
 
 ## Bedeutung für die stationäre Langzeitpflege
 
+Besonders wichtig:
 
+- Identitätskontrolle  
+- Einnahme beobachten (wird Medikament wirklich genommen?)  
+- Wirkung beurteilen  
+- Nebenwirkungen erkennen  
+- Dokumentation sicherstellen  
 
-In der stationären Langzeitpflege werden Medikamente häufig patientenbezogen verblistert geliefert. Dadurch wird der Ablauf erleichtert, aber die pflegerische Kontrolle bleibt notwendig.
+---
 
+## Prüfungsrelevant
 
+Typische Fragen:
 
-Besonders wichtig sind dabei:
+- Was ist die 10-R-Regel?  
+- Unterschied zur 6-R-Regel?  
+- Warum ist sie wichtig?  
+- Welche zusätzlichen Punkte kommen dazu?  
 
-
-
-- Identitätskontrolle
-
-- Zeitpunkt der Gabe
-
-- Beobachtung der Einnahme
-
-- Wirkungskontrolle
-
-- Nebenwirkungsbeobachtung
-
-- Dokumentation
-
-
-
-## Typische Prüfungsfragen
-
-
-
-- Was ist die 10-R-Regel?
-
-- Warum ist die 10-R-Regel auch bei verblisterten Medikamenten wichtig?
-
-- Welche zusätzlichen Punkte ergänzt die 10-R-Regel im Vergleich zur 6-R-Regel?
-
+👉 Wichtig: Sicherheit + Beobachtung + Verantwortung verstehen
