@@ -105,10 +105,10 @@ const premiumExamQuiz = examQuizZumThema.filter((item) => item.data.premium === 
     </div>
 
     <div class="topic-grid">
-      {skripteZumThema.map((item) => {
-        const isPremium = item.data.premium === true;
+     {skripteZumThema.map((item) => {
+  const isPremium = item.data.premium === true;
 
-        return (
+  return (
           <a class={`topic-card ${isPremium ? "topic-card-premium" : "topic-card-free"}`} href={`/lernskripte/${item.slug}/`}>
             <div class="topic-card-top">
               {isPremium ? (
