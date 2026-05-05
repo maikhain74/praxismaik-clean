@@ -4,353 +4,336 @@ import { getCollection } from "astro:content";
 
 const themen = await getCollection("themen");
 
-const items = themen
+const medikamenteThemen = themen
   .filter((t) => t.slug.toLowerCase().startsWith("medikamente/"))
   .sort((a, b) => a.data.title.localeCompare(b.data.title, "de"));
 
 const topicDescriptions = {
-  "medikamente/6-r-regel": {
-    badge: "Sicherheit",
-    description:
-      "Lerne die 6-R-Regel als Grundlage für eine sichere Medikamentengabe kennen.",
-  },
-  "medikamente/10-r-regel": {
-    badge: "Sicherheit",
-    description:
-      "Vertiefe die erweiterten Sicherheitsregeln bei der Vorbereitung, Gabe und Kontrolle von Medikamenten.",
-  },
-  "medikamente/applikationsformen": {
-    badge: "Praxis",
-    description:
-      "Verstehe verschiedene Applikationsformen und worauf du bei der jeweiligen Verabreichung achten musst.",
-  },
-  "medikamente/medikamentengabe-vorbereiten": {
-    badge: "Vorbereitung",
-    description:
-      "Lerne, wie Medikamente sicher vorbereitet, geprüft und für die Verabreichung bereitgestellt werden.",
-  },
-  "medikamente/medikamente-dokumentieren": {
-    badge: "Dokumentation",
-    description:
-      "Verstehe, was bei Medikamentengaben dokumentiert werden muss und warum das rechtlich wichtig ist.",
-  },
-  "medikamente/medikationsfehler": {
-    badge: "Fehlervermeidung",
-    description:
-      "Erkenne typische Medikationsfehler und lerne, wie du Risiken im Pflegealltag reduzierst.",
-  },
-  "medikamente/nebenwirkungen": {
-    badge: "Beobachtung",
-    description:
-      "Lerne, Nebenwirkungen zu erkennen, ernst zu nehmen und fachgerecht weiterzugeben.",
-  },
-  "medikamente/wechselwirkungen": {
-    badge: "Risiko",
-    description:
-      "Verstehe, warum Wechselwirkungen gefährlich sein können und worauf du bei der Beobachtung achten musst.",
-  },
-};
-
-const getTopicInfo = (item) => {
-  return (
-    topicDescriptions[item.slug] ?? {
-      badge: "Medikament",
-      description:
-        item.data.description ||
-        "Lerne wichtige Grundlagen zur sicheren Medikamentengabe im Pflegealltag kennen.",
-    }
-  );
+  "medikamente/6-r-regel": "Lerne die 6-R-Regel als Grundlage für eine sichere Medikamentengabe kennen.",
+  "medikamente/10-r-regel": "Vertiefe die erweiterten Sicherheitsregeln bei Vorbereitung, Gabe und Kontrolle von Medikamenten.",
+  "medikamente/applikationsformen": "Verstehe verschiedene Applikationsformen und worauf du bei der Verabreichung achten musst.",
+  "medikamente/medikamentengabe-vorbereiten": "Lerne, wie Medikamente sicher vorbereitet, geprüft und bereitgestellt werden.",
+  "medikamente/medikamente-dokumentieren": "Verstehe, was bei Medikamentengaben dokumentiert werden muss und warum das wichtig ist.",
+  "medikamente/medikationsfehler": "Erkenne typische Medikationsfehler und lerne, wie du Risiken im Pflegealltag reduzierst.",
+  "medikamente/nebenwirkungen": "Lerne, Nebenwirkungen zu erkennen, ernst zu nehmen und fachgerecht weiterzugeben.",
+  "medikamente/wechselwirkungen": "Verstehe, warum Wechselwirkungen gefährlich sein können und worauf du achten musst."
 };
 ---
 
-<BaseLayout title="Medikamente">
-  <main class="bereich-page">
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="/">Startseite</a>
-      <span>›</span>
+<BaseLayout
+  title="Medikamente | PraxisMaik"
+  description="Medikamente in der Pflege sicher vorbereiten, verabreichen, beobachten und dokumentieren."
+>
+  <section class="category-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Start</a>
+      <span class="breadcrumb-sep">›</span>
       <a href="/themen/">Themen</a>
-      <span>›</span>
-      <span>Medikamente</span>
+      <span class="breadcrumb-sep">›</span>
+      <span class="current">Medikamente</span>
     </nav>
 
-    <section class="hero-panel">
-      <p class="eyebrow">Themenbereich</p>
+    <header class="category-hero">
+      <span class="category-eyebrow">Themenbereich</span>
       <h1>Medikamente</h1>
-      <p class="hero-text">
-        In diesem Bereich lernst du, Medikamente sicher vorzubereiten, zu verabreichen,
-        zu beobachten und korrekt zu dokumentieren.
+      <p class="category-intro">
+        Medikamente gehören zu den verantwortungsvollsten Aufgaben in der Pflege.
+        In diesem Bereich lernst du, Medikamente sicher vorzubereiten, korrekt zu verabreichen,
+        gezielt zu beobachten und sauber zu dokumentieren.
       </p>
-    </section>
+    </header>
 
-    <section class="info-panel">
+    <section class="category-panel">
       <h2>Warum Medikamente wichtig sind</h2>
-      <p>
-        Medikamente gehören zu den häufigsten Aufgaben im Pflegealltag. Fehler können direkte
-        Folgen für Patientinnen und Patienten haben. Deshalb brauchst du klare Regeln,
-        sorgfältige Kontrolle und ein gutes Verständnis für Wirkung, Nebenwirkung und Verantwortung.
-      </p>
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>Fehler vermeiden</h3>
+          <p>
+            Du lernst klare Sicherheitsregeln, damit typische Medikationsfehler gar nicht erst entstehen.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h3>Verantwortung verstehen</h3>
+          <p>
+            Medikamentengabe ist nicht nur Ausführung, sondern immer auch Kontrolle, Beobachtung und Dokumentation.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h3>Wirkungen beobachten</h3>
+          <p>
+            Du erkennst Nebenwirkungen, Wechselwirkungen und Auffälligkeiten nach der Gabe schneller.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <section class="info-grid">
-      <article class="info-card">
-        <h3>Sicher vorbereiten</h3>
-        <p>Du lernst, Medikamente strukturiert zu prüfen, vorzubereiten und Fehlerquellen zu vermeiden.</p>
-      </article>
-
-      <article class="info-card">
-        <h3>Richtig verabreichen</h3>
-        <p>Du verstehst Applikationsformen, Sicherheitsregeln und pflegerische Verantwortung.</p>
-      </article>
-
-      <article class="info-card">
-        <h3>Gezielt beobachten</h3>
-        <p>Du erkennst Nebenwirkungen, Wechselwirkungen und Auffälligkeiten nach der Gabe.</p>
-      </article>
-    </section>
-
-    <section class="info-panel">
+    <section class="category-panel">
       <h2>Was du in diesem Bereich können solltest</h2>
-      <ul class="goal-list">
-        <li>Die wichtigsten Sicherheitsregeln der Medikamentengabe anwenden.</li>
-        <li>Medikamente sorgfältig vorbereiten und kontrollieren.</li>
-        <li>Applikationsformen unterscheiden und pflegerisch einordnen.</li>
-        <li>Nebenwirkungen und Wechselwirkungen beobachten.</li>
-        <li>Medikamentengaben korrekt dokumentieren und Auffälligkeiten weitergeben.</li>
+      <ul class="learning-list">
+        <li>Sicherheitsregeln der Medikamentengabe anwenden</li>
+        <li>Medikamente sorgfältig vorbereiten und kontrollieren</li>
+        <li>Applikationsformen unterscheiden und pflegerisch einordnen</li>
+        <li>Nebenwirkungen und Wechselwirkungen beobachten</li>
+        <li>Medikamentengaben korrekt dokumentieren</li>
       </ul>
     </section>
 
-    <section class="topics-panel">
-      <div class="section-head">
+    <section class="category-panel">
+      <div class="topics-head">
         <div>
-          <p class="eyebrow">Übersicht</p>
           <h2>Alle Medikamente-Themen</h2>
+          <p class="muted">
+            Lerne Schritt für Schritt, wie du mit Medikamenten sicher und fachlich sauber umgehst.
+          </p>
         </div>
-        <span class="count-badge">{items.length} Themen</span>
+
+        <div class="topic-count-badge">
+          {medikamenteThemen.length} {medikamenteThemen.length === 1 ? "Thema" : "Themen"}
+        </div>
       </div>
 
-      <div class="topic-grid">
-        {items.map((t, index) => {
-          const info = getTopicInfo(t);
-
-          return (
-            <a class="topic-card" href={`/themen/${t.slug}/`}>
-              <div class="badge-row">
-                <span class="topic-badge">Thema {index + 1}</span>
-                <span class="type-badge">{info.badge}</span>
+      {medikamenteThemen.length > 0 ? (
+        <div class="topic-grid">
+          {medikamenteThemen.map((topic, index) => (
+            <a class="topic-card" href={`/themen/${topic.slug}/`}>
+              <div class="topic-card-top">
+                <span class="topic-step">Thema {index + 1}</span>
+                <span class="topic-type">Sicherheit</span>
               </div>
 
-              <h3>{t.data.title}</h3>
-              <p>{info.description}</p>
-              <span class="open-link">Thema öffnen →</span>
+              <h3>{topic.data.title}</h3>
+
+              <p>
+                {topic.data.beschreibung ??
+                  topic.data.description ??
+                  topicDescriptions[topic.slug] ??
+                  "Lerne dieses Medikamenten-Thema sicher und praxisbezogen einzuordnen."}
+              </p>
+
+              <span class="topic-card-link">Thema öffnen →</span>
             </a>
-          );
-        })}
-      </div>
+          ))}
+        </div>
+      ) : (
+        <div class="empty-state">
+          <p>Noch keine Medikamente-Themen vorhanden.</p>
+        </div>
+      )}
     </section>
-  </main>
+  </section>
 </BaseLayout>
 
-<style>
-  .bereich-page {
-    display: grid;
-    gap: 24px;
-  }
+<style is:global>
+.category-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem 3.5rem;
+}
 
-  .breadcrumb {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    color: #64748b;
-    font-size: 0.95rem;
-  }
+.category-hero {
+  max-width: 760px;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
 
-  .breadcrumb a {
-    color: #2563eb;
-    text-decoration: none;
-  }
+.category-eyebrow {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: #eef5ff;
+  color: #2f5f9b;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
 
-  .hero-panel,
-  .info-panel,
-  .topics-panel {
-    border: 1px solid #e2e8f0;
-    border-radius: 24px;
-    background: #ffffff;
-    padding: 28px;
-    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
-  }
+.category-hero h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(2rem, 3vw, 2.7rem);
+  line-height: 1.12;
+}
 
-  .hero-panel {
-    background: linear-gradient(135deg, #eff6ff 0%, #ffffff 58%, #f8fafc 100%);
-  }
+.category-intro {
+  max-width: 58ch;
+  margin: 0;
+  color: #5b6b7a;
+  line-height: 1.7;
+}
 
-  .eyebrow {
-    margin: 0 0 10px;
-    color: #2563eb;
-    font-size: 0.82rem;
-    font-weight: 800;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }
+.category-panel + .category-panel {
+  margin-top: 2rem;
+}
 
-  h1 {
-    margin: 0;
-    font-size: clamp(2.1rem, 4vw, 3.4rem);
-    line-height: 1.05;
-    color: #0f172a;
-  }
+.category-panel {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.04);
+}
 
-  .hero-text {
-    max-width: 760px;
-    margin: 16px 0 0;
-    color: #475569;
-    font-size: 1.08rem;
-    line-height: 1.7;
-  }
+.category-panel h2 {
+  margin-top: 0;
+  margin-bottom: 0.9rem;
+}
 
-  .info-panel h2,
-  .topics-panel h2 {
-    margin: 0 0 12px;
-    color: #0f172a;
-    font-size: 1.45rem;
-  }
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
 
-  .info-panel p {
-    margin: 0;
-    color: #475569;
-    line-height: 1.75;
-  }
+.info-card {
+  background: #f8fbff;
+  border: 1px solid #dbe7f5;
+  border-radius: 16px;
+  padding: 1.1rem;
+}
 
+.info-card h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+}
+
+.info-card p {
+  margin: 0;
+  color: #556270;
+  line-height: 1.55;
+}
+
+.learning-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.learning-list li + li {
+  margin-top: 0.55rem;
+}
+
+.topics-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.topic-count-badge {
+  flex-shrink: 0;
+  padding: 0.5rem 0.8rem;
+  border-radius: 999px;
+  background: #eef5ff;
+  color: #2f5f9b;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.topic-card,
+.topic-card:link,
+.topic-card:visited {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 250px;
+  padding: 1.35rem;
+  border-radius: 18px;
+  border: 1px solid #e5e5e5;
+  background: #ffffff;
+  text-decoration: none;
+  color: inherit !important;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.topic-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(24, 50, 74, 0.08);
+  border-color: #cfdceb;
+}
+
+.topic-card-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.9rem;
+}
+
+.topic-step,
+.topic-type {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.32rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.topic-step {
+  background: #eef5ff;
+  color: #18324a;
+}
+
+.topic-type {
+  background: #fff4e8;
+  color: #9a3412;
+}
+
+.topic-card h3 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.08rem;
+  line-height: 1.35;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.topic-card p {
+  margin: 0;
+  color: #556270 !important;
+  line-height: 1.6;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.topic-card-link {
+  margin-top: auto;
+  color: #18324a;
+  font-weight: 700;
+}
+
+.empty-state {
+  padding: 1rem 0 0;
+  color: #5b6b7a;
+}
+
+@media (max-width: 900px) {
   .info-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 18px;
-  }
-
-  .info-card {
-    border: 1px solid #e2e8f0;
-    border-radius: 22px;
-    background: #ffffff;
-    padding: 22px;
-    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.05);
-  }
-
-  .info-card h3 {
-    margin: 0 0 10px;
-    color: #0f172a;
-    font-size: 1.08rem;
-  }
-
-  .info-card p {
-    margin: 0;
-    color: #64748b;
-    line-height: 1.65;
-  }
-
-  .goal-list {
-    margin: 0;
-    padding-left: 20px;
-    color: #475569;
-    line-height: 1.8;
-  }
-
-  .section-head {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 16px;
-    margin-bottom: 20px;
-  }
-
-  .count-badge {
-    flex: 0 0 auto;
-    border-radius: 999px;
-    background: #dbeafe;
-    color: #1d4ed8;
-    padding: 8px 14px;
-    font-size: 0.9rem;
-    font-weight: 800;
+    grid-template-columns: 1fr;
   }
 
   .topic-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 18px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .topic-card {
-    display: flex;
-    min-height: 220px;
+  .topics-head {
     flex-direction: column;
-    justify-content: space-between;
-    border: 1px solid #e2e8f0;
-    border-radius: 22px;
-    background: #ffffff;
-    padding: 22px;
-    text-decoration: none;
-    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.05);
-    transition:
-      transform 0.18s ease,
-      box-shadow 0.18s ease,
-      border-color 0.18s ease;
+    align-items: flex-start;
   }
+}
 
-  .topic-card:hover {
-    transform: translateY(-3px);
-    border-color: #bfdbfe;
-    box-shadow: 0 18px 38px rgba(37, 99, 235, 0.12);
+@media (max-width: 640px) {
+  .topic-grid {
+    grid-template-columns: 1fr;
   }
-
-  .badge-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 16px;
-  }
-
-  .topic-badge,
-  .type-badge {
-    border-radius: 999px;
-    padding: 6px 10px;
-    font-size: 0.78rem;
-    font-weight: 800;
-  }
-
-  .topic-badge {
-    background: #eff6ff;
-    color: #2563eb;
-  }
-
-  .type-badge {
-    background: #f1f5f9;
-    color: #475569;
-  }
-
-  .topic-card h3 {
-    margin: 0 0 10px;
-    color: #0f172a;
-    font-size: 1.12rem;
-  }
-
-  .topic-card p {
-    margin: 0 0 20px;
-    color: #64748b;
-    line-height: 1.65;
-  }
-
-  .open-link {
-    margin-top: auto;
-    color: #2563eb;
-    font-weight: 800;
-  }
-
-  @media (max-width: 900px) {
-    .info-grid,
-    .topic-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .section-head {
-      flex-direction: column;
-    }
-  }
+}
 </style>

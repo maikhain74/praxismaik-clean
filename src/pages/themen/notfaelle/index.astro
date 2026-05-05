@@ -4,149 +4,138 @@ import { getCollection } from "astro:content";
 
 const themen = await getCollection("themen");
 
-const items = themen
+const notfaelleThemen = themen
   .filter((t) => t.slug.toLowerCase().startsWith("notfaelle/"))
   .sort((a, b) => a.data.title.localeCompare(b.data.title, "de"));
 
 const topicDescriptions = {
-  "notfaelle/atemnot": {
-    badge: "Akut",
-    description:
-      "Erkenne Atemnot schnell und leite sofortige pflegerische Maßnahmen ein.",
-  },
-  "notfaelle/bewusstlosigkeit": {
-    badge: "Akut",
-    description:
-      "Handle sicher bei Bewusstlosigkeit und erkenne lebensbedrohliche Situationen.",
-  },
-  "notfaelle/herzinfarkt-erkennen": {
-    badge: "Herz",
-    description:
-      "Lerne typische Anzeichen eines Herzinfarkts und reagiere ohne Zeitverlust.",
-  },
-  "notfaelle/schlaganfall-erkennen": {
-    badge: "Neurologie",
-    description:
-      "Erkenne Schlaganfall-Symptome frühzeitig und handle strukturiert.",
-  },
-  "notfaelle/hypoglykaemie": {
-    badge: "Stoffwechsel",
-    description:
-      "Erkenne Unterzuckerung und reagiere schnell und richtig im Pflegealltag.",
-  },
-  "notfaelle/anaphylaxie": {
-    badge: "Allergie",
-    description:
-      "Verstehe die Anzeichen einer Anaphylaxie und handle sofort bei dieser lebensbedrohlichen Reaktion.",
-  },
-  "notfaelle/reanimation-grundlagen": {
-    badge: "Reanimation",
-    description:
-      "Lerne die Grundlagen der Reanimation und deine Rolle im Notfall.",
-  },
+  "notfaelle/atemnot":
+    "Erkenne Atemnot schnell und leite sofortige pflegerische Maßnahmen ein.",
+  "notfaelle/bewusstlosigkeit":
+    "Handle sicher bei Bewusstlosigkeit und erkenne lebensbedrohliche Situationen.",
+  "notfaelle/herzinfarkt-erkennen":
+    "Lerne typische Anzeichen eines Herzinfarkts und reagiere ohne Zeitverlust.",
+  "notfaelle/schlaganfall-erkennen":
+    "Erkenne Schlaganfall-Symptome frühzeitig und handle strukturiert.",
+  "notfaelle/hypoglykaemie":
+    "Erkenne Unterzuckerung und reagiere schnell und richtig im Pflegealltag.",
+  "notfaelle/anaphylaxie":
+    "Verstehe die Anzeichen einer Anaphylaxie und handle sofort bei dieser lebensbedrohlichen Reaktion.",
+  "notfaelle/reanimation-grundlagen":
+    "Lerne die Grundlagen der Reanimation und deine Rolle im Notfall.",
 };
 
-const getTopicInfo = (item) => {
-  return (
-    topicDescriptions[item.slug] ?? {
-      badge: "Notfall",
-      description:
-        item.data.description ||
-        "Lerne, diesen Notfall zu erkennen und sicher darauf zu reagieren.",
-    }
-  );
-};
+const topicTypes = [
+  "Akut",
+  "Sicherheit",
+  "Herz",
+  "Neurologie",
+  "Stoffwechsel",
+  "Allergie",
+  "Reanimation",
+];
 ---
 
-<BaseLayout title="Notfälle in der Pflege">
-  <main class="bereich-page">
+<BaseLayout
+  title="Notfälle in der Pflege"
+  description="Lerne wichtige Notfälle in der Pflege sicher zu erkennen und richtig zu reagieren: Atemnot, Bewusstlosigkeit, Herzinfarkt, Schlaganfall, Hypoglykämie, Anaphylaxie und Reanimation."
+>
+  <main class="category-page">
     <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="/">Startseite</a>
+      <a href="/">Start</a>
       <span>›</span>
       <a href="/themen/">Themen</a>
       <span>›</span>
       <span>Notfälle in der Pflege</span>
     </nav>
 
-    <section class="hero-panel">
-      <p class="eyebrow">Themenbereich</p>
+    <section class="category-hero">
+      <p class="category-eyebrow">Themenbereich</p>
       <h1>Notfälle in der Pflege</h1>
-      <p class="hero-text">
+      <p class="category-intro">
         In Notfallsituationen zählt jede Minute. Hier lernst du, kritische Situationen
-        schnell zu erkennen, richtig zu reagieren und sicher zu handeln.
+        schnell zu erkennen, Prioritäten zu setzen und sicher zu handeln.
       </p>
     </section>
 
-    <section class="info-panel">
-      <h2>Warum Notfälle wichtig sind</h2>
-      <p>
-        Notfälle treten oft plötzlich auf. Du musst Symptome sofort erkennen,
-        Prioritäten setzen und strukturiert handeln. Fehler oder Verzögerungen
-        können direkte Folgen für das Leben von Patientinnen und Patienten haben.
-      </p>
+    <section class="category-panel">
+      <h2>Warum Notfälle in der Pflege wichtig sind</h2>
+
+      <div class="info-grid">
+        <article class="info-card">
+          <h3>Schnell erkennen</h3>
+          <p>
+            Du lernst, Warnzeichen und lebensbedrohliche Veränderungen frühzeitig wahrzunehmen.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <h3>Richtig handeln</h3>
+          <p>
+            Du übst, in akuten Situationen sofort die passenden pflegerischen Maßnahmen einzuleiten.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <h3>Sicher weitergeben</h3>
+          <p>
+            Du lernst, Notfälle strukturiert zu melden, im Team zu arbeiten und wichtige Informationen klar weiterzugeben.
+          </p>
+        </article>
+      </div>
     </section>
 
-    <section class="info-grid">
-      <article class="info-card">
-        <h3>Schnell erkennen</h3>
-        <p>Du lernst, lebensbedrohliche Situationen frühzeitig zu identifizieren.</p>
-      </article>
-
-      <article class="info-card">
-        <h3>Richtig handeln</h3>
-        <p>Du setzt sofort die richtigen Maßnahmen im Notfall um.</p>
-      </article>
-
-      <article class="info-card">
-        <h3>Sicher reagieren</h3>
-        <p>Du bleibst handlungsfähig und arbeitest strukturiert im Team.</p>
-      </article>
-    </section>
-
-    <section class="info-panel">
+    <section class="category-panel">
       <h2>Was du in diesem Bereich können solltest</h2>
-      <ul class="goal-list">
-        <li>Notfallsituationen schnell erkennen und einschätzen.</li>
-        <li>Sofortmaßnahmen sicher durchführen.</li>
-        <li>Wichtige Symptome richtig deuten.</li>
-        <li>Prioritäten setzen und strukturiert handeln.</li>
-        <li>Notfälle korrekt weitergeben und dokumentieren.</li>
+
+      <ul class="learning-list">
+        <li>Notfallsituationen schnell erkennen und fachlich einschätzen.</li>
+        <li>Wichtige Symptome richtig deuten und priorisieren.</li>
+        <li>Sofortmaßnahmen sicher und strukturiert durchführen.</li>
+        <li>Bei akuten Veränderungen ruhig und teamorientiert handeln.</li>
+        <li>Notfälle korrekt weitergeben und nachvollziehbar dokumentieren.</li>
       </ul>
     </section>
 
-    <section class="topics-panel">
-      <div class="section-head">
+    <section class="category-panel">
+      <div class="topics-head">
         <div>
-          <p class="eyebrow">Übersicht</p>
+          <p class="category-eyebrow">Übersicht</p>
           <h2>Alle Notfall-Themen</h2>
         </div>
-        <span class="count-badge">{items.length} Themen</span>
+
+        <span class="topic-count-badge">{notfaelleThemen.length} Themen</span>
       </div>
 
       <div class="topic-grid">
-        {items.map((t, index) => {
-          const info = getTopicInfo(t);
+        {notfaelleThemen.map((topic, index) => (
+          <a class="topic-card" href={`/themen/${topic.slug}/`}>
+            <div class="topic-card-top">
+              <span class="topic-step">Thema {index + 1}</span>
+              <span class="topic-type">{topicTypes[index] ?? "Notfall"}</span>
+            </div>
 
-          return (
-            <a class="topic-card" href={`/themen/${t.slug}/`}>
-              <div class="badge-row">
-                <span class="topic-badge">Thema {index + 1}</span>
-                <span class="type-badge">{info.badge}</span>
-              </div>
+            <h3>{topic.data.title}</h3>
 
-              <h3>{t.data.title}</h3>
-              <p>{info.description}</p>
-              <span class="open-link">Thema öffnen →</span>
-            </a>
-          );
-        })}
+            <p>
+              {
+                topic.data.beschreibung ??
+                topic.data.description ??
+                topicDescriptions[topic.slug] ??
+                "Lerne, diesen Notfall zu erkennen und sicher darauf zu reagieren."
+              }
+            </p>
+
+            <span class="topic-card-link">Thema öffnen →</span>
+          </a>
+        ))}
       </div>
     </section>
   </main>
 </BaseLayout>
 
 <style>
-  .bereich-page {
+  .category-page {
     display: grid;
     gap: 24px;
   }
@@ -164,9 +153,8 @@ const getTopicInfo = (item) => {
     text-decoration: none;
   }
 
-  .hero-panel,
-  .info-panel,
-  .topics-panel {
+  .category-hero,
+  .category-panel {
     border: 1px solid #e2e8f0;
     border-radius: 24px;
     background: #ffffff;
@@ -174,11 +162,11 @@ const getTopicInfo = (item) => {
     box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
   }
 
-  .hero-panel {
+  .category-hero {
     background: linear-gradient(135deg, #eff6ff 0%, #ffffff 58%, #f8fafc 100%);
   }
 
-  .eyebrow {
+  .category-eyebrow {
     margin: 0 0 10px;
     color: #2563eb;
     font-size: 0.82rem;
@@ -194,7 +182,7 @@ const getTopicInfo = (item) => {
     color: #0f172a;
   }
 
-  .hero-text {
+  .category-intro {
     max-width: 760px;
     margin: 16px 0 0;
     color: #475569;
@@ -202,17 +190,10 @@ const getTopicInfo = (item) => {
     line-height: 1.7;
   }
 
-  .info-panel h2,
-  .topics-panel h2 {
-    margin: 0 0 12px;
+  .category-panel h2 {
+    margin: 0 0 18px;
     color: #0f172a;
     font-size: 1.45rem;
-  }
-
-  .info-panel p {
-    margin: 0;
-    color: #475569;
-    line-height: 1.75;
   }
 
   .info-grid {
@@ -241,14 +222,14 @@ const getTopicInfo = (item) => {
     line-height: 1.65;
   }
 
-  .goal-list {
+  .learning-list {
     margin: 0;
     padding-left: 20px;
     color: #475569;
     line-height: 1.8;
   }
 
-  .section-head {
+  .topics-head {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -256,7 +237,11 @@ const getTopicInfo = (item) => {
     margin-bottom: 20px;
   }
 
-  .count-badge {
+  .topics-head h2 {
+    margin-bottom: 0;
+  }
+
+  .topic-count-badge {
     flex: 0 0 auto;
     border-radius: 999px;
     background: #dbeafe;
@@ -295,27 +280,27 @@ const getTopicInfo = (item) => {
     box-shadow: 0 18px 38px rgba(37, 99, 235, 0.12);
   }
 
-  .badge-row {
+  .topic-card-top {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 16px;
   }
 
-  .topic-badge,
-  .type-badge {
+  .topic-step,
+  .topic-type {
     border-radius: 999px;
     padding: 6px 10px;
     font-size: 0.78rem;
     font-weight: 800;
   }
 
-  .topic-badge {
+  .topic-step {
     background: #eff6ff;
     color: #2563eb;
   }
 
-  .type-badge {
+  .topic-type {
     background: #f1f5f9;
     color: #475569;
   }
@@ -332,7 +317,7 @@ const getTopicInfo = (item) => {
     line-height: 1.65;
   }
 
-  .open-link {
+  .topic-card-link {
     margin-top: auto;
     color: #2563eb;
     font-weight: 800;
@@ -344,8 +329,20 @@ const getTopicInfo = (item) => {
       grid-template-columns: 1fr;
     }
 
-    .section-head {
+    .topics-head {
       flex-direction: column;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .category-hero,
+    .category-panel {
+      padding: 22px;
+      border-radius: 20px;
+    }
+
+    .topic-card {
+      min-height: auto;
     }
   }
 </style>

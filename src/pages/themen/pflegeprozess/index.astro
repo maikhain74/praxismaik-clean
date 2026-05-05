@@ -4,154 +4,141 @@ import { getCollection } from "astro:content";
 
 const themen = await getCollection("themen");
 
-const items = themen
+const pflegeprozessThemen = themen
   .filter((t) => t.slug.toLowerCase().startsWith("pflegeprozess/"))
   .sort((a, b) => a.data.title.localeCompare(b.data.title, "de"));
 
 const topicDescriptions = {
-  "pflegeprozess/pflegeprozess-grundlagen": {
-    badge: "Grundlage",
-    description:
-      "Verstehe den Aufbau und die Logik des Pflegeprozesses als zentrales Arbeitsmodell.",
-  },
-  "pflegeprozess/informationssammlung": {
-    badge: "Assessment",
-    description:
-      "Lerne, wie du Informationen systematisch erhebst und für die Pflegeplanung nutzt.",
-  },
-  "pflegeprozess/pflegeprobleme-ressourcen": {
-    badge: "Analyse",
-    description:
-      "Erkenne Pflegeprobleme und Ressourcen als Grundlage für gezielte Maßnahmen.",
-  },
-  "pflegeprozess/pflegediagnosen": {
-    badge: "Diagnostik",
-    description:
-      "Verstehe, wie Pflegediagnosen formuliert und im Pflegeprozess eingesetzt werden.",
-  },
-  "pflegeprozess/pflegeziele": {
-    badge: "Planung",
-    description:
-      "Formuliere klare, erreichbare Pflegeziele als Orientierung für Maßnahmen.",
-  },
-  "pflegeprozess/pflegemassnahmen": {
-    badge: "Umsetzung",
-    description:
-      "Plane konkrete pflegerische Maßnahmen passend zu Problemen und Zielen.",
-  },
-  "pflegeprozess/durchfuehrung": {
-    badge: "Praxis",
-    description:
-      "Setze geplante Maßnahmen fachgerecht im Pflegealltag um.",
-  },
-  "pflegeprozess/evaluation": {
-    badge: "Kontrolle",
-    description:
-      "Überprüfe, ob Pflegeziele erreicht wurden und passe die Planung an.",
-  },
+  "pflegeprozess/pflegeprozess-grundlagen":
+    "Verstehe den Aufbau und die Logik des Pflegeprozesses als zentrales Arbeitsmodell.",
+  "pflegeprozess/informationssammlung":
+    "Lerne, wie du Informationen systematisch erhebst und für die Pflegeplanung nutzt.",
+  "pflegeprozess/pflegeprobleme-ressourcen":
+    "Erkenne Pflegeprobleme und Ressourcen als Grundlage für gezielte Maßnahmen.",
+  "pflegeprozess/pflegediagnosen":
+    "Verstehe, wie Pflegediagnosen formuliert und im Pflegeprozess eingesetzt werden.",
+  "pflegeprozess/pflegeziele":
+    "Formuliere klare, erreichbare Pflegeziele als Orientierung für Maßnahmen.",
+  "pflegeprozess/pflegemassnahmen":
+    "Plane konkrete pflegerische Maßnahmen passend zu Problemen und Zielen.",
+  "pflegeprozess/durchfuehrung":
+    "Setze geplante Maßnahmen fachgerecht im Pflegealltag um.",
+  "pflegeprozess/evaluation":
+    "Überprüfe, ob Pflegeziele erreicht wurden und passe die Planung an.",
 };
 
-const getTopicInfo = (item) => {
-  return (
-    topicDescriptions[item.slug] ?? {
-      badge: "Pflegeprozess",
-      description:
-        item.data.description ||
-        "Lerne diesen Schritt im Pflegeprozess und seine Bedeutung im Pflegealltag kennen.",
-    }
-  );
-};
+const topicTypes = [
+  "Grundlage",
+  "Assessment",
+  "Analyse",
+  "Diagnostik",
+  "Planung",
+  "Umsetzung",
+  "Praxis",
+  "Kontrolle",
+];
 ---
 
-<BaseLayout title="Pflegeprozess">
-  <main class="bereich-page">
+<BaseLayout
+  title="Pflegeprozess"
+  description="Lerne den Pflegeprozess Schritt für Schritt: Informationssammlung, Pflegeprobleme, Ressourcen, Ziele, Maßnahmen, Durchführung und Evaluation."
+>
+  <main class="category-page">
     <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="/">Startseite</a>
+      <a href="/">Start</a>
       <span>›</span>
       <a href="/themen/">Themen</a>
       <span>›</span>
       <span>Pflegeprozess</span>
     </nav>
 
-    <section class="hero-panel">
-      <p class="eyebrow">Themenbereich</p>
+    <section class="category-hero">
+      <p class="category-eyebrow">Themenbereich</p>
       <h1>Pflegeprozess</h1>
-      <p class="hero-text">
+      <p class="category-intro">
         Der Pflegeprozess ist das zentrale Arbeitsmodell in der Pflege. Hier lernst du,
-        Pflege systematisch zu planen, durchzuführen und zu überprüfen.
+        Pflege systematisch zu planen, durchzuführen, zu überprüfen und fachlich zu begründen.
       </p>
     </section>
 
-    <section class="info-panel">
-      <h2>Warum der Pflegeprozess wichtig ist</h2>
-      <p>
-        Ohne Struktur wird Pflege unsystematisch und fehleranfällig. Der Pflegeprozess hilft dir,
-        Informationen zu ordnen, Probleme zu erkennen und gezielt Maßnahmen abzuleiten.
-        Er ist die Grundlage für professionelles pflegerisches Handeln.
-      </p>
+    <section class="category-panel">
+      <h2>Warum Pflegeprozess wichtig ist</h2>
+
+      <div class="info-grid">
+        <article class="info-card">
+          <h3>Struktur im Pflegealltag</h3>
+          <p>
+            Der Pflegeprozess hilft dir, Informationen zu ordnen und pflegerische Entscheidungen nachvollziehbar zu treffen.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <h3>Gezielte Pflegeplanung</h3>
+          <p>
+            Du lernst, Pflegeprobleme, Ressourcen, Ziele und Maßnahmen sinnvoll miteinander zu verbinden.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <h3>Wirksamkeit prüfen</h3>
+          <p>
+            Durch Evaluation erkennst du, ob Pflegeziele erreicht wurden oder ob die Planung angepasst werden muss.
+          </p>
+        </article>
+      </div>
     </section>
 
-    <section class="info-grid">
-      <article class="info-card">
-        <h3>Strukturiert arbeiten</h3>
-        <p>Du lernst, Pflege logisch und nachvollziehbar aufzubauen.</p>
-      </article>
-
-      <article class="info-card">
-        <h3>Gezielt planen</h3>
-        <p>Du entwickelst klare Ziele und passende Maßnahmen für jede Situation.</p>
-      </article>
-
-      <article class="info-card">
-        <h3>Ergebnisse prüfen</h3>
-        <p>Du überprüfst systematisch, ob deine Pflege wirksam ist.</p>
-      </article>
-    </section>
-
-    <section class="info-panel">
+    <section class="category-panel">
       <h2>Was du in diesem Bereich können solltest</h2>
-      <ul class="goal-list">
-        <li>Den Aufbau des Pflegeprozesses erklären.</li>
-        <li>Informationen strukturiert erheben und auswerten.</li>
-        <li>Pflegeprobleme und Ressourcen erkennen.</li>
-        <li>Pflegeziele formulieren und Maßnahmen planen.</li>
-        <li>Pflegehandlungen durchführen und evaluieren.</li>
+
+      <ul class="learning-list">
+        <li>Den Aufbau und die Schritte des Pflegeprozesses erklären.</li>
+        <li>Informationen strukturiert sammeln und fachlich einordnen.</li>
+        <li>Pflegeprobleme und Ressourcen erkennen und beschreiben.</li>
+        <li>Pflegeziele verständlich und überprüfbar formulieren.</li>
+        <li>Pflegemaßnahmen passend planen, durchführen und evaluieren.</li>
       </ul>
     </section>
 
-    <section class="topics-panel">
-      <div class="section-head">
+    <section class="category-panel">
+      <div class="topics-head">
         <div>
-          <p class="eyebrow">Übersicht</p>
+          <p class="category-eyebrow">Übersicht</p>
           <h2>Alle Pflegeprozess-Themen</h2>
         </div>
-        <span class="count-badge">{items.length} Themen</span>
+
+        <span class="topic-count-badge">{pflegeprozessThemen.length} Themen</span>
       </div>
 
       <div class="topic-grid">
-        {items.map((t, index) => {
-          const info = getTopicInfo(t);
+        {pflegeprozessThemen.map((topic, index) => (
+          <a class="topic-card" href={`/themen/${topic.slug}/`}>
+            <div class="topic-card-top">
+              <span class="topic-step">Thema {index + 1}</span>
+              <span class="topic-type">{topicTypes[index] ?? "Pflegeplanung"}</span>
+            </div>
 
-          return (
-            <a class="topic-card" href={`/themen/${t.slug}/`}>
-              <div class="badge-row">
-                <span class="topic-badge">Thema {index + 1}</span>
-                <span class="type-badge">{info.badge}</span>
-              </div>
+            <h3>{topic.data.title}</h3>
 
-              <h3>{t.data.title}</h3>
-              <p>{info.description}</p>
-              <span class="open-link">Thema öffnen →</span>
-            </a>
-          );
-        })}
+            <p>
+              {
+                topic.data.beschreibung ??
+                topic.data.description ??
+                topicDescriptions[topic.slug] ??
+                "Lerne dieses Thema im Pflegeprozess und seine Bedeutung für die Pflegepraxis kennen."
+              }
+            </p>
+
+            <span class="topic-card-link">Thema öffnen →</span>
+          </a>
+        ))}
       </div>
     </section>
   </main>
 </BaseLayout>
 
 <style>
-  .bereich-page {
+  .category-page {
     display: grid;
     gap: 24px;
   }
@@ -169,9 +156,8 @@ const getTopicInfo = (item) => {
     text-decoration: none;
   }
 
-  .hero-panel,
-  .info-panel,
-  .topics-panel {
+  .category-hero,
+  .category-panel {
     border: 1px solid #e2e8f0;
     border-radius: 24px;
     background: #ffffff;
@@ -179,11 +165,11 @@ const getTopicInfo = (item) => {
     box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
   }
 
-  .hero-panel {
+  .category-hero {
     background: linear-gradient(135deg, #eff6ff 0%, #ffffff 58%, #f8fafc 100%);
   }
 
-  .eyebrow {
+  .category-eyebrow {
     margin: 0 0 10px;
     color: #2563eb;
     font-size: 0.82rem;
@@ -199,7 +185,7 @@ const getTopicInfo = (item) => {
     color: #0f172a;
   }
 
-  .hero-text {
+  .category-intro {
     max-width: 760px;
     margin: 16px 0 0;
     color: #475569;
@@ -207,17 +193,10 @@ const getTopicInfo = (item) => {
     line-height: 1.7;
   }
 
-  .info-panel h2,
-  .topics-panel h2 {
-    margin: 0 0 12px;
+  .category-panel h2 {
+    margin: 0 0 18px;
     color: #0f172a;
     font-size: 1.45rem;
-  }
-
-  .info-panel p {
-    margin: 0;
-    color: #475569;
-    line-height: 1.75;
   }
 
   .info-grid {
@@ -246,14 +225,14 @@ const getTopicInfo = (item) => {
     line-height: 1.65;
   }
 
-  .goal-list {
+  .learning-list {
     margin: 0;
     padding-left: 20px;
     color: #475569;
     line-height: 1.8;
   }
 
-  .section-head {
+  .topics-head {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -261,7 +240,11 @@ const getTopicInfo = (item) => {
     margin-bottom: 20px;
   }
 
-  .count-badge {
+  .topics-head h2 {
+    margin-bottom: 0;
+  }
+
+  .topic-count-badge {
     flex: 0 0 auto;
     border-radius: 999px;
     background: #dbeafe;
@@ -300,27 +283,27 @@ const getTopicInfo = (item) => {
     box-shadow: 0 18px 38px rgba(37, 99, 235, 0.12);
   }
 
-  .badge-row {
+  .topic-card-top {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 16px;
   }
 
-  .topic-badge,
-  .type-badge {
+  .topic-step,
+  .topic-type {
     border-radius: 999px;
     padding: 6px 10px;
     font-size: 0.78rem;
     font-weight: 800;
   }
 
-  .topic-badge {
+  .topic-step {
     background: #eff6ff;
     color: #2563eb;
   }
 
-  .type-badge {
+  .topic-type {
     background: #f1f5f9;
     color: #475569;
   }
@@ -337,7 +320,7 @@ const getTopicInfo = (item) => {
     line-height: 1.65;
   }
 
-  .open-link {
+  .topic-card-link {
     margin-top: auto;
     color: #2563eb;
     font-weight: 800;
@@ -349,8 +332,20 @@ const getTopicInfo = (item) => {
       grid-template-columns: 1fr;
     }
 
-    .section-head {
+    .topics-head {
       flex-direction: column;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .category-hero,
+    .category-panel {
+      padding: 22px;
+      border-radius: 20px;
+    }
+
+    .topic-card {
+      min-height: auto;
     }
   }
 </style>
