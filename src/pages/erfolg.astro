@@ -1,34 +1,98 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
 Astro.cookies.set("praxismaik_premium", "1", {
   path: "/",
-  maxAge: 60 * 60 * 24 * 365 // 1 Jahr
+  maxAge: 60 * 60 * 24 * 365,
+  sameSite: "lax",
 });
 ---
 
-<html lang="de">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Premium freigeschaltet</title>
-  </head>
- <body>
-  <main style="text-align:center; padding:2rem;">
-    <h1>Danke für deinen Kauf</h1>
+<BaseLayout
+  title="Premium freigeschaltet"
+  description="Dein PraxisMaik Premium-Zugang ist jetzt aktiv."
+>
+  <section class="success-page">
+    <div class="success-box">
+      <span class="success-badge">Premium aktiv</span>
 
-    <p><strong>Dein Premium-Zugang ist jetzt aktiv.</strong></p>
+      <h1>Danke für deinen Kauf</h1>
 
-    <p>Du wirst automatisch weitergeleitet...</p>
+      <p class="success-lead">
+        Dein Premium-Zugang ist jetzt freigeschaltet. Du kannst sofort auf die Premium-Inhalte zugreifen.
+      </p>
 
-    <p>
-      Falls nichts passiert:
-      <a href="/premium">Hier klicken</a>
-    </p>
-  </main>
+      <div class="success-actions">
+        <a href="/lernskripte" class="btn">Zu den Lernskripten</a>
+        <a href="/pruefung" class="btn secondary">Zu den Prüfungsfällen</a>
+        <a href="/quiz-exam" class="btn secondary">Zum Examensquiz</a>
+      </div>
 
-  <script>
-    setTimeout(() => {
-      window.location.href = "/premium";
-    }, 1500);
-  </script>
-</body>
-</html>
+      <p class="success-note">
+        Dein Zugang bleibt auf diesem Gerät gespeichert.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+.success-page {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 3rem 1rem 4rem;
+}
+
+.success-box {
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 22px;
+  padding: 2rem;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+}
+
+.success-badge {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  background: #ecfdf5;
+  color: #166534;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.success-box h1 {
+  margin: 0 0 0.8rem;
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  line-height: 1.12;
+}
+
+.success-lead {
+  max-width: 56ch;
+  margin: 0 auto;
+  color: #5b6b7a;
+  line-height: 1.7;
+}
+
+.success-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 1.6rem;
+}
+
+.success-note {
+  margin-top: 1.2rem;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+  .success-actions {
+    flex-direction: column;
+  }
+}
+</style>
