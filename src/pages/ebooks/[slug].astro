@@ -1,25 +1,15 @@
 ---
 export const prerender = false;
+
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 import PremiumGate from "../../components/PremiumGate.astro";
 
-export async function getStaticPaths() {
-  const ebooks = await getCollection("ebooks");
-
-  const mainEntries = ebooks.filter((entry) => entry.id.endsWith("/index.md"));
-
-  return mainEntries.map((entry) => {
-    const slug = entry.id.replace("/index.md", "");
-
-    return {
-      params: { slug },
-      props: { slug },
-    };
-  });
-}
-
 const slug = Astro.params.slug;
+
+if (!slug) {
+  throw new Error("E-Book nicht gefunden: Kein Slug vorhanden.");
+}
 
 const allEbookEntries = await getCollection("ebooks");
 
@@ -121,11 +111,11 @@ const renderedChapters = await Promise.all(
       </div>
     ) : (
       <PremiumGate
-  title="Du siehst nur die Einleitung"
-  text="Die vollständigen Kapitel mit allen Inhalten sind nur im Premium-Bereich verfügbar."
-  buttonText="Jetzt freischalten"
-  buttonHref="/premium"
-/>
+        title="Du siehst nur die Einleitung"
+        text="Die vollständigen Kapitel mit allen Inhalten sind nur im Premium-Bereich verfügbar."
+        buttonText="Jetzt freischalten"
+        buttonHref="/premium"
+      />
     )}
   </article>
 </BaseLayout>
