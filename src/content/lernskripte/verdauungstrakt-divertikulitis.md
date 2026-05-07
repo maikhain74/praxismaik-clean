@@ -1,6 +1,7 @@
 ---
 title: "Divertikulitis erkennen und richtig handeln"
 beschreibung: "Wie du entzündete Darmausstülpungen erkennst, Risiken einschätzt und pflegerisch sicher reagierst."
+bereich: verdauung
 topic: krankheitslehre
 reihenfolge: 5
 premium: true

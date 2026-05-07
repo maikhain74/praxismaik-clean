@@ -1,6 +1,7 @@
 ---
 title: "Gallensteine und Cholezystitis erkennen und richtig handeln"
 beschreibung: "Wie du Gallenbeschwerden einordnest, Koliken erkennst und pflegerisch sicher reagierst."
+bereich: verdauung
 topic: krankheitslehre
 reihenfolge: 10
 premium: true

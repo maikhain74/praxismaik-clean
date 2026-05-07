@@ -1,6 +1,7 @@
 ---
 title: "Kolorektales Karzinom erkennen und pflegerisch handeln"
 beschreibung: "Wie du Darmkrebs früh erkennst, Warnzeichen einschätzt und pflegerisch sicher reagierst."
+bereich: verdauung
 topic: krankheitslehre
 reihenfolge: 8
 premium: true

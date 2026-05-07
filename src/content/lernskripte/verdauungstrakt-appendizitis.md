@@ -1,6 +1,7 @@
 ---
 title: "Appendizitis erkennen und richtig reagieren"
 beschreibung: "Wie du eine Blinddarmentzündung früh erkennst, richtig einschätzt und pflegerisch sicher handelst."
+bereich: verdauung
 topic: krankheitslehre
 reihenfolge: 4
 premium: true

@@ -1,6 +1,7 @@
 ---
 title: "Pankreatitis erkennen und richtig reagieren"
 beschreibung: "Wie du eine Bauchspeicheldrüsenentzündung einschätzt, starke Schmerzen einordnest und pflegerisch sicher handelst."
+bereich: verdauung
 topic: krankheitslehre
 reihenfolge: 13
 premium: true

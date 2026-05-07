@@ -1,6 +1,7 @@
 ---
 title: "Leberzirrhose erkennen und Komplikationen einschätzen"
 beschreibung: "Wie du Leberzirrhose erkennst, Risiken wie Aszites und Enzephalopathie einschätzt und pflegerisch sicher handelst."
+bereich: verdauung
 topic: krankheitslehre
 reihenfolge: 12
 premium: true

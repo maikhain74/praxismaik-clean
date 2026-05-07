@@ -1,6 +1,7 @@
 ---
 title: "Refluxkrankheit erkennen und pflegerisch handeln"
 beschreibung: "Wie du Sodbrennen richtig einordnest, Risiken erkennst und pflegerisch sinnvoll reagierst."
+bereich: verdauung
 topic: krankheitslehre
 reihenfolge: 1
 premium: true

@@ -1,6 +1,7 @@
 ---
 title: "Colitis ulcerosa erkennen und richtig einordnen"
 beschreibung: "Wie du Colitis ulcerosa von Morbus Crohn unterscheidest und pflegerisch sicher handelst."
+bereich: verdauung
 topic: krankheitslehre
 reihenfolge: 7
 premium: true

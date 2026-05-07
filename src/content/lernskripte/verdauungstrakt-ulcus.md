@@ -1,6 +1,7 @@
 ---
 title: "Magengeschwür erkennen und richtig handeln (Ulcus)"
 beschreibung: "Wie du Ulcus ventriculi und duodeni erkennst, Komplikationen einschätzt und sicher reagierst."
+bereich: verdauung
 topic: krankheitslehre
 reihenfolge: 3
 premium: true

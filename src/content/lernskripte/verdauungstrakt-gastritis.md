@@ -1,6 +1,7 @@
 ---
 title: "Gastritis erkennen und richtig reagieren"
 beschreibung: "Wie du Magenschleimhautentzündung einschätzt, Risiken erkennst und pflegerisch sinnvoll handelst."
+bereich: verdauung
 topic: krankheitslehre
 reihenfolge: 2
 premium: true

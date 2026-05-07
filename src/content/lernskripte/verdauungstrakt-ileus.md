@@ -1,6 +1,7 @@
 ---
 title: "Ileus erkennen und sofort richtig handeln"
 beschreibung: "Wie du einen Darmverschluss erkennst, Notfallsituationen einschätzt und pflegerisch schnell reagierst."
+bereich: verdauung
 topic: krankheitslehre
 reihenfolge: 9
 premium: true

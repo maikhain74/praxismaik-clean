@@ -1,6 +1,7 @@
 ---
 title: "Hepatitis erkennen und hygienisch sicher handeln"
 beschreibung: "Wie du Leberentzündungen einschätzt, Infektionsrisiken erkennst und korrekt reagierst."
+bereich: verdauung
 topic: krankheitslehre
 reihenfolge: 11
 premium: true

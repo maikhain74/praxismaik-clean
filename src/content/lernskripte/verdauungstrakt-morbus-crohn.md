@@ -1,6 +1,7 @@
 ---
 title: "Morbus Crohn verstehen und pflegerisch handeln"
 beschreibung: "Wie du chronisch-entzündliche Darmerkrankung erkennst, Verläufe einschätzt und pflegerisch sicher reagierst."
+bereich: verdauung
 topic: krankheitslehre
 reihenfolge: 6
 premium: true
