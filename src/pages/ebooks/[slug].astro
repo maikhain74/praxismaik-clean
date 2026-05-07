@@ -1,5 +1,5 @@
 ---
-export const prerender = true;
+export const prerender = false;
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 import PremiumGate from "../../components/PremiumGate.astro";
@@ -19,7 +19,7 @@ export async function getStaticPaths() {
   });
 }
 
-const { slug } = Astro.props;
+const slug = Astro.params.slug;
 
 const allEbookEntries = await getCollection("ebooks");
 
@@ -31,13 +31,15 @@ if (!mainEntry) {
 
 const isPremium = mainEntry.data.premium === true;
 
+const hasPremiumCookie = Astro.cookies.get("praxismaik_premium")?.value === "1";
+
 const isLocalhost =
   Astro.url.hostname === "localhost" || Astro.url.hostname === "127.0.0.1";
 
 const devUnlock =
   Astro.url.searchParams.get("freischalten") === "1" && isLocalhost;
 
-const showFullContent = !isPremium || devUnlock;
+const showFullContent = !isPremium || hasPremiumCookie || devUnlock;
 
 const chapterEntries = allEbookEntries
   .filter((entry) => {
