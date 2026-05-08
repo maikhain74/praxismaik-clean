@@ -1,103 +1,49 @@
 ---
-title: Herzinfarkt erkennen
-description: Typische Anzeichen eines Herzinfarkts erkennen und richtig handeln.
-level: pruefung
+title: "Herzinfarkt erkennen"
+beschreibung: "Lerne typische Anzeichen eines Herzinfarkts und reagiere ohne Zeitverlust."
 ---
 
 # Herzinfarkt erkennen
 
-Ein Herzinfarkt ist ein akuter medizinischer Notfall. Dabei wird ein Teil des Herzmuskels plötzlich nicht mehr ausreichend mit Blut und Sauerstoff versorgt.
+Bei einem Herzinfarkt wird ein Teil des Herzens nicht mehr ausreichend durchblutet.
 
-Je schneller ein Herzinfarkt erkannt wird, desto besser sind die Chancen auf eine erfolgreiche Behandlung.
+Das ist ein akuter lebensbedrohlicher Notfall.
 
-## Warum ein Herzinfarkt so gefährlich ist
+## Warum Herzinfarkt wichtig ist
 
-Beim Herzinfarkt wird Herzmuskelgewebe geschädigt oder zerstört.
+Je schneller ein Herzinfarkt erkannt wird, desto besser sind die Behandlungschancen.
 
-Das kann zu schweren Komplikationen führen, zum Beispiel:
+In der Pflege fallen erste Veränderungen oft früh auf.
 
-- Herzrhythmusstörungen
-- Kreislaufversagen
-- Bewusstlosigkeit
-- Herzstillstand
+## Typische Warnzeichen
 
-## Typische Anzeichen eines Herzinfarkts
+Mögliche Hinweise sind:
 
-Ein Herzinfarkt kann sich unterschiedlich zeigen. Häufige Symptome sind:
-
-- starke Schmerzen oder Druckgefühl in der Brust
-- Ausstrahlung der Schmerzen in Arm, Schulter, Rücken oder Kiefer
+- starke Brustschmerzen
+- Druckgefühl in der Brust
 - Atemnot
-- Angstgefühl
-- Kaltschweißigkeit
+- kalter Schweiß
 - Übelkeit
-- Blässe
-- Schwäche
+- Angst oder Unruhe
 
-Nicht jeder Herzinfarkt zeigt sich gleich deutlich.
+Nicht jeder Herzinfarkt verläuft gleich.
 
-## Besondere Situation bei älteren Menschen und Frauen
+## Pflegerischer Blick
 
-Bei älteren Menschen, Frauen oder Menschen mit Diabetes können die Symptome untypisch sein.
+Wichtig ist:
 
-Dann stehen manchmal eher im Vordergrund:
-
-- Atemnot
-- Schwäche
-- Übelkeit
-- allgemeines Unwohlsein
-- Schwindel
-
-## Was im Notfall zu tun ist
-
-Bei Verdacht auf Herzinfarkt muss sofort gehandelt werden.
-
-Wichtige Maßnahmen sind:
-
+- Beschwerden ernst nehmen
 - Ruhe bewahren
-- sofort Arzt oder Rettungsdienst alarmieren
-- betroffene Person nicht allein lassen
-- enge Kleidung lockern
-- Atmung und Bewusstsein beobachten
+- Vitalzeichen beobachten
+- Hilfe organisieren
+- Veränderungen sofort weitergeben
 
-## Was vermieden werden sollte
+Zeit spielt eine entscheidende Rolle.
 
-Bei Verdacht auf Herzinfarkt sollte die betroffene Person:
+## Merke
 
-- nicht alleine gelassen werden
-- nicht körperlich belastet werden
-- nicht unnötig herumlaufen
+> Brustschmerz plus kalter Schweiß ist immer ein Warnsignal.
 
-<div class="info-box info-box-merke">
-<div class="info-box-title">💡 Merke</div>
+## Vertiefung im Premiumbereich
 
-Starke Brustschmerzen mit Atemnot, Angst und Kaltschweißigkeit sind immer verdächtig auf einen Herzinfarkt.
-
-</div>
-
-<div class="info-box info-box-achtung">
-<div class="info-box-title">⚠️ Achtung</div>
-
-Ein Herzinfarkt kann auch mit untypischen Beschwerden auftreten, besonders bei Frauen, älteren Menschen und Diabetikern.
-
-</div>
-
-<div class="info-box info-box-praxis">
-<div class="info-box-title">🩺 Praxis-Tipp</div>
-
-Bei plötzlich auftretendem Druckgefühl in der Brust immer ernsthaft an einen Herzinfarkt denken und sofort Hilfe holen.
-
-</div>
-
-## Bedeutung für die Pflege
-
-Pflegekräfte sind oft die ersten Personen, die auffällige Veränderungen bemerken.
-
-Deshalb ist es wichtig, typische und untypische Anzeichen eines Herzinfarkts zu kennen und schnell zu reagieren.
-
-## Typische Prüfungsfragen
-
-- Welche Symptome sprechen für einen Herzinfarkt?
-- Warum ist ein Herzinfarkt ein Notfall?
-- Welche Symptome können bei älteren Menschen untypisch sein?
-- Welche Maßnahmen sind bei Verdacht auf Herzinfarkt wichtig?
+Im Premium-Lernskript lernst du, Herzinfarkte sicher einzuschätzen, Warnzeichen richtig zu priorisieren und typische Prüfungsfehler zu vermeiden.

@@ -1,90 +1,48 @@
 ---
-title: Bewusstlosigkeit
-description: Bewusstlosigkeit erkennen und richtig reagieren.
-level: pruefung
+title: "Bewusstlosigkeit"
+beschreibung: "Handle sicher bei Bewusstlosigkeit und erkenne lebensbedrohliche Situationen."
 ---
 
 # Bewusstlosigkeit
 
-Bewusstlosigkeit ist ein medizinischer Notfall. Betroffene reagieren nicht mehr auf Ansprache oder Berührung.
+Bewusstlosigkeit bedeutet, dass eine Person nicht mehr auf Ansprache oder Berührung reagiert.
 
-In solchen Situationen muss schnell gehandelt werden.
+Das ist immer eine ernste Situation.
 
-## Woran man Bewusstlosigkeit erkennt
+## Warum Bewusstlosigkeit wichtig ist
 
-Typische Anzeichen sind:
+Bewusstlose Menschen können ihre Atmung und Schutzreflexe verlieren.
+
+Dadurch besteht akute Lebensgefahr.
+
+## Typische Warnzeichen
+
+Mögliche Hinweise sind:
 
 - keine Reaktion auf Ansprache
-- keine Reaktion auf Berührung
 - geschlossene Augen
 - fehlende Orientierung
+- flache oder fehlende Atmung
+- schlaffer Körper
 
-## Mögliche Ursachen
+Die Situation muss sofort eingeschätzt werden.
 
-Bewusstlosigkeit kann viele Ursachen haben.
+## Pflegerischer Blick
 
-Zum Beispiel:
+Wichtig ist:
 
-- Kreislaufprobleme
-- Herzinfarkt
-- Schlaganfall
-- Unterzuckerung
-- Kopfverletzungen
-- Sauerstoffmangel
+- Bewusstsein prüfen
+- Atmung kontrollieren
+- Hilfe holen
+- Patienten schützen
+- nicht allein lassen
 
-## Erste Maßnahmen
+Die Atmung hat immer Priorität.
 
-Wenn eine Person bewusstlos ist, müssen sofort Maßnahmen eingeleitet werden.
+## Merke
 
-### Bewusstsein prüfen
+> Bewusstlosigkeit ist immer ein Notfall.
 
-Die Person laut ansprechen und vorsichtig an der Schulter berühren.
+## Vertiefung im Premiumbereich
 
-### Atmung prüfen
-
-Kontrollieren, ob die Person normal atmet.
-
-### Hilfe holen
-
-Bei Bewusstlosigkeit muss sofort Hilfe organisiert werden.
-
-### Stabile Seitenlage
-
-Wenn die Person atmet, sollte sie in die stabile Seitenlage gebracht werden.
-
-<div class="info-box info-box-merke">
-<div class="info-box-title">💡 Merke</div>
-
-Bewusstlosigkeit ist immer ein Notfall.
-
-Die Atmung muss sofort überprüft werden.
-
-</div>
-
-<div class="info-box info-box-achtung">
-<div class="info-box-title">⚠️ Achtung</div>
-
-Eine bewusstlose Person darf niemals allein gelassen werden.
-
-Die Atmung muss regelmäßig kontrolliert werden.
-
-</div>
-
-<div class="info-box info-box-praxis">
-<div class="info-box-title">🩺 Praxis-Tipp</div>
-
-Wenn eine Person bewusstlos ist und nicht normal atmet, muss sofort der Rettungsdienst alarmiert werden.
-
-</div>
-
-## Bedeutung für die Pflege
-
-Pflegekräfte müssen Notfallsituationen schnell erkennen und sofort handeln können.
-
-Eine ruhige und strukturierte Vorgehensweise hilft, die Situation besser zu kontrollieren.
-
-## Typische Prüfungsfragen
-
-- Woran erkennt man Bewusstlosigkeit?
-- Welche Ursachen kann Bewusstlosigkeit haben?
-- Welche Maßnahmen müssen sofort durchgeführt werden?
+Im Premium-Lernskript lernst du, Bewusstlosigkeit sicher einzuschätzen, Prioritäten richtig zu setzen und typische Prüfungsfehler zu vermeiden.

@@ -1,77 +1,50 @@
 ---
-title: Anaphylaxie
-description: Schwere allergische Reaktion erkennen und im Notfall richtig handeln.
+title: "Anaphylaxie"
+beschreibung: "Verstehe die Anzeichen einer Anaphylaxie und handle sofort bei dieser lebensbedrohlichen Reaktion."
 ---
 
 # Anaphylaxie
 
-Eine Anaphylaxie ist eine **schwere allergische Reaktion**, die plötzlich auftritt und lebensbedrohlich werden kann.
+Eine Anaphylaxie ist eine schwere allergische Reaktion.
 
-Sie kann sich innerhalb von wenigen Minuten entwickeln.
+Sie kann sich innerhalb kurzer Zeit lebensbedrohlich entwickeln.
 
-<div class="info-box info-box-merke">
-  <div class="info-box-title">💡 Merke</div>
-  Eine Anaphylaxie ist ein akuter Notfall und erfordert sofortiges Handeln.
-</div>
+## Warum Anaphylaxie wichtig ist
 
-## Mögliche Auslöser
+Die Beschwerden können sich sehr schnell verschlechtern.
 
-Häufige Auslöser sind:
+Besonders gefährlich sind Atemprobleme und Kreislaufversagen.
 
-- Medikamente
-- Insektenstiche
-- Nahrungsmittel
-- Kontrastmittel
-- Latex
+## Typische Warnzeichen
 
-## Typische Anzeichen
+Mögliche Hinweise sind:
 
-Mögliche Symptome sind:
-
-- Hautrötung
-- Juckreiz
+- Hautausschlag
 - Schwellungen
 - Atemnot
-- pfeifende Atmung
-- Kreislaufabfall
+- Heiserkeit
 - Unruhe
-- Angst
-- Bewusstseinsstörung
+- schneller Puls
+- Blutdruckabfall
 
-<div class="info-box info-box-achtung">
-  <div class="info-box-title">⚠️ Achtung</div>
-  Schwellungen im Gesicht oder Rachen und plötzlich auftretende Atemnot sind Warnzeichen für einen lebensbedrohlichen Verlauf.
-</div>
+Nicht jede allergische Reaktion ist harmlos.
 
-## Was passiert im Körper?
+## Pflegerischer Blick
 
-Bei einer Anaphylaxie reagiert das Immunsystem übermäßig stark auf einen Auslöser. Dabei werden Stoffe freigesetzt, die zu Gefäßerweiterung, Schwellung und Kreislaufproblemen führen.
+Wichtig ist:
 
-## Pflegerische Maßnahmen im Notfall
+- Symptome ernst nehmen
+- Atmung beobachten
+- Hilfe organisieren
+- Patienten nicht allein lassen
+- Veränderungen sofort weitergeben
 
-Wichtige Maßnahmen sind:
+Die Situation kann schnell eskalieren.
 
-- sofort Hilfe rufen
-- Notruf beziehungsweise ärztliche Hilfe veranlassen
-- Patient nicht allein lassen
-- Vitalzeichen beobachten
-- Atemwege beobachten
-- beruhigend sprechen
-- nach Anordnung Notfallmedikamente vorbereiten oder verabreichen
+## Merke
 
-## Lagerung
+> Atemprobleme bei Allergie sind immer ein Warnsignal.
 
-Die Lagerung richtet sich nach dem Zustand:
+## Vertiefung im Premiumbereich
 
-- bei Atemnot eher Oberkörper hoch
-- bei Kreislaufproblemen eher flach lagern
-- bei Bewusstlosigkeit stabile Seitenlage, wenn die Atmung vorhanden ist
-
-<div class="info-box info-box-praxis">
-  <div class="info-box-title">🩺 Praxis-Tipp</div>
-  Bei bekannter schwerer Allergie ist es wichtig, schnell nach Notfallset, Auslöser und Verlauf zu fragen.
-</div>
-
-## Wichtig für die Praxis
-
-Pflegekräfte müssen frühe Zeichen erkennen, sofort reagieren und den Zustand engmaschig beobachten. Jede Verzögerung kann gefährlich werden.
+Im Premium-Lernskript lernst du, Anaphylaxien sicher einzuschätzen, Warnzeichen frühzeitig zu erkennen und in Prüfungssituationen richtig zu handeln.

@@ -1,124 +1,49 @@
 ---
-title: Schlaganfall erkennen
-description: Typische Anzeichen eines Schlaganfalls erkennen und richtig handeln.
-level: pruefung
+title: "Schlaganfall erkennen"
+beschreibung: "Erkenne Schlaganfall-Symptome frühzeitig und handle strukturiert."
 ---
 
 # Schlaganfall erkennen
 
-Ein Schlaganfall ist ein akuter Notfall. Dabei wird ein Teil des Gehirns plötzlich nicht mehr ausreichend mit Blut und Sauerstoff versorgt.
+Bei einem Schlaganfall wird ein Teil des Gehirns nicht mehr ausreichend versorgt.
 
-Je schneller ein Schlaganfall erkannt wird, desto besser sind die Behandlungschancen.
+Dadurch können plötzlich neurologische Ausfälle entstehen.
 
-## Warum ein Schlaganfall so gefährlich ist
+## Warum Schlaganfall wichtig ist
 
-Beim Schlaganfall werden Gehirnzellen geschädigt oder zerstört.
+Beim Schlaganfall zählt jede Minute.
 
-Das kann zu schweren Folgen führen, zum Beispiel:
+Je schneller gehandelt wird, desto besser sind die Chancen, bleibende Schäden zu vermeiden.
 
-- Lähmungen
-- Sprachstörungen
-- Schluckstörungen
-- Bewusstseinsstörungen
-- dauerhaften Einschränkungen
+## Typische Warnzeichen
 
-## Typische Anzeichen eines Schlaganfalls
-
-Ein Schlaganfall beginnt oft plötzlich.
-
-Wichtige Warnzeichen sind:
+Mögliche Hinweise sind:
 
 - einseitige Lähmungen
 - hängender Mundwinkel
 - Sprachstörungen
 - plötzliche Verwirrtheit
-- Sehstörungen
-- starke Kopfschmerzen
-- Schwindel
-- Unsicherheit beim Gehen
+- Gleichgewichtsstörungen
+- Sehprobleme
 
-## FAST-Regel
+Die Beschwerden treten meist plötzlich auf.
 
-Die FAST-Regel hilft, einen Schlaganfall schnell zu erkennen.
+## Pflegerischer Blick
 
-### F = Face
+Wichtig ist:
 
-Die betroffene Person soll lächeln.
-
-Auffällig ist ein hängender Mundwinkel oder ein schiefes Gesicht.
-
-### A = Arms
-
-Die Person soll beide Arme gleichzeitig heben.
-
-Bei einem Schlaganfall sinkt oft ein Arm ab oder kann nicht richtig gehoben werden.
-
-### S = Speech
-
-Die Person soll einen einfachen Satz nachsprechen.
-
-Auffällig sind verwaschene Sprache, Sprachstörungen oder fehlendes Verständnis.
-
-### T = Time
-
-Zeit ist entscheidend.
-
-Bei Verdacht auf Schlaganfall muss sofort Hilfe organisiert werden.
-
-## Was im Notfall zu tun ist
-
-Bei Verdacht auf Schlaganfall muss schnell gehandelt werden.
-
-Wichtige Maßnahmen sind:
-
+- Symptome ernst nehmen
+- Veränderungen sofort weitergeben
+- Zeit beachten
+- Patienten beobachten
 - Ruhe bewahren
-- Symptome beobachten
-- sofort Arzt oder Rettungsdienst alarmieren
-- betroffene Person nicht allein lassen
-- Atmung und Bewusstsein überwachen
 
-## Was vermieden werden sollte
+Schnelles Handeln ist entscheidend.
 
-Bei Verdacht auf Schlaganfall sollte die betroffene Person:
+## Merke
 
-- nichts essen
-- nichts trinken
-- nicht allein gelassen werden
+> Plötzliche Lähmung oder Sprachstörung bedeutet immer Schlaganfallverdacht.
 
-Schluckstörungen können das Risiko des Verschluckens erhöhen.
+## Vertiefung im Premiumbereich
 
-<div class="info-box info-box-merke">
-<div class="info-box-title">💡 Merke</div>
-
-Ein Schlaganfall ist immer ein Notfall.
-
-Je schneller die Symptome erkannt und gemeldet werden, desto besser sind die Behandlungschancen.
-
-</div>
-
-<div class="info-box info-box-achtung">
-<div class="info-box-title">⚠️ Achtung</div>
-
-Auch wenn sich Symptome nach kurzer Zeit wieder bessern, muss ein Schlaganfallverdacht immer ernst genommen werden.
-
-</div>
-
-<div class="info-box info-box-praxis">
-<div class="info-box-title">🩺 Praxis-Tipp</div>
-
-Bei plötzlichen halbseitigen Lähmungen, Sprachstörungen oder hängendem Mundwinkel sofort an einen Schlaganfall denken und Hilfe holen.
-
-</div>
-
-## Bedeutung für die Pflege
-
-Pflegekräfte sind oft die ersten Personen, die Veränderungen bemerken.
-
-Deshalb ist es wichtig, typische Anzeichen eines Schlaganfalls sicher zu erkennen und schnell zu handeln.
-
-## Typische Prüfungsfragen
-
-- Welche Anzeichen sprechen für einen Schlaganfall?
-- Was bedeutet die FAST-Regel?
-- Warum ist Zeit bei einem Schlaganfall so wichtig?
-- Was darf ein Patient mit Schlaganfallverdacht nicht bekommen?
+Im Premium-Lernskript lernst du, Schlaganfälle sicher einzuschätzen, Warnzeichen richtig zu priorisieren und typische Prüfungsfehler zu vermeiden.

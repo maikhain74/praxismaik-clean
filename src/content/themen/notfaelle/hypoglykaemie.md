@@ -1,87 +1,50 @@
 ---
-title: Hypoglykämie
-description: Unterzuckerung erkennen und im Notfall richtig handeln.
-level: pruefung
+title: "Hypoglykämie"
+beschreibung: "Erkenne Unterzuckerung und reagiere schnell und richtig im Pflegealltag."
 ---
 
 # Hypoglykämie
 
-Eine Hypoglykämie ist eine **Unterzuckerung**. Dabei ist der Blutzucker zu niedrig.
+Eine Hypoglykämie bedeutet, dass der Blutzucker zu niedrig ist.
 
-Sie tritt häufig bei Menschen mit Diabetes auf, besonders wenn Insulin gegeben wurde, zu wenig gegessen wurde oder körperliche Belastung dazugekommen ist.
+Das kann schnell gefährlich werden.
 
-<div class="info-box info-box-merke">
-  <div class="info-box-title">💡 Merke</div>
-  Eine Hypoglykämie kann schnell lebensbedrohlich werden und muss sofort erkannt werden.
-</div>
+## Warum Hypoglykämie wichtig ist
 
-## Mögliche Ursachen
+Das Gehirn ist auf Zucker angewiesen.
 
-Häufige Ursachen sind:
+Sinkt der Blutzucker stark ab, können Bewusstseinsstörungen oder Krampfanfälle entstehen.
 
-- zu viel Insulin
-- Mahlzeit ausgelassen
-- ungewohnte körperliche Belastung
-- Alkohol
-- Erbrechen
+## Typische Warnzeichen
 
-## Typische Anzeichen
-
-Frühe Anzeichen können sein:
+Mögliche Hinweise sind:
 
 - Zittern
 - Schwitzen
-- Heißhunger
 - Unruhe
-- Blässe
-- Herzklopfen
-
-Spätere Anzeichen können sein:
-
+- Hunger
 - Verwirrtheit
-- Konzentrationsstörungen
-- Sprachstörungen
-- Krampfanfälle
-- Bewusstlosigkeit
+- Konzentrationsprobleme
+- Bewusstseinsstörungen
 
-<div class="info-box info-box-achtung">
-  <div class="info-box-title">⚠️ Achtung</div>
-  Bei Bewusstseinsstörung darf nichts zu trinken oder zu essen gegeben werden, weil Aspirationsgefahr besteht.
-</div>
+Die Beschwerden können sich schnell verschlechtern.
 
-## Pflegerische Maßnahmen
+## Pflegerischer Blick
 
-Wenn der Patient wach und schluckfähig ist:
+Wichtig ist:
 
-- schnell wirksame Kohlenhydrate geben
-- Zustand beobachten
+- Symptome ernst nehmen
 - Blutzucker kontrollieren
-- anschließend langsamer wirksame Kohlenhydrate nach Bedarf
+- Veränderungen beobachten
+- schnell reagieren
+- Hilfe organisieren
 
-Wenn der Patient nicht sicher schlucken kann oder bewusstlos ist:
+Nicht jede Unterzuckerung sieht sofort dramatisch aus.
 
-- sofort Hilfe holen
-- ärztliche Hilfe veranlassen
-- Vitalzeichen beobachten
-- keine orale Gabe
-- Notfallmaßnahmen nach Vorgabe einleiten
+## Merke
 
-## Beobachtung
+> Schwitzen und Verwirrtheit können Warnzeichen einer Unterzuckerung sein.
 
-Pflegekräfte achten auf:
+## Vertiefung im Premiumbereich
 
-- Bewusstseinslage
-- Hautzustand
-- Unruhe
-- Zittern
-- Schweiß
-- Verlauf nach der Maßnahme
-
-<div class="info-box info-box-praxis">
-  <div class="info-box-title">🩺 Praxis-Tipp</div>
-  Bei Menschen mit Diabetes immer mitdenken, ob Beschwerden durch Unterzuckerung verursacht sein könnten, besonders wenn sie plötzlich verändert wirken.
-</div>
-
-## Wichtig für die Praxis
-
-Eine Hypoglykämie muss schnell erkannt und behandelt werden. Pflegekräfte spielen eine zentrale Rolle, weil sie frühe Symptome oft zuerst bemerken.
+Im Premium-Lernskript lernst du, Hypoglykämie sicher einzuschätzen, Risiken frühzeitig zu erkennen und in Prüfungssituationen richtig zu handeln.

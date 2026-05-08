@@ -1,112 +1,51 @@
 ---
-title: Atemnot
-description: Atemnot erkennen und richtig reagieren.
-level: pruefung
+title: "Atemnot erkennen"
+beschreibung: "Erkenne Atemnot schnell und leite sofortige pflegerische Maßnahmen ein."
 ---
 
-# Atemnot
+# Atemnot erkennen
 
-Atemnot ist ein medizinischer Notfall. Betroffene haben das Gefühl, nicht genügend Luft zu bekommen oder schwer atmen zu können.
+Atemnot ist ein Warnsignal, bei dem die Atmung erschwert oder unzureichend ist.
 
-Atemnot kann plötzlich auftreten und lebensbedrohlich werden.
+Betroffene haben oft das Gefühl, nicht genug Luft zu bekommen.
 
-## Woran man Atemnot erkennt
+## Warum Atemnot wichtig ist
 
-Typische Anzeichen sind:
+Atemnot kann sich schnell verschlechtern.
+
+Deshalb muss früh erkannt werden, ob eine akute Gefahr besteht.
+
+In der Pflege ist schnelle Beobachtung besonders wichtig.
+
+## Typische Warnzeichen
+
+Mögliche Hinweise sind:
 
 - schnelle Atmung
-- angestrengte Atmung
-- sichtbare Atemarbeit
 - Einsatz der Atemhilfsmuskulatur
 - Unruhe oder Angst
-- bläuliche Lippen oder Fingernägel
-- Sprechen fällt schwer
+- erschwertes Sprechen
+- blasse oder bläuliche Haut
+- Husten oder rasselnde Atmung
 
-## Mögliche Ursachen
+Nicht jede Atemnot sieht gleich aus.
 
-Atemnot kann viele Ursachen haben.
+## Pflegerischer Blick
 
-Zum Beispiel:
-
-- Asthma
-- COPD
-- Herzinsuffizienz
-- Lungenentzündung
-- Aspiration
-- allergische Reaktionen
-- Lungenembolie
-
-## Sofortmaßnahmen bei Atemnot
-
-Bei Atemnot muss schnell gehandelt werden.
-
-Wichtige Maßnahmen sind:
+Wichtig ist:
 
 - Ruhe bewahren
-- betroffene Person beruhigen
-- Oberkörper hoch lagern
-- enge Kleidung lockern
-- Arzt oder Rettungsdienst informieren
 - Atmung beobachten
+- Oberkörper hoch lagern
+- Hilfe organisieren
+- Veränderungen sofort weitergeben
 
-## Lagerung bei Atemnot
+Bei Atemnot zählt schnelles Handeln.
 
-Eine aufrechte Position erleichtert vielen Betroffenen das Atmen.
+## Merke
 
-Häufig hilfreich sind:
+> Luftnot und Unruhe sind immer ernst zu nehmen.
 
-- Oberkörperhochlagerung
-- Kutschersitz
-- Torwartstellung
+## Vertiefung im Premiumbereich
 
-Diese Positionen entlasten die Atemmuskulatur.
-
-## Beobachtung in der Pflege
-
-Pflegekräfte sollten besonders auf folgende Veränderungen achten:
-
-- Atemfrequenz
-- Atemgeräusche
-- Hautfarbe
-- Bewusstseinslage
-- Unruhe oder Angst
-
-<div class="info-box info-box-merke">
-<div class="info-box-title">💡 Merke</div>
-
-Atemnot ist immer ernst zu nehmen.
-
-Plötzlich auftretende Atemnot kann lebensbedrohlich sein.
-
-</div>
-
-<div class="info-box info-box-achtung">
-<div class="info-box-title">⚠️ Achtung</div>
-
-Eine Person mit Atemnot sollte niemals flach liegen.
-
-Eine aufrechte Position erleichtert meist die Atmung.
-
-</div>
-
-<div class="info-box info-box-praxis">
-<div class="info-box-title">🩺 Praxis-Tipp</div>
-
-Ruhe und beruhigende Ansprache helfen, Angst zu reduzieren.
-
-Angst verstärkt häufig die Atemnot zusätzlich.
-
-</div>
-
-## Bedeutung für die Pflege
-
-Pflegekräfte müssen Atemnot schnell erkennen und richtig reagieren.
-
-Eine ruhige und strukturierte Vorgehensweise hilft, die Situation zu stabilisieren.
-
-## Typische Prüfungsfragen
-
-- Welche Anzeichen sprechen für Atemnot?
-- Welche Ursachen kann Atemnot haben?
-- Welche Lagerung hilft bei Atemnot?
-- Welche Maßnahmen sollten im Notfall durchgeführt werden?
+Im Premium-Lernskript lernst du, Atemnot sicher einzuschätzen, Ursachen zu unterscheiden und in Prüfungssituationen richtig zu handeln.
