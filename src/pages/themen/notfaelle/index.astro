@@ -23,17 +23,49 @@ const topicDescriptions = {
     "Verstehe die Anzeichen einer Anaphylaxie und handle sofort bei dieser lebensbedrohlichen Reaktion.",
   "notfaelle/reanimation-grundlagen":
     "Lerne die Grundlagen der Reanimation und deine Rolle im Notfall.",
+  "notfaelle/aspiration":
+    "Erkenne Aspiration schnell, schätze die Gefahr richtig ein und reagiere pflegerisch sicher.",
+  "notfaelle/hyperglykaemie":
+    "Lerne Warnzeichen einer Überzuckerung zu erkennen und pflegerisch sicher zu reagieren.",
+  "notfaelle/krampfanfall":
+    "Verstehe, wie du bei einem Krampfanfall sicher handelst und den Patienten schützt.",
+  "notfaelle/schock":
+    "Verstehe Warnzeichen eines Schocks und warum schnelles Handeln lebenswichtig ist.",
+  "notfaelle/sepsis":
+    "Lerne frühe Warnzeichen einer Sepsis zu erkennen und die Dringlichkeit richtig einzuschätzen.",
 };
 
-const topicTypes = [
-  "Akut",
-  "Sicherheit",
-  "Herz",
-  "Neurologie",
-  "Stoffwechsel",
-  "Allergie",
-  "Reanimation",
+const notfallCluster = [
+  {
+    title: "Atemwegsnotfälle",
+    type: "Atemwege",
+    slugs: ["atemnot", "aspiration", "anaphylaxie"],
+  },
+  {
+    title: "Kreislauf- und Stoffwechselnotfälle",
+    type: "Kreislauf",
+    slugs: ["herzinfarkt", "hypoglykaemie", "hyperglykaemie", "schock", "sepsis"],
+  },
+  {
+    title: "Neurologische Notfälle",
+    type: "Neurologie",
+    slugs: ["schlaganfall", "bewusstlosigkeit", "krampfanfall"],
+  },
+  {
+    title: "Reanimationsmanagement",
+    type: "Reanimation",
+    slugs: ["reanimation"],
+  },
 ];
+
+const groupedNotfallCluster = notfallCluster
+  .map((cluster) => ({
+    ...cluster,
+    items: notfaelleThemen.filter((topic) =>
+      cluster.slugs.some((slug) => topic.slug.toLowerCase().includes(slug))
+    ),
+  }))
+  .filter((cluster) => cluster.items.length > 0);
 ---
 
 <BaseLayout
@@ -107,27 +139,40 @@ const topicTypes = [
         <span class="topic-count-badge">{notfaelleThemen.length} Themen</span>
       </div>
 
-      <div class="topic-grid">
-        {notfaelleThemen.map((topic, index) => (
-          <a class="topic-card" href={`/themen/${topic.slug}/`}>
-            <div class="topic-card-top">
-              <span class="topic-step">Thema {index + 1}</span>
-              <span class="topic-type">{topicTypes[index] ?? "Notfall"}</span>
+      <div class="cluster-list">
+        {groupedNotfallCluster.map((cluster) => (
+          <section class="cluster-block">
+            <div class="cluster-head">
+              <h3>{cluster.title}</h3>
+              <span class="cluster-count">
+                {cluster.items.length} {cluster.items.length === 1 ? "Thema" : "Themen"}
+              </span>
             </div>
 
-            <h3>{topic.data.title}</h3>
+            <div class="topic-grid">
+              {cluster.items.map((topic, index) => (
+                <a class="topic-card" href={`/themen/${topic.slug}/`}>
+                  <div class="topic-card-top">
+                    <span class="topic-step">Thema {index + 1}</span>
+                    <span class="topic-type">{cluster.type}</span>
+                  </div>
 
-            <p>
-              {
-                topic.data.beschreibung ??
-                topic.data.description ??
-                topicDescriptions[topic.slug] ??
-                "Lerne, diesen Notfall zu erkennen und sicher darauf zu reagieren."
-              }
-            </p>
+                  <h3>{topic.data.title}</h3>
 
-            <span class="topic-card-link">Thema öffnen →</span>
-          </a>
+                  <p>
+                    {
+                      topic.data.beschreibung ??
+                      topic.data.description ??
+                      topicDescriptions[topic.slug] ??
+                      "Lerne, diesen Notfall zu erkennen und sicher darauf zu reagieren."
+                    }
+                  </p>
+
+                  <span class="topic-card-link">Thema öffnen →</span>
+                </a>
+              ))}
+            </div>
+          </section>
         ))}
       </div>
     </section>
@@ -241,7 +286,8 @@ const topicTypes = [
     margin-bottom: 0;
   }
 
-  .topic-count-badge {
+  .topic-count-badge,
+  .cluster-count {
     flex: 0 0 auto;
     border-radius: 999px;
     background: #dbeafe;
@@ -249,6 +295,29 @@ const topicTypes = [
     padding: 8px 14px;
     font-size: 0.9rem;
     font-weight: 800;
+  }
+
+  .cluster-list {
+    display: grid;
+    gap: 28px;
+  }
+
+  .cluster-block {
+    display: grid;
+    gap: 14px;
+  }
+
+  .cluster-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .cluster-head h3 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 1.2rem;
   }
 
   .topic-grid {
@@ -329,8 +398,10 @@ const topicTypes = [
       grid-template-columns: 1fr;
     }
 
-    .topics-head {
+    .topics-head,
+    .cluster-head {
       flex-direction: column;
+      align-items: flex-start;
     }
   }
 
