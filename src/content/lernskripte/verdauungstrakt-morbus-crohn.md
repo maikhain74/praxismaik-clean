@@ -13,10 +13,17 @@ tags: [morbus crohn, ced, darm, entzuendung, pflege, pruefung]
 Ein Patient berichtet:
 
 → wiederkehrende Bauchschmerzen  
-→ Durchfall  
+→ häufigen Durchfall  
 → Gewichtsverlust  
+→ starke Erschöpfung  
+
+Er sagt:
+
+„Ich weiß nie, wann es wieder schlimmer wird.“
 
 Die Beschwerden kommen in Schüben.
+
+Manchmal geht es ihm besser, dann verschlechtert sich der Zustand plötzlich wieder.
 
 👉 Jetzt typische Prüfungssituation:
 
@@ -24,7 +31,7 @@ Sagst du:
 „Das ist nur Durchfall“
 
 oder erkennst du:
-**hier liegt eine chronische Erkrankung vor?**
+**hier liegt eine chronische entzündliche Erkrankung mit hoher Belastung vor?**
 
 ---
 
@@ -101,15 +108,20 @@ Typische Hinweise:
 
 ## 🚨 Mögliche Probleme
 
-Achte auf:
+Achte besonders auf:
 
-- starke Schmerzen  
-- zunehmender Gewichtsverlust  
-- Verschlechterung im Verlauf  
+- starke Bauchschmerzen  
+- häufige Durchfälle  
+- zunehmenden Gewichtsverlust  
+- Mangelernährung  
+- Erschöpfung  
+- starke Verschlechterung während eines Schubs  
 
 👉 Wichtig:
 
-Langfristige Belastung für den Patienten
+Morbus Crohn kann den Alltag massiv einschränken.
+
+Viele Patienten leiden langfristig unter Schmerzen, Unsicherheit und wiederkehrenden Schüben.
 
 ---
 
@@ -117,27 +129,37 @@ Langfristige Belastung für den Patienten
 
 Bei Morbus Crohn:
 
-→ Beschwerden beobachten  
+→ Beschwerden und Verlauf beobachten  
+→ Durchfälle einschätzen  
+→ Gewicht regelmäßig kontrollieren  
 → Ernährung unterstützen  
-→ Gewicht kontrollieren  
+→ auf ausreichende Flüssigkeitsaufnahme achten  
 
-Zusätzlich:
+Zusätzlich wichtig:
 
-→ Patienten beraten  
-→ auf Schübe achten  
+→ Erschöpfung ernst nehmen  
+→ Schübe früh erkennen  
+→ psychosoziale Belastung beachten  
+→ Veränderungen dokumentieren  
+
+👉 Wichtig:
+
+Viele Patienten sind durch die chronische Erkrankung dauerhaft belastet.
+
+Nicht nur körperlich, sondern auch emotional und sozial.
 
 👉 Ziel:
-Stabilisierung und Unterstützung
+Beschwerden lindern, Schübe früh erkennen und den Patienten im Alltag unterstützen
 
 ---
 
 ## 🎯 Prüfungsantwort (Goldstandard)
 
-„Ich erkenne, dass der Patient typische Anzeichen eines Morbus Crohn zeigt, insbesondere wiederkehrende Durchfälle und Gewichtsverlust.  
+„Ich erkenne bei dem Patienten typische Hinweise auf Morbus Crohn, insbesondere wiederkehrende Durchfälle, Bauchschmerzen und Gewichtsverlust.  
 
-Es handelt sich um eine chronische Erkrankung mit schubweisem Verlauf.  
+Wichtig ist, den schubweisen Verlauf zu beachten und Veränderungen früh zu erkennen.  
 
-Daher beobachte ich die Beschwerden, unterstütze die Ernährung und achte auf Veränderungen im Verlauf.“  
+Ich beobachte deshalb Beschwerden, Ernährung, Gewicht und Flüssigkeitsaufnahme besonders genau und achte zusätzlich auf die psychosoziale Belastung durch die chronische Erkrankung.“  
 
 ---
 
@@ -165,5 +187,8 @@ Ein Patient hat immer wieder Durchfall und nimmt ab. Was denken Sie?
 ## 🔗 Verknüpfung
 
 - passt zu: Colitis ulcerosa  
+- passt zu: Mangelernährung  
+- passt zu: Dehydratation  
 - nächstes Thema: Colitis ulcerosa  
-- Vertiefung: Ernährung bei Darmerkrankungen
+- Vertiefung: Chronische Erkrankungen in der Pflege  
+- Vertiefung: Ernährung und Flüssigkeit bei Darmerkrankungen

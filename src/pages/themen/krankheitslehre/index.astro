@@ -32,9 +32,183 @@ const topicDescriptions = {
   "krankheitslehre/schmerz": "Verstehe Schmerzarten, Beobachtung und pflegerische Einschätzung.",
   "krankheitslehre/schock": "Lerne Warnzeichen eines Schocks zu erkennen und die Situation ernst einzuordnen.",
   "krankheitslehre/sepsis": "Verstehe Sepsis als lebensbedrohlichen Notfall und erkenne frühe Warnzeichen.",
-  "krankheitslehre/sturz": "Lerne Ursachen, Folgen und pflegerische Einschätzung nach Sturzereignissen kennen.",
+  "krankheitslehre/sturz": "Lerne Ursachen, Folgen und pflegerische Einschätzung nach Sturzereignissen.",
   "krankheitslehre/thrombose": "Erkenne Risiken, Symptome und pflegerische Prävention bei Thrombose."
 };
+
+const gruppenConfig = [
+  {
+    key: "grundlagen",
+    title: "Grundlagen",
+    description: "Basiswissen zu Krankheit, Symptomen, Verlauf und pflegerischer Einschätzung.",
+  },
+  {
+    key: "herz",
+    title: "Herz-Kreislauf",
+    description: "Wichtige Erkrankungen und Risiken rund um Kreislauf, Blutdruck und Gefäße.",
+  },
+  {
+    key: "atmung",
+    title: "Atmung und Lunge",
+    description: "Krankheitsbilder mit Atemnot, Infektion, Sauerstoffversorgung und Notfallbezug.",
+  },
+  {
+    key: "verdauung",
+    title: "Verdauungstrakt",
+    description: "Erkrankungen von Magen, Darm, Leber, Galle und Bauchspeicheldrüse.",
+  },
+  {
+    key: "stoffwechsel",
+    title: "Stoffwechsel und Ernährung",
+    description: "Krankheitsbilder mit Blutzucker, Flüssigkeit, Ernährung und Mangelzuständen.",
+  },
+  {
+    key: "niere",
+    title: "Niere und Harnwege",
+    description: "Erkrankungen rund um Ausscheidung, Infektion und Nierenfunktion.",
+  },
+  {
+    key: "nerven",
+    title: "Nervensystem",
+    description: "Neurologische Erkrankungen, Bewusstseinsveränderungen und Pflegeprobleme.",
+  },
+  {
+    key: "notfall",
+    title: "Akute Risiken und Notfälle",
+    description: "Lebensbedrohliche Zustände und Warnzeichen, die schnelles Handeln erfordern.",
+  },
+  {
+    key: "weitere",
+    title: "Weitere Themen",
+    description: "Weitere wichtige Krankheitsbilder und pflegerische Beobachtungsschwerpunkte.",
+  },
+];
+
+const verdauungCluster = [
+  {
+    title: "Magenprobleme",
+    slugs: ["reflux-gerd", "gastritis", "ulcus"],
+  },
+  {
+    title: "Chronische Darmerkrankungen",
+    slugs: ["morbus-crohn", "colitis-ulcerosa"],
+  },
+  {
+    title: "Akutes Abdomen und Notfälle",
+    slugs: ["appendizitis", "divertikulitis", "ileus", "pankreatitis"],
+  },
+  {
+    title: "Leber, Galle und Pankreas",
+    slugs: ["hepatitis", "leberzirrhose", "gallen", "pankreatitis"],
+  },
+  {
+    title: "Onkologie",
+    slugs: ["kolorektales-karzinom"],
+  },
+];
+
+const getVerdauungCluster = (items) => {
+  return verdauungCluster
+    .map((cluster) => ({
+      ...cluster,
+      items: items.filter((topic) =>
+        cluster.slugs.some((slug) => topic.slug.toLowerCase().includes(slug))
+      ),
+    }))
+    .filter((cluster) => cluster.items.length > 0);
+};
+
+const getGroupKey = (topic) => {
+  const slug = topic.slug.toLowerCase();
+
+  if (
+    slug.includes("krankheitslehre-grundlagen") ||
+    slug.includes("akut-vs-chronisch") ||
+    slug.includes("entzuendung") ||
+    slug.includes("infektion") ||
+    slug.includes("fieber") ||
+    slug.includes("schmerz")
+  ) {
+    return "grundlagen";
+  }
+
+  if (
+    slug.includes("herzinsuffizienz") ||
+    slug.includes("hypertonie") ||
+    slug.includes("thrombose") ||
+    slug.includes("oedem")
+  ) {
+    return "herz";
+  }
+
+  if (
+    slug.includes("copd") ||
+    slug.includes("pneumonie") ||
+    slug.includes("lungenembolie")
+  ) {
+    return "atmung";
+  }
+
+  if (
+    slug.includes("verdauungstrakt") ||
+    slug.includes("reflux") ||
+    slug.includes("gastritis") ||
+    slug.includes("ulcus") ||
+    slug.includes("appendizitis") ||
+    slug.includes("divertikulitis") ||
+    slug.includes("morbus-crohn") ||
+    slug.includes("colitis") ||
+    slug.includes("karzinom") ||
+    slug.includes("ileus") ||
+    slug.includes("gallen") ||
+    slug.includes("hepatitis") ||
+    slug.includes("leberzirrhose") ||
+    slug.includes("pankreatitis")
+  ) {
+    return "verdauung";
+  }
+
+  if (
+    slug.includes("diabetes") ||
+    slug.includes("dehydratation") ||
+    slug.includes("mangelernaehrung")
+  ) {
+    return "stoffwechsel";
+  }
+
+  if (
+    slug.includes("niereninsuffizienz") ||
+    slug.includes("harnwegsinfektion")
+  ) {
+    return "niere";
+  }
+
+  if (
+    slug.includes("schlaganfall") ||
+    slug.includes("parkinson") ||
+    slug.includes("delir")
+  ) {
+    return "nerven";
+  }
+
+  if (
+    slug.includes("sepsis") ||
+    slug.includes("schock")
+  ) {
+    return "notfall";
+  }
+
+  return "weitere";
+};
+
+const gruppen = gruppenConfig
+  .map((group) => ({
+    ...group,
+    items: krankheitslehreThemen
+      .filter((topic) => getGroupKey(topic) === group.key)
+      .sort((a, b) => a.data.title.localeCompare(b.data.title, "de")),
+  }))
+  .filter((group) => group.items.length > 0);
 ---
 
 <BaseLayout
@@ -109,9 +283,29 @@ const topicDescriptions = {
         </div>
       </div>
 
-      {krankheitslehreThemen.length > 0 ? (
+      {gruppen.length > 0 ? (
+        <div class="disease-groups">
+          {gruppen.map((group) => (
+            <section class="disease-group">
+              <div class="disease-group-head">
+                <div>
+                  <h3>{group.title}</h3>
+                  <p>{group.description}</p>
+                </div>
+
+                <span class="disease-group-count">
+                  {group.items.length} {group.items.length === 1 ? "Thema" : "Themen"}
+                </span>
+              </div>
+
+             {group.key === "verdauung" ? (
+  <div class="cluster-list">
+    {getVerdauungCluster(group.items).map((cluster) => (
+      <section class="cluster-block">
+        <h4>{cluster.title}</h4>
+
         <div class="topic-grid">
-          {krankheitslehreThemen.map((topic, index) => (
+          {cluster.items.map((topic, index) => (
             <a class="topic-card" href={`/themen/${topic.slug}/`}>
               <div class="topic-card-top">
                 <span class="topic-step">Thema {index + 1}</span>
@@ -129,6 +323,35 @@ const topicDescriptions = {
 
               <span class="topic-card-link">Thema öffnen →</span>
             </a>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+) : (
+  <div class="topic-grid">
+    {group.items.map((topic, index) => (
+      <a class="topic-card" href={`/themen/${topic.slug}/`}>
+        <div class="topic-card-top">
+          <span class="topic-step">Thema {index + 1}</span>
+          <span class="topic-type">Krankheitsbild</span>
+        </div>
+
+        <h3>{topic.data.title}</h3>
+
+        <p>
+          {topic.data.beschreibung ??
+            topic.data.description ??
+            topicDescriptions[topic.slug] ??
+            "Lerne dieses Krankheitsbild mit Symptomen, Risiken und Pflegebezug verständlich einzuordnen."}
+        </p>
+
+        <span class="topic-card-link">Thema öffnen →</span>
+      </a>
+    ))}
+  </div>
+)}
+            </section>
           ))}
         </div>
       ) : (
@@ -234,10 +457,11 @@ const topicDescriptions = {
   justify-content: space-between;
   align-items: flex-start;
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.topic-count-badge {
+.topic-count-badge,
+.disease-group-count {
   flex-shrink: 0;
   padding: 0.5rem 0.8rem;
   border-radius: 999px;
@@ -245,6 +469,41 @@ const topicDescriptions = {
   color: #2f5f9b;
   font-size: 0.9rem;
   font-weight: 700;
+}
+
+.disease-groups {
+  display: grid;
+  gap: 2rem;
+}
+
+.disease-group {
+  padding-top: 1.25rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.disease-group:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.disease-group-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.disease-group-head h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.25rem;
+  color: #18324a;
+}
+
+.disease-group-head p {
+  margin: 0;
+  color: #556270;
+  line-height: 1.6;
 }
 
 .topic-grid {
@@ -340,10 +599,22 @@ const topicDescriptions = {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .topics-head {
+  .topics-head,
+  .disease-group-head {
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+.cluster-list {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.cluster-block h4 {
+  margin: 0 0 0.8rem;
+  color: #18324a;
+  font-size: 1.05rem;
 }
 
 @media (max-width: 640px) {
