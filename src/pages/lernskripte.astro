@@ -6,22 +6,49 @@ const lernskripte = await getCollection("lernskripte");
 const themen = await getCollection("themen");
 
 const sortedLernskripte = [...lernskripte].sort((a, b) => {
-  const topicCompare = (a.data.topic ?? "").localeCompare(b.data.topic ?? "");
+  const topicCompare = (a.data.topic ?? "").localeCompare(b.data.topic ?? "", "de");
   if (topicCompare !== 0) return topicCompare;
 
   return (a.data.reihenfolge ?? 999) - (b.data.reihenfolge ?? 999);
 });
 
+const fallbackThemen = {
+  krankheitslehre: {
+    title: "Krankheitslehre",
+    beschreibung: "Lernskripte zu wichtigen Krankheitsbildern, Symptomen, Risiken und pflegerischem Handeln.",
+  },
+  notfaelle: {
+    title: "Notfälle in der Pflege",
+    beschreibung: "Vertiefende Lernskripte zu akuten Situationen, Warnzeichen und sicherem Handeln im Notfall.",
+  },
+  medikamente: {
+    title: "Medikamente",
+    beschreibung: "Lernskripte zu sicherer Medikamentengabe, Beobachtung, Risiken und Pflegeverantwortung.",
+  },
+};
+
 const themenMap = new Map();
 
 for (const thema of themen) {
   const topicKey = thema.slug.split("/")[0];
+  const isIndex = thema.id?.endsWith("/index.md") || thema.slug.endsWith("/index");
 
   if (!themenMap.has(topicKey)) {
     themenMap.set(topicKey, {
       slug: topicKey,
+      title: fallbackThemen[topicKey]?.title ?? thema.data.title,
+      beschreibung: fallbackThemen[topicKey]?.beschreibung ?? thema.data.beschreibung ?? "",
+    });
+  }
+
+  if (isIndex) {
+    themenMap.set(topicKey, {
+      slug: topicKey,
       title: thema.data.title,
-      beschreibung: thema.data.beschreibung ?? "",
+      beschreibung:
+        thema.data.beschreibung ??
+        fallbackThemen[topicKey]?.beschreibung ??
+        "",
     });
   }
 }

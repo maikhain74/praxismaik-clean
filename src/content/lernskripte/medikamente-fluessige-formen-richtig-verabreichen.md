@@ -127,6 +127,82 @@ Wenn nicht:
 
 ---
 
+## 👀 Worauf du besonders achten musst
+
+Flüssige Medikamente wirken oft harmlos.
+
+Genau deshalb entstehen dort viele Fehler.
+
+Besonders kritisch:
+
+- ungenaues Abmessen  
+- falsche Einheit  
+- ungeeignete Hilfsmittel  
+- fehlendes Schütteln  
+- Verwechslung von Tropfen und Millilitern  
+- Einnahme nicht kontrollieren  
+
+👉 Wichtig:
+
+Schon kleine Mengenfehler können große Auswirkungen haben.
+
+---
+
+## 🚨 Besonders gefährliche Situationen
+
+Achte besonders auf:
+
+- Kinder  
+- ältere Patienten  
+- konzentrierte Medikamente  
+- starke Wirkstoffe  
+- unruhige oder verwirrte Patienten  
+
+👉 Dort sind exakte Dosierungen besonders wichtig.
+
+---
+
+## 🧠 Was Prüfer wirklich sehen wollen
+
+Prüfer wollen nicht hören:
+
+„Ich gebe den Saft.“
+
+Sie wollen sehen:
+
+- arbeitest du exakt?
+- erkennst du Risiken?
+- kontrollierst du die Einnahme?
+- bemerkst du Fehlerquellen?
+- handelst du sicher?
+
+👉 Genau das macht professionelle Medikamentengabe aus.
+
+---
+
+## ❗ Typischer Prüfungsfehler
+
+Viele sagen:
+
+„Das passt ungefähr.“
+
+Das ist falsch.
+
+Richtig ist:
+
+→ exakt messen  
+→ geeignetes Hilfsmittel nutzen  
+→ Dosierung kontrollieren  
+→ Einnahme beobachten  
+
+---
+
+## 🗣️ Gute prüfungsrelevante Formulierung
+
+„Ich verwende ein geeignetes Messinstrument und überprüfe die Dosierung sorgfältig, um Dosierungsfehler zu vermeiden.“
+
+👉 Kurz, klar und fachlich sicher.
+
 ## ❗ Prüfungs-Fehler (KO-Kriterien)
 
 - Dosierung „nach Gefühl“  

@@ -124,6 +124,70 @@ Die **6-R-Regel**:
 
 ---
 
+## 👀 Worauf du besonders achten musst
+
+Bei festen Medikamenten entstehen viele Fehler durch Routine.
+
+Besonders kritisch:
+
+- ähnlich aussehende Tabletten  
+- ähnliche Namen  
+- falsches Teilen  
+- falsches Zerkleinern  
+- Medikamente ohne ausreichende Flüssigkeit  
+- Medikamente beim Patienten stehen lassen  
+
+👉 Wichtig:
+
+Die Verantwortung endet nicht beim Austeilen.
+
+Du musst auch prüfen:
+
+→ wurde das Medikament wirklich eingenommen?  
+→ gibt es Schluckprobleme?  
+→ treten Nebenwirkungen auf?  
+→ verändert sich der Zustand des Patienten?  
+
+---
+
+## 🚨 Besonders gefährliche Situationen
+
+Achte besonders auf:
+
+- ältere Patienten  
+- Schluckstörungen  
+- Verwirrtheit  
+- viele Medikamente gleichzeitig  
+- unklare Verordnungen  
+
+👉 Dort passieren besonders häufig Fehler.
+
+---
+
+## 🧠 Was Prüfer wirklich sehen wollen
+
+Prüfer wollen nicht nur hören:
+
+„Ich gebe die Tablette.“
+
+Sie wollen sehen:
+
+- prüfst du Risiken?
+- erkennst du Unsicherheiten?
+- handelst du verantwortungsvoll?
+- beobachtest du den Patienten?
+- stoppst du bei Gefahr?
+
+👉 Genau das macht sichere Medikamentengabe aus.
+
+---
+
+## 🗣️ Gute prüfungsrelevante Formulierung
+
+„Da die Teilbarkeit und sichere Anwendung nicht eindeutig geklärt sind, verabreiche ich das Medikament zunächst nicht und halte Rücksprache.“
+
+👉 Kurz, klar und sicher.
+
 ## ❗ Prüfungs-Fehler (KO-Kriterien)
 
 - Tabletten einfach zerkleinern  

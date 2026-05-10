@@ -154,6 +154,83 @@ Verordnung prüfen
 → sichere Handlung wählen  
 → Entscheidung klar begründen  
 
+## 7.1 Typische Prüfungssituation
+
+Eine Pflegekraft soll Medikamente verabreichen.
+
+Kurz vorher fällt auf:
+
+→ Name auf dem Medikament wirkt ungewohnt  
+→ Patient wirkt unsicher  
+→ Dosierung erscheint ungewöhnlich hoch  
+→ Verordnung wurde handschriftlich geändert  
+
+👉 Jetzt entscheidend:
+
+Arbeitest du einfach weiter
+
+oder stoppst du die Verabreichung und prüfst die Situation?
+
+---
+
+## 7.2 Was Prüfer wirklich sehen wollen
+
+Prüfer wollen selten reine Medikamentennamen hören.
+
+Sie achten vor allem auf:
+
+- arbeitest du sicher?
+- erkennst du Risiken?
+- hinterfragst du Auffälligkeiten?
+- setzt du Prioritäten richtig?
+- übernimmst du Verantwortung?
+
+👉 Genau das entscheidet oft über gute Prüfungsnoten.
+
+---
+
+## 7.3 Typische gefährliche Situationen
+
+Besonders kritisch sind:
+
+- unleserliche Verordnungen
+- ähnlich klingende Medikamentennamen
+- Zeitdruck
+- Ablenkung
+- Unterbrechungen
+- Patientenverwechslung
+- unklare Dosierungen
+
+👉 Wichtig:
+
+Die meisten Fehler entstehen nicht durch fehlendes Wissen,  
+sondern durch fehlende Kontrolle.
+
+---
+
+## 7.4 Typischer Prüfungsfehler
+
+Viele sagen:
+
+„Ich gebe das Medikament erstmal und frage später nach.“
+
+Das ist falsch.
+
+Richtig ist:
+
+→ Unsicherheit ernst nehmen  
+→ Verabreichung stoppen  
+→ Rücksprache halten  
+→ erst danach sicher handeln
+
+---
+
+## 7.5 Gute prüfungsrelevante Formulierung
+
+„Da die Verordnung unklar wirkt und eine sichere Medikamentengabe aktuell nicht gewährleistet ist, verabreiche ich das Medikament zunächst nicht und halte Rücksprache.“
+
+👉 Kurz, klar und fachlich sicher.
+
 ---
 
 ## 8. Entscheidungslogik (Prüfung)
@@ -180,6 +257,86 @@ Wichtig:
 
 Die Grundlogik bleibt immer gleich:  
 → Risiko erkennen → Maßnahme anpassen → Sicherheit gewährleisten  
+
+## 9.1 Realität im Pflegealltag
+
+Medikamentenfehler entstehen häufig nicht durch fehlendes Wissen.
+
+Sondern durch:
+
+- Zeitdruck  
+- Ablenkung  
+- Routine  
+- Unterbrechungen  
+- Stress  
+- „Das mache ich immer so“  
+
+👉 Genau deshalb sind feste Sicherheitsabläufe wichtig.
+
+---
+
+## 9.2 Besonders gefährliche Routinefehler
+
+Typische Beispiele:
+
+- Medikamente nebenbei vorbereiten  
+- währenddessen Gespräche führen  
+- Medikamente für mehrere Patienten gleichzeitig vorbereiten  
+- Einnahme nicht kontrollieren  
+- Dokumentation später nachholen wollen  
+
+👉 Wichtig:
+
+Routine darf niemals die Kontrolle ersetzen.
+
+---
+
+## 9.3 Verantwortung in der Pflege
+
+Pflegekräfte tragen Verantwortung für:
+
+- richtige Vorbereitung
+- sichere Verabreichung
+- Beobachtung der Wirkung
+- Erkennen von Nebenwirkungen
+- rechtzeitiges Reagieren bei Problemen
+
+👉 Verantwortung bedeutet nicht:
+„blind ausführen“
+
+sondern:
+**mitdenken, prüfen und absichern.**
+
+---
+
+## 9.4 Beobachtung nach der Medikamentengabe
+
+Die Aufgabe endet nicht mit dem Verabreichen.
+
+Wichtig ist auch:
+
+→ Wirkt das Medikament wie erwartet?  
+→ Gibt es Nebenwirkungen?  
+→ Verändert sich der Zustand des Patienten?  
+→ Muss reagiert werden?  
+
+👉 Beobachtung gehört immer zur sicheren Medikamentengabe.
+
+---
+
+## 9.5 Mini-Prüfungsfrage
+
+**Frage:**  
+Sie bemerken vor der Medikamentengabe eine unklare Dosierung. Was tun Sie?
+
+**Typischer Fehler:**  
+„Ich gebe das Medikament erstmal.“
+
+**Richtige Denkweise:**  
+→ Unsicherheit erkennen  
+→ keine Verabreichung  
+→ Rücksprache halten  
+→ erst danach sicher handeln
 
 ---
 

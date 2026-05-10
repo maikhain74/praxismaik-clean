@@ -57,7 +57,7 @@ Das kann schnell führen zu:
 - Tod  
 
 👉 Prüfungsregel:
-**Infekt + plötzliche Verschlechterung = Sepsis denken.**
+**Infekt + plötzliche Verschlechterung = immer an Sepsis denken.**
 
 ---
 
@@ -161,17 +161,103 @@ schnelle Behandlung ermöglichen und Schock vermeiden.
 
 ---
 
-## 🗣️ Wie gibst du es weiter?
+## 🚑 Prioritäten im Notfall
 
-Nicht sagen:
+Bei Sepsis zählt nicht Perfektion, sondern Geschwindigkeit.
 
-„Der Patient wirkt irgendwie schlechter.“
+Wichtig ist zuerst:
 
-Besser:
+1. Verschlechterung erkennen  
+2. Vitalzeichen kontrollieren  
+3. Hilfe organisieren  
+4. Arzt informieren  
+5. Veränderungen klar weitergeben  
 
-„Der Patient hat einen Infekt, ist plötzlich verwirrt, atmet schnell, hat einen schnellen Puls und wirkt kreislaufinstabil. Ich habe den Verdacht auf eine Sepsis.“
+👉 Typischer Prüfungsfehler:
 
-👉 Klare Übergabe spart Zeit.
+Pflegeschüler verlieren sich in Kleinigkeiten und erkennen die Dringlichkeit nicht.
+
+---
+
+## 🚨 Warum Sepsis so gefährlich wird
+
+Bei einer Sepsis reagiert der Körper überschießend auf eine Infektion.
+
+Dadurch können:
+
+- Blutdruck abfallen
+- Organe schlechter durchblutet werden
+- Sauerstoffversorgung zusammenbrechen
+- Nieren versagen
+- Bewusstsein gestört werden
+
+Deshalb verschlechtern sich Patienten oft plötzlich.
+
+👉 Wichtig:
+
+Nicht nur Fieber beobachten.
+
+Das Gesamtbild entscheidet.
+
+---
+
+## 👀 Worauf du besonders achten musst
+
+In Prüfungen werden Warnzeichen oft versteckt eingebaut.
+
+Zum Beispiel:
+
+- „Der Patient wirkt plötzlich verwirrt.“
+- „Er schläft ungewöhnlich viel.“
+- „Die Haut wirkt kalt und fleckig.“
+- „Der Patient atmet schneller als vorher.“
+
+👉 Das sind keine Nebensätze.
+
+Das sind mögliche Warnsignale einer Sepsis.
+
+---
+
+## ❗ Typischer Prüfungsfehler
+
+Viele sagen:
+
+„Ich beobachte erstmal weiter.“
+
+Das reicht hier nicht.
+
+Richtig ist:
+
+→ Verschlechterung ernst nehmen  
+→ sofort weitergeben  
+→ aktiv handeln  
+
+---
+
+## 🧠 Prüfungslogik
+
+Prüfer wollen meist nicht hören:
+
+- genaue Laborwerte
+- komplizierte Medizin
+- Spezialtherapie
+
+Sie wollen sehen:
+
+- erkennst du die Gefahr?
+- priorisierst du richtig?
+- handelst du rechtzeitig?
+- gibst du strukturiert weiter?
+
+👉 Genau das entscheidet oft über gute Prüfungsnoten.
+
+---
+
+## 🗣️ Beispiel für eine gute Übergabe
+
+„Der Patient hatte bereits einen Infekt. Jetzt zeigt er eine deutliche Verschlechterung mit schneller Atmung, Tachykardie, Verwirrtheit und reduziertem Allgemeinzustand. Ich habe den Verdacht auf eine Sepsis und benötige ärztliche Einschätzung.“
+
+👉 Kurz, klar und strukturiert.
 
 ---
 
@@ -181,13 +267,13 @@ Besser:
 
 Da eine Sepsis lebensbedrohlich werden kann, informiere ich sofort den Arzt, kontrolliere die Vitalzeichen engmaschig und beobachte Bewusstsein, Atmung, Haut und Urinausscheidung.  
 
-Ich warte nicht ab, sondern gebe die Verschlechterung klar und strukturiert weiter.“  
+Ich warte nicht ab, sondern gebe die Verschlechterung klar und strukturiert weiter.“
 
 ---
 
 ## 🧾 Merksatz
 
-> Infekt plus plötzliche Verschlechterung ist Sepsisverdacht.
+> Plötzliche Verschlechterung bei Infekt ist immer ein Warnsignal.
 
 ---
 

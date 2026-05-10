@@ -116,6 +116,82 @@ Halbfeste Medikamente wirken lokal auf der Haut.
 
 ---
 
+## 👀 Worauf du besonders achten musst
+
+Halbfeste Medikamente wirken direkt auf die Haut.
+
+Deshalb musst du genau beobachten:
+
+→ Wie sieht die Haut aus?  
+→ Gibt es Rötungen, Nässen oder Schmerzen?  
+→ Hat sich die Haut verändert?  
+→ Reagiert der Patient empfindlich?  
+
+👉 Wichtig:
+
+Nicht jede Hautveränderung darf einfach behandelt werden.
+
+---
+
+## 🚨 Besonders gefährliche Situationen
+
+Achte besonders auf:
+
+- offene Hautstellen  
+- entzündete Haut  
+- nässende Bereiche  
+- starke Schmerzen  
+- allergische Reaktionen  
+- unklare Hautveränderungen  
+
+👉 Dort kann falsche Anwendung die Situation verschlechtern.
+
+---
+
+## 🧠 Was Prüfer wirklich sehen wollen
+
+Prüfer wollen nicht nur hören:
+
+„Ich trage die Salbe auf.“
+
+Sie wollen sehen:
+
+- beurteilst du die Haut?
+- arbeitest du hygienisch?
+- erkennst du Risiken?
+- beobachtest du Reaktionen?
+- hinterfragst du Auffälligkeiten?
+
+👉 Genau das macht sichere pflegerische Anwendung aus.
+
+---
+
+## ❗ Typischer Prüfungsfehler
+
+Viele sagen:
+
+„Die Haut ist rot, also nehme ich einfach Salbe.“
+
+Das ist falsch.
+
+Richtig ist:
+
+→ Hautzustand beurteilen  
+→ Ursache einschätzen  
+→ Verordnung prüfen  
+→ hygienisch arbeiten  
+→ Verlauf beobachten  
+
+---
+
+## 🗣️ Gute prüfungsrelevante Formulierung
+
+„Ich beurteile zuerst den Hautzustand und achte auf mögliche Risiken oder Veränderungen, bevor ich das Medikament hygienisch korrekt anwende.“
+
+👉 Kurz, klar und fachlich sicher.
+
+---
+
 ## ❗ Prüfungs-Fehler (KO-Kriterien)
 
 - Salbe ohne Hautbeurteilung auftragen  
