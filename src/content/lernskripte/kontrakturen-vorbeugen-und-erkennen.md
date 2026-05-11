@@ -111,6 +111,100 @@ Wenn Patient sich nicht bewegen kann
 👉 Schmerz wird ignoriert  
 → **führt zu Schonhaltung → Risiko steigt**
 
+## 👀 Worauf Prüfer besonders achten
+
+Prüfer achten nicht nur darauf, ob Bewegung durchgeführt wird.
+
+Sie achten vor allem darauf:
+
+- wird Bewegungsmangel erkannt?
+- werden Schmerzen berücksichtigt?
+- wird aktive Bewegung gefördert?
+- bleiben Ressourcen erhalten?
+- wird Bewegung alltagsnah eingebunden?
+
+👉 Genau dort entstehen viele Punktverluste.
+
+---
+
+## ❗ Typischer Prüfungsfehler
+
+Viele übernehmen zu viel.
+
+Zum Beispiel:
+
+→ Patient könnte kleine Bewegungen selbst durchführen  
+→ Pflege übernimmt trotzdem alles
+
+👉 Folge:
+
+- weniger Aktivität  
+- weiterer Kraftverlust  
+- höheres Kontrakturrisiko  
+- mehr Abhängigkeit  
+
+👉 Wichtig:
+
+**Unterstützen statt ersetzen.**
+
+---
+
+## 🚨 Besonders kritische Warnzeichen
+
+Achte besonders auf:
+
+- zunehmende Schonhaltung  
+- Schmerzen bei Bewegung  
+- Gelenksteifigkeit  
+- asymmetrische Haltung  
+- Bewegungsvermeidung  
+- lange Immobilität  
+
+👉 Dann muss früh reagiert werden.
+
+---
+
+## ❗ Sehr prüfungsrelevant
+
+Passive Bewegung ist manchmal notwendig.
+
+Aber:
+
+👉 aktive Bewegung hat immer Vorrang,
+wenn sie möglich ist.
+
+Denn nur aktive Bewegung erhält:
+
+- Kraft  
+- Koordination  
+- Selbstständigkeit  
+- Körperwahrnehmung  
+
+---
+
+## 🧠 Was eine starke Prüfungsantwort ausmacht
+
+Eine starke Antwort:
+
+- erkennt Bewegungsmangel früh
+- berücksichtigt Schmerzen
+- fördert aktive Bewegung
+- nutzt Ressourcen gezielt
+- integriert Bewegung in den Alltag
+
+👉 Genau dadurch wird aktivierende Pflege sichtbar.
+
+---
+
+## 🗣️ Gute prüfungsrelevante Formulierungen
+
+- „Vorhandene Bewegungen werden gefördert.“
+- „Die Unterstützung wird individuell angepasst.“
+- „Aktive Bewegung hat Vorrang.“
+- „Ressourcen werden gezielt erhalten.“
+
+👉 Kurz, klar und fachlich nachvollziehbar.
+
 ---
 
 ## 🎯 Prüfungsantwort (Goldstandard)

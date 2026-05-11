@@ -199,6 +199,84 @@ Wenn Temperatur erhöht ist und der Patient schwach wirkt
 
 → deshalb beobachten und weitergeben  
 
+## 👀 Worauf Prüfer besonders achten
+
+Prüfer wollen selten nur Normalwerte hören.
+
+Sie achten vor allem darauf:
+
+- erkennst du Veränderungen?
+- vergleichst du mit dem Ausgangszustand?
+- beachtest du mehrere Werte gleichzeitig?
+- beobachtest du den Patienten?
+- erkennst du Warnzeichen?
+
+👉 Genau dort entstehen viele Punktverluste.
+
+---
+
+## ❗ Typischer Prüfungsfehler
+
+Viele konzentrieren sich nur auf Zahlen.
+
+Zum Beispiel:
+
+→ „Der Blutdruck ist okay.“
+
+Aber:
+
+→ Patient wirkt blass  
+→ ist schwindelig  
+→ atmet schneller  
+→ wirkt schwach
+
+👉 Dann reicht ein einzelner „normaler“ Wert nicht aus.
+
+Wichtig:
+
+**Immer den gesamten Zustand beurteilen.**
+
+---
+
+## 🚨 Besonders kritische Warnzeichen
+
+Achte besonders auf:
+
+- schnelle Verschlechterung  
+- mehrere veränderte Vitalzeichen gleichzeitig  
+- Atemnot  
+- Bewusstseinsveränderung  
+- starke Schwäche  
+- Blässe oder Kaltschweißigkeit  
+- zunehmende Unruhe  
+
+👉 Kombinationen sind oft gefährlicher als einzelne Werte.
+
+---
+
+## 🧠 Was eine starke Prüfungsantwort ausmacht
+
+Eine starke Antwort:
+
+- beschreibt Veränderungen
+- erkennt Risiken
+- bezieht Symptome ein
+- bewertet Kombinationen
+- begründet die Einschätzung
+
+👉 Genau dadurch wird klinisches Denken sichtbar.
+
+---
+
+## 🗣️ Gute prüfungsrelevante Formulierungen
+
+- „Die Vitalzeichen zeigen eine Veränderung im Vergleich zum Ausgangszustand.“
+- „Mehrere Auffälligkeiten sprechen für eine mögliche Verschlechterung.“
+- „Zusätzlich wirken die Symptome klinisch relevant.“
+- „Die Situation muss engmaschig beobachtet werden.“
+
+👉 Kurz, klar und fachlich nachvollziehbar.
+
 ---
 
 ## 9. Merksatz

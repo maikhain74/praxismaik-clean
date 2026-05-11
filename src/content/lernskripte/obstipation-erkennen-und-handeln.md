@@ -209,6 +209,110 @@ Wenn Patient seit Tagen keinen Stuhlgang hat und Bauchschmerzen auftreten
 
 ---
 
+## 👀 Worauf Prüfer besonders achten
+
+Prüfer achten nicht nur darauf, ob Obstipation erkannt wird.
+
+Sie achten vor allem darauf:
+
+- werden Ursachen mitgedacht?
+- werden Risikofaktoren erkannt?
+- wird der Verlauf beobachtet?
+- werden Beschwerden ernst genommen?
+- wird rechtzeitig eskaliert?
+
+👉 Genau dort entstehen viele Punktverluste.
+
+---
+
+## ❗ Typischer Prüfungsfehler
+
+Viele beurteilen nur:
+
+→ „Wie oft war Stuhlgang?“
+
+👉 Das reicht nicht.
+
+Wichtiger ist:
+
+- Veränderung zum Normalzustand
+- Konsistenz
+- Beschwerden
+- Bauchzustand
+- Begleitsymptome
+
+👉 Nicht nur Häufigkeit bewerten.
+
+---
+
+## 🚨 Besonders kritische Warnzeichen
+
+Achte besonders auf:
+
+- harter, geblähter Bauch  
+- starke Bauchschmerzen  
+- Übelkeit oder Erbrechen  
+- länger ausbleibenden Stuhlgang  
+- Kreislaufprobleme  
+- starke Druckgefühle  
+
+👉 Dann muss die Situation sofort neu bewertet werden.
+
+---
+
+## ❗ Sehr prüfungsrelevant
+
+Obstipation ist oft schambesetzt.
+
+Deshalb wichtig:
+
+→ ruhig und professionell kommunizieren  
+→ Intimsphäre schützen  
+→ Beschwerden ernst nehmen  
+
+👉 Auch das bewerten Prüfer.
+
+---
+
+## ❗ Besonders gefährdete Gruppen
+
+Besonders gefährdet sind:
+
+- ältere Menschen  
+- immobile Patienten  
+- Patienten unter Opioidtherapie  
+- Menschen mit geringer Trinkmenge  
+- pflegeabhängige Patienten  
+
+👉 Bei diesen Gruppen besonders aufmerksam beobachten.
+
+---
+
+## 🧠 Was eine starke Prüfungsantwort ausmacht
+
+Eine starke Antwort:
+
+- erkennt Veränderungen früh
+- denkt Ursachen mit
+- fördert Bewegung und Flüssigkeit
+- beobachtet Warnzeichen
+- reagiert rechtzeitig auf Verschlechterungen
+
+👉 Genau dadurch wird professionelles pflegerisches Denken sichtbar.
+
+---
+
+## 🗣️ Gute prüfungsrelevante Formulierungen
+
+- „Es bestehen mehrere Risikofaktoren.“
+- „Die Ursache wird mit berücksichtigt.“
+- „Die Ausscheidung wird weiter beobachtet.“
+- „Eine Verschlechterung muss verhindert werden.“
+
+👉 Kurz, klar und fachlich nachvollziehbar.
+
+---
+
 ## 9. Merksatz
 
 Obstipation ist ein Verlauf, kein Zustand.

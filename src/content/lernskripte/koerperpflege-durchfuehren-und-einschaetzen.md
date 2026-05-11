@@ -128,6 +128,95 @@ Während der Körperpflege beobachtest du:
 👉 Patient unsicher oder instabil  
 → **Sicherheit vor Durchführung**
 
+## 👀 Worauf Prüfer besonders achten
+
+Prüfer achten nicht nur darauf, ob die Körperpflege durchgeführt wird.
+
+Sie achten vor allem darauf:
+
+- wird Selbstständigkeit gefördert?
+- wird die Intimsphäre geschützt?
+- werden Haut und Zustand beobachtet?
+- wird Sicherheit berücksichtigt?
+- wird der Patient aktiv einbezogen?
+
+👉 Genau dort entstehen viele Punktverluste.
+
+---
+
+## ❗ Typischer Prüfungsfehler
+
+Viele arbeiten zu schnell und übernehmen automatisch alles.
+
+Dadurch gehen verloren:
+
+- Selbstständigkeit  
+- Ressourcen  
+- Beobachtungsmöglichkeiten  
+- Beteiligung des Patienten  
+
+👉 Wichtig:
+
+**Körperpflege ist keine „Waschstraße“.**
+
+---
+
+## 🚨 Besonders kritische Beobachtungen
+
+Achte besonders auf:
+
+- Hautrötungen  
+- Wunden  
+- Druckstellen  
+- Schmerzen  
+- Schwindel  
+- Unsicherheit  
+- Atemprobleme  
+- ungewöhnliche Hautveränderungen  
+
+👉 Dann muss die Situation neu bewertet werden.
+
+---
+
+## ❗ Sehr prüfungsrelevant
+
+Während der Körperpflege entstehen oft wichtige Beobachtungen.
+
+Zum Beispiel:
+
+- Hautveränderungen  
+- Kreislaufprobleme  
+- Schmerzen  
+- Bewegungseinschränkungen  
+
+👉 Deshalb ist Körperpflege immer auch:
+**Beobachtung und Einschätzung.**
+
+---
+
+## 🧠 Was eine starke Prüfungsantwort ausmacht
+
+Eine starke Antwort:
+
+- fördert Selbstständigkeit
+- schützt die Intimsphäre
+- beobachtet Haut und Allgemeinzustand
+- passt Unterstützung individuell an
+- berücksichtigt Sicherheit und Wohlbefinden
+
+👉 Genau dadurch wird professionelle Pflege sichtbar.
+
+---
+
+## 🗣️ Gute prüfungsrelevante Formulierungen
+
+- „Die Selbstständigkeit wird gefördert.“
+- „Die Intimsphäre wird geschützt.“
+- „Der Hautzustand wird beobachtet.“
+- „Die Unterstützung wird individuell angepasst.“
+
+👉 Kurz, klar und fachlich nachvollziehbar.
+
 ---
 
 ## 🎯 Prüfungsantwort (Goldstandard)

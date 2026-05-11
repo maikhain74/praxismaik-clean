@@ -132,6 +132,92 @@ Wenn Risiko hoch ist:
 👉 Ziel:
 Druck reduzieren und Gewebe schützen
 
+## 👀 Worauf Prüfer besonders achten
+
+Prüfer achten nicht nur darauf, ob gelagert wird.
+
+Sie achten vor allem darauf:
+
+- wird das Risiko erkannt?
+- wird die Haut aktiv kontrolliert?
+- wird Mobilität gefördert?
+- werden Risikofaktoren kombiniert bewertet?
+- wird früh reagiert?
+
+👉 Genau dort entstehen viele Punktverluste.
+
+---
+
+## ❗ Typischer Prüfungsfehler
+
+Viele denken:
+
+→ „Lagern reicht.“
+
+Das ist fachlich zu kurz gedacht.
+
+Dekubitusprophylaxe umfasst auch:
+
+- Mobilitätsförderung  
+- Hautbeobachtung  
+- Druckentlastung  
+- Flüssigkeit und Ernährung  
+- Feuchtigkeitsmanagement  
+
+👉 Gute Pflege ist immer mehrdimensional.
+
+---
+
+## 🚨 Besonders kritische Warnzeichen
+
+Achte besonders auf:
+
+- nicht wegdrückbare Rötung  
+- Schmerzen an Druckstellen  
+- feuchte Haut  
+- zunehmende Immobilität  
+- Hautveränderungen  
+- schlechten Allgemeinzustand  
+
+👉 Dann muss sofort reagiert werden.
+
+---
+
+## ❗ Sehr prüfungsrelevant
+
+Eine nicht wegdrückbare Rötung gilt bereits als Gewebeschädigung.
+
+👉 Das ist nicht mehr:
+„nur etwas rot“
+
+sondern:
+→ ernstes Frühzeichen eines Dekubitus.
+
+---
+
+## 🧠 Was eine starke Prüfungsantwort ausmacht
+
+Eine starke Antwort:
+
+- erkennt Risiken früh
+- beobachtet die Haut gezielt
+- fördert Mobilität
+- reduziert Druckbelastung
+- kombiniert mehrere Maßnahmen sinnvoll
+
+👉 Genau dadurch wird professionelles pflegerisches Denken sichtbar.
+
+---
+
+## 🗣️ Gute prüfungsrelevante Formulierungen
+
+- „Es besteht ein erhöhtes Dekubitusrisiko.“
+- „Die Haut wird engmaschig kontrolliert.“
+- „Druckbelastungen werden reduziert.“
+- „Mobilität wird aktiv gefördert.“
+
+👉 Kurz, klar und fachlich nachvollziehbar.
+
 ---
 
 ## 🎯 Prüfungsantwort (Goldstandard)

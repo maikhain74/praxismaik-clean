@@ -167,6 +167,85 @@ Wenn Patient unsicher steht, aber selbstständig aufstehen kann
 → besteht Sturzrisiko  
 → deshalb gezielte Unterstützung und Sicherung beim Aufstehen  
 
+## 👀 Worauf Prüfer besonders achten
+
+Prüfer achten nicht nur darauf, ob mobilisiert wird.
+
+Sie achten vor allem darauf:
+
+- wird die Situation vorher eingeschätzt?
+- werden Risiken erkannt?
+- wird der Kreislauf beobachtet?
+- wird Sicherheit priorisiert?
+- wird die Mobilisation angepasst?
+
+👉 Genau dort entstehen viele Punktverluste.
+
+---
+
+## ❗ Typischer Prüfungsfehler
+
+Viele mobilisieren nach Schema.
+
+Zum Beispiel:
+
+→ Patient soll aufstehen  
+→ Mobilisation wird einfach durchgeführt
+
+Obwohl:
+
+→ Schwindel besteht  
+→ Unsicherheit sichtbar ist  
+→ Schmerzen auftreten  
+
+👉 Dann wird die Situation nicht sicher eingeschätzt.
+
+Wichtig:
+
+**Mobilisation muss immer an den aktuellen Zustand angepasst werden.**
+
+---
+
+## 🚨 Besonders kritische Warnzeichen
+
+Achte besonders auf:
+
+- plötzlichen Schwindel  
+- Kaltschweißigkeit  
+- Atemnot  
+- starke Schwäche  
+- Schmerzen  
+- unsicheren Gang  
+- Blässe  
+- Kreislaufveränderungen  
+
+👉 Dann muss die Mobilisation angepasst oder beendet werden.
+
+---
+
+## 🧠 Was eine starke Prüfungsantwort ausmacht
+
+Eine starke Antwort:
+
+- beobachtet den Zustand
+- erkennt Risiken
+- fördert vorhandene Ressourcen
+- passt die Unterstützung an
+- priorisiert Sicherheit
+
+👉 Genau dadurch wird professionelles pflegerisches Handeln sichtbar.
+
+---
+
+## 🗣️ Gute prüfungsrelevante Formulierungen
+
+- „Die Mobilisation wird an den Zustand angepasst.“
+- „Der Kreislauf wird beobachtet.“
+- „Vorhandene Ressourcen werden gefördert.“
+- „Die Sicherheit des Patienten hat Priorität.“
+
+👉 Kurz, klar und fachlich nachvollziehbar.
+
 ---
 
 ## 9. Merksatz

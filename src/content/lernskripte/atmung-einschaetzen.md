@@ -1,183 +1,237 @@
 ---
-title: "Atmung richtig einschätzen"
-beschreibung: "Wie Atmung beobachtet, bewertet und mit klarer Prüfungslogik sicher eingeordnet wird."
+title: "Atmung richtig beobachten und beurteilen"
+beschreibung: "Wie Atmung fachlich korrekt eingeschätzt wird und welche Veränderungen besonders kritisch sind."
+bereich: beobachtung
 topic: beobachtung
 reihenfolge: 12
-tags: [atmung, atemfrequenz, dyspnoe, beobachtung, pflege, pruefung]
+premium: true
+tags: [atmung, vitalzeichen, atemnot, beobachtung, pflege, pruefung]
+preview: "Die Atmung liefert früh wichtige Hinweise auf Verschlechterungen. In dieser Vorschau lernst du, worauf du bei der Beobachtung achten musst."
 ---
 
 ## 🧠 Prüfungsrealität
 
-Du misst die Vitalzeichen.
+Ein Patient atmet schneller als sonst.
 
-Die Atemfrequenz liegt bei 26/min.
+Zusätzlich fällt auf:
 
-Der Patient wirkt unruhig und atmet flach.
+→ Unruhe  
+→ erschwerte Atmung  
+→ kurze Sätze beim Sprechen  
 
 👉 Jetzt typische Prüfungssituation:
 
 Sagst du:
+
 „Atemfrequenz erhöht“
 
 oder erkennst du:
-**Das ist potenziell kritisch?**
+**dass der Patient bereits Atemarbeit zeigt?**
 
 ---
 
 ## ⚠️ Warum das kritisch ist
 
-Hier verlieren viele Punkte.
+Viele Prüfungsfehler entstehen, weil Atmung nur gezählt wird.
 
-Typischer Fehler:
-→ nur Zahlen nennen  
-→ keine Einordnung  
+Dabei können Veränderungen hinweisen auf:
 
-👉 Problem:
-
-Atmung zeigt:
-- Sauerstoffversorgung  
-- Kreislaufbelastung  
-- akute Verschlechterung  
-
-Wenn du nur zählst, aber nicht bewertest:
-→ erkennst du keine Gefahr  
+→ Atemnot  
+→ Infektion  
+→ Sauerstoffmangel  
+→ Schmerzen  
+→ Angst  
+→ akute Verschlechterung  
 
 👉 Prüfungsregel:
-**Vitalzeichen ohne Bewertung sind wertlos.**
+**Nicht nur die Atemfrequenz zählt, sondern die gesamte Atmung.**
 
 ---
 
 ## 🧠 So musst du denken
 
-Immer in dieser Reihenfolge:
+Immer diese Struktur:
 
-1. **Ist die Atemfrequenz normal?**  
-2. **Wie wirkt die Atmung insgesamt?**  
-3. **Gibt es zusätzliche Symptome?**  
-4. **Besteht eine akute Gefährdung?**  
-5. **Was ist meine Konsequenz?**  
+1. Wie schnell atmet der Patient?  
+2. Wie wirkt die Atmung?  
+3. Gibt es Atemarbeit?  
+4. Zeigt der Patient zusätzliche Symptome?  
+5. Besteht akuter Handlungsbedarf?  
 
-👉 Nicht nur messen, sondern einordnen.
+👉 Ziel:
+nicht nur zählen, sondern Atemprobleme erkennen.
 
 ---
 
 ## ❌ Typische Denkfehler
 
-- nur Atemfrequenz nennen  
-- Atmung isoliert betrachten  
-- Unruhe oder Angst ignorieren  
-- keine Priorität setzen  
-- zu lange beobachten  
+- nur Atemfrequenz beachten  
+- Atemarbeit übersehen  
+- Unruhe ignorieren  
+- kurze Sätze nicht beachten  
+- Symptome unterschätzen  
 
 👉 Wichtig:
-**Das Gesamtbild entscheidet, nicht die Zahl allein.**
+**Atemprobleme zeigen sich oft früh im Verhalten.**
 
 ---
 
 ## 📌 Definition (prüfungsrelevant)
 
-Die Atmung ist ein Vitalzeichen, das die Sauerstoffversorgung des Körpers sichert und durch Beobachtung von Frequenz, Tiefe und Qualität beurteilt wird.
+Die Atmung dient der Sauerstoffversorgung des Körpers und dem Abtransport von Kohlendioxid.
+
+Veränderungen können früh auf Verschlechterungen hinweisen.
 
 ---
 
-## 🔍 Woran erkennst du Auffälligkeiten?
+## 🔍 Worauf musst du achten?
 
-### Normwerte (prüfungsrelevant)
+Wichtige Beobachtungen:
 
-**Erwachsene:**  
-→ 12 – 20 Atemzüge pro Minute  
+- Atemfrequenz  
+- Atemtiefe  
+- Atemgeräusche  
+- Atemarbeit  
+- Hautfarbe  
+- Verhalten des Patienten  
 
-**Kinder:**  
-- Schulkind: 16 – 25/min  
-- Kleinkind: 20 – 30/min  
-- Säugling: 30 – 40/min  
+👉 Wichtig:
 
----
-
-### Abweichungen
-
-- **Tachypnoe** → zu schnelle Atmung  
-- **Bradypnoe** → zu langsame Atmung  
-- **Dyspnoe** → erschwerte Atmung  
+Nicht nur messen, sondern beobachten.
 
 ---
 
-### Beobachtbare Hinweise
+## 🚨 Besonders kritische Warnzeichen
 
-- schnelle oder flache Atmung  
-- angestrengte Atmung  
+Achte besonders auf:
+
+- schnelle Atmung  
+- erschwerte Atmung  
 - Einsatz der Atemhilfsmuskulatur  
-- Nasenflügeln (bei Kindern)  
-- blasse oder bläuliche Haut  
-- Unruhe oder Angst  
+- Zyanose  
+- Unruhe  
+- Atempausen  
+- Bewusstseinsveränderung  
 
-👉 Prüfungsregel:
-**Zusatzsymptome = Risiko steigt**
+👉 Dann kann eine akute Atemstörung vorliegen.
 
 ---
 
 ## ⚙️ Was machst du konkret?
 
-Wenn Atmung unauffällig ist:
+Bei auffälliger Atmung:
 
-→ weiter beobachten  
-
-Wenn Atmung verändert ist:
-
-→ erneut einschätzen  
-→ genauer beobachten  
-
-Wenn zusätzliche Symptome auftreten:
-
-→ Situation ernst nehmen  
-
-Wenn Atemnot besteht:
-
-→ sofort handeln  
+→ Atmung erneut beobachten  
+→ weitere Vitalzeichen kontrollieren  
+→ Patienten nicht alleine lassen  
+→ Oberkörper hoch lagern  
+→ Veränderungen dokumentieren  
+→ Situation weitergeben  
 
 Wichtig:
 
-→ Patient nicht allein lassen  
-→ Sicherheit vermitteln  
+→ nicht nur Zahlen beachten  
+→ Atemarbeit erkennen  
+→ Verhalten mitbewerten  
 
 👉 Ziel:
-früh erkennen, bevor es kritisch wird
+Verschlechterungen früh erkennen.
+
+---
+
+## 🧠 Prüfungslogik
+
+Prüfer wollen sehen:
+
+- erkennst du Atemprobleme?
+- beobachtest du Atemarbeit?
+- beachtest du Verhalten und Symptome?
+- erkennst du Warnzeichen?
+- leitest du passende Maßnahmen ab?
+
+👉 Genau dort entstehen viele Punktverluste.
+
+---
+
+## 👀 Worauf Prüfer besonders achten
+
+Schwache Antworten wirken schnell zu oberflächlich.
+
+Zum Beispiel:
+
+→ „Atemfrequenz 28.“
+
+👉 Das allein reicht nicht.
+
+Stärker ist:
+
+→ „Die Atemfrequenz ist erhöht, zusätzlich zeigt der Patient sichtbare Atemarbeit und wirkt unruhig.“
+
+👉 Erst dadurch wird die Situation fachlich relevant.
+
+---
+
+## ❗ Typischer Prüfungsfehler
+
+Viele dokumentieren nur Zahlen.
+
+Dabei zeigen Verhalten und Atemarbeit oft die eigentliche Gefahr.
+
+Beispiel:
+
+→ schnelle Atmung  
+→ kurze Sätze  
+→ Einsatz der Atemhilfsmuskulatur  
+→ Unruhe
+
+👉 Dann muss die Situation ernst genommen werden.
+
+---
+
+## 🗣️ Gute prüfungsrelevante Formulierungen
+
+- „Die Atmung ist deutlich verändert.“
+- „Der Patient zeigt sichtbare Atemarbeit.“
+- „Zusätzlich wirkt der Patient unruhig und erschöpft.“
+- „Die Situation muss engmaschig beobachtet werden.“
+
+👉 Kurz, klar und fachlich nachvollziehbar.
 
 ---
 
 ## 🎯 Prüfungsantwort (Goldstandard)
 
-„Ich erkenne eine veränderte Atmung, da die Atemfrequenz erhöht ist und der Patient zusätzlich unruhig wirkt.  
-
-Dies kann auf eine beeinträchtigte Sauerstoffversorgung hinweisen.  
-
-Daher bewerte ich die Situation als kritisch, beobachte die Atmung engmaschig und leite entsprechende Maßnahmen ein.“
+„Ich bewerte die Atmung nicht nur anhand der Frequenz, sondern auch anhand von Atemarbeit, Verhalten und zusätzlichen Symptomen, um Verschlechterungen frühzeitig zu erkennen.“
 
 ---
 
 ## 🧾 Merksatz
 
-> Atmung ist kein Wert, sondern ein Zustand.
+> Nicht nur die Atemfrequenz zählt, sondern wie der Patient atmet.
 
 ---
 
 ## 🧠 Mini-Prüfungsfrage
 
 **Frage:**  
-Ein Patient hat eine Atemfrequenz von 26/min und wirkt unruhig. Wie reagieren Sie?
+Ein Patient atmet schnell, spricht nur in kurzen Sätzen und wirkt unruhig. Was denken Sie?
 
 **Typischer Fehler:**  
-„Atemfrequenz ist erhöht“
+„Atemfrequenz etwas erhöht.“
 
 **Richtige Denkweise:**  
-→ Tachypnoe + Unruhe  
-→ mögliche Atembeeinträchtigung  
-→ Situation ernst nehmen und handeln  
+→ Atemarbeit erkennen  
+→ Atemproblem möglich  
+→ Situation ernst nehmen  
+→ engmaschig beobachten
 
 ---
 
 ## 🔗 Verknüpfung
 
-- passender Fall: Atemnot, Notaufnahme  
-- nächstes Thema: Vitalzeichen richtig bewerten  
-- Vertiefung: Dyspnoe und Sofortmaßnahmen
+- passt zu: Vitalzeichen  
+- passt zu: Atemnot  
+- passt zu: Pneumonie  
+- passt zu: COPD  
+- nächstes Thema: Sauerstoffsättigung  
+- Vertiefung: Atembeobachtung in der Pflege

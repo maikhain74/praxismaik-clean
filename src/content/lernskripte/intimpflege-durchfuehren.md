@@ -137,6 +137,95 @@ Achte auf:
 → sorgfältig trocknen  
 → Patient bedecken  
 
+## 👀 Worauf Prüfer besonders achten
+
+Prüfer achten nicht nur auf die hygienische Durchführung.
+
+Sie achten vor allem darauf:
+
+- wird die Intimsphäre geschützt?
+- wird respektvoll kommuniziert?
+- wird der Patient einbezogen?
+- werden Hautveränderungen erkannt?
+- wird professionell und ruhig gearbeitet?
+
+👉 Genau dort entstehen viele Punktverluste.
+
+---
+
+## ❗ Typischer Prüfungsfehler
+
+Viele arbeiten zu technisch.
+
+Zum Beispiel:
+
+→ schnell durchführen  
+→ kaum erklären  
+→ unnötig viel freilegen  
+
+👉 Dadurch entstehen:
+
+- Unsicherheit  
+- Schamgefühl  
+- Vertrauensverlust  
+
+👉 Wichtig:
+
+**Intimpflege braucht Ruhe, Schutz und Respekt.**
+
+---
+
+## 🚨 Besonders wichtige Beobachtungen
+
+Achte besonders auf:
+
+- Rötungen  
+- Schmerzen  
+- Hautschäden  
+- ungewöhnliches Sekret  
+- auffälligen Geruch  
+- Pilzzeichen  
+- Blutungen  
+
+👉 Auffälligkeiten müssen weitergegeben werden.
+
+---
+
+## ❗ Sehr prüfungsrelevant
+
+Auch während der Intimpflege gilt:
+
+👉 So viel Selbstständigkeit wie möglich,
+so viel Unterstützung wie nötig.
+
+Wenn der Patient Teilbereiche selbst übernehmen kann:
+→ aktiv einbeziehen.
+
+---
+
+## 🧠 Was eine starke Prüfungsantwort ausmacht
+
+Eine starke Antwort:
+
+- arbeitet hygienisch korrekt
+- schützt die Intimsphäre
+- kommuniziert respektvoll
+- beobachtet die Haut
+- bezieht den Patienten aktiv ein
+
+👉 Genau dadurch wird professionelle Pflege sichtbar.
+
+---
+
+## 🗣️ Gute prüfungsrelevante Formulierungen
+
+- „Die Intimsphäre wird geschützt.“
+- „Die Pflege erfolgt hygienisch korrekt.“
+- „Der Patient wird aktiv einbezogen.“
+- „Auffälligkeiten werden beobachtet und weitergegeben.“
+
+👉 Kurz, klar und fachlich nachvollziehbar.
+
 ---
 
 ## 🎯 Prüfungsantwort (Goldstandard)

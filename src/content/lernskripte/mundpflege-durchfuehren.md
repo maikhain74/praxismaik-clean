@@ -194,6 +194,95 @@ Wenn Mundschleimhaut trocken und belegt ist
 
 ---
 
+## 👀 Worauf Prüfer besonders achten
+
+Prüfer achten nicht nur darauf, ob Mundpflege durchgeführt wird.
+
+Sie achten vor allem darauf:
+
+- wird der Mundraum beobachtet?
+- wird das Aspirationsrisiko berücksichtigt?
+- wird hygienisch und sicher gearbeitet?
+- wird der Patient einbezogen?
+- wird langsam und angepasst gearbeitet?
+
+👉 Genau dort entstehen viele Punktverluste.
+
+---
+
+## ❗ Typischer Prüfungsfehler
+
+Viele arbeiten zu schnell oder verwenden zu viel Flüssigkeit.
+
+Dadurch entsteht Risiko für:
+
+- Verschlucken  
+- Aspiration  
+- Unsicherheit  
+- Hustenattacken  
+
+👉 Wichtig:
+
+**Bei Risikopatienten immer langsam, kontrolliert und vorsichtig arbeiten.**
+
+---
+
+## 🚨 Besonders kritische Warnzeichen
+
+Achte besonders auf:
+
+- Husten bei Flüssigkeit  
+- Räuspern  
+- gurgelnde Stimme  
+- starke Mundtrockenheit  
+- Soorbeläge  
+- Schmerzen  
+- Schluckprobleme  
+
+👉 Dann muss die Situation neu bewertet werden.
+
+---
+
+## ❗ Sehr prüfungsrelevant
+
+Mundpflege ist nicht nur Hygiene.
+
+Sie dient auch:
+
+- der Beobachtung
+- der Aspirationsprophylaxe
+- dem Wohlbefinden
+- der Unterstützung der Nahrungsaufnahme
+
+👉 Genau das macht professionelle Mundpflege aus.
+
+---
+
+## 🧠 Was eine starke Prüfungsantwort ausmacht
+
+Eine starke Antwort:
+
+- erkennt Risiken früh
+- beobachtet den Mundraum gezielt
+- berücksichtigt Dysphagie
+- arbeitet hygienisch und sicher
+- passt die Maßnahme individuell an
+
+👉 Genau dadurch wird professionelle Pflege sichtbar.
+
+---
+
+## 🗣️ Gute prüfungsrelevante Formulierungen
+
+- „Das Aspirationsrisiko wird berücksichtigt.“
+- „Der Mundraum wird gezielt beobachtet.“
+- „Die Mundpflege wird angepasst durchgeführt.“
+- „Der Patient wird aktiv einbezogen.“
+
+👉 Kurz, klar und fachlich nachvollziehbar.
+
+---
+
 ## 9. Merksatz
 
 Mundpflege ist Infektions- und Aspirationsprophylaxe.

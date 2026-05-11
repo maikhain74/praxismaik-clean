@@ -70,6 +70,22 @@ nicht nur Defizite sehen, sondern Fähigkeiten erkennen.
 **Ressourcen sind genauso wichtig wie Probleme.**
 
 ---
+## ❗ Sehr prüfungsrelevant
+
+Ressourcen sind nicht nur körperliche Fähigkeiten.
+
+Auch wichtig sind:
+
+- Orientierung  
+- Kommunikation  
+- Motivation  
+- Wissen  
+- soziale Unterstützung  
+- vorhandene Gewohnheiten  
+
+👉 Ressourcen können körperlich, psychisch, sozial und kognitiv sein.
+
+---
 
 ## 📌 Definition (prüfungsrelevant)
 
@@ -198,6 +214,18 @@ Richtig ist:
 ## 🎯 Prüfungsantwort (Goldstandard)
 
 „Ich erkenne vorhandene Ressourcen des Patienten und fördere die Selbstständigkeit gezielt, anstatt Tätigkeiten vollständig zu übernehmen.“
+
+## 🧠 Was eine starke Prüfungsantwort ausmacht
+
+Eine starke Antwort:
+
+- erkennt vorhandene Fähigkeiten
+- fördert Selbstständigkeit
+- vermeidet unnötige Übernahme
+- bezieht den Patienten aktiv ein
+- denkt ressourcenorientiert statt defizitorientiert
+
+👉 Genau dadurch wird professionelle Pflege sichtbar.
 
 ---
 

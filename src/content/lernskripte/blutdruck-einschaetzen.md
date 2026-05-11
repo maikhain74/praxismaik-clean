@@ -147,6 +147,85 @@ Wichtig:
 👉 Ziel:
 Kreislaufprobleme früh erkennen
 
+## 👀 Worauf Prüfer besonders achten
+
+Prüfer wollen nicht nur hören:
+
+„Der Blutdruck ist niedrig.“
+
+Sie achten vor allem darauf:
+
+- vergleichst du mit dem Ausgangswert?
+- beachtest du Symptome?
+- erkennst du Kreislaufprobleme?
+- bewertest du mehrere Vitalzeichen zusammen?
+- erkennst du Verschlechterungen?
+
+👉 Genau dort entstehen viele Punktverluste.
+
+---
+
+## ❗ Typischer Prüfungsfehler
+
+Viele bewerten nur die Zahl.
+
+Zum Beispiel:
+
+→ „90/60 ist noch nicht extrem niedrig.“
+
+Aber:
+
+→ Patient ist schwindelig  
+→ blass  
+→ unsicher beim Gehen  
+
+👉 Dann ist die Situation trotzdem relevant.
+
+Wichtig:
+
+**Nicht der Zahlenwert allein entscheidet, sondern die klinische Situation.**
+
+---
+
+## 🚨 Besonders kritische Warnzeichen
+
+Achte besonders auf:
+
+- plötzlich niedrigen Blutdruck  
+- Kombination mit hohem Puls  
+- Kaltschweißigkeit  
+- Bewusstseinsveränderung  
+- zunehmende Schwäche  
+- Atemnot  
+- schnelle Verschlechterung  
+
+👉 Dann kann eine akute Kreislaufstörung vorliegen.
+
+---
+
+## 🧠 Was eine starke Prüfungsantwort ausmacht
+
+Eine starke Antwort:
+
+- beschreibt den Blutdruck nicht isoliert
+- bezieht Symptome mit ein
+- erkennt Veränderungen
+- bewertet Kombinationen
+- begründet das Risiko fachlich
+
+👉 Genau dadurch wird klinisches Denken sichtbar.
+
+---
+
+## 🗣️ Gute prüfungsrelevante Formulierungen
+
+- „Der Blutdruck weicht deutlich vom Ausgangswert ab.“
+- „Zusätzlich zeigt der Patient klinische Symptome.“
+- „Die Kombination spricht für eine mögliche Kreislaufproblematik.“
+- „Die Situation muss engmaschig beobachtet werden.“
+
+👉 Kurz, klar und fachlich nachvollziehbar.
+
 ---
 
 ## 🎯 Prüfungsantwort (Goldstandard)

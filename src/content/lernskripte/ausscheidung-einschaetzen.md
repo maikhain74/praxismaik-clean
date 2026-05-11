@@ -127,6 +127,106 @@ Verschlechterung früh verhindern
 
 ---
 
+## 👀 Worauf Prüfer besonders achten
+
+Prüfer achten nicht nur darauf, ob Ausscheidung dokumentiert wird.
+
+Sie achten vor allem darauf:
+
+- werden Veränderungen erkannt?
+- werden Risiken richtig eingeschätzt?
+- werden Ursachen mitgedacht?
+- wird die Situation weiter beobachtet?
+- werden Maßnahmen logisch abgeleitet?
+
+👉 Genau dort entstehen viele Punktverluste.
+
+---
+
+## ❗ Typischer Prüfungsfehler
+
+Viele dokumentieren nur:
+
+→ „wenig Urin“  
+→ „kein Stuhlgang“
+
+👉 Das reicht nicht.
+
+Wichtiger ist:
+
+- seit wann?
+- Veränderung zum Normalzustand?
+- zusätzliche Symptome?
+- Risiken?
+- Handlungsbedarf?
+
+👉 Beobachtung ohne Bewertung reicht in Prüfungen nicht aus.
+
+---
+
+## 🚨 Besonders kritische Warnzeichen
+
+Achte besonders auf:
+
+### Beim Urin:
+
+- sehr dunkler Urin  
+- kaum Urinausscheidung  
+- Schmerzen beim Wasserlassen  
+- Blut im Urin  
+
+---
+
+### Beim Stuhl:
+
+- mehrere Tage kein Stuhlgang  
+- harter Stuhl  
+- Bauchschmerzen  
+- Blut im Stuhl  
+
+👉 Dann muss die Situation neu bewertet werden.
+
+---
+
+## ❗ Sehr prüfungsrelevant
+
+Ausscheidung ist oft schambesetzt.
+
+Deshalb wichtig:
+
+→ Intimsphäre schützen  
+→ ruhig und professionell kommunizieren  
+→ Beschwerden ernst nehmen  
+
+👉 Auch das bewerten Prüfer.
+
+---
+
+## 🧠 Was eine starke Prüfungsantwort ausmacht
+
+Eine starke Antwort:
+
+- erkennt Veränderungen früh
+- denkt Ursachen mit
+- berücksichtigt Risiken
+- beobachtet gezielt weiter
+- leitet passende Maßnahmen ab
+
+👉 Genau dadurch wird professionelles pflegerisches Denken sichtbar.
+
+---
+
+## 🗣️ Gute prüfungsrelevante Formulierungen
+
+- „Die Veränderung wird ernst genommen.“
+- „Die Ausscheidung wird gezielt beobachtet.“
+- „Es besteht Risiko für Exsikkose.“
+- „Mögliche Ursachen werden eingeschätzt.“
+
+👉 Kurz, klar und fachlich nachvollziehbar.
+
+---
+
 ## 🎯 Prüfungsantwort (Goldstandard)
 
 „Ich erkenne eine Veränderung der Ausscheidung, da der Patient weniger Urin ausscheidet und eine verminderte Flüssigkeitsaufnahme zeigt.  

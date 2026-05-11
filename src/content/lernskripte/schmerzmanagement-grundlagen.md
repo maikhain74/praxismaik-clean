@@ -178,6 +178,100 @@ Wenn Patient starke Schmerzen angibt und sich kaum bewegt
 → besteht Risiko für eingeschränkte Mobilität und Schonhaltung  
 → deshalb Mobilisation anpassen und Schmerz berücksichtigen  
 
+## 👀 Worauf Prüfer besonders achten
+
+Prüfer achten nicht nur darauf, ob Schmerz erkannt wird.
+
+Sie achten vor allem darauf:
+
+- wird Schmerz ernst genommen?
+- werden Auswirkungen erkannt?
+- wird die Pflege angepasst?
+- erfolgt Beobachtung und Verlaufskontrolle?
+- wird der Patient aktiv einbezogen?
+
+👉 Genau dort entstehen viele Punktverluste.
+
+---
+
+## ❗ Typischer Prüfungsfehler
+
+Viele reagieren nur kurz auf Schmerz.
+
+Zum Beispiel:
+
+→ Schmerzmittel gegeben  
+→ Thema beendet
+
+👉 Das reicht nicht.
+
+Wichtig ist auch:
+
+- Wirkung beobachten  
+- Mobilität neu einschätzen  
+- Verhalten beobachten  
+- Verlauf kontrollieren  
+
+👉 Schmerzmanagement endet nicht mit einer einzelnen Maßnahme.
+
+---
+
+## 🚨 Besonders wichtige Beobachtungen
+
+Achte besonders auf:
+
+- Schonhaltung  
+- Bewegungsvermeidung  
+- veränderte Atmung  
+- Unruhe  
+- Rückzug  
+- Schlafprobleme  
+- veränderte Vitalzeichen  
+
+👉 Schmerzen beeinflussen oft den gesamten Zustand.
+
+---
+
+## 📏 Schmerzskalen (prüfungsrelevant)
+
+Schmerzen sollten möglichst strukturiert eingeschätzt werden.
+
+Häufig genutzt:
+
+### Numerische Ratingskala (NRS)
+
+0 = kein Schmerz  
+10 = stärkster vorstellbarer Schmerz
+
+👉 Wichtig:
+
+Die Einschätzung des Patienten steht im Mittelpunkt.
+
+---
+
+## 🧠 Was eine starke Prüfungsantwort ausmacht
+
+Eine starke Antwort:
+
+- nimmt Schmerz ernst
+- erkennt Auswirkungen
+- passt Pflegehandlungen an
+- beobachtet Veränderungen
+- überprüft die Wirkung von Maßnahmen
+
+👉 Genau dadurch wird professionelles Schmerzmanagement sichtbar.
+
+---
+
+## 🗣️ Gute prüfungsrelevante Formulierungen
+
+- „Der Patient äußert Schmerzen bei Bewegung.“
+- „Die Schmerzen beeinflussen die Mobilität.“
+- „Die Pflege wird an die Schmerzsituation angepasst.“
+- „Die Wirkung der Maßnahmen wird überprüft.“
+
+👉 Kurz, klar und fachlich nachvollziehbar.
+
 ---
 
 ## 9. Merksatz

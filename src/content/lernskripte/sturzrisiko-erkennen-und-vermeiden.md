@@ -197,6 +197,97 @@ Wenn Patient unsicher geht und Stolperfallen vorhanden sind
 
 → deshalb Umgebung anpassen und Unterstützung beim Gehen anbieten  
 
+## 👀 Worauf Prüfer besonders achten
+
+Prüfer achten nicht nur darauf, ob ein Risiko genannt wird.
+
+Sie achten vor allem darauf:
+
+- werden mehrere Risikofaktoren kombiniert bewertet?
+- wird die Ursache erkannt?
+- wird Sicherheit gewährleistet?
+- wird Mobilität trotzdem gefördert?
+- werden Maßnahmen begründet?
+
+👉 Genau dort entstehen viele Punktverluste.
+
+---
+
+## ❗ Typischer Prüfungsfehler
+
+Viele reagieren nur mit Einschränkung.
+
+Zum Beispiel:
+
+→ „Patient bleibt besser im Bett.“
+
+Das ist oft fachlich falsch.
+
+Denn:
+
+→ weniger Bewegung  
+→ mehr Unsicherheit  
+→ weiterer Mobilitätsverlust  
+→ noch höheres Risiko  
+
+👉 Ziel ist:
+**sichere Mobilität, nicht Bewegungsvermeidung.**
+
+---
+
+## 🚨 Besonders kritische Warnzeichen
+
+Achte besonders auf:
+
+- plötzlichen Schwindel  
+- Gangunsicherheit  
+- Schwäche  
+- Kaltschweißigkeit  
+- Kreislaufprobleme  
+- Verwirrtheit  
+- vorherige Stürze  
+
+👉 Dann muss die Situation neu bewertet werden.
+
+---
+
+## ❗ Sehr prüfungsrelevant
+
+Schwindel beim Aufstehen kann auf eine Kreislaufproblematik hinweisen.
+
+👉 Deshalb nicht nur:
+„Patient sichern“
+
+sondern auch:
+→ Ursache mitdenken  
+→ Vitalzeichen beachten  
+→ Belastbarkeit einschätzen  
+
+---
+
+## 🧠 Was eine starke Prüfungsantwort ausmacht
+
+Eine starke Antwort:
+
+- erkennt mehrere Risikofaktoren
+- bewertet die Gesamtsituation
+- sichert die Mobilität
+- fördert Selbstständigkeit
+- reduziert Risiken gezielt
+
+👉 Genau dadurch wird professionelles pflegerisches Denken sichtbar.
+
+---
+
+## 🗣️ Gute prüfungsrelevante Formulierungen
+
+- „Es besteht ein erhöhtes Sturzrisiko.“
+- „Mehrere Risikofaktoren treffen zusammen.“
+- „Die Mobilität wird sicher begleitet.“
+- „Die Sicherheit des Patienten hat Priorität.“
+
+👉 Kurz, klar und fachlich nachvollziehbar.
+
 ---
 
 ## 9. Merksatz

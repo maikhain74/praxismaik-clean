@@ -130,6 +130,94 @@ Aspiration verhindern und Sicherheit gewährleisten
 
 ---
 
+## 👀 Worauf Prüfer besonders achten
+
+Prüfer achten nicht nur darauf, ob Dysphagie erkannt wird.
+
+Sie achten vor allem darauf:
+
+- wird das Aspirationsrisiko ernst genommen?
+- wird die Nahrungsaufnahme angepasst?
+- wird sicher gelagert?
+- wird aufmerksam beobachtet?
+- wird bei Gefahr konsequent reagiert?
+
+👉 Genau dort entstehen viele Punktverluste.
+
+---
+
+## ❗ Typischer Prüfungsfehler
+
+Viele reagieren zu spät.
+
+Zum Beispiel:
+
+→ Patient hustet mehrfach  
+→ trotzdem weiter essen oder trinken lassen  
+
+👉 Das kann gefährlich werden.
+
+Wichtig:
+
+**Sicherheit geht immer vor Nahrungsmenge oder Geschwindigkeit.**
+
+---
+
+## 🚨 Besonders wichtige Risikogruppen
+
+Besonders gefährdet sind:
+
+- Schlaganfallpatienten  
+- neurologisch erkrankte Patienten  
+- ältere und geschwächte Menschen  
+- Patienten mit Bewusstseinsstörungen  
+- Menschen mit Parkinson oder Demenz  
+
+👉 Bei diesen Patienten besonders aufmerksam beobachten.
+
+---
+
+## ❗ Sehr prüfungsrelevant
+
+Auch kleine Hinweise können auf eine Dysphagie hinweisen.
+
+Zum Beispiel:
+
+- Räuspern  
+- langsames Schlucken  
+- feuchte Stimme  
+- Nahrung bleibt im Mund  
+- Unsicherheit beim Essen  
+
+👉 Nicht erst auf starke Aspiration warten.
+
+---
+
+## 🧠 Was eine starke Prüfungsantwort ausmacht
+
+Eine starke Antwort:
+
+- erkennt Dysphagiezeichen früh
+- berücksichtigt Aspirationsrisiken
+- passt die Nahrungsaufnahme sicher an
+- beobachtet den Patienten engmaschig
+- reagiert konsequent bei Warnzeichen
+
+👉 Genau dadurch wird professionelles pflegerisches Handeln sichtbar.
+
+---
+
+## 🗣️ Gute prüfungsrelevante Formulierungen
+
+- „Es besteht ein Aspirationsrisiko.“
+- „Die Nahrungsaufnahme wird angepasst.“
+- „Der Patient wird aufrecht positioniert.“
+- „Der Schluckvorgang wird eng beobachtet.“
+
+👉 Kurz, klar und fachlich nachvollziehbar.
+
+---
+
 ## 🎯 Prüfungsantwort (Goldstandard)
 
 „Ich erkenne ein Aspirationsrisiko, da der Patient beim Schlucken hustet und die Stimme verändert ist.  
