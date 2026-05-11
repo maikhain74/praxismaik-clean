@@ -188,6 +188,107 @@ Patient braucht Hilfe
 
 ---
 
+## 👀 Worauf Prüfer besonders achten
+
+Prüfer achten nicht nur darauf, ob Inkontinenz erkannt wird.
+
+Sie achten vor allem darauf:
+
+- wird die Ursache erkannt?
+- wird die Selbstständigkeit eingeschätzt?
+- wird Hautschutz berücksichtigt?
+- wird würdevoll gehandelt?
+- werden Ressourcen gefördert?
+
+👉 Genau dort entstehen viele Punktverluste.
+
+---
+
+## ❗ Typischer Prüfungsfehler
+
+Viele denken nur:
+
+→ „Vorlage wechseln“
+
+👉 Das reicht nicht.
+
+Wichtiger ist:
+
+- Ursache verstehen
+- Selbstständigkeit fördern
+- Haut schützen
+- Intimsphäre wahren
+- passende Unterstützung wählen
+
+👉 Genau das macht professionelle Pflege aus.
+
+---
+
+## 🚨 Besonders kritische Warnzeichen
+
+Achte besonders auf:
+
+- gerötete Haut  
+- aufgeweichte Haut  
+- Schmerzen im Intimbereich  
+- Rückzug oder Scham  
+- plötzliche Veränderung der Kontinenz  
+
+👉 Dann muss die Situation neu bewertet werden.
+
+---
+
+## ❗ Sehr prüfungsrelevant
+
+Auch bei Inkontinenz gilt:
+
+→ Intimsphäre schützen  
+→ ruhig kommunizieren  
+→ nicht beschämend reagieren  
+
+👉 Würde ist Teil professioneller Pflege.
+
+---
+
+## ❗ Besonders gefährdete Gruppen
+
+Besonders betroffen sind:
+
+- ältere Menschen  
+- demente Patienten  
+- immobile Patienten  
+- neurologisch erkrankte Menschen  
+- postoperative Patienten  
+
+👉 Bei diesen Gruppen besonders aufmerksam beobachten.
+
+---
+
+## 🧠 Was eine starke Prüfungsantwort ausmacht
+
+Eine starke Antwort:
+
+- erkennt die Inkontinenzform
+- schätzt Selbstständigkeit richtig ein
+- schützt Haut und Würde
+- fördert Ressourcen
+- leitet passende Maßnahmen ab
+
+👉 Genau dadurch wird professionelles pflegerisches Denken sichtbar.
+
+---
+
+## 🗣️ Gute prüfungsrelevante Formulierungen
+
+- „Die Ursache der Inkontinenz wird berücksichtigt.“
+- „Die Selbstständigkeit wird eingeschätzt.“
+- „Die Intimsphäre wird geschützt.“
+- „Vorhandene Ressourcen werden gefördert.“
+
+👉 Kurz, klar und fachlich nachvollziehbar.
+
+---
+
 ## 🧾 Merksatz
 
 > Inkontinenz verstehen heißt immer: Ursache + Fähigkeit.

@@ -1,0 +1,43 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Medizinischer Hinweis">
+  <main class="legal-page">
+    <div class="legal-container">
+      <h1>Medizinischer Hinweis</h1>
+
+      <p>Die Inhalte dieser Website dienen ausschließlich der Aus-, Fort- und Weiterbildung in der Pflege.</p>
+
+      <p>Sie ersetzen keine ärztliche Diagnose, Therapie oder individuelle pflegefachliche Entscheidung im konkreten Einzelfall.</p>
+
+      <p>Trotz sorgfältiger Erstellung wird keine Gewähr für Vollständigkeit, Aktualität oder fachliche Fehlerfreiheit übernommen.</p>
+
+      <p>Im beruflichen Alltag gelten stets die aktuellen fachlichen Standards, gesetzlichen Vorgaben sowie die Anweisungen der verantwortlichen Fachpersonen und Einrichtungen.</p>
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .legal-page {
+    padding: 4rem 1.25rem;
+  }
+
+  .legal-container {
+    max-width: 850px;
+    margin: 0 auto;
+  }
+
+  .legal-container h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #18324a;
+  }
+
+  .legal-container p {
+    margin-bottom: 1.25rem;
+    line-height: 1.8;
+    color: #374151;
+    font-size: 1rem;
+  }
+</style>

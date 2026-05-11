@@ -123,6 +123,108 @@ Aufgrund des Risikos einer Blasenüberdehnung bewerte ich die Situation als akut
 
 ---
 
+## 👀 Worauf Prüfer besonders achten
+
+Prüfer achten nicht nur darauf, ob fehlende Ausscheidung erkannt wird.
+
+Sie achten vor allem darauf:
+
+- wird Harndrang berücksichtigt?
+- werden Schmerzen ernst genommen?
+- wird die Situation als akut erkannt?
+- wird rechtzeitig reagiert?
+- wird professionell weitergegeben?
+
+👉 Genau dort entstehen viele Punktverluste.
+
+---
+
+## ❗ Typischer Prüfungsfehler
+
+Viele beobachten zu lange.
+
+Zum Beispiel:
+
+→ „Dann probiert der Patient es später nochmal.“
+
+👉 Das kann gefährlich werden.
+
+Wichtiger ist:
+
+- Harndrang?
+- Schmerzen?
+- gespannte Blase?
+- zunehmende Unruhe?
+
+👉 Diese Kombination macht die Situation kritisch.
+
+---
+
+## 🚨 Besonders kritische Warnzeichen
+
+Achte besonders auf:
+
+- starke Unterbauchschmerzen  
+- tastbar gespannte Blase  
+- zunehmende Unruhe  
+- Schweißausbrüche  
+- fehlende Ausscheidung trotz Harndrang  
+
+👉 Dann muss sofort reagiert werden.
+
+---
+
+## ❗ Sehr prüfungsrelevant
+
+Besonders gefährdet sind:
+
+- postoperative Patienten  
+- ältere Menschen  
+- neurologisch erkrankte Patienten  
+- Männer mit Prostataproblemen  
+- Patienten unter Schmerztherapie  
+
+👉 Bei diesen Gruppen besonders aufmerksam beobachten.
+
+---
+
+## ❗ Wichtig für die Prüfung
+
+Auch bei Ausscheidungsproblemen gilt:
+
+→ Intimsphäre schützen  
+→ ruhig kommunizieren  
+→ Beschwerden ernst nehmen  
+
+👉 Das gehört zu professioneller Pflege.
+
+---
+
+## 🧠 Was eine starke Prüfungsantwort ausmacht
+
+Eine starke Antwort:
+
+- erkennt Harnverhalt früh
+- bewertet die Situation als akut
+- berücksichtigt Schmerzen und Harndrang
+- reagiert rechtzeitig
+- verhindert Komplikationen
+
+👉 Genau dadurch wird professionelles pflegerisches Denken sichtbar.
+
+---
+
+## 🗣️ Gute prüfungsrelevante Formulierungen
+
+- „Es besteht Verdacht auf Harnverhalt.“
+- „Die Situation wird als akut bewertet.“
+- „Eine Blasenüberdehnung muss verhindert werden.“
+- „Die Beschwerden werden ernst genommen.“
+
+👉 Kurz, klar und fachlich nachvollziehbar.
+
+---
+
 ## 🧾 Merksatz
 
 > Harndrang ohne Urin ist ein Warnsignal.
