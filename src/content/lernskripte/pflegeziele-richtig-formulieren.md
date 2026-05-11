@@ -222,6 +222,87 @@ Wenn ein Dekubitusrisiko besteht
 
 ---
 
+## 👀 Worauf Prüfer besonders achten
+
+Prüfer achten nicht nur darauf, ob ein Ziel genannt wird.
+
+Sie achten vor allem auf:
+
+- passt das Ziel wirklich zum Problem?
+- ist das Ziel konkret?
+- ist das Ziel überprüfbar?
+- beschreibt das Ziel einen Zustand?
+- ist das Ziel realistisch?
+
+👉 Genau dort entstehen viele Punktverluste.
+
+---
+
+## ❗ Typischer Prüfungsfehler
+
+Viele formulieren Maßnahmen statt Ziele.
+
+Zum Beispiel:
+
+→ „Patient wird mobilisiert“
+→ „Pflegekraft unterstützt beim Essen“
+→ „Flüssigkeit anbieten“
+
+👉 Das sind Maßnahmen, keine Ziele.
+
+Richtig wäre:
+
+→ „Der Patient sitzt zweimal täglich für 10 Minuten an der Bettkante.“
+→ „Der Patient nimmt die Mahlzeiten teilweise selbstständig ein.“
+→ „Der Patient trinkt täglich mindestens 1500 ml.“
+
+👉 Erst dadurch wird das Ziel überprüfbar.
+
+---
+
+## 🚨 Besonders problematische Formulierungen
+
+Diese Ziele wirken fachlich schwach:
+
+- „Patient soll besser laufen“
+- „Patient soll mehr trinken“
+- „Mobilität verbessern“
+- „Haut bleibt gut“
+
+👉 Wichtig:
+
+Immer konkret formulieren:
+
+→ Was genau soll erreicht werden?  
+→ Woran erkenne ich das?  
+→ Bis wann soll es erreicht sein?  
+
+---
+
+## 🧠 Was eine starke Prüfungsantwort ausmacht
+
+Eine starke Antwort:
+
+- leitet das Ziel logisch aus dem Problem ab
+- beschreibt einen konkreten Zustand
+- bleibt realistisch
+- ist überprüfbar
+- enthält möglichst eine Zeitangabe
+
+👉 Genau dadurch wird Pflege planbar und bewertbar.
+
+---
+
+## 🗣️ Gute prüfungsrelevante Formulierungen
+
+- „Der Patient kann …“
+- „Der Patient erreicht …“
+- „Die Haut bleibt …“
+- „Die Selbstständigkeit verbessert sich bei …“
+- „Bis zur nächsten Evaluation …“
+
+👉 Kurz, konkret und überprüfbar.
+
 ## 9. Merksatz
 
 Ein Pflegeziel beschreibt einen Zustand, kein Handeln.

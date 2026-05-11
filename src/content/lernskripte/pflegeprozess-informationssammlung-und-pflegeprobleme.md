@@ -1,6 +1,8 @@
 ---
 title: "Pflegeprozess, Informationssammlung und Pflegeprobleme"
 beschreibung: "Wie Informationen systematisch gesammelt, Pflegeprobleme erkannt und in der Prüfung logisch eingeordnet werden."
+bereich: grundlagen
+topic: grundlagen
 tags: ["pflegeprozess", "informationssammlung", "pflegeprobleme", "pflege", "pruefung"]
 reihenfolge: 6
 premium: true

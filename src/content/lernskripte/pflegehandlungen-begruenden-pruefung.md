@@ -211,6 +211,89 @@ sondern fachlich aus dem Problem folgt.
 
 ---
 
+## 👀 Worauf Prüfer besonders achten
+
+Prüfer achten oft weniger auf einzelne Fachbegriffe.
+
+Sie achten vor allem darauf:
+
+- erkennst du das eigentliche Problem?
+- leitest du die Maßnahme logisch ab?
+- formulierst du klar?
+- begründest du fachlich?
+- passt deine Maßnahme wirklich zur Situation?
+
+👉 Genau dort entstehen die meisten Punktverluste.
+
+---
+
+## ❗ Typischer Prüfungsfehler
+
+Viele sagen:
+
+„Ich mache das zur Sicherheit.“
+
+Das reicht nicht.
+
+Denn die eigentliche Frage lautet:
+
+👉 Welche konkrete Gefahr besteht?
+
+Beispiel:
+
+Nicht:
+
+→ „Ich begleite den Patienten zur Sicherheit.“
+
+Sondern:
+
+→ „Ich begleite den Patienten, weil aufgrund der Gangunsicherheit ein erhöhtes Sturzrisiko besteht.“
+
+👉 Erst dadurch wird pflegerisches Denken sichtbar.
+
+---
+
+## 🚨 Besonders problematische Formulierungen
+
+Diese Aussagen wirken unsicher oder unvollständig:
+
+- „zur Sicherheit“
+- „damit nichts passiert“
+- „weil man das so macht“
+- „zur Kontrolle“
+- „einfach beobachten“
+
+👉 Wichtig:
+
+Immer erklären:
+
+→ welches Risiko besteht?  
+→ warum genau diese Maßnahme sinnvoll ist?  
+
+---
+
+## 🧠 Was eine starke Prüfungsantwort ausmacht
+
+Eine starke Antwort:
+
+- beginnt mit der Beobachtung
+- erkennt das Risiko
+- leitet die Maßnahme logisch ab
+- begründet fachlich nachvollziehbar
+
+👉 Genau diese Struktur bringt Sicherheit in mündlichen und schriftlichen Prüfungen.
+
+---
+
+## 🗣️ Gute prüfungsrelevante Formulierungen
+
+- „… weil dadurch das Risiko für … reduziert wird.“
+- „… da aufgrund von … eine Gefährdung besteht.“
+- „… um eine Verschlechterung zu vermeiden.“
+- „… weil der Patient aktuell Unterstützung benötigt.“
+
+👉 Kurz, konkret und logisch.
+
 ## 9. Merksatz
 
 Gute Pflege zeigt sich nicht nur in der Maßnahme, sondern in ihrer Begründung.

@@ -1,6 +1,8 @@
 ---
 title: "Pflegeprozess, Ziele, Maßnahmen, Evaluation"
 beschreibung: "Wie der Pflegeprozess aufgebaut ist, wie Ziele formuliert werden und wie Maßnahmen sowie Evaluation in der Prüfung sauber begründet werden."
+bereich: grundlagen
+topic: grundlagen
 tags: ["pflegeprozess", "ziele", "massnahmen", "evaluation", "pflege", "pruefung"]
 reihenfolge: 5
 premium: true
