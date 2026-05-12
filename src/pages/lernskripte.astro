@@ -12,7 +12,7 @@ const sortedLernskripte = [...lernskripte].sort((a, b) => {
   return (a.data.reihenfolge ?? 999) - (b.data.reihenfolge ?? 999);
 });
 
-const fallbackThemen = {
+const fallbackThemen: Record<string, { title: string; beschreibung: string }> = {
   krankheitslehre: {
     title: "Krankheitslehre",
     beschreibung: "Lernskripte zu wichtigen Krankheitsbildern, Symptomen, Risiken und pflegerischem Handeln.",
@@ -105,6 +105,19 @@ const freeCount = lernskripte.filter((item) => item.data.premium !== true).lengt
       </div>
     </header>
 
+    <section class="lernskripte-search-box" aria-label="Lernskripte durchsuchen">
+      <label for="lernskripte-search">Lernskripte suchen</label>
+      <input
+        id="lernskripte-search"
+        type="search"
+        placeholder="Suche nach Thema, Titel, Tag oder Beschreibung..."
+        autocomplete="off"
+      />
+      <p id="search-result-count" class="search-result-count">
+        Alle Lernskripte werden angezeigt.
+      </p>
+    </section>
+
     {groupedLernskripte.length === 0 && ohneThema.length === 0 ? (
       <section class="lernskripte-empty">
         <h2>Noch keine Lernskripte vorhanden</h2>
@@ -114,91 +127,141 @@ const freeCount = lernskripte.filter((item) => item.data.premium !== true).lengt
       </section>
     ) : null}
 
-    {groupedLernskripte.map((group) => (
-      <section class="lernskript-gruppe">
+    <div class="lernskripte-groups">
+  {groupedLernskripte.map((group) => (
+    <details class="lernskript-gruppe" data-group>
+      <summary class="lernskript-gruppe-summary">
         <div class="lernskript-gruppe-head">
           <div>
             <h2>{group.title}</h2>
             {group.beschreibung ? <p>{group.beschreibung}</p> : null}
           </div>
 
-          <a class="group-link" href={`/themen/${group.slug}/`}>
-            Zum Thema
-          </a>
-        </div>
+          <div class="group-meta">
+            <span class="group-count">
+              {group.items.length} Lernskripte
+            </span>
 
-        <div class="lernskript-grid">
-          {group.items.map((item) => {
-            const isPremium = item.data.premium === true;
-
-            return (
-              <a
-                class={`lernskript-card ${isPremium ? "lernskript-card-premium" : "lernskript-card-free"}`}
-                href={`/lernskripte/${item.slug}/`}
-              >
-                <div class="lernskript-card-top">
-                  {isPremium ? (
-                    <span class="card-badge card-badge-premium">🔒 Premium</span>
-                  ) : (
-                    <span class="card-badge card-badge-free">Kostenlos</span>
-                  )}
-
-                  {typeof item.data.reihenfolge === "number" && (
-                    <span class="lernskript-order">
-                      Schritt {item.data.reihenfolge}
-                    </span>
-                  )}
-                </div>
-
-                <h3>{item.data.title}</h3>
-
-                {item.data.beschreibung ? (
-                  <p>{item.data.beschreibung}</p>
-                ) : (
-                  <p>Kein Beschreibungstext vorhanden.</p>
-                )}
-
-                {isPremium ? (
-                  <div class="premium-hint">
-                    <strong>Nur Vorschau frei</strong>
-                    <span>Kompletter Inhalt nur mit Premium</span>
-                  </div>
-                ) : (
-                  <div class="free-hint">
-                    <strong>Direkt verfügbar</strong>
-                    <span>Ohne Freischaltung lesbar</span>
-                  </div>
-                )}
-
-                <span class="lernskript-link">
-                  {isPremium ? "Vorschau öffnen" : "Lernskript öffnen"}
-                </span>
-              </a>
-            );
-          })}
-        </div>
-      </section>
-    ))}
-
-    {ohneThema.length > 0 && (
-      <section class="lernskript-gruppe">
-        <div class="lernskript-gruppe-head">
-          <div>
-            <h2>Ohne Themenzuordnung</h2>
-            <p>
-              Diese Lernskripte haben noch kein <code>topic</code> im Frontmatter.
-            </p>
+            <a class="group-link" href={`/themen/${group.slug}/`}>
+              Zum Thema
+            </a>
           </div>
         </div>
+      </summary>
+
+      <div class="lernskript-grid">
+        {group.items.map((item) => {
+          const isPremium = item.data.premium === true;
+          const tags = Array.isArray(item.data.tags)
+            ? item.data.tags.map(String).join(" ")
+            : "";
+
+          const searchText = [
+            item.data.title,
+            item.data.beschreibung,
+            item.data.topic,
+            tags,
+            isPremium ? "premium" : "kostenlos frei",
+            group.title,
+          ]
+            .filter(Boolean)
+            .join(" ")
+            .toLowerCase();
+
+          return (
+            <a
+              class={`lernskript-card ${isPremium ? "lernskript-card-premium" : "lernskript-card-free"}`}
+              href={`/lernskripte/${item.slug}/`}
+              data-card
+              data-search={searchText}
+            >
+              <div class="lernskript-card-top">
+                {isPremium ? (
+                  <span class="card-badge card-badge-premium">🔒 Premium</span>
+                ) : (
+                  <span class="card-badge card-badge-free">Kostenlos</span>
+                )}
+
+                {typeof item.data.reihenfolge === "number" && (
+                  <span class="lernskript-order">
+                    Schritt {item.data.reihenfolge}
+                  </span>
+                )}
+              </div>
+
+              <h3>{item.data.title}</h3>
+
+              {item.data.beschreibung ? (
+                <p>{item.data.beschreibung}</p>
+              ) : (
+                <p>Kein Beschreibungstext vorhanden.</p>
+              )}
+
+              {isPremium ? (
+                <div class="premium-hint">
+                  <strong>Nur Vorschau frei</strong>
+                  <span>Kompletter Inhalt nur mit Premium</span>
+                </div>
+              ) : (
+                <div class="free-hint">
+                  <strong>Direkt verfügbar</strong>
+                  <span>Ohne Freischaltung lesbar</span>
+                </div>
+              )}
+
+              <span class="lernskript-link">
+                {isPremium ? "Vorschau öffnen" : "Lernskript öffnen"}
+              </span>
+            </a>
+          );
+        })}
+      </div>
+    </details>
+  ))}
+</div>
+
+    {ohneThema.length > 0 && (
+      <details class="lernskript-gruppe" open data-group>
+        <summary class="lernskript-gruppe-summary">
+          <div class="lernskript-gruppe-head">
+            <div>
+              <h2>Ohne Themenzuordnung</h2>
+              <p>
+                Diese Lernskripte haben noch kein <code>topic</code> im Frontmatter.
+              </p>
+            </div>
+
+            <div class="group-meta">
+              <span class="group-count">
+                {ohneThema.length} Lernskripte
+              </span>
+            </div>
+          </div>
+        </summary>
 
         <div class="lernskript-grid">
           {ohneThema.map((item) => {
             const isPremium = item.data.premium === true;
+            const tags = Array.isArray(item.data.tags) ? item.data.tags.join(" ") : "";
+
+            const searchText = [
+              item.data.title,
+              item.data.beschreibung,
+              item.data.topic,
+              tags,
+              isPremium ? "premium" : "kostenlos frei",
+              "ohne thema",
+            ]
+              .filter(Boolean)
+              .join(" ")
+              .toLowerCase();
 
             return (
               <a
                 class={`lernskript-card ${isPremium ? "lernskript-card-premium" : "lernskript-card-free"}`}
                 href={`/lernskripte/${item.slug}/`}
+                data-card
+                data-search={searchText}
               >
                 <div class="lernskript-card-top">
                   {isPremium ? (
@@ -241,10 +304,75 @@ const freeCount = lernskripte.filter((item) => item.data.premium !== true).lengt
             );
           })}
         </div>
-      </section>
+      </details>
     )}
   </section>
 </BaseLayout>
+
+<script>
+  const searchInput = document.querySelector("#lernskripte-search");
+  const cards = Array.from(document.querySelectorAll("[data-card]"));
+  const groups = Array.from(document.querySelectorAll("[data-group]"));
+  const resultCount = document.querySelector("#search-result-count");
+
+  function normalize(value: string) {
+    return String(value)
+      .toLowerCase()
+      .trim()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
+  }
+
+  function updateSearch() {
+    const query = normalize(searchInput instanceof HTMLInputElement ? searchInput.value : "");
+    let visibleCount = 0;
+
+    cards.forEach((card) => {
+      if (!(card instanceof HTMLElement)) return;
+
+      const searchText = normalize(card.getAttribute("data-search") ?? "");
+      const isVisible = query === "" || searchText.includes(query);
+
+      card.style.display = isVisible ? "" : "none";
+
+      if (isVisible) visibleCount += 1;
+    });
+
+    groups.forEach((group) => {
+      if (!(group instanceof HTMLDetailsElement)) return;
+
+      const groupCards = Array.from(group.querySelectorAll("[data-card]"));
+
+      const hasVisibleCards = groupCards.some((card) => {
+        return card instanceof HTMLElement && card.style.display !== "none";
+      });
+
+      group.style.display = hasVisibleCards ? "" : "none";
+
+      if (query !== "" && hasVisibleCards) {
+        group.open = true;
+      }
+
+      if (query === "") {
+        group.open = false;
+      }
+    });
+
+    if (resultCount) {
+      if (query === "") {
+        resultCount.textContent = "Alle Lernskripte werden angezeigt.";
+      } else if (visibleCount === 1) {
+        resultCount.textContent = "1 passendes Lernskript gefunden.";
+      } else {
+        resultCount.textContent = `${visibleCount} passende Lernskripte gefunden.`;
+      }
+    }
+  }
+
+  if (searchInput instanceof HTMLInputElement) {
+    searchInput.addEventListener("input", updateSearch);
+  }
+</script>
 
 <style>
 .lernskripte-page {
@@ -333,6 +461,44 @@ const freeCount = lernskripte.filter((item) => item.data.premium !== true).lengt
   font-size: 0.92rem;
 }
 
+.lernskripte-search-box {
+  margin: 0 0 2rem;
+  padding: 1.2rem;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+}
+
+.lernskripte-search-box label {
+  display: block;
+  margin-bottom: 0.55rem;
+  color: #18324a;
+  font-weight: 800;
+}
+
+.lernskripte-search-box input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  border: 1px solid #d9e2ec;
+  font-size: 1rem;
+  color: #18324a;
+  background: #f8fbff;
+}
+
+.lernskripte-search-box input:focus {
+  outline: 3px solid rgba(24, 50, 74, 0.14);
+  border-color: #18324a;
+  background: #ffffff;
+}
+
+.search-result-count {
+  margin: 0.65rem 0 0;
+  color: #5b6b7a;
+  font-size: 0.92rem;
+}
+
 .lernskripte-empty {
   margin-top: 2rem;
   padding: 1.4rem;
@@ -342,16 +508,50 @@ const freeCount = lernskripte.filter((item) => item.data.premium !== true).lengt
   box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
 }
 
+.lernskripte-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .lernskript-gruppe {
-  margin-top: 2.8rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  background: #ffffff;
+  padding: 1rem 1rem 1.25rem;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.04);
+}
+
+.lernskript-gruppe-summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.lernskript-gruppe-summary::-webkit-details-marker {
+  display: none;
+}
+
+.lernskript-gruppe-summary::before {
+  content: "▶";
+  display: inline-flex;
+  margin-right: 0.55rem;
+  color: #18324a;
+  font-size: 0.8rem;
+  transform: translateY(-1px);
+  transition: transform 0.15s ease;
+}
+
+.lernskript-gruppe[open] .lernskript-gruppe-summary::before {
+  transform: rotate(90deg) translateX(1px);
 }
 
 .lernskript-gruppe-head {
-  display: flex;
+  display: inline-flex;
+  width: calc(100% - 1.5rem);
   align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
-  margin-bottom: 1rem;
+  vertical-align: top;
 }
 
 .lernskript-gruppe-head h2 {
@@ -362,6 +562,26 @@ const freeCount = lernskripte.filter((item) => item.data.premium !== true).lengt
   margin: 0;
   color: #5b6b7a;
   line-height: 1.6;
+}
+
+.group-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.group-count {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: #eef5ff;
+  color: #18324a;
+  font-size: 0.82rem;
+  font-weight: 700;
+  white-space: nowrap;
 }
 
 .group-link {
@@ -388,6 +608,7 @@ const freeCount = lernskripte.filter((item) => item.data.premium !== true).lengt
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.2rem;
+  margin-top: 1.2rem;
 }
 
 .lernskript-card {
@@ -532,7 +753,12 @@ const freeCount = lernskripte.filter((item) => item.data.premium !== true).lengt
   }
 
   .lernskript-gruppe-head {
+    width: calc(100% - 1.5rem);
     flex-direction: column;
+  }
+
+  .group-meta {
+    justify-content: flex-start;
   }
 
   .group-link {
