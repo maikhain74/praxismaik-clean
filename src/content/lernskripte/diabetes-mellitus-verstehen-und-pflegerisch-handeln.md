@@ -1,100 +1,103 @@
 ---
 title: "Diabetes mellitus verstehen und pflegerisch handeln"
-beschreibung: "Wie Diabetes mellitus verstanden wird und welche Risiken und pflegerischen Maßnahmen besonders wichtig sind."
-bereich: stoffwechsel
-topic: stoffwechsel
-reihenfolge: 1
+beschreibung: "Wie Diabetes erkannt wird, welche Risiken bestehen und worauf Pflegekräfte im Alltag besonders achten müssen."
+bereich: niere-stoffwechsel
+topic: niere-stoffwechsel
+reihenfolge: 4
 premium: true
-tags: [diabetes, blutzucker, stoffwechsel, insulin, pflege, pruefung]
-preview: "Diabetes mellitus gehört zu den häufigsten chronischen Erkrankungen. In dieser Vorschau lernst du die wichtigsten pflegerischen Grundlagen."
+tags: [diabetes, blutzucker, stoffwechsel, hypoglykaemie, hyperglykaemie, pflege, pruefung]
+preview: "Diabetes betrifft den gesamten Körper. In dieser Vorschau lernst du, worauf Pflegekräfte besonders achten müssen."
 ---
 
 ## 🧠 Prüfungsrealität
 
-Ein Patient mit Diabetes wirkt plötzlich:
+Ein Patient wirkt plötzlich:
 
-→ schwach  
+→ müde  
 → unruhig  
-→ verändert im Verhalten  
+→ zittrig  
+→ verwirrt  
 
-👉 Jetzt typische Prüfungssituation:
+Zusätzlich bemerkst du:
 
-Denkst du:
+→ starkes Schwitzen  
+→ vermehrten Durst  
+→ häufiges Wasserlassen  
 
-„Der Patient fühlt sich nicht gut“
+👉 Jetzt entscheidend:
 
-oder erkennst du:
-**mögliche Blutzuckerentgleisung mit akutem Risiko?**
+Erkennst du mögliche Blutzuckerprobleme  
+oder deutest du die Beschwerden falsch?
 
 ---
 
 ## ⚠️ Warum das kritisch ist
 
-Viele Prüfungsfehler entstehen, weil Diabetes unterschätzt wird.
+Diabetes beeinflusst den gesamten Stoffwechsel.
 
-Dabei kann Diabetes führen zu:
+Gefahr:
 
-→ Hypoglykämie  
-→ Hyperglykämie  
-→ Gefäßschäden  
-→ Wundheilungsstörungen  
-→ Nervenschäden  
+→ Unterzuckerungen  
+→ Überzuckerungen  
+→ Kreislaufprobleme  
+→ Bewusstseinsstörungen  
+→ Langzeitschäden an Gefäßen und Organen  
 
-👉 Prüfungsregel:
-**Diabetes betrifft den gesamten Körper, nicht nur den Blutzuckerwert.**
+👉 Deshalb sind Beobachtung und schnelles Handeln wichtig.
 
 ---
 
 ## 🧠 So musst du denken
 
-Immer diese Struktur:
+Bei Diabetes immer überlegen:
 
-1. Wie ist die aktuelle Situation?  
-2. Gibt es Hinweise auf eine Entgleisung?  
-3. Welche Risiken bestehen langfristig?  
-4. Welche Unterstützung benötigt der Patient?  
-5. Wie können Komplikationen verhindert werden?  
+1. Gibt es Veränderungen im Verhalten?
+2. Bestehen Hinweise auf Unter- oder Überzuckerung?
+3. Wie stabil ist der Kreislauf?
+4. Hat sich die Belastbarkeit verändert?
+5. Entwickelt sich eine akute Gefahr?
 
 👉 Ziel:
-Blutzucker stabil halten und Folgeprobleme vermeiden.
+Blutzuckerprobleme früh erkennen.
 
 ---
 
 ## ❌ Typische Denkfehler
 
-- nur Zahlen betrachten  
-- Symptome ignorieren  
-- Ernährung unterschätzen  
-- Haut und Füße nicht beachten  
-- Veränderungen zu spät erkennen  
+- Schwitzen bagatellisieren  
+- Verwirrtheit falsch einordnen  
+- Unterzuckerung übersehen  
+- nur Zahlenwerte beachten  
+- Veränderungen zu spät melden  
 
 👉 Wichtig:
 
-**Diabetes zeigt sich oft durch Veränderungen des Allgemeinzustands.**
+Blutzuckerprobleme können schnell gefährlich werden.
 
 ---
 
 ## 📌 Definition (prüfungsrelevant)
 
-Diabetes mellitus ist eine Stoffwechselerkrankung mit dauerhaft erhöhtem Blutzucker aufgrund einer gestörten Insulinwirkung oder Insulinproduktion.
+Diabetes mellitus ist eine Stoffwechselerkrankung,
+bei der der Blutzucker nicht ausreichend reguliert wird.
 
 ---
 
-## 🔍 Wichtige Grundlagen
+## 🔍 Typische Symptome
 
-### Typ-1-Diabetes
+Mögliche Hinweise:
 
-→ absoluter Insulinmangel  
-
----
-
-### Typ-2-Diabetes
-
-→ Insulin wirkt nicht ausreichend  
+- Durst  
+- häufiges Wasserlassen  
+- Müdigkeit  
+- Schwäche  
+- Zittern  
+- Schwitzen  
+- Verwirrtheit  
 
 👉 Wichtig:
 
-Beide Formen können zu akuten und langfristigen Komplikationen führen.
+Unter- und Überzuckerung können unterschiedlich wirken.
 
 ---
 
@@ -102,19 +105,17 @@ Beide Formen können zu akuten und langfristigen Komplikationen führen.
 
 Wichtige Beobachtungen:
 
-- Schwäche  
-- Müdigkeit  
-- Durst  
-- häufiges Wasserlassen  
-- Unruhe  
-- Verwirrtheit  
-- Haut- und Wundprobleme  
-- Veränderungen des Bewusstseins  
+- Bewusstsein  
+- Verhalten  
+- Blutzuckerwerte  
+- Kreislauf  
+- Hautzustand  
+- Flüssigkeitshaushalt  
+- Belastbarkeit  
 
-👉 Wichtig:
+👉 Besonders wichtig:
 
-Nicht nur messen,
-sondern Veränderungen einordnen.
+Veränderungen im Verhalten ernst nehmen.
 
 ---
 
@@ -122,14 +123,14 @@ sondern Veränderungen einordnen.
 
 Achte besonders auf:
 
+- starke Verwirrtheit  
 - Bewusstseinsveränderungen  
-- Zittern  
 - Kaltschweißigkeit  
-- starke Müdigkeit  
-- Atemveränderungen  
-- Verwirrtheit  
+- Krampfanfälle  
+- starke Schwäche  
+- Kreislaufinstabilität  
 
-👉 Dann muss sofort an eine Blutzuckerentgleisung gedacht werden.
+👉 Dann mögliche akute Stoffwechselentgleisung.
 
 ---
 
@@ -138,25 +139,21 @@ Achte besonders auf:
 Bei Diabetes:
 
 → Blutzucker kontrollieren  
-→ Ernährung beachten  
-→ Haut und Füße beobachten  
-→ Medikamente korrekt verabreichen  
-→ Veränderungen ernst nehmen  
+→ Veränderungen beobachten  
+→ Mahlzeiten beachten  
+→ Symptome ernst nehmen  
+→ Risiken weitergeben  
+→ engmaschig dokumentieren  
 
 Zusätzlich:
 
-→ regelmäßige Beobachtung  
-→ Unterstützung der Selbstständigkeit  
-→ Schulung und Anleitung fördern  
-
-Wichtig:
-
-→ Unterzuckerung früh erkennen  
-→ Wunden ernst nehmen  
-→ keine langen Beobachtungszeiten bei Verschlechterung  
+→ Unterzuckerungen vermeiden  
+→ Sicherheit gewährleisten  
+→ auf Haut und Füße achten  
+→ Patienten unterstützen  
 
 👉 Ziel:
-Akute Entgleisungen verhindern und Folgeprobleme reduzieren.
+Komplikationen früh erkennen und Stabilität erhalten.
 
 ---
 
@@ -164,11 +161,11 @@ Akute Entgleisungen verhindern und Folgeprobleme reduzieren.
 
 Prüfer wollen sehen:
 
-- verstehst du Diabetes?
-- erkennst du Entgleisungen?
-- beachtest du Folgeprobleme?
+- erkennst du Unter- und Überzuckerung?
 - beobachtest du systematisch?
-- leitest du passende Maßnahmen ab?
+- verstehst du Risiken?
+- reagierst du rechtzeitig?
+- denkst du sicherheitsorientiert?
 
 👉 Genau dort entstehen viele Punktverluste.
 
@@ -176,17 +173,17 @@ Prüfer wollen sehen:
 
 ## 👀 Worauf Prüfer besonders achten
 
-Schwache Antworten wirken schnell oberflächlich.
+Schwache Antworten bleiben oft oberflächlich.
 
 Zum Beispiel:
 
-→ „Ich messe den Blutzucker.“
+→ „Der Blutzucker ist verändert.“
 
 👉 Das reicht nicht.
 
 Stärker ist:
 
-→ „Ich beobachte zusätzlich den Allgemeinzustand und erkenne mögliche Hinweise auf eine Blutzuckerentgleisung frühzeitig.“
+→ „Die Verwirrtheit und Kaltschweißigkeit können Hinweise auf eine Unterzuckerung sein.“
 
 👉 Erst dadurch wird professionelles Denken sichtbar.
 
@@ -194,17 +191,17 @@ Stärker ist:
 
 ## ❗ Typischer Prüfungsfehler
 
-Viele konzentrieren sich nur auf den Messwert.
+Viele achten nur auf Messwerte.
 
-Wichtiger ist aber:
+Wichtiger ist oft:
 
 → Verhalten  
 → Bewusstsein  
-→ Haut  
-→ Wunden  
+→ Kreislauf  
+→ Schwitzen  
 → Allgemeinzustand  
 
-👉 Genau das macht professionelle Beobachtung aus.
+👉 Genau diese Veränderungen sind pflegerisch entscheidend.
 
 ---
 
@@ -212,12 +209,12 @@ Wichtiger ist aber:
 
 Bei Diabetes gilt:
 
-→ kleine Veränderungen können kritisch werden  
-→ Wundheilung ist oft verschlechtert  
-→ Infektionsrisiken steigen  
-→ Unterzuckerungen können lebensgefährlich sein  
+→ Unterzuckerung kann schnell lebensgefährlich werden  
+→ Verwirrtheit ernst nehmen  
+→ regelmäßige Beobachtung ist wichtig  
+→ Haut- und Fußpflege beachten  
 
-👉 Veränderungen immer ernst nehmen.
+👉 Veränderungen früh erkennen.
 
 ---
 
@@ -225,11 +222,11 @@ Bei Diabetes gilt:
 
 Eine starke Antwort:
 
-- erkennt Entgleisungen früh
+- erkennt Risiken früh
 - beobachtet systematisch
-- berücksichtigt Folgeprobleme
-- unterstützt die Selbstständigkeit
-- verhindert Komplikationen
+- denkt sicherheitsorientiert
+- verbindet Symptome fachlich
+- reagiert rechtzeitig
 
 👉 Genau dadurch wird professionelle Pflege sichtbar.
 
@@ -237,47 +234,47 @@ Eine starke Antwort:
 
 ## 🗣️ Gute prüfungsrelevante Formulierungen
 
-- „Eine Blutzuckerentgleisung wird berücksichtigt.“
-- „Der Allgemeinzustand wird beobachtet.“
-- „Folgeprobleme sollen vermieden werden.“
-- „Die Selbstständigkeit wird gefördert.“
+- „Der Blutzucker wird engmaschig kontrolliert.“
+- „Veränderungen werden ernst genommen.“
+- „Es bestehen Hinweise auf eine Unter- oder Überzuckerung.“
+- „Komplikationen sollen früh erkannt werden.“
 
-👉 Kurz, klar und fachlich nachvollziehbar.
+👉 Kurz, klar und fachlich stark.
 
 ---
 
 ## 🎯 Prüfungsantwort (Goldstandard)
 
-„Ich beobachte Blutzucker und Allgemeinzustand engmaschig, erkenne mögliche Entgleisungen frühzeitig und unterstütze Maßnahmen zur Vermeidung von Folgekomplikationen.“
+„Ich beobachte Bewusstsein, Verhalten, Kreislauf und Blutzucker engmaschig, um Unter- oder Überzuckerungen frühzeitig zu erkennen.“
 
 ---
 
 ## 🧾 Merksatz
 
-> Diabetes betrifft nie nur den Blutzucker.
+> Bei Diabetes sind Veränderungen im Verhalten oft wichtige Warnzeichen.
 
 ---
 
 ## 🧠 Mini-Prüfungsfrage
 
 **Frage:**  
-Warum müssen bei Diabetes auch Haut und Füße beobachtet werden?
+Warum ist Kaltschweißigkeit bei Diabetes kritisch?
 
 **Typischer Fehler:**  
-„Wegen der Pflege.“
+„Weil der Patient schwitzt.“
 
 **Richtige Denkweise:**  
-→ Wundheilungsstörungen  
-→ Nervenschäden  
-→ erhöhtes Risiko für Verletzungen und Infektionen
+→ mögliches Warnzeichen einer Unterzuckerung  
+→ Gefahr für Bewusstsein und Kreislauf  
+→ schnelles Handeln wichtig
 
 ---
 
 ## 🔗 Verknüpfung
 
-- passt zu: Hypoglykämie  
-- passt zu: Hyperglykämie  
-- passt zu: Wundversorgung  
-- passt zu: Hautbeobachtung  
-- nächstes Thema: Blutzucker richtig messen und einschätzen  
+- passt zu: Hypoglykämie erkennen  
+- passt zu: Hyperglykämie erkennen  
+- passt zu: Flüssigkeitshaushalt verstehen  
+- passt zu: Dekompensation früh erkennen  
+- nächstes Thema: Hypoglykämie früh erkennen  
 - Vertiefung: Diabetischer Fuß
