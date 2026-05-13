@@ -2,7 +2,7 @@
 
 title: Durchführung der Pflege
 
-description: Umsetzung der geplanten Pflegemaßnahmen im Pflegeprozess.
+beschreibung: Umsetzung der geplanten Pflegemaßnahmen im Pflegeprozess.
 
 level: grundlagen
 

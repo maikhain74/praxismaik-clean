@@ -1,6 +1,6 @@
 ---
 title: Notfälle in der Pflege
-description: Wichtige Notfallsituationen erkennen und richtig handeln.
+beschreibung: Wichtige Notfallsituationen erkennen und richtig handeln.
 ---
 
 # Notfälle in der Pflege

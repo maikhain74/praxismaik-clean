@@ -1,6 +1,6 @@
 ---
 title: Mobilität
-description: Bewegung fördern, Selbstständigkeit erhalten und Komplikationen vermeiden.
+beschreibung: Bewegung fördern, Selbstständigkeit erhalten und Komplikationen vermeiden.
 tags: [mobilitaet, bewegung, pflege, prophylaxe]
 order: 4
 ---

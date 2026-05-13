@@ -2,7 +2,7 @@
 
 title: Hygiene
 
-description: Grundlagen der Hygiene in der Pflege zum Schutz von Patienten und Personal.
+beschreibung: Grundlagen der Hygiene in der Pflege zum Schutz von Patienten und Personal.
 
 ---
 

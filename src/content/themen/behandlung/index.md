@@ -1,6 +1,6 @@
 ---
 title: Behandlung und Maßnahmen
-description: Grundlagen zur Durchführung pflegerischer Maßnahmen und zur sicheren Anwendung von Behandlungen im Pflegealltag.
+beschreibung: Grundlagen zur Durchführung pflegerischer Maßnahmen und zur sicheren Anwendung von Behandlungen im Pflegealltag.
 tags: [behandlung, massnahmen, medikamente, pflege]
 order: 3
 ---

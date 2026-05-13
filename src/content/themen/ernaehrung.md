@@ -1,6 +1,6 @@
 ---
 title: "Ernährung"
-description: "Grundlagen zur Einschätzung des Ernährungszustands, Unterstützung der Nahrungsaufnahme und Umgang mit Ernährungsrisiken in der Pflege."
+beschreibung: "Grundlagen zur Einschätzung des Ernährungszustands, Unterstützung der Nahrungsaufnahme und Umgang mit Ernährungsrisiken in der Pflege."
 ---
 
 Ernährung ist ein zentraler Bestandteil pflegerischer Beobachtung und Unterstützung.

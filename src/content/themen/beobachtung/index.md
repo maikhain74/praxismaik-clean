@@ -1,6 +1,6 @@
 ---
 title: Beobachtung und Risiken
-description: Grundlagen zur Einschätzung von pflegerischen Situationen und Risiken im Pflegealltag.
+beschreibung: Grundlagen zur Einschätzung von pflegerischen Situationen und Risiken im Pflegealltag.
 tags: [beobachtung, risiken, einschätzung]
 order: 2
 ---

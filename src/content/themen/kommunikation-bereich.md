@@ -1,6 +1,6 @@
 ---
 title: "Kommunikation"
-description: "Kommunikation in der Pflege, von Gesprächsführung über Anleitung bis zur professionellen Begleitung von Angehörigen."
+beschreibung: "Kommunikation in der Pflege, von Gesprächsführung über Anleitung bis zur professionellen Begleitung von Angehörigen."
 tags:
   - kommunikation
   - pflege
