@@ -277,8 +277,6 @@ a:hover{
 }
 /* Startseite Header kompakter */
 
-}
-
 .hero h1 {
   font-size: 2rem;
   margin: 0 0 10px 0;
@@ -5642,4 +5640,130 @@ span {
   hyphens: auto;
   overflow-wrap: break-word;
   word-break: normal;
+}
+
+@media (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  img,
+  video,
+  iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  main,
+  section,
+  article {
+    max-width: 100%;
+  }
+
+  .container,
+  .page,
+  .content,
+  .wrapper {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .grid,
+  .cards,
+  .lernskript-grid,
+  .themen-grid,
+  .feature-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .card,
+  .lernskript-card,
+  .thema-card,
+  .feature-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: clamp(1.8rem, 8vw, 2.4rem);
+    line-height: 1.15;
+  }
+
+  h2 {
+    font-size: clamp(1.35rem, 6vw, 1.8rem);
+    line-height: 1.2;
+  }
+
+  p,
+  li {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  pre,
+  code {
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+@media (max-width: 768px) {
+  .topic-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  .topic-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: auto !important;
+    padding: 1rem !important;
+  }
+}
+@media (max-width: 768px) {
+  .topic-grid,
+  .hauptbereiche-grid,
+  .home-preview-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  .topic-card,
+  .hauptbereich-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: auto !important;
+    padding: 1.2rem !important;
+  }
+
+  .topic-card h2,
+  .topic-card h3,
+  .hauptbereich-card h3 {
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    hyphens: none !important;
+  }
+
+  .topic-card p,
+  .hauptbereich-card p {
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    hyphens: none !important;
+  }
 }
