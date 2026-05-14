@@ -54,7 +54,8 @@ const gateId = `premium-gate-${Math.random().toString(36).slice(2, 10)}`;
 
 <style>
   .premium-gate {
-    margin-top: 2rem;
+    margin: 2rem auto;
+    max-width: 760px;
   }
 
   .premium-gate [data-state="unlocked"] {
@@ -62,35 +63,87 @@ const gateId = `premium-gate-${Math.random().toString(36).slice(2, 10)}`;
   }
 
   .premium-gate [data-state="locked"] {
-    padding: 1.5rem;
-    border: 1px solid #e5e7eb;
-    border-radius: 16px;
-    background: #f9fafb;
+    padding: 2rem 1.5rem;
+    border: 1px solid #eadccd;
+    border-radius: 24px;
+    background: #fffaf5;
     text-align: center;
+    box-shadow: 0 14px 34px rgba(24, 50, 74, 0.08);
   }
 
   .premium-gate__icon {
-    font-size: 2rem;
-    margin-bottom: 0.75rem;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
   }
 
   .premium-gate h2 {
-    margin: 0 0 0.5rem;
-    font-size: 1.4rem;
+    margin: 0 auto 1rem;
+    max-width: 520px;
+    font-size: clamp(1.7rem, 6vw, 2.4rem);
+    line-height: 1.2;
+    color: #18324a;
+  }
+
+  .premium-gate h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    max-width: 520px;
+    height: 3px;
+    margin: 1rem auto 0;
+    background: #eadccd;
+    border-radius: 999px;
   }
 
   .premium-gate p {
-    margin: 0 0 1rem;
-    color: #4b5563;
+    margin: 0 auto 1.5rem;
+    max-width: 520px;
+    color: #18324a;
+    font-size: clamp(1.05rem, 4vw, 1.35rem);
+    line-height: 1.65;
   }
 
-  .premium-gate__button {
-    display: inline-block;
-    padding: 0.8rem 1.2rem;
-    border-radius: 10px;
-    background: #111827;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 700;
+  .premium-gate__button,
+  .premium-gate__button:link,
+  .premium-gate__button:visited {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    min-height: 56px;
+    padding: 0.95rem 1.6rem;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #d99a23 0%, #b97800 100%);
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-weight: 800;
+    font-size: clamp(1rem, 4vw, 1.25rem);
+    box-shadow: 0 10px 24px rgba(185, 120, 0, 0.22);
+  }
+
+  .premium-gate__button::before {
+    content: "🔐";
+  }
+
+  .premium-gate__button:hover {
+    background: linear-gradient(135deg, #c98712 0%, #a86800 100%);
+    color: #ffffff !important;
+    text-decoration: none !important;
+  }
+
+  @media (max-width: 640px) {
+    .premium-gate {
+      margin: 1.5rem auto;
+    }
+
+    .premium-gate [data-state="locked"] {
+      padding: 1.5rem 1rem;
+      border-radius: 20px;
+    }
+
+    .premium-gate__button {
+      width: 100%;
+      max-width: 360px;
+    }
   }
 </style>
