@@ -19,14 +19,43 @@ const navItems = [
 <!doctype html>
 <html lang="de">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title ?? "PraxisMaik"}</title>
-    {description ? <meta name="description" content={description} /> : null}
-  </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" href="/favicon.ico" />
+
+  <meta name="generator" content={Astro.generator} />
+
+  <title>{title ?? "PraxisMaik"}</title>
+
+  {description ? <meta name="description" content={description} /> : null}
+
+  <link rel="canonical" href={Astro.url} />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content={title ?? "PraxisMaik"} />
+  <meta
+    property="og:description"
+    content={description ?? "Pflegeprüfung lernen mit Fällen, Quiz und Lernskripten."}
+  />
+  <meta property="og:url" content={Astro.url} />
+  <meta
+    property="og:image"
+    content="https://www.praxismaik.de/og-image.jpg"
+  />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title ?? "PraxisMaik"} />
+  <meta
+    name="twitter:description"
+    content={description ?? "Pflegeprüfung lernen mit Fällen, Quiz und Lernskripten."}
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.praxismaik.de/og-image.jpg"
+  />
+</head>
 
   <body>
     <Header pathname={pathname} navItems={navItems} />
