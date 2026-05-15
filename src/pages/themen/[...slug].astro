@@ -63,12 +63,18 @@ const isCategoryPage = slugParts.length === 1;
 const premiumSkripte = skripteZumThema.filter((item) => item.data.premium === true).length;
 const premiumPruefung = pruefungZumThema.filter((item) => item.data.premium === true).length;
 const premiumExamQuiz = examQuizZumThema.filter((item) => item.data.premium === true).length;
+const seoTitle = `${thema.data.title} | Pflege lernen mit PraxisMaik`;
+
+const seoDescription =
+  thema.data.beschreibung ??
+  `Lerne ${thema.data.title} verständlich erklärt mit Lernskripten, Quizfragen und Fallbeispielen für die Pflegeausbildung.`;
 ---
 
 <BaseLayout
-  title={thema.data.title}
-  description={thema.data.beschreibung ?? `${thema.data.title} auf PraxisMaik`}
+  title={seoTitle}
+  description={seoDescription}
 >
+
   <section class="topic-page">
     <nav class="breadcrumbs" aria-label="Breadcrumb">
       <a href="/">Start</a>
