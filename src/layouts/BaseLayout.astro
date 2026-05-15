@@ -13,76 +13,105 @@ const navItems = [
   { label: "Einsatzbereiche", href: "/themen/einsatzbereiche/" },
   { label: "Premium", href: "/premium/" },
 ];
-
 ---
 
 <!doctype html>
 <html lang="de">
   <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
 
-  <meta name="generator" content={Astro.generator} />
+    <meta name="generator" content={Astro.generator} />
 
-  <title>{title ?? "PraxisMaik | Pflegeprüfung lernen mit Fällen und Quiz"}</title>
+    <title>{title ?? "PraxisMaik | Pflegeprüfung lernen mit Fällen und Quiz"}</title>
 
-  {description ? <meta name="description" content={description} /> : null}
+    {description ? <meta name="description" content={description} /> : null}
 
-  <link rel="canonical" href={Astro.url} />
+    <link rel="canonical" href={Astro.url} />
 
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content={title ?? "PraxisMaik"} />
-  <meta
-    property="og:description"
-    content={description ?? "Lerne für deine Pflegeausbildung mit realistischen Fallbeispielen, Quizfragen, Lernskripten und Prüfungssimulationen für die Pflegeprüfung."}
-  />
-  <meta property="og:url" content={Astro.url} />
-  <meta
-    property="og:image"
-    content="https://www.praxismaik.de/og-image.jpg"
-  />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title ?? "PraxisMaik"} />
+    <meta
+      property="og:description"
+      content={
+        description ??
+        "Lerne für deine Pflegeausbildung mit realistischen Fallbeispielen, Quizfragen, Lernskripten und Prüfungssimulationen für die Pflegeprüfung."
+      }
+    />
+    <meta property="og:url" content={Astro.url} />
+    <meta
+      property="og:image"
+      content="https://www.praxismaik.de/og-image.jpg"
+    />
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content={title ?? "PraxisMaik"} />
-  <meta
-    name="twitter:description"
-    content={description ?? "Pflegeprüfung lernen mit Fällen, Quiz und Lernskripten."}
-  />
-  <meta
-    name="twitter:image"
-    content="https://www.praxismaik.de/og-image.jpg"
-  />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title ?? "PraxisMaik"} />
+    <meta
+      name="twitter:description"
+      content={
+        description ??
+        "Pflegeprüfung lernen mit Fällen, Quiz und Lernskripten."
+      }
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.praxismaik.de/og-image.jpg"
+    />
 
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-56E225FCSC"></script>
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-56E225FCSC"
+    ></script>
 
-<script is:inline>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
 
-  gtag('config', 'G-56E225FCSC');
-</script>
+      gtag('js', new Date());
+      gtag('config', 'G-56E225FCSC');
+    </script>
 
-</head>
+    <!-- Structured Data -->
+    <script type="application/ld+json" is:inline>
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "PraxisMaik",
+        "url": "https://www.praxismaik.de",
+        "description": "Lernplattform für Pflegeausbildung mit Quiz, Fällen und Lernskripten.",
+        "inLanguage": "de-DE"
+      }
+    </script>
+
+    <script type="application/ld+json" is:inline>
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "PraxisMaik",
+        "url": "https://www.praxismaik.de",
+        "logo": "https://www.praxismaik.de/og-image.jpg"
+      }
+    </script>
+  </head>
 
   <body>
     <Header pathname={pathname} navItems={navItems} />
 
     <main class="wrap">
+      {pathname !== "/" && (
+        <button class="back-button" onclick="history.back()">
+          ← Zurück
+        </button>
+      )}
 
- {pathname !== "/" && (
-  <button class="back-button" onclick="history.back()">
-    ← Zurück
-  </button>
-)}
-
-  <slot />
-
-</main>
+      <slot />
+    </main>
 
     <Footer />
   </body>
