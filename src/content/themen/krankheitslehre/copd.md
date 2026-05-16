@@ -98,6 +98,9 @@ Jede akute Verschlechterung kann den Zustand dauerhaft verschlechtern.
 
 </div>
 
+Weitere Informationen:
+- [COPD Exazerbation Pflege](/themen/krankheitslehre/copd-exazerbation-pflege)
+
 ## Beobachtungen in der Pflege
 
 Pflegekräfte müssen typische Zeichen erkennen.
