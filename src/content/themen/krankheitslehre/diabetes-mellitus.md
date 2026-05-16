@@ -87,6 +87,9 @@ Typische Symptome:
 - Verwirrtheit
 - Bewusstseinsstörung
 
+Weitere Informationen:
+- [Hypoglykämie Pflege](/themen/krankheitslehre/hypoglykaemie-pflege)
+
 ### Hyperglykämie (Überzuckerung)
 
 Zu hoher Blutzucker.
