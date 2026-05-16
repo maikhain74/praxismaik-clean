@@ -1,6 +1,6 @@
 ---
-question: Warum sind Hilfsmittel bei Sturzgefährdung wichtig?
-answer: Sie unterstützen Sicherheit, Mobilität und Gleichgewicht.
+question: Welche Hilfsmittel können Stürze verhindern?
+answer: Zum Beispiel Rollator, Gehstock oder rutschfeste Schuhe.
 topic: sturz
 difficulty: leicht
 ---

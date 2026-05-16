@@ -1,6 +1,6 @@
 ---
-question: Welche Gefahrenquellen in der Umgebung können zu Stürzen führen?
-answer: Lose Teppiche, schlechte Beleuchtung, Kabel oder rutschige Böden.
+question: Warum ist die Umgebung wichtig für die Sturzprophylaxe?
+answer: Stolperfallen und schlechte Beleuchtung erhöhen das Risiko.
 topic: sturz
-difficulty: leicht
+difficulty: mittel
 ---

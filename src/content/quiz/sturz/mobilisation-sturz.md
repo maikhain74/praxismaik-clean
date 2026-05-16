@@ -1,6 +1,6 @@
 ---
-question: Warum ist Mobilisation wichtig zur Sturzprophylaxe?
-answer: Bewegung fördert Kraft, Gleichgewicht und Sicherheit beim Gehen.
+question: Warum ist sichere Mobilisation wichtig?
+answer: Unsichere Bewegungen können zu Stürzen führen.
 topic: sturz
 difficulty: leicht
 ---
