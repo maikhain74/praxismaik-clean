@@ -804,6 +804,8 @@ komplette Prüfungsfälle und Quiztraining für deinen gesamten Ausbildungsweg.
   .lernphase-grid {
     grid-template-columns: 1fr;
   }
+}
+
 .lernphase-card,
 .lernphase-card:visited,
 .lernphase-card:hover,
@@ -835,41 +837,58 @@ komplette Prüfungsfälle und Quiztraining für deinen gesamten Ausbildungsweg.
 }
 
 .home-search {
-  margin: 2rem 0;
-  padding: 1.25rem;
+  width: 100%;
+  max-width: 980px;
+  margin: 2.5rem auto 3rem;
+  padding: 1.6rem;
   border: 1px solid #d9e2ec;
-  border-radius: 18px;
+  border-radius: 22px;
   background: #ffffff;
-  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  box-shadow: 0 14px 34px rgba(24, 50, 74, 0.08);
 }
 
 .home-search label {
   display: block;
-  margin-bottom: 0.7rem;
-  font-weight: 700;
+  margin-bottom: 0.8rem;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #18324a;
 }
 
 .home-search-row {
-  display: flex;
-  gap: 0.8rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.9rem;
 }
 
 .home-search input {
-  flex: 1;
-  min-height: 64px;
-  padding: 1.1rem 1.2rem;
-  border: 1px solid #cfd8e3;
-  border-radius: 14px;
-  font-size: 1.1rem;
+  width: 100%;
+  min-height: 72px;
+  padding: 1.2rem 1.35rem;
+  border: 2px solid #cfd8e3;
+  border-radius: 16px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #18324a;
+  background: #f8fbff;
+}
+
+.home-search input:focus {
+  outline: none;
+  border-color: #2f5f9b;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(47, 95, 155, 0.12);
 }
 
 .home-search button {
-  padding: 0.9rem 1.2rem;
+  min-height: 72px;
+  padding: 0 1.8rem;
   border: none;
-  border-radius: 12px;
+  border-radius: 16px;
   background: #18324a;
   color: #ffffff;
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 800;
   cursor: pointer;
 }
 
@@ -878,12 +897,19 @@ komplette Prüfungsfälle und Quiztraining für deinen gesamten Ausbildungsweg.
 }
 
 @media (max-width: 640px) {
-  .home-search-row {
-    flex-direction: column;
+  .home-search {
+    margin: 2rem 0;
+    padding: 1.2rem;
   }
 
+  .home-search-row {
+    grid-template-columns: 1fr;
+  }
+
+  .home-search input,
   .home-search button {
     width: 100%;
+    min-height: 64px;
   }
 }
 
