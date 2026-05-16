@@ -1,6 +1,6 @@
 ---
 question: Warum ist Ernährung in der Pflege wichtig?
-answer: Ernährung beeinflusst Gesundheit, Heilung, Kraft, Immunsystem und Lebensqualität.
+answer: Ernährung unterstützt Gesundheit, Heilung und Wohlbefinden.
 topic: ernaehrung
 difficulty: leicht
 ---

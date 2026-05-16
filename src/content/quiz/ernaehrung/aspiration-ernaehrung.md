@@ -1,6 +1,6 @@
 ---
-question: Wie kann das Aspirationsrisiko beim Essen verringert werden?
-answer: Durch aufrechte Sitzposition, ruhige Umgebung, angepasste Kostform und langsames Anreichen.
+question: Warum ist Dysphagie gefährlich?
+answer: Nahrung oder Flüssigkeit kann in die Atemwege gelangen.
 topic: ernaehrung
 difficulty: mittel
 ---
