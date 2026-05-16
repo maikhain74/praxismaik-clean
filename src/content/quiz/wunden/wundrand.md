@@ -1,6 +1,6 @@
 ---
 question: Warum wird der Wundrand beobachtet?
-answer: Veränderungen können Hinweise auf Heilung oder Komplikationen geben.
+answer: Veränderungen können auf Heilung oder Probleme hinweisen.
 topic: wundversorgung
 difficulty: mittel
 ---

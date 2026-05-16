@@ -1,6 +1,6 @@
 ---
 question: Was ist eine akute Wunde?
-answer: Eine plötzlich entstandene Wunde mit normalem Heilungsverlauf.
+answer: Eine Wunde, die normalerweise innerhalb kurzer Zeit heilt.
 topic: wundversorgung
 difficulty: leicht
 ---
