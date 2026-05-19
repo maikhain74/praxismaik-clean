@@ -1,0 +1,10 @@
+---
+const hasPremium =
+  Astro.cookies.get("praxismaik_premium")?.value === "true";
+
+if (!hasPremium) {
+  return Astro.redirect("/premium");
+}
+---
+
+<slot />

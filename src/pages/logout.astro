@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Logout | PraxisMaik">
+  <section style="padding: 4rem 1rem; max-width: 600px; margin: 0 auto;">
+    <h1>Du wirst abgemeldet...</h1>
+
+    <p>
+      Dein Premiumzugang bleibt erhalten.
+    </p>
+  </section>
+
+  <script>
+    localStorage.removeItem('praxismaik_premium');
+    localStorage.removeItem('praxismaik_user_email');
+
+    document.cookie =
+      'praxismaik_premium=; path=/; max-age=0; SameSite=Lax';
+
+    setTimeout(() => {
+      window.location.href = '/login';
+    }, 1000);
+  </script>
+</BaseLayout>

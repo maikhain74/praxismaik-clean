@@ -2,12 +2,16 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 
+export const prerender = false;
+
 const ebooks = await getCollection("ebooks");
 const lernskripte = await getCollection("lernskripte");
 const pruefung = await getCollection("pruefung");
 const examQuiz = await getCollection("examQuiz");
 
-const hasPremiumCookie = Astro.cookies.get("praxismaik_premium")?.value === "1";
+const hasPremiumCookie =
+  Astro.cookies.get("praxismaik_premium")?.value === "1" ||
+  Astro.cookies.get("praxismaik_premium")?.value === "true";
 
 /* Nur index.md zählen = echte E-Books */
 const premiumEbooks = ebooks.filter(

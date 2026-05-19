@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Registrieren | PraxisMaik">
+  <section style="padding: 4rem 1rem; max-width: 500px; margin: 0 auto;">
+    <h1>Konto erstellen</h1>
+
+    <form id="register-form" style="display:flex; flex-direction:column; gap:1rem;">
+      <input type="email" id="email" name="email" placeholder="E-Mail" autocomplete="email" required style="padding:1rem;" />
+
+      <input type="password" id="password" name="password" placeholder="Passwort" autocomplete="new-password" required style="padding:1rem;" />
+
+      <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Passwort wiederholen" autocomplete="new-password" required style="padding:1rem;" />
+
+      <button type="button" id="register-button" class="btn primary">
+        Konto erstellen
+      </button>
+    </form>
+
+    <p id="message"></p>
+  </section>
+
+  <script>
+    import { createClient } from '@supabase/supabase-js';
+
+    const supabase = createClient(
+      import.meta.env.PUBLIC_SUPABASE_URL,
+      import.meta.env.PUBLIC_SUPABASE_ANON_KEY
+    );
+
+    const button = document.getElementById('register-button');
+    const message = document.getElementById('message');
+
+    button?.addEventListener('click', async () => {
+      message.textContent = 'Registrierung wird geprüft...';
+
+      const email = document.getElementById('email')?.value;
+      const password = document.getElementById('password')?.value;
+      const confirmPassword = document.getElementById('confirmPassword')?.value;
+
+      if (!email || !password || !confirmPassword) {
+        message.textContent = 'Bitte alle Felder ausfüllen.';
+        return;
+      }
+
+      if (password !== confirmPassword) {
+        message.textContent = 'Die Passwörter stimmen nicht überein.';
+        return;
+      }
+
+      const { data, error } = await supabase.auth.signUp({
+        email,
+        password,
+      });
+
+      if (error) {
+        message.textContent = error.message;
+        return;
+      }
+
+      const user = data.user;
+
+      message.textContent = 'Registrierung erfolgreich. Bitte prüfe deine E-Mails.';
+    });
+  </script>
+</BaseLayout>

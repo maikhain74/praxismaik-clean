@@ -45,7 +45,9 @@ const isLocalhost =
 const devUnlock =
   Astro.url.searchParams.get('freischalten') === '1' && isLocalhost;
 
-const hasPremiumCookie = Astro.cookies.get('praxismaik_premium')?.value === '1';
+const hasPremiumCookie =
+  Astro.cookies.get('praxismaik_premium')?.value === '1' ||
+  Astro.cookies.get('praxismaik_premium')?.value === 'true';
 
 const showFullContent = !isPremium || devUnlock || hasPremiumCookie;
 

@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Login | PraxisMaik">
+  <section style="padding: 4rem 1rem; max-width: 500px; margin: 0 auto;">
+    <h1>Login</h1>
+
+    <form id="login-form" style="display:flex; flex-direction:column; gap:1rem;">
+      <input type="email" id="email" placeholder="E-Mail" required style="padding:1rem;" />
+      <input type="password" id="password" placeholder="Passwort" required style="padding:1rem;" />
+
+      <button type="button" id="login-button">
+        Login
+      </button>
+      <p style="margin-top:1rem;">
+  <a href="/logout">Logout</a>
+</p>
+    </form>
+
+    <p id="message"></p>
+  </section>
+
+  <script type="module">
+    import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
+
+    const supabase = createClient(
+      'https://dmjbuijhoiklmgqozxkg.supabase.co',
+      'sb_publishable_SQLOHit8yP0fMjfS3nN1QQ_61E3MOgn'
+    );
+
+    const button = document.getElementById('login-button');
+    const message = document.getElementById('message');
+
+    button?.addEventListener('click', async () => {
+      message.textContent = 'Login wird geprüft...';
+
+      const email = document.getElementById('email')?.value;
+      const password = document.getElementById('password')?.value;
+
+      const { data, error } = await supabase.auth.signInWithPassword({
+        email,
+        password,
+      });
+
+      if (error) {
+        message.textContent = error.message;
+        return;
+      }
+
+      const user = data.user;
+
+      const { data: profile, error: profileError } = await supabase
+        .from('profiles')
+        .select('premium')
+        .eq('id', user.id)
+        .single();
+
+      if (profileError) {
+        message.textContent = profileError.message;
+        return;
+      }
+
+      if (profile?.premium === true) {
+        localStorage.setItem('praxismaik_premium', 'true');
+        document.cookie = 'praxismaik_premium=true; path=/; max-age=31536000; SameSite=Lax';
+        localStorage.setItem('praxismaik_user_email', email);
+      }
+
+      message.textContent = 'Login erfolgreich.';
+      window.location.href = '/';
+    });
+  </script>
+</BaseLayout>
