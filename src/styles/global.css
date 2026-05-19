@@ -5624,7 +5624,7 @@ a:hover {
   }
 }
 html {
-  hyphens: auto;
+  hyphens: manual;
 }
 
 p,
@@ -5637,8 +5637,8 @@ h6,
 li,
 a,
 span {
-  hyphens: auto;
-  overflow-wrap: break-word;
+  hyphens: manual;
+  overflow-wrap: normal;
   word-break: normal;
 }
 
