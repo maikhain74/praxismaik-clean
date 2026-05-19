@@ -44,7 +44,9 @@ const startableCases = startablePruefungen.map((item, index) => ({
   slug: item.slug,
   title: item.data.title ?? "Prüfungsfall",
   order: index + 1,
-}));function formatTopicLabel(topic) {
+}));
+
+function formatTopicLabel(topic) {
   if (topic === "ohne-thema") return "Ohne Themenzuordnung";
 
   return topic

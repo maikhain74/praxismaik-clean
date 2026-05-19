@@ -3,7 +3,9 @@ export const prerender = false;
 import Stripe from 'stripe';
 import { createClient } from '@supabase/supabase-js';
 
-const stripe = new Stripe(import.meta.env.STRIPE_SECRET_KEY);
+const stripe = new Stripe(import.meta.env.STRIPE_SECRET_KEY, {
+  apiVersion: '2024-06-20',
+});
 
 const supabase = createClient(
   import.meta.env.PUBLIC_SUPABASE_URL,

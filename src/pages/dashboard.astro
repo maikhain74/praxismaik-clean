@@ -1,0 +1,56 @@
+---
+export const prerender = false;
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Dashboard | PraxisMaik">
+  <section style="padding:4rem 1rem; max-width:700px; margin:0 auto;">
+    <h1>Mein Konto</h1>
+
+    <div id="user-box">
+      Lade Benutzerdaten...
+    </div>
+
+    <div style="margin-top:2rem;">
+      <a href="/logout">Logout</a>
+    </div>
+  </section>
+
+  <script type="module">
+    import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
+
+    const supabase = createClient(
+      'https://dmjbuijhoiklmgqozxkg.supabase.co',
+      'sb_publishable_SQLOHit8yP0fMjfS3nN1QQ_61E3MOgn'
+    );
+
+    const userBox = document.getElementById('user-box');
+
+    async function loadUser() {
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
+
+      if (!user) {
+        window.location.href = '/login';
+        return;
+      }
+
+      const { data: profile } = await supabase
+        .from('profiles')
+        .select('*')
+        .eq('id', user.id)
+        .single();
+
+      userBox.innerHTML = `
+        <div style="padding:1.5rem; border:1px solid #ddd; border-radius:16px;">
+          <p><strong>E-Mail:</strong> ${user.email}</p>
+          <p><strong>Premium:</strong> ${profile?.premium ? 'Ja' : 'Nein'}</p>
+        </div>
+      `;
+    }
+
+    loadUser();
+  </script>
+</BaseLayout>
