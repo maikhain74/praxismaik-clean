@@ -1,0 +1,56 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Neues Passwort | PraxisMaik">
+  <section style="padding: 4rem 1rem; max-width: 500px; margin: 0 auto;">
+    <h1>Neues Passwort setzen</h1>
+
+    <div style="display:flex; flex-direction:column; gap:1rem;">
+      <input
+        type="password"
+        id="password"
+        placeholder="Neues Passwort"
+        style="padding:1rem;"
+      />
+
+      <button id="save-button">
+        Passwort speichern
+      </button>
+
+      <p id="message"></p>
+    </div>
+  </section>
+
+  <script type="module">
+    import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
+
+    const supabase = createClient(
+      'https://dmjbuijhoiklmgqozxkg.supabase.co',
+      'sb_publishable_SQLOHit8yP0fMjfS3nN1QQ_61E3MOgn'
+    );
+
+    const button = document.getElementById('save-button');
+    const message = document.getElementById('message');
+
+    button?.addEventListener('click', async () => {
+      const password = document.getElementById('password')?.value;
+
+      if (!password || password.length < 6) {
+        message.textContent = 'Mindestens 6 Zeichen.';
+        return;
+      }
+
+      const { error } = await supabase.auth.updateUser({
+        password,
+      });
+
+      if (error) {
+        message.textContent = error.message;
+        return;
+      }
+
+      message.textContent = 'Passwort erfolgreich geändert.';
+    });
+  </script>
+</BaseLayout>
