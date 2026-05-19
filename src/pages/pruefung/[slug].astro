@@ -235,6 +235,11 @@ const backLabel = sameOriginReferer.includes('/themen/')
               saveCompletedCases(nextCases);
               updateCompleteUi(true);
               trackCaseCompleted(slug, title);
+
+import('../../lib/progress').then(({ saveProgress }) => {
+  saveProgress(slug);
+});
+
               console.log('[case completed]', { slug, title });
             }
           });
