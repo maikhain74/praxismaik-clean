@@ -1,0 +1,85 @@
+---
+export const prerender = false;
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Admin | PraxisMaik">
+  <section style="padding:4rem 1rem; max-width:900px; margin:0 auto;">
+    <h1>Adminbereich</h1>
+
+    <p id="admin-status">Adminbereich wird geprüft...</p>
+
+    <div id="admin-content" hidden>
+      <h2>Nutzerübersicht</h2>
+      <div id="users-list">Lade Nutzer...</div>
+    </div>
+  </section>
+
+  <script type="module">
+    import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
+
+    const supabase = createClient(
+      'https://dmjbuijhoiklmgqozxkg.supabase.co',
+      'sb_publishable_SQLOHit8yP0fMjfS3nN1QQ_61E3MOgn'
+    );
+
+   const ADMIN_EMAIL = 'praxismaik.pflege@gmail.com';
+
+    const status = document.getElementById('admin-status');
+    const adminContent = document.getElementById('admin-content');
+    const usersList = document.getElementById('users-list');
+
+    async function loadAdmin() {
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
+
+      if (!user) {
+        window.location.href = '/login';
+        return;
+      }
+
+      if (user.email !== ADMIN_EMAIL) {
+        status.textContent = 'Kein Zugriff.';
+        return;
+      }
+
+      status.textContent = 'Adminzugriff aktiv.';
+      adminContent.hidden = false;
+
+      const { data: profiles, error } = await supabase
+        .from('profiles')
+        .select('email, premium, stripe_customer_id, stripe_checkout_session_id, created_at')
+        .order('created_at', { ascending: false });
+
+      if (error) {
+        usersList.textContent = error.message;
+        return;
+      }
+
+      usersList.innerHTML = `
+        <table style="width:100%; border-collapse:collapse; margin-top:1rem;">
+          <thead>
+            <tr>
+              <th style="text-align:left; border-bottom:1px solid #ddd; padding:0.75rem;">E-Mail</th>
+              <th style="text-align:left; border-bottom:1px solid #ddd; padding:0.75rem;">Premium</th>
+              <th style="text-align:left; border-bottom:1px solid #ddd; padding:0.75rem;">Stripe</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${profiles.map((profile) => `
+              <tr>
+                <td style="border-bottom:1px solid #eee; padding:0.75rem;">${profile.email ?? ''}</td>
+                <td style="border-bottom:1px solid #eee; padding:0.75rem;">${profile.premium ? 'Ja' : 'Nein'}</td>
+                <td style="border-bottom:1px solid #eee; padding:0.75rem;">${profile.stripe_checkout_session_id ? 'Ja' : 'Nein'}</td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      `;
+    }
+
+    loadAdmin();
+  </script>
+</BaseLayout>
