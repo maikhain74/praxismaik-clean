@@ -26,9 +26,12 @@ export const GET: APIRoute = async ({ request }) => {
     }
 
     const { data, error } = await supabase
-  .from('learning_progress')
-  .select('*')
-  .eq('user_id', userId);
+      .from('learning_progress')
+      .select('*')
+      .eq('user_id', userId)
+      .order('updated_at', {
+        ascending: false,
+      });
 
     if (error) {
       return new Response(

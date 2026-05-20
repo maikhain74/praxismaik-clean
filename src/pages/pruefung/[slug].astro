@@ -175,77 +175,129 @@ const backLabel = sameOriginReferer.includes('/themen/')
       hidden
     ></div>
 
-    <script>
-      import { trackCaseOpened, trackCaseCompleted } from '../../lib/analytics';
+    <script type="module">
+  import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
 
-      const trackingElement = document.getElementById('case-tracking-data');
-      const completeButton = document.getElementById('case-complete-button');
-      const completeStatus = document.getElementById('case-complete-status');
+  const supabase = createClient(
+  "https://dmjbuijhoiklmgqozxkg.supabase.co",
+  "sb_publishable_SQLOHit8yP0fMjfS3nN1QQ_61E3MOgn"
+);
 
-      const STORAGE_KEY = 'praxismaik_completed_cases';
+  const trackingElement = document.getElementById('case-tracking-data');
+  const completeButton = document.getElementById('case-complete-button');
+  const completeStatus = document.getElementById('case-complete-status');
 
-      function getCompletedCases() {
-        try {
-          const raw = localStorage.getItem(STORAGE_KEY);
-          const parsed = raw ? JSON.parse(raw) : [];
-          return Array.isArray(parsed) ? parsed : [];
-        } catch {
-          return [];
-        }
-      }
+  const STORAGE_KEY = 'praxismaik_completed_cases';
 
-      function saveCompletedCases(cases) {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(cases));
-      }
+  function getCompletedCases() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      const parsed = raw ? JSON.parse(raw) : [];
+      return Array.isArray(parsed) ? parsed : [];
+    } catch {
+      return [];
+    }
+  }
 
-      function updateCompleteUi(isCompleted) {
-        if (!completeButton || !completeStatus) return;
+  function saveCompletedCases(cases) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(cases));
+  }
 
-        if (isCompleted) {
-          completeStatus.textContent = 'Dieser Fall ist als abgeschlossen markiert';
-          completeButton.textContent = 'Abgeschlossen';
-          completeButton.disabled = true;
-          completeButton.setAttribute('aria-disabled', 'true');
-        } else {
-          completeStatus.textContent = 'Noch nicht als abgeschlossen markiert';
-          completeButton.textContent = 'Fall als abgeschlossen markieren';
+  function updateCompleteUi(isCompleted) {
+    if (!completeButton || !completeStatus) return;
+
+    if (isCompleted) {
+      completeStatus.textContent = 'Dieser Fall ist als abgeschlossen markiert';
+      completeButton.textContent = 'Abgeschlossen';
+      completeButton.disabled = true;
+      completeButton.setAttribute('aria-disabled', 'true');
+    } else {
+      completeStatus.textContent = 'Noch nicht als abgeschlossen markiert';
+      completeButton.textContent = 'Fall als abgeschlossen markieren';
+      completeButton.disabled = false;
+      completeButton.removeAttribute('aria-disabled');
+    }
+  }
+
+  async function getCurrentUserId() {
+    const {
+      data: { user },
+      error,
+    } = await supabase.auth.getUser();
+
+    if (error || !user) {
+      return null;
+    }
+
+    return user.id;
+  }
+
+  async function saveCaseProgress(slug, title) {
+    const userId = await getCurrentUserId();
+
+    if (!userId) {
+      console.warn('[progress] Kein eingeloggter User gefunden');
+      return false;
+    }
+
+    const response = await fetch('/api/progress-save', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        userId,
+        slug,
+        title,
+      }),
+    });
+
+    if (!response.ok) {
+      const result = await response.json().catch(() => null);
+      console.error('[progress] Speichern fehlgeschlagen', result);
+      return false;
+    }
+
+    return true;
+  }
+
+  if (trackingElement) {
+    const slug = trackingElement.dataset.slug ?? '';
+    const title = trackingElement.dataset.title ?? '';
+
+    const completedCases = getCompletedCases();
+    const isAlreadyCompleted = completedCases.includes(slug);
+
+    updateCompleteUi(isAlreadyCompleted);
+
+    if (completeButton && !isAlreadyCompleted) {
+      completeButton.addEventListener('click', async () => {
+        completeButton.disabled = true;
+        completeButton.textContent = 'Wird gespeichert...';
+
+        const saved = await saveCaseProgress(slug, title);
+
+        if (!saved) {
           completeButton.disabled = false;
-          completeButton.removeAttribute('aria-disabled');
+          completeButton.textContent = 'Fall als abgeschlossen markieren';
+          alert('Fortschritt konnte nicht gespeichert werden. Bitte prüfe, ob du eingeloggt bist.');
+          return;
         }
-      }
 
-      if (trackingElement) {
-        const slug = trackingElement.dataset.slug ?? '';
-        const title = trackingElement.dataset.title ?? '';
+        const currentCases = getCompletedCases();
 
-        console.log('[case page loaded]', { slug, title });
-        trackCaseOpened(slug, title);
-
-        const completedCases = getCompletedCases();
-        const isAlreadyCompleted = completedCases.includes(slug);
-
-        updateCompleteUi(isAlreadyCompleted);
-
-        if (completeButton && !isAlreadyCompleted) {
-          completeButton.addEventListener('click', () => {
-            const currentCases = getCompletedCases();
-
-            if (!currentCases.includes(slug)) {
-              const nextCases = [...currentCases, slug];
-              saveCompletedCases(nextCases);
-              updateCompleteUi(true);
-              trackCaseCompleted(slug, title);
-
-import('../../lib/progress').then(({ saveProgress }) => {
-  saveProgress(slug);
-});
-
-              console.log('[case completed]', { slug, title });
-            }
-          });
+        if (!currentCases.includes(slug)) {
+          const nextCases = [...currentCases, slug];
+          saveCompletedCases(nextCases);
         }
-      }
-    </script>
+
+        updateCompleteUi(true);
+
+        console.log('[case completed]', { slug, title });
+      });
+    }
+  }
+</script>
   </body>
 </html>
 
