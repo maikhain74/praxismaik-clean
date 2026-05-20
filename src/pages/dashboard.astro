@@ -5,20 +5,24 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout title="Dashboard | PraxisMaik">
-  <section style="padding:4rem 1rem; max-width:700px; margin:0 auto;">
+  <section class="dashboard-page">
     <h1>Mein Konto</h1>
 
-    <div id="user-box">
+    <div id="user-box" class="card">
       Lade Benutzerdaten...
     </div>
 
-    <div style="margin-top:2rem;">
+    <div id="progress-box" class="card">
+      Lade Lernfortschritt...
+    </div>
+
+    <div class="logout-box">
       <a href="/logout">Logout</a>
     </div>
   </section>
 
   <script type="module">
-   import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
+    import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
 
     const supabase = createClient(
       'https://dmjbuijhoiklmgqozxkg.supabase.co',
@@ -26,6 +30,27 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     );
 
     const userBox = document.getElementById('user-box');
+    const progressBox = document.getElementById('progress-box');
+
+    function formatDate(value) {
+      if (!value) return 'Noch nicht verfügbar';
+
+      return new Date(value).toLocaleDateString('de-DE', {
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric',
+      });
+    }
+
+    function getProgressName(item) {
+      return (
+        item?.content_slug ||
+        item?.slug ||
+        item?.lesson_slug ||
+        item?.course_slug ||
+        'Unbekannter Inhalt'
+      );
+    }
 
     async function loadUser() {
       const {
@@ -44,13 +69,131 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         .single();
 
       userBox.innerHTML = `
-        <div style="padding:1.5rem; border:1px solid #ddd; border-radius:16px;">
-          <p><strong>E-Mail:</strong> ${user.email}</p>
-          <p><strong>Premium:</strong> ${profile?.premium ? 'Ja' : 'Nein'}</p>
+        <h2>Benutzerdaten</h2>
+        <p><strong>E-Mail:</strong> ${user.email}</p>
+        <p><strong>Premium:</strong> ${profile?.premium ? 'Ja' : 'Nein'}</p>
+      `;
+
+      const response = await fetch(`/api/progress?userId=${user.id}`);
+      const progress = await response.json();
+
+      if (!response.ok) {
+        progressBox.innerHTML = `
+          <h2>Lernfortschritt</h2>
+          <p>Lernfortschritt konnte nicht geladen werden.</p>
+        `;
+        return;
+      }
+
+      const progressItems = Array.isArray(progress) ? progress : [];
+      const completedItems = progressItems.filter((item) => item.completed === true);
+      const latestItem = progressItems[0];
+
+      progressBox.innerHTML = `
+        <h2>Lernfortschritt</h2>
+
+        <div class="progress-grid">
+          <div class="progress-stat">
+            <strong>${progressItems.length}</strong>
+            <span>Gestartete Inhalte</span>
+          </div>
+
+          <div class="progress-stat">
+            <strong>${completedItems.length}</strong>
+            <span>Abgeschlossen</span>
+          </div>
+        </div>
+
+        <div class="latest-box">
+          <h3>Zuletzt gelernt</h3>
+          ${
+            latestItem
+              ? `
+                <p><strong>Inhalt:</strong> ${getProgressName(latestItem)}</p>
+                <p><strong>Datum:</strong> ${formatDate(latestItem.updated_at || latestItem.created_at)}</p>
+              `
+              : `
+                <p>Du hast noch keinen Lernfortschritt gespeichert.</p>
+              `
+          }
         </div>
       `;
     }
 
     loadUser();
   </script>
+
+  <style>
+    .dashboard-page {
+      padding: 4rem 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      color: #1f3653;
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      padding: 1.5rem;
+      border: 1px solid #e8ded1;
+      border-radius: 16px;
+      background: #f5f1ea;
+      margin-bottom: 1.5rem;
+    }
+
+    .card h2 {
+      color: #1f3653;
+      margin-top: 0;
+    }
+
+    .progress-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+
+    .progress-stat {
+      background: white;
+      border: 1px solid #e8ded1;
+      border-radius: 14px;
+      padding: 1rem;
+    }
+
+    .progress-stat strong {
+      display: block;
+      font-size: 2rem;
+      color: #c97b63;
+    }
+
+    .progress-stat span {
+      color: #1f3653;
+    }
+
+    .latest-box {
+      margin-top: 1.5rem;
+    }
+
+    .latest-box h3 {
+      color: #1f3653;
+      margin-bottom: 0.5rem;
+    }
+
+    .logout-box {
+      margin-top: 2rem;
+    }
+
+    .logout-box a {
+      color: #c97b63;
+      font-weight: 700;
+    }
+
+    @media (max-width: 600px) {
+      .progress-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </BaseLayout>
