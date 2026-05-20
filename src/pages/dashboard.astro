@@ -89,35 +89,55 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       const completedItems = progressItems.filter((item) => item.completed === true);
       const latestItem = progressItems[0];
 
-      progressBox.innerHTML = `
-        <h2>Lernfortschritt</h2>
+      const TOTAL_CASES = 35;
 
-        <div class="progress-grid">
-          <div class="progress-stat">
-            <strong>${progressItems.length}</strong>
-            <span>Gestartete Inhalte</span>
-          </div>
+const progressPercent =
+  TOTAL_CASES > 0
+    ? Math.round((completedItems.length / TOTAL_CASES) * 100)
+    : 0;
 
-          <div class="progress-stat">
-            <strong>${completedItems.length}</strong>
-            <span>Abgeschlossen</span>
-          </div>
-        </div>
+progressBox.innerHTML = `
+  <h2>Lernfortschritt</h2>
 
-        <div class="latest-box">
-          <h3>Zuletzt gelernt</h3>
-          ${
-            latestItem
-              ? `
-                <p><strong>Inhalt:</strong> ${getProgressName(latestItem)}</p>
-                <p><strong>Datum:</strong> ${formatDate(latestItem.updated_at || latestItem.created_at)}</p>
-              `
-              : `
-                <p>Du hast noch keinen Lernfortschritt gespeichert.</p>
-              `
-          }
-        </div>
-      `;
+  <div class="progress-summary">
+    <div>
+      <strong>${progressPercent}%</strong>
+      <span>${completedItems.length} von ${TOTAL_CASES} Prüfungsfällen abgeschlossen</span>
+    </div>
+
+    <div class="progress-bar">
+      <div class="progress-bar-fill" style="width: ${progressPercent}%"></div>
+    </div>
+  </div>
+
+  <div class="progress-grid">
+    <div class="progress-stat">
+      <strong>${progressItems.length}</strong>
+      <span>Gestartete Inhalte</span>
+    </div>
+
+    <div class="progress-stat">
+      <strong>${completedItems.length}</strong>
+      <span>Abgeschlossen</span>
+    </div>
+  </div>
+
+  <div class="latest-box">
+    <h3>Zuletzt gelernt</h3>
+    ${
+      latestItem
+        ? `
+          <a class="latest-link" href="/pruefung/${getProgressName(latestItem)}/">
+            ${latestItem.title || getProgressName(latestItem)}
+          </a>
+          <p><strong>Datum:</strong> ${formatDate(latestItem.updated_at || latestItem.created_at)}</p>
+        `
+        : `
+          <p>Du hast noch keinen Lernfortschritt gespeichert.</p>
+        `
+    }
+  </div>
+`;
     }
 
     loadUser();
@@ -147,6 +167,53 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       color: #1f3653;
       margin-top: 0;
     }
+
+.progress-summary {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border-radius: 14px;
+  background: #ffffff;
+  border: 1px solid #e8ded1;
+}
+
+.progress-summary strong {
+  display: block;
+  font-size: 2.2rem;
+  color: #c97b63;
+}
+
+.progress-summary span {
+  color: #1f3653;
+  font-weight: 700;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e8ded1;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: #c97b63;
+}
+
+.latest-link {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  color: #1f3653;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.latest-link:hover {
+  text-decoration: underline;
+}
 
     .progress-grid {
       display: grid;
