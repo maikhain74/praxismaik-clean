@@ -127,6 +127,10 @@ Wie reagieren Sie **fachlich korrekt**?
   <div class="fall-answer-card">B) Thema ignorieren</div>
   <div class="fall-answer-card">C) über Risiken aufklären und professionelle Hilfe anbieten</div>
   <div class="fall-answer-card">D) „Das dürfen Sie nicht!“</div>
+  
+  <button class="answer-check-button">
+  Antwort prüfen
+</button>
 </div>
 
 </div>   

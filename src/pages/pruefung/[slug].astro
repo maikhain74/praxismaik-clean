@@ -97,9 +97,30 @@ const backLabel = sameOriginReferer.includes('/themen/')
 
         {showFullContent ? (
   <>
-    <section class="markdown-content">
-      <Content />
-    </section>
+    <div class="mode-switch-box">
+  <button
+    type="button"
+    class="mode-button active"
+    id="learning-mode-button"
+  >
+    Lernmodus
+  </button>
+
+  <button
+    type="button"
+    class="mode-button"
+    id="exam-mode-button"
+  >
+    Prüfungsmodus
+  </button>
+</div>
+
+<section
+  class="markdown-content"
+  id="markdown-content"
+>
+  <Content />
+</section>
 
     <section class="case-progress-box">
       <p class="case-progress-label">Fortschritt</p>
@@ -175,13 +196,13 @@ const backLabel = sameOriginReferer.includes('/themen/')
       hidden
     ></div>
 
-    <script type="module">
+   <script type="module">
   import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
 
   const supabase = createClient(
-  "https://dmjbuijhoiklmgqozxkg.supabase.co",
-  "sb_publishable_SQLOHit8yP0fMjfS3nN1QQ_61E3MOgn"
-);
+    "https://dmjbuijhoiklmgqozxkg.supabase.co",
+    "sb_publishable_SQLOHit8yP0fMjfS3nN1QQ_61E3MOgn"
+  );
 
   const trackingElement = document.getElementById('case-tracking-data');
   const completeButton = document.getElementById('case-complete-button');
@@ -297,6 +318,99 @@ const backLabel = sameOriginReferer.includes('/themen/')
       });
     }
   }
+
+  const answerGroups = document.querySelectorAll('.fall-answers');
+
+answerGroups.forEach((group) => {
+  const cards = group.querySelectorAll('.fall-answer-card');
+  const checkButton = group.querySelector('.answer-check-button');
+
+  let selectedCard = null;
+
+  cards.forEach((card) => {
+    card.addEventListener('click', () => {
+      cards.forEach((item) => {
+        item.classList.remove('selected');
+      });
+
+      selectedCard = card;
+      card.classList.add('selected');
+    });
+  });
+
+  checkButton?.addEventListener('click', () => {
+    if (!selectedCard) {
+      alert('Bitte zuerst eine Antwort auswählen.');
+      return;
+    }
+
+    cards.forEach((item) => {
+      item.classList.add('disabled');
+
+      const text = item.textContent?.trim() ?? '';
+
+      if (text.startsWith('C)')) {
+        item.classList.add('correct');
+      }
+    });
+
+    const selectedText = selectedCard.textContent?.trim() ?? '';
+
+    if (selectedText.startsWith('C)')) {
+      selectedCard.classList.add('correct');
+    } else {
+      selectedCard.classList.add('wrong');
+    }
+
+    checkButton.disabled = true;
+    checkButton.textContent = 'Antwort geprüft';
+  });
+});
+const learningModeButton = document.getElementById('learning-mode-button');
+const examModeButton = document.getElementById('exam-mode-button');
+
+const allDetails = document.querySelectorAll('details');
+
+const examHiddenElements = Array.from(allDetails).filter((detail) => {
+  const summaryText = detail.querySelector('summary')?.textContent ?? '';
+
+  return (
+    summaryText.includes('Antwort und Begründung') ||
+    summaryText.includes('Lösung anzeigen')
+  );
+});
+
+console.log('[exam mode elements found]', examHiddenElements.length);
+
+function activateLearningMode() {
+  learningModeButton?.classList.add('active');
+  examModeButton?.classList.remove('active');
+
+  examHiddenElements.forEach((element) => {
+    element.classList.remove('exam-hidden');
+  });
+}
+
+function activateExamMode() {
+  examModeButton?.classList.add('active');
+  learningModeButton?.classList.remove('active');
+
+  examHiddenElements.forEach((element) => {
+    element.removeAttribute('open');
+    element.classList.add('exam-hidden');
+  });
+}
+
+learningModeButton?.addEventListener('click', () => {
+  activateLearningMode();
+});
+
+examModeButton?.addEventListener('click', () => {
+  activateExamMode();
+});
+
+activateLearningMode();
+
 </script>
   </body>
 </html>
@@ -396,21 +510,27 @@ const backLabel = sameOriginReferer.includes('/themen/')
   }
 
   .markdown-content :global(h2),
-  .markdown-content :global(h3),
-  .markdown-content :global(h4) {
-    margin-top: 2rem;
-    line-height: 1.3;
-  }
+.markdown-content :global(h3),
+.markdown-content :global(h4) {
+  margin-top: 1.2rem;
+  margin-bottom: 0.7rem;
+  line-height: 1.3;
+}
 
-  .markdown-content :global(p),
-  .markdown-content :global(li) {
-    line-height: 1.8;
-  }
+.markdown-content :global(p) {
+  margin: 0.7rem 0;
+}
 
-  .markdown-content :global(ul),
-  .markdown-content :global(ol) {
-    padding-left: 1.4rem;
-  }
+.markdown-content :global(ul),
+.markdown-content :global(ol) {
+  margin: 0.7rem 0;
+  padding-left: 1.4rem;
+}
+
+.markdown-content :global(li) {
+  margin: 0.35rem 0;
+  line-height: 1.7;
+}
 
   .markdown-content :global(.fall-progress) {
     display: inline-flex;
@@ -452,15 +572,42 @@ const backLabel = sameOriginReferer.includes('/themen/')
   }
 
   .markdown-content :global(.fall-answer-card) {
-    padding: 1rem 1.05rem;
-    border: 1px solid #e5e5e5;
-    border-radius: 16px;
-    background: #ffffff;
-    box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
-    color: #18324a;
-    font-weight: 600;
-    line-height: 1.55;
-  }
+  padding: 1rem 1.05rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  color: #18324a;
+  font-weight: 600;
+  line-height: 1.55;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+
+.markdown-content :global(.fall-answer-card:hover) {
+  transform: translateY(-2px);
+  border-color: #c97b63;
+}
+
+.markdown-content :global(.fall-answer-card.correct) {
+  background: #ecfdf5;
+  border-color: #10b981;
+  color: #065f46;
+}
+
+.markdown-content :global(.fall-answer-card.wrong) {
+  background: #fef2f2;
+  border-color: #ef4444;
+  color: #991b1b;
+}
+
+.markdown-content :global(.fall-answer-card.disabled) {
+  pointer-events: none;
+  opacity: 0.9;
+}
 
   .markdown-content :global(details.fall-block) {
     margin: 1.2rem 0;
@@ -484,12 +631,30 @@ const backLabel = sameOriginReferer.includes('/themen/')
   }
 
   .markdown-content :global(details.fall-block[open] > summary) {
-    border-bottom: 1px solid #e5e5e5;
-  }
+  border-bottom: none;
+}
+
+.markdown-content :global(details.fall-block summary) {
+  transition: background 0.15s ease;
+}
+
+.markdown-content :global(details.fall-block summary:hover) {
+  background: #faf7f2;
+}
 
   .markdown-content :global(details.fall-block > *:not(summary)) {
-    padding: 1.25rem;
-  }
+  padding: 1rem 1.25rem;
+}
+
+.markdown-content :global(details.fall-block p:first-child),
+.markdown-content :global(details.fall-block h2:first-child),
+.markdown-content :global(details.fall-block h3:first-child) {
+  margin-top: 0;
+}
+
+.markdown-content :global(details.fall-block p:last-child) {
+  margin-bottom: 0;
+}
 
   .markdown-content :global(details.fall-block > *:not(summary):first-child) {
     margin-top: 0;
@@ -509,6 +674,10 @@ const backLabel = sameOriginReferer.includes('/themen/')
     background: linear-gradient(180deg, #fffaf6 0%, #ffffff 100%);
     border: 1px solid rgba(154, 52, 18, 0.18);
   }
+
+  .markdown-content :global(hr) {
+  display: none;
+}
 
   .case-progress-box {
     margin-top: 2rem;
@@ -564,6 +733,78 @@ const backLabel = sameOriginReferer.includes('/themen/')
     cursor: default;
     transform: none;
   }
+
+.mode-switch-box {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.mode-button {
+  border: 1px solid #d6d3d1;
+  background: #ffffff;
+  color: #18324a;
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.mode-button:hover {
+  border-color: #c97b63;
+}
+
+.mode-button.active {
+  background: #18324a;
+  color: #ffffff;
+  border-color: #18324a;
+}
+
+.markdown-content :global(.answer-check-button) {
+  margin-top: 0.75rem;
+  width: 100%;
+  border: 0;
+  border-radius: 14px;
+  padding: 0.95rem 1rem;
+  background: #18324a;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  transition:
+    transform 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.markdown-content :global(.answer-check-button:hover) {
+  transform: translateY(-1px);
+}
+
+.markdown-content :global(.answer-check-button:disabled) {
+  opacity: 0.75;
+  cursor: default;
+  transform: none;
+}
+
+.markdown-content :global(.fall-answer-card.selected) {
+  border-color: #c97b63;
+  background: #faf7f2;
+}
+
+.markdown-content :global(.exam-hidden),
+.exam-hidden {
+  display: none !important;
+}
+
+.exam-hidden {
+  display: none !important;
+}
 
   .fall-navigation {
     display: grid;
