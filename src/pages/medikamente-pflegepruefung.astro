@@ -189,6 +189,28 @@ const description =
         Zu den Prüfungsfällen
       </a>
     </section>
+
+    <section class="related-topics">
+  <h2>Verwandte Prüfungsthemen</h2>
+
+  <div class="related-grid">
+    <a href="/pflegeprozess-pruefung" class="related-card">
+      Pflegeprozess
+    </a>
+
+    <a href="/pflegediagnosen-pruefung" class="related-card">
+      Pflegediagnosen
+    </a>
+
+    <a href="/sturzprophylaxe-pruefung" class="related-card">
+      Sturzprophylaxe
+    </a>
+
+    <a href="/medikamente-pflegepruefung" class="related-card">
+      Medikamente in der Pflegeprüfung
+    </a>
+  </div>
+</section>
   </main>
 </BaseLayout>
 
@@ -288,4 +310,39 @@ const description =
   transform: translateY(-1px);
   opacity: 0.96;
 }
+
+.related-topics {
+  margin-top: 2rem;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.related-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90px;
+  padding: 1rem;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  text-decoration: none;
+  color: #18324a;
+  font-weight: 700;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  transition:
+    transform 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.related-card:hover {
+  transform: translateY(-2px);
+  border-color: #c97b63;
+}
+
 </style>

@@ -301,6 +301,51 @@ komplette Prüfungsfälle und Quiztraining für deinen gesamten Ausbildungsweg.
   </a>
 </div>
 </section>
+
+<section class="section seo-topics-section">
+  <div class="section-headline">
+    <h2>Beliebte Prüfungsthemen</h2>
+
+    <p class="section-intro">
+      Häufige Themen aus der schriftlichen Pflegeprüfung,
+      verständlich erklärt und prüfungsrelevant aufgebaut.
+    </p>
+  </div>
+
+  <div class="seo-topics-grid">
+    <a href="/pflegeprozess-pruefung" class="seo-topic-card">
+      <h3>Pflegeprozess</h3>
+      <p>
+        Pflegeprobleme erkennen,
+        Ziele formulieren und Maßnahmen planen.
+      </p>
+    </a>
+
+    <a href="/pflegediagnosen-pruefung" class="seo-topic-card">
+      <h3>Pflegediagnosen</h3>
+      <p>
+        Typische Pflegediagnosen,
+        Prüfungsfragen und Denklogik.
+      </p>
+    </a>
+
+    <a href="/sturzprophylaxe-pruefung" class="seo-topic-card">
+      <h3>Sturzprophylaxe</h3>
+      <p>
+        Risiken erkennen,
+        Sicherheit priorisieren und Maßnahmen planen.
+      </p>
+    </a>
+
+    <a href="/medikamente-pflegepruefung" class="seo-topic-card">
+      <h3>Medikamente</h3>
+      <p>
+        Prüfungsrelevante Medikamente,
+        Pflegebeobachtung und typische Fehler.
+      </p>
+    </a>
+  </div>
+</section>
   </div>
 </BaseLayout>
 
@@ -913,4 +958,55 @@ komplette Prüfungsfälle und Quiztraining für deinen gesamten Ausbildungsweg.
   }
 }
 
+.seo-topics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+.seo-topic-card {
+  display: block;
+  padding: 1.4rem;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.seo-topic-card:hover {
+  transform: translateY(-4px);
+  border-color: #c97b63;
+  box-shadow: 0 16px 30px rgba(24, 50, 74, 0.08);
+}
+
+.seo-topic-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  color: #18324a;
+}
+
+.seo-topic-card p {
+  margin: 0;
+  line-height: 1.6;
+  color: #556270;
+}
+
+@media (max-width: 900px) {
+  .seo-topics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .seo-topics-grid {
+    grid-template-columns: 1fr;
+  }
+}
 </style>

@@ -129,6 +129,10 @@ Was ist die **wichtigste Maßnahme**?
   <div class="fall-answer-card">B) nur Pflege anpassen</div>
   <div class="fall-answer-card">C) Pflegegrad überprüfen lassen</div>
   <div class="fall-answer-card">D) Angehörige entscheiden lassen</div>
+
+  <button class="answer-check-button">
+    Antwort prüfen
+  </button>
 </div>
 
 </div>

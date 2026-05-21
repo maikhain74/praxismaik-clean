@@ -1,0 +1,238 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'Sturzprophylaxe in der Pflegeprüfung | PraxisMaik';
+const description =
+  'Sturzprophylaxe einfach erklärt für die Pflegeprüfung. Risikofaktoren, Maßnahmen, Prüfungsfragen und typische Fehler für Pflegeazubis.';
+---
+
+<BaseLayout title={title}>
+  <main class="page">
+    <section class="hero">
+      <p class="badge">Pflegeprüfung • Sturzprophylaxe</p>
+
+      <h1>Sturzprophylaxe in der Pflegeprüfung</h1>
+
+      <p class="intro">
+        Sturzprophylaxe gehört zu den häufigsten Themen
+        in schriftlichen Pflegeprüfungen.
+      </p>
+
+      <p class="intro">
+        Prüfungen erwarten,
+        dass Risiken erkannt,
+        Maßnahmen geplant
+        und Patientensicherheit priorisiert werden.
+      </p>
+    </section>
+
+    <section class="content-box">
+      <h2>Was bedeutet Sturzprophylaxe?</h2>
+
+      <p>
+        Ziel der Sturzprophylaxe ist es,
+        Stürze zu vermeiden
+        und Verletzungen vorzubeugen.
+      </p>
+
+      <p>
+        Besonders ältere,
+        unsichere oder geschwächte Menschen
+        haben ein erhöhtes Risiko.
+      </p>
+    </section>
+
+        <section class="content-box">
+      <h2>Typische Sturzrisikofaktoren</h2>
+
+      <ul>
+        <li>eingeschränkte Mobilität</li>
+        <li>Schmerzen</li>
+        <li>Schwindel</li>
+        <li>Medikamente mit Nebenwirkungen</li>
+        <li>unsichere Wohnumgebung</li>
+        <li>Sehstörungen</li>
+      </ul>
+
+      <div class="merksatz">
+        Merksatz: Mehrere kleine Risiken können zusammen zu einer großen Gefahr werden.
+      </div>
+    </section>
+
+    <section class="content-box">
+      <h2>Typische Prüfungsfragen</h2>
+
+      <ul>
+        <li>Nennen Sie zwei Sturzrisikofaktoren.</li>
+        <li>Welche Maßnahmen planen Sie?</li>
+        <li>Wie beraten Sie Angehörige?</li>
+        <li>Warum ist Beobachtung wichtig?</li>
+      </ul>
+
+      <p>
+        In Prüfungen zählt vor allem,
+        Risiken früh zu erkennen
+        und Sicherheit zu priorisieren.
+      </p>
+    </section>
+
+    <section class="content-box">
+      <h2>Wichtige Maßnahmen der Sturzprophylaxe</h2>
+
+      <ul>
+        <li>Stolperquellen entfernen</li>
+        <li>geeignete Hilfsmittel einsetzen</li>
+        <li>Beleuchtung verbessern</li>
+        <li>Mobilität fördern</li>
+        <li>Patienten begleiten</li>
+      </ul>
+
+      <p>
+        Maßnahmen müssen immer
+        individuell an die Situation angepasst werden.
+      </p>
+    </section>
+
+        <section class="content-box">
+      <h2>Typische Fehler in der Pflegeprüfung</h2>
+
+      <ul>
+        <li>Sturzrisiko unterschätzen</li>
+        <li>Umgebung nicht beurteilen</li>
+        <li>Hilfsmittel nicht berücksichtigen</li>
+        <li>Angehörige nicht einbeziehen</li>
+        <li>Patientensicherheit nicht priorisieren</li>
+      </ul>
+
+      <p>
+        Besonders wichtig ist eine strukturierte Risikoanalyse.
+      </p>
+    </section>
+
+    <section class="content-box">
+      <h2>Warum Sturzprophylaxe wichtig ist</h2>
+
+      <p>
+        Stürze können schwere Folgen haben:
+      </p>
+
+      <ul>
+        <li>Frakturen</li>
+        <li>Schmerzen</li>
+        <li>Angst vor Bewegung</li>
+        <li>Verlust der Selbstständigkeit</li>
+      </ul>
+
+      <p>
+        Deshalb gehört Sturzprävention
+        zu den wichtigsten pflegerischen Aufgaben.
+      </p>
+    </section>
+
+    <section class="content-box cta-box">
+      <h2>Mehr interaktive Prüfungsfälle</h2>
+
+      <p>
+        Auf PraxisMaik findest du interaktive Prüfungsfälle,
+        Prüfungsfragen und strukturierte Lösungen
+        für die schriftliche Pflegeprüfung.
+      </p>
+
+      <a href="/pruefung/" class="cta-button">
+        Zu den Prüfungsfällen
+      </a>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1rem 5rem;
+  }
+
+  .hero {
+    margin-bottom: 2rem;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 0.4rem 0.7rem;
+    border-radius: 999px;
+    background: #eef2ff;
+    color: #3730a3;
+    font-weight: 700;
+    font-size: 0.85rem;
+  }
+
+  h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    line-height: 1.15;
+    color: #18324a;
+  }
+
+  .intro {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4b5563;
+  }
+
+  .content-box {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 20px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  }
+
+  .content-box h2 {
+    margin-top: 0;
+    color: #18324a;
+  }
+
+  .content-box p,
+  .content-box li {
+    line-height: 1.8;
+    color: #374151;
+  }
+
+  .merksatz {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 14px;
+    background: #faf7f2;
+    border: 1px solid #eadfd3;
+    font-weight: 700;
+    color: #18324a;
+  }
+
+  .cta-box {
+    text-align: center;
+  }
+
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 1rem 1.4rem;
+    border-radius: 999px;
+    background: #c97b63;
+    color: #18324a;
+    text-decoration: none;
+    font-weight: 700;
+    border: 1px solid #c97b63;
+    transition:
+      transform 0.15s ease,
+      opacity 0.15s ease;
+  }
+
+  .cta-button:hover {
+    transform: translateY(-1px);
+    opacity: 0.96;
+  }
+</style>
