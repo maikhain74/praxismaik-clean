@@ -1,0 +1,264 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'Pflegeprozess in der Pflegeprüfung | PraxisMaik';
+const description =
+  'Pflegeprozess einfach erklärt für die Pflegeprüfung. Schritte, typische Prüfungsfragen, Pflegeplanung und häufige Fehler für Pflegeazubis.';
+---
+
+<BaseLayout title={title}>
+  <main class="page">
+    <section class="hero">
+      <p class="badge">Pflegeprüfung • Pflegeprozess</p>
+
+      <h1>Pflegeprozess in der Pflegeprüfung</h1>
+
+      <p class="intro">
+        Der Pflegeprozess gehört zu den wichtigsten Themen
+        in der schriftlichen Pflegeprüfung.
+      </p>
+
+      <p class="intro">
+        Viele Prüfungsfälle prüfen,
+        ob Pflegefachpersonen Probleme erkennen,
+        Ziele formulieren und passende Maßnahmen planen können.
+      </p>
+    </section>
+
+    <section class="content-box">
+      <h2>Was ist der Pflegeprozess?</h2>
+
+      <p>
+        Der Pflegeprozess ist ein strukturiertes Vorgehen
+        zur Planung, Durchführung und Evaluation von Pflege.
+      </p>
+
+      <p>
+        Ziel ist eine sichere, nachvollziehbare und individuelle Versorgung.
+      </p>
+
+      <h3>Die 6 Schritte des Pflegeprozesses</h3>
+
+      <ol>
+        <li>Informationssammlung</li>
+        <li>Probleme und Ressourcen erkennen</li>
+        <li>Pflegeziele formulieren</li>
+        <li>Pflegemaßnahmen planen</li>
+        <li>Durchführung der Pflege</li>
+        <li>Evaluation</li>
+      </ol>
+    </section>
+
+    <section class="content-box">
+      <h2>Typische Prüfungsfragen zum Pflegeprozess</h2>
+
+      <ul>
+        <li>Welche Pflegeprobleme erkennen Sie?</li>
+        <li>Formulieren Sie zwei Pflegeziele.</li>
+        <li>Welche Maßnahmen planen Sie?</li>
+        <li>Welche Ressourcen hat die pflegebedürftige Person?</li>
+        <li>Wie evaluieren Sie die Maßnahmen?</li>
+      </ul>
+
+      <p>
+        In der Prüfung geht es häufig nicht nur um Theorie,
+        sondern darum, fachlich logisch zu denken.
+      </p>
+    </section>
+
+    <section class="content-box">
+      <h2>Pflegeprobleme erkennen</h2>
+
+      <p>
+        Pflegeprobleme beschreiben Einschränkungen,
+        Risiken oder Belastungen einer Person.
+      </p>
+
+      <h3>Typische Beispiele</h3>
+
+      <ul>
+        <li>Sturzrisiko</li>
+        <li>eingeschränkte Mobilität</li>
+        <li>Schmerzen</li>
+        <li>Gefahr der Mangelernährung</li>
+        <li>Kommunikationsprobleme</li>
+      </ul>
+
+      <div class="merksatz">
+        Merksatz: Erst Risiken erkennen, dann Maßnahmen planen.
+      </div>
+    </section>
+
+    <section class="content-box">
+      <h2>Pflegeziele formulieren</h2>
+
+      <p>
+        Pflegeziele beschreiben,
+        was durch die Pflege erreicht werden soll.
+      </p>
+
+      <h3>Wichtige Eigenschaften guter Pflegeziele</h3>
+
+      <ul>
+        <li>klar formuliert</li>
+        <li>realistisch</li>
+        <li>überprüfbar</li>
+        <li>patientenbezogen</li>
+      </ul>
+
+      <h3>Beispiel</h3>
+
+      <p>
+        „Die Patientin bewegt sich innerhalb von 7 Tagen sicher mit dem Rollator.“
+      </p>
+    </section>
+
+    <section class="content-box">
+      <h2>Typische Fehler in der Pflegeprüfung</h2>
+
+      <ul>
+        <li>Pflegeprobleme nicht priorisieren</li>
+        <li>unrealistische Pflegeziele formulieren</li>
+        <li>Maßnahmen ohne Begründung nennen</li>
+        <li>Ressourcen vergessen</li>
+        <li>Evaluation nicht beachten</li>
+      </ul>
+
+      <p>
+        Besonders wichtig ist eine klare Struktur.
+      </p>
+    </section>
+
+    <section class="content-box">
+      <h2>Warum der Pflegeprozess wichtig ist</h2>
+
+      <p>
+        Der Pflegeprozess hilft dabei,
+        Pflege fachlich nachvollziehbar zu planen.
+      </p>
+
+      <p>
+        Gleichzeitig verbessert er:
+      </p>
+
+      <ul>
+        <li>Patientensicherheit</li>
+        <li>Kommunikation im Team</li>
+        <li>Pflegequalität</li>
+        <li>Dokumentation</li>
+      </ul>
+    </section>
+
+    <section class="content-box cta-box">
+      <h2>Interaktive Prüfungsfälle für die Pflegeprüfung</h2>
+
+      <p>
+        Auf PraxisMaik findest du strukturierte Prüfungsfälle,
+        Prüfungsfragen und Lösungen
+        für die schriftliche Pflegeprüfung.
+      </p>
+
+      <a href="/pruefung/" class="cta-button">
+        Zu den Prüfungsfällen
+      </a>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1rem 5rem;
+  }
+
+  .hero {
+    margin-bottom: 2rem;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 0.4rem 0.7rem;
+    border-radius: 999px;
+    background: #eef2ff;
+    color: #3730a3;
+    font-weight: 700;
+    font-size: 0.85rem;
+  }
+
+  h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    line-height: 1.15;
+    color: #18324a;
+  }
+
+  .intro {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4b5563;
+  }
+
+  .content-box {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 20px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  }
+
+  .content-box h2 {
+    margin-top: 0;
+    color: #18324a;
+  }
+
+  .content-box h3 {
+    margin-top: 1.5rem;
+    color: #18324a;
+  }
+
+  .content-box p,
+  .content-box li {
+    line-height: 1.8;
+    color: #374151;
+  }
+
+  .merksatz {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 14px;
+    background: #faf7f2;
+    border: 1px solid #eadfd3;
+    font-weight: 700;
+    color: #18324a;
+  }
+
+  .cta-box {
+    text-align: center;
+  }
+
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 1rem 1.4rem;
+    border-radius: 999px;
+    background: #c97b63;
+    color: #18324a;
+    text-decoration: none;
+    font-weight: 700;
+    border: 1px solid #c97b63;
+    transition:
+      transform 0.15s ease,
+      opacity 0.15s ease,
+      background 0.15s ease;
+  }
+
+  .cta-button:hover {
+    transform: translateY(-1px);
+    opacity: 0.96;
+  }
+</style>
