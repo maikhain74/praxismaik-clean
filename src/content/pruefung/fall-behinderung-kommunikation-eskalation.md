@@ -134,14 +134,10 @@ Leon sagt, das Spray helfe nicht.
 Wie reagieren Sie **fachlich korrekt**?
 
 <div class="fall-answers">
-  <div class="fall-answer-card">A) Situation unverändert lassen</div>
-  <div class="fall-answer-card">B) nur Pflege anpassen</div>
-  <div class="fall-answer-card">C) Pflegegrad überprüfen lassen</div>
-  <div class="fall-answer-card">D) Angehörige entscheiden lassen</div>
-
-  <button class="answer-check-button">
-    Antwort prüfen
-  </button>
+  <div class="fall-answer-card">A) Aussage ignorieren</div>
+  <div class="fall-answer-card">B) einfach erneut inhalieren lassen</div>
+  <div class="fall-answer-card">C) Anwendung überprüfen und anleiten</div>
+  <div class="fall-answer-card">D) Therapie abbrechen</div>
 </div>
 
 </div>

@@ -142,14 +142,10 @@ Herr Braun möchte weniger Verbandwechsel, um Kosten zu sparen.
 Wie reagieren Sie **fachlich korrekt**?
 
 <div class="fall-answers">
-  <div class="fall-answer-card">A) Situation unverändert lassen</div>
-  <div class="fall-answer-card">B) nur Pflege anpassen</div>
-  <div class="fall-answer-card">C) Pflegegrad überprüfen lassen</div>
-  <div class="fall-answer-card">D) Angehörige entscheiden lassen</div>
-
-  <button class="answer-check-button">
-    Antwort prüfen
-  </button>
+  <div class="fall-answer-card">A) zustimmen</div>
+  <div class="fall-answer-card">B) ignorieren</div>
+  <div class="fall-answer-card">C) über Notwendigkeit aufklären</div>
+  <div class="fall-answer-card">D) Entscheidung überlassen</div>
 </div>
 
 </div>

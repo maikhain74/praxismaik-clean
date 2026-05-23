@@ -1,0 +1,146 @@
+---
+interface Props {
+  question: string;
+  answers: string[];
+  correctAnswer: string;
+}
+
+const {
+  question,
+  answers,
+  correctAnswer,
+} = Astro.props;
+---
+
+<div class="question-box">
+  <h3>{question}</h3>
+
+  <div class="question-answers">
+    {answers.map((answer) => (
+      <button
+        class="question-answer"
+        data-answer={answer}
+        data-correct={answer.startsWith(correctAnswer)}
+      >
+        {answer}
+      </button>
+    ))}
+  </div>
+
+  <button class="question-check-button">
+    Antwort prüfen
+  </button>
+</div>
+
+<style>
+  .question-box {
+    margin-top: 1rem;
+  }
+
+  .question-answers {
+    display: grid;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .question-answer {
+    border: 1px solid #e5e5e5;
+    border-radius: 16px;
+    background: #ffffff;
+    padding: 1rem;
+    text-align: left;
+    font: inherit;
+    font-weight: 600;
+    color: #18324a;
+    cursor: pointer;
+    transition:
+      border-color 0.15s ease,
+      transform 0.15s ease,
+      background 0.15s ease;
+  }
+
+  .question-answer:hover {
+    transform: translateY(-1px);
+    border-color: #c97b63;
+  }
+
+  .question-answer.selected {
+    border-color: #c97b63;
+    background: #faf7f2;
+  }
+
+  .question-answer.correct {
+    background: #ecfdf5;
+    border-color: #10b981;
+    color: #065f46;
+  }
+
+  .question-answer.wrong {
+    background: #fef2f2;
+    border-color: #ef4444;
+    color: #991b1b;
+  }
+
+  .question-answer.disabled {
+    pointer-events: none;
+  }
+
+  .question-check-button {
+    width: 100%;
+    margin-top: 0.75rem;
+    border: 0;
+    border-radius: 14px;
+    padding: 0.95rem 1rem;
+    background: #18324a;
+    color: #ffffff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+  }
+</style>
+
+<script>
+  const boxes = document.querySelectorAll('.question-box');
+
+  boxes.forEach((box) => {
+    const answers = box.querySelectorAll('.question-answer');
+    const checkButton = box.querySelector('.question-check-button');
+
+    let selectedAnswer = null;
+
+    answers.forEach((answer) => {
+      answer.addEventListener('click', () => {
+        answers.forEach((item) => {
+          item.classList.remove('selected');
+        });
+
+        selectedAnswer = answer;
+        answer.classList.add('selected');
+      });
+    });
+
+    checkButton?.addEventListener('click', () => {
+      if (!selectedAnswer) {
+        alert('Bitte zuerst eine Antwort auswählen.');
+        return;
+      }
+
+      answers.forEach((answer) => {
+        answer.classList.add('disabled');
+
+        if (answer.dataset.correct === 'true') {
+          answer.classList.add('correct');
+        }
+      });
+
+      if (selectedAnswer.dataset.correct === 'true') {
+        selectedAnswer.classList.add('correct');
+      } else {
+        selectedAnswer.classList.add('wrong');
+      }
+
+      checkButton.disabled = true;
+      checkButton.textContent = 'Antwort geprüft';
+    });
+  });
+</script>
