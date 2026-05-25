@@ -21,7 +21,10 @@ if (!mainEntry) {
 
 const isPremium = mainEntry.data.premium === true;
 
-const hasPremiumCookie = Astro.cookies.get("praxismaik_premium")?.value === "1";
+const premiumCookieValue = Astro.cookies.get("praxismaik_premium")?.value;
+
+const hasPremiumCookie =
+  premiumCookieValue === "1" || premiumCookieValue === "true";
 
 const isLocalhost =
   Astro.url.hostname === "localhost" || Astro.url.hostname === "127.0.0.1";
