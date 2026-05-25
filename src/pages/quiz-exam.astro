@@ -13,8 +13,10 @@ const isLocalhost =
 const devUnlock =
   Astro.url.searchParams.get("freischalten") === "1" && isLocalhost;
 
+const premiumCookieValue = Astro.cookies.get("praxismaik_premium")?.value;
+
 const hasPremiumCookie =
-  Astro.cookies.get("praxismaik_premium")?.value === "1";
+  premiumCookieValue === "1" || premiumCookieValue === "true";
 const examQuestions = examEntries.map((entry) => ({
   id: entry.id,
   slug: entry.slug,
@@ -111,7 +113,7 @@ const hasEnoughForExam = availableModes.length > 0;
             Simuliere deine Abschlussprüfung unter Zeitdruck. Die Auswertung erscheint erst am Ende.
           </p>
 
-          {!devUnlock && premiumQuestionCount > 0 && (
+          {!devUnlock && !hasPremiumCookie && premiumQuestionCount > 0 && (
             <div class="notice-box">
               Kostenlos sichtbar: {freeQuestionCount} Frage{freeQuestionCount === 1 ? "" : "n"}.
               Premium-Fragen bleiben gesperrt.
