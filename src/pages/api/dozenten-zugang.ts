@@ -1,8 +1,7 @@
 export const prerender = false;
 
-export async function POST({ request, cookies, redirect }: any) {
-  const formData = await request.formData();
-  const code = String(formData.get("code") || "").trim();
+export async function GET({ url, cookies, redirect }: any) {
+  const code = String(url.searchParams.get("code") || "").trim();
 
   const validCode = import.meta.env.DOZENTEN_CODE;
 
