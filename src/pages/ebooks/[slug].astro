@@ -57,52 +57,95 @@ const renderedChapters = await Promise.all(
 
 <BaseLayout title={mainEntry.data.title} description={mainEntry.data.beschreibung}>
   <article class="ebook">
-    <header class="ebook-header">
-      <p class="ebook-kicker">
-        {isPremium ? "Premium E-Book" : "E-Book"}
+   <header class="ebook-header">
+  <p class="ebook-kicker">
+    {isPremium ? "Premium E-Book" : "E-Book"}
+  </p>
+
+  <h1>{mainEntry.data.title}</h1>
+
+  {mainEntry.data.beschreibung && (
+    <p class="ebook-description">{mainEntry.data.beschreibung}</p>
+  )}
+
+  {mainEntry.data.tags?.length > 0 && (
+    <ul class="ebook-tags">
+      {mainEntry.data.tags.map((tag) => <li>{tag}</li>)}
+    </ul>
+  )}
+
+  {devUnlock && (
+    <div class="dev-box">
+      Testmodus aktiv, Premium-Inhalt lokal freigeschaltet.
+    </div>
+  )}
+</header>
+
+<section class="ebook-product-box">
+  <div class="ebook-stats-grid">
+    <div>
+      <strong>{renderedChapters.length}</strong>
+      <span>Kapitel</span>
+    </div>
+
+    <div>
+      <strong>Premium</strong>
+      <span>Zugriff</span>
+    </div>
+
+    <div>
+      <strong>Praxisnah</strong>
+      <span>Prüfungsfälle</span>
+    </div>
+  </div>
+
+  <div class="ebook-benefit-box">
+    <h2>Was dich in diesem E-Book erwartet</h2>
+
+    <ul>
+      <li>realistische Fallsituationen aus der Pflegepraxis</li>
+      <li>typische Prüfungsfragen mit Musterlösungen</li>
+      <li>pflegerische Beobachtungen und Maßnahmen</li>
+      <li>häufige Fehler in schriftlichen Prüfungen</li>
+      <li>kurze Praxis-Tipps zum besseren Verständnis</li>
+    </ul>
+  </div>
+
+  {!showFullContent && (
+    <div class="ebook-locked-note">
+      <strong>Premium-Inhalt</strong>
+      <p>
+        Du siehst aktuell nur die Einleitung. Die vollständigen Kapitel sind im Premiumbereich freigeschaltet.
       </p>
+      <a href="/premium" class="ebook-premium-link">
+        Premium freischalten
+      </a>
+    </div>
+  )}
+</section>
 
-      <h1>{mainEntry.data.title}</h1>
+<section class="ebook-intro">
+  <IntroContent />
+</section>
 
-      {mainEntry.data.beschreibung && (
-        <p class="ebook-description">{mainEntry.data.beschreibung}</p>
-      )}
-
-      {mainEntry.data.tags?.length > 0 && (
-        <ul class="ebook-tags">
-          {mainEntry.data.tags.map((tag) => <li>{tag}</li>)}
-        </ul>
-      )}
-
-      {devUnlock && (
-        <div class="dev-box">
-          Testmodus aktiv, Premium-Inhalt lokal freigeschaltet.
-        </div>
-      )}
-    </header>
-
-    <section class="ebook-intro">
-      <IntroContent />
-    </section>
-
-    <nav class="ebook-toc" aria-label="Inhaltsverzeichnis">
-      <h2>Inhaltsverzeichnis</h2>
-      <ol>
-        {renderedChapters.map((chapter, index) => (
-          <li>
-            {showFullContent ? (
-              <a href={`#kapitel-${index + 1}`}>
-                {chapter.data.title ?? `Kapitel ${index + 1}`}
-              </a>
-            ) : (
-              <span class="locked-chapter-title">
-                {chapter.data.title ?? `Kapitel ${index + 1}`}
-              </span>
-            )}
-          </li>
-        ))}
-      </ol>
-    </nav>
+<nav class="ebook-toc" aria-label="Inhaltsverzeichnis">
+  <h2>Inhaltsverzeichnis</h2>
+  <ol>
+    {renderedChapters.map((chapter, index) => (
+      <li>
+        {showFullContent ? (
+          <a href={`#kapitel-${index + 1}`}>
+            {chapter.data.title ?? `Kapitel ${index + 1}`}
+          </a>
+        ) : (
+          <span class="locked-chapter-title">
+            {chapter.data.title ?? `Kapitel ${index + 1}`}
+          </span>
+        )}
+      </li>
+    ))}
+  </ol>
+</nav>
 
     {showFullContent ? (
       <div class="ebook-content">
@@ -225,4 +268,90 @@ const renderedChapters = await Promise.all(
     border: 1px solid #e5e7eb;
     margin-bottom: 1.5rem;
   }
+
+  .ebook-product-box {
+  margin: 2rem 0 2.5rem;
+  display: grid;
+  gap: 1.2rem;
+}
+
+.ebook-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.ebook-stats-grid div {
+  padding: 1rem;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  text-align: center;
+}
+
+.ebook-stats-grid strong {
+  display: block;
+  font-size: 1.2rem;
+  color: #18324a;
+}
+
+.ebook-stats-grid span {
+  display: block;
+  margin-top: 0.25rem;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.ebook-benefit-box,
+.ebook-locked-note {
+  padding: 1.3rem;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+}
+
+.ebook-benefit-box h2 {
+  margin-top: 0;
+}
+
+.ebook-benefit-box ul {
+  margin-bottom: 0;
+  padding-left: 1.2rem;
+}
+
+.ebook-benefit-box li {
+  margin-bottom: 0.45rem;
+  line-height: 1.6;
+}
+
+.ebook-locked-note {
+  background: #fff7ed;
+  border-color: #fed7aa;
+}
+
+.ebook-locked-note p {
+  margin: 0.5rem 0 1rem;
+  color: #7c2d12;
+  line-height: 1.6;
+}
+
+.ebook-premium-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  background: #18324a;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .ebook-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
