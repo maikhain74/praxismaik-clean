@@ -1,5 +1,5 @@
 ---
-title: 50 Prüfungsfälle für die Pflegeausbildung
+title: 20 Prüfungsfälle für die Pflegeausbildung
 beschreibung: Realistische Fallsituationen mit Musterlösungen, Prüfungsfragen und typischen Fehlern für die generalistische Pflegeausbildung.
 premium: true
 tags:
@@ -8,12 +8,6 @@ tags:
   - Generalistische Pflegeausbildung
   - Examen
 ---
-
-# 50 Prüfungsfälle für die Pflegeausbildung
-
-Dieses E-Book enthält realistische Fallsituationen für die Vorbereitung auf die schriftliche Pflegeprüfung.
-
-Die Fälle orientieren sich an typischen Prüfungssituationen der generalistischen Pflegeausbildung.
 
 ## Inhalte
 
