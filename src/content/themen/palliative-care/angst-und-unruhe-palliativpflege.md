@@ -1,9 +1,7 @@
 ---
-title: "Übelkeit und Erbrechen in der Palliativpflege"
-description: "Ursachen, Symptome und pflegerische Maßnahmen bei Übelkeit und Erbrechen in der palliativen Versorgung."
+title: "Angst und Unruhe in der Palliativpflege"
+description: "Ursachen, Symptome und pflegerische Maßnahmen bei Angst und Unruhe in der palliativen Versorgung."
 ---
-
-# Übelkeit und Erbrechen in der Palliativpflege
 
 # Angst und Unruhe in der Palliativpflege
 
@@ -93,4 +91,3 @@ Eine sorgfältige Beobachtung und ganzheitliche Einschätzung sind deshalb beson
 Nicht jede Unruhe bedeutet Angst.
 
 Vor einer rein medikamentösen Behandlung sollten mögliche körperliche Ursachen erkannt und berücksichtigt werden.
-
