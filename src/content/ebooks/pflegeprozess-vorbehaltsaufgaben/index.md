@@ -1,6 +1,7 @@
 ---
 title: Pflegeprozess & Vorbehaltsaufgaben
 beschreibung: So planst, begründest und dokumentierst du Pflege rechtssicher, für Ausbildung, Praxis und Examen.
+cover: /images/ebooks/pflegeprozess-vorbehaltsaufgaben-cover.webp
 order: 3
 tags:
   - Pflegeprozess

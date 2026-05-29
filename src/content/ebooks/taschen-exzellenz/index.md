@@ -1,6 +1,7 @@
 ---
 title: Taschen-Exzellenz, Die 50 wichtigsten Werte und Medikamente für den Pflegealltag
-beschreibung: Kompakter Begleiter für die Pflegeausbildung, mit Laborwerten, Medikamenten, Red Flags und Infusionsgrundlagen für Alltag und Examen.
+beschreibung: Kompakter Begleiter für Pflegeausbildung, Station und Examen, mit Laborwerten, Medikamenten, Red Flags und Infusionsgrundlagen.
+cover: /images/ebooks/taschen-exzellenz-cover.webp
 order: 2
 tags:
   - Laborwerte
@@ -15,40 +16,50 @@ premium: true
 
 ## Dein Begleiter für den Pflegealltag
 
-Dieses E-Book ist kein Lehrbuch.
+Dieses Premium E-Book wurde dafür entwickelt, dass du in stressigen Situationen schneller reagieren und sicherer handeln kannst.
 
-Es ist dafür gemacht, dass du im Alltag sofort weißt:
+Kein unnötiger Ballast.
+Keine komplizierten Lehrbuchtexte.
 
-- Was ist wichtig?
-- Was ist gefährlich?
-- Was muss ich jetzt tun?
+Sondern genau das Wissen, das du im Pflegealltag wirklich brauchst.
 
-## Für wen ist dieses E-Book?
+## Was dich erwartet
+
+Du lernst:
+
+- die wichtigsten Laborwerte sicher einzuordnen
+- Medikamente und Wirkungen schneller zu verstehen
+- gefährliche Red Flags frühzeitig zu erkennen
+- typische Risiken im Stationsalltag besser einzuschätzen
+- Infusionen und Grundlagen sicher anzuwenden
+
+Zusätzlich bekommst du:
+
+- kompakte Übersichten
+- praxisnahe Erklärungen
+- prüfungsrelevante Inhalte
+- einfache Merkhilfen
+- schnelle Orientierung für Alltag und Examen
+
+## Für wen dieses E-Book geeignet ist
 
 Für dich, wenn du:
 
-- in der Ausbildung bist
-- auf Station schnell reagieren musst
-- dich im Examen sicher fühlen willst
+- in der Pflegeausbildung bist
+- dich im Stationsalltag sicherer fühlen möchtest
+- wichtige Werte schneller verstehen willst
+- dich auf Prüfungen vorbereitest
+- praktisches Wissen kompakt lernen möchtest
 
-## Was du hier bekommst
+## So nutzt du dieses E-Book richtig
 
-- die wichtigsten Laborwerte, ohne unnötigen Ballast
-- die wichtigsten Medikamente, praxisnah erklärt
-- Red Flags, die du sofort erkennen musst
-- einfache Infusions- und Berechnungsregeln
-- konkrete Anwendung für Alltag und Prüfung
+Nutze es wie ein Werkzeug für die Praxis:
 
-## Wie du dieses E-Book nutzt
-
-Nutze es nicht wie ein Buch.
-
-Nutze es wie ein Werkzeug:
-
-- kurz nachschlagen
+- schnell nachschlagen
 - Zusammenhänge verstehen
-- Sicherheit aufbauen
+- Wissen festigen
+- Sicherheit gewinnen
 
-> **Ziel**
+> Ziel:
 >
-> Du sollst nicht mehr lange überlegen müssen, sondern sicher handeln können.
+> Weniger Unsicherheit. Mehr Überblick. Sicherer handeln im Pflegealltag.

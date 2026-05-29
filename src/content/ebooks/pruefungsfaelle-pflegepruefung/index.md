@@ -1,6 +1,7 @@
 ---
 title: 20 Prüfungsfälle für die Pflegeausbildung
 beschreibung: Realistische Fallsituationen mit Musterlösungen, Prüfungsfragen und typischen Fehlern für die generalistische Pflegeausbildung.
+cover: /images/ebooks/pruefungsfaelle-cover.webp
 premium: true
 tags:
   - Pflegeprüfung

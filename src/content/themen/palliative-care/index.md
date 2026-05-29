@@ -55,6 +55,13 @@ Dazu gehören zum Beispiel:
 
 Die frühzeitige Symptomkontrolle ist ein wichtiger Bestandteil der palliativen Pflege.
 
+## Weitere Themen zur Palliative Care
+
+- [Dyspnoe in der Palliativpflege](/themen/palliative-care/dyspnoe-palliativpflege/)
+- [Rasselatmung in der Palliativpflege](/themen/palliative-care/rasselatmung-palliativpflege/)
+- [Angst und Unruhe in der Palliativpflege](/themen/palliative-care/angst-und-unruhe-palliativpflege/)
+- [Übelkeit und Erbrechen in der Palliativpflege](/themen/palliative-care/uebelkeit-und-erbrechen-in-der-palliativpflege/)
+
 ---
 
 ## Schmerzmanagement in der Palliative Care

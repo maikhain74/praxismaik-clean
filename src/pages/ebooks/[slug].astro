@@ -7,6 +7,13 @@ import PremiumGate from "../../components/PremiumGate.astro";
 
 const slug = Astro.params.slug;
 
+const ebookCovers: Record<string, string> = {
+  "pruefungsfaelle-pflegepruefung": "/images/ebooks/pruefungsfaelle-cover.webp",
+  "pflegeprozess-vorbehaltsaufgaben": "/images/ebooks/pflegeprozess-vorbehaltsaufgaben-cover.webp",
+  "pflegeprozess": "/images/ebooks/pflegeprozess-pflegeplanung-pruefung-cover.webp",
+  "taschen-exzellenz": "/images/ebooks/taschen-exzellenz-cover.webp",
+};
+
 if (!slug) {
   throw new Error("E-Book nicht gefunden: Kein Slug vorhanden.");
 }
@@ -57,29 +64,37 @@ const renderedChapters = await Promise.all(
 
 <BaseLayout title={mainEntry.data.title} description={mainEntry.data.beschreibung}>
   <article class="ebook">
-   <header class="ebook-header">
-  <p class="ebook-kicker">
-    {isPremium ? "Premium E-Book" : "E-Book"}
-  </p>
+    <header class="ebook-header">
+      <p class="ebook-kicker">
+        {isPremium ? "Premium E-Book" : "E-Book"}
+      </p>
 
-  <h1>{mainEntry.data.title}</h1>
+      <h1>{mainEntry.data.title}</h1>
 
-  {mainEntry.data.beschreibung && (
-    <p class="ebook-description">{mainEntry.data.beschreibung}</p>
-  )}
+     {ebookCovers[slug] && (
+  <img
+    src={ebookCovers[slug]}
+    alt={mainEntry.data.title}
+    class="ebook-cover"
+  />
+)}
 
-  {mainEntry.data.tags?.length > 0 && (
-    <ul class="ebook-tags">
-      {mainEntry.data.tags.map((tag) => <li>{tag}</li>)}
-    </ul>
-  )}
+      {mainEntry.data.beschreibung && (
+        <p class="ebook-description">{mainEntry.data.beschreibung}</p>
+      )}
 
-  {devUnlock && (
-    <div class="dev-box">
-      Testmodus aktiv, Premium-Inhalt lokal freigeschaltet.
-    </div>
-  )}
-</header>
+      {mainEntry.data.tags?.length > 0 && (
+        <ul class="ebook-tags">
+          {mainEntry.data.tags.map((tag) => <li>{tag}</li>)}
+        </ul>
+      )}
+
+      {devUnlock && (
+        <div class="dev-box">
+          Testmodus aktiv, Premium-Inhalt lokal freigeschaltet.
+        </div>
+      )}
+    </header>
 
 <section class="ebook-product-box">
   <div class="ebook-stats-grid">
@@ -353,5 +368,13 @@ const renderedChapters = await Promise.all(
   .ebook-stats-grid {
     grid-template-columns: 1fr;
   }
+}
+.ebook-cover {
+  width: 100%;
+  max-width: 680px;
+  display: block;
+  margin: 0 auto 2rem;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.12);
 }
 </style>

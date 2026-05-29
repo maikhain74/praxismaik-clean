@@ -2,9 +2,11 @@ import { defineCollection, z } from 'astro:content';
 
 const baseSchema = z.object({
   title: z.string(),
-  beschreibung: z.string().optional(),
+  description: z.string().optional(),
+  cover: z.string().optional(),
   tags: z.array(z.string()).default([]),
   reihenfolge: z.number().optional(),
+  order: z.number().optional(),
   premium: z.boolean().default(false),
   preview: z.string().optional().default(''),
 });
