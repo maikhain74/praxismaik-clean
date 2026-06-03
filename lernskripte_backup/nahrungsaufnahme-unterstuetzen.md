@@ -154,7 +154,7 @@ Typische Prüfungsfehler:
 - Essen nur hinstellen  
 - Ursachen nicht erkennen  
 - Dysphagie übersehen  
-- falsche Lagerung (keine Oberkörperhochlagerung)  
+- falsche Positionierung (keine Oberkörperhochlagerung)  
 - zu schnelles Anreichen  
 - keine Beobachtung  
 - keine Begründung  

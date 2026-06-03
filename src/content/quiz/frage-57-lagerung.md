@@ -1,8 +1,8 @@
 ---
 
-question: "Warum sind regelmäßige Lagerungswechsel wichtig?"
+question: "Warum sind regelmäßige Positionierungswechsel wichtig?"
 
-answer: "Regelmäßige Lagerungswechsel entlasten gefährdete Körperstellen und verbessern die Durchblutung des Gewebes."
+answer: "Regelmäßige Positionierungswechsel entlasten gefährdete Körperstellen und verbessern die Durchblutung des Gewebes."
 
 topic: "dekubitus"
 

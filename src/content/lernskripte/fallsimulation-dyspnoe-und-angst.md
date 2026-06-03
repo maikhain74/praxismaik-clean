@@ -5,7 +5,7 @@ bereich: atemwegserkrankungen
 topic: atemwegserkrankungen
 reihenfolge: 8
 premium: true
-tags: [fallsimulation, dyspnoe, angst, atemnot, lagerung, pflege, pruefung]
+tags: [fallsimulation, dyspnoe, angst, atemnot, postionierung, pflege, pruefung]
 preview: "In dieser Fallsimulation trainierst du professionelles Handeln bei akuter Atemnot und Angst."
 ---
 
@@ -171,7 +171,7 @@ Professionelle Pflege bedeutet hier:
 # 🔗 Verknüpfung
 
 - passt zu: Dyspnoe professionell begleiten
-- passt zu: Atemerleichternde Lagerungen
+- passt zu: Atemerleichternde Positionierungen
 - passt zu: Angststörungen verstehen
 - passt zu: Professionelle Kommunikation
 - nächstes Training: Fallsimulation Atemdepression

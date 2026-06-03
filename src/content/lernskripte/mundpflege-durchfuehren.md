@@ -52,14 +52,16 @@ Zur Mundpflege gehören:
 
 ---
 
-### Wichtige Beobachtungen
+### Wichtige Beobachtungsschwerpunkte:
 
-- trockene Schleimhäute  
-- Beläge im Mund  
-- Entzündungen  
-- Mundgeruch  
-- Schmerzen  
-- Schluckprobleme  
+- Lippen
+- Mundschleimhaut
+- Zunge
+- Zähne
+- Zahnfleisch
+- Beläge
+- Blutungen
+- Druckstellen
 
 Wichtig:
 

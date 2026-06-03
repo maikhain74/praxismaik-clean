@@ -62,7 +62,7 @@ sichere Ernährung und frühes Erkennen von Risiken.
 ## ❌ Typische Denkfehler
 
 - Nahrung zu schnell laufen lassen  
-- flache Lagerung  
+- flache Positionierung   
 - PEG-Stelle nicht beobachten  
 - Hygieneregeln missachten  
 - Beschwerden ignorieren  
@@ -184,7 +184,7 @@ Viele konzentrieren sich nur auf die Nahrung.
 
 Wichtiger ist aber:
 
-→ Lagerung  
+→ Positionierung   
 → Hygiene  
 → Beobachtung  
 → Verträglichkeit  

@@ -1,7 +1,7 @@
 ---
 question: Was beschreibt die 6-R-Regel in der Pflege?
 answers:
-  - Lagerung von Patienten
+  - Positionierung von Patienten
   - Sichere Medikamentengabe
   - Hygieneregeln
   - Dokumentationspflicht

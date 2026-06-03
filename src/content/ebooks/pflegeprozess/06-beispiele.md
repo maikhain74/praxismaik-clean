@@ -180,7 +180,7 @@ Haut bleibt intakt ohne Druckstellen
 
 #### Maßnahmen
 
-- regelmäßige Lagerung
+- regelmäßige Positionierung
 - Hautkontrolle
 - Druckentlastung
 

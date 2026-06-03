@@ -104,7 +104,7 @@ Wichtige Maßnahmen sind:
 
 - Druckentlastung gefährdeter Körperstellen
 
-- Verwendung geeigneter Lagerungshilfsmittel
+- Verwendung geeigneter Positionierungshilfsmittel
 
 - Hautbeobachtung
 

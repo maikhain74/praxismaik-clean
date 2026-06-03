@@ -110,7 +110,7 @@ Wenn Bewegung eingeschränkt ist
 → Maßnahmen anpassen (z. B. schonende Mobilisation)  
 
 Wenn Entlastung möglich ist  
-→ Lagerung oder Positionsveränderung durchführen  
+→ Positionierung oder Positionsveränderung durchführen  
 
 Wenn Ursache oder Wirkung unklar ist  
 → Beobachtung intensivieren  

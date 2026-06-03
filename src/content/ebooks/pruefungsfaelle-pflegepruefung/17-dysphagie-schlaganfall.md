@@ -118,7 +118,7 @@ Dadurch kann eine Aspirationspneumonie entstehen.
 # Typische Fehler in Prüfungen
 
 - Aspirationsgefahr vergessen
-- Lagerung nicht erwähnen
+- Positionierung nicht erwähnen
 - Kostformen übersehen
 - Angst des Patienten ignorieren
 - Beobachtung beim Essen nicht beschreiben

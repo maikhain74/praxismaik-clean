@@ -1,5 +1,5 @@
 ---
-question: Wofür wird die 30-Grad-Lagerung eingesetzt?
+question: Wofür wird die 30-Grad-Positionierung eingesetzt?
 answers:
   - Zur Schmerzverstärkung
   - Zur Dekubitusprophylaxe

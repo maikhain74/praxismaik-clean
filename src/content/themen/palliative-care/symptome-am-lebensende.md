@@ -88,7 +88,7 @@ Auch wenn Heilung nicht mehr möglich ist, bleibt die Linderung von Beschwerden 
 <div class="info-box info-box-praxis">
 <div class="info-box-title">🩺 Praxis-Tipp</div>
 
-Ruhige Ansprache, eine angenehme Lagerung, Mundpflege und eine reizärmere Umgebung können am Lebensende sehr entlastend wirken.
+Ruhige Ansprache, eine angenehme Positionierung, Mundpflege und eine reizärmere Umgebung können am Lebensende sehr entlastend wirken.
 
 </div>
 

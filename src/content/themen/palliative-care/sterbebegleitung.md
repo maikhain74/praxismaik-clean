@@ -54,7 +54,7 @@ In der Sterbebegleitung können kleine Maßnahmen eine große Wirkung haben.
 Zum Beispiel:
 
 - gute Mundpflege
-- angenehme Lagerung
+- angenehme Positionierung 
 - ruhige Umgebung
 - sanfte Berührungen
 - Anwesenheit und Zuhören

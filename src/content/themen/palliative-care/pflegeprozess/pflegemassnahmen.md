@@ -150,7 +150,7 @@ Pflegefachkraft.
 
 - Hilfe bei der Nahrungsaufnahme
 
-- regelmäßige Lagerung zur Dekubitusprophylaxe
+- regelmäßige Positionierung zur Dekubitusprophylaxe
 
 
 

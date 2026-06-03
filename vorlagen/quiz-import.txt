@@ -28,7 +28,7 @@ anatomie-37;Warum sind Knochen wichtig für Schutz der Organe?;Sie schützen emp
 anatomie-38;Warum sind Lungenbläschen wichtig?;Dort findet der Gasaustausch statt.;anatomie;mittel
 anatomie-39;Warum braucht der Körper Energie?;Für Bewegung und Stoffwechsel.;anatomie;leicht
 anatomie-40;Warum ist Blut wichtig für den Körper?;Es transportiert lebenswichtige Stoffe.;anatomie;leicht
-prophylaxe-21;Warum ist regelmäßige Lagerung wichtig?;Sie verhindert Druckschäden.;prophylaxen;leicht
+prophylaxe-21;Warum ist regelmäßige Positionierung wichtig?;Sie verhindert Druckschäden.;prophylaxen;leicht
 prophylaxe-22;Warum hilft Bewegung gegen Muskelabbau?;Muskeln werden aktiv genutzt.;prophylaxen;leicht
 prophylaxe-23;Warum ist Atemtraining wichtig bei Bettlägerigkeit?;Die Lunge wird besser belüftet.;prophylaxen;mittel
 prophylaxe-24;Warum ist ausreichendes Trinken wichtig gegen Verstopfung?;Flüssigkeit unterstützt Darmfunktion.;prophylaxen;leicht

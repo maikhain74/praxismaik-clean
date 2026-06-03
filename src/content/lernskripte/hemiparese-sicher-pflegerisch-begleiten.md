@@ -5,7 +5,7 @@ bereich: neurologie
 topic: neurologie
 reihenfolge: 9
 premium: true
-tags: [hemiparese, schlaganfall, mobilitaet, lagerung, neurologie, pflege, pruefung]
+tags: [hemiparese, schlaganfall, mobilitaet, positionierung, neurologie, pflege, pruefung]
 preview: "Eine Hemiparese beeinflusst Bewegung, Sicherheit und Selbstständigkeit. In dieser Vorschau lernst du die wichtigsten pflegerischen Grundlagen."
 ---
 
@@ -147,7 +147,7 @@ Bei Hemiparese:
 Zusätzlich:
 
 → sichere Transfers durchführen  
-→ korrekte Lagerung beachten  
+→ korrekte Positionierung beachten  
 → Sturzprophylaxe umsetzen  
 
 Wichtig:
@@ -234,7 +234,7 @@ Wichtiger ist aber:
 
 → Sicherheit  
 → Ressourcen  
-→ Lagerung  
+→ Positionierung   
 → Wahrnehmung  
 → Aktivierung  
 
@@ -309,7 +309,7 @@ Warum darf bei Hemiparese nicht am betroffenen Arm gezogen werden?
 
 - passt zu: Schlaganfallfolgen  
 - passt zu: Mobilität fördern  
-- passt zu: Lagerung  
+- passt zu: Positionierung   
 - passt zu: Kontrakturen  
 - nächstes Thema: Chronische Schmerzen verstehen und professionell begleiten  
 - Vertiefung: Bobath-Konzept Grundlagen

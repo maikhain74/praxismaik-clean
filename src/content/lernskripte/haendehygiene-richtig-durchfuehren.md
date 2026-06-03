@@ -81,6 +81,17 @@ Händehygiene umfasst Maßnahmen zur Reduktion und Vermeidung von Keimübertragu
 
 ---
 
+## Voraussetzungen für eine korrekte Händehygiene
+
+- Fingernägel kurz und sauber halten
+- kein Nagellack
+- keine künstlichen Fingernägel
+- kein Schmuck an Händen und Unterarmen
+- Hautschäden beobachten
+- regelmäßige Hautpflege durchführen
+
+---
+
 ## 🔍 Wann ist Händedesinfektion notwendig?
 
 Besonders wichtig:

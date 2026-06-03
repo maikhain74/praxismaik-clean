@@ -144,7 +144,7 @@ Pflegekräfte haben eine zentrale Rolle:
 - Unterstützung bei Medikamentengabe  
 - nicht medikamentöse Maßnahmen anwenden  
 
-(z. B. Lagerung, Ruhe, Wärme/Kälte, Zuwendung)
+(z. B. Positionierung, Ruhe, Wärme/Kälte, Zuwendung)
 
 ---
 

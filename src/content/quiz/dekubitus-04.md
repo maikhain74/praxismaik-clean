@@ -1,6 +1,6 @@
 ﻿---
 question: Welche Maßnahme hilft zur Dekubitusprophylaxe?
-answer: Regelmäßige Lagerung.
+answer: Regelmäßige Positionierung.
 topic: expertenstandards
 difficulty: leicht
 ---

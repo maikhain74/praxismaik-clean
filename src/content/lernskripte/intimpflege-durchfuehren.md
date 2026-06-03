@@ -161,7 +161,11 @@ Zum Beispiel:
 
 → schnell durchführen  
 → kaum erklären  
-→ unnötig viel freilegen  
+→ unnötig viel freilegen 
+→ falsche Waschrichtung
+→ unzureichende Reinigung
+→ mangelhaftes Abtrocknen
+→ fehlende Intimsphäre
 
 👉 Dadurch entstehen:
 

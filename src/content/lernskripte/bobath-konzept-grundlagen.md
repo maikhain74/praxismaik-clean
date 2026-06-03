@@ -120,7 +120,7 @@ ziehen, reißen oder hektisch arbeiten.
 
 ---
 
-## 🔍 Lagerung nach Bobath
+## 🔍 Positionierung nach Bobath
 
 Ziele:
 
@@ -186,7 +186,7 @@ Zusätzlich:
 
 → ausreichend Zeit geben  
 → Bewegungen erklären  
-→ sichere Lagerung durchführen  
+→ sichere Positionierung durchführen  
 
 Wichtig:
 
@@ -315,6 +315,6 @@ Warum wird die betroffene Seite nach Bobath bewusst einbezogen?
 - passt zu: Hemiparese  
 - passt zu: Schlaganfallfolgen  
 - passt zu: Mobilität fördern  
-- passt zu: Lagerung  
+- passt zu: Positionierung   
 - nächstes Thema: Depression erkennen und professionell begleiten  
 - Vertiefung: Kinästhetik Grundlagen

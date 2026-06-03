@@ -263,7 +263,7 @@ Akuter Schmerz im Zusammenhang mit der Operation, erkennbar an Weinen, Unruhe un
 
 - Die Pflegefachperson beruhigt Jonas durch körperliche Nähe, ruhige Ansprache und altersgerechte Ablenkung, um Angst und Stress zu reduzieren und die postoperative Situation besser bewältigbar zu machen, während der gesamten Versorgung und besonders bei Pflegemaßnahmen.
 
-- Die Pflegefachperson sichert Magensonde, Drainage und Infusionszugang durch Beobachtung, kindgerechte Ablenkung und vorsichtige Lagerung, um ein unbeabsichtigtes Entfernen zu vermeiden, fortlaufend während des Aufenthalts.
+- Die Pflegefachperson sichert Magensonde, Drainage und Infusionszugang durch Beobachtung, kindgerechte Ablenkung und vorsichtige Positionierung, um ein unbeabsichtigtes Entfernen zu vermeiden, fortlaufend während des Aufenthalts.
 
 - Die Pflegefachperson bezieht die Mutter aktiv in die Versorgung ein, indem sie ihr erklärt, was beobachtet wird und wie sie ihr Kind beruhigen kann, um Sicherheit zu fördern und die Mutter als Ressource zu nutzen, während des gesamten Aufenthalts.
 

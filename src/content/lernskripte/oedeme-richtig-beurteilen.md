@@ -149,7 +149,7 @@ Zusätzlich:
 
 → auf Atemnot achten  
 → Hautpflege durchführen  
-→ Lagerung anpassen  
+→ Positionierung anpassen  
 → Verlauf dokumentieren  
 
 👉 Ziel:

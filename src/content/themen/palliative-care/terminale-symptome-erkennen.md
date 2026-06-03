@@ -57,7 +57,7 @@ Pflegekräfte unterstützen durch:
 - sorgfältige Beobachtung
 - Dokumentation von Veränderungen
 - regelmäßige Mundpflege
-- atemerleichternde Lagerung
+- atemerleichternde Positionierung 
 - ruhige Kommunikation
 - Orientierung vermitteln
 - Angehörige begleiten

@@ -124,7 +124,7 @@ Wenn Haut gerötet ist:
 Wenn Risiko hoch ist:
 
 → Maßnahmen kombinieren:
-- Lagerung  
+- Positionierung  
 - Bewegung  
 - Hautpflege  
 - Ernährung beachten  
@@ -168,5 +168,5 @@ Ein Patient liegt viel im Bett und zeigt eine Rötung am Kreuzbein. Was tun Sie?
 ## 🔗 Verknüpfung
 
 - passender Fall: Immobilität, Pflegeheim  
-- nächstes Thema: Lagerungstechniken  
+- nächstes Thema: Positionierungstechniken  
 - Vertiefung: Dekubitusstadien

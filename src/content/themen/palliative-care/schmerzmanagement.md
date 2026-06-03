@@ -55,7 +55,7 @@ Die Schmerztherapie wird individuell angepasst.
 Neben Medikamenten können auch pflegerische Maßnahmen helfen:
 
 - Ruhe schaffen
-- Lagerung anpassen
+- Positionierung anpassen
 - Wärme oder Kälte anwenden
 - Gespräche führen
 - Angst reduzieren

@@ -5,7 +5,7 @@ bereich: schmerz
 topic: schmerz
 reihenfolge: 2
 premium: true
-tags: [schmerztherapie, schmerz, entspannung, lagerung, beobachtung, pflege, pruefung]
+tags: [schmerztherapie, schmerz, entspannung, positionierung, beobachtung, pflege, pruefung]
 preview: "Schmerztherapie besteht nicht nur aus Medikamenten. In dieser Vorschau lernst du wichtige pflegerische Maßnahmen kennen."
 ---
 
@@ -90,7 +90,7 @@ Nichtmedikamentöse Schmerztherapie umfasst pflegerische Maßnahmen zur Schmerzl
 
 Mögliche Maßnahmen:
 
-- Lagerung  
+- Positionierung   
 - Ruhe  
 - Entspannung  
 - Wärme oder Kälte  
@@ -142,7 +142,7 @@ Achte besonders auf:
 Bei Schmerzen:
 
 → Schmerzen ernst nehmen  
-→ entlastende Lagerungen anbieten  
+→ entlastende Positionierungen anbieten  
 → Ruhe ermöglichen  
 → Reize reduzieren  
 → Maßnahmen beobachten  
@@ -198,7 +198,7 @@ Viele unterschätzen pflegerische Maßnahmen.
 
 Wichtiger ist oft:
 
-→ Lagerung  
+→ Positionierung   
 → Ruhe  
 → Sicherheit  
 → Entspannung  
@@ -248,7 +248,7 @@ Eine starke Antwort:
 
 ## 🎯 Prüfungsantwort (Goldstandard)
 
-„Ich nutze zusätzlich zu Medikamenten pflegerische Maßnahmen wie Lagerung, Ruhe und beruhigende Kommunikation, beobachte die Wirkung engmaschig und nehme Schmerzen ernst.“
+„Ich nutze zusätzlich zu Medikamenten pflegerische Maßnahmen wie Positionierung, Ruhe und beruhigende Kommunikation, beobachte die Wirkung engmaschig und nehme Schmerzen ernst.“
 
 ---
 
@@ -278,6 +278,6 @@ Warum sind nichtmedikamentöse Maßnahmen bei Schmerzen wichtig?
 - passt zu: Schmerzmanagement  
 - passt zu: Tumorschmerz verstehen  
 - passt zu: Schmerzassessment sicher anwenden  
-- passt zu: Lagerung professionell durchführen  
+- passt zu: Positionierung  professionell durchführen  
 - nächstes Thema: Schmerzassessment sicher anwenden  
 - Vertiefung: Ganzheitliches Schmerzmanagement

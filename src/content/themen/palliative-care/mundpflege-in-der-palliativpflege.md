@@ -79,6 +79,17 @@ Geeignete Maßnahmen sind:
 
 Die Maßnahmen sollten immer an die Bedürfnisse der betroffenen Person angepasst werden.
 
+## Wichtige Beobachtungsschwerpunkte:
+
+- Lippen
+- Mundschleimhaut
+- Zunge
+- Zähne
+- Zahnfleisch
+- Beläge
+- Blutungen
+- Druckstellen
+
 ## Mundpflege in der Sterbephase
 
 In der Sterbephase nimmt die Flüssigkeitsaufnahme häufig ab.

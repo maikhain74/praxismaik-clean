@@ -67,7 +67,7 @@ Atemwege freihalten und Komplikationen verhindern.
 - Husten ignorieren  
 - erschöpfte Patienten überfordern  
 - Flüssigkeit nicht beachten  
-- falsche Lagerung  
+- falsche Positionierung   
 - nur auf Sauerstoffsättigung achten  
 
 👉 Wichtig:
@@ -197,7 +197,7 @@ Bei Sekretproblemen gilt:
 
 → Bewegung unterstützt Sekretmobilisation  
 → Inhalation kann Sekret lösen  
-→ Lagerung beeinflusst die Atmung direkt  
+→ Positionierung beeinflusst die Atmung direkt  
 
 👉 Maßnahmen müssen kombiniert werden.
 

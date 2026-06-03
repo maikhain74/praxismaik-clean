@@ -37,7 +37,7 @@ src/content/lernskripte/kommunikation-in-der-pflege.md
 src/content/lernskripte/kommunikation-mit-angehoerigen.md
 src/content/lernskripte/kommunikation-mit-orientierungseingeschraenkten-pflegeempfaengern.md
 src/content/lernskripte/kontrakturen-vorbeugen-und-erkennen.md
-src/content/lernskripte/lagerung-richtig-durchfuehren-und-begruenden.md
+src/content/lernskripte/Positionierung-richtig-durchfuehren-und-begruenden.md
 src/content/lernskripte/mangelernaehrung-behandeln.md
 src/content/lernskripte/medikamente-feste-formen-richtig-verabreichen.md
 src/content/lernskripte/medikamente-fluessige-formen-richtig-verabreichen.md

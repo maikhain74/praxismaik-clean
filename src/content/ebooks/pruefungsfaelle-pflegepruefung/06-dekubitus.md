@@ -83,7 +83,7 @@ Pflegekräfte beobachten besonders:
 
 Wichtige Maßnahmen:
 
-- regelmäßige Lagerung
+- regelmäßige Positionierung
 - Druckentlastung
 - Mobilisation fördern
 - Hautpflege durchführen
@@ -110,7 +110,7 @@ Die Haut ist bereits geschädigt und muss entlastet werden.
 
 # Typische Fehler in Prüfungen
 
-- Lagerungsintervalle vergessen
+- Positionierungsintervalle vergessen
 - Hautbeobachtung nicht beschreiben
 - Mobilisation unterschätzen
 - Risikofaktoren nicht nennen

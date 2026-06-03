@@ -128,22 +128,21 @@ const seoDescription =
               )}
             </div>
 
-            <h3>{item.data.title}</h3>
-            <p>{item.data.beschreibung ?? "Kein Beschreibungstext vorhanden."}</p>
+           <h3>{item.data.title}</h3>
+<p>{item.data.preview ?? item.data.description ?? item.data.beschreibung ?? "Kein Beschreibungstext vorhanden."}</p>
+{isPremium ? (
+  <div class="premium-hint">
+    <strong>Nur Vorschau frei</strong>
+    <span>Kompletter Inhalt nur mit Premium</span>
+  </div>
+) : (
+  <div class="free-hint">
+    <strong>Direkt verfügbar</strong>
+    <span>Ohne Freischaltung lesbar</span>
+  </div>
+)}
 
-            {isPremium ? (
-              <div class="premium-hint">
-                <strong>Nur Vorschau frei</strong>
-                <span>Kompletter Inhalt nur mit Premium</span>
-              </div>
-            ) : (
-              <div class="free-hint">
-                <strong>Direkt verfügbar</strong>
-                <span>Ohne Freischaltung lesbar</span>
-              </div>
-            )}
-
-            <span class="topic-card-link-text">
+<span class="topic-card-link-text">
               {isPremium ? "Vorschau öffnen" : "Lernskript öffnen"}
             </span>
           </a>
@@ -183,9 +182,7 @@ const seoDescription =
             </div>
 
             <h3>{item.data.title}</h3>
-            <p>{item.data.beschreibung ?? "Kein Beschreibungstext vorhanden."}</p>
-
-            {isPremium ? (
+<p>{item.data.description ?? item.data.beschreibung ?? "Kein Beschreibungstext vorhanden."}</p>           {isPremium ? (
               <div class="premium-hint">
                 <strong>Die Lösung ist gesperrt</strong>
                 <span>Komplette Denkstruktur und Prüfungsantwort nur mit Premium</span>

@@ -115,7 +115,7 @@ Danach:
 Zum Schluss:
 
 15. Nichtmedikamentöse Schmerztherapie
-16. Lagerung bei Schmerzen
+16. Positionierung bei Schmerzen
 17. Kommunikation bei Schmerzen
 18. Ganzheitliches Schmerzmanagement
 

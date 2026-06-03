@@ -136,7 +136,7 @@ Bei Ödemen:
 → Mobilität fördern  
 → Flüssigkeit beobachten  
 → Gewicht kontrollieren  
-→ Lagerung anpassen  
+→ Positionierung anpassen  
 
 Zusätzlich:
 

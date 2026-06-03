@@ -1,12 +1,17 @@
 ---
-title: "Lagerung richtig durchführen und begründen"
-beschreibung: "Wie Lagerungen fachlich sinnvoll ausgewählt und an den Zustand des Patienten angepasst werden."
+title: "Positionierung richtig durchführen und begründen"
+beschreibung: "Wie Positionierungen fachlich sinnvoll ausgewählt und an den Zustand des Patienten angepasst werden."
 bereich: mobilitaet
 topic: mobilitaet
 reihenfolge: 5
 premium: true
-tags: [lagerung, mobilitaet, dekubitus, pflege, pruefung]
-preview: "Lagerungen müssen begründet und individuell angepasst werden. In dieser Vorschau lernst du, worauf es dabei ankommt."
+tags:
+  - positionierung
+  - mobilitaet
+  - dekubitus
+  - pflege
+  - pruefung
+preview: "Positionierungen müssen begründet und individuell angepasst werden. In dieser Vorschau lernst du, worauf es dabei ankommt."
 ---
 
 ## 🧠 Prüfungsrealität
@@ -24,15 +29,15 @@ Zusätzlich fällt auf:
 Lagerst du einfach „nach Schema“
 
 oder erkennst du:
-**dass Lagerungen immer individuell begründet werden müssen?**
+**dass Positionierungen immer individuell begründet werden müssen?**
 
 ---
 
 ## ⚠️ Warum das kritisch ist
 
-Viele Prüfungsfehler entstehen, weil Lagerung mechanisch durchgeführt wird.
+Viele Prüfungsfehler entstehen, weil Positionierung  mechanisch durchgeführt wird.
 
-Dabei beeinflusst Lagerung:
+Dabei beeinflusst Positionierung:
 
 → Druckbelastung  
 → Atmung  
@@ -42,7 +47,7 @@ Dabei beeinflusst Lagerung:
 → Mobilität  
 
 👉 Prüfungsregel:
-**Nicht jede Lagerung passt zu jedem Patienten.**
+**Nicht jede Positionierung passt zu jedem Patienten.**
 
 ---
 
@@ -52,9 +57,9 @@ Immer diese Struktur:
 
 1. Warum wird gelagert?  
 2. Welche Probleme bestehen?  
-3. Welche Lagerung passt zur Situation?  
+3. Welche Positionierung passt zur Situation?  
 4. Wie reagiert der Patient darauf?  
-5. Muss die Lagerung angepasst werden?  
+5. Muss die Positionierung angepasst werden?  
 
 👉 Ziel:
 nicht „lagern um des Lagerns willen“, sondern gezielt unterstützen.
@@ -63,20 +68,20 @@ nicht „lagern um des Lagerns willen“, sondern gezielt unterstützen.
 
 ## ❌ Typische Denkfehler
 
-- Lagerung nach Standard durchführen  
+- Positionierung nach Standard durchführen  
 - Schmerzen ignorieren  
 - Druckstellen nicht beachten  
 - Patienten unbequem lagern  
-- Lagerung nicht überprüfen  
+- Positionierung nicht überprüfen  
 
 👉 Wichtig:
-**Lagerung muss immer individuell angepasst werden.**
+**Positionierung muss immer individuell angepasst werden.**
 
 ---
 
 ## 📌 Definition (prüfungsrelevant)
 
-Lagerung umfasst gezielte Positionsveränderungen zur Unterstützung von Druckentlastung, Atmung, Wohlbefinden und Mobilität.
+Positionierung umfasst gezielte Positionsveränderungen zur Unterstützung von Druckentlastung, Atmung, Wohlbefinden und Mobilität.
 
 ---
 
@@ -103,7 +108,7 @@ sondern die Wirkung beobachten.
 
 Achte besonders auf:
 
-- Schmerzen bei Lagerung  
+- Schmerzen bei Positionierung   
 - Druckstellen  
 - Atemprobleme  
 - Unruhe  
@@ -111,30 +116,30 @@ Achte besonders auf:
 - Taubheitsgefühle  
 - zunehmende Immobilität  
 
-👉 Dann muss die Lagerung angepasst werden.
+👉 Dann muss die Positionierung angepasst werden.
 
 ---
 
 ## ⚙️ Was machst du konkret?
 
-Vor der Lagerung:
+Vor der Positionierung:
 
 → Zustand einschätzen  
 → Risiken erkennen  
-→ Ziel der Lagerung festlegen  
+→ Ziel der Positionierung festlegen  
 
-Während der Lagerung:
+Während der Positionierung:
 
 → Druck entlasten  
 → bequem und sicher lagern  
 → Patienten beobachten  
 
-Nach der Lagerung:
+Nach der Positionierung:
 
 → Wirkung kontrollieren  
 → Haut beobachten  
 → Beschwerden einschätzen  
-→ Lagerung anpassen  
+→ Positionierung anpassen  
 
 Wichtig:
 
@@ -143,7 +148,7 @@ Wichtig:
 → Patienten einbeziehen  
 
 👉 Ziel:
-Lagerung individuell und sinnvoll durchführen.
+Positionierung individuell und sinnvoll durchführen.
 
 ---
 
@@ -152,7 +157,7 @@ Lagerung individuell und sinnvoll durchführen.
 Prüfer wollen sehen:
 
 - erkennst du Risiken?
-- begründest du die Lagerung?
+- begründest du die Positionierung?
 - beobachtest du die Wirkung?
 - passt du Maßnahmen individuell an?
 - beziehst du den Patienten ein?
@@ -167,13 +172,13 @@ Schwache Antworten wirken schnell mechanisch.
 
 Zum Beispiel:
 
-→ „Ich mache eine 30°-Lagerung.“
+→ „Ich mache eine 30°-Positionierung.“
 
 👉 Das reicht nicht.
 
 Stärker ist:
 
-→ „Ich wähle die Lagerung passend zu Druckbelastung, Mobilität und Zustand des Patienten.“
+→ „Ich wähle die Positionierung passend zu Druckbelastung, Mobilität und Zustand des Patienten.“
 
 👉 Erst dadurch wird professionelles Denken sichtbar.
 
@@ -181,11 +186,11 @@ Stärker ist:
 
 ## ❗ Typischer Prüfungsfehler
 
-Viele konzentrieren sich nur auf die Lagerungsform.
+Viele konzentrieren sich nur auf die Positionierungsform.
 
 Wichtiger ist aber:
 
-→ Warum genau diese Lagerung?  
+→ Warum genau diese Positionierung?  
 → Welches Ziel wird verfolgt?  
 → Wie reagiert der Patient darauf?  
 
@@ -195,9 +200,9 @@ Wichtiger ist aber:
 
 ## 🗣️ Gute prüfungsrelevante Formulierungen
 
-- „Die Lagerung wird individuell angepasst.“
+- „Die Positionierung wird individuell angepasst.“
 - „Druckbelastungen werden reduziert.“
-- „Die Wirkung der Lagerung wird überprüft.“
+- „Die Wirkung der Positionierung wird überprüft.“
 - „Der Patient wird aktiv einbezogen.“
 
 👉 Kurz, klar und fachlich nachvollziehbar.
@@ -206,13 +211,13 @@ Wichtiger ist aber:
 
 ## 🎯 Prüfungsantwort (Goldstandard)
 
-„Ich wähle die Lagerung individuell passend zu Hautzustand, Mobilität und Beschwerden des Patienten und überprüfe anschließend die Wirkung.“
+„Ich wähle die Positionierung individuell passend zu Hautzustand, Mobilität und Beschwerden des Patienten und überprüfe anschließend die Wirkung.“
 
 ---
 
 ## 🧾 Merksatz
 
-> Gute Lagerung bedeutet nicht nur Umlagern, sondern gezielte Unterstützung des Patienten.
+> Gute Positionierung bedeutet nicht nur Umlagern, sondern gezielte Unterstützung des Patienten.
 
 ---
 
@@ -222,10 +227,10 @@ Wichtiger ist aber:
 Warum reicht es nicht aus, einen Patienten einfach regelmäßig umzulagern?
 
 **Typischer Fehler:**  
-„Weil man die richtige Lagerung wählen muss.“
+„Weil man die richtige Positionierung wählen muss.“
 
 **Richtige Denkweise:**  
-→ Lagerung braucht Ziel  
+→ Positionierung braucht Ziel  
 → Wirkung muss überprüft werden  
 → Zustand des Patienten entscheidet  
 → individuelle Anpassung notwendig

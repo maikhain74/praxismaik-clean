@@ -5,7 +5,7 @@ bereich: atmung
 topic: atmung
 reihenfolge: 7
 premium: true
-tags: [atmung, dyspnoe, copd, lagerung, pneumonie, pflege, pruefung]
+tags: [atmung, dyspnoe, copd, Positionierung , pneumonie, pflege, pruefung]
 preview: "Atemerleichternde Positionen können Atemnot deutlich reduzieren. In dieser Vorschau lernst du die wichtigsten prüfungsrelevanten Grundlagen."
 ---
 
@@ -24,13 +24,13 @@ Er wirkt:
 Bleibt der Patient flach im Bett liegen
 
 oder erkennst du:
-**dass die Lagerung die Atmung direkt beeinflusst?**
+**dass die Positionierung  die Atmung direkt beeinflusst?**
 
 ---
 
 ## ⚠️ Warum das kritisch ist
 
-Viele Prüfungsfehler entstehen, weil Lagerung unterschätzt wird.
+Viele Prüfungsfehler entstehen, weil Positionierung unterschätzt wird.
 
 Dabei kann eine falsche Position:
 
@@ -40,7 +40,7 @@ Dabei kann eine falsche Position:
 → Erschöpfung fördern  
 
 👉 Prüfungsregel:
-**Lagerung kann die Atmung sofort verbessern oder verschlechtern.**
+**Positionierung kann die Atmung sofort verbessern oder verschlechtern.**
 
 ---
 
@@ -61,7 +61,7 @@ Atmung erleichtern und Energie sparen.
 
 ## ❌ Typische Denkfehler
 
-- flache Lagerung bei Atemnot  
+- flache Positionierung bei Atemnot  
 - hektisches Umlagern  
 - Patienten unnötig belasten  
 - nur Sauerstoff im Blick haben  
@@ -75,7 +75,7 @@ Atmung erleichtern und Energie sparen.
 
 ## 📌 Definition (prüfungsrelevant)
 
-Atemerleichternde Positionen sind Lagerungen oder Körperhaltungen, die die Atemarbeit reduzieren und die Atmung unterstützen.
+Atemerleichternde Positionen sind Positionierungen oder Körperhaltungen, die die Atemarbeit reduzieren und die Atmung unterstützen.
 
 ---
 
@@ -131,7 +131,7 @@ Wirkung:
 
 ### I-Lagerung
 
-→ gerade Lagerung entlang der Wirbelsäule  
+→ gerade Positionierung entlang der Wirbelsäule  
 
 Wirkung:
 

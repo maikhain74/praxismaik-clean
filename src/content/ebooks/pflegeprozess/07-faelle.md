@@ -87,7 +87,7 @@ Die Haut bleibt intakt ohne Entwicklung eines Dekubitus innerhalb der nächsten 
 
 ### Maßnahmen
 
-- regelmäßige Lagerung nach Plan
+- regelmäßige Positionierung nach Plan
 - Verwendung druckentlastender Hilfsmittel
 - tägliche Hautkontrolle
 - Dokumentation der Hautveränderungen

@@ -103,7 +103,7 @@ Dann:
 ### Konsequenz
 
 Dann:
-- regelmäßige Lagerung  
+- regelmäßige Positionierungen  
 - Hautkontrolle  
 - Druckentlastung  
 

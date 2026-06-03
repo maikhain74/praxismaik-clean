@@ -40,7 +40,7 @@ In der Intensivpflege werden schwerkranke oder lebensbedrohlich erkrankte Mensch
 
 - Unterstützung bei Beatmung
 
-- Lagerung und Prophylaxen
+- Positionierung und Prophylaxen
 
 - Hygiene und Infektionsschutz
 

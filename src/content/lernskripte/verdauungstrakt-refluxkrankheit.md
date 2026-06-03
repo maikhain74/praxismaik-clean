@@ -36,7 +36,7 @@ Typische Fehler:
 
 - „nur Sodbrennen“  
 - keine Maßnahmen einleiten  
-- Lagerung nicht beachten  
+- Positionierung nicht beachten  
 
 👉 Problem:
 
@@ -70,7 +70,7 @@ Immer diese Struktur:
 ## ❌ Typische Denkfehler
 
 - Beschwerden nicht ernst nehmen  
-- keine Lagerung anpassen  
+- keine Positionierung anpassen  
 - Ernährung ignorieren  
 - nur dokumentieren  
 - keine Beratung  
@@ -138,7 +138,7 @@ Daher lagere ich den Patienten mit erhöhtem Oberkörper, beobachte die Beschwer
 
 ## 🧾 Merksatz
 
-> Reflux wird im Liegen schlimmer, Lagerung ist Therapie.
+> Reflux wird im Liegen schlimmer, Positionierung ist Therapie.
 
 ---
 

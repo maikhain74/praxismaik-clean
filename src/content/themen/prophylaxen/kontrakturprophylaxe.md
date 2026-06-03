@@ -59,7 +59,7 @@ Wichtige Maßnahmen sind:
 - aktive Bewegungsübungen (Patient bewegt selbst)
 - passive Bewegungsübungen (Pflege bewegt das Gelenk)
 - Mobilisation im Alltag (z. B. Aufsetzen, Aufstehen)
-- korrekte und physiologische Lagerung
+- korrekte und physiologische Positionierung 
 - Vermeidung von Schonhaltungen
 - Nutzung vorhandener Bewegungsressourcen
 

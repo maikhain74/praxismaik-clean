@@ -223,7 +223,7 @@ Beeinträchtigte Atmung im Zusammenhang mit COPD, erkennbar an Dyspnoe und erhö
 
 ### Pflegeinterventionen
 
-- atemerleichternde Lagerung  
+- atemerleichternde Positionierung   
 - Überwachung der Sauerstoffgabe  
 - Beobachtung von Atmung und Bewusstsein  
 

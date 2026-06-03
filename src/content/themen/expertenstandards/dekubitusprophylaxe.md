@@ -54,7 +54,7 @@ Wichtige Maßnahmen sind:
 - gefährdete Körperstellen kontrollieren (z. B. Fersen, Kreuzbein)
 - Mobilität fördern und Bewegungsanreize schaffen
 - regelmäßige Lageveränderung durchführen
-- geeignete Lagerungstechniken anwenden
+- geeignete Positionierungstechniken anwenden
 - druckentlastende Hilfsmittel einsetzen (z. B. spezielle Matratzen)
 - Haut sauber und trocken halten
 - auf ausreichende Ernährung und Flüssigkeitszufuhr achten

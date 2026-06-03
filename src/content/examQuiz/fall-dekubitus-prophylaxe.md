@@ -2,10 +2,10 @@
 question: Ein immobilisierter Patient liegt seit Stunden im Bett. Welche Maßnahme ist entscheidend?
 answers:
   - Flüssigkeit reduzieren
-  - Regelmäßige Umlagerung
+  - Regelmäßige Umpositionierung
   - Patient ruhig liegen lassen
   - Wärmflasche anwenden
-correctAnswer: Regelmäßige Umlagerung
+correctAnswer: Regelmäßige Umpositionierung
 topic: prophylaxe
 difficulty: mittel
 ---

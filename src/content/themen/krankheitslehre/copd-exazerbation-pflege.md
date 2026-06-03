@@ -1,6 +1,6 @@
 ---
 title: "COPD Exazerbation Pflege"
-beschreibung: "Pflegemaßnahmen bei COPD Exazerbation einfach erklärt. Symptome, Sofortmaßnahmen, Lagerung, Sauerstoffgabe und typische Prüfungsfragen."
+beschreibung: "Pflegemaßnahmen bei COPD Exazerbation einfach erklärt. Symptome, Sofortmaßnahmen, Positionierung, Sauerstoffgabe und typische Prüfungsfragen."
 category: "Krankheitslehre"
 tags:
   - COPD
@@ -61,11 +61,11 @@ Wichtige Maßnahmen sind:
 
 Hektik und unnötige Belastung sollten vermieden werden, da Angst die Atemnot zusätzlich verstärken kann.
 
-## Atemerleichternde Lagerungen
+## Atemerleichternde Positionierungen
 
 Atemerleichternde Positionen helfen dabei, die Atemhilfsmuskulatur besser einzusetzen.
 
-Geeignete Lagerungen sind:
+Geeignete Positionierungen sind:
 
 - Kutschersitz
 - Oberkörperhochlagerung
@@ -145,7 +145,7 @@ Diese Themen werden häufig in mündlichen und praktischen Prüfungen abgefragt.
 
 3. Warum hilft die Lippenbremse?
 
-4. Welche Lagerungen erleichtern die Atmung?
+4. Welche Positionierungen erleichtern die Atmung?
 
 5. Warum muss Sauerstoff bei COPD vorsichtig gegeben werden?
 

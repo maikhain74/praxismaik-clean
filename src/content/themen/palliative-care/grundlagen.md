@@ -72,7 +72,7 @@ In der palliativen Pflege sind kleine Maßnahmen oft besonders wichtig, zum Beis
 
 - gute Mundpflege
 - ruhige Ansprache
-- angenehme Lagerung
+- angenehme Positionierung 
 - Beobachtung von Beschwerden
 
 </div>

@@ -163,7 +163,7 @@ Warum?
 
 - Atemnot ist das dominante Symptom
 - sofortige Linderung hat Priorität
-- Lagerung wirkt direkt
+- Positionierung wirkt direkt
 
 👉 zuerst entlasten, dann alles andere
 
@@ -200,7 +200,7 @@ Warum die anderen Antworten falsch sind:
 
 5. Planen Sie vier Maßnahmen zur Linderung der Atemnot.
 
-6. Welche Bedeutung hat die Lagerung?
+6. Welche Bedeutung hat die Positionierung?
 
 7. Welche Rolle spielen Angehörige?
 
@@ -259,9 +259,9 @@ Beeinträchtigte Atmung im Zusammenhang mit fortgeschrittener Herzinsuffizienz, 
 
 ---
 
-### Lagerung
+### Positionierung 
 
-Die Lagerung verbessert die Atemmechanik, entlastet das Zwerchfell und reduziert die Atemarbeit.
+Die Positionierung verbessert die Atemmechanik, entlastet das Zwerchfell und reduziert die Atemarbeit.
 
 ---
 

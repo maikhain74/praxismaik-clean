@@ -65,7 +65,7 @@ Nahrung sicher aufnehmen und Aspiration verhindern.
 
 - Husten bagatellisieren  
 - zu schnell anreichen  
-- falsche Lagerung  
+- falsche Positionierung
 - große Portionen geben  
 - Patient beim Schlucken sprechen lassen  
 
@@ -167,7 +167,7 @@ Zum Beispiel:
 
 Stärker ist:
 
-→ „Ich erkenne das Aspirationsrisiko und passe Lagerung sowie Nahrungsaufnahme gezielt an.“
+→ „Ich erkenne das Aspirationsrisiko und passe Positionierung sowie Nahrungsaufnahme gezielt an.“
 
 👉 Erst dadurch wird professionelles Denken sichtbar.
 
@@ -230,7 +230,7 @@ Eine starke Antwort:
 
 ## 🎯 Prüfungsantwort (Goldstandard)
 
-„Ich erkenne Hinweise auf ein Aspirationsrisiko und passe Lagerung sowie Nahrungsaufnahme gezielt an, um eine Aspiration und mögliche Pneumonie zu verhindern.“
+„Ich erkenne Hinweise auf ein Aspirationsrisiko und passe Positionierung sowie Nahrungsaufnahme gezielt an, um eine Aspiration und mögliche Pneumonie zu verhindern.“
 
 ---
 

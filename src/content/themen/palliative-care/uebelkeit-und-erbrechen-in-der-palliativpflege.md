@@ -190,7 +190,7 @@ Ziele:
 
 ---
 
-## Lagerung
+## Positionierung 
 
 Hilfreich können sein:
 
@@ -251,7 +251,7 @@ Für Prüfungen wichtig:
 - Übelkeit und Erbrechen haben viele Ursachen.
 - Die Ursachenabklärung ist entscheidend.
 - Nicht-medikamentöse Maßnahmen spielen eine wichtige Rolle.
-- Mundpflege und Lagerung sind pflegerische Kernaufgaben.
+- Mundpflege und Positionierung sind pflegerische Kernaufgaben.
 - Angehörige benötigen Aufklärung und Unterstützung.
 
 ---

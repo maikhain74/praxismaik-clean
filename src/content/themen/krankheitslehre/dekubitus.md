@@ -142,8 +142,8 @@ Wichtige Aufgaben sind:
 
 ## Wichtige pflegerische Maßnahmen
 
-- regelmäßige Umlagerung
-- Druckentlastung (z. B. durch Lagerung)
+- regelmäßige Umpositionierung 
+- Druckentlastung (z. B. durch Positionierung)
 - Einsatz von Hilfsmitteln (z. B. Spezialmatratzen)
 - Förderung der Bewegung
 - Haut sauber und trocken halten

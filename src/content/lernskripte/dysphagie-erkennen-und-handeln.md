@@ -65,7 +65,7 @@ Immer strukturiert:
 
 - „Hat sich nur kurz verschluckt“  
 - weiter essen lassen trotz Husten  
-- falsche Lagerung  
+- falsche Positionierung   
 - keine Anpassung der Nahrung  
 - Risiko nicht erkennen  
 

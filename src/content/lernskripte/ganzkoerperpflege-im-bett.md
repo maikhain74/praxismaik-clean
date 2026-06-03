@@ -179,4 +179,4 @@ Ein Patient kann sich teilweise selbst waschen. Wie handeln Sie?
 
 - passender Fall: Immobilität, Dekubitus  
 - nächstes Thema: Teilkörperpflege  
-- Vertiefung: Lagerungstechniken
+- Vertiefung: Positionierungstechniken

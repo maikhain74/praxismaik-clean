@@ -38,9 +38,9 @@ Wichtige Inhalte sind:
 - Anpassung der Umgebung (z. B. sichere Wege, Haltegriffe)
 
 <div class="merkbox">
-<div class="merkbox-title">Merke: Mobilität bedeutet Aktivität, nicht nur Lagerung</div>
+<div class="merkbox-title">Merke: Mobilität bedeutet Aktivität, nicht nur Positionierung</div>
 
-Ziel ist nicht nur die richtige Lagerung, sondern vor allem die aktive Förderung von Bewegung und Selbstständigkeit.
+Ziel ist nicht nur die richtige Positionierung, sondern vor allem die aktive Förderung von Bewegung und Selbstständigkeit.
 
 </div>
 
@@ -82,7 +82,7 @@ In Prüfungen zählt vor allem:
 - Risiken der Immobilität benennen
 - Maßnahmen zur Mobilitätsförderung darstellen
 - sichere Transfers beschreiben
-- Unterschied zwischen Lagerung und Mobilisation verstehen
+- Unterschied zwischen Positionierung und Mobilisation verstehen
 
 Typische Prüfungsfragen:
 
