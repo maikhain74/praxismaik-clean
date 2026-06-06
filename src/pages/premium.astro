@@ -545,63 +545,54 @@ const premiumExamQuizCount = premiumExamQuiz.length;
     </p>
   </div>
 
-  <div class="premium-faq-grid">
-
-    <article class="premium-faq-card">
-      <h3>Ist Premium auch geeignet, wenn ich noch am Anfang der Ausbildung bin?</h3>
+  <div class="premium-faq-accordion">
+    <details class="premium-faq-item" open>
+      <summary>Ist Premium auch geeignet, wenn ich noch am Anfang der Ausbildung bin?</summary>
       <p>
         Ja. Die Inhalte sind so aufgebaut, dass du sie vom ersten Ausbildungsjahr
         bis zur Abschlussprüfung nutzen kannst.
       </p>
-    </article>
+    </details>
 
-    <article class="premium-faq-card">
-      <h3>Hilft Premium bei Pflegeplanung und Fallaufgaben?</h3>
+    <details class="premium-faq-item">
+      <summary>Hilft Premium bei Pflegeplanung und Fallaufgaben?</summary>
       <p>
         Genau dafür wurde Premium entwickelt. Der Fokus liegt auf Pflegeprozess,
         Prioritäten, Begründungen und typischen Prüfungssituationen.
       </p>
-    </article>
+    </details>
 
-    <article class="premium-faq-card">
-      <h3>Muss ich alles durcharbeiten?</h3>
+    <details class="premium-faq-item">
+      <summary>Muss ich alles durcharbeiten?</summary>
       <p>
         Nein. Du kannst gezielt einzelne Themen, Lernskripte, E-Books oder
         Prüfungsfälle nutzen und dort einsteigen, wo du gerade Unterstützung brauchst.
       </p>
-    </article>
+    </details>
 
-    <article class="premium-faq-card">
-      <h3>Ist Premium nur für Prüfungen gedacht?</h3>
+    <details class="premium-faq-item">
+      <summary>Ist Premium nur für Prüfungen gedacht?</summary>
       <p>
         Nein. Viele Inhalte helfen auch im Praxiseinsatz, bei Pflegeplanung,
         Medikamentenwissen und dem Verständnis pflegerischer Zusammenhänge.
       </p>
-    </article>
+    </details>
 
-    <article class="premium-faq-card">
-      <h3>Warum kostet Premium nur 39 €?</h3>
+    <details class="premium-faq-item">
+      <summary>Warum kostet Premium nur 39 €?</summary>
       <p>
         Weil du einmal zahlst und dauerhaft Zugriff erhältst. Es gibt kein Abo
         und keine zusätzlichen Kosten.
       </p>
-    </article>
+    </details>
 
-    <article class="premium-faq-card">
-      <h3>Kann ich sofort starten?</h3>
-      <p>
-        Ja. Nach der Freischaltung kannst du direkt auf alle Premium-Inhalte zugreifen.
-      </p>
-    </article>
-
-    <article class="premium-faq-card">
-      <h3>Was bekomme ich konkret?</h3>
+    <details class="premium-faq-item">
+      <summary>Was bekomme ich konkret?</summary>
       <p>
         5 Premium-E-Books, 240 Lernskripte, 45 Prüfungsfälle und 61 Examensfragen
         in einem dauerhaften Zugang.
       </p>
-    </article>
-
+    </details>
   </div>
 </section>
 
@@ -1457,5 +1448,55 @@ const premiumExamQuizCount = premiumExamQuiz.length;
   body {
     padding-bottom: 90px;
   }
+}
+
+.premium-faq-accordion {
+  display: grid;
+  gap: 0.8rem;
+  max-width: 900px;
+}
+
+.premium-faq-item {
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  overflow: hidden;
+}
+
+.premium-faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  padding: 1.2rem 3.2rem 1.2rem 1.3rem;
+  font-weight: 800;
+  color: #18324a;
+  line-height: 1.45;
+}
+
+.premium-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.premium-faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #18324a;
+}
+
+.premium-faq-item[open] summary::after {
+  content: "−";
+}
+
+.premium-faq-item p {
+  margin: 0;
+  padding: 0 1.3rem 1.2rem;
+  color: #556270;
+  line-height: 1.7;
 }
 </style>
