@@ -130,16 +130,24 @@ const premiumExamQuizCount = premiumExamQuiz.length;
 </p>
 
       <div class="premium-hero-actions">
-        {hasPremiumCookie ? (
-          <a href="/premium-interesse" class="btn premium-main-btn">
-  Premium jetzt freischalten
-</a>
-        ) : (
-          <a href="/premium-interesse" class="btn premium-main-btn">
-  Premium für 39 € freischalten
-</a>
-        )}
-      </div>
+  {hasPremiumCookie ? (
+    <a
+      href="/premium-interesse"
+      class="btn premium-main-btn"
+      data-ga-event="premium_hero_cta_click"
+    >
+      Premium jetzt freischalten
+    </a>
+  ) : (
+    <a
+      href="/premium-interesse"
+      class="btn premium-main-btn"
+      data-ga-event="premium_hero_cta_click"
+    >
+      Premium für 39 € freischalten
+    </a>
+  )}
+</div>
 
 {!hasPremiumCookie && (
   <p class="premium-trust">
@@ -334,9 +342,13 @@ const premiumExamQuizCount = premiumExamQuiz.length;
         39 € einmalig
       </div>
 
-      <a href="/premium-interesse" class="btn premium-mid-button">
-        Premium jetzt freischalten
-      </a>
+     <a
+  href="/premium-interesse"
+  class="btn premium-mid-button"
+  data-ga-event="premium_mid_cta_click"
+>
+  Premium jetzt freischalten
+</a>
 
       <span class="premium-mid-note">
         Sofort verfügbar nach der Freischaltung.
@@ -632,26 +644,30 @@ const premiumExamQuizCount = premiumExamQuiz.length;
       </div>
     </section>
 
-    {!hasPremiumCookie && (
+   {!hasPremiumCookie && (
   <section class="premium-section premium-final-cta">
-   <h2>Sicherer durch Ausbildung und Abschlussprüfung</h2>
+    <h2>Sicherer durch Ausbildung und Abschlussprüfung</h2>
 
-<p>
-  Premium hilft dir dabei, Fallsituationen besser zu verstehen,
-  Pflegeplanungen sicherer zu schreiben und in Prüfungen
-  strukturierter zu denken.
-</p>
+    <p>
+      Premium hilft dir dabei, Fallsituationen besser zu verstehen,
+      Pflegeplanungen sicherer zu schreiben und in Prüfungen
+      strukturierter zu denken.
+    </p>
 
-<p class="premium-final-benefit">
-  Einmal freischalten. Dauerhaft nutzen. Kein Abo.
-</p>
+    <p class="premium-final-benefit">
+      Einmal freischalten. Dauerhaft nutzen. Kein Abo.
+    </p>
 
     <div class="premium-final-price">
       39 € einmalig
       <span>kein Abo, keine laufenden Kosten</span>
     </div>
 
-    <a href="/premium-interesse" class="btn premium-buy-btn">
+    <a
+      href="/premium-interesse"
+      class="btn premium-buy-btn"
+      data-ga-event="premium_final_cta_click"
+    >
       Jetzt Premium freischalten
     </a>
   </section>
@@ -659,7 +675,11 @@ const premiumExamQuizCount = premiumExamQuiz.length;
 
 {!hasPremiumCookie && (
   <div class="premium-mobile-sticky-cta">
-    <a href="/premium-interesse" class="premium-mobile-sticky-cta__button">
+    <a
+      href="/premium-interesse"
+      class="premium-mobile-sticky-cta__button"
+      data-ga-event="premium_mobile_sticky_cta_click"
+    >
       Premium für 39 € freischalten
     </a>
   </div>

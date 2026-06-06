@@ -74,14 +74,45 @@ const navItems = [
     ></script>
 
     <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
+  window.dataLayer = window.dataLayer || [];
 
-      gtag('js', new Date());
-      gtag('config', 'G-56E225FCSC');
-    </script>
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  gtag("js", new Date());
+  gtag("config", "G-56E225FCSC");
+
+  window.trackPraxisMaikEvent = function (eventName, eventParams = {}) {
+    if (typeof gtag !== "function") {
+      return;
+    }
+
+    gtag("event", eventName, {
+      page_path: window.location.pathname,
+      ...eventParams,
+    });
+  };
+
+  document.addEventListener("click", function (event) {
+    const trackedElement = event.target.closest("[data-ga-event]");
+
+    if (!trackedElement) {
+      return;
+    }
+
+    const eventName = trackedElement.getAttribute("data-ga-event");
+
+    if (!eventName) {
+      return;
+    }
+
+    window.trackPraxisMaikEvent(eventName, {
+      link_url: trackedElement.getAttribute("href") || "",
+      link_text: trackedElement.textContent.trim(),
+    });
+  });
+</script>
 
     <!-- Structured Data -->
     <script type="application/ld+json" is:inline>
