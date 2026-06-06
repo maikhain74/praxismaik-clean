@@ -47,6 +47,18 @@ const examQuiz = defineCollection({
   }),
 });
 
+const praxisQuiz = defineCollection({
+  schema: z.object({
+    question: z.string(),
+    answers: z.array(z.string()).min(2),
+    correctAnswer: z.string(),
+    explanation: z.string().optional(),
+    topic: z.string(),
+    difficulty: z.enum(['leicht', 'mittel', 'schwer']),
+    premium: z.boolean().default(true),
+  }),
+});
+
 const faelle = defineCollection({
   schema: baseSchema,
 });
@@ -78,6 +90,7 @@ export const collections = {
   pruefung,
   ebooks,
   examQuiz,
+  praxisQuiz,
   faelle,
   quiz,
   vorlagen,

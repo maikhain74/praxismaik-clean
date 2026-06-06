@@ -1,0 +1,48 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const pruefungen = await getCollection("pruefung");
+
+const praxisFaelle = pruefungen
+  .filter((item) => item.data.topic === "praxisanleitung")
+  .sort((a, b) => (a.data.reihenfolge ?? 999) - (b.data.reihenfolge ?? 999));
+---
+
+<BaseLayout
+  title="Praxisanleiter-Fälle | PraxisMaik"
+  description="Prüfungsnahe Fallbeispiele für Praxisanleitende in der Pflegeausbildung."
+>
+  <section class="section">
+    <h1>Praxisanleiter-Fälle</h1>
+
+    <p class="page-intro">
+      Hier findest du typische Situationen aus der Praxisanleitung:
+      Feedbackgespräche, Prüfungsangst, Fehlerkultur, Konflikte und Bewertungsgespräche.
+    </p>
+
+    <div class="topic-grid">
+      {praxisFaelle.map((item) => (
+        <a class="topic-card topic-card-premium" href={`/pruefung/${item.slug}/`}>
+          <div class="topic-card-top">
+            <span class="card-badge card-badge-premium">🔒 Premium</span>
+
+            {typeof item.data.reihenfolge === "number" && (
+              <span class="card-step">Fall {item.data.reihenfolge}</span>
+            )}
+          </div>
+
+          <h3>{item.data.title}</h3>
+
+          <p>
+            {item.data.beschreibung ??
+              item.data.preview ??
+              "Kein Beschreibungstext vorhanden."}
+          </p>
+
+          <span class="topic-card-link-text">Fall öffnen</span>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

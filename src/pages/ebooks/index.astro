@@ -26,8 +26,8 @@ const sortedBooks = books.sort(
       <span class="ebooks-eyebrow">Premium-E-Books</span>
       <h1>E-Books</h1>
       <p class="ebooks-lead">
-        Hier findest du vertiefende E-Books für die Pflegeausbildung, praxisnah,
-        strukturiert und prüfungsorientiert aufgebaut.
+        Hier findest du vertiefende E-Books für die Pflegeausbildung,
+        praxisnah, strukturiert und prüfungsorientiert aufgebaut.
       </p>
     </header>
 
@@ -43,9 +43,21 @@ const sortedBooks = books.sort(
 
           return (
             <a class="ebook-card" href={`/ebooks/${slug}/`}>
+
+              {book.data.cover && (
+                <img
+                  class="ebook-cover"
+                  src={book.data.cover}
+                  alt={`Cover ${book.data.title}`}
+                  loading="lazy"
+                />
+              )}
+
               <div class="ebook-card-top">
                 {typeof book.data.order === "number" && (
-                  <span class="ebook-order">E-Book {book.data.order}</span>
+                  <span class="ebook-order">
+                    E-Book {book.data.order}
+                  </span>
                 )}
               </div>
 
@@ -57,7 +69,9 @@ const sortedBooks = books.sort(
                 <p>Kein Beschreibungstext vorhanden.</p>
               )}
 
-              <span class="ebook-link">E-Book öffnen</span>
+              <span class="ebook-link">
+                E-Book öffnen
+              </span>
             </a>
           );
         })}
@@ -139,6 +153,14 @@ const sortedBooks = books.sort(
   box-shadow: 0 16px 30px rgba(24, 50, 74, 0.08);
   border-color: #cfdceb;
   text-decoration: none;
+}
+
+.ebook-cover {
+  width: 100%;
+  max-height: 320px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 1rem;
 }
 
 .ebook-card-top {

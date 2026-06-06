@@ -1,0 +1,69 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const lernskripte = await getCollection("lernskripte");
+
+const praxisanleitung = lernskripte
+  .filter((item) => item.data.topic === "praxisanleitung")
+  .sort((a, b) => (a.data.reihenfolge ?? 999) - (b.data.reihenfolge ?? 999));
+---
+
+<BaseLayout
+  title="Grundlagen der Praxisanleitung | PraxisMaik"
+  description="Grundlagen der Praxisanleitung für Praxisanleitende und Auszubildende in der Pflege."
+>
+  <section class="section">
+    <h1>Grundlagen der Praxisanleitung</h1>
+
+    <p class="page-intro">
+      In diesem Bereich findest du die wichtigsten Grundlagen der Praxisanleitung.
+      Die Inhalte richten sich an Praxisanleitende, Pflegefachpersonen und Auszubildende,
+      die Anleitung professionell gestalten möchten.
+    </p>
+
+    <div class="topic-grid">
+      {praxisanleitung.map((item) => (
+        <a
+          class={`topic-card ${
+            item.data.premium
+              ? "topic-card-premium"
+              : "topic-card-free"
+          }`}
+          href={`/lernskripte/${item.slug}/`}
+        >
+          <div class="topic-card-top">
+            {item.data.premium ? (
+              <span class="card-badge card-badge-premium">
+                🔒 Premium
+              </span>
+            ) : (
+              <span class="card-badge card-badge-free">
+                Kostenlos
+              </span>
+            )}
+
+            {typeof item.data.reihenfolge === "number" && (
+              <span class="card-step">
+                Modul {item.data.reihenfolge}
+              </span>
+            )}
+          </div>
+
+          <h3>{item.data.title}</h3>
+
+          <p>
+            {item.data.description ??
+              item.data.beschreibung ??
+              item.data.preview ??
+              "Kein Beschreibungstext vorhanden."}
+          </p>
+
+          <span class="topic-card-link-text">
+            Lernskript öffnen
+          </span>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
