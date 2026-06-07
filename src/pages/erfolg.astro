@@ -37,9 +37,22 @@ Astro.cookies.set("praxismaik_premium", "1", {
     </div>
   </section>
 
-  <script>
-    localStorage.setItem("praxismaik_premium", "1");
-  </script>
+ <script is:inline>
+  localStorage.setItem("praxismaik_premium", "1");
+
+  const purchaseAlreadyTracked = sessionStorage.getItem("praxismaik_purchase_tracked");
+
+  if (!purchaseAlreadyTracked && typeof window.trackPraxisMaikEvent === "function") {
+    window.trackPraxisMaikEvent("purchase_success", {
+      value: 39,
+      currency: "EUR",
+      product: "PraxisMaik Premium",
+      page_path: window.location.pathname,
+    });
+
+    sessionStorage.setItem("praxismaik_purchase_tracked", "1");
+  }
+</script>
 </BaseLayout>
 
 <style>
