@@ -190,6 +190,33 @@ Warum die anderen falsch sind:
 
 ---
 
+<details class="fall-block fall-fragen">
+  <summary>📝 Prüfungsfragen anzeigen</summary>
+
+## Prüfungsfragen
+
+1. Beschreiben Sie zwei zentrale pflegerische Probleme von Frau Keller.
+
+2. Welche Vitalzeichen und Symptome weisen auf eine Kreislaufinstabilität hin?
+
+3. Warum darf Frau Keller in dieser Situation nicht sofort mobilisiert werden?
+
+4. Formulieren Sie eine passende Pflegediagnose zur Kreislaufsituation.
+
+5. Nennen Sie zwei Pflegeziele zur sicheren Mobilisation.
+
+6. Planen Sie vier pflegerische Maßnahmen zur Stabilisierung und sicheren Versorgung.
+
+7. Welche Nebenwirkungen von Morphin müssen in der postoperativen Pflege besonders beachtet werden?
+
+8. Welche pflegerischen Aspekte sind bei einem zentralvenösen Katheter wichtig?
+
+9. Wie unterscheiden sich Kolostoma und Ileostoma?
+
+10. Wie können Sie Frau Keller im Umgang mit ihrer Stomaanlage psychisch unterstützen?
+
+</details>
+
 <details class="fall-block fall-loesung">
   <summary>🔍 Lösung anzeigen</summary>
 
