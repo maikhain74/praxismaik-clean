@@ -108,6 +108,110 @@ const description =
       </div>
     </section>
 
+<section class="section kompetenzbereiche-section">
+  <div class="section-headline">
+    <h2>Die 5 Kompetenzbereiche der generalistischen Pflegeausbildung</h2>
+
+    <p class="section-intro">
+      Die gesamte Pflegeausbildung und die staatliche Prüfung orientieren sich
+      an fünf Kompetenzbereichen. Wer diese versteht, erkennt schneller,
+      was Prüfer erwarten und welche Inhalte wirklich prüfungsrelevant sind.
+    </p>
+  </div>
+
+  <div class="kompetenz-grid">
+
+    <div class="kompetenz-card">
+      <h3>Kompetenzbereich I</h3>
+
+      <h4>Pflegeprozess und Pflegediagnostik</h4>
+
+      <p>
+        Hier lernst du pflegerische Probleme zu erkennen, Pflegeziele zu formulieren,
+        Maßnahmen zu planen und deren Wirksamkeit zu überprüfen.
+        Dieser Kompetenzbereich bildet die Grundlage professioneller Pflege.
+      </p>
+
+      <span class="kompetenz-merksatz">
+        Kannst du professionell pflegen?
+      </span>
+    </div>
+
+    <div class="kompetenz-card">
+      <h3>Kompetenzbereich II</h3>
+
+      <h4>Kommunikation und Beratung</h4>
+
+      <p>
+        Im Mittelpunkt stehen Gespräche mit Patienten, Angehörigen und Kollegen.
+        Dazu gehören Beratung, Anleitung, Kommunikation und der Umgang mit schwierigen Situationen.
+      </p>
+
+      <span class="kompetenz-merksatz">
+        Kannst du Menschen professionell begleiten?
+      </span>
+    </div>
+
+    <div class="kompetenz-card">
+      <h3>Kompetenzbereich III</h3>
+
+      <h4>Interprofessionelles Handeln</h4>
+
+      <p>
+        Pflege findet nie allein statt. Hier geht es um Zusammenarbeit,
+        Übergaben, Delegation, Entlassmanagement und die Abstimmung mit anderen Berufsgruppen.
+      </p>
+
+      <span class="kompetenz-merksatz">
+        Kannst du im Team handeln?
+      </span>
+    </div>
+
+    <div class="kompetenz-card">
+      <h3>Kompetenzbereich IV</h3>
+
+      <h4>Recht, Ethik und Qualität</h4>
+
+      <p>
+        Dieser Bereich beschäftigt sich mit rechtlichen Grundlagen,
+        ethischen Entscheidungen, Datenschutz, Schweigepflicht
+        und professioneller Qualitätssicherung.
+      </p>
+
+      <span class="kompetenz-merksatz">
+        Darfst du das überhaupt?
+      </span>
+    </div>
+
+    <div class="kompetenz-card">
+      <h3>Kompetenzbereich V</h3>
+
+      <h4>Reflexion und Weiterentwicklung</h4>
+
+      <p>
+        Pflegefachpersonen reflektieren ihr Handeln,
+        lernen aus Erfahrungen und entwickeln ihre beruflichen Kompetenzen kontinuierlich weiter.
+      </p>
+
+      <span class="kompetenz-merksatz">
+        Kannst du aus Erfahrungen lernen?
+      </span>
+    </div>
+
+  </div>
+
+  <div class="kompetenz-cta">
+    <p>
+      PraxisMaik verbindet alle Kompetenzbereiche mit Lernskripten,
+      Prüfungsfällen, Lernkarten und Quizfragen für die Abschlussprüfung.
+    </p>
+
+    <a href="/themen/" class="btn">
+      Passende Themen entdecken
+    </a>
+  </div>
+</section>
+
     <section class="section trust-section">
       <div class="section-headline">
         <h2>Was dich hier erwartet</h2>
@@ -1198,4 +1302,67 @@ komplette Prüfungsfälle und Quiztraining für deinen gesamten Ausbildungsweg.
   box-shadow: 0 16px 34px rgba(201, 123, 99, 0.35);
 }
 
+.kompetenzbereiche-section {
+  margin-top: 4rem;
+}
+
+.kompetenz-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.3rem;
+  margin-top: 1.5rem;
+}
+
+.kompetenz-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+}
+
+.kompetenz-card h3 {
+  margin: 0;
+  color: #9a3412;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.kompetenz-card h4 {
+  margin: 0.5rem 0 0.8rem;
+  color: #18324a;
+}
+
+.kompetenz-card p {
+  margin: 0;
+  line-height: 1.7;
+  color: #556270;
+}
+
+.kompetenz-merksatz {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  background: #fff4e8;
+  color: #9a3412;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.kompetenz-cta {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.kompetenz-cta p {
+  margin-bottom: 1rem;
+  color: #556270;
+}
+
+@media (max-width: 900px) {
+  .kompetenz-grid {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
