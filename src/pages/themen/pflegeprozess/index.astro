@@ -5,7 +5,9 @@ import { getCollection } from "astro:content";
 const themen = await getCollection("themen");
 
 const pflegeprozessThemen = themen
-  .filter((t) => t.slug.toLowerCase().startsWith("pflegeprozess/"))
+  .filter((t) =>
+    t.slug.toLowerCase().includes("/pflegeprozess/")
+  )
   .sort((a, b) => a.data.title.localeCompare(b.data.title, "de"));
 
 const topicDescriptions = {
@@ -100,15 +102,115 @@ const topicTypes = [
       </ul>
     </section>
 
+<section class="category-panel">
+  <h2>Das PESR-Schema einfach erklärt</h2>
+
+  <p class="category-intro">
+    Das PESR-Schema hilft dir dabei, Pflegeprobleme systematisch zu erkennen und fachlich korrekt zu formulieren.
+    Es wird in der Pflegeplanung verwendet, um Probleme, Ursachen, Symptome und Ressourcen übersichtlich
+    darzustellen. Dadurch können Pflegeziele und Maßnahmen gezielt geplant werden.
+  </p>
+
+  <div class="info-grid">
+    <article class="info-card">
+      <h3>P = Problem</h3>
+      <p>Welches pflegerische Problem liegt vor?</p>
+
+      <ul>
+        <li>Eingeschränkte Mobilität</li>
+        <li>Akuter Schmerz</li>
+        <li>Selbstpflege eingeschränkt</li>
+      </ul>
+    </article>
+
+    <article class="info-card">
+      <h3>E = Einflussfaktoren</h3>
+      <p>Warum besteht das Problem?</p>
+
+      <ul>
+        <li>Operation</li>
+        <li>Schmerzen</li>
+        <li>Schwäche</li>
+        <li>Angst</li>
+      </ul>
+    </article>
+
+    <article class="info-card">
+      <h3>S = Symptome</h3>
+      <p>Woran erkenne ich das Problem?</p>
+
+      <ul>
+        <li>Unsicherer Gang</li>
+        <li>NRS 8 von 10</li>
+        <li>Benötigt Unterstützung</li>
+      </ul>
+    </article>
+
+    <article class="info-card">
+      <h3>R = Ressourcen</h3>
+      <p>Was kann die Person noch selbst?</p>
+
+      <ul>
+        <li>Mobilisation mit Rollator</li>
+        <li>Kooperationsbereit</li>
+        <li>Motiviert</li>
+      </ul>
+    </article>
+  </div>
+
+  <div class="category-panel" style="margin-top:2rem;">
+    <h3>Prüfungsbeispiel</h3>
+
+    <p>
+      Frau Müller wurde vor zwei Tagen an der Hüfte operiert.
+      Sie benötigt Hilfe beim Aufstehen und klagt über starke Schmerzen.
+      Mit ihrem Rollator kann sie kurze Strecken gehen.
+    </p>
+
+    <p>
+      <strong>P:</strong> Eingeschränkte Mobilität<br />
+      <strong>E:</strong> Schmerzen nach Hüftoperation<br />
+      <strong>S:</strong> Unsicherer Gang, Hilfe beim Aufstehen, Schmerzangabe NRS 7<br />
+      <strong>R:</strong> Kann mit Rollator kurze Strecken gehen, motiviert zur Mitarbeit
+    </p>
+  </div>
+
+  <div class="category-panel" style="margin-top:2rem;">
+    <h3>Typische Prüfungsfehler</h3>
+
+    <ul class="learning-list">
+      <li>Ursachen und Symptome verwechseln.</li>
+      <li>Ressourcen vergessen.</li>
+      <li>Medizinische Diagnosen statt Pflegeprobleme formulieren.</li>
+      <li>Pflegediagnosen ohne Beobachtungen begründen.</li>
+      <li>PESR nicht vollständig darstellen.</li>
+    </ul>
+  </div>
+
+  <div class="category-panel" style="margin-top:2rem;">
+    <h3>Merksatz</h3>
+
+    <p>
+      Das PESR-Schema beantwortet vier Fragen:
+      <strong>Was ist das Problem?</strong>,
+      <strong>Warum besteht es?</strong>,
+      <strong>Woran erkenne ich es?</strong> und
+      <strong>Was kann die Person noch selbst?</strong>
+    </p>
+  </div>
+</section>
+
     <section class="category-panel">
       <div class="topics-head">
         <div>
           <p class="category-eyebrow">Übersicht</p>
-          <h2>Alle Pflegeprozess-Themen</h2>
+          <h2>Pflegeprozess Schritt für Schritt lernen</h2>
         </div>
 
         <span class="topic-count-badge">{pflegeprozessThemen.length} Themen</span>
       </div>
+
+<section class="pflegeprozess-info">
 
       <div class="topic-grid">
         {pflegeprozessThemen.map((topic, index) => (
@@ -348,4 +450,69 @@ const topicTypes = [
       min-height: auto;
     }
   }
+
+  .pflegeprozess-info {
+  margin-top: 2rem;
+}
+
+.pflegeprozess-info h2 {
+  margin-bottom: 1rem;
+}
+
+.pesr-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.pesr-card {
+  background: #fff;
+  border: 1px solid #e7e1d8;
+  border-radius: 18px;
+  padding: 1.5rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.pesr-card ul {
+  padding-left: 1.2rem;
+  margin-bottom: 0;
+}
+
+.pesr-card li {
+  line-height: 1.45;
+  margin-bottom: 0.4rem;
+}
+
+.pesr-card h3 {
+  margin-bottom: 0.75rem;
+}
+
+.pesr-example {
+  background: #f8fafc;
+  border-radius: 18px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.pesr-example-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.exam-tip {
+  background: #fff8ec;
+  border-left: 4px solid #c97b63;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 12px;
+}
+
+.info-card {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
 </style>
