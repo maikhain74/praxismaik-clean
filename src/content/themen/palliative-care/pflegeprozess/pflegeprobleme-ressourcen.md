@@ -1,105 +1,204 @@
 ---
-
 title: Pflegeprobleme und Ressourcen erkennen
-
 description: Analyse von Pflegeproblemen und vorhandenen Ressourcen im Pflegeprozess.
-
 level: grundlagen
-
 ---
-
-
 
 # Pflegeprobleme und Ressourcen erkennen
 
+Nachdem alle wichtigen Informationen gesammelt wurden, folgt im Pflegeprozess die Analyse der Situation.
 
+Dabei werden Pflegeprobleme und vorhandene Ressourcen erkannt und beschrieben.
 
-Nach der Informationssammlung werden die gesammelten Daten ausgewertet. Dabei werden Pflegeprobleme und vorhandene Ressourcen der pflegebedürftigen Person erkannt.
+Dieser Schritt ist besonders wichtig, weil auf seiner Grundlage Pflegeziele und Pflegemaßnahmen geplant werden.
 
+Wer Probleme und Ressourcen falsch einschätzt, wird auch die weiteren Schritte des Pflegeprozesses nicht korrekt durchführen können.
 
+## Was sind Pflegeprobleme?
 
-Dieser Schritt ist wichtig, um die Pflege gezielt planen zu können.
+Pflegeprobleme beschreiben Einschränkungen, Schwierigkeiten oder Risiken, die die pflegebedürftige Person betreffen.
 
+Sie zeigen auf, in welchen Bereichen Unterstützung notwendig ist.
 
+Pflegeprobleme können aktuell bestehen oder zukünftig entstehen.
 
----
+## Beispiele für Pflegeprobleme
 
-
-## Pflegeprobleme
-
-
-
-Pflegeprobleme beschreiben Einschränkungen oder Schwierigkeiten, die eine Person im Alltag oder in ihrer Gesundheit hat.
-
-
-
-Beispiele für Pflegeprobleme:
-
-
+### Körperliche Pflegeprobleme
 
 - eingeschränkte Mobilität
-
 - Schmerzen
-
-- Sturzgefahr
-
+- Atemnot
+- Dekubitusrisiko
+- Sturzrisiko
 - Probleme bei der Nahrungsaufnahme
 
-- Orientierungsprobleme
+### Psychische Pflegeprobleme
 
+- Angst
+- Unsicherheit
+- depressive Stimmung
+- Orientierungslosigkeit
 
+### Soziale Pflegeprobleme
 
-Pflegeprobleme können körperliche, psychische oder soziale Bereiche betreffen.
+- Isolation
+- fehlende Unterstützung
+- Kommunikationsprobleme
 
+## Aktuelle Probleme und Risiken
 
+Im Pflegeprozess wird zwischen bestehenden Problemen und Risiken unterschieden.
 
----
+### Bestehendes Problem
 
+Das Problem liegt bereits vor.
 
+Beispiel:
 
-## Ressourcen
+Herr Müller kann aufgrund starker Schmerzen nicht selbstständig aufstehen.
 
+### Risiko
 
+Das Problem besteht noch nicht, könnte aber entstehen.
 
-Ressourcen sind Fähigkeiten, Kräfte oder Möglichkeiten, die eine Person noch besitzt.
+Beispiel:
 
+Frau Schneider hat ein erhöhtes Sturzrisiko.
 
+## Was sind Ressourcen?
 
-Diese Fähigkeiten sollten in der Pflege gefördert und genutzt werden.
+Ressourcen sind Fähigkeiten, Stärken und Möglichkeiten, die eine Person weiterhin besitzt.
 
+Sie bilden die Grundlage für Selbstständigkeit und sollten in der Pflege gezielt gefördert werden.
 
+Professionelle Pflege konzentriert sich nicht nur auf Probleme, sondern auch auf vorhandene Fähigkeiten.
 
-Beispiele für Ressourcen:
+## Beispiele für Ressourcen
 
+### Körperliche Ressourcen
 
+- selbstständiges Essen
+- sichere Mobilisation mit Rollator
+- selbstständige Körperpflege
 
-- selbstständige Bewegung
-
-- vorhandene Alltagsfähigkeiten
-
-- soziale Kontakte
+### Psychische Ressourcen
 
 - Motivation zur Mitarbeit
+- Orientierung zu Zeit und Ort
+- gute Krankheitsbewältigung
 
+### Soziale Ressourcen
 
+- unterstützende Angehörige
+- Freundeskreis
+- stabiles soziales Umfeld
 
----
+## Warum sind Ressourcen so wichtig?
 
+Ressourcen helfen dabei:
 
+- Selbstständigkeit zu erhalten
+- Pflegebedürftigkeit zu reduzieren
+- Motivation zu fördern
+- Lebensqualität zu verbessern
 
-## Bedeutung für die Pflegeplanung
+Deshalb gilt:
 
+Nicht alles übernehmen, was die Person selbst noch leisten kann.
 
+## Beispiel aus der Praxis
 
-Das Erkennen von Problemen und Ressourcen ist wichtig, um realistische Pflegeziele festzulegen.
+### Fallsituation
 
+Frau Schneider wurde nach einer Hüftoperation auf die Station aufgenommen.
 
+Folgende Informationen wurden gesammelt:
 
-Dabei gilt:
+- Schmerzen NRS 7
+- unsicheres Gangbild
+- benötigt Hilfe beim Aufstehen
+- motiviert zur Mobilisation
+- kann selbstständig essen
 
+### Pflegeprobleme
 
+- eingeschränkte Mobilität
+- akuter Schmerz
+- erhöhtes Sturzrisiko
 
-- Probleme sollen reduziert werden.
+### Ressourcen
 
-- Ressourcen sollen erhalten und gefördert werden.
+- motiviert zur Mitarbeit
+- selbstständige Nahrungsaufnahme
+- gute Orientierung
 
+## Zusammenhang mit dem Pflegeprozess
+
+Die erkannten Probleme und Ressourcen bilden die Grundlage für die nächsten Schritte.
+
+Aus ihnen werden:
+
+- Pflegediagnosen
+- Pflegeziele
+- Pflegemaßnahmen
+
+abgeleitet.
+
+Deshalb ist eine sorgfältige Analyse besonders wichtig.
+
+## Typische Prüfungsfragen
+
+### Frage 1
+
+Was ist ein Pflegeproblem?
+
+**Antwort:**
+
+Ein Pflegeproblem beschreibt eine Einschränkung, Schwierigkeit oder ein Risiko, das pflegerische Unterstützung erforderlich macht.
+
+### Frage 2
+
+Was versteht man unter Ressourcen?
+
+**Antwort:**
+
+Ressourcen sind Fähigkeiten, Stärken und Möglichkeiten, die eine Person weiterhin besitzt und nutzen kann.
+
+### Frage 3
+
+Warum müssen Ressourcen berücksichtigt werden?
+
+**Antwort:**
+
+Weil sie die Selbstständigkeit fördern und wichtige Ansatzpunkte für die Pflegeplanung liefern.
+
+## Typische Fehler in Prüfungen
+
+- nur Probleme nennen
+- Ressourcen vergessen
+- Risiken mit Problemen verwechseln
+- medizinische Diagnosen statt Pflegeprobleme formulieren
+- Fähigkeiten der Person nicht berücksichtigen
+
+## Mini-Quiz
+
+### Welche Aussage beschreibt eine Ressource?
+
+A) Dekubitusrisiko
+
+B) Atemnot
+
+C) Kann selbstständig essen
+
+D) Akuter Schmerz
+
+### Lösung
+
+✅ C) Kann selbstständig essen
+
+Dies beschreibt eine vorhandene Fähigkeit und damit eine Ressource.
+
+## Merksatz
+
+**Pflegeprobleme zeigen, wobei Hilfe benötigt wird. Ressourcen zeigen, was die Person noch selbst kann.**

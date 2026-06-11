@@ -1,182 +1,208 @@
 ---
-
 title: Pflegemaßnahmen planen
-
 description: Planung geeigneter Pflegemaßnahmen im Pflegeprozess.
-
 level: grundlagen
-
 ---
-
-
 
 # Pflegemaßnahmen planen
 
+Nachdem Pflegeprobleme erkannt und Pflegeziele festgelegt wurden, müssen passende Pflegemaßnahmen geplant werden.
 
+Pflegemaßnahmen beschreiben konkret, was getan wird, um die vereinbarten Pflegeziele zu erreichen.
 
-Nach der Festlegung der Pflegeziele werden passende Pflegemaßnahmen geplant.
+Sie bilden die Grundlage für die tägliche pflegerische Arbeit und sorgen dafür, dass alle Beteiligten nach dem gleichen Plan handeln.
 
-
-
-Pflegemaßnahmen beschreiben konkret, was getan werden soll, damit die festgelegten Pflegeziele erreicht werden können.
-
-
-
----
-
-
-
-## Bedeutung der Pflegemaßnahmen
-
-
+## Warum sind Pflegemaßnahmen wichtig?
 
 Geplante Pflegemaßnahmen helfen dabei:
 
+- Pflegeziele systematisch zu erreichen
+- die Pflege zu strukturieren
+- die Versorgung nachvollziehbar zu machen
+- die Zusammenarbeit im Team zu verbessern
+- die Pflegequalität zu sichern
 
-
-- die Pflege strukturiert durchzuführen
-
-- alle Beteiligten zu orientieren
-
-- die Pflege nachvollziehbar zu dokumentieren
-
-- Pflegeziele gezielt umzusetzen
-
-
-
----
-
-
+Ohne konkrete Maßnahmen bleiben Pflegeziele reine Absichtserklärungen.
 
 ## Anforderungen an gute Pflegemaßnahmen
 
-
-
 Pflegemaßnahmen sollten:
 
-
-
 - konkret formuliert sein
-
-- verständlich sein
-
-- zur individuellen Situation der pflegebedürftigen Person passen
-
-- durchführbar sein
-
+- individuell auf die Person abgestimmt sein
+- realistisch durchführbar sein
+- nachvollziehbar dokumentiert werden
 - überprüfbar sein
 
+Unklare Formulierungen führen häufig zu Fehlern in der Versorgung.
 
+### Schlechte Formulierung
 
----
+"Patient mobilisieren"
 
+### Gute Formulierung
 
-
-## Inhalte einer Pflegemaßnahme
-
-
-
-Pflegemaßnahmen müssen klar dokumentiert sein, damit alle Pflegekräfte wissen, welche Pflege durchgeführt werden soll.
-
-Eine vollständige Pflegemaßnahme beschreibt:
-
-- welche Handlung durchgeführt wird
-- wie die Maßnahme durchgeführt wird
-- wann die Maßnahme durchgeführt wird
-- wie häufig sie durchgeführt wird
-- wer die Maßnahme durchführt
-
-
-
----
+"Herr Müller wird zweimal täglich mit Rollator und Unterstützung einer Pflegefachkraft über den Stationsflur mobilisiert."
 
 ## Planung nach den 5-W-Fragen
 
-
-Pflegemaßnahmen werden häufig mithilfe der sogenannten 5-W-Fragen geplant.  
-Diese helfen dabei, Maßnahmen eindeutig und nachvollziehbar zu formulieren.
-
-Die 5-W-Fragen sind:
+Pflegemaßnahmen werden häufig mithilfe der 5-W-Fragen geplant.
 
 ### Was?
+
 Welche Maßnahme wird durchgeführt?
-
-Beispiel:  
-Mobilisation der pflegebedürftigen Person.
-
-### Wie?
-Wie wird die Maßnahme durchgeführt?
-
-Beispiel:  
-Mobilisation mit Gehwagen und Unterstützung durch eine Pflegekraft.
-
-### Wann?
-Zu welchem Zeitpunkt wird die Maßnahme durchgeführt?
-
-Beispiel:  
-Morgens nach dem Frühstück.
-
-### Wie oft?
-Wie häufig wird die Maßnahme durchgeführt?
-
-Beispiel:  
-Zweimal täglich.
-
-### Wer?
-Wer führt die Maßnahme durch?
-
-Beispiel:  
-Pflegefachkraft.
-
-
-<div class="merkbox">
-  <div class="merkbox-title">Merksatz</div>
-  <p>Pflegemaßnahmen werden nach den 5-W-Fragen geplant: Was – Wie – Wann – Wie oft – Wer.</p>
-</div>
-
----
-
-
-
-## Beispiele für Pflegemaßnahmen
-
-
-
-- Unterstützung bei der Körperpflege
-
-- tägliche Mobilisation mit Begleitung
-
-- Schmerzbeobachtung und Dokumentation
-
-- Hilfe bei der Nahrungsaufnahme
-
-- regelmäßige Positionierung zur Dekubitusprophylaxe
-
-
-
----
-
-
-
-## Zusammenhang mit den Pflegezielen
-
-
-
-Pflegemaßnahmen müssen immer zu den vorher festgelegten Pflegezielen passen.
-
-
 
 Beispiel:
 
+Mobilisation der pflegebedürftigen Person.
 
+### Wie?
 
-Pflegeziel:  
+Wie wird die Maßnahme durchgeführt?
 
-Die Mobilität der pflegebedürftigen Person soll innerhalb von zwei Wochen verbessert werden.
+Beispiel:
 
+Mit Rollator und Unterstützung durch eine Pflegefachkraft.
 
+### Wann?
 
-Passende Pflegemaßnahme:  
+Wann wird die Maßnahme durchgeführt?
 
-Die Person wird zweimal täglich beim Gehen auf dem Flur unterstützt.
+Beispiel:
 
+Morgens nach dem Frühstück.
+
+### Wie oft?
+
+Wie häufig wird die Maßnahme durchgeführt?
+
+Beispiel:
+
+Zweimal täglich.
+
+### Wer?
+
+Wer führt die Maßnahme durch?
+
+Beispiel:
+
+Pflegefachkraft.
+
+## Merksatz
+
+**Jede Pflegemaßnahme sollte die 5-W-Fragen beantworten: Was, Wie, Wann, Wie oft und Wer.**
+
+## Zusammenhang mit Pflegezielen
+
+Pflegemaßnahmen müssen immer direkt auf ein Pflegeziel abgestimmt sein.
+
+### Pflegeziel
+
+Herr Müller kann innerhalb von sieben Tagen selbstständig vom Bett in den Sessel wechseln.
+
+### Passende Pflegemaßnahmen
+
+- tägliches Transfertraining
+- Mobilisation mit Unterstützung
+- Motivation zur Eigenaktivität
+- Beobachtung von Schmerzen während der Bewegung
+
+Die Maßnahmen unterstützen gezielt das festgelegte Ziel.
+
+## Praxisbeispiel
+
+### Fallsituation
+
+Frau Schneider wurde vor drei Tagen an der Hüfte operiert.
+
+Sie hat Schmerzen bei Bewegungen und benötigt Unterstützung beim Aufstehen.
+
+### Pflegeproblem
+
+Eingeschränkte Mobilität.
+
+### Pflegeziel
+
+Frau Schneider kann innerhalb einer Woche mit dem Rollator sicher kurze Strecken zurücklegen.
+
+### Geplante Pflegemaßnahmen
+
+- Mobilisation morgens und nachmittags
+- Unterstützung beim Aufstehen
+- Schmerzbeurteilung vor jeder Mobilisation
+- Gehtraining mit Rollator
+- Dokumentation der Fortschritte
+
+## Häufige Fehler bei Pflegemaßnahmen
+
+### Zu ungenau formuliert
+
+❌ Mobilisation fördern
+
+✅ Zweimal täglich Gehtraining mit Rollator durchführen
+
+### Keine Häufigkeit angegeben
+
+❌ Schmerzbeobachtung
+
+✅ Schmerzbeobachtung vor und nach jeder Mobilisation
+
+### Nicht zum Pflegeziel passend
+
+Pflegeziel und Maßnahme müssen immer zusammenpassen.
+
+## Pflegemaßnahmen in Prüfungen
+
+In Prüfungen wird häufig gefragt:
+
+"Formulieren Sie zwei geeignete Pflegemaßnahmen."
+
+Viele Azubis verlieren Punkte, weil sie Ziele oder Beobachtungen statt Maßnahmen formulieren.
+
+### Beispiel
+
+Pflegeproblem:
+
+Akuter Schmerz nach Operation.
+
+Falsche Antwort:
+
+❌ Schmerz reduzieren
+
+(Das ist ein Ziel.)
+
+Richtige Antwort:
+
+✅ Schmerzintensität mittels NRS erfassen.
+
+✅ Schmerzmedikation nach ärztlicher Anordnung verabreichen.
+
+(Das sind Maßnahmen.)
+
+## Mini-Quiz
+
+### Welche Formulierung beschreibt eine vollständige Pflegemaßnahme?
+
+A) Mobilität fördern
+
+B) Herr Müller wird regelmäßig mobilisiert
+
+C) Herr Müller wird zweimal täglich mit Rollator und Unterstützung einer Pflegefachkraft über den Stationsflur mobilisiert
+
+D) Mobilisation durchführen
+
+### Lösung
+
+✅ C
+
+Nur diese Antwort beschreibt eindeutig Was, Wie, Wann beziehungsweise Wie oft und Wer.
+
+## Bedeutung für die Pflegequalität
+
+Gut geplante Maßnahmen sorgen dafür, dass alle Pflegekräfte nach denselben Standards arbeiten.
+
+Dadurch werden Fehler vermieden und die Pflegeziele können zuverlässiger erreicht werden.
+
+## Merke
+
+**Pflegeziele sagen, was erreicht werden soll. Pflegemaßnahmen beschreiben, wie dieses Ziel erreicht wird.**

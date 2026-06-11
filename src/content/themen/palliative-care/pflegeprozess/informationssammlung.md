@@ -1,118 +1,187 @@
 ---
-
 title: Informationssammlung im Pflegeprozess
-
 description: Die Informationssammlung als erster Schritt des Pflegeprozesses.
-
 level: grundlagen
-
 ---
-
-
 
 # Informationssammlung im Pflegeprozess
 
+Die Informationssammlung ist der erste Schritt des Pflegeprozesses. Sie bildet die Grundlage für alle weiteren pflegerischen Entscheidungen.
 
+Nur wenn ausreichend Informationen vorliegen, können Pflegeprobleme erkannt, Pflegeziele formuliert und passende Maßnahmen geplant werden.
 
-Die Informationssammlung ist der erste Schritt des Pflegeprozesses.  
+Deshalb gilt die Informationssammlung als einer der wichtigsten Schritte im gesamten Pflegeprozess.
 
-Dabei werden alle wichtigen Informationen über die pflegebedürftige Person erfasst.
-
-
-
-Diese Informationen bilden die Grundlage für die weitere Pflegeplanung.
-
-
-
----
-
-
-
-## Ziele der Informationssammlung
-
-
+## Warum ist die Informationssammlung wichtig?
 
 Die Informationssammlung hilft dabei:
 
-
-
 - den Gesundheitszustand der Person zu verstehen
-
-- Pflegeprobleme zu erkennen
-
-- vorhandene Fähigkeiten und Ressourcen zu erfassen
-
+- Pflegeprobleme frühzeitig zu erkennen
+- Risiken einzuschätzen
+- Ressourcen festzustellen
 - individuelle Bedürfnisse zu berücksichtigen
+- die Pflegeplanung vorzubereiten
 
+Fehlende Informationen können zu falschen Pflegeentscheidungen führen.
 
+## Welche Informationen werden gesammelt?
 
----
-
-
-
-## Wichtige Informationsquellen
-
-
-
-Informationen können aus verschiedenen Quellen stammen.
-
-
+Bei der Informationssammlung werden Daten aus verschiedenen Lebensbereichen erfasst.
 
 Dazu gehören:
 
+### Körperliche Situation
 
+- Mobilität
+- Schmerzen
+- Atmung
+- Kreislauf
+- Ausscheidung
+- Ernährung
+- Hautzustand
+- Schlafverhalten
 
-- Gespräche mit der pflegebedürftigen Person
+### Psychische Situation
 
-- Gespräche mit Angehörigen
+- Stimmung
+- Ängste
+- Orientierung
+- Gedächtnis
+- Belastungen
 
-- ärztliche Diagnosen
+### Soziale Situation
 
-- Pflegedokumentation
+- Angehörige
+- Wohnsituation
+- Unterstützung im Alltag
+- soziale Kontakte
 
-- Beobachtungen durch Pflegekräfte
+### Gewohnheiten und Wünsche
 
+- Tagesstruktur
+- Essgewohnheiten
+- kulturelle Besonderheiten
+- persönliche Bedürfnisse
 
+## Wichtige Informationsquellen
 
----
+Informationen stammen aus verschiedenen Quellen.
 
+### Gespräch mit der pflegebedürftigen Person
 
+Die wichtigste Informationsquelle ist meist die betroffene Person selbst.
+
+Dabei werden Wünsche, Beschwerden und persönliche Bedürfnisse erfragt.
+
+### Gespräche mit Angehörigen
+
+Angehörige können wichtige Informationen ergänzen, besonders wenn die Person selbst eingeschränkt kommunizieren kann.
+
+### Pflegedokumentation
+
+Frühere Einträge liefern wichtige Hinweise über den bisherigen Verlauf.
+
+### Ärztliche Unterlagen
+
+Dazu gehören:
+
+- Diagnosen
+- Arztberichte
+- Laborwerte
+- Therapiepläne
+
+### Beobachtungen der Pflegefachperson
+
+Viele Informationen werden direkt durch Beobachtung gewonnen.
 
 ## Beobachtung in der Pflege
 
+Die Beobachtung gehört zu den wichtigsten Aufgaben der Pflegefachperson.
 
+Beobachtet werden beispielsweise:
 
-Beobachtungen spielen eine wichtige Rolle bei der Informationssammlung.
-
-
-
-Pflegekräfte achten zum Beispiel auf:
-
-
-
-- Mobilität
-
-- Hautzustand
-
+- Gangbild
+- Körperhaltung
+- Hautfarbe
 - Atmung
-
-- Bewusstseinszustand
-
+- Bewusstseinslage
+- Mimik
+- Schmerzzeichen
 - Ess- und Trinkverhalten
 
+Die Beobachtungen müssen objektiv und nachvollziehbar dokumentiert werden.
 
+## Beispiel aus der Praxis
 
----
+### Fallsituation
 
+Herr Müller wird nach einer Hüftoperation auf die Station aufgenommen.
 
+Bei der Informationssammlung werden folgende Informationen erhoben:
 
-## Bedeutung für den Pflegeprozess
+- Schmerzen NRS 8 von 10
+- benötigt Hilfe beim Aufstehen
+- unsicheres Gangbild
+- Appetit vermindert
+- motiviert bei der Mobilisation
 
+Diese Informationen bilden die Grundlage für die weitere Pflegeplanung.
 
+## Ressourcen erkennen
 
-Eine sorgfältige Informationssammlung ist wichtig, weil sie die Grundlage für alle weiteren Schritte des Pflegeprozesses bildet.
+Neben Problemen müssen immer auch Ressourcen erfasst werden.
 
+Ressourcen sind Fähigkeiten, die die Person weiterhin besitzt.
 
+Beispiele:
 
-Fehlende oder ungenaue Informationen können zu falschen Pflegeentscheidungen führen.
+- kann selbstständig essen
+- orientiert zu Zeit und Ort
+- motiviert zur Mitarbeit
+- kann kurze Strecken mit Rollator gehen
+- führt Körperpflege teilweise selbst durch
 
+Ressourcen fördern die Selbstständigkeit und sind ein wichtiger Bestandteil professioneller Pflege.
+
+## Informationssammlung und Prüfungen
+
+In Prüfungen wird häufig gefragt:
+
+"Welche Informationen benötigen Sie zunächst?"
+
+Die richtige Antwort lautet meist:
+
+Zuerst müssen weitere Informationen gesammelt werden, bevor Maßnahmen geplant werden können.
+
+Wer sofort Maßnahmen nennt, ohne Informationen zu sammeln, verliert häufig Punkte.
+
+## Typische Fehler in Prüfungen
+
+- Informationen und Maßnahmen vermischen
+- Ressourcen vergessen
+- nur Probleme erfassen
+- keine Beobachtungen nennen
+- Angehörige als Informationsquelle vergessen
+
+## Mini-Quiz
+
+### Frau Schneider kommt nach einem Sturz ins Krankenhaus. Welche Handlung gehört zur Informationssammlung?
+
+A) Schmerzmittel verabreichen
+
+B) Pflegeziel formulieren
+
+C) Mobilität und Schmerzen erfassen
+
+D) Evaluation durchführen
+
+### Lösung
+
+✅ C) Mobilität und Schmerzen erfassen
+
+Die Informationssammlung erfolgt immer vor Pflegezielen, Maßnahmen und Evaluation.
+
+## Merksatz
+
+**Ohne Informationssammlung keine Pflegeplanung. Wer die Situation nicht kennt, kann keine passende Pflege planen.**
