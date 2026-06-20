@@ -54,6 +54,39 @@ Beispiele:
 
 Pflegefachpersonen diagnostizieren Pflegeprobleme, Ressourcen und Risiken.
 
+## Pflegediagnose oder Pflegeproblem?
+
+Viele Auszubildende fragen sich, ob ein Pflegeproblem und eine Pflegediagnose dasselbe sind.
+
+Ein Pflegeproblem beschreibt zunächst eine Beobachtung oder einen pflegerischen Unterstützungsbedarf.
+
+Beispiele:
+
+- Schmerzen
+- Atemnot
+- Unsicherer Gang
+- Eingeschränkte Selbstversorgung
+
+Eine Pflegediagnose geht einen Schritt weiter.
+
+Sie beschreibt das Problem strukturiert, begründet die Ursachen und berücksichtigt Symptome sowie Ressourcen.
+
+### Beispiel
+
+Pflegeproblem:
+
+**Patient benötigt Unterstützung beim Aufstehen.**
+
+Pflegediagnose:
+
+**Beeinträchtigte Mobilität aufgrund postoperativer Schmerzen, erkennbar an unsicherem Gang und Hilfebedarf beim Aufstehen. Mobilisation mit Rollator möglich.**
+
+### Merke
+
+Das Pflegeproblem ist die Beobachtung.
+
+Die Pflegediagnose ist die fachlich begründete Beschreibung dieses Problems.
+
 ## Das PESR-Schema
 
 Pflegediagnosen werden häufig mit dem PESR-Schema formuliert.
@@ -109,6 +142,212 @@ Mit ihrem Rollator kann sie kurze Strecken gehen.
 **S:** Unsicherer Gang, Hilfebedarf beim Aufstehen, Schmerzangabe NRS 7
 
 **R:** Mobilisation mit Rollator möglich, motiviert zur Mitarbeit
+
+## Häufige Pflegediagnosen in der Pflegeausbildung
+
+In Prüfungen tauchen bestimmte Pflegediagnosen besonders häufig auf. Wer diese kennt und sicher formulieren kann, hat bei Fallaufgaben einen großen Vorteil.
+
+### Beeinträchtigte Mobilität
+
+Die pflegebedürftige Person kann Bewegungen nur eingeschränkt oder unter Hilfestellung durchführen.
+
+Beispiele:
+
+- nach Hüftoperation
+- nach Schlaganfall
+- bei starker Schwäche
+- bei Schmerzen
+
+### Akuter Schmerz
+
+Die Person berichtet über Schmerzen oder zeigt typische Schmerzzeichen.
+
+Beispiele:
+
+- nach Operationen
+- bei Verletzungen
+- bei akuten Erkrankungen
+
+### Selbstversorgungsdefizit
+
+Die Person kann Aktivitäten des täglichen Lebens nicht vollständig selbstständig durchführen.
+
+Beispiele:
+
+- Körperpflege
+- Ankleiden
+- Essen und Trinken
+- Toilettengang
+
+### Beeinträchtigte Atmung
+
+Die Atmung ist erschwert oder nicht ausreichend.
+
+Beispiele:
+
+- COPD
+- Asthma bronchiale
+- Pneumonie
+- Herzinsuffizienz
+
+### Risiko für Stürze
+
+Es bestehen Faktoren, die die Wahrscheinlichkeit eines Sturzes erhöhen.
+
+Beispiele:
+
+- Gangunsicherheit
+- Schwindel
+- Medikamente
+- Muskelschwäche
+
+### Prüfungs-Tipp
+
+In Fallaufgaben solltest du immer überlegen:
+
+1. Welches Pflegeproblem liegt vor?
+2. Woran erkenne ich es?
+3. Welche Ursachen gibt es?
+4. Welche Ressourcen sind vorhanden?
+
+Genau daraus entsteht später die Pflegediagnose nach PESR.
+
+## Pflegediagnosen bei COPD
+
+COPD gehört zu den häufigsten Krankheitsbildern in der Pflegeausbildung und taucht regelmäßig in Prüfungen auf.
+
+Bei Menschen mit COPD stehen häufig Atemprobleme, Belastungsintoleranz und ein erhöhter Unterstützungsbedarf im Mittelpunkt.
+
+### Mögliche Pflegediagnosen bei COPD
+
+#### Beeinträchtigte Atmung
+
+Die Atmung ist erschwert oder nicht ausreichend.
+
+Mögliche Hinweise:
+
+- Dyspnoe
+- Einsatz der Atemhilfsmuskulatur
+- verlängerte Ausatmung
+- reduzierte Belastbarkeit
+
+#### Aktivitätsintoleranz
+
+Die Person ermüdet bereits bei geringer körperlicher Belastung.
+
+Mögliche Hinweise:
+
+- Atemnot beim Gehen
+- schnelle Erschöpfung
+- häufige Pausen notwendig
+
+#### Ineffektives Gesundheitsmanagement
+
+Die Person hat Schwierigkeiten, therapeutische Maßnahmen dauerhaft umzusetzen.
+
+Mögliche Hinweise:
+
+- Inhalation wird nicht korrekt durchgeführt
+- Medikamente werden unregelmäßig eingenommen
+- Rauchen wird fortgesetzt
+
+### Beispiel
+
+Fallsituation:
+
+Herr Meier leidet an einer COPD GOLD III.
+
+Bereits beim Gehen zum Badezimmer entwickelt er Atemnot und muss mehrfach pausieren.
+
+#### Beispiel einer Pflegediagnose
+
+**P:** Beeinträchtigte Atmung
+
+**E:** Chronische Einschränkung der Lungenfunktion bei COPD
+
+**S:** Dyspnoe bei geringer Belastung, Einsatz der Atemhilfsmuskulatur
+
+**R:** Kann Atemtechniken anwenden und arbeitet aktiv mit
+
+### Prüfungs-Tipp
+
+Bei COPD-Fallaufgaben haben Atmung und Sauerstoffversorgung immer Vorrang vor Komfort, Mobilität oder Beratung.
+
+## Typische Fehler beim Formulieren von Pflegediagnosen
+
+Viele Auszubildende kennen die Theorie, machen in Prüfungen aber immer wieder dieselben Fehler.
+
+### Fehler 1: Medizinische Diagnose statt Pflegediagnose
+
+Falsch:
+
+**Pneumonie**
+
+Richtig:
+
+**Beeinträchtigte Atmung**
+
+Die Pflegediagnose beschreibt das pflegerische Problem, nicht die Erkrankung.
+
+### Fehler 2: Symptome als Problem formulieren
+
+Falsch:
+
+**Unsicherer Gang**
+
+Richtig:
+
+**Beeinträchtigte Mobilität**
+
+Der unsichere Gang ist ein Symptom, nicht das eigentliche Pflegeproblem.
+
+### Fehler 3: Ressourcen vergessen
+
+Viele Auszubildende beschreiben nur Probleme.
+
+In einer guten Pflegediagnose werden auch vorhandene Fähigkeiten berücksichtigt.
+
+Beispiel:
+
+- Mobilisation mit Rollator möglich
+- selbstständiges Essen möglich
+- hohe Motivation zur Mitarbeit
+
+### Fehler 4: Ursachen und Symptome verwechseln
+
+Beispiel:
+
+Problem:
+
+**Beeinträchtigte Mobilität**
+
+Ursache:
+
+**Schmerzen nach Operation**
+
+Symptom:
+
+**Hilfebedarf beim Aufstehen**
+
+Diese Bereiche müssen sauber voneinander getrennt werden.
+
+### Fehler 5: Zu allgemeine Formulierungen
+
+Falsch:
+
+**Patient hat Probleme.**
+
+Richtig:
+
+**Beeinträchtigte Mobilität aufgrund postoperativer Schmerzen.**
+
+Je konkreter die Formulierung, desto besser lässt sich die Pflegeplanung ableiten.
+
+### Prüfungs-Tipp
+
+Prüfer achten häufig weniger auf perfekte Fachbegriffe als auf eine nachvollziehbare pflegerische Denkstruktur.
+
+Wer Problem, Ursache, Symptome und Ressourcen logisch darstellen kann, erreicht meist deutlich bessere Ergebnisse.
 
 ## Typische Prüfungsfragen
 
