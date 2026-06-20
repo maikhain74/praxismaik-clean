@@ -60,31 +60,54 @@ const premiumExamQuizCount = premiumExamQuiz.length;
       )}
 
      <span class="premium-eyebrow">PraxisMaik Premium</span>
-<h1>Sicher durch die Pflegeausbildung und Abschlussprüfung</h1>
+
+<h1>🎓 Bestehe deine Pflegeprüfung sicherer.</h1>
+
 <p class="premium-lead">
-  Verstehe Pflege wirklich, löse Fallsituationen sicher und gehe strukturierter in Prüfungen.
+  240 Lernskripte, 45 Prüfungsfälle, 61 Examensfragen und 6 Premium-E-Books.
 </p>
 
-<p class="premium-loss">
-  Ohne klare Struktur, Falllogik und sichere Begründungen gehst du unsicher in Prüfungen,
-  selbst wenn du eigentlich viel gelernt hast.
-</p>
-
-<p class="premium-loss">
-  Premium zeigt dir, was wirklich zählt und wie du in Fallsituationen sicher denkst und handelst.
-</p>
-
-<div class="premium-result-box">
-  <h2>Was du nach Premium besser kannst</h2>
+<div class="premium-included-box">
+  <strong>Alles in einem Zugang:</strong>
 
   <ul>
-    <li>Pflegeplanungen sicherer schreiben</li>
-    <li>Prioritäten in Fallsituationen begründen</li>
-    <li>typische Prüfungsfehler vermeiden</li>
-    <li>mündliche Prüfungen strukturierter beantworten</li>
-    <li>sicherer in die Abschlussprüfung gehen</li>
+    <li>240 Lernskripte</li>
+    <li>45 Prüfungsfälle mit Lösungen</li>
+    <li>61 Examensfragen</li>
+    <li>6 Premium-E-Books</li>
+    <li>Dauerhafter Zugriff</li>
+    <li>Kein Abo</li>
   </ul>
 </div>
+
+{!hasPremiumCookie && (
+  <div class="premium-above-fold-cta">
+    <a
+      href="/premium-interesse"
+      class="btn premium-main-btn"
+      data-ga-event="premium_above_fold_cta_click"
+    >
+      Premium für 39 € freischalten
+    </a>
+
+    <p class="premium-above-fold-note">
+      Sofortiger Zugriff. Kein Abo. Dauerhaft nutzbar.
+    </p>
+  </div>
+)}
+
+<p class="premium-loss">
+  Viele Pflegeazubis lernen viel, fühlen sich in Fallsituationen und Prüfungen aber trotzdem unsicher.
+</p>
+
+<p class="premium-loss">
+  Premium zeigt dir die Denklogik hinter Pflegeplanung, Prioritäten und Prüfungsfragen.
+</p>
+
+    <p class="premium-above-fold-note">
+      Sofortiger Zugriff. Kein Abo. Dauerhaft nutzbar.
+    </p>
+  </div>
 
       <div class="premium-price-inline">
   <strong>39 € einmalig</strong>
@@ -136,7 +159,7 @@ const premiumExamQuizCount = premiumExamQuiz.length;
       class="btn premium-main-btn"
       data-ga-event="premium_hero_cta_click"
     >
-      Premium jetzt freischalten
+      Premium für 39 € freischalten
     </a>
   ) : (
     <a
@@ -208,301 +231,32 @@ const premiumExamQuizCount = premiumExamQuiz.length;
           <span>Fragen im Examensmodus</span>
         </article>
       </div>
-    </section>
-
-    <section class="premium-section">
-      <div class="section-headline">
-        <h2>Warum sich Premium lohnt</h2>
-      </div>
-
-     <div class="premium-benefits-grid">
-  <article class="premium-benefit-card">
-    <h3>Du lernst gezielter</h3>
-    <p>
-      Statt wahllos Inhalte zu sammeln, arbeitest du mit klaren Themen,
-      Prüfungsfällen und Wiederholungen.
-    </p>
-  </article>
-
-  <article class="premium-benefit-card">
-    <h3>Du verstehst Falllogik</h3>
-    <p>
-      Du erkennst Pflegeprobleme, setzt Prioritäten und kannst dein Handeln
-      nachvollziehbar begründen.
-    </p>
-  </article>
-
-  <article class="premium-benefit-card">
-    <h3>Du gehst sicherer in Prüfungen</h3>
-    <p>
-      Du trainierst typische Prüfungssituationen und vermeidest häufige Fehler
-      in Fallaufgaben.
-    </p>
-  </article>
-</div>
-
-    </section>
-
-<section class="premium-section trust-conversion-section">
-  <div class="trust-conversion-box">
-    <h2>Warum du PraxisMaik vertrauen kannst</h2>
-
-    <div class="trust-conversion-grid">
-      <div>
-        <h3>Pflegeausbildung im Fokus</h3>
-        <p>
-          Die Inhalte sind auf die generalistische Pflegeausbildung ausgerichtet,
-          nicht auf beliebige Theorie.
-        </p>
-      </div>
-
-      <div>
-        <h3>Prüfungsnah aufgebaut</h3>
-        <p>
-          Du lernst nicht nur Fakten, sondern Denklogik, Prioritäten und begründetes Handeln.
-        </p>
-      </div>
-
-      <div>
-        <h3>Klar statt überladen</h3>
-        <p>
-          Die Inhalte sind so aufgebaut, dass du schnell erkennst, was wirklich wichtig ist.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- HIER NEU EINFÜGEN -->
-<section class="premium-section fit-section">
-  <div class="fit-box">
-    <h2>Ist Premium das Richtige für dich?</h2>
-
-    <div class="fit-grid">
-      <div class="fit-yes">
-        <h3>Das passt für dich, wenn du</h3>
-        <ul>
-          <li>unsicher bist, wie du Fälle richtig löst</li>
-          <li>nicht nur auswendig lernen willst</li>
-          <li>Prüfungen endlich sicher bestehen willst</li>
-          <li>klare Struktur statt Chaos brauchst</li>
-        </ul>
-      </div>
-
-      <div class="fit-no">
-        <h3>Das passt eher nicht, wenn du</h3>
-        <ul>
-          <li>nur schnell etwas nachlesen willst</li>
-          <li>keine Prüfungsrelevanz brauchst</li>
-          <li>ohne Struktur lernen willst</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="premium-section price-explain-section">
-  <div class="price-explain-box">
-    <h2>Warum 39 € sinnvoll investiert sind</h2>
-
-    <div class="price-explain-grid">
-      <div class="price-card">
-        <h3>Einmal zahlen</h3>
-        <p>
-          Kein Abo, keine monatlichen Kosten. Du zahlst einmal und bekommst Zugriff auf den Premium-Bereich.
-        </p>
-      </div>
-
-      <div class="price-card">
-        <h3>Kompletter Lernweg</h3>
-        <p>
-          Du bekommst Lernskripte, E-Books, Prüfungsfälle und Quiztraining zusammen, statt einzelne Inhalte mühsam zu suchen.
-        </p>
-      </div>
-
-      <div class="price-card">
-        <h3>Weniger Lernchaos</h3>
-        <p>
-          39 € sparen dir Zeit, Unsicherheit und unnötiges Wiederholen, weil du klarer weißt, was wichtig ist.
-        </p>
-      </div>
-    </div>
-
- {!hasPremiumCookie && (
-  <section class="premium-section premium-mid-cta">
-    <div class="premium-mid-cta-box">
-      <h2>Bereit für mehr Sicherheit in Ausbildung und Prüfung?</h2>
-
-      <p>
-        Einmal freischalten, dauerhaft nutzen.
-        Kein Abo, keine laufenden Kosten.
-      </p>
-
-      <div class="premium-mid-price">
-        39 € einmalig
-      </div>
-
-     <a
-  href="/premium-interesse"
-  class="btn premium-mid-button"
-  data-ga-event="premium_mid_cta_click"
->
-  Premium jetzt freischalten
-</a>
-
-      <span class="premium-mid-note">
-        Sofort verfügbar nach der Freischaltung.
-      </span>
-    </div>
-  </section>
-)}
-
-<section class="premium-section" id="premium-inhalte">
-
-      <div class="section-headline">
-        <h2>Das ist in Premium enthalten</h2>
-        <p class="section-intro">
-          Premium gibt dir genau die Bereiche, die dich wirklich nach vorne bringen.
-        </p>
-      </div>
-
-     <div class="premium-ebook-preview">
-
-  <div class="premium-ebook-preview-text">
-
-    <span class="premium-card-label">
-      Ein Blick in Premium
-    </span>
-
-    <div class="premium-value-badge">
-      Enthält 6 Premium-E-Books
-    </div>
-
-    <h2>5 Premium-E-Books enthalten</h2>
-
-    <p>
-      Alle E-Books sind speziell für die Pflegeausbildung entwickelt
-      und sofort nach der Freischaltung verfügbar.
-    </p>
-
-  </div>
-
-  <div class="premium-ebook-cover-grid">
-
-    <img
-      src="/images/ebooks/ebook-praxisanleitung-cover.webp"
-      alt="Praxisanleitung E-Book"
-    />
-
-    <img
-      src="/images/ebooks/pruefungsfaelle-cover.webp"
-      alt="Prüfungsfälle E-Book"
-    />
-
-    <img
-      src="/images/ebooks/pflegeprozess-vorbehaltsaufgaben-cover.webp"
-      alt="Pflegeprozess Vorbehaltsaufgaben E-Book"
-    />
-
-    <img
-      src="/images/ebooks/pflegeprozess-pflegeplanung-pruefung-cover.webp"
-      alt="Pflegeprozess E-Book"
-    />
-
-    <img
-      src="/images/ebooks/taschen-exzellenz-cover.webp"
-      alt="Taschen Exzellenz E-Book"
-    />
-
-  </div>
-
-</div>
-
-<div class="premium-preview-box">
-  <div>
-    <h3>Erst ansehen, dann entscheiden</h3>
-    <p>
-      Schau dir vor der Freischaltung echte Einblicke in die Premium-Inhalte an.
-      So siehst du direkt, ob PraxisMaik zu deinem Lernstil passt.
-    </p>
-  </div>
-
-  <a href="/ebooks/" class="btn premium-preview-btn">
-    E-Book-Vorschau öffnen
-  </a>
-</div>
 
 {!hasPremiumCookie && (
-  <div class="premium-after-showcase-cta">
-    <h3>6 E-Books, 240 Lernskripte, 45 Prüfungsfälle und 61 Examensfragen in einem Zugang.</h3>
+  <div class="premium-quick-cta">
     <p>
-      Wenn du gerade für Ausbildung, Praxis oder Examen lernst, bekommst du hier einen klaren Lernweg statt einzelner Sucherei.
+      🎓 Einmal freischalten, dauerhaft nutzen.
     </p>
-    <a href="/premium-interesse" class="btn premium-buy-btn">
-      Jetzt Premium für 39 € freischalten
+
+    <a
+      href="/premium-interesse"
+      class="btn premium-buy-btn"
+      data-ga-event="premium_quick_cta_click"
+    >
+      Premium für 39 € freischalten
     </a>
   </div>
 )}
+    
+    </section>
 
-<section class="premium-target-group">
-
+<section class="premium-section premium-showcase-compact">
   <div class="section-headline">
-    <h2>Für wen ist Premium?</h2>
-
-    <p>
-      Premium richtet sich an Pflegeazubis und Pflegefachpersonen,
-      die sich gezielt auf Prüfungen und den Berufsalltag vorbereiten möchten.
+    <h2>Du bekommst sofort Zugriff auf die wichtigsten Premium-Inhalte</h2>
+    <p class="section-intro">
+      E-Books, Lernskripte, Prüfungsfälle und Examensfragen, alles in einem Zugang.
     </p>
   </div>
-
-  <div class="premium-target-grid">
-
-    <div class="premium-target-card">
-      <h3>Vor dem Examen</h3>
-      <p>
-        Du möchtest dich sicher auf schriftliche,
-        mündliche und praktische Prüfungen vorbereiten.
-      </p>
-    </div>
-
-    <div class="premium-target-card">
-      <h3>Bei Unsicherheit</h3>
-      <p>
-        Du hast Schwierigkeiten mit Pflegeplanung,
-        Pflegeprozess oder Prioritäten in Fallsituationen.
-      </p>
-    </div>
-
-    <div class="premium-target-card">
-      <h3>Für bessere Noten</h3>
-      <p>
-        Du möchtest typische Prüfungsfehler vermeiden
-        und Zusammenhänge besser verstehen.
-      </p>
-    </div>
-
-    <div class="premium-target-card">
-      <h3>Für die Praxis</h3>
-      <p>
-        Du möchtest pflegerische Situationen sicher einschätzen
-        und professionell handeln.
-      </p>
-    </div>
-  </div>
-</section>
-
-  <p>
-    Alle E-Books sind speziell für die Pflegeausbildung entwickelt und helfen dir,
-    Zusammenhänge zu verstehen, Prüfungsfälle sicher zu lösen und strukturierter zu lernen.
-  </p>
-
-  <ul class="premium-ebook-benefits">
-    <li>über 50 Kapitel</li>
-    <li>praxisnah und prüfungsorientiert</li>
-    <li>sofort nach Freischaltung verfügbar</li>
-    <li>regelmäßig erweitert</li>
-  </ul>
-</div>
 
   <div class="premium-ebook-cover-grid">
     <img src="/images/ebooks/ebook-praxisanleitung-cover.webp" alt="Praxisanleitung E-Book" />
@@ -510,45 +264,21 @@ const premiumExamQuizCount = premiumExamQuiz.length;
     <img src="/images/ebooks/pruefungsfaelle-cover.webp" alt="Prüfungsfälle E-Book" />
     <img src="/images/ebooks/pflegeprozess-vorbehaltsaufgaben-cover.webp" alt="Vorbehaltsaufgaben E-Book" />
     <img src="/images/ebooks/pflegeprozess-pflegeplanung-pruefung-cover.webp" alt="Pflegeprozess E-Book" />
-    <img src="/images/ebooks/taschen-exzellenz-cover.webp" alt="Taschenbuch Pflegeexzellenz" />
+    <img src="/images/ebooks/taschen-exzellenz-cover.webp" alt="Taschen-Exzellenz E-Book" />
   </div>
-</div>
 
-      <div class="premium-content-grid">
-       <a href="/ebooks/" class="premium-content-card premium-content-link">
-          <span class="premium-card-label">E-Books</span>
-          <h3>Vertiefte Premium-E-Books</h3>
-          <p>
-            Verständlich, praxisnah und so aufgebaut, dass du Zusammenhänge wirklich verstehst.
-          </p>
-       </a>
-
-        <a href="/lernskripte/" class="premium-content-card premium-content-link">
-  <span class="premium-card-label">Lernskripte</span>
-  <h3>Kompakt lernen und gezielt wiederholen</h3>
-  <p>
-    Für kurze Lerneinheiten, klare Wiederholung und schnellen Zugriff auf das wirklich Relevante.
-  </p>
-</a>
-
-        <a href="/pruefung/" class="premium-content-card premium-content-link">
-  <span class="premium-card-label">Prüfungsfälle</span>
-  <h3>Prüfungsfälle mit echter Denklogik</h3>
-  <p>
-    Trainiere pflegerisches Denken, Prioritäten und begründetes Handeln mit typischen Fallsituationen.
-  </p>
-</a>
-
-        <a href="/quiz-exam/" class="premium-content-card premium-content-link">
-  <span class="premium-card-label">Examensmodus</span>
-  <h3>Prüfungsnahes Quiztraining</h3>
-  <p>
-    Teste dein Wissen aktiv, unter Zeitdruck und näher an der echten Prüfungssituation.
-  </p>
-</a>
-
-      </div>
-    </section>
+  {!hasPremiumCookie && (
+    <div class="premium-after-showcase-cta">
+      <h3>6 E-Books, 240 Lernskripte, 45 Prüfungsfälle und 61 Examensfragen in einem Zugang.</h3>
+      <p>
+        Wenn du für Ausbildung, Praxis oder Examen lernst, bekommst du hier einen klaren Lernweg statt einzelner Sucherei.
+      </p>
+      <a href="/premium-interesse" class="btn premium-buy-btn">
+        Premium für 39 € freischalten
+      </a>
+    </div>
+  )}
+</section>
 
 <section class="premium-section premium-faq-section">
   <div class="section-headline">
@@ -593,16 +323,36 @@ const premiumExamQuizCount = premiumExamQuiz.length;
 
     <details class="premium-faq-item">
       <summary>Warum kostet Premium nur 39 €?</summary>
-      <p>
-        Weil du einmal zahlst und dauerhaft Zugriff erhältst. Es gibt kein Abo
-        und keine zusätzlichen Kosten.
-      </p>
+     <p>
+  Mein Ziel ist, Pflegeazubis einen bezahlbaren Zugang zu hochwertigen
+  Lernmaterialien zu ermöglichen. Du zahlst einmal und erhältst Zugriff auf
+  240 Lernskripte, 45 Prüfungsfälle, 61 Examensfragen und 6 Premium-E-Books,
+  ohne Abo und ohne weitere Kosten.
+</p>
     </details>
+
+    <details class="premium-faq-item">
+  <summary>Was unterscheidet PraxisMaik von kostenlosen Lernmaterialien?</summary>
+  <p>
+    Viele kostenlose Inhalte erklären einzelne Themen. PraxisMaik verbindet
+    Lernskripte, Prüfungsfälle, Examensfragen, Pflegeplanung und E-Books zu
+    einem strukturierten Lernweg. Du lernst nicht nur Wissen auswendig,
+    sondern trainierst die Denklogik hinter Prüfungsfragen und Fallsituationen.
+  </p>
+</details>
+
+<details class="premium-faq-item">
+  <summary>Wie lange habe ich Zugriff?</summary>
+  <p>
+    Du zahlst einmal und behältst dauerhaft Zugriff auf alle freigeschalteten
+    Premium-Inhalte. Es gibt kein Abo und keine monatlichen Kosten.
+  </p>
+</details>
 
     <details class="premium-faq-item">
       <summary>Was bekomme ich konkret?</summary>
       <p>
-        5 Premium-E-Books, 240 Lernskripte, 45 Prüfungsfälle und 61 Examensfragen
+        6 Premium-E-Books, 240 Lernskripte, 45 Prüfungsfälle und 61 Examensfragen
         in einem dauerhaften Zugang.
       </p>
     </details>
@@ -635,7 +385,7 @@ const premiumExamQuizCount = premiumExamQuiz.length;
           {hasPremiumCookie ? (
             <a href="/pruefung/" class="btn premium-buy-btn">Zu den Prüfungsfällen</a>
           ) : (
-            <a href="/premium-interesse" class="btn premium-buy-btn">Jetzt Premium freischalten und sicher lernen</a>
+            <a href="/premium-interesse" class="btn premium-buy-btn">Jetzt alle Premium-Inhalte freischalten</a>
           )}
         </div>
 
@@ -1519,5 +1269,31 @@ const premiumExamQuizCount = premiumExamQuiz.length;
   padding: 0 1.3rem 1.2rem;
   color: #556270;
   line-height: 1.7;
+}
+
+.premium-quick-cta {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 20px;
+  background: #f8fbff;
+  border: 1px solid rgba(24, 50, 74, 0.12);
+}
+
+.premium-quick-cta p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #18324a;
+}
+
+.premium-above-fold-cta {
+  margin-top: 1.2rem;
+}
+
+.premium-above-fold-note {
+  margin-top: 0.75rem;
+  color: #6b7280;
+  font-size: 0.95rem;
 }
 </style>
