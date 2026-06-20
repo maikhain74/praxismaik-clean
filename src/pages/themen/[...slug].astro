@@ -99,6 +99,37 @@ const seoDescription =
       </article>
     )}
 
+<section class="topic-premium-funnel">
+  <div class="topic-premium-funnel-box">
+
+    <span class="topic-premium-label">
+      PraxisMaik Premium
+    </span>
+
+    <h2>🎓 Bereite dich gezielt auf Prüfung und Praxis vor</h2>
+
+    <p>
+      Im Premiumbereich findest du zusätzlich:
+    </p>
+
+    <ul>
+      <li>240 Lernskripte</li>
+      <li>45 Prüfungsfälle mit Lösungen</li>
+      <li>61 Examensfragen</li>
+      <li>6 Premium-E-Books</li>
+      <li>Pflegeplanung, PESR und SMART-Ziele</li>
+    </ul>
+
+    <a
+      href="/premium"
+      class="topic-premium-button"
+    >
+      Premium ansehen
+    </a>
+
+  </div>
+</section>
+
    {skripteZumThema.length > 0 && (
   <section class="topic-section">
     <div class="section-head">
@@ -571,6 +602,54 @@ const seoDescription =
   margin-top: auto;
   font-weight: 700;
   color: #18324a;
+}
+
+.topic-premium-funnel {
+  margin: 2rem 0 3rem;
+}
+
+.topic-premium-funnel-box {
+  padding: 2rem;
+  border-radius: 24px;
+  background: #ffffff;
+  border: 2px solid #e8d8c5;
+  box-shadow: 0 12px 30px rgba(24, 50, 74, 0.06);
+}
+
+.topic-premium-label {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: #fff4e8;
+  color: #9a3412;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.topic-premium-funnel-box h2 {
+  margin-top: 0;
+}
+
+.topic-premium-funnel-box ul {
+  margin: 1rem 0 1.5rem;
+}
+
+.topic-premium-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.6rem;
+  border-radius: 14px;
+  background: #c96f3d;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.topic-premium-button:hover {
+  transform: translateY(-2px);
 }
 
 @media (max-width: 900px) {
