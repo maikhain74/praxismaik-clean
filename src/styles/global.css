@@ -972,9 +972,14 @@ main ol li p + p {
 .quiz-card summary {
   cursor: pointer;
   list-style: none;
-  padding: 14px 16px;
+  padding: 18px 22px;
   font-weight: 600;
   line-height: 1.5;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
 .quiz-card summary::-webkit-details-marker {
@@ -983,9 +988,9 @@ main ol li p + p {
 
 .quiz-card summary::after {
   content: "+";
-  float: right;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
+  flex-shrink: 0;
 }
 
 .quiz-card[open] summary::after {
