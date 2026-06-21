@@ -134,6 +134,15 @@ Wenn du das Thema vertiefen möchtest:
 - [Vorbehaltsaufgaben Fallbeispiele](/themen/palliative-care/pflegeprozess/vorbehaltsaufgaben-fallbeispiele/)
 - [Vorbehaltsaufgaben Pflegeprüfung](/themen/palliative-care/pflegeprozess/vorbehaltsaufgaben-pflegepruefung/)
 
+## Passende Inhalte zu Kompetenzbereich I
+
+Vorbehaltsaufgaben hängen eng mit Kompetenzbereich I zusammen, weil dort Pflegeprozess, Pflegeplanung und pflegerische Verantwortung geprüft werden.
+
+- [Kompetenzbereich I einfach erklärt](/themen/pflegeausbildung/kompetenzbereich-1/)
+- [Kompetenzbereich I Pflegeprüfung](/themen/pflegeausbildung/kompetenzbereich-1-pflegepruefung/)
+- [Kompetenzbereich I Fallbeispiele](/themen/pflegeausbildung/kompetenzbereich-1-fallbeispiele/)
+- [Kompetenzbereich I Prüfungsfragen](/themen/pflegeausbildung/kompetenzbereich-1-pruefungsfragen/)
+
 ## Passende Inhalte zum Pflegeprozess
 
 - [Pflegeprozess Grundlagen](/themen/palliative-care/pflegeprozess/pflegeprozess-grundlagen/)

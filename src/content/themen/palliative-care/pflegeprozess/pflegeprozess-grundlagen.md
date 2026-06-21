@@ -56,6 +56,28 @@ Dazu gehören insbesondere:
 
 Deshalb hat der Pflegeprozess eine zentrale Bedeutung für die professionelle Pflege.
 
+## Pflegeprozess und Kompetenzbereich I
+
+Der Pflegeprozess ist die wichtigste Grundlage des Kompetenzbereichs I in der generalistischen Pflegeausbildung.
+
+Wer Kompetenzbereich I verstehen möchte, muss den Pflegeprozess sicher anwenden können.
+
+Dazu gehören:
+
+- Informationssammlung
+- Pflegeprobleme erkennen
+- Ressourcen erfassen
+- Pflegeziele formulieren
+- Maßnahmen planen
+- Evaluation durchführen
+
+### Passende Inhalte
+
+- [Kompetenzbereich I](/themen/pflegeausbildung/kompetenzbereich-1/)
+- [Kompetenzbereich I Pflegeprüfung](/themen/pflegeausbildung/kompetenzbereich-1-pflegepruefung/)
+- [Kompetenzbereich I Fallbeispiele](/themen/pflegeausbildung/kompetenzbereich-1-fallbeispiele/)
+- [Kompetenzbereich I Prüfungsfragen](/themen/pflegeausbildung/kompetenzbereich-1-pruefungsfragen/)
+
 ## Die sechs Schritte des Pflegeprozesses
 
 ### 1. Informationssammlung
@@ -102,161 +124,58 @@ Die geplanten Maßnahmen werden praktisch umgesetzt.
 
 ### 6. Evaluation
 
-Es wird überprüft, ob die Pflegeziele erreicht wurden und ob die Maßnahmen wirksam
+Es wird überprüft, ob die Pflegeziele erreicht wurden und ob die Maßnahmen wirksam waren.
 
+Falls notwendig, werden Pflegeziele und Maßnahmen angepasst.
 
+## Typische Fehler
 
-## Ziele des Pflegeprozesses
+### Fehler 1
 
+Pflegeprozess und Pflegeplanung gleichsetzen.
 
+Die Pflegeplanung ist nur ein Teil des Pflegeprozesses.
 
-Der Pflegeprozess hilft dabei:
+### Fehler 2
 
+Ressourcen vergessen.
 
+Nicht nur Probleme, sondern auch Fähigkeiten der pflegebedürftigen Person müssen berücksichtigt werden.
 
-- Pflegeprobleme zu erkennen
+### Fehler 3
 
-- Pflegeziele festzulegen
+Evaluation auslassen.
 
-- geeignete Pflegemaßnahmen zu planen
+Pflege muss regelmäßig überprüft und angepasst werden.
 
-- die Wirksamkeit der Pflege zu überprüfen
+## Pflegeprozess in der Pflegeprüfung
 
+Der Pflegeprozess gehört zu den häufigsten Prüfungsthemen.
 
+Typische Prüfungsfragen sind:
 
----
+- Welche Schritte umfasst der Pflegeprozess?
+- Warum ist der Pflegeprozess wichtig?
+- Was gehört zu den Vorbehaltsaufgaben?
+- Welche Pflegeprobleme liegen vor?
+- Welche Maßnahmen haben Priorität?
 
+## Zusammenfassung
 
+Der Pflegeprozess bildet die Grundlage professioneller Pflege.
 
-## Schritte des Pflegeprozesses
+Er hilft dabei, Pflege systematisch zu planen, durchzuführen und zu bewerten.
 
+Wer den Pflegeprozess sicher beherrscht, hat eine wichtige Grundlage für Pflegeplanung, Pflegediagnosen, Kompetenzbereich I und die Pflegeprüfung geschaffen.
 
+## Passende Inhalte
 
-Der Pflegeprozess besteht aus mehreren aufeinanderfolgenden Schritten.
+- [Pflegediagnosen](/themen/palliative-care/pflegeprozess/pflegediagnosen/)
+- [PESR-Schema](/themen/palliative-care/pflegeprozess/pesr-schema/)
+- [Vorbehaltsaufgaben](/themen/palliative-care/pflegeprozess/vorbehaltsaufgaben/)
+- [Kompetenzbereich I](/themen/pflegeausbildung/kompetenzbereich-1/)
 
+## Merksatz
 
-
-### 1. Informationssammlung
-
-
-
-In diesem Schritt werden wichtige Informationen über die pflegebedürftige Person gesammelt.
-
-
-
-Beispiele:
-
-
-
-- Gesundheitszustand
-
-- Gewohnheiten
-
-- Ressourcen
-
-- Probleme
-
-
-
----
-
-
-
-### 2. Erkennen von Problemen und Ressourcen
-
-
-
-Pflegeprobleme und vorhandene Fähigkeiten der Person werden analysiert.
-
-
-
-Beispiele für Pflegeprobleme:
-
-
-
-- Schmerzen
-
-- eingeschränkte Mobilität
-
-- Orientierungsprobleme
-
-
-
----
-
-
-
-### 3. Festlegen von Pflegezielen
-
-
-
-Pflegeziele beschreiben, was durch die Pflege erreicht werden soll.
-
-
-
-Beispiel:
-
-
-
-- Verbesserung der Mobilität
-
-- Schmerzreduktion
-
-- Förderung der Selbstständigkeit
-
-
-
----
-
-
-
-### 4. Planung der Pflegemaßnahmen
-
-
-
-Es wird festgelegt, welche Maßnahmen durchgeführt werden sollen.
-
-
-
-Beispiele:
-
-
-
-- Mobilisationsübungen
-
-- Unterstützung bei der Körperpflege
-
-- Schmerzbeobachtung
-
-
-
----
-
-
-
-### 5. Durchführung der Pflege
-
-
-
-Die geplanten Pflegemaßnahmen werden umgesetzt.
-
-
-
-Dabei ist es wichtig, die Pflege individuell an die Situation der Person anzupassen.
-
-
-
----
-
-
-
-### 6. Evaluation
-
-
-
-In diesem Schritt wird überprüft, ob die Pflegeziele erreicht wurden.
-
-
-
-Falls notwendig, wird der Pflegeplan angepasst.
+**Der Pflegeprozess ist das zentrale Arbeitsmodell professioneller Pflege und die Grundlage von Kompetenzbereich I.**
 

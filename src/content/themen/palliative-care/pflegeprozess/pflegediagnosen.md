@@ -442,6 +442,27 @@ D) Pneumonie
 
 Die anderen Antworten sind medizinische Diagnosen.
 
+## Pflegediagnosen und Kompetenzbereich I
+
+Pflegediagnosen gehören zu den wichtigsten Inhalten des Kompetenzbereichs I in der generalistischen Pflegeausbildung.
+
+In Prüfungen müssen Auszubildende regelmäßig:
+
+- Pflegeprobleme erkennen
+- Ressourcen erfassen
+- Pflegediagnosen formulieren
+- Pflegeziele ableiten
+- Maßnahmen begründen
+
+Deshalb sind Pflegediagnosen eng mit dem Pflegeprozess und Kompetenzbereich I verbunden.
+
+### Passende Inhalte zu Kompetenzbereich I
+
+- [Kompetenzbereich I](/themen/pflegeausbildung/kompetenzbereich-1/)
+- [Kompetenzbereich I Pflegeprüfung](/themen/pflegeausbildung/kompetenzbereich-1-pflegepruefung/)
+- [Kompetenzbereich I Fallbeispiele](/themen/pflegeausbildung/kompetenzbereich-1-fallbeispiele/)
+- [Kompetenzbereich I Prüfungsfragen](/themen/pflegeausbildung/kompetenzbereich-1-pruefungsfragen/)
+
 ## Zusammenfassung
 
 Pflegediagnosen beschreiben pflegerische Probleme, Ressourcen und Risiken.
