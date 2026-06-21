@@ -29,6 +29,20 @@ Mögliche Hinweise sind:
 
 Nicht jede allergische Reaktion ist harmlos.
 
+## Was passiert bei einer Anaphylaxie?
+
+Bei einer schweren allergischen Reaktion schüttet der Körper große Mengen von Botenstoffen aus.
+
+Dadurch können unter anderem auftreten:
+
+- Gefäßerweiterung
+- Blutdruckabfall
+- Schwellungen der Atemwege
+- Atemnot
+- Kreislaufversagen
+
+Deshalb handelt es sich um einen medizinischen Notfall.
+
 ## Pflegerischer Blick
 
 Wichtig ist:
@@ -41,9 +55,36 @@ Wichtig ist:
 
 Die Situation kann schnell eskalieren.
 
+## Sofortmaßnahmen
+
+Bei Verdacht auf eine Anaphylaxie:
+
+- Arzt oder Rettungsdienst alarmieren
+- Patienten überwachen
+- Atmung kontrollieren
+- Vitalzeichen beobachten
+- Notfallmedikamente nach Anordnung vorbereiten
+- Patienten beruhigen
+
+## Typische Komplikationen
+
+Mögliche Folgen einer schweren Anaphylaxie sind:
+
+- schwere Atemnot
+- Kreislaufschock
+- Bewusstlosigkeit
+- Herz-Kreislauf-Stillstand
+
 ## Merke
 
 > Atemprobleme bei Allergie sind immer ein Warnsignal.
+
+## Passende Inhalte zum Thema Anaphylaxie
+
+Wenn du das Thema für Ausbildung oder Pflegeprüfung vertiefen möchtest, helfen dir diese Inhalte:
+
+- [Anaphylaxie Fallbeispiel mit Lösung](/themen/notfaelle/anaphylaxie-fallbeispiel/)
+- [Anaphylaxie in der Pflegeprüfung](/themen/notfaelle/anaphylaxie-pflegepruefung/)
 
 ## Vertiefung im Premiumbereich
 

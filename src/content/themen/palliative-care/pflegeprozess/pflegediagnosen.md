@@ -10,6 +10,16 @@ Pflegediagnosen sind ein zentraler Bestandteil des Pflegeprozesses. Sie helfen P
 
 Im Gegensatz zu medizinischen Diagnosen beschreiben Pflegediagnosen nicht die Erkrankung selbst, sondern die Auswirkungen auf die pflegerische Versorgung.
 
+## Weiterführende Inhalte zu Pflegediagnosen
+
+Wenn du Pflegediagnosen sicherer formulieren möchtest, helfen dir diese vertiefenden Seiten:
+
+- [Pflegediagnosen bei Asthma](/themen/palliative-care/pflegeprozess/pflegediagnosen-bei-asthma/)
+- [Pflegediagnosen bei COPD](/themen/palliative-care/pflegeprozess/pflegediagnosen-bei-copd/)
+- [Pflegediagnosen Beispiele mit PESR](/themen/palliative-care/pflegeprozess/pflegediagnosen-beispiele-pesr/)
+- [Pflegediagnosen in der Pflegeprüfung](/themen/palliative-care/pflegeprozess/pflegediagnosen-in-der-pflegepruefung/)
+- [Pflegediagnosen Fallbeispiele](/themen/palliative-care/pflegeprozess/pflegediagnosen-fallbeispiele/)
+
 ## Warum sind Pflegediagnosen wichtig?
 
 Pflegediagnosen helfen dabei:
@@ -91,6 +101,10 @@ Die Pflegediagnose ist die fachlich begründete Beschreibung dieses Problems.
 
 Pflegediagnosen werden häufig mit dem PESR-Schema formuliert.
 
+Vertiefung:
+
+[Pflegediagnosen Beispiele mit PESR](/themen/palliative-care/pflegeprozess/pflegediagnosen-beispiele-pesr/)
+
 ### P = Problem
 
 Welches pflegerische Problem liegt vor?
@@ -143,6 +157,10 @@ Mit ihrem Rollator kann sie kurze Strecken gehen.
 
 **R:** Mobilisation mit Rollator möglich, motiviert zur Mitarbeit
 
+Weitere Beispiele findest du hier:
+
+[Pflegediagnosen Fallbeispiele](/themen/palliative-care/pflegeprozess/pflegediagnosen-fallbeispiele/)
+
 ## Häufige Pflegediagnosen in der Pflegeausbildung
 
 In Prüfungen tauchen bestimmte Pflegediagnosen besonders häufig auf. Wer diese kennt und sicher formulieren kann, hat bei Fallaufgaben einen großen Vorteil.
@@ -190,6 +208,11 @@ Beispiele:
 - Pneumonie
 - Herzinsuffizienz
 
+Vertiefung:
+
+- [Pflegediagnosen bei COPD](/themen/palliative-care/pflegeprozess/pflegediagnosen-bei-copd/)
+- [Pflegediagnosen bei Asthma](/themen/palliative-care/pflegeprozess/pflegediagnosen-bei-asthma/)
+
 ### Risiko für Stürze
 
 Es bestehen Faktoren, die die Wahrscheinlichkeit eines Sturzes erhöhen.
@@ -217,6 +240,10 @@ Genau daraus entsteht später die Pflegediagnose nach PESR.
 COPD gehört zu den häufigsten Krankheitsbildern in der Pflegeausbildung und taucht regelmäßig in Prüfungen auf.
 
 Bei Menschen mit COPD stehen häufig Atemprobleme, Belastungsintoleranz und ein erhöhter Unterstützungsbedarf im Mittelpunkt.
+
+Ausführlicher erklärt:
+
+[Pflegediagnosen bei COPD](/themen/palliative-care/pflegeprozess/pflegediagnosen-bei-copd/)
 
 ### Mögliche Pflegediagnosen bei COPD
 
@@ -272,6 +299,16 @@ Bereits beim Gehen zum Badezimmer entwickelt er Atemnot und muss mehrfach pausie
 ### Prüfungs-Tipp
 
 Bei COPD-Fallaufgaben haben Atmung und Sauerstoffversorgung immer Vorrang vor Komfort, Mobilität oder Beratung.
+
+## Pflegediagnosen in der Pflegeprüfung
+
+In der Pflegeprüfung geht es nicht nur darum, Fachbegriffe auswendig zu kennen.
+
+Wichtiger ist, dass du Pflegeprobleme erkennst, begründest und sinnvoll priorisierst.
+
+Mehr dazu:
+
+[Pflegediagnosen in der Pflegeprüfung](/themen/palliative-care/pflegeprozess/pflegediagnosen-in-der-pflegepruefung/)
 
 ## Typische Fehler beim Formulieren von Pflegediagnosen
 

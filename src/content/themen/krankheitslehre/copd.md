@@ -10,6 +10,18 @@ COPD (chronisch obstruktive Lungenerkrankung) ist eine dauerhafte und fortschrei
 
 Der Begriff „obstruktiv“ bedeutet, dass die Atemwege verengt sind.
 
+## Weiterführende Inhalte zu COPD
+
+Wenn du COPD für Pflegeausbildung, Pflegeplanung oder Prüfung lernen möchtest, helfen dir diese vertiefenden Seiten:
+
+- [COPD Fallbeispiel mit Lösung](/themen/krankheitslehre/copd-fallbeispiel-mit-loesung/)
+- [COPD Pflegeplanung](/themen/krankheitslehre/copd-pflegeplanung/)
+- [COPD Pflegeprobleme](/themen/krankheitslehre/copd-pflegeprobleme/)
+- [COPD Pflegeprüfung](/themen/krankheitslehre/copd-pflegepruefung/)
+- [COPD Exazerbation Pflege](/themen/krankheitslehre/copd-exazerbation-pflege/)
+- [Lippenbremse bei COPD](/themen/krankheitslehre/lippenbremse-copd/)
+- [Pflegediagnosen bei COPD](/themen/palliative-care/pflegeprozess/pflegediagnosen-bei-copd/)
+
 ## Warum COPD wichtig ist
 
 COPD gehört zu den häufigsten chronischen Erkrankungen.
@@ -98,8 +110,9 @@ Jede akute Verschlechterung kann den Zustand dauerhaft verschlechtern.
 
 </div>
 
-Weitere Informationen:
-- [COPD Exazerbation Pflege](/themen/krankheitslehre/copd-exazerbation-pflege)
+Mehr dazu:
+
+[COPD Exazerbation Pflege](/themen/krankheitslehre/copd-exazerbation-pflege/)
 
 ## Beobachtungen in der Pflege
 
@@ -129,6 +142,11 @@ Wichtige Aspekte sind:
 - Selbstständigkeit fördern
 - Energie sparen helfen
 
+Vertiefung:
+
+- [COPD Pflegeprobleme](/themen/krankheitslehre/copd-pflegeprobleme/)
+- [COPD Pflegeplanung](/themen/krankheitslehre/copd-pflegeplanung/)
+
 ## Wichtige pflegerische Maßnahmen
 
 - Oberkörperhochlagerung
@@ -139,6 +157,10 @@ Wichtige Aspekte sind:
 - Unterstützung bei der Sekretlösung
 - ausreichende Flüssigkeitszufuhr (wenn möglich)
 - Beobachtung von Verschlechterungen
+
+Mehr zur Atemtechnik:
+
+[Lippenbremse bei COPD](/themen/krankheitslehre/lippenbremse-copd/)
 
 ## Umgang mit Atemnot
 
@@ -165,6 +187,19 @@ Wichtige Aufgaben sind:
 - Exazerbationen früh erkennen
 - interprofessionell zusammenarbeiten
 
+## Pflegediagnosen bei COPD
+
+Typische Pflegediagnosen bei COPD sind:
+
+- Beeinträchtigte Atmung
+- Aktivitätsintoleranz
+- Ineffektive Atemwegsreinigung
+- Angst
+
+Mehr dazu:
+
+[Pflegediagnosen bei COPD](/themen/palliative-care/pflegeprozess/pflegediagnosen-bei-copd/)
+
 ## Prüfungsrelevant
 
 In Prüfungen zählt vor allem:
@@ -174,6 +209,8 @@ In Prüfungen zählt vor allem:
 - Unterschied Ein- und Ausatmung verstehen
 - Bedeutung von Exazerbationen
 - pflegerische Maßnahmen benennen
+- Pflegeprobleme priorisieren
+- Pflegediagnosen formulieren
 
 Typische Prüfungsfragen:
 
@@ -182,3 +219,9 @@ Typische Prüfungsfragen:
 - Was ist eine Exazerbation?
 - Welche pflegerischen Maßnahmen sind wichtig?
 - Warum ist die Ausatmung erschwert?
+- Welches Pflegeproblem hat Vorrang?
+
+Für die Prüfung:
+
+- [COPD Fallbeispiel mit Lösung](/themen/krankheitslehre/copd-fallbeispiel-mit-loesung/)
+- [COPD Pflegeprüfung](/themen/krankheitslehre/copd-pflegepruefung/)
