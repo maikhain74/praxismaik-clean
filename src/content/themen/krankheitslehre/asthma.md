@@ -151,7 +151,7 @@ Wenn du das Thema für Ausbildung und Pflegeprüfung vertiefen möchtest:
 - [Asthma Pflegeplanung](/themen/krankheitslehre/asthma-pflegeplanung/)
 - [Asthma Pflegeprobleme](/themen/krankheitslehre/asthma-pflegeprobleme/)
 - [Asthma Pflegeprüfung](/themen/krankheitslehre/asthma-pflegepruefung/)
-- [Pflegediagnosen bei Asthma](/themen/palliative-care/pflegeprozess/pflegediagnosen-bei-asthma/)
+- [Pflegediagnosen bei Asthma](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-bei-asthma/)
 
 ## Merksatz
 

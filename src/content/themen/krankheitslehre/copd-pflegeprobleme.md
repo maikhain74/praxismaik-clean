@@ -18,7 +18,7 @@ Diese Seiten helfen dir, COPD im Zusammenhang mit Pflegeplanung und Prüfung bes
 - [COPD Fallbeispiel mit Lösung](/themen/krankheitslehre/copd-fallbeispiel-mit-loesung/)
 - [COPD Pflegeplanung](/themen/krankheitslehre/copd-pflegeplanung/)
 - [COPD Pflegeprüfung](/themen/krankheitslehre/copd-pflegepruefung/)
-- [Pflegediagnosen bei COPD](/themen/palliative-care/pflegeprozess/pflegediagnosen-bei-copd/)
+- [Pflegediagnosen bei COPD](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-bei-copd/)
 - [Lippenbremse bei COPD](/themen/krankheitslehre/lippenbremse-copd/)
 
 ## Was sind Pflegeprobleme?
@@ -69,7 +69,7 @@ Eine ausreichende Sauerstoffversorgung hat Vorrang.
 
 Vertiefung:
 
-[Pflegediagnosen bei COPD](/themen/palliative-care/pflegeprozess/pflegediagnosen-bei-copd/)
+[Pflegediagnosen bei COPD](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-bei-copd/)
 
 ## Pflegeproblem 2: Eingeschränkte Belastbarkeit
 

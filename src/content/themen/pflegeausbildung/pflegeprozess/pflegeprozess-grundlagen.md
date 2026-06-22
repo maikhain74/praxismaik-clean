@@ -170,9 +170,9 @@ Wer den Pflegeprozess sicher beherrscht, hat eine wichtige Grundlage für Pflege
 
 ## Passende Inhalte
 
-- [Pflegediagnosen](/themen/palliative-care/pflegeprozess/pflegediagnosen/)
-- [PESR-Schema](/themen/palliative-care/pflegeprozess/pesr-schema/)
-- [Vorbehaltsaufgaben](/themen/palliative-care/pflegeprozess/vorbehaltsaufgaben/)
+- [Pflegediagnosen](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen/)
+- [PESR-Schema](/themen/pflegeausbildung/pflegeprozess/pesr-schema/)
+- [Vorbehaltsaufgaben](/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben/)
 - [Kompetenzbereich I](/themen/pflegeausbildung/kompetenzbereich-1/)
 
 ## Merksatz

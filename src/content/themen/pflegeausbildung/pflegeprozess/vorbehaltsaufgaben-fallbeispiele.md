@@ -187,12 +187,12 @@ Wer typische Situationen sicher analysieren kann, erkennt Vorbehaltsaufgaben deu
 
 Wenn du das Thema vertiefen möchtest:
 
-- [Vorbehaltsaufgaben](/themen/palliative-care/pflegeprozess/vorbehaltsaufgaben/)
-- [Vorbehaltsaufgaben Beispiele](/themen/palliative-care/pflegeprozess/vorbehaltsaufgaben-beispiele/)
-- [Vorbehaltsaufgaben Pflegeprüfung](/themen/palliative-care/pflegeprozess/vorbehaltsaufgaben-pflegepruefung/)
-- [Pflegeprozess Grundlagen](/themen/palliative-care/pflegeprozess/pflegeprozess-grundlagen/)
-- [Pflegediagnosen](/themen/palliative-care/pflegeprozess/pflegediagnosen/)
-- [PESR-Schema](/themen/palliative-care/pflegeprozess/pesr-schema/)
+- [Vorbehaltsaufgaben](/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben/)
+- [Vorbehaltsaufgaben Beispiele](/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben-beispiele/)
+- [Vorbehaltsaufgaben Pflegeprüfung](/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben-pflegepruefung/)
+- [Pflegeprozess Grundlagen](/themen/pflegeausbildung/pflegeprozess/pflegeprozess-grundlagen/)
+- [Pflegediagnosen](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen/)
+- [PESR-Schema](/themen/pflegeausbildung/pflegeprozess/pesr-schema/)
 
 ## Merksatz
 

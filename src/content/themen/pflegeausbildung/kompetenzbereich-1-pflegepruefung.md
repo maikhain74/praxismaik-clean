@@ -178,10 +178,10 @@ Wenn du Kompetenzbereich I für die Pflegeprüfung vertiefen möchtest:
 - [Kompetenzbereich I](/themen/pflegeausbildung/kompetenzbereich-1/)
 - [Kompetenzbereich I Fallbeispiele](/themen/pflegeausbildung/kompetenzbereich-1-fallbeispiele/)
 - [Kompetenzbereich I Prüfungsfragen](/themen/pflegeausbildung/kompetenzbereich-1-pruefungsfragen/)
-- [Pflegeprozess Grundlagen](/themen/palliative-care/pflegeprozess/pflegeprozess-grundlagen/)
-- [Pflegediagnosen](/themen/palliative-care/pflegeprozess/pflegediagnosen/)
-- [PESR-Schema](/themen/palliative-care/pflegeprozess/pesr-schema/)
-- [Vorbehaltsaufgaben](/themen/palliative-care/pflegeprozess/vorbehaltsaufgaben/)
+- [Pflegeprozess Grundlagen](/themen/pflegeausbildung/pflegeprozess/pflegeprozess-grundlagen/)
+- [Pflegediagnosen](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen/)
+- [PESR-Schema](/themen/pflegeausbildung/pflegeprozess/pesr-schema/)
+- [Vorbehaltsaufgaben](/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben/)
 
 ## Merksatz
 

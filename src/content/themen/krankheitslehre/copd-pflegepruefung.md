@@ -20,7 +20,7 @@ Diese Seiten helfen dir, COPD für die Prüfung vollständig zu verstehen:
 - [COPD Fallbeispiel mit Lösung](/themen/krankheitslehre/copd-fallbeispiel-mit-loesung/)
 - [COPD Pflegeplanung](/themen/krankheitslehre/copd-pflegeplanung/)
 - [COPD Pflegeprobleme](/themen/krankheitslehre/copd-pflegeprobleme/)
-- [Pflegediagnosen bei COPD](/themen/palliative-care/pflegeprozess/pflegediagnosen-bei-copd/)
+- [Pflegediagnosen bei COPD](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-bei-copd/)
 - [Lippenbremse bei COPD](/themen/krankheitslehre/lippenbremse-copd/)
 
 ## Warum ist COPD prüfungsrelevant?
@@ -111,7 +111,7 @@ Patient entwickelt bereits bei geringer Belastung Atemnot.
 
 Mehr dazu:
 
-[Pflegediagnosen bei COPD](/themen/palliative-care/pflegeprozess/pflegediagnosen-bei-copd/)
+[Pflegediagnosen bei COPD](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-bei-copd/)
 
 ## Typische Prüfungsfrage 4
 

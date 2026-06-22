@@ -130,9 +130,9 @@ Für die Pflegeprüfung ist besonders wichtig, die Verbindung zwischen Vorbehalt
 
 Wenn du das Thema vertiefen möchtest:
 
-- [Vorbehaltsaufgaben Beispiele](/themen/palliative-care/pflegeprozess/vorbehaltsaufgaben-beispiele/)
-- [Vorbehaltsaufgaben Fallbeispiele](/themen/palliative-care/pflegeprozess/vorbehaltsaufgaben-fallbeispiele/)
-- [Vorbehaltsaufgaben Pflegeprüfung](/themen/palliative-care/pflegeprozess/vorbehaltsaufgaben-pflegepruefung/)
+- [Vorbehaltsaufgaben Beispiele](/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben-beispiele/)
+- [Vorbehaltsaufgaben Fallbeispiele](/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben-fallbeispiele/)
+- [Vorbehaltsaufgaben Pflegeprüfung](/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben-pflegepruefung/)
 
 ## Passende Inhalte zu Kompetenzbereich I
 
@@ -145,9 +145,9 @@ Vorbehaltsaufgaben hängen eng mit Kompetenzbereich I zusammen, weil dort Pflege
 
 ## Passende Inhalte zum Pflegeprozess
 
-- [Pflegeprozess Grundlagen](/themen/palliative-care/pflegeprozess/pflegeprozess-grundlagen/)
-- [Pflegediagnosen](/themen/palliative-care/pflegeprozess/pflegediagnosen/)
-- [PESR-Schema](/themen/palliative-care/pflegeprozess/pesr-schema/)
+- [Pflegeprozess Grundlagen](/themen/pflegeausbildung/pflegeprozess/pflegeprozess-grundlagen/)
+- [Pflegediagnosen](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen/)
+- [PESR-Schema](/themen/pflegeausbildung/pflegeprozess/pesr-schema/)
 
 ## Merksatz
 

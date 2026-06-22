@@ -20,7 +20,7 @@ Wenn du COPD für Pflegeplanung, Pflegeprüfung oder Pflegediagnosen vertiefen m
 - [COPD Pflegeplanung](/themen/krankheitslehre/copd-pflegeplanung/)
 - [COPD Pflegeprobleme](/themen/krankheitslehre/copd-pflegeprobleme/)
 - [COPD Pflegeprüfung](/themen/krankheitslehre/copd-pflegepruefung/)
-- [Pflegediagnosen bei COPD](/themen/palliative-care/pflegeprozess/pflegediagnosen-bei-copd/)
+- [Pflegediagnosen bei COPD](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-bei-copd/)
 - [Lippenbremse bei COPD](/themen/krankheitslehre/lippenbremse-copd/)
 
 ## Fallsituation
@@ -97,7 +97,7 @@ Formuliere eine Pflegediagnose nach PESR.
 
 Vertiefung:
 
-[Pflegediagnosen bei COPD](/themen/palliative-care/pflegeprozess/pflegediagnosen-bei-copd/)
+[Pflegediagnosen bei COPD](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-bei-copd/)
 
 ## Aufgabe 4
 

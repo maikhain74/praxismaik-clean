@@ -172,7 +172,7 @@ Wer Symptome erkennt, Pflegeprobleme priorisiert und geeignete Maßnahmen begrü
 Wenn du dein Wissen vertiefen möchtest:
 
 - [Asthma: Ursachen, Symptome und Pflege](/themen/krankheitslehre/asthma/)
-- [Pflegediagnosen bei Asthma](/themen/palliative-care/pflegeprozess/pflegediagnosen-bei-asthma/)
+- [Pflegediagnosen bei Asthma](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-bei-asthma/)
 
 ## Merksatz
 

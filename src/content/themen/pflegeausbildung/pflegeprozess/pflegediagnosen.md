@@ -14,11 +14,11 @@ Im Gegensatz zu medizinischen Diagnosen beschreiben Pflegediagnosen nicht die Er
 
 Wenn du Pflegediagnosen sicherer formulieren möchtest, helfen dir diese vertiefenden Seiten:
 
-- [Pflegediagnosen bei Asthma](/themen/palliative-care/pflegeprozess/pflegediagnosen-bei-asthma/)
-- [Pflegediagnosen bei COPD](/themen/palliative-care/pflegeprozess/pflegediagnosen-bei-copd/)
-- [Pflegediagnosen Beispiele mit PESR](/themen/palliative-care/pflegeprozess/pflegediagnosen-beispiele-pesr/)
-- [Pflegediagnosen in der Pflegeprüfung](/themen/palliative-care/pflegeprozess/pflegediagnosen-in-der-pflegepruefung/)
-- [Pflegediagnosen Fallbeispiele](/themen/palliative-care/pflegeprozess/pflegediagnosen-fallbeispiele/)
+- [Pflegediagnosen bei Asthma](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-bei-asthma/)
+- [Pflegediagnosen bei COPD](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-bei-copd/)
+- [Pflegediagnosen Beispiele mit PESR](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-beispiele-pesr/)
+- [Pflegediagnosen in der Pflegeprüfung](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-in-der-pflegepruefung/)
+- [Pflegediagnosen Fallbeispiele](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-fallbeispiele/)
 
 ## Warum sind Pflegediagnosen wichtig?
 
@@ -103,7 +103,7 @@ Pflegediagnosen werden häufig mit dem PESR-Schema formuliert.
 
 Vertiefung:
 
-[Pflegediagnosen Beispiele mit PESR](/themen/palliative-care/pflegeprozess/pflegediagnosen-beispiele-pesr/)
+[Pflegediagnosen Beispiele mit PESR](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-beispiele-pesr/)
 
 ### P = Problem
 
@@ -159,7 +159,7 @@ Mit ihrem Rollator kann sie kurze Strecken gehen.
 
 Weitere Beispiele findest du hier:
 
-[Pflegediagnosen Fallbeispiele](/themen/palliative-care/pflegeprozess/pflegediagnosen-fallbeispiele/)
+[Pflegediagnosen Fallbeispiele](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-fallbeispiele/)
 
 ## Häufige Pflegediagnosen in der Pflegeausbildung
 
@@ -210,8 +210,8 @@ Beispiele:
 
 Vertiefung:
 
-- [Pflegediagnosen bei COPD](/themen/palliative-care/pflegeprozess/pflegediagnosen-bei-copd/)
-- [Pflegediagnosen bei Asthma](/themen/palliative-care/pflegeprozess/pflegediagnosen-bei-asthma/)
+- [Pflegediagnosen bei COPD](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-bei-copd/)
+- [Pflegediagnosen bei Asthma](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-bei-asthma/)
 
 ### Risiko für Stürze
 
@@ -243,7 +243,7 @@ Bei Menschen mit COPD stehen häufig Atemprobleme, Belastungsintoleranz und ein 
 
 Ausführlicher erklärt:
 
-[Pflegediagnosen bei COPD](/themen/palliative-care/pflegeprozess/pflegediagnosen-bei-copd/)
+[Pflegediagnosen bei COPD](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-bei-copd/)
 
 ### Mögliche Pflegediagnosen bei COPD
 
@@ -308,7 +308,7 @@ Wichtiger ist, dass du Pflegeprobleme erkennst, begründest und sinnvoll prioris
 
 Mehr dazu:
 
-[Pflegediagnosen in der Pflegeprüfung](/themen/palliative-care/pflegeprozess/pflegediagnosen-in-der-pflegepruefung/)
+[Pflegediagnosen in der Pflegeprüfung](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-in-der-pflegepruefung/)
 
 ## Typische Fehler beim Formulieren von Pflegediagnosen
 

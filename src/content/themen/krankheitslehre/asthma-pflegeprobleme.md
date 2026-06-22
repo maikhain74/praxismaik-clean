@@ -175,7 +175,7 @@ Wenn du dein Wissen vertiefen möchtest:
 - [Asthma Pflegeplanung](/themen/krankheitslehre/asthma-pflegeplanung/)
 - [Asthma Fallbeispiel mit Lösung](/themen/krankheitslehre/asthma-fallbeispiel-mit-loesung/)
 - [Asthma Pflegeprüfung](/themen/krankheitslehre/asthma-pflegepruefung/)
-- [Pflegediagnosen bei Asthma](/themen/palliative-care/pflegeprozess/pflegediagnosen-bei-asthma/)
+- [Pflegediagnosen bei Asthma](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-bei-asthma/)
 
 ## Merksatz
 

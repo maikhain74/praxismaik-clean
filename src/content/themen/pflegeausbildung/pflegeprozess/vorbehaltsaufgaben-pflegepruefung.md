@@ -180,12 +180,12 @@ Besonders wichtig sind die gesetzlichen Grundlagen, die Verbindung zum Pflegepro
 
 Wenn du das Thema vertiefen möchtest:
 
-- [Vorbehaltsaufgaben](/themen/palliative-care/pflegeprozess/vorbehaltsaufgaben/)
-- [Vorbehaltsaufgaben Beispiele](/themen/palliative-care/pflegeprozess/vorbehaltsaufgaben-beispiele/)
-- [Vorbehaltsaufgaben Fallbeispiele](/themen/palliative-care/pflegeprozess/vorbehaltsaufgaben-fallbeispiele/)
-- [Pflegeprozess Grundlagen](/themen/palliative-care/pflegeprozess/pflegeprozess-grundlagen/)
-- [Pflegediagnosen](/themen/palliative-care/pflegeprozess/pflegediagnosen/)
-- [PESR-Schema](/themen/palliative-care/pflegeprozess/pesr-schema/)
+- [Vorbehaltsaufgaben](/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben/)
+- [Vorbehaltsaufgaben Beispiele](/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben-beispiele/)
+- [Vorbehaltsaufgaben Fallbeispiele](/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben-fallbeispiele/)
+- [Pflegeprozess Grundlagen](/themen/pflegeausbildung/pflegeprozess/pflegeprozess-grundlagen/)
+- [Pflegediagnosen](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen/)
+- [PESR-Schema](/themen/pflegeausbildung/pflegeprozess/pesr-schema/)
 
 ## Merksatz
 

@@ -20,7 +20,7 @@ Wenn du COPD für Pflegeausbildung, Pflegeplanung oder Prüfung lernen möchtest
 - [COPD Pflegeprüfung](/themen/krankheitslehre/copd-pflegepruefung/)
 - [COPD Exazerbation Pflege](/themen/krankheitslehre/copd-exazerbation-pflege/)
 - [Lippenbremse bei COPD](/themen/krankheitslehre/lippenbremse-copd/)
-- [Pflegediagnosen bei COPD](/themen/palliative-care/pflegeprozess/pflegediagnosen-bei-copd/)
+- [Pflegediagnosen bei COPD](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-bei-copd/)
 
 ## Warum COPD wichtig ist
 
@@ -198,7 +198,7 @@ Typische Pflegediagnosen bei COPD sind:
 
 Mehr dazu:
 
-[Pflegediagnosen bei COPD](/themen/palliative-care/pflegeprozess/pflegediagnosen-bei-copd/)
+[Pflegediagnosen bei COPD](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-bei-copd/)
 
 ## Prüfungsrelevant
 

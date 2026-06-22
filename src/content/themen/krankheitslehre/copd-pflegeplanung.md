@@ -20,7 +20,7 @@ Diese Seiten helfen dir, COPD als Prüfungsthema vollständig zu verstehen:
 - [COPD Fallbeispiel mit Lösung](/themen/krankheitslehre/copd-fallbeispiel-mit-loesung/)
 - [COPD Pflegeprobleme](/themen/krankheitslehre/copd-pflegeprobleme/)
 - [COPD Pflegeprüfung](/themen/krankheitslehre/copd-pflegepruefung/)
-- [Pflegediagnosen bei COPD](/themen/palliative-care/pflegeprozess/pflegediagnosen-bei-copd/)
+- [Pflegediagnosen bei COPD](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-bei-copd/)
 - [Lippenbremse bei COPD](/themen/krankheitslehre/lippenbremse-copd/)
 
 ## Was ist eine Pflegeplanung?
@@ -62,7 +62,7 @@ Herr Meier wirkt unruhig und ängstlich.
 
 Mehr dazu:
 
-[Pflegediagnosen bei COPD](/themen/palliative-care/pflegeprozess/pflegediagnosen-bei-copd/)
+[Pflegediagnosen bei COPD](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-bei-copd/)
 
 ## Schritt 2: Pflegeziel
 
