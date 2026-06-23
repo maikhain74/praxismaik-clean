@@ -15,6 +15,10 @@ export async function getStaticPaths() {
     const slugParts = thema.slug.split("/");
     const topicKey = slugParts[slugParts.length - 1];
 
+    const unterthemen = themen
+  .filter((item) => item.slug.startsWith(`${thema.slug}/`))
+  .sort((a, b) => a.data.title.localeCompare(b.data.title, "de"));
+
     const skripteZumThema = lernskripte
       .filter((item) => item.data.topic === thema.slug || item.data.topic === topicKey)
       .sort((a, b) => (a.data.reihenfolge ?? 999) - (b.data.reihenfolge ?? 999));
@@ -29,21 +33,23 @@ export async function getStaticPaths() {
     const examQuizZumThema = examQuiz
       .filter((item) => item.data.topic === thema.slug || item.data.topic === topicKey);
 
-    return {
-      params: { slug: thema.slug },
-      props: {
-        thema,
-        skripteZumThema,
-        pruefungZumThema,
-        quizZumThema,
-        examQuizZumThema,
-      },
-    };
+return {
+  params: { slug: thema.slug },
+  props: {
+    thema,
+    unterthemen,
+    skripteZumThema,
+    pruefungZumThema,
+    quizZumThema,
+    examQuizZumThema,
+  },
+};
   });
 }
 
 const {
   thema,
+  unterthemen,
   skripteZumThema,
   pruefungZumThema,
   quizZumThema,
@@ -96,6 +102,41 @@ const seoDescription =
     <article class="topic-content">
   <Content />
 </article>
+
+{isCategoryPage && unterthemen.length > 0 && (
+  <section class="topic-section">
+    <div class="section-head">
+      <div>
+        <h2>Unterthemen</h2>
+        <p class="section-intro-text">
+          Wähle ein passendes Thema und lerne gezielt weiter.
+        </p>
+      </div>
+    </div>
+
+    <div class="topic-grid">
+      {unterthemen.map((item) => (
+        <a class="topic-card topic-card-free" href={`/themen/${item.slug}/`}>
+          <div class="topic-card-top">
+            <span class="card-badge card-badge-free">Thema</span>
+          </div>
+
+          <h3>{item.data.title}</h3>
+
+          <p>
+            {item.data.beschreibung ??
+              item.data.description ??
+              "Verständlich erklärt für Pflegeausbildung, Praxis und Prüfung."}
+          </p>
+
+          <span class="topic-card-link-text">
+            Thema öffnen
+          </span>
+        </a>
+      ))}
+    </div>
+  </section>
+)}
 
 <section class="topic-premium-funnel">
   <div class="topic-premium-funnel-box">
