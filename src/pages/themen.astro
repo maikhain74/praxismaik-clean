@@ -152,7 +152,16 @@ const grouped = [
 
 <BaseLayout title="Themen">
   <main class="container">
-    <h1>Alle Themen</h1>
+  <section class="themes-hero">
+    <span class="themes-eyebrow">PraxisMaik Themen</span>
+
+    <h1>Was möchtest du heute lernen?</h1>
+
+    <p>
+      Wähle einen Themenbereich und lerne Pflege Schritt für Schritt,
+      von Grundlagen bis zu Prüfungsfällen und Praxisbesuchen.
+    </p>
+  </section>
 
     {grouped.map((group) => (
       <section>
@@ -177,41 +186,111 @@ const grouped = [
 .container {
   max-width: 1100px;
   margin: auto;
-  padding: 2rem 1rem;
+  padding: 2.2rem 1rem 3rem;
 }
 
-h1 {
-  margin-bottom: 2rem;
+.themes-hero {
+  max-width: 760px;
+  margin-bottom: 2.8rem;
+}
+
+.themes-eyebrow {
+  display: inline-block;
+  margin-bottom: 0.7rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: #eef5ff;
+  color: #18324a;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.themes-hero h1 {
+  margin: 0 0 0.8rem;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.1;
+  color: #18324a;
+}
+
+.themes-hero p {
+  margin: 0;
+  max-width: 62ch;
+  color: #556270;
+  line-height: 1.75;
+  font-size: 1.05rem;
+}
+
+section + section {
+  margin-top: 2.8rem;
 }
 
 h2 {
-  margin-top: 2rem;
+  margin: 0 0 1rem;
+  color: #18324a;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 .card {
   display: block;
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 12px;
+  min-height: 190px;
+  padding: 1.35rem;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
   text-decoration: none;
   color: inherit;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
 
 .card:hover {
-  background: #f5f5f5;
+  transform: translateY(-4px);
+  border-color: #c97b63;
+  box-shadow: 0 16px 32px rgba(24, 50, 74, 0.09);
+  text-decoration: none;
 }
 
 .icon {
-  font-size: 1.5rem;
+  display: inline-flex;
+  margin-bottom: 0.8rem;
+  font-size: 1.7rem;
 }
 
-@media (max-width: 768px) {
+.card h3 {
+  margin: 0 0 0.55rem;
+  color: #18324a;
+}
+
+.card p {
+  margin: 0;
+  color: #556270;
+  line-height: 1.6;
+}
+
+.card small {
+  display: inline-flex;
+  margin-top: 1rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: #fff4e8;
+  color: #9a3412;
+  font-weight: 800;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
   .grid {
     grid-template-columns: 1fr;
   }

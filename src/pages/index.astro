@@ -14,19 +14,18 @@ const description =
       <div class="hero-text">
         <span class="eyebrow">Generalistische Pflegeausbildung</span>
 
-     <h1>
-  Dein klarer Lernweg durch die Pflegeausbildung
+<h1>
+  Pflege verstehen. Fälle sicher lösen. Prüfung besser bestehen.
 </h1>
 
 <p class="hero-lead">
-  PraxisMaik begleitet dich von den Grundlagen bis zur Abschlussprüfung.
-  Du lernst Pflege Schritt für Schritt zu verstehen, anzuwenden und sicher in
-  Fallsituationen zu denken.
+  PraxisMaik führt dich Schritt für Schritt durch Pflegeausbildung, Praxisbesuche
+  und Abschlussprüfung, mit Lernskripten, Prüfungsfällen, Examensquiz und E-Books.
 </p>
 
 <p class="hero-sublead">
-  Nicht planlos auswendig lernen, sondern mit Struktur, Praxisbezug und klarer
-  Denklogik durch Ausbildung, Praxis und Prüfung gehen.
+  Lerne Pflege logisch statt planlos auswendig, damit du in Fallsituationen
+  sicherer denkst, begründest und handelst.
 </p>
 
         <div class="button-group">
@@ -40,6 +39,78 @@ const description =
         <img src="/maik-blau.jpg" alt="PraxisMaik Startseite" />
       </div>
     </section>
+
+    <section class="home-proof-strip" aria-label="PraxisMaik in Zahlen">
+  <div>
+    <strong>240+</strong>
+    <span>Lernskripte</span>
+  </div>
+
+  <div>
+    <strong>45</strong>
+    <span>Prüfungsfälle</span>
+  </div>
+
+  <div>
+    <strong>61</strong>
+    <span>Examensfragen</span>
+  </div>
+
+  <div>
+    <strong>6</strong>
+    <span>Premium-E-Books</span>
+  </div>
+
+  <div>
+    <strong>500.000+</strong>
+    <span>TikTok-Aufrufe</span>
+  </div>
+</section>
+
+<section class="home-audience">
+  <div class="section-headline">
+    <h2>Für wen ist PraxisMaik?</h2>
+
+    <p class="section-intro">
+      Egal ob du gerade deine Pflegeausbildung absolvierst oder Auszubildende
+      begleitest, hier findest du den passenden Einstieg.
+    </p>
+  </div>
+
+  <div class="home-audience-grid">
+
+    <a href="/themen/" class="home-audience-card">
+      <span class="audience-badge">👨‍🎓 Pflegeazubis</span>
+
+      <h3>Erfolgreich durch die Pflegeausbildung</h3>
+
+      <ul>
+        <li>✓ Lernskripte</li>
+        <li>✓ Prüfungsfälle</li>
+        <li>✓ Examensquiz</li>
+        <li>✓ Pflegeprozess verstehen</li>
+      </ul>
+
+      <strong>Jetzt lernen →</strong>
+    </a>
+
+    <a href="/themen/praxisanleitung/" class="home-audience-card home-audience-card-pa">
+      <span class="audience-badge">👨‍🏫 Praxisanleiter</span>
+
+      <h3>Auszubildende sicher begleiten</h3>
+
+      <ul>
+        <li>✓ Praxisanleitung</li>
+        <li>✓ Erstgespräche</li>
+        <li>✓ Feedback</li>
+        <li>✓ Beurteilungen</li>
+      </ul>
+
+      <strong>Bereich öffnen →</strong>
+    </a>
+
+  </div>
+</section>
 
 <form class="home-search" action="/suche" method="get">
   <label for="home-search-input">Thema suchen</label>
@@ -610,6 +681,121 @@ komplette Prüfungsfälle und Quiztraining für deinen gesamten Ausbildungsweg.
   height: auto;
   display: block;
   border-radius: 14px;
+}
+
+.home-proof-strip {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.9rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.home-proof-strip div {
+  padding: 1rem;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  text-align: center;
+}
+
+.home-proof-strip strong {
+  display: block;
+  color: #18324a;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.home-proof-strip span {
+  display: block;
+  margin-top: 0.35rem;
+  color: #556270;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .home-proof-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .home-proof-strip {
+    grid-template-columns: 1fr;
+  }
+}
+
+.home-audience {
+  margin-top: 3rem;
+}
+
+.home-audience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.3rem;
+  margin-top: 1.2rem;
+}
+
+.home-audience-card {
+  display: block;
+  padding: 1.5rem;
+  border-radius: 22px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.home-audience-card:hover {
+  transform: translateY(-4px);
+  border-color: #c97b63;
+  box-shadow: 0 16px 32px rgba(24, 50, 74, 0.09);
+  text-decoration: none;
+}
+
+.home-audience-card-pa {
+  background: linear-gradient(180deg, #fffaf6 0%, #ffffff 100%);
+  border-color: rgba(154, 52, 18, 0.16);
+}
+
+.audience-badge {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  background: #eef5ff;
+  color: #18324a;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.home-audience-card h3 {
+  margin: 0 0 0.9rem;
+  color: #18324a;
+}
+
+.home-audience-card ul {
+  margin: 0 0 1.1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.home-audience-card li {
+  margin-bottom: 0.45rem;
+  color: #556270;
+  line-height: 1.5;
+}
+
+.home-audience-card strong {
+  color: #c97b63;
+}
+
+@media (max-width: 760px) {
+  .home-audience-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .section {
