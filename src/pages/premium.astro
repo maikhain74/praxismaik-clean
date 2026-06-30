@@ -47,137 +47,140 @@ const premiumExamQuizCount = premiumExamQuiz.length;
       <span class="current">Premium</span>
     </nav>
 
-    <header class="premium-hero">
-      {hasPremiumCookie ? (
-        <div class="premium-active-box">
-          <strong>Premium ist bereits aktiv.</strong>
-          <span>Du hast bereits Zugriff auf alle freigeschalteten Premium-Inhalte.</span>
+  <header class="premium-hero">
+  {hasPremiumCookie ? (
+    <div class="premium-active-box">
+      <strong>Premium ist bereits aktiv.</strong>
+      <span>Willkommen zurück. Wähle direkt den Bereich, in dem du heute weiterlernen möchtest.</span>
+
+      <div class="premium-dashboard-split">
+        <div class="premium-dashboard-group">
+          <h2>Für Pflegeazubis</h2>
+          <p>Sicherer lernen, Fälle verstehen und gezielt für Praxisbesuche und Abschlussprüfung trainieren.</p>
+
+          <div class="premium-dashboard-grid">
+            <a href="/lernskripte/" class="premium-dashboard-card">
+              <strong>📖 Lernskripte</strong>
+              <span>Über 240 Themen gezielt wiederholen →</span>
+            </a>
+
+            <a href="/pruefung/" class="premium-dashboard-card">
+              <strong>🩺 Prüfungsfälle</strong>
+              <span>Fallsituationen mit Lösungen trainieren →</span>
+            </a>
+
+            <a href="/quiz-exam" class="premium-dashboard-card">
+              <strong>🎓 Examensquiz</strong>
+              <span>Fragen im Examensmodus bearbeiten →</span>
+            </a>
+
+            <a href="/ebooks/" class="premium-dashboard-card">
+              <strong>📚 Pflege-E-Books</strong>
+              <span>Pflegeprozess, Prüfungsfälle und Vorbehaltsaufgaben öffnen →</span>
+            </a>
+          </div>
         </div>
-      ) : (
-        <div class="premium-urgency">
-          <strong>Du siehst aktuell nur Vorschauen.</strong>
+
+        <div class="premium-dashboard-group">
+          <h2>Für Praxisanleiter</h2>
+          <p>Erstgespräche, Feedback, Beurteilungen und Anleitungssituationen professioneller gestalten.</p>
+
+          <div class="premium-dashboard-grid">
+            <a href="/ebooks/praxisanleitung/" class="premium-dashboard-card">
+              <strong>📘 Praxisanleitung</strong>
+              <span>Methoden, Gespräche und Struktur für den Ausbildungsalltag →</span>
+            </a>
+
+            <a href="/ebooks/formulierungen-praxisanleitung/" class="premium-dashboard-card">
+              <strong>📝 Formulierungen</strong>
+              <span>Vorlagen für Erstgespräch, Feedback und Beurteilungen →</span>
+            </a>
+          </div>
         </div>
-      )}
+      </div>
+    </div>
+  ) : (
+    <>
+      <div class="premium-urgency">
+        <strong>Du siehst aktuell nur Vorschauen.</strong>
+      </div>
 
-     <span class="premium-eyebrow">PraxisMaik Premium</span>
+      <span class="premium-eyebrow">PraxisMaik Premium</span>
 
-<h1>🎓 Bestehe deine Pflegeprüfung sicherer.</h1>
+      <h1>🎓 Bestehe deine Pflegeprüfung sicherer.</h1>
 
-<p class="premium-lead">
-  240 Lernskripte, 45 Prüfungsfälle, 61 Examensfragen und 6 Premium-E-Books.
-</p>
+      <p class="premium-lead">
+        240 Lernskripte, 45 Prüfungsfälle, 61 Examensfragen und 6 Premium-E-Books.
+      </p>
 
-<div class="premium-included-box">
-  <strong>Alles in einem Zugang:</strong>
+      <div class="premium-included-box">
+        <strong>Alles in einem Zugang:</strong>
 
-  <ul>
-    <li>240 Lernskripte</li>
-    <li>45 Prüfungsfälle mit Lösungen</li>
-    <li>61 Examensfragen</li>
-    <li>6 Premium-E-Books</li>
-    <li>Dauerhafter Zugriff</li>
-    <li>Kein Abo</li>
-  </ul>
-</div>
+        <ul>
+          <li>240 Lernskripte</li>
+          <li>45 Prüfungsfälle mit Lösungen</li>
+          <li>61 Examensfragen</li>
+          <li>6 Premium-E-Books</li>
+          <li>Dauerhafter Zugriff</li>
+          <li>Kein Abo</li>
+        </ul>
+      </div>
 
-{!hasPremiumCookie && (
-  <div class="premium-above-fold-cta">
-    <a
-      href="/premium-interesse"
-      class="btn premium-main-btn"
-      data-ga-event="premium_above_fold_cta_click"
-    >
-      Premium für 39 € freischalten
-    </a>
+      <div class="premium-above-fold-cta">
+        <a
+          href="/premium-interesse"
+          class="btn premium-main-btn"
+          data-ga-event="premium_above_fold_cta_click"
+        >
+          Premium für 39 € freischalten
+        </a>
 
-    <p class="premium-above-fold-note">
-      Sofortiger Zugriff. Kein Abo. Dauerhaft nutzbar.
-    </p>
-  </div>
-)}
+        <p class="premium-above-fold-note">
+          Sofortiger Zugriff. Kein Abo. Dauerhaft nutzbar.
+        </p>
+      </div>
 
-<p class="premium-loss">
-  Viele Pflegeazubis lernen viel, fühlen sich in Fallsituationen und Prüfungen aber trotzdem unsicher.
-</p>
+      <p class="premium-loss">
+        Viele Pflegeazubis lernen viel, fühlen sich in Fallsituationen und Prüfungen aber trotzdem unsicher.
+      </p>
 
-<p class="premium-loss">
-  Premium zeigt dir die Denklogik hinter Pflegeplanung, Prioritäten und Prüfungsfragen.
-</p>
-
-    <p class="premium-above-fold-note">
-      Sofortiger Zugriff. Kein Abo. Dauerhaft nutzbar.
-    </p>
-  </div>
+      <p class="premium-loss">
+        Premium zeigt dir die Denklogik hinter Pflegeplanung, Prioritäten und Prüfungsfragen.
+      </p>
 
       <div class="premium-price-inline">
-  <strong>39 € einmalig</strong>
-  <span>entspricht weniger als 1 € pro Lerntag</span>
-  <span>kein Abo, keine laufenden Kosten</span>
+        <strong>39 € einmalig</strong>
+        <span>entspricht weniger als 1 € pro Lerntag</span>
+        <span>kein Abo, keine laufenden Kosten</span>
 
-  <p class="premium-value">
-  Premium hilft dir dabei, Fallsituationen sicherer zu lösen,
-  Pflegeplanungen strukturierter zu schreiben und dich gezielt
-  auf die Abschlussprüfung vorzubereiten.
-</p>
+        <p class="premium-value">
+          Premium hilft dir dabei, Fallsituationen sicherer zu lösen,
+          Pflegeplanungen strukturierter zu schreiben und dich gezielt
+          auf die Abschlussprüfung vorzubereiten.
+        </p>
 
-<div class="premium-price-benefits">
-  <span>✓ Dauerhafter Zugriff</span>
-  <span>✓ Kein Abo</span>
-  <span>✓ Keine Folgekosten</span>
-  <span>✓ Sofort freigeschaltet</span>
-</div>
+        <div class="premium-price-benefits">
+          <span>✓ Dauerhafter Zugriff</span>
+          <span>✓ Kein Abo</span>
+          <span>✓ Keine Folgekosten</span>
+          <span>✓ Sofort freigeschaltet</span>
+        </div>
 
-  <div class="premium-social-proof">
-  <span>🎓 Über 500.000 Videoaufrufe auf TikTok</span>
-  <span>📚 Entwickelt aus echten Prüfungsfragen und Fallbeispielen</span>
-</div>
+        <div class="premium-social-proof">
+          <span>🎓 Über 500.000 Videoaufrufe auf TikTok</span>
+          <span>📚 Entwickelt aus echten Prüfungsfragen und Fallbeispielen</span>
+        </div>
 
-  <p class="premium-risk">
-    Du kannst sofort starten und direkt prüfen, ob es dir hilft.
-  </p>
-</div>
-
-<div class="premium-included-box">
-  <strong>Alles in einem Zugang:</strong>
-
-  <ul>
-  <li>6 Premium-E-Books</li>
-  <li>240 Lernskripte</li>
-  <li>45 Prüfungsfälle</li>
-  <li>61 Examensfragen</li>
-</ul>
-</div>
-
-<p class="premium-pressure">
-  Viele merken erst kurz vor der Prüfung, dass ihnen genau diese Sicherheit fehlt.
-</p>
-
-      <div class="premium-hero-actions">
-  {hasPremiumCookie ? (
-    <a
-      href="/premium-interesse"
-      class="btn premium-main-btn"
-      data-ga-event="premium_hero_cta_click"
-    >
-      Premium für 39 € freischalten
-    </a>
-  ) : (
-    <a
-      href="/premium-interesse"
-      class="btn premium-main-btn"
-      data-ga-event="premium_hero_cta_click"
-    >
-      Premium für 39 € freischalten
-    </a>
+        <p class="premium-risk">
+          Du kannst sofort starten und direkt prüfen, ob es dir hilft.
+        </p>
+      </div>
+    </>
   )}
-</div>
+</header>
 
 {!hasPremiumCookie && (
-  <p class="premium-trust">
-    Sofortiger Zugriff nach dem Kauf, kein Abo, keine laufenden Kosten.
-  </p>
-)}
-    </header>
+  <>
 
     <section class="premium-section premium-overview-section">
       <div class="section-headline">
@@ -210,27 +213,31 @@ const premiumExamQuizCount = premiumExamQuiz.length;
 )}
 
 
-      <div class="premium-overview-grid">
-        <article class="premium-overview-card">
-          <strong>{premiumEbookCount}</strong>
-          <span>vollständige E-Books</span>
-        </article>
+    <div class="premium-overview-grid">
+  <a href="/ebooks/" class="premium-overview-card">
+    <strong>📚 {premiumEbookCount}</strong>
+    <span>Premium-E-Books</span>
+    <em>Jetzt entdecken →</em>
+  </a>
 
-        <article class="premium-overview-card">
-          <strong>{premiumLernskriptCount}</strong>
-          <span>Lernskripte zum Wiederholen</span>
-        </article>
+  <a href="/lernskripte/" class="premium-overview-card">
+    <strong>📖 {premiumLernskriptCount}</strong>
+    <span>Lernskripte</span>
+    <em>Alle Lernskripte ansehen →</em>
+  </a>
 
-        <article class="premium-overview-card">
-          <strong>{premiumPruefungsfallCount}</strong>
-          <span>Prüfungsfälle mit Lösungen</span>
-        </article>
+  <a href="/pruefung/" class="premium-overview-card">
+    <strong>🩺 {premiumPruefungsfallCount}</strong>
+    <span>Prüfungsfälle mit Lösungen</span>
+    <em>Fälle trainieren →</em>
+  </a>
 
-        <article class="premium-overview-card">
-          <strong>{premiumExamQuizCount}</strong>
-          <span>Fragen im Examensmodus</span>
-        </article>
-      </div>
+  <a href="/quiz-exam" class="premium-overview-card">
+    <strong>🎓 {premiumExamQuizCount}</strong>
+    <span>Examensfragen</span>
+    <em>Examensmodus starten →</em>
+  </a>
+</div>
 
 {!hasPremiumCookie && (
   <div class="premium-quick-cta">
@@ -453,6 +460,8 @@ const premiumExamQuizCount = premiumExamQuiz.length;
   </div>
 )}
 
+      </>
+    )}
   </section>
 </BaseLayout>
 
@@ -620,14 +629,25 @@ const premiumExamQuizCount = premiumExamQuiz.length;
     gap: 1rem;
   }
 
-  .premium-overview-card {
-    background: #ffffff;
-    border: 1px solid #e5e5e5;
-    border-radius: 18px;
-    padding: 1.2rem;
-    box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
-    text-align: center;
-  }
+.premium-overview-card {
+  display: block;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 18px;
+  padding: 1.2rem;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.premium-overview-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(24, 50, 74, 0.1);
+  border-color: rgba(24, 50, 74, 0.22);
+  text-decoration: none;
+}
 
   .premium-overview-card strong {
     display: block;
@@ -642,6 +662,19 @@ const premiumExamQuizCount = premiumExamQuiz.length;
     color: #5b6b7a;
     font-size: 0.95rem;
   }
+
+.premium-overview-card em {
+  display: block;
+  margin-top: 0.9rem;
+  font-style: normal;
+  font-weight: 700;
+  color: #d07a5f;
+  transition: color 0.2s ease;
+}
+
+.premium-overview-card:hover em {
+  color: #18324a;
+}
 
   .premium-content-grid {
     display: grid;
@@ -1312,5 +1345,50 @@ const premiumExamQuizCount = premiumExamQuiz.length;
   margin-top: 0.75rem;
   color: #6b7280;
   font-size: 0.95rem;
+}
+
+.premium-dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.premium-dashboard-card {
+  display: block;
+  padding: 1.2rem;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid rgba(24, 50, 74, 0.12);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    border-color 0.2s ease;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+}
+
+.premium-dashboard-card:hover {
+  transform: translateY(-4px);
+  border-color: #d07a5f;
+  box-shadow: 0 16px 32px rgba(24, 50, 74, 0.12);
+}
+
+.premium-dashboard-card strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #18324a;
+  font-size: 1.05rem;
+}
+
+.premium-dashboard-card span {
+  display: block;
+  color: #5b6b7a;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .premium-dashboard-grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
