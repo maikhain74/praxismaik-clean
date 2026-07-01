@@ -19,6 +19,22 @@ export async function getStaticPaths() {
   .filter((item) => item.slug.startsWith(`${thema.slug}/`))
   .sort((a, b) => a.data.title.localeCompare(b.data.title, "de"));
 
+const verwandteThemen = themen
+  .filter((item) =>
+    item.slug !== thema.slug &&
+    !item.slug.startsWith(`${thema.slug}/`) &&
+    item.slug.startsWith(`${thema.slug}-`)
+  )
+  .sort((a, b) => a.data.title.localeCompare(b.data.title, "de"))
+  .map((item) => ({
+    slug: item.slug,
+    title: item.data.title,
+    description:
+      item.data.description ||
+      item.data.preview ||
+      "Vertiefe dieses Thema mit passenden Beispielen, Prüfungsfragen und Pflegeprüfung-Inhalten.",
+  }));
+
     const skripteZumThema = lernskripte
       .filter((item) => item.data.topic === thema.slug || item.data.topic === topicKey)
       .sort((a, b) => (a.data.reihenfolge ?? 999) - (b.data.reihenfolge ?? 999));
@@ -36,13 +52,14 @@ export async function getStaticPaths() {
 return {
   params: { slug: thema.slug },
   props: {
-    thema,
-    unterthemen,
-    skripteZumThema,
-    pruefungZumThema,
-    quizZumThema,
-    examQuizZumThema,
-  },
+  thema,
+  unterthemen,
+  verwandteThemen,
+  skripteZumThema,
+  pruefungZumThema,
+  quizZumThema,
+  examQuizZumThema,
+},
 };
   });
 }
@@ -50,6 +67,7 @@ return {
 const {
   thema,
   unterthemen,
+  verwandteThemen,
   skripteZumThema,
   pruefungZumThema,
   quizZumThema,
@@ -98,6 +116,42 @@ const seoDescription =
       </p>
 
     </header>
+
+    <article class="topic-content">
+  <Content />
+</article>
+
+{verwandteThemen.length > 0 && (
+  <section class="topic-section">
+    <div class="section-head">
+      <div>
+        <h2>Passende Vertiefungen</h2>
+        <p class="section-intro-text">
+          Diese Inhalte gehören direkt zu diesem Thema und helfen dir beim gezielten Weiterlernen.
+        </p>
+      </div>
+    </div>
+
+<div class="topic-grid">
+  {verwandteThemen.map((item) => (
+    <a class="topic-card topic-card-free" href={`/themen/${item.slug}/`}>
+      <div class="topic-card-top">
+        <span class="card-badge card-badge-free">Vertiefung</span>
+      </div>
+
+      <h3>{item.title}</h3>
+
+      <p>{item.description}</p>
+
+      <span class="topic-card-link-text">
+        Vertiefung öffnen
+      </span>
+    </a>
+  ))}
+</div>
+
+  </section>
+)}
 
 {isCategoryPage && unterthemen.length > 0 && (
   <section class="topic-section">
@@ -356,10 +410,6 @@ const seoDescription =
         </a>
       </div>
     </section>
-
-<section class="topic-section">
-
-</section>
   </section>
 </BaseLayout>
 

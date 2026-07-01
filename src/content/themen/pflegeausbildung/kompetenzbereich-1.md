@@ -143,7 +143,7 @@ Wer Kompetenzbereich I sicher beherrscht, hat eine wichtige Grundlage für die P
 
 ## Passende Inhalte zum Thema Kompetenzbereich I
 
-## Passende Inhalte zum Thema Kompetenzbereich I
+
 
 Wenn du Kompetenzbereich I für Ausbildung und Pflegeprüfung vertiefen möchtest:
 

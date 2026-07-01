@@ -171,7 +171,7 @@ Wer Pflegeprozess, Pflegeplanung, Pflegediagnosen und Prioritätensetzung sicher
 
 ## Passende Inhalte zum Thema Kompetenzbereich I
 
-## Passende Inhalte zum Thema Kompetenzbereich I
+
 
 Wenn du Kompetenzbereich I für die Pflegeprüfung vertiefen möchtest:
 

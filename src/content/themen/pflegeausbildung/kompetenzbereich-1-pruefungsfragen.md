@@ -231,7 +231,7 @@ Wer diese Grundlagen sicher beherrscht, kann viele Prüfungsaufgaben erfolgreich
 
 ## Passende Inhalte zum Thema Kompetenzbereich I
 
-## Passende Inhalte zum Thema Kompetenzbereich I
+
 
 Wenn du Kompetenzbereich I für Ausbildung und Pflegeprüfung vertiefen möchtest:
 

@@ -197,7 +197,7 @@ Kompetenzbereich I wird in Prüfungen häufig über Fallbeispiele geprüft.
 
 Wer typische Situationen analysieren und begründen kann, ist auf viele Prüfungsaufgaben gut vorbereitet.
 
-## Passende Inhalte zum Thema Kompetenzbereich I
+
 
 ## Passende Inhalte zum Thema Kompetenzbereich I
 
