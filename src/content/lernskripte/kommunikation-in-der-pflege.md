@@ -1,7 +1,7 @@
 ---
 title: "Kommunikation in der Pflege gezielt einsetzen"
 beschreibung: "Wie Kommunikation prüfungssicher eingesetzt wird, um Situationen zu steuern und Fehler zu vermeiden."
-topic: kommunikation-bereich
+topic: kommunikation
 reihenfolge: 1
 tags: [kommunikation, gespraech, beobachtung, pflege, pruefung]
 ---

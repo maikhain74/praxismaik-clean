@@ -56,6 +56,66 @@ Häufige Prüfungsthemen sind:
 - Umgang mit Angst
 - Umgang mit Aggression
 
+## Wichtige Kommunikationsmodelle
+
+In der Pflegeprüfung wird häufig erwartet, dass Pflegefachpersonen grundlegende Kommunikationsmodelle kennen und situationsgerecht anwenden können.
+
+Dazu gehören insbesondere:
+
+- Vier-Seiten-Modell nach Schulz von Thun
+- Aktives Zuhören nach Carl Rogers
+- Validation nach Naomi Feil
+- Gewaltfreie Kommunikation nach Marshall Rosenberg
+
+Diese Modelle helfen dabei, Gespräche professionell zu führen, Missverständnisse zu vermeiden und Menschen individuell zu begleiten. Für die Pflegeprüfung musst du nicht jedes Modell vollständig auswendig lernen, solltest aber wissen, wann und warum es eingesetzt wird.
+
+## Beratung in Kompetenzbereich II
+
+Beratung bedeutet mehr, als Informationen weiterzugeben.
+
+Pflegefachpersonen unterstützen Menschen dabei, Gesundheitsinformationen zu verstehen und selbstbestimmte Entscheidungen zu treffen.
+
+Dazu gehören:
+
+- Vorwissen und Erfahrungen erfragen
+- Ressourcen erkennen
+- Informationen verständlich erklären
+- gemeinsam Ziele festlegen
+- Verständnis überprüfen
+- Fragen zulassen
+
+Gerade in der Pflegeprüfung achten Lehrkräfte darauf, ob Beratung individuell erfolgt und sich an den Bedürfnissen der pflegebedürftigen Person orientiert.
+
+## Kommunikation mit Menschen mit Demenz
+
+Die Kommunikation mit Menschen mit Demenz gehört zu den häufigsten Prüfungssituationen im Kompetenzbereich II.
+
+Dabei steht nicht die Korrektur falscher Aussagen im Vordergrund, sondern das Verständnis für die Gefühle und Bedürfnisse der betroffenen Person.
+
+Wichtige Grundsätze sind:
+
+- ruhig und wertschätzend sprechen
+- Blickkontakt halten
+- einfache und kurze Sätze verwenden
+- genügend Zeit für Antworten lassen
+- Gefühle ernst nehmen
+- Validation situationsgerecht anwenden
+- Biografie und Gewohnheiten berücksichtigen
+
+### Typische Prüfungsfrage
+
+Eine Bewohnerin mit Demenz fragt innerhalb weniger Minuten mehrfach:
+
+„Wann kommt mein Mann?“
+
+Der Ehemann ist bereits vor vielen Jahren verstorben.
+
+Wie reagieren Sie?
+
+### Lösung
+
+Die Pflegefachperson geht auf die Gefühle der Bewohnerin ein, statt sie zu korrigieren. Eine validierende Kommunikation kann Sicherheit vermitteln und unnötige Belastungen vermeiden.
+
 ## Beispiel aus der Praxis
 
 Frau Schneider erhält erstmals die Diagnose Diabetes mellitus.
@@ -92,6 +152,24 @@ Prüfer achten häufig auf:
 - Patientenorientierung
 - Beratungsfähigkeit
 - professionelles Auftreten
+
+## Kompetenzbereich II in der praktischen Pflegeprüfung
+
+In der praktischen Pflegeprüfung wird Kompetenzbereich II häufig nicht durch theoretische Fragen geprüft, sondern durch dein Verhalten im Umgang mit pflegebedürftigen Menschen.
+
+Lehrkräfte achten insbesondere darauf,
+
+- ob du aktiv zuhörst,
+- ob du verständlich und wertschätzend kommunizierst,
+- ob du Angehörige angemessen einbeziehst,
+- ob du Gespräche an die individuelle Situation anpasst,
+- ob du Unsicherheiten erkennst und professionell darauf reagierst.
+
+Dabei geht es nicht darum, möglichst viel zu sprechen. Entscheidend ist, dass deine Kommunikation die pflegebedürftige Person unterstützt und Vertrauen schafft.
+
+### Merke
+
+Professionelle Kommunikation bedeutet, Informationen verständlich zu vermitteln und gleichzeitig die Bedürfnisse, Gefühle und Ressourcen des Menschen zu berücksichtigen.
 
 ## Typische Fehler
 

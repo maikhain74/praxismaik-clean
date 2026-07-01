@@ -1,7 +1,7 @@
 ---
 title: "Kommunikation mit Angehörigen professionell gestalten"
 beschreibung: "Wie Gespräche mit Angehörigen geführt werden, ohne die professionelle Rolle zu verlieren."
-topic: kommunikation-bereich
+topic: kommunikation
 reihenfolge: 4
 tags: [angehoerige, kommunikation, pflegeprozess, konflikt, pruefung]
 ---

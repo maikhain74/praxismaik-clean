@@ -1,7 +1,7 @@
 ---
 title: "Gesprächsführung in schwierigen Situationen"
 beschreibung: "Wie Gespräche bei Angst, Ablehnung oder Unsicherheit professionell geführt und gezielt gesteuert werden."
-topic: kommunikation-bereich
+topic: kommunikation
 reihenfolge: 2
 tags: [kommunikation, gespraech, angst, konflikt, pflege, pruefung]
 ---

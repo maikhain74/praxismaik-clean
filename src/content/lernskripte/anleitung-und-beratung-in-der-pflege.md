@@ -1,7 +1,7 @@
 ---
 title: "Anleitung und Beratung in der Pflege"
 beschreibung: "Wie Pflegeempfänger gezielt angeleitet und beraten werden, um Selbstständigkeit zu fördern und Prüfungsfehler zu vermeiden."
-topic: kommunikation-bereich
+topic: kommunikation
 reihenfolge: 3
 tags: [anleitung, beratung, kommunikation, pflege, pruefung]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Kommunikation mit orientierungseingeschränkten Pflegeempfängern"
 beschreibung: "Wie Kommunikation angepasst wird, wenn Orientierung eingeschränkt ist – und welche Fehler du unbedingt vermeiden musst."
-topic: kommunikation-bereich
+topic: kommunikation
 reihenfolge: 5
 tags: [kommunikation, desorientierung, beobachtung, pflege, sicherheit]
 ---
