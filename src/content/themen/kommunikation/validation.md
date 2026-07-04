@@ -207,14 +207,6 @@ D) Validation dient dazu, Menschen mit Demenz von der Realität zu überzeugen.
 
 Validation nimmt die Gefühle und die individuelle Erlebniswelt der pflegebedürftigen Person ernst. Ziel ist es, Sicherheit, Vertrauen und Orientierung im emotionalen Erleben zu fördern.
 
-## Passende Inhalte zum Thema Validation
-
-Wenn du Validation und den Umgang mit Menschen mit Demenz vertiefen möchtest:
-
-- [Kommunikation in der Pflege](/themen/kommunikation/)
-- [Beratung in der Pflege](/themen/kommunikation/beratung-in-der-pflege/)
-- [Kompetenzbereich II](/themen/pflegeausbildung/kompetenzbereich-2/)
-
 ## Merksatz
 
 **Validation bedeutet, Menschen mit Demenz in ihrer Erlebniswelt wertschätzend zu begegnen. Nicht die objektive Realität steht im Mittelpunkt, sondern Gefühle, Bedürfnisse und Beziehung.**

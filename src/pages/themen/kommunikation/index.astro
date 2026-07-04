@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
+import ClusterNavigation from "../../../components/ClusterNavigation.astro";
 import { getCollection } from "astro:content";
 
 const themen = await getCollection("themen");
@@ -19,15 +20,25 @@ const topicDescriptions = {
     description:
       "Lerne, wie aktives Zuhören Vertrauen schafft und Gespräche strukturiert.",
   },
-  "kommunikation/schwierige-gespraeche": {
-    badge: "Praxis",
+  "kommunikation/beratung-in-der-pflege": {
+    badge: "Beratung",
     description:
-      "Bereite dich auf belastende Gespräche mit Patientinnen, Patienten und Angehörigen vor.",
+      "Lerne, wie Beratungsgespräche in der Pflege verständlich und professionell geführt werden.",
+  },
+  "kommunikation/validation": {
+    badge: "Demenz",
+    description:
+      "Verstehe Validation als wertschätzende Kommunikation mit Menschen mit Demenz.",
   },
   "kommunikation/gespraech-mit-angehoerigen": {
     badge: "Angehörige",
     description:
       "Lerne, Angehörigengespräche klar, respektvoll und professionell zu führen.",
+  },
+  "kommunikation/schwierige-gespraeche": {
+    badge: "Praxis",
+    description:
+      "Bereite dich auf belastende Gespräche mit Patientinnen, Patienten und Angehörigen vor.",
   },
   "kommunikation/deeskalation": {
     badge: "Konflikt",
@@ -46,6 +57,66 @@ const getTopicInfo = (item) => {
     }
   );
 };
+
+const communicationLearningPath = [
+  {
+    title: "Grundlagen",
+    items: [
+      {
+        title: "Grundlagen der Kommunikation",
+        description:
+          "Starte hier und verstehe die Basis professioneller Kommunikation in der Pflege.",
+        href: "/themen/kommunikation/grundlagen/",
+      },
+    ],
+  },
+  {
+    title: "Gespräche professionell führen",
+    items: [
+      {
+        title: "Aktives Zuhören",
+        description:
+          "Lerne, Bedürfnisse, Gefühle und Unsicherheiten besser wahrzunehmen.",
+        href: "/themen/kommunikation/aktives-zuhoeren/",
+      },
+      {
+        title: "Beratung in der Pflege",
+        description:
+          "Verstehe, wie du Menschen verständlich informierst und begleitest.",
+        href: "/themen/kommunikation/beratung-in-der-pflege/",
+      },
+      {
+        title: "Gespräch mit Angehörigen",
+        description:
+          "Führe Angehörigengespräche respektvoll, klar und professionell.",
+        href: "/themen/kommunikation/gespraech-mit-angehoerigen/",
+      },
+      {
+        title: "Schwierige Gespräche",
+        description:
+          "Bleibe auch in emotional belastenden Situationen ruhig und empathisch.",
+        href: "/themen/kommunikation/schwierige-gespraeche/",
+      },
+    ],
+  },
+  {
+    title: "Besondere Situationen",
+    items: [
+      {
+        title: "Validation",
+        description:
+          "Kommuniziere wertschätzend mit Menschen mit Demenz.",
+        href: "/themen/kommunikation/validation/",
+      },
+      {
+        title: "Deeskalation",
+        description:
+          "Erkenne Konflikte frühzeitig und entschärfe sie professionell.",
+        href: "/themen/kommunikation/deeskalation/",
+      },
+    ],
+  },
+];
 ---
 
 <BaseLayout title="Kommunikation in der Pflege">
@@ -91,6 +162,18 @@ const getTopicInfo = (item) => {
         <p>Du erkennst Anspannung früh und reagierst ruhig, klar und professionell.</p>
       </article>
     </section>
+
+    <ClusterNavigation
+      title="Kommunikation systematisch lernen"
+      description="Arbeite dich Schritt für Schritt durch den Kommunikations-Cluster. Beginne mit den Grundlagen und vertiefe danach Gesprächsführung, Angehörigengespräche, Validation und Deeskalation."
+      sections={communicationLearningPath}
+      nextCluster={{
+        title: "Pflegeprozess als nächster Lernschritt",
+        description:
+          "Wenn du Kommunikation verstanden hast, ist der Pflegeprozess der nächste sinnvolle Themencluster. Dort lernst du, pflegerische Situationen systematisch zu erfassen, zu planen, durchzuführen und zu bewerten.",
+        href: "/themen/pflegeprozess/",
+      }}
+    />
 
     <section class="info-panel">
       <h2>Was du in diesem Bereich können solltest</h2>

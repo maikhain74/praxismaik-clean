@@ -126,28 +126,7 @@ Sie sichern Qualität, Patientensicherheit und pflegerische Verantwortung.
 
 Für die Pflegeprüfung ist besonders wichtig, die Verbindung zwischen Vorbehaltsaufgaben und Pflegeprozess zu verstehen.
 
-## Passende Inhalte zu Vorbehaltsaufgaben
 
-Wenn du das Thema vertiefen möchtest:
-
-- [Vorbehaltsaufgaben Beispiele](/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben-beispiele/)
-- [Vorbehaltsaufgaben Fallbeispiele](/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben-fallbeispiele/)
-- [Vorbehaltsaufgaben Pflegeprüfung](/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben-pflegepruefung/)
-
-## Passende Inhalte zu Kompetenzbereich I
-
-Vorbehaltsaufgaben hängen eng mit Kompetenzbereich I zusammen, weil dort Pflegeprozess, Pflegeplanung und pflegerische Verantwortung geprüft werden.
-
-- [Kompetenzbereich I einfach erklärt](/themen/pflegeausbildung/kompetenzbereich-1/)
-- [Kompetenzbereich I Pflegeprüfung](/themen/pflegeausbildung/kompetenzbereich-1-pflegepruefung/)
-- [Kompetenzbereich I Fallbeispiele](/themen/pflegeausbildung/kompetenzbereich-1-fallbeispiele/)
-- [Kompetenzbereich I Prüfungsfragen](/themen/pflegeausbildung/kompetenzbereich-1-pruefungsfragen/)
-
-## Passende Inhalte zum Pflegeprozess
-
-- [Pflegeprozess Grundlagen](/themen/pflegeausbildung/pflegeprozess/pflegeprozess-grundlagen/)
-- [Pflegediagnosen](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen/)
-- [PESR-Schema](/themen/pflegeausbildung/pflegeprozess/pesr-schema/)
 
 ## Merksatz
 

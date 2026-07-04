@@ -181,18 +181,7 @@ Vorbehaltsaufgaben werden in Prüfungen häufig über Fallbeispiele geprüft.
 
 Wer typische Situationen sicher analysieren kann, erkennt Vorbehaltsaufgaben deutlich leichter.
 
-## Passende Inhalte zum Thema Vorbehaltsaufgaben
 
-## Passende Inhalte zum Thema Vorbehaltsaufgaben
-
-Wenn du das Thema vertiefen möchtest:
-
-- [Vorbehaltsaufgaben](/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben/)
-- [Vorbehaltsaufgaben Beispiele](/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben-beispiele/)
-- [Vorbehaltsaufgaben Pflegeprüfung](/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben-pflegepruefung/)
-- [Pflegeprozess Grundlagen](/themen/pflegeausbildung/pflegeprozess/pflegeprozess-grundlagen/)
-- [Pflegediagnosen](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen/)
-- [PESR-Schema](/themen/pflegeausbildung/pflegeprozess/pesr-schema/)
 
 ## Merksatz
 

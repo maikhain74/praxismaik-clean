@@ -174,18 +174,7 @@ Vorbehaltsaufgaben gehören zu den wichtigsten Themen der Pflegeprüfung.
 
 Besonders wichtig sind die gesetzlichen Grundlagen, die Verbindung zum Pflegeprozess und die Anwendung auf praktische Fallbeispiele.
 
-## Passende Inhalte zum Thema Vorbehaltsaufgaben
 
-## Passende Inhalte zum Thema Vorbehaltsaufgaben
-
-Wenn du das Thema vertiefen möchtest:
-
-- [Vorbehaltsaufgaben](/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben/)
-- [Vorbehaltsaufgaben Beispiele](/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben-beispiele/)
-- [Vorbehaltsaufgaben Fallbeispiele](/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben-fallbeispiele/)
-- [Pflegeprozess Grundlagen](/themen/pflegeausbildung/pflegeprozess/pflegeprozess-grundlagen/)
-- [Pflegediagnosen](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen/)
-- [PESR-Schema](/themen/pflegeausbildung/pflegeprozess/pesr-schema/)
 
 ## Merksatz
 

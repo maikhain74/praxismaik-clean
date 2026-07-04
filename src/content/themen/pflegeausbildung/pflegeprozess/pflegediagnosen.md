@@ -456,13 +456,6 @@ In Prüfungen müssen Auszubildende regelmäßig:
 
 Deshalb sind Pflegediagnosen eng mit dem Pflegeprozess und Kompetenzbereich I verbunden.
 
-### Passende Inhalte zu Kompetenzbereich I
-
-- [Kompetenzbereich I](/themen/pflegeausbildung/kompetenzbereich-1/)
-- [Kompetenzbereich I Pflegeprüfung](/themen/pflegeausbildung/kompetenzbereich-1-pflegepruefung/)
-- [Kompetenzbereich I Fallbeispiele](/themen/pflegeausbildung/kompetenzbereich-1-fallbeispiele/)
-- [Kompetenzbereich I Prüfungsfragen](/themen/pflegeausbildung/kompetenzbereich-1-pruefungsfragen/)
-
 ## Zusammenfassung
 
 Pflegediagnosen beschreiben pflegerische Probleme, Ressourcen und Risiken.

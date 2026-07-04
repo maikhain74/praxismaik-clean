@@ -137,16 +137,3 @@ D) Angehörige grundsätzlich nicht einbeziehen.
 
 ✅ **C** ist richtig.
 
-## Passende Inhalte zum Thema Kommunikation
-
-Wenn du Kommunikation in der Pflege vertiefen möchtest:
-
-- [Beratung in der Pflege](/themen/beratung-in-der-pflege/)
-- Kommunikation mit Menschen mit Demenz
-- Validation
-- Aktives Zuhören
-- Angehörigenarbeit
-- Vier-Seiten-Modell nach Schulz von Thun
-- Gewaltfreie Kommunikation
-- Kommunikation am Lebensende
-- [Kompetenzbereich II](/themen/pflegeausbildung/kompetenzbereich-2/)

@@ -3,6 +3,7 @@ export const prerender = true;
 
 import { getCollection, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import ThemenCluster from "../../components/ThemenCluster.astro";
 
 export async function getStaticPaths() {
   const themen = await getCollection("themen");
@@ -120,6 +121,8 @@ const seoDescription =
     <article class="topic-content">
   <Content />
 </article>
+
+<ThemenCluster currentSlug={thema.slug} />
 
 {verwandteThemen.length > 0 && (
   <section class="topic-section">

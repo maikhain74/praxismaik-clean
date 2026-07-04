@@ -1,0 +1,212 @@
+---
+type ClusterItem = {
+  title: string;
+  href: string;
+};
+
+type Props = {
+  currentSlug: string;
+};
+
+const { currentSlug } = Astro.props;
+
+const clusterMap: Record<string, ClusterItem[]> = {
+  kommunikation: [
+    { title: "Kommunikation in der Pflege", href: "/themen/kommunikation/" },
+    { title: "Grundlagen der Kommunikation", href: "/themen/kommunikation/grundlagen/" },
+    { title: "Aktives Zuhören", href: "/themen/kommunikation/aktives-zuhoeren/" },
+    { title: "Validation", href: "/themen/kommunikation/validation/" },
+    { title: "Gespräch mit Angehörigen", href: "/themen/kommunikation/gespraech-mit-angehoerigen/" },
+    { title: "Beratung in der Pflege", href: "/themen/kommunikation/beratung-in-der-pflege/" },
+    { title: "Schwierige Gespräche", href: "/themen/kommunikation/schwierige-gespraeche/" },
+    { title: "Deeskalation", href: "/themen/kommunikation/deeskalation/" },
+  ],
+
+  pflegeprozess: [
+    { title: "Pflegeprozess Grundlagen", href: "/themen/pflegeausbildung/pflegeprozess/pflegeprozess-grundlagen/" },
+    { title: "Informationssammlung", href: "/themen/pflegeausbildung/pflegeprozess/informationssammlung/" },
+    { title: "Pflegeprobleme und Ressourcen", href: "/themen/pflegeausbildung/pflegeprozess/pflegeprobleme-ressourcen/" },
+    { title: "Pflegediagnosen", href: "/themen/pflegeausbildung/pflegeprozess/pflegediagnosen/" },
+    { title: "PESR-Schema", href: "/themen/pflegeausbildung/pflegeprozess/pesr-schema/" },
+    { title: "Pflegeziele", href: "/themen/pflegeausbildung/pflegeprozess/pflegeziele/" },
+    { title: "Pflegemaßnahmen", href: "/themen/pflegeausbildung/pflegeprozess/pflegemassnahmen/" },
+    { title: "Durchführung", href: "/themen/pflegeausbildung/pflegeprozess/durchfuehrung/" },
+    { title: "Evaluation", href: "/themen/pflegeausbildung/pflegeprozess/evaluation/" },
+    { title: "Vorbehaltsaufgaben", href: "/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben/" },
+    { title: "Vorbehaltsaufgaben Beispiele", href: "/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben-beispiele/" },
+    { title: "Vorbehaltsaufgaben Fallbeispiele", href: "/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben-fallbeispiele/" },
+    { title: "Vorbehaltsaufgaben Pflegeprüfung", href: "/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben-pflegepruefung/" },
+    { title: "Pflegediagnosen Beispiele PESR", href: "/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-beispiele-pesr/" },
+    { title: "Pflegediagnosen Fallbeispiele", href: "/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-fallbeispiele/" },
+    { title: "Pflegediagnosen in der Pflegeprüfung", href: "/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-in-der-pflegepruefung/" },
+    { title: "Pflegediagnosen bei COPD", href: "/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-bei-copd/" },
+    { title: "Pflegediagnosen bei Asthma", href: "/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-bei-asthma/" },
+  ],
+};
+
+const getClusterKey = (slug: string) => {
+  if (slug === "kommunikation" || slug.startsWith("kommunikation/")) {
+    return "kommunikation";
+  }
+
+  if (slug.startsWith("pflegeausbildung/pflegeprozess/")) {
+    return "pflegeprozess";
+  }
+
+  return "";
+};
+
+const clusterKey = getClusterKey(currentSlug);
+const items = clusterMap[clusterKey] ?? [];
+const currentHref = `/themen/${currentSlug}/`;
+---
+
+{items.length > 0 && (
+  <section class="themen-cluster" aria-labelledby="themen-cluster-title">
+    <div class="themen-cluster-head">
+      <span class="themen-cluster-label">Lernpfad</span>
+      <h2 id="themen-cluster-title">Passende Inhalte in diesem Themencluster</h2>
+      <p>
+        Lerne die Inhalte in einer sinnvollen Reihenfolge und vertiefe Schritt für Schritt dein Wissen.
+      </p>
+    </div>
+
+    <div class="themen-cluster-list">
+      {items.map((item, index) => {
+        const isActive = item.href === currentHref;
+
+        return (
+          <a
+            class={`themen-cluster-item ${isActive ? "is-active" : ""}`}
+            href={item.href}
+            aria-current={isActive ? "page" : undefined}
+          >
+            <span class="themen-cluster-step">{index + 1}</span>
+            <span class="themen-cluster-title">{item.title}</span>
+            {isActive && <span class="themen-cluster-current">Aktuell</span>}
+          </a>
+        );
+      })}
+    </div>
+  </section>
+)}
+
+<style>
+.themen-cluster {
+  margin: 0 0 2.5rem;
+  padding: 1.5rem;
+  border-radius: 22px;
+  background: #fffaf6;
+  border: 1px solid #ead8c4;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+}
+
+.themen-cluster-head {
+  margin-bottom: 1rem;
+}
+
+.themen-cluster-label {
+  display: inline-block;
+  margin-bottom: 0.55rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: #fff4e8;
+  color: #9a3412;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.themen-cluster h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.35rem;
+  line-height: 1.25;
+  color: #18324a;
+}
+
+.themen-cluster p {
+  margin: 0;
+  color: #5b6b7a;
+  line-height: 1.65;
+}
+
+.themen-cluster-list {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.themen-cluster-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 0.95rem;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #ead8c4;
+  color: #18324a;
+  text-decoration: none;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.themen-cluster-item:hover {
+  transform: translateY(-2px);
+  border-color: #d6a47b;
+  box-shadow: 0 12px 24px rgba(24, 50, 74, 0.06);
+  text-decoration: none;
+}
+
+.themen-cluster-item.is-active {
+  background: #c96f3d;
+  border-color: #c96f3d;
+  color: #ffffff;
+}
+
+.themen-cluster-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  background: #fff4e8;
+  color: #9a3412;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.themen-cluster-item.is-active .themen-cluster-step {
+  background: #ffffff;
+  color: #c96f3d;
+}
+
+.themen-cluster-title {
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+.themen-cluster-current {
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #c96f3d;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+@media (max-width: 700px) {
+  .themen-cluster {
+    padding: 1.15rem;
+  }
+
+  .themen-cluster-item {
+    grid-template-columns: auto 1fr;
+  }
+
+  .themen-cluster-current {
+    grid-column: 2;
+    justify-self: start;
+  }
+}
+</style>

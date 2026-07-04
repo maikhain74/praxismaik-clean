@@ -1,0 +1,117 @@
+---
+const { title, description, sections = [], nextCluster } = Astro.props;
+---
+
+<section class="cluster-navigation">
+  <div class="cluster-navigation__header">
+    <p class="cluster-navigation__label">📚 Lernpfad</p>
+    <h2>{title}</h2>
+    {description && <p>{description}</p>}
+  </div>
+
+  <div class="cluster-navigation__sections">
+    {sections.map((section) => (
+      <div class="cluster-navigation__section">
+        <h3>{section.title}</h3>
+
+        <div class="cluster-navigation__items">
+          {section.items.map((item) => (
+            <a class="cluster-navigation__item" href={item.href}>
+              <strong>{item.title}</strong>
+              <span>{item.description}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+
+  {nextCluster && (
+    <div class="cluster-navigation__next">
+      <p class="cluster-navigation__label">🚀 Wie geht es weiter?</p>
+      <h3>{nextCluster.title}</h3>
+      <p>{nextCluster.description}</p>
+      <a href={nextCluster.href}>Zum nächsten Themencluster</a>
+    </div>
+  )}
+</section>
+
+<style>
+  .cluster-navigation {
+    margin: 2.5rem 0;
+    padding: 1.5rem;
+    border-radius: 1.25rem;
+    background: #fff7ed;
+    border: 1px solid #fed7aa;
+  }
+
+  .cluster-navigation__header {
+    margin-bottom: 1.5rem;
+  }
+
+  .cluster-navigation__label {
+    margin: 0 0 0.5rem;
+    font-weight: 700;
+    color: #9a3412;
+  }
+
+  .cluster-navigation h2,
+  .cluster-navigation h3 {
+    margin-top: 0;
+  }
+
+  .cluster-navigation__sections {
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  .cluster-navigation__items {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .cluster-navigation__item {
+    display: block;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #ffffff;
+    border: 1px solid #fed7aa;
+    text-decoration: none;
+  }
+
+  .cluster-navigation__item strong {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  .cluster-navigation__item span {
+    display: block;
+    color: #57534e;
+  }
+
+  .cluster-navigation__item:hover {
+    border-color: #fb923c;
+  }
+
+  .cluster-navigation__next {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #ffffff;
+    border: 1px solid #fed7aa;
+  }
+
+  .cluster-navigation__next a {
+    font-weight: 700;
+  }
+
+  @media (min-width: 768px) {
+    .cluster-navigation {
+      padding: 2rem;
+    }
+
+    .cluster-navigation__items {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+</style>

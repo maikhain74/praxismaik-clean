@@ -168,13 +168,6 @@ Er hilft dabei, Pflege systematisch zu planen, durchzuführen und zu bewerten.
 
 Wer den Pflegeprozess sicher beherrscht, hat eine wichtige Grundlage für Pflegeplanung, Pflegediagnosen, Kompetenzbereich I und die Pflegeprüfung geschaffen.
 
-## Passende Inhalte
-
-- [Pflegediagnosen](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen/)
-- [PESR-Schema](/themen/pflegeausbildung/pflegeprozess/pesr-schema/)
-- [Vorbehaltsaufgaben](/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben/)
-- [Kompetenzbereich I](/themen/pflegeausbildung/kompetenzbereich-1/)
-
 ## Merksatz
 
 **Der Pflegeprozess ist das zentrale Arbeitsmodell professioneller Pflege und die Grundlage von Kompetenzbereich I.**

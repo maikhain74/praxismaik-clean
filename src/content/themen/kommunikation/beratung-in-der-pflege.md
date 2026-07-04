@@ -165,18 +165,6 @@ D) Angehörige dürfen grundsätzlich nicht in Beratungsgespräche einbezogen we
 
 Professionelle Beratung unterstützt Menschen dabei, informierte Entscheidungen zu treffen und ihre Selbstständigkeit zu fördern. Sie erfolgt verständlich, individuell und auf Augenhöhe.
 
-## Passende Inhalte zum Thema Beratung
-
-Wenn du Beratung in der Pflege vertiefen möchtest:
-
-- [Kommunikation in der Pflege](/themen/kommunikation/)
-- Kommunikation mit Menschen mit Demenz
-- Validation
-- Angehörigenarbeit
-- Aktives Zuhören
-- [Kompetenzbereich II](/themen/pflegeausbildung/kompetenzbereich-2/)
-- [Pflegeprozess](/themen/pflegeausbildung/pflegeprozess/pflegeprozess-grundlagen/)
-
 ## Merksatz
 
 **Professionelle Beratung bedeutet, Menschen individuell zu begleiten, verständlich zu informieren und gemeinsam Entscheidungen zu entwickeln. Sie stärkt Selbstständigkeit, Sicherheit und Lebensqualität.**
