@@ -1,98 +1,120 @@
 ---
 title: Diabetes mellitus
-description: Ursachen, Symptome und pflegerische Bedeutung von Diabetes verständlich erklärt.
-level: pruefung
+description: Erfahre, was Diabetes mellitus ist, welche Symptome auftreten, wie sich Typ-1- und Typ-2-Diabetes unterscheiden und welche pflegerischen Maßnahmen in Ausbildung, Praxis und Pflegeprüfung wichtig sind.
+tags:
+  - diabetes mellitus
+  - diabetes
+  - krankheitslehre
+  - pflege
+  - pflegeprüfung
+level: grundlagen
+cluster: stoffwechsel
+order: 1
 ---
 
 # Diabetes mellitus
 
+Diabetes mellitus gehört zu den häufigsten chronischen Erkrankungen weltweit und ist ein zentrales Thema in der generalistischen Pflegeausbildung. Pflegefachpersonen begleiten Menschen mit Diabetes in nahezu allen Versorgungsbereichen und übernehmen wichtige Aufgaben bei der Beobachtung, Beratung und Unterstützung im Alltag.
+
+Für die Pflegeprüfung ist Diabetes mellitus besonders relevant, weil sowohl theoretisches Wissen als auch praktische Handlungskompetenz geprüft werden.
+
+## Was ist Diabetes mellitus?
+
 Diabetes mellitus ist eine chronische Stoffwechselerkrankung, bei der der Blutzuckerspiegel dauerhaft erhöht ist.
 
-Die Ursache liegt in einem Problem mit dem Hormon Insulin, das für die Aufnahme von Zucker in die Körperzellen verantwortlich ist.
+Die Ursache liegt in einem Mangel an Insulin oder darin, dass das vorhandene Insulin nicht ausreichend wirkt. Dadurch gelangt die Glukose nicht mehr ausreichend aus dem Blut in die Körperzellen und der Blutzuckerspiegel steigt an.
 
-## Warum Diabetes wichtig ist
+## Warum ist Diabetes für die Pflege wichtig?
 
-Diabetes gehört zu den häufigsten chronischen Erkrankungen.
+Diabetes gehört zu den häufigsten chronischen Erkrankungen in Deutschland. Pflegefachpersonen begleiten Betroffene häufig über viele Jahre und tragen wesentlich dazu bei, Komplikationen frühzeitig zu erkennen und die Selbstständigkeit der pflegebedürftigen Menschen zu fördern.
 
-Für die Pflege ist er besonders relevant, weil:
+Besonders wichtig sind:
 
-- viele Patienten betroffen sind
-- die Erkrankung dauerhaft besteht
-- Komplikationen auftreten können
-- regelmäßige Kontrolle notwendig ist
-- ein hohes Selbstmanagement erforderlich ist
+- regelmäßige Beobachtung
+- Blutzuckerkontrollen
+- Unterstützung bei der Therapie
+- Anleitung zum Selbstmanagement
+- frühzeitiges Erkennen von Komplikationen
+- Beratung zu Ernährung und Bewegung
 
-Diabetes ist ein zentrales Prüfungsthema.
+## Was passiert im Körper?
 
-## Was passiert im Körper
+Insulin wird in der Bauchspeicheldrüse gebildet und ermöglicht den Körperzellen die Aufnahme von Glukose aus dem Blut.
 
-Insulin sorgt dafür, dass Glukose (Zucker) aus dem Blut in die Zellen aufgenommen wird.
+Bei Diabetes mellitus funktioniert dieser Mechanismus nicht mehr ausreichend.
 
-Bei Diabetes:
+Dadurch:
 
-- Insulin fehlt oder wirkt nicht richtig
-- Zucker bleibt im Blut
-- Blutzuckerspiegel steigt an
+- verbleibt Glukose im Blut,
+- der Blutzuckerspiegel steigt an,
+- die Körperzellen erhalten zu wenig Energie.
 
-Die Folge:
+## Formen des Diabetes mellitus
 
-- Zellen bekommen zu wenig Energie
-- gleichzeitig entsteht ein Überschuss im Blut
+### Typ-1-Diabetes
 
-## Formen des Diabetes
+Beim Typ-1-Diabetes zerstört das Immunsystem die insulinproduzierenden Zellen der Bauchspeicheldrüse.
 
-### Typ 1 Diabetes
+Typische Merkmale:
 
-- Insulinproduktion fehlt vollständig
 - Autoimmunerkrankung
-- beginnt häufig im Kindes- oder Jugendalter
-- Insulin muss lebenslang zugeführt werden
+- häufig Beginn im Kindes- oder Jugendalter
+- vollständiger Insulinmangel
+- lebenslange Insulintherapie notwendig
 
-### Typ 2 Diabetes
+### Typ-2-Diabetes
 
-- Insulin wirkt nicht mehr richtig (Insulinresistenz)
+Beim Typ-2-Diabetes produziert der Körper zunächst noch Insulin. Die Körperzellen reagieren jedoch zunehmend schlechter darauf (Insulinresistenz).
+
+Typische Merkmale:
+
 - häufig im Erwachsenenalter
-- Zusammenhang mit Lebensstil (z. B. Ernährung, Bewegung)
-- oft zunächst ohne Insulin behandelbar
+- Zusammenhang mit Übergewicht und Bewegungsmangel
+- zunächst häufig Behandlung ohne Insulin möglich
+- später oftmals Insulintherapie erforderlich
 
-<div class="merkbox">
-<div class="merkbox-title">Merke: Typ 1 = Insulin fehlt, Typ 2 = Insulin wirkt nicht richtig</div>
+<div class="info-box info-box-merke">
+<div class="info-box-title">💡 Merksatz</div>
+
+Typ-1-Diabetes bedeutet Insulinmangel. Beim Typ-2-Diabetes ist zunächst genügend Insulin vorhanden, es wirkt jedoch nicht ausreichend.
+
 </div>
 
 ## Typische Symptome
 
-Die Symptome entwickeln sich unterschiedlich schnell.
+Je nach Diabetesform entwickeln sich die Beschwerden unterschiedlich schnell.
 
-Typische Anzeichen sind:
+Häufige Symptome sind:
 
-- vermehrter Durst
+- starker Durst
 - häufiges Wasserlassen
-- Müdigkeit und Schwäche
-- Gewichtsverlust (vor allem bei Typ 1)
+- Müdigkeit
+- Konzentrationsstörungen
+- Gewichtsverlust (vor allem Typ 1)
 - trockene Haut
 - schlechte Wundheilung
-- Infektanfälligkeit
+- erhöhte Infektanfälligkeit
 
 ## Akute Komplikationen
 
-### Hypoglykämie (Unterzuckerung)
+Akute Stoffwechselentgleisungen können lebensbedrohlich werden.
 
-Zu niedriger Blutzucker.
+### Hypoglykämie
 
-Typische Symptome:
+Eine Hypoglykämie bezeichnet eine Unterzuckerung.
+
+Typische Anzeichen:
 
 - Zittern
 - Schwitzen
+- Heißhunger
 - Unruhe
 - Verwirrtheit
-- Bewusstseinsstörung
+- Bewusstseinsstörungen
 
-Weitere Informationen:
-- [Hypoglykämie Pflege](/themen/krankheitslehre/hypoglykaemie-pflege)
+### Hyperglykämie
 
-### Hyperglykämie (Überzuckerung)
-
-Zu hoher Blutzucker.
+Eine Hyperglykämie beschreibt einen dauerhaft oder akut erhöhten Blutzuckerspiegel.
 
 Typische Symptome:
 
@@ -100,76 +122,111 @@ Typische Symptome:
 - häufiges Wasserlassen
 - Müdigkeit
 - trockene Haut
-- im schweren Fall Bewusstseinsstörung
+- Übelkeit
+- Bewusstseinsstörungen
 
-Beide Zustände sind ernst und müssen schnell erkannt werden.
+## Mögliche Langzeitfolgen
 
-## Langfristige Folgen
+Ein dauerhaft erhöhter Blutzucker kann zu schweren Folgeerkrankungen führen.
 
-Bei dauerhaft erhöhtem Blutzucker können Folgeschäden entstehen:
+Dazu gehören:
 
-- Nervenschäden (Neuropathie)
-- Augenschäden (Retinopathie)
-- Nierenschäden
-- Gefäßerkrankungen
+- diabetische Neuropathie
+- Retinopathie
+- Nephropathie
+- Herz-Kreislauf-Erkrankungen
+- diabetisches Fußsyndrom
 - Wundheilungsstörungen
 
-## Pflegebezug
+## Pflege bei Diabetes mellitus
 
-Pflegekräfte spielen eine wichtige Rolle im Alltag.
+Pflegefachpersonen übernehmen zahlreiche Aufgaben im Umgang mit Menschen mit Diabetes.
 
-Wichtige Aufgaben sind:
+Dazu gehören:
 
 - Blutzucker kontrollieren
-- Symptome erkennen
-- Patienten unterstützen
-- Selbstständigkeit fördern
-- bei Komplikationen reagieren
-
-## Wichtige pflegerische Maßnahmen
-
-- regelmäßige Blutzuckermessung
-- Beobachtung von Veränderungen
-- Unterstützung bei Ernährung
-- Förderung von Bewegung
-- Umgang mit Insulin oder Medikamenten beachten
-- Hypo- und Hyperglykämie früh erkennen
-- Dokumentation
-
-## Umgang mit Betroffenen
-
-Wichtig ist:
-
-- verständlich erklären
-- zur Selbstkontrolle anleiten
-- Sicherheit im Umgang mit der Erkrankung fördern
-- Ängste ernst nehmen
-
-## Rolle der Pflege
-
-Pflegekräfte müssen:
-
-- Werte beobachten und einschätzen
-- Veränderungen früh erkennen
-- Maßnahmen durchführen
+- Veränderungen beobachten
+- Hypo- und Hyperglykämien erkennen
+- Medikamente und Insulin überwachen
 - Patienten anleiten
-- interprofessionell zusammenarbeiten
+- Selbstständigkeit fördern
+- Dokumentation durchführen
 
-## Prüfungsrelevant
+## Praxisbeispiel
 
-In Prüfungen zählt vor allem:
+Ein 72-jähriger Bewohner mit Typ-2-Diabetes wirkt plötzlich blass, unruhig und beginnt stark zu schwitzen. Er antwortet nur verzögert auf Fragen.
 
-- Definition von Diabetes mellitus
-- Unterschied zwischen Typ 1 und Typ 2
-- Bedeutung von Insulin verstehen
-- Symptome erkennen
-- Hypo- und Hyperglykämie unterscheiden
-- pflegerische Maßnahmen benennen
+Die Pflegefachperson denkt an eine mögliche Hypoglykämie, kontrolliert sofort den Blutzucker und leitet die erforderlichen Maßnahmen ein.
 
-Typische Prüfungsfragen:
+## Typische Fehler in der Pflege
 
-- Was ist Diabetes mellitus?
-- Was ist der Unterschied zwischen Typ 1 und Typ 2?
-- Welche Symptome treten auf?
-- Was ist eine Hypoglykämie?
-- Welche pflegerischen Maßnahmen sind wichtig?
+Gerade in Ausbildung und Praxis treten häufig dieselben Fehler auf.
+
+### Fehler 1
+
+Symptome einer Hypoglykämie zu spät erkennen.
+
+### Fehler 2
+
+Blutzuckerwerte dokumentieren, aber nicht bewerten.
+
+### Fehler 3
+
+Patienten nicht ausreichend zur Selbstkontrolle anleiten.
+
+### Fehler 4
+
+Anzeichen eines diabetischen Fußsyndroms übersehen.
+
+### Fehler 5
+
+Insulingaben nicht sorgfältig kontrollieren.
+
+## Bedeutung für die Pflegeprüfung
+
+Diabetes mellitus gehört zu den häufigsten Krankheitsbildern in der Pflegeprüfung.
+
+Lehrkräfte achten besonders darauf,
+
+- den Unterschied zwischen Typ 1 und Typ 2 erklären zu können,
+- Symptome sicher zu erkennen,
+- Hypo- und Hyperglykämien zu unterscheiden,
+- pflegerische Maßnahmen begründen zu können,
+- Patienten verständlich anzuleiten.
+
+## Mini-Quiz
+
+### Welche Aussage trifft zu?
+
+A) Typ-2-Diabetes bedeutet einen vollständigen Insulinmangel.
+
+B) Bei einer Hypoglykämie ist der Blutzucker erhöht.
+
+C) Diabetes mellitus kann unbehandelt zu schweren Folgeerkrankungen führen.
+
+D) Pflegefachpersonen kontrollieren grundsätzlich keinen Blutzucker.
+
+### Lösung
+
+✅ **C** ist richtig.
+
+## Häufige Fragen
+
+### Was ist Diabetes mellitus?
+
+Diabetes mellitus ist eine chronische Stoffwechselerkrankung mit dauerhaft erhöhtem Blutzucker.
+
+### Was ist der Unterschied zwischen Typ 1 und Typ 2?
+
+Beim Typ-1-Diabetes fehlt Insulin vollständig. Beim Typ-2-Diabetes wirkt das vorhandene Insulin zunächst nicht ausreichend.
+
+### Warum ist Diabetes für Pflegefachpersonen wichtig?
+
+Pflegefachpersonen erkennen Komplikationen frühzeitig, unterstützen die Therapie und fördern die Selbstständigkeit der Betroffenen.
+
+## Fazit
+
+Diabetes mellitus gehört zu den wichtigsten Krankheitsbildern in der Pflege. Ein sicheres Verständnis der Erkrankung, ihrer Komplikationen und der pflegerischen Maßnahmen ist für Ausbildung, Praxis und Pflegeprüfung unverzichtbar.
+
+In den folgenden Themen lernst du unter anderem die Pflegeplanung, typische Pflegeprobleme, Fallbeispiele und prüfungsrelevante Situationen rund um Diabetes mellitus kennen.
+```

@@ -57,6 +57,15 @@ const clusterMap: Record<string, ClusterItem[]> = {
     { title: "COPD Fallbeispiel", href: "/themen/krankheitslehre/copd-fallbeispiel-mit-loesung/" },
     { title: "COPD Pflegeprüfung", href: "/themen/krankheitslehre/copd-pflegepruefung/" },
   ],
+
+  stoffwechsel: [
+  { title: "Diabetes mellitus", href: "/themen/krankheitslehre/diabetes-mellitus/" },
+  { title: "Pflegeprobleme bei Diabetes", href: "/themen/krankheitslehre/diabetes-pflegeprobleme/" },
+  { title: "Pflegeplanung bei Diabetes", href: "/themen/krankheitslehre/diabetes-pflegeplanung/" },
+  { title: "Diabetes Fallbeispiel", href: "/themen/krankheitslehre/diabetes-fallbeispiel-mit-loesung/" },
+  { title: "Diabetes im Praxisbesuch", href: "/themen/krankheitslehre/diabetes-praxisbesuch/" },
+  { title: "Diabetes in der Pflegeprüfung", href: "/themen/krankheitslehre/diabetes-pflegepruefung/" },
+],
 };
 
 const getClusterKey = (slug: string) => {
@@ -70,6 +79,9 @@ const getClusterKey = (slug: string) => {
   ) {
     return "atemwege";
   }
+  if (slug.startsWith("krankheitslehre/diabetes")) {
+  return "stoffwechsel";
+}
 
   return "";
 };

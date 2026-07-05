@@ -141,18 +141,7 @@ Vorbehaltsaufgaben zeigen sich im Pflegealltag vor allem bei fachlichen Entschei
 
 An konkreten Beispielen wird deutlich, welche Verantwortung Pflegefachpersonen übernehmen.
 
-## Passende Inhalte zum Thema Vorbehaltsaufgaben
 
-## Passende Inhalte zum Thema Vorbehaltsaufgaben
-
-Wenn du das Thema vertiefen möchtest:
-
-- [Vorbehaltsaufgaben](/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben/)
-- [Vorbehaltsaufgaben Fallbeispiele](/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben-fallbeispiele/)
-- [Vorbehaltsaufgaben Pflegeprüfung](/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben-pflegepruefung/)
-- [Pflegeprozess Grundlagen](/themen/pflegeausbildung/pflegeprozess/pflegeprozess-grundlagen/)
-- [Pflegediagnosen](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen/)
-- [PESR-Schema](/themen/pflegeausbildung/pflegeprozess/pesr-schema/)
 
 ## Merksatz
 
