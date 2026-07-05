@@ -2,6 +2,7 @@
 title: Deeskalation in der Pflege
 description: Erfahre, wie Deeskalation in der Pflege gelingt, welche Maßnahmen Konflikte entschärfen und worauf Lehrkräfte in der Pflegeprüfung achten.
 level: vertiefung
+order: 7
 ---
 
 # Deeskalation in der Pflege

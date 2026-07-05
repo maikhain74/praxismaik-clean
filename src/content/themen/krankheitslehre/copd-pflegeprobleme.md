@@ -246,12 +246,6 @@ Bei COPD stehen Atemnot, Belastungsintoleranz, Angst und Sekretmanagement im Mit
 
 Diese Pflegeprobleme bilden die Grundlage für Pflegediagnosen und Pflegeplanung.
 
-Weitere Vertiefung:
-
-- [COPD Pflegeplanung](/themen/krankheitslehre/copd-pflegeplanung/)
-- [COPD Pflegeprüfung](/themen/krankheitslehre/copd-pflegepruefung/)
-- [Lippenbremse bei COPD](/themen/krankheitslehre/lippenbremse-copd/)
-
 ## Merksatz
 
 **Bei COPD ist die Atmung fast immer das wichtigste Pflegeproblem.**

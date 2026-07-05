@@ -2,6 +2,9 @@
 title: Grundlagen der Kommunikation in der Pflege
 description: Erfahre, warum Kommunikation zu den wichtigsten Kompetenzen in der Pflege gehört, welche Kommunikationsformen es gibt und worauf Lehrkräfte in der Pflegeprüfung achten.
 level: grundlagen
+
+cluster: kommunikation
+order: 1
 ---
 
 # Grundlagen der Kommunikation in der Pflege

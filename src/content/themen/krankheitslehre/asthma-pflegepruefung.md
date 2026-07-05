@@ -186,21 +186,6 @@ Asthma gehört zu den klassischen Prüfungsthemen der Pflegeausbildung.
 
 Besonders wichtig sind die Beobachtung der Atmung, die Prioritätensetzung und die Formulierung von Pflegeproblemen sowie Pflegediagnosen.
 
-## Passende Inhalte zum Thema Asthma
-
-Wenn du dein Wissen vertiefen möchtest:
-
-## Passende Inhalte zum Thema Asthma
-
-Wenn du dein Wissen vertiefen möchtest:
-
-- [Asthma: Ursachen, Symptome und Pflege](/themen/krankheitslehre/asthma/)
-- [Asthma Fallbeispiel mit Lösung](/themen/krankheitslehre/asthma-fallbeispiel-mit-loesung/)
-- [Asthma Pflegeplanung](/themen/krankheitslehre/asthma-pflegeplanung/)
-- [Asthma Pflegeprobleme](/themen/krankheitslehre/asthma-pflegeprobleme/)
-- [Pflegediagnosen bei Asthma](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-bei-asthma/)
-- [Asthma Pflegeprüfung](/themen/krankheitslehre/asthma-pflegepruefung/)
-
 ## Merksatz
 
 **Bei Asthma gilt in Prüfungen fast immer: Erst Atmung, dann alles andere.**

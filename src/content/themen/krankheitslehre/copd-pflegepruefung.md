@@ -262,12 +262,6 @@ COPD ist ein typisches Prüfungsthema in der Pflegeausbildung.
 
 Besonders wichtig sind Symptome, Pflegeprobleme, Pflegediagnosen und die richtige Prioritätensetzung.
 
-Weitere Vertiefung:
-
-- [COPD Fallbeispiel mit Lösung](/themen/krankheitslehre/copd-fallbeispiel-mit-loesung/)
-- [COPD Pflegeplanung](/themen/krankheitslehre/copd-pflegeplanung/)
-- [COPD Pflegeprobleme](/themen/krankheitslehre/copd-pflegeprobleme/)
-
 ## Merksatz
 
 **In COPD-Prüfungsfällen gilt fast immer: Atmung erkennen, priorisieren und begründen.**

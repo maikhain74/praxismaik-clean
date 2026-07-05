@@ -42,15 +42,33 @@ const clusterMap: Record<string, ClusterItem[]> = {
     { title: "Pflegediagnosen bei COPD", href: "/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-bei-copd/" },
     { title: "Pflegediagnosen bei Asthma", href: "/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-bei-asthma/" },
   ],
+
+  atemwege: [
+    { title: "Asthma", href: "/themen/krankheitslehre/asthma/" },
+    { title: "Asthma Pflegeprobleme", href: "/themen/krankheitslehre/asthma-pflegeprobleme/" },
+    { title: "Asthma Pflegeplanung", href: "/themen/krankheitslehre/asthma-pflegeplanung/" },
+    { title: "Asthma Fallbeispiel", href: "/themen/krankheitslehre/asthma-fallbeispiel-mit-loesung/" },
+    { title: "Asthma Pflegeprüfung", href: "/themen/krankheitslehre/asthma-pflegepruefung/" },
+    { title: "COPD", href: "/themen/krankheitslehre/copd/" },
+    { title: "COPD Exazerbation", href: "/themen/krankheitslehre/copd-exazerbation-pflege/" },
+    { title: "Lippenbremse", href: "/themen/krankheitslehre/lippenbremse-copd/" },
+    { title: "COPD Pflegeprobleme", href: "/themen/krankheitslehre/copd-pflegeprobleme/" },
+    { title: "COPD Pflegeplanung", href: "/themen/krankheitslehre/copd-pflegeplanung/" },
+    { title: "COPD Fallbeispiel", href: "/themen/krankheitslehre/copd-fallbeispiel-mit-loesung/" },
+    { title: "COPD Pflegeprüfung", href: "/themen/krankheitslehre/copd-pflegepruefung/" },
+  ],
 };
 
 const getClusterKey = (slug: string) => {
-  if (slug === "kommunikation" || slug.startsWith("kommunikation/")) {
-    return "kommunikation";
-  }
+  if (slug === "kommunikation" || slug.startsWith("kommunikation/")) return "kommunikation";
+  if (slug.startsWith("pflegeausbildung/pflegeprozess/")) return "pflegeprozess";
 
-  if (slug.startsWith("pflegeausbildung/pflegeprozess/")) {
-    return "pflegeprozess";
+  if (
+    slug.startsWith("krankheitslehre/asthma") ||
+    slug.startsWith("krankheitslehre/copd") ||
+    slug === "krankheitslehre/lippenbremse-copd"
+  ) {
+    return "atemwege";
   }
 
   return "";
@@ -61,7 +79,7 @@ const items = clusterMap[clusterKey] ?? [];
 const currentHref = `/themen/${currentSlug}/`;
 ---
 
-{items.length > 0 && (
+{items.length > 1 && (
   <section class="themen-cluster" aria-labelledby="themen-cluster-title">
     <div class="themen-cluster-head">
       <span class="themen-cluster-label">Lernpfad</span>

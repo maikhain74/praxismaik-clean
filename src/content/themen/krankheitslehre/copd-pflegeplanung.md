@@ -229,12 +229,6 @@ Im Mittelpunkt stehen Atmung, Belastbarkeit und Sicherheit.
 
 Wer diese Struktur beherrscht, kann viele Prüfungsaufgaben sicher lösen.
 
-Weitere Vertiefung:
-
-- [COPD Pflegeprobleme](/themen/krankheitslehre/copd-pflegeprobleme/)
-- [COPD Fallbeispiel mit Lösung](/themen/krankheitslehre/copd-fallbeispiel-mit-loesung/)
-- [COPD Pflegeprüfung](/themen/krankheitslehre/copd-pflegepruefung/)
-
 ## Merksatz
 
 **Pflegeplanung bedeutet: Problem erkennen, Ziel festlegen, Maßnahmen durchführen und Erfolg überprüfen.**

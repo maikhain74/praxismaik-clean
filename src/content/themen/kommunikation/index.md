@@ -5,8 +5,9 @@ tags:
   - kommunikation
   - pflege
   - pruefung
-order: 8
 level: grundlagen
+cluster: kommunikation
+order: 0
 ---
 
 # Kommunikation in der Pflege

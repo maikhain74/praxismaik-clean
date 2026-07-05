@@ -183,21 +183,11 @@ In praktischen Prüfungen wird häufig bewertet:
 - Formulierung von Pflegediagnosen
 - Auswahl geeigneter Maßnahmen
 
-Mehr dazu:
-
-[COPD Pflegeprüfung](/themen/krankheitslehre/copd-pflegepruefung/)
-
 ## Zusammenfassung
 
 Bei COPD-Fallbeispielen stehen Atmung, Sauerstoffversorgung und Prioritätensetzung im Mittelpunkt.
 
 Wer Atemprobleme erkennt und begründen kann, löst bereits einen großen Teil typischer Prüfungsaufgaben.
-
-Weitere Vertiefung:
-
-- [COPD Pflegeprobleme](/themen/krankheitslehre/copd-pflegeprobleme/)
-- [COPD Pflegeplanung](/themen/krankheitslehre/copd-pflegeplanung/)
-- [COPD Pflegeprüfung](/themen/krankheitslehre/copd-pflegepruefung/)
 
 ## Merksatz
 

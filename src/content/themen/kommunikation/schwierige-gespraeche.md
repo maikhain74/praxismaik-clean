@@ -2,6 +2,7 @@
 title: Schwierige Gespräche in der Pflege führen
 description: Erfahre, wie schwierige Gespräche mit Patienten oder Angehörigen professionell geführt werden und worauf Lehrkräfte in der Pflegeprüfung achten.
 level: vertiefung
+order: 6
 ---
 
 # Schwierige Gespräche in der Pflege führen

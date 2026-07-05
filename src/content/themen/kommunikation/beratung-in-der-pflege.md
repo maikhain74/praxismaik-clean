@@ -2,6 +2,8 @@
 title: Beratung in der Pflege
 description: Beratung in der Pflege einfach erklärt. Lerne Ziele, Ablauf, Kommunikation und typische Prüfungsfragen für die generalistische Pflegeausbildung.
 level: vertiefung
+cluster: kommunikation
+order: 5
 ---
 
 # Beratung in der Pflege

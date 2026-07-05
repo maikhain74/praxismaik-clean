@@ -195,15 +195,6 @@ Eine gute Asthma Pflegeplanung erkennt Atemprobleme früh, priorisiert die Atmun
 
 Besonders wichtig sind Beobachtung, atemerleichternde Maßnahmen und die Förderung der Selbstständigkeit.
 
-## Passende Inhalte zum Thema Asthma
-
-Wenn du dein Wissen vertiefen möchtest:
-
-- [Asthma: Ursachen, Symptome und Pflege](/themen/krankheitslehre/asthma/)
-- [Asthma Pflegeprobleme](/themen/krankheitslehre/asthma-pflegeprobleme/)
-- [Asthma Fallbeispiel mit Lösung](/themen/krankheitslehre/asthma-fallbeispiel-mit-loesung/)
-- [Asthma Pflegeprüfung](/themen/krankheitslehre/asthma-pflegepruefung/)
-- [Pflegediagnosen bei Asthma](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-bei-asthma/)
 
 ## Merksatz
 

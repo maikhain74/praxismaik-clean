@@ -143,15 +143,6 @@ Asthma bronchiale ist eine chronische Erkrankung der Atemwege mit wiederkehrende
 
 Für Pflegekräfte stehen Beobachtung, Unterstützung der Atmung und die Förderung der Selbstständigkeit im Mittelpunkt.
 
-## Passende Inhalte zum Thema Asthma
-
-Wenn du das Thema für Ausbildung und Pflegeprüfung vertiefen möchtest:
-
-- [Asthma Fallbeispiel mit Lösung](/themen/krankheitslehre/asthma-fallbeispiel-mit-loesung/)
-- [Asthma Pflegeplanung](/themen/krankheitslehre/asthma-pflegeplanung/)
-- [Asthma Pflegeprobleme](/themen/krankheitslehre/asthma-pflegeprobleme/)
-- [Asthma Pflegeprüfung](/themen/krankheitslehre/asthma-pflegepruefung/)
-- [Pflegediagnosen bei Asthma](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-bei-asthma/)
 
 ## Merksatz
 

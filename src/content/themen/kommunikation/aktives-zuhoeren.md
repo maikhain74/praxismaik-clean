@@ -2,6 +2,7 @@
 title: Aktives Zuhören in der Pflege
 description: Erfahre, was aktives Zuhören in der Pflege bedeutet, warum es für eine professionelle Kommunikation wichtig ist und wie es in der Pflegeprüfung angewendet wird.
 level: vertiefung
+order: 2
 ---
 
 # Aktives Zuhören in der Pflege

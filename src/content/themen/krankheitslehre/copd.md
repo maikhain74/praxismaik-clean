@@ -10,18 +10,6 @@ COPD (chronisch obstruktive Lungenerkrankung) ist eine dauerhafte und fortschrei
 
 Der Begriff „obstruktiv“ bedeutet, dass die Atemwege verengt sind.
 
-## Weiterführende Inhalte zu COPD
-
-Wenn du COPD für Pflegeausbildung, Pflegeplanung oder Prüfung lernen möchtest, helfen dir diese vertiefenden Seiten:
-
-- [COPD Fallbeispiel mit Lösung](/themen/krankheitslehre/copd-fallbeispiel-mit-loesung/)
-- [COPD Pflegeplanung](/themen/krankheitslehre/copd-pflegeplanung/)
-- [COPD Pflegeprobleme](/themen/krankheitslehre/copd-pflegeprobleme/)
-- [COPD Pflegeprüfung](/themen/krankheitslehre/copd-pflegepruefung/)
-- [COPD Exazerbation Pflege](/themen/krankheitslehre/copd-exazerbation-pflege/)
-- [Lippenbremse bei COPD](/themen/krankheitslehre/lippenbremse-copd/)
-- [Pflegediagnosen bei COPD](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-bei-copd/)
-
 ## Warum COPD wichtig ist
 
 COPD gehört zu den häufigsten chronischen Erkrankungen.
@@ -110,10 +98,6 @@ Jede akute Verschlechterung kann den Zustand dauerhaft verschlechtern.
 
 </div>
 
-Mehr dazu:
-
-[COPD Exazerbation Pflege](/themen/krankheitslehre/copd-exazerbation-pflege/)
-
 ## Beobachtungen in der Pflege
 
 Pflegekräfte müssen typische Zeichen erkennen.
@@ -144,9 +128,6 @@ Wichtige Aspekte sind:
 
 Vertiefung:
 
-- [COPD Pflegeprobleme](/themen/krankheitslehre/copd-pflegeprobleme/)
-- [COPD Pflegeplanung](/themen/krankheitslehre/copd-pflegeplanung/)
-
 ## Wichtige pflegerische Maßnahmen
 
 - Oberkörperhochlagerung
@@ -157,10 +138,6 @@ Vertiefung:
 - Unterstützung bei der Sekretlösung
 - ausreichende Flüssigkeitszufuhr (wenn möglich)
 - Beobachtung von Verschlechterungen
-
-Mehr zur Atemtechnik:
-
-[Lippenbremse bei COPD](/themen/krankheitslehre/lippenbremse-copd/)
 
 ## Umgang mit Atemnot
 
@@ -196,10 +173,6 @@ Typische Pflegediagnosen bei COPD sind:
 - Ineffektive Atemwegsreinigung
 - Angst
 
-Mehr dazu:
-
-[Pflegediagnosen bei COPD](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-bei-copd/)
-
 ## Prüfungsrelevant
 
 In Prüfungen zählt vor allem:
@@ -220,8 +193,3 @@ Typische Prüfungsfragen:
 - Welche pflegerischen Maßnahmen sind wichtig?
 - Warum ist die Ausatmung erschwert?
 - Welches Pflegeproblem hat Vorrang?
-
-Für die Prüfung:
-
-- [COPD Fallbeispiel mit Lösung](/themen/krankheitslehre/copd-fallbeispiel-mit-loesung/)
-- [COPD Pflegeprüfung](/themen/krankheitslehre/copd-pflegepruefung/)

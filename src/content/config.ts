@@ -5,8 +5,10 @@ const baseSchema = z.object({
   description: z.string().optional(),
   cover: z.string().optional(),
   tags: z.array(z.string()).default([]),
+  level: z.string().optional(),
   reihenfolge: z.number().optional(),
   order: z.number().optional(),
+  cluster: z.string().optional(),
   premium: z.boolean().default(false),
   preview: z.string().optional().default(''),
 });

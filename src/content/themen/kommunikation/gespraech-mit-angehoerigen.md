@@ -2,6 +2,7 @@
 title: Gespräch mit Angehörigen in der Pflege
 description: Erfahre, wie professionelle Gespräche mit Angehörigen gelingen, welche Rolle die Schweigepflicht spielt und worauf Lehrkräfte in der Pflegeprüfung achten.
 level: vertiefung
+order: 4
 ---
 
 # Gespräch mit Angehörigen in der Pflege

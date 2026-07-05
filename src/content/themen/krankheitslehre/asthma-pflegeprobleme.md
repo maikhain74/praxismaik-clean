@@ -167,15 +167,6 @@ Bei Asthma stehen Atmung, Sicherheit und Belastbarkeit im Mittelpunkt.
 
 Pflegekräfte müssen Pflegeprobleme erkennen, priorisieren und geeignete Maßnahmen planen.
 
-## Passende Inhalte zum Thema Asthma
-
-Wenn du dein Wissen vertiefen möchtest:
-
-- [Asthma: Ursachen, Symptome und Pflege](/themen/krankheitslehre/asthma/)
-- [Asthma Pflegeplanung](/themen/krankheitslehre/asthma-pflegeplanung/)
-- [Asthma Fallbeispiel mit Lösung](/themen/krankheitslehre/asthma-fallbeispiel-mit-loesung/)
-- [Asthma Pflegeprüfung](/themen/krankheitslehre/asthma-pflegepruefung/)
-- [Pflegediagnosen bei Asthma](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen-bei-asthma/)
 
 ## Merksatz
 
