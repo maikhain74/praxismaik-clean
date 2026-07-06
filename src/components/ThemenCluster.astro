@@ -59,13 +59,21 @@ const clusterMap: Record<string, ClusterItem[]> = {
   ],
 
   stoffwechsel: [
-  { title: "Diabetes mellitus", href: "/themen/krankheitslehre/diabetes-mellitus/" },
-  { title: "Pflegeprobleme bei Diabetes", href: "/themen/krankheitslehre/diabetes-pflegeprobleme/" },
-  { title: "Pflegeplanung bei Diabetes", href: "/themen/krankheitslehre/diabetes-pflegeplanung/" },
-  { title: "Diabetes Fallbeispiel", href: "/themen/krankheitslehre/diabetes-fallbeispiel-mit-loesung/" },
-  { title: "Diabetes im Praxisbesuch", href: "/themen/krankheitslehre/diabetes-praxisbesuch/" },
-  { title: "Diabetes in der Pflegeprüfung", href: "/themen/krankheitslehre/diabetes-pflegepruefung/" },
-],
+    { title: "Diabetes mellitus", href: "/themen/krankheitslehre/diabetes-mellitus/" },
+    { title: "Pflegeprobleme bei Diabetes", href: "/themen/krankheitslehre/diabetes-pflegeprobleme/" },
+    { title: "Pflegeplanung bei Diabetes", href: "/themen/krankheitslehre/diabetes-pflegeplanung/" },
+    { title: "Diabetes Fallbeispiel", href: "/themen/krankheitslehre/diabetes-fallbeispiel-mit-loesung/" },
+    { title: "Diabetes im Praxisbesuch", href: "/themen/krankheitslehre/diabetes-praxisbesuch/" },
+    { title: "Diabetes in der Pflegeprüfung", href: "/themen/krankheitslehre/diabetes-pflegepruefung/" },
+  ],
+
+  herzKreislauf: [
+    { title: "Herzinsuffizienz", href: "/themen/krankheitslehre/herzinsuffizienz/" },
+    { title: "Pflegeprobleme bei Herzinsuffizienz", href: "/themen/krankheitslehre/herzinsuffizienz-pflegeprobleme/" },
+    { title: "Pflegeplanung bei Herzinsuffizienz", href: "/themen/krankheitslehre/herzinsuffizienz-pflegeplanung/" },
+    { title: "Herzinsuffizienz Fallbeispiel", href: "/themen/krankheitslehre/herzinsuffizienz-fallbeispiel-mit-loesung/" },
+    { title: "Herzinsuffizienz in der Pflegeprüfung", href: "/themen/krankheitslehre/herzinsuffizienz-pflegepruefung/" },
+  ],
 };
 
 const getClusterKey = (slug: string) => {
@@ -79,9 +87,14 @@ const getClusterKey = (slug: string) => {
   ) {
     return "atemwege";
   }
+
   if (slug.startsWith("krankheitslehre/diabetes")) {
-  return "stoffwechsel";
-}
+    return "stoffwechsel";
+  }
+
+  if (slug.startsWith("krankheitslehre/herzinsuffizienz")) {
+    return "herzKreislauf";
+  }
 
   return "";
 };

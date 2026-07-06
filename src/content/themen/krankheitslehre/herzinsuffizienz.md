@@ -1,164 +1,134 @@
 ---
 title: Herzinsuffizienz
-description: Ursachen, Symptome und pflegerische Bedeutung der Herzinsuffizienz verständlich erklärt.
+description: Herzinsuffizienz einfach erklärt mit Ursachen, Symptomen, Pflege, Beobachtungen und Prüfungswissen für die Pflegeausbildung.
 level: pruefung
 ---
 
 # Herzinsuffizienz
 
-Herzinsuffizienz bedeutet, dass das Herz nicht mehr in der Lage ist, den Körper ausreichend mit Blut und damit mit Sauerstoff zu versorgen.
+Herzinsuffizienz ist eine chronische Erkrankung, bei der das Herz den Körper nicht mehr ausreichend mit Blut und Sauerstoff versorgen kann.
 
-Sie gehört zu den häufigsten chronischen Erkrankungen im höheren Lebensalter und ist im Pflegealltag sehr präsent.
+Dadurch werden Organe und Gewebe schlechter durchblutet und der Körper kann seinen Sauerstoffbedarf nicht mehr vollständig decken.
 
-## Warum Herzinsuffizienz wichtig ist
+Typische Folgen sind Atemnot, Wassereinlagerungen und eine verminderte körperliche Belastbarkeit.
 
-Für die Pflege ist die Herzinsuffizienz besonders relevant, weil:
+Die Herzinsuffizienz gehört zu den häufigsten Erkrankungen im höheren Lebensalter und ist ein zentrales Thema in der Pflegeausbildung.
 
-- viele ältere Menschen betroffen sind
-- sich die Erkrankung schleichend verschlechtert
-- akute Verschlechterungen möglich sind
-- sie eng mit Atmung und Flüssigkeitshaushalt zusammenhängt
-- sie ein zentrales Prüfungsthema ist
+## Warum ist Herzinsuffizienz wichtig?
 
-## Was passiert im Körper
+Herzinsuffizienz betrifft Millionen Menschen und zählt zu den häufigsten Gründen für Krankenhausaufenthalte.
 
-Das Herz hat eine verminderte Pumpleistung.
+Die Erkrankung entwickelt sich häufig schleichend, kann sich aber plötzlich verschlechtern.
 
-Die Folgen:
+Für Pflegekräfte sind deshalb eine sorgfältige Beobachtung, das frühzeitige Erkennen von Warnzeichen und die Unterstützung der Betroffenen besonders wichtig.
 
-- Organe werden schlechter mit Sauerstoff versorgt
-- Blut staut sich im Körper zurück
-- Flüssigkeit tritt ins Gewebe aus
+## Was passiert bei Herzinsuffizienz?
 
-Je nach betroffener Herzhälfte zeigen sich unterschiedliche Symptome.
+Bei einer Herzinsuffizienz ist die Pumpleistung des Herzens eingeschränkt.
 
-## Ursachen
+Dadurch wird der Körper nicht mehr ausreichend mit sauerstoffreichem Blut versorgt.
 
-Häufige Ursachen der Herzinsuffizienz sind:
+Gleichzeitig kann sich Blut vor dem Herzen zurückstauen.
 
-- Bluthochdruck (Hypertonie)
-- Herzinfarkt
-- Herzklappenerkrankungen
-- Herzrhythmusstörungen
-- chronische Herzbelastung
+Je nachdem, welche Herzhälfte betroffen ist, kommt es zu unterschiedlichen Beschwerden.
 
-Oft bestehen mehrere Ursachen gleichzeitig.
+Bei einer Linksherzinsuffizienz staut sich das Blut in die Lunge zurück.
 
-## Formen der Herzinsuffizienz
-
-### Linksherzinsuffizienz
-
-Das linke Herz kann das Blut nicht ausreichend weiterpumpen.
-
-Folge:
-
-- Blut staut sich in die Lunge zurück
-
-Typische Symptome:
-
-- Atemnot
-- Husten
-- Atemprobleme im Liegen (Orthopnoe)
-
-### Rechtsherzinsuffizienz
-
-Das rechte Herz kann das Blut nicht ausreichend weiterpumpen.
-
-Folge:
-
-- Blut staut sich im Körper
-
-Typische Symptome:
-
-- Ödeme (z. B. Beine, Knöchel)
-- Gewichtszunahme
-- gestaute Halsvenen
-
-<div class="merkbox">
-<div class="merkbox-title">Merke: Links = Lunge, Rechts = Körper</div>
-
-Linksherzinsuffizienz führt zu Atemproblemen, Rechtsherzinsuffizienz zu Wassereinlagerungen.
-
-</div>
+Bei einer Rechtsherzinsuffizienz staut sich das Blut im Körper und es entstehen Wassereinlagerungen.
 
 ## Typische Symptome
 
-Unabhängig von der Form treten häufig auf:
+Häufige Beschwerden sind:
 
-- Atemnot (Belastung oder Ruhe)
-- schnelle Ermüdung
-- Leistungsabfall
-- Ödeme
-- Gewichtszunahme
+- Atemnot
+- verminderte Belastbarkeit
+- schnelle Erschöpfung
+- Ödeme an Beinen oder Knöcheln
+- Gewichtszunahme durch Flüssigkeitseinlagerungen
 - nächtliches Wasserlassen
-- Unruhe oder Schwäche
+- Husten, insbesondere im Liegen
+- Unruhe
 
-## Beobachtungen in der Pflege
+Die Beschwerden können sich langsam entwickeln oder sich innerhalb kurzer Zeit deutlich verschlechtern.
 
-Pflegekräfte achten besonders auf:
+## Häufige Ursachen
 
-- Atemprobleme (z. B. im Liegen)
-- geschwollene Beine oder Knöchel
-- schnelle Gewichtszunahme
-- reduzierte Belastbarkeit
-- Hautveränderungen
-- Allgemeinzustand
+Mögliche Ursachen sind:
 
-## Pflegebezug
+- Bluthochdruck
+- Herzinfarkt
+- Herzklappenerkrankungen
+- Herzrhythmusstörungen
+- Kardiomyopathien
+- langjährige koronare Herzkrankheit
 
-Die Pflege konzentriert sich auf Beobachtung und Stabilisierung.
+Oft liegen mehrere Ursachen gleichzeitig vor.
 
-Wichtige Aufgaben sind:
+## Pflegerische Beobachtungen
 
-- Gewicht regelmäßig kontrollieren
-- Flüssigkeitsbilanz beachten
+Pflegekräfte achten unter anderem auf:
+
+- Atemfrequenz
+- Atemnot
+- Sauerstoffsättigung
+- Ödeme
+- tägliches Körpergewicht
+- Hautfarbe
+- Belastbarkeit
+- Flüssigkeitsbilanz
+
+Veränderungen müssen frühzeitig erkannt und dokumentiert werden.
+
+## Pflege bei Herzinsuffizienz
+
+Wichtige pflegerische Aufgaben sind:
+
 - Atmung beobachten
-- Ödeme erkennen
-- Belastung anpassen
-- Patienten unterstützen
+- Oberkörperhochlagerung bei Atemnot unterstützen
+- tägliches Wiegen durchführen
+- Flüssigkeitsbilanz kontrollieren
+- Mobilisation an den Gesundheitszustand anpassen
+- Patienten zur Medikamenteneinnahme anleiten
+- Gesundheitskompetenz fördern
 
-## Wichtige pflegerische Maßnahmen
+## Herzinsuffizienz in der Pflegeprüfung
 
-- tägliches Wiegen (immer gleiche Bedingungen)
-- Flüssigkeitszufuhr kontrollieren
-- Oberkörperhochlagerung bei Atemnot
-- Mobilisation je nach Zustand
-- Hautpflege bei Ödemen
-- Beobachtung und Dokumentation
-- frühzeitiges Erkennen von Verschlechterungen
+Herzinsuffizienz ist ein häufiges Prüfungsthema.
 
-## Umgang mit Betroffenen
-
-Wichtig ist:
-
-- Überforderung vermeiden
-- Belastung individuell anpassen
-- auf Atemnot reagieren
-- Sicherheit und Ruhe vermitteln
-
-## Rolle der Pflege
-
-Pflegekräfte haben eine zentrale Rolle:
-
-- Veränderungen früh erkennen
-- Symptome richtig einschätzen
-- Maßnahmen durchführen
-- Verschlechterungen melden
-- Patienten begleiten
-
-## Prüfungsrelevant
-
-In Prüfungen zählt vor allem:
-
-- Definition der Herzinsuffizienz
-- Zusammenhang zwischen Herzleistung und Symptomen
-- Unterschied zwischen Links- und Rechtsherzinsuffizienz
-- typische Symptome erkennen
-- pflegerische Maßnahmen benennen
-
-Typische Prüfungsfragen:
+Typische Fragen sind:
 
 - Was ist eine Herzinsuffizienz?
-- Was ist der Unterschied zwischen Links- und Rechtsherzinsuffizienz?
 - Welche Symptome treten auf?
-- Welche pflegerischen Maßnahmen sind wichtig?
+- Welche Beobachtungen sind wichtig?
+- Welche pflegerischen Maßnahmen haben Priorität?
+- Woran erkennt man eine Verschlechterung?
+
+## Typische Fehler
+
+### Fehler 1
+
+Atemnot als normale Alterserscheinung unterschätzen.
+
+Eine zunehmende Atemnot muss immer ernst genommen werden.
+
+### Fehler 2
+
+Eine schnelle Gewichtszunahme nicht beachten.
+
+Sie kann auf Wassereinlagerungen und eine Verschlechterung der Herzinsuffizienz hinweisen.
+
+### Fehler 3
+
+Nur die Erkrankung betrachten.
+
+In Prüfungen stehen pflegerische Beobachtungen, Prioritäten und begründete Maßnahmen im Mittelpunkt.
+
+## Zusammenfassung
+
+Herzinsuffizienz ist eine chronische Erkrankung mit eingeschränkter Pumpleistung des Herzens.
+
+Für Pflegekräfte stehen die frühzeitige Erkennung von Verschlechterungen, die Beobachtung wichtiger Symptome und eine bedarfsgerechte pflegerische Versorgung im Mittelpunkt.
+
+## Merksatz
+
+**Bei Herzinsuffizienz gilt: Atemnot, Ödeme und Gewichtszunahme früh erkennen und Veränderungen sofort weitergeben.**
