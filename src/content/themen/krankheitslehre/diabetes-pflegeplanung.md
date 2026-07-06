@@ -45,34 +45,37 @@ Häufige Pflegeprobleme sind:
 
 ### Pflegeproblem
 
-Instabile Blutzuckerwerte aufgrund eines unzureichenden Selbstmanagements.
+Instabile Blutzuckerwerte aufgrund eines unzureichenden Selbstmanagements sowie eines Wissensdefizits im Umgang mit Insulin.
 
 ### Pflegeziel
 
-Der Patient erkennt Warnzeichen einer Hypo- oder Hyperglykämie frühzeitig und hält seine Blutzuckerwerte möglichst im vereinbarten Zielbereich.
+Innerhalb von drei Tagen misst der Patient seinen Blutzucker unter Anleitung selbstständig, erkennt typische Warnzeichen einer Hypo- und Hyperglykämie und beschreibt die notwendigen Sofortmaßnahmen korrekt. Die Blutzuckerwerte liegen dabei überwiegend im individuell vereinbarten Zielbereich.
 
 ### Pflegemaßnahmen
 
-- Blutzucker regelmäßig kontrollieren.
-- Auffällige Werte dokumentieren und weitergeben.
-- Auf Symptome einer Unter- oder Überzuckerung achten.
-- Den Patienten bei der Blutzuckermessung anleiten.
-- Den sicheren Umgang mit Insulin fördern.
-- Zur regelmäßigen Einnahme der Medikamente motivieren.
-- Ernährung und ausreichende Flüssigkeitszufuhr unterstützen.
-- Bewegung entsprechend der individuellen Möglichkeiten fördern.
+- Blutzucker entsprechend der ärztlichen Anordnung kontrollieren.
+- Blutzuckerwerte dokumentieren und auffällige Veränderungen weitergeben.
+- Auf Anzeichen einer Hypo- oder Hyperglykämie achten.
+- Den Patienten bei der selbstständigen Blutzuckermessung anleiten.
+- Den sicheren Umgang mit Insulin praktisch üben.
+- Den Zusammenhang zwischen Ernährung, Bewegung und Blutzucker erklären.
+- Den Patienten motivieren, Therapieempfehlungen einzuhalten.
+- Gemeinsam erreichbare Ziele für den Alltag festlegen.
 
 ## Weitere wichtige Pflegemaßnahmen
 
-Je nach Gesundheitszustand können zusätzlich erforderlich sein:
+Die Pflegeplanung muss regelmäßig überprüft und an den aktuellen Gesundheitszustand angepasst werden. Bereits kleine Veränderungen können neue Pflegemaßnahmen erforderlich machen.
 
-- tägliche Haut- und Fußkontrolle
-- Druckstellen frühzeitig erkennen
-- Wundheilung beobachten
-- regelmäßige Gewichtskontrolle
-- Förderung der Therapieadhärenz
-- Beratung von Angehörigen
-- interprofessionelle Zusammenarbeit
+Je nach individueller Situation gehören dazu:
+
+- tägliche Haut- und Fußinspektion
+- Druckstellen und Wunden frühzeitig erkennen
+- Wundheilung systematisch beobachten
+- regelmäßige Gewichtskontrolle zur Beurteilung des Ernährungszustands
+- ausreichende Flüssigkeitsaufnahme fördern
+- Therapieadhärenz stärken
+- Angehörige bei Bedarf beraten und einbeziehen
+- eng mit Ärztinnen, Ärzten, Diabetesberaterinnen und weiteren Berufsgruppen zusammenarbeiten
 
 ## Praxisbeispiel
 
@@ -111,13 +114,18 @@ Eine gute Pflegeplanung verbindet Pflegeprobleme, konkrete Pflegeziele und nachv
 
 ## Bedeutung für die Pflegeprüfung
 
-Lehrkräfte achten besonders darauf,
+Die Pflegeplanung bei Diabetes mellitus gehört zu den häufigsten Aufgaben in Fallbeispielen, Praxisbesuchen sowie mündlichen und schriftlichen Prüfungen.
 
-- Pflegeprobleme richtig zu erkennen,
-- realistische Pflegeziele zu formulieren,
-- geeignete Pflegemaßnahmen auszuwählen,
-- Prioritäten zu setzen,
-- den Pflegeprozess logisch anzuwenden.
+Lehrkräfte achten insbesondere darauf,
+
+- Pflegeprobleme sicher zu erkennen,
+- individuelle und realistische Pflegeziele zu formulieren,
+- Pflegemaßnahmen fachlich zu begründen,
+- Prioritäten sinnvoll zu setzen,
+- den Pflegeprozess nachvollziehbar anzuwenden,
+- die Pflegeplanung bei Veränderungen des Gesundheitszustands anzupassen.
+
+Entscheidend ist nicht, möglichst viele Maßnahmen aufzuzählen. Bewertet wird vor allem, ob du erklären kannst, warum du genau diese Maßnahmen auswählst und welches Pflegeziel damit erreicht werden soll.
 
 ## Mini-Quiz
 

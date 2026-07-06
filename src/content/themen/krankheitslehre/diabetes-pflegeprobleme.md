@@ -22,6 +22,8 @@ Gerade in der generalistischen Pflegeausbildung gehören Pflegeprobleme bei Diab
 
 Pflegeprobleme beschreiben gesundheitliche Einschränkungen oder Risiken, bei denen pflegerisches Handeln erforderlich ist.
 
+Sie bilden häufig die Grundlage für eine individuelle Pflegeplanung und die Formulierung von Pflegediagnosen. Erst wenn Pflegeprobleme systematisch erkannt und eingeschätzt werden, können passende Pflegeziele und Maßnahmen abgeleitet werden.
+
 Bei Diabetes entstehen Pflegeprobleme sowohl durch die Erkrankung selbst als auch durch mögliche Folgeerkrankungen oder die notwendige Therapie.
 
 ## Häufige Pflegeprobleme bei Diabetes mellitus
@@ -61,9 +63,11 @@ Kleine Verletzungen können sich schneller infizieren und schlecht abheilen.
 
 ### Risiko eines diabetischen Fußsyndroms
 
-Durch Nervenschäden und Durchblutungsstörungen werden Druckstellen oder kleine Verletzungen häufig zu spät bemerkt.
+Durch Nervenschäden (diabetische Neuropathie) und Durchblutungsstörungen werden Druckstellen, kleine Verletzungen oder Blasen häufig erst spät bemerkt.
 
-Eine regelmäßige Fußkontrolle gehört deshalb zu den wichtigsten pflegerischen Maßnahmen.
+Bereits kleine Hautschäden können sich zu schwer heilenden Wunden entwickeln und im schlimmsten Fall Amputationen erforderlich machen.
+
+Deshalb gehören die tägliche Inspektion der Füße, eine sorgfältige Hautbeobachtung sowie das Tragen geeigneten Schuhwerks zu den wichtigsten pflegerischen Maßnahmen.
 
 ### Wissensdefizit
 
@@ -91,15 +95,29 @@ Die Pflegefachperson erkennt das erhöhte Risiko eines diabetischen Fußsyndroms
 
 ## Pflegerische Schwerpunkte
 
-Bei Menschen mit Diabetes stehen folgende Aufgaben im Mittelpunkt:
+Die pflegerische Versorgung von Menschen mit Diabetes mellitus verfolgt das Ziel, akute Komplikationen zu vermeiden, Folgeerkrankungen vorzubeugen und die Selbstständigkeit der pflegebedürftigen Person zu fördern.
 
-- Blutzucker regelmäßig kontrollieren
-- Haut und Füße beobachten
-- Anzeichen einer Hypo- oder Hyperglykämie erkennen
-- Patienten zur Selbstkontrolle anleiten
-- Medikamente und Insulin sicher anwenden
-- Ernährung und Bewegung fördern
-- Veränderungen dokumentieren
+### Beobachten
+
+Pflegefachpersonen beobachten insbesondere:
+
+- Blutzuckerwerte
+- Haut und Füße
+- Bewusstseinslage
+- Anzeichen einer Hypo- oder Hyperglykämie
+- Wundheilung
+- Veränderungen des Allgemeinzustands
+
+### Unterstützen und fördern
+
+Ebenso wichtig ist es,
+
+- Patienten zur Blutzuckermessung anzuleiten,
+- den sicheren Umgang mit Insulin und Medikamenten zu fördern,
+- zu einer ausgewogenen Ernährung zu beraten,
+- Bewegung entsprechend der individuellen Möglichkeiten zu unterstützen,
+- die Selbstständigkeit im Alltag zu erhalten,
+- alle pflegerelevanten Beobachtungen nachvollziehbar zu dokumentieren.
 
 ## Typische Fehler
 
@@ -132,15 +150,18 @@ Bei Diabetes stehen stabile Blutzuckerwerte, die Vermeidung von Komplikationen u
 
 ## Bedeutung für die Pflegeprüfung
 
-Pflegeprobleme bei Diabetes gehören regelmäßig zu Fallbeispielen und Praxisbesuchen.
+Pflegeprobleme bei Diabetes mellitus gehören regelmäßig zu Fallbeispielen, Praxisbesuchen sowie mündlichen und schriftlichen Prüfungen.
 
 Lehrkräfte achten insbesondere darauf,
 
-- Risiken richtig einzuschätzen,
-- Pflegeprobleme zu erkennen,
-- passende Maßnahmen abzuleiten,
-- Prioritäten zu setzen,
-- die Sicherheit der pflegebedürftigen Person zu gewährleisten.
+- Pflegeprobleme sicher zu erkennen,
+- akute Risiken richtig einzuschätzen,
+- Pflegemaßnahmen fachlich zu begründen,
+- Prioritäten sinnvoll zu setzen,
+- den Pflegeprozess nachvollziehbar anzuwenden,
+- die Sicherheit der pflegebedürftigen Person jederzeit zu gewährleisten.
+
+Gerade in Fallbeispielen reicht es nicht aus, Pflegeprobleme nur aufzuzählen. Entscheidend ist, dass du begründen kannst, warum ein Pflegeproblem Priorität hat und welche Maßnahmen daraus folgen.
 
 ## Mini-Quiz
 
