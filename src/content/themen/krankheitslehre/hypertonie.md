@@ -1,160 +1,133 @@
 ---
 title: Hypertonie
-description: Ursachen, Symptome und pflegerische Aspekte bei Bluthochdruck.
+description: Hypertonie einfach erklärt mit Ursachen, Symptomen, Pflege, Beobachtungen und Prüfungswissen für die Pflegeausbildung.
 level: pruefung
 ---
 
 # Hypertonie
 
-Hypertonie bedeutet ein dauerhaft erhöhter Blutdruck.
+Hypertonie (Bluthochdruck) ist eine chronische Erkrankung, bei der der Blutdruck dauerhaft erhöht ist.
 
-Von Bluthochdruck spricht man, wenn der Blutdruck wiederholt über **140 / 90 mmHg** liegt.
+Dadurch werden Herz, Blutgefäße und andere Organe langfristig belastet und geschädigt.
 
-Hypertonie gehört zu den häufigsten Herz-Kreislauf-Erkrankungen und bleibt oft lange unbemerkt.
+Bleibt Bluthochdruck unbehandelt, steigt das Risiko für Herzinfarkt, Schlaganfall, Herzinsuffizienz und Nierenschäden deutlich.
 
-## Warum Hypertonie wichtig ist
+Hypertonie gehört zu den häufigsten Erkrankungen weltweit und ist ein zentrales Thema in der Pflegeausbildung.
 
-Für die Pflege ist Hypertonie besonders relevant, weil:
+## Warum ist Hypertonie wichtig?
 
-- sie sehr häufig vorkommt
-- sie oft keine Beschwerden verursacht
-- sie zu schweren Folgeerkrankungen führen kann
-- sie eng mit anderen Erkrankungen verbunden ist (z. B. Herzinsuffizienz)
-- sie ein wichtiges Prüfungsthema ist
+Hypertonie betrifft Millionen Menschen und verursacht anfangs häufig keine Beschwerden.
 
-## Was passiert im Körper
+Gerade deshalb wird sie oft erst spät erkannt.
 
-Bei Hypertonie ist der Druck in den Blutgefäßen dauerhaft erhöht.
+Für Pflegekräfte sind eine regelmäßige Blutdruckkontrolle, das Erkennen von Risikofaktoren und die Unterstützung bei der Therapie besonders wichtig.
 
-Die Folgen:
+## Was passiert bei Hypertonie?
 
-- Gefäße werden belastet und geschädigt
-- das Herz muss stärker arbeiten
-- Organe werden langfristig geschädigt
+Bei einer Hypertonie ist der Druck in den Blutgefäßen dauerhaft erhöht.
 
-## Ursachen
+Dadurch muss das Herz mehr Kraft aufbringen, um das Blut durch den Körper zu pumpen.
 
-Man unterscheidet zwei Formen der Hypertonie.
+Mit der Zeit werden Blutgefäße und Organe geschädigt.
 
-### Primäre (essenzielle) Hypertonie
+Besonders betroffen sind das Herz, das Gehirn, die Nieren und die Augen.
 
-- keine eindeutige Ursache
-- häufigste Form
+## Typische Symptome
 
-Begünstigende Faktoren:
-
-- genetische Veranlagung
-- Übergewicht
-- Bewegungsmangel
-- Stress
-- ungesunde Ernährung
-- hoher Salzkonsum
-
-### Sekundäre Hypertonie
-
-- entsteht als Folge einer anderen Erkrankung
-
-Beispiele:
-
-- Nierenerkrankungen
-- hormonelle Störungen
-- bestimmte Medikamente
-
-<div class="merkbox">
-<div class="merkbox-title">Merke: Primär häufig, sekundär selten</div>
-
-Die primäre Hypertonie ist die häufigste Form und hat keine klare Ursache.
-
-</div>
-
-## Symptome
-
-Hypertonie verursacht oft lange keine Beschwerden.
+Viele Betroffene haben zunächst keine Beschwerden.
 
 Mögliche Symptome sind:
 
 - Kopfschmerzen
 - Schwindel
-- Nervosität
-- Nasenbluten
-- Müdigkeit
 - Ohrensausen
+- Nasenbluten
+- Sehstörungen
+- Herzklopfen
+- Unruhe
 
-Viele Betroffene merken die Erkrankung erst spät.
+Die Erkrankung entwickelt sich meist schleichend und bleibt häufig lange unbemerkt.
 
-## Mögliche Folgen
+## Häufige Ursachen
 
-Unbehandelter Bluthochdruck kann schwere Schäden verursachen.
+Mögliche Ursachen sind:
 
-Typische Folgen sind:
+- höheres Lebensalter
+- Übergewicht
+- Bewegungsmangel
+- Rauchen
+- hoher Salzkonsum
+- Stress
+- familiäre Veranlagung
+- Nierenerkrankungen
 
-- Herzinfarkt
-- Schlaganfall
-- Herzinsuffizienz
-- Nierenschäden
-- Gefäßschäden
+Oft wirken mehrere Risikofaktoren gleichzeitig zusammen.
 
-## Beobachtungen in der Pflege
+## Pflegerische Beobachtungen
 
-Pflegekräfte achten auf:
+Pflegekräfte achten unter anderem auf:
 
-- erhöhte Blutdruckwerte
-- Beschwerden wie Schwindel oder Kopfschmerzen
-- Veränderungen des Allgemeinzustands
-- Hinweise auf Folgeerkrankungen
+- Blutdruckwerte
+- Kopfschmerzen
+- Schwindel
+- Allgemeinzustand
+- Medikamentenwirkung
+- Belastbarkeit
+- Lebensstil
+- Therapieadhärenz
 
-## Pflegebezug
+Veränderungen müssen frühzeitig erkannt und dokumentiert werden.
 
-Pflegekräfte haben eine wichtige Rolle bei der Kontrolle und Unterstützung.
+## Pflege bei Hypertonie
 
-Wichtige Aufgaben sind:
+Wichtige pflegerische Aufgaben sind:
 
-- regelmäßige Blutdruckmessung
-- Beobachtung von Symptomen
-- Unterstützung bei Lebensstilveränderungen
-- Kontrolle der Medikamenteneinnahme
-- Aufklärung der Patienten
-
-## Wichtige pflegerische Maßnahmen
-
-- Blutdruck regelmäßig messen und dokumentieren
+- Blutdruck regelmäßig kontrollieren
+- Medikamente überwachen
+- über einen gesunden Lebensstil beraten
 - Bewegung fördern
-- gesunde Ernährung unterstützen
-- Stress reduzieren helfen
-- Medikamenteneinnahme überwachen
-- Patienten zur Selbstkontrolle anleiten
+- salzarme Ernährung unterstützen
+- Stress reduzieren
+- Gesundheitskompetenz fördern
 
-## Rolle der Pflege
+## Hypertonie in der Pflegeprüfung
 
-Pflegekräfte müssen:
+Hypertonie ist ein häufiges Prüfungsthema.
 
-- Veränderungen früh erkennen
-- Werte richtig einschätzen
-- Maßnahmen unterstützen
-- Patienten begleiten und beraten
+Typische Fragen sind:
 
-## Ziel der Pflege
+- Was ist eine Hypertonie?
+- Welche Risikofaktoren gibt es?
+- Welche Symptome können auftreten?
+- Welche pflegerischen Maßnahmen sind wichtig?
+- Welche Folgeerkrankungen können entstehen?
 
-Das Ziel ist:
+## Typische Fehler
 
-- Blutdruck möglichst stabil halten
-- Komplikationen vermeiden
-- Lebensqualität erhalten
+### Fehler 1
 
-## Prüfungsrelevant
+Hypertonie unterschätzen, weil keine Beschwerden bestehen.
 
-In Prüfungen zählt vor allem:
+Auch symptomloser Bluthochdruck kann langfristig schwere Organschäden verursachen.
 
-- Definition der Hypertonie
-- Grenzwerte kennen
-- Unterschied zwischen primär und sekundär
-- Symptome erkennen
-- Folgeerkrankungen benennen
-- pflegerische Maßnahmen erklären
+### Fehler 2
 
-Typische Prüfungsfragen:
+Den Blutdruck nur einmal messen.
 
-- Ab wann spricht man von Hypertonie?
-- Was ist der Unterschied zwischen primärer und sekundärer Hypertonie?
-- Welche Folgen kann Bluthochdruck haben?
-- Welche Aufgaben hat die Pflege?
+Für eine zuverlässige Beurteilung sind wiederholte Messungen unter standardisierten Bedingungen erforderlich.
+
+### Fehler 3
+
+Nur den Blutdruck behandeln.
+
+In Prüfungen stehen auch Risikofaktoren, Lebensstiländerungen und pflegerische Beratung im Mittelpunkt.
+
+## Zusammenfassung
+
+Hypertonie ist eine häufige chronische Erkrankung, die unbehandelt schwerwiegende Folgeerkrankungen verursachen kann.
+
+Für Pflegekräfte stehen die regelmäßige Blutdruckkontrolle, die Beobachtung möglicher Beschwerden sowie die Förderung eines gesundheitsbewussten Lebensstils im Mittelpunkt.
+
+## Merksatz
+
+**Bei Hypertonie gilt: Blutdruck regelmäßig kontrollieren, Risikofaktoren reduzieren und Folgeerkrankungen frühzeitig vorbeugen.**

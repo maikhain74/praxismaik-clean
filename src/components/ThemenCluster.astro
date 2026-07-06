@@ -68,12 +68,18 @@ const clusterMap: Record<string, ClusterItem[]> = {
   ],
 
   herzKreislauf: [
-    { title: "Herzinsuffizienz", href: "/themen/krankheitslehre/herzinsuffizienz/" },
-    { title: "Pflegeprobleme bei Herzinsuffizienz", href: "/themen/krankheitslehre/herzinsuffizienz-pflegeprobleme/" },
-    { title: "Pflegeplanung bei Herzinsuffizienz", href: "/themen/krankheitslehre/herzinsuffizienz-pflegeplanung/" },
-    { title: "Herzinsuffizienz Fallbeispiel", href: "/themen/krankheitslehre/herzinsuffizienz-fallbeispiel-mit-loesung/" },
-    { title: "Herzinsuffizienz in der Pflegeprüfung", href: "/themen/krankheitslehre/herzinsuffizienz-pflegepruefung/" },
-  ],
+  { title: "Hypertonie", href: "/themen/krankheitslehre/hypertonie/" },
+  { title: "Hypertonie Pflegeprobleme", href: "/themen/krankheitslehre/hypertonie-pflegeprobleme/" },
+  { title: "Hypertonie Pflegeplanung", href: "/themen/krankheitslehre/hypertonie-pflegeplanung/" },
+  { title: "Hypertonie Fallbeispiel", href: "/themen/krankheitslehre/hypertonie-fallbeispiel-mit-loesung/" },
+  { title: "Hypertonie Pflegeprüfung", href: "/themen/krankheitslehre/hypertonie-pflegepruefung/" },
+
+  { title: "Herzinsuffizienz", href: "/themen/krankheitslehre/herzinsuffizienz/" },
+  { title: "Pflegeprobleme bei Herzinsuffizienz", href: "/themen/krankheitslehre/herzinsuffizienz-pflegeprobleme/" },
+  { title: "Pflegeplanung bei Herzinsuffizienz", href: "/themen/krankheitslehre/herzinsuffizienz-pflegeplanung/" },
+  { title: "Herzinsuffizienz Fallbeispiel", href: "/themen/krankheitslehre/herzinsuffizienz-fallbeispiel-mit-loesung/" },
+  { title: "Herzinsuffizienz in der Pflegeprüfung", href: "/themen/krankheitslehre/herzinsuffizienz-pflegepruefung/" },
+],
 };
 
 const getClusterKey = (slug: string) => {
@@ -92,9 +98,12 @@ const getClusterKey = (slug: string) => {
     return "stoffwechsel";
   }
 
-  if (slug.startsWith("krankheitslehre/herzinsuffizienz")) {
-    return "herzKreislauf";
-  }
+ if (
+  slug.startsWith("krankheitslehre/herzinsuffizienz") ||
+  slug.startsWith("krankheitslehre/hypertonie")
+) {
+  return "herzKreislauf";
+}
 
   return "";
 };
