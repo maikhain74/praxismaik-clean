@@ -10,6 +10,17 @@ if (!slug) {
 }
 
 const lernskripte = await getCollection('lernskripte');
+
+console.log(
+  lernskripte.slice(0, 10).map((item) => ({
+    slug: item.slug,
+    id: item.id,
+    title: item.data.title,
+  }))
+);
+
+console.log("URL-Slug:", Astro.params.slug);
+
 const eintrag = lernskripte.find((item) => item.slug === slug);
 
 if (!eintrag) {
