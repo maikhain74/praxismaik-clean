@@ -47,419 +47,429 @@ const premiumExamQuizCount = premiumExamQuiz.length;
       <span class="current">Premium</span>
     </nav>
 
-  <header class="premium-hero">
-  {hasPremiumCookie ? (
-    <div class="premium-active-box">
-      <strong>Premium ist bereits aktiv.</strong>
-      <span>Willkommen zurück. Wähle direkt den Bereich, in dem du heute weiterlernen möchtest.</span>
+    <header class="premium-hero">
+      {hasPremiumCookie ? (
+        <div class="premium-active-box">
+          <strong>Premium ist bereits aktiv.</strong>
+          <span>Willkommen zurück. Wähle direkt den Bereich, in dem du heute weiterlernen möchtest.</span>
 
-      <div class="premium-dashboard-split">
-        <div class="premium-dashboard-group">
-          <h2>Für Pflegeazubis</h2>
-          <p>Sicherer lernen, Fälle verstehen und gezielt für Praxisbesuche und Abschlussprüfung trainieren.</p>
+          <div class="premium-dashboard-split">
+            <div class="premium-dashboard-group">
+              <h2>Für Pflegeazubis</h2>
+              <p>Sicherer lernen, Fälle verstehen und gezielt für Praxisbesuche und Abschlussprüfung trainieren.</p>
 
-          <div class="premium-dashboard-grid">
-            <a href="/lernskripte/" class="premium-dashboard-card">
-              <strong>📖 Lernskripte</strong>
-              <span>Über 240 Themen gezielt wiederholen →</span>
-            </a>
+              <div class="premium-dashboard-grid">
+                <a href="/lernskripte/" class="premium-dashboard-card">
+                  <strong>📖 Lernskripte</strong>
+                  <span>Über 240 Themen gezielt wiederholen →</span>
+                </a>
 
-            <a href="/pruefung/" class="premium-dashboard-card">
-              <strong>🩺 Prüfungsfälle</strong>
-              <span>Fallsituationen mit Lösungen trainieren →</span>
-            </a>
+                <a href="/pruefung/" class="premium-dashboard-card">
+                  <strong>🩺 Prüfungsfälle</strong>
+                  <span>Fallsituationen mit Lösungen trainieren →</span>
+                </a>
 
-            <a href="/quiz-exam" class="premium-dashboard-card">
-              <strong>🎓 Examensquiz</strong>
-              <span>Fragen im Examensmodus bearbeiten →</span>
-            </a>
+                <a href="/quiz-exam" class="premium-dashboard-card">
+                  <strong>🎓 Examensquiz</strong>
+                  <span>Fragen im Examensmodus bearbeiten →</span>
+                </a>
 
-            <a href="/ebooks/" class="premium-dashboard-card">
-              <strong>📚 Pflege-E-Books</strong>
-              <span>Pflegeprozess, Prüfungsfälle und Vorbehaltsaufgaben öffnen →</span>
-            </a>
+                <a href="/ebooks/" class="premium-dashboard-card">
+                  <strong>📚 Pflege-E-Books</strong>
+                  <span>Pflegeprozess, Prüfungsfälle und Vorbehaltsaufgaben öffnen →</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="premium-dashboard-group">
+              <h2>Für Praxisanleiter</h2>
+              <p>Erstgespräche, Feedback, Beurteilungen und Anleitungssituationen professioneller gestalten.</p>
+
+              <div class="premium-dashboard-grid">
+                <a href="/ebooks/praxisanleitung/" class="premium-dashboard-card">
+                  <strong>📘 Praxisanleitung</strong>
+                  <span>Methoden, Gespräche und Struktur für den Ausbildungsalltag →</span>
+                </a>
+
+                <a href="/ebooks/formulierungen-praxisanleitung/" class="premium-dashboard-card">
+                  <strong>📝 Formulierungen</strong>
+                  <span>Vorlagen für Erstgespräch, Feedback und Beurteilungen →</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
+      ) : (
+        <>
+          <div class="premium-eyebrow">
+            Über 500.000 Videoaufrufe • Tausende Pflegeazubis lernen mit PraxisMaik
+          </div>
 
-        <div class="premium-dashboard-group">
-          <h2>Für Praxisanleiter</h2>
-          <p>Erstgespräche, Feedback, Beurteilungen und Anleitungssituationen professioneller gestalten.</p>
+          <h1>
+            Werde sicher in Praxisbesuchen, Fallsituationen und der Abschlussprüfung.
+          </h1>
 
-          <div class="premium-dashboard-grid">
-            <a href="/ebooks/praxisanleitung/" class="premium-dashboard-card">
-              <strong>📘 Praxisanleitung</strong>
-              <span>Methoden, Gespräche und Struktur für den Ausbildungsalltag →</span>
+          <p class="premium-lead">
+            Du lernst nicht nur auswendig, was richtig ist. Du verstehst, warum pflegerische Entscheidungen getroffen werden und kannst sie sicher begründen. Genau das macht den Unterschied im Praxisalltag und in der Abschlussprüfung.
+          </p>
+
+          <div class="premium-included-box">
+            <strong>Mit Premium erhältst du sofort Zugriff auf:</strong>
+
+            <ul>
+              <li>📖 Über 240 Themen für jede Ausbildungsphase schnell das passende Thema finden</li>
+              <li>🩺 45 Reale Fallsituationen sicher analysieren und begründen</li>
+              <li>🎓 61 Fragen,, um dein Wissen sicher zu überprüfen und sicher in die Abschlussprüfung gehen</li>
+              <li>📚 6 Themenbereiche verständlich und strukturiert lernen</li>
+              <li>✅ Lebenslanger Zugriff</li>
+              <li>✅ Kein Abo, keine Folgekosten</li>
+            </ul>
+          </div>
+
+          <div class="premium-above-fold-cta">
+            <a
+              href="/premium-interesse"
+              class="btn premium-main-btn"
+              data-ga-event="premium_above_fold_cta_click"
+            >
+              Jetzt Premium dauerhaft freischalten
             </a>
 
-            <a href="/ebooks/formulierungen-praxisanleitung/" class="premium-dashboard-card">
-              <strong>📝 Formulierungen</strong>
-              <span>Vorlagen für Erstgespräch, Feedback und Beurteilungen →</span>
+            <p class="premium-above-fold-note">
+              Nur 39 € einmalig • Sofort freigeschaltet • Dauerhaft nutzbar
+            </p>
+          </div>
+
+          <section class="premium-problem-box">
+            <h2>Kommt dir das bekannt vor?</h2>
+
+            <p>
+              Du lernst stundenlang und kennst die Theorie. Doch sobald eine Fallsituation kommt, fragst du dich:
+            </p>
+
+            <ul>
+              <li>Was hat jetzt Priorität?</li>
+              <li>Wie begründe ich meine Entscheidung fachlich?</li>
+              <li>Was erwartet die Lehrkraft wirklich?</li>
+              <li>Wie schreibe ich eine gute Pflegeplanung?</li>
+            </ul>
+
+            <p>
+              Genau hier setzt PraxisMaik an. Du lernst nicht mehr nur Inhalte, sondern die Denkweise hinter pflegerischen Entscheidungen.
+            </p>
+          </section>
+        </>
+      )}
+    </header>
+
+    {!hasPremiumCookie && (
+      <>
+        <section class="premium-section premium-founder-section">
+          <div class="premium-founder-box">
+            <div class="premium-founder-content">
+              <span class="premium-founder-eyebrow">Warum ich PraxisMaik entwickelt habe</span>
+
+              <h2>Ich bin Maik, Pflegefachkraft und Praxisanleiter.</h2>
+
+              <p>
+                In den vergangenen Jahren habe ich viele Pflegeazubis begleitet.
+                Dabei ist mir immer wieder dasselbe aufgefallen:
+              </p>
+
+              <p>
+                Die meisten scheitern nicht am fehlenden Fleiß.
+                Sie scheitern daran, dass ihnen niemand erklärt, wie pflegerische
+                Entscheidungen wirklich entstehen.
+              </p>
+
+              <ul>
+                <li>Warum hat diese Maßnahme jetzt Priorität?</li>
+                <li>Warum ist genau diese Pflegediagnose sinnvoll?</li>
+                <li>Wie begründe ich meine Entscheidung fachlich?</li>
+                <li>Was erwartet die Lehrkraft im Praxisbesuch wirklich?</li>
+              </ul>
+
+              <p>
+                Genau aus diesem Grund habe ich PraxisMaik aufgebaut.
+                Nicht als unübersichtliche Sammlung von Lernmaterialien,
+                sondern als Lernplattform, die dir hilft, Zusammenhänge zu verstehen
+                und in Praxisbesuchen, Fallsituationen und der Abschlussprüfung sicherer zu werden.
+              </p>
+            </div>
+
+           <div class="premium-founder-proof">
+  <strong>Warum Tausende Pflegeazubis mit PraxisMaik lernen</strong>
+
+  <span>⭐ Bereits über 500.000 Videoaufrufe auf TikTok</span>
+  <span>👨‍⚕️ Entwickelt von einer Pflegefachkraft und Praxisanleiter</span>
+  <span>📚 Mehr als 240 Lernskripte und zahlreiche Praxisbeispiele</span>
+  <span>🧡 Fokus auf Praxisbesuche, Pflegeplanung und pflegerische Entscheidungen</span>
+  <span>🎯 Du verstehst Zusammenhänge, statt Antworten auswendig zu lernen</span>
+</div>
+          </div>
+        </section>
+
+        <section class="premium-section premium-transformation">
+  <h2>Nach Premium kannst du …</h2>
+
+  <p class="premium-transformation-intro">
+    PraxisMaik wurde entwickelt, damit du nicht nur mehr lernst, sondern
+    pflegerische Entscheidungen sicher verstehst und begründen kannst.
+  </p>
+
+  <div class="premium-transformation-grid">
+    <div class="premium-transformation-item">
+      ✅ Fallsituationen schneller analysieren
+    </div>
+
+    <div class="premium-transformation-item">
+      ✅ Pflegediagnosen sicher formulieren
+    </div>
+
+    <div class="premium-transformation-item">
+      ✅ Pflegeplanungen logisch aufbauen
+    </div>
+
+    <div class="premium-transformation-item">
+      ✅ Pflegerische Entscheidungen fachlich begründen
+    </div>
+
+    <div class="premium-transformation-item">
+      ✅ Ruhiger und sicherer in Praxisbesuche gehen
+    </div>
+
+    <div class="premium-transformation-item">
+      ✅ Den roten Faden im Pflegeprozess verstehen
+    </div>
+  </div>
+
+  <p class="premium-transformation-note">
+    Genau darauf sind alle Lernskripte, Prüfungsfälle, Examensfragen und
+    Premium-E-Books aufgebaut.
+  </p>
+</section>
+
+        <section class="premium-section premium-overview-section">
+          <div class="section-headline">
+            <h2>Alles freischalten, was dich sicherer macht</h2>
+            <p class="section-intro">
+              Premium bündelt die wichtigsten Inhalte für Ausbildung, Praxis und Prüfung an einem Ort.
+            </p>
+          </div>
+
+          <div class="premium-compare">
+            <div class="compare-box">
+              <h3>Ohne Premium</h3>
+              <ul>
+                <li>du siehst nur Vorschauen und Einstiegstexte</li>
+                <li>viele Lernwege bleiben unvollständig</li>
+                <li>Prüfungsfälle und Lösungen sind nur eingeschränkt nutzbar</li>
+              </ul>
+            </div>
+
+            <div class="compare-box highlight">
+              <h3>Mit Premium</h3>
+              <ul>
+                <li>du lernst Grundlagen, Themen und Zusammenhänge vollständig</li>
+                <li>du trainierst Pflegefälle mit Denkstruktur und Lösung</li>
+                <li>du bereitest dich Schritt für Schritt auf Ausbildung, Praxis und Prüfung vor</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="premium-overview-grid">
+            <a href="/ebooks/" class="premium-overview-card">
+              <strong>📚 {premiumEbookCount}</strong>
+              <span>Premium-E-Books</span>
+              <em>Jetzt entdecken →</em>
+            </a>
+
+            <a href="/lernskripte/" class="premium-overview-card">
+              <strong>📖 {premiumLernskriptCount}</strong>
+              <span>Lernskripte</span>
+              <em>Alle Lernskripte ansehen →</em>
+            </a>
+
+            <a href="/pruefung/" class="premium-overview-card">
+              <strong>🩺 {premiumPruefungsfallCount}</strong>
+              <span>Prüfungsfälle mit Lösungen</span>
+              <em>Fälle trainieren →</em>
+            </a>
+
+            <a href="/quiz-exam" class="premium-overview-card">
+              <strong>🎓 {premiumExamQuizCount}</strong>
+              <span>Examensfragen</span>
+              <em>Examensmodus starten →</em>
             </a>
           </div>
-        </div>
-      </div>
-    </div>
-  ) : (
-    <>
-      <div class="premium-urgency">
-        <strong>Du siehst aktuell nur Vorschauen.</strong>
-      </div>
 
-      <span class="premium-eyebrow">PraxisMaik Premium</span>
+          <div class="premium-quick-cta">
+            <p>
+              🎓 Einmal freischalten, dauerhaft nutzen.
+            </p>
 
-      <h1>🎓 Bestehe deine Pflegeprüfung sicherer.</h1>
+            <a
+              href="/premium-interesse"
+              class="btn premium-buy-btn"
+              data-ga-event="premium_quick_cta_click"
+            >
+              Premium für 39 € freischalten
+            </a>
+          </div>
+        </section>
 
-      <p class="premium-lead">
-        240 Lernskripte, 45 Prüfungsfälle, 61 Examensfragen und 6 Premium-E-Books.
-      </p>
+        <section class="premium-section premium-showcase-compact">
+          <div class="section-headline">
+            <h2>Du bekommst sofort Zugriff auf die wichtigsten Premium-Inhalte</h2>
+            <p class="section-intro">
+              E-Books, Lernskripte, Prüfungsfälle und Examensfragen, alles in einem Zugang.
+            </p>
+          </div>
 
-      <div class="premium-included-box">
-        <strong>Alles in einem Zugang:</strong>
+          <div class="premium-ebook-cover-grid">
+            <a href="/ebooks/praxisanleitung/">
+              <img src="/images/ebooks/ebook-praxisanleitung-cover.webp" alt="Praxisanleitung E-Book" />
+            </a>
 
-        <ul>
-          <li>240 Lernskripte</li>
-          <li>45 Prüfungsfälle mit Lösungen</li>
-          <li>61 Examensfragen</li>
-          <li>6 Premium-E-Books</li>
-          <li>Dauerhafter Zugriff</li>
-          <li>Kein Abo</li>
-        </ul>
-      </div>
+            <a href="/ebooks/formulierungen-praxisanleitung/">
+              <img src="/images/ebooks/formulierungen-praxisanleitung-cover.webp" alt="Formulierungen für Praxisanleiter E-Book" />
+            </a>
 
-      <div class="premium-above-fold-cta">
-        <a
-          href="/premium-interesse"
-          class="btn premium-main-btn"
-          data-ga-event="premium_above_fold_cta_click"
-        >
-          Premium für 39 € freischalten
-        </a>
+            <a href="/ebooks/pruefungsfaelle-pflegepruefung/">
+              <img src="/images/ebooks/pruefungsfaelle-cover.webp" alt="Prüfungsfälle E-Book" />
+            </a>
 
-        <p class="premium-above-fold-note">
-          Sofortiger Zugriff. Kein Abo. Dauerhaft nutzbar.
-        </p>
-      </div>
+            <a href="/ebooks/pflegeprozess-vorbehaltsaufgaben/">
+              <img src="/images/ebooks/pflegeprozess-vorbehaltsaufgaben-cover.webp" alt="Vorbehaltsaufgaben E-Book" />
+            </a>
 
-      <p class="premium-loss">
-        Viele Pflegeazubis lernen viel, fühlen sich in Fallsituationen und Prüfungen aber trotzdem unsicher.
-      </p>
+            <a href="/ebooks/pflegeprozess/">
+              <img src="/images/ebooks/pflegeprozess-pflegeplanung-pruefung-cover.webp" alt="Pflegeprozess E-Book" />
+            </a>
 
-      <p class="premium-loss">
-        Premium zeigt dir die Denklogik hinter Pflegeplanung, Prioritäten und Prüfungsfragen.
-      </p>
+            <a href="/ebooks/taschen-exzellenz/">
+              <img src="/images/ebooks/taschen-exzellenz-cover.webp" alt="Taschen-Exzellenz E-Book" />
+            </a>
+          </div>
 
-      <div class="premium-price-inline">
-        <strong>39 € einmalig</strong>
-        <span>entspricht weniger als 1 € pro Lerntag</span>
-        <span>kein Abo, keine laufenden Kosten</span>
+          <div class="premium-after-showcase-cta">
+            <h3>6 E-Books, 240 Lernskripte, 45 Prüfungsfälle und 61 Examensfragen in einem Zugang.</h3>
+            <p>
+              Wenn du für Ausbildung, Praxis oder Examen lernst, bekommst du hier einen klaren Lernweg statt einzelner Sucherei.
+            </p>
+          </div>
+        </section>
 
-        <p class="premium-value">
-          Premium hilft dir dabei, Fallsituationen sicherer zu lösen,
-          Pflegeplanungen strukturierter zu schreiben und dich gezielt
-          auf die Abschlussprüfung vorzubereiten.
-        </p>
+        <section class="premium-section premium-faq-section">
+          <div class="section-headline">
+            <h2>Häufige Fragen</h2>
+            <p class="section-intro">
+              Die wichtigsten Antworten vor der Freischaltung.
+            </p>
+          </div>
 
-        <div class="premium-price-benefits">
-          <span>✓ Dauerhafter Zugriff</span>
-          <span>✓ Kein Abo</span>
-          <span>✓ Keine Folgekosten</span>
-          <span>✓ Sofort freigeschaltet</span>
-        </div>
+          <div class="premium-faq-accordion">
+            <details class="premium-faq-item" open>
+              <summary>Ist Premium auch geeignet, wenn ich noch am Anfang der Ausbildung bin?</summary>
+              <p>
+                Ja. Die Inhalte sind so aufgebaut, dass du sie vom ersten Ausbildungsjahr
+                bis zur Abschlussprüfung nutzen kannst.
+              </p>
+            </details>
 
-        <div class="premium-social-proof">
-          <span>🎓 Über 500.000 Videoaufrufe auf TikTok</span>
-          <span>📚 Entwickelt aus echten Prüfungsfragen und Fallbeispielen</span>
-        </div>
+            <details class="premium-faq-item">
+              <summary>Hilft Premium bei Pflegeplanung und Fallaufgaben?</summary>
+              <p>
+                Genau dafür wurde Premium entwickelt. Der Fokus liegt auf Pflegeprozess,
+                Prioritäten, Begründungen und typischen Prüfungssituationen.
+              </p>
+            </details>
 
-        <p class="premium-risk">
-          Du kannst sofort starten und direkt prüfen, ob es dir hilft.
-        </p>
-      </div>
-    </>
-  )}
-</header>
+            <details class="premium-faq-item">
+              <summary>Muss ich alles durcharbeiten?</summary>
+              <p>
+                Nein. Du kannst gezielt einzelne Themen, Lernskripte, E-Books oder
+                Prüfungsfälle nutzen und dort einsteigen, wo du gerade Unterstützung brauchst.
+              </p>
+            </details>
 
-{!hasPremiumCookie && (
-  <>
+            <details class="premium-faq-item">
+              <summary>Ist Premium nur für Prüfungen gedacht?</summary>
+              <p>
+                Nein. Viele Inhalte helfen auch im Praxiseinsatz, bei Pflegeplanung,
+                Medikamentenwissen und dem Verständnis pflegerischer Zusammenhänge.
+              </p>
+            </details>
 
-    <section class="premium-section premium-overview-section">
-      <div class="section-headline">
-   <h2>Alles freischalten, was dich sicherer macht</h2>
-<p class="section-intro">
-  Premium bündelt die wichtigsten Inhalte für Ausbildung, Praxis und Prüfung an einem Ort.
-</p>
-      </div>
+            <details class="premium-faq-item">
+              <summary>Warum kostet Premium nur 39 €?</summary>
+              <p>
+                Mein Ziel ist, Pflegeazubis einen bezahlbaren Zugang zu hochwertigen
+                Lernmaterialien zu ermöglichen. Du zahlst einmal und erhältst Zugriff auf
+                240 Lernskripte, 45 Prüfungsfälle, 61 Examensfragen und 6 Premium-E-Books,
+                ohne Abo und ohne weitere Kosten.
+              </p>
+            </details>
 
-{!hasPremiumCookie && (
-  <div class="premium-compare">
-<div class="compare-box">
-  <h3>Ohne Premium</h3>
-  <ul>
-    <li>du siehst nur Vorschauen und Einstiegstexte</li>
-    <li>viele Lernwege bleiben unvollständig</li>
-    <li>Prüfungsfälle und Lösungen sind nur eingeschränkt nutzbar</li>
-  </ul>
-</div>
+            <details class="premium-faq-item">
+              <summary>Was unterscheidet PraxisMaik von kostenlosen Lernmaterialien?</summary>
+              <p>
+                Viele kostenlose Inhalte erklären einzelne Themen. PraxisMaik verbindet
+                Lernskripte, Prüfungsfälle, Examensfragen, Pflegeplanung und E-Books zu
+                einem strukturierten Lernweg. Du lernst nicht nur Wissen auswendig,
+                sondern trainierst die Denklogik hinter Prüfungsfragen und Fallsituationen.
+              </p>
+            </details>
 
-<div class="compare-box highlight">
-  <h3>Mit Premium</h3>
-  <ul>
-    <li>du lernst Grundlagen, Themen und Zusammenhänge vollständig</li>
-    <li>du trainierst Pflegefälle mit Denkstruktur und Lösung</li>
-    <li>du bereitest dich Schritt für Schritt auf Ausbildung, Praxis und Prüfung vor</li>
-  </ul>
-</div>
-  </div>
-)}
+            <details class="premium-faq-item">
+              <summary>Wie lange habe ich Zugriff?</summary>
+              <p>
+                Du zahlst einmal und behältst dauerhaft Zugriff auf alle freigeschalteten
+                Premium-Inhalte. Es gibt kein Abo und keine monatlichen Kosten.
+              </p>
+            </details>
 
+            <details class="premium-faq-item">
+              <summary>Was bekomme ich konkret?</summary>
+              <p>
+                6 Premium-E-Books, 240 Lernskripte, 45 Prüfungsfälle und 61 Examensfragen
+                in einem dauerhaften Zugang.
+              </p>
+            </details>
+          </div>
+        </section>
 
-    <div class="premium-overview-grid">
-  <a href="/ebooks/" class="premium-overview-card">
-    <strong>📚 {premiumEbookCount}</strong>
-    <span>Premium-E-Books</span>
-    <em>Jetzt entdecken →</em>
-  </a>
+     <section class="premium-section premium-final-cta">
+  <h2>Bereit für den nächsten Schritt?</h2>
 
-  <a href="/lernskripte/" class="premium-overview-card">
-    <strong>📖 {premiumLernskriptCount}</strong>
-    <span>Lernskripte</span>
-    <em>Alle Lernskripte ansehen →</em>
-  </a>
+  <p>
+    Du hast gesehen, wie PraxisMaik komplexe Pflegethemen verständlich erklärt.
+    Im Premiumbereich bekommst du den kompletten Lernweg für Ausbildung, Praxisbesuche und Abschlussprüfung.
+  </p>
 
-  <a href="/pruefung/" class="premium-overview-card">
-    <strong>🩺 {premiumPruefungsfallCount}</strong>
-    <span>Prüfungsfälle mit Lösungen</span>
-    <em>Fälle trainieren →</em>
-  </a>
-
-  <a href="/quiz-exam" class="premium-overview-card">
-    <strong>🎓 {premiumExamQuizCount}</strong>
-    <span>Examensfragen</span>
-    <em>Examensmodus starten →</em>
-  </a>
-</div>
-
-{!hasPremiumCookie && (
-  <div class="premium-quick-cta">
-    <p>
-      🎓 Einmal freischalten, dauerhaft nutzen.
-    </p>
-
-    <a
-      href="/premium-interesse"
-      class="btn premium-buy-btn"
-      data-ga-event="premium_quick_cta_click"
-    >
-      Premium für 39 € freischalten
-    </a>
-  </div>
-)}
-    
-    </section>
-
-<section class="premium-section premium-showcase-compact">
-  <div class="section-headline">
-    <h2>Du bekommst sofort Zugriff auf die wichtigsten Premium-Inhalte</h2>
-    <p class="section-intro">
-      E-Books, Lernskripte, Prüfungsfälle und Examensfragen, alles in einem Zugang.
-    </p>
+  <div class="premium-final-price">
+    39 € einmalig
+    <span>lebenslanger Zugriff · kein Abo · sofort freigeschaltet</span>
   </div>
 
- <div class="premium-ebook-cover-grid">
-  <a href="/ebooks/praxisanleitung/">
-    <img src="/images/ebooks/ebook-praxisanleitung-cover.webp" alt="Praxisanleitung E-Book" />
+  <a
+    href="/premium-interesse"
+    class="btn premium-buy-btn"
+    data-ga-event="premium_final_cta_click"
+  >
+    Premium jetzt dauerhaft freischalten
   </a>
-
-  <a href="/ebooks/formulierungen-praxisanleitung/">
-    <img src="/images/ebooks/formulierungen-praxisanleitung-cover.webp" alt="Formulierungen für Praxisanleiter E-Book" />
-  </a>
-
-  <a href="/ebooks/pruefungsfaelle-pflegepruefung/">
-    <img src="/images/ebooks/pruefungsfaelle-cover.webp" alt="Prüfungsfälle E-Book" />
-  </a>
-
-  <a href="/ebooks/pflegeprozess-vorbehaltsaufgaben/">
-    <img src="/images/ebooks/pflegeprozess-vorbehaltsaufgaben-cover.webp" alt="Vorbehaltsaufgaben E-Book" />
-  </a>
-
-  <a href="/ebooks/pflegeprozess/">
-    <img src="/images/ebooks/pflegeprozess-pflegeplanung-pruefung-cover.webp" alt="Pflegeprozess E-Book" />
-  </a>
-
-  <a href="/ebooks/taschen-exzellenz/">
-    <img src="/images/ebooks/taschen-exzellenz-cover.webp" alt="Taschen-Exzellenz E-Book" />
-  </a>
-</div>
-
-  {!hasPremiumCookie && (
-    <div class="premium-after-showcase-cta">
-      <h3>6 E-Books, 240 Lernskripte, 45 Prüfungsfälle und 61 Examensfragen in einem Zugang.</h3>
-      <p>
-        Wenn du für Ausbildung, Praxis oder Examen lernst, bekommst du hier einen klaren Lernweg statt einzelner Sucherei.
-      </p>
-      <a href="/premium-interesse" class="btn premium-buy-btn">
-        Premium für 39 € freischalten
-      </a>
-    </div>
-  )}
 </section>
 
-<section class="premium-section premium-faq-section">
-  <div class="section-headline">
-    <h2>Häufige Fragen</h2>
-    <p class="section-intro">
-      Die wichtigsten Antworten vor der Freischaltung.
-    </p>
-  </div>
-
-  <div class="premium-faq-accordion">
-    <details class="premium-faq-item" open>
-      <summary>Ist Premium auch geeignet, wenn ich noch am Anfang der Ausbildung bin?</summary>
-      <p>
-        Ja. Die Inhalte sind so aufgebaut, dass du sie vom ersten Ausbildungsjahr
-        bis zur Abschlussprüfung nutzen kannst.
-      </p>
-    </details>
-
-    <details class="premium-faq-item">
-      <summary>Hilft Premium bei Pflegeplanung und Fallaufgaben?</summary>
-      <p>
-        Genau dafür wurde Premium entwickelt. Der Fokus liegt auf Pflegeprozess,
-        Prioritäten, Begründungen und typischen Prüfungssituationen.
-      </p>
-    </details>
-
-    <details class="premium-faq-item">
-      <summary>Muss ich alles durcharbeiten?</summary>
-      <p>
-        Nein. Du kannst gezielt einzelne Themen, Lernskripte, E-Books oder
-        Prüfungsfälle nutzen und dort einsteigen, wo du gerade Unterstützung brauchst.
-      </p>
-    </details>
-
-    <details class="premium-faq-item">
-      <summary>Ist Premium nur für Prüfungen gedacht?</summary>
-      <p>
-        Nein. Viele Inhalte helfen auch im Praxiseinsatz, bei Pflegeplanung,
-        Medikamentenwissen und dem Verständnis pflegerischer Zusammenhänge.
-      </p>
-    </details>
-
-    <details class="premium-faq-item">
-      <summary>Warum kostet Premium nur 39 €?</summary>
-     <p>
-  Mein Ziel ist, Pflegeazubis einen bezahlbaren Zugang zu hochwertigen
-  Lernmaterialien zu ermöglichen. Du zahlst einmal und erhältst Zugriff auf
-  240 Lernskripte, 45 Prüfungsfälle, 61 Examensfragen und 6 Premium-E-Books,
-  ohne Abo und ohne weitere Kosten.
-</p>
-    </details>
-
-    <details class="premium-faq-item">
-  <summary>Was unterscheidet PraxisMaik von kostenlosen Lernmaterialien?</summary>
-  <p>
-    Viele kostenlose Inhalte erklären einzelne Themen. PraxisMaik verbindet
-    Lernskripte, Prüfungsfälle, Examensfragen, Pflegeplanung und E-Books zu
-    einem strukturierten Lernweg. Du lernst nicht nur Wissen auswendig,
-    sondern trainierst die Denklogik hinter Prüfungsfragen und Fallsituationen.
-  </p>
-</details>
-
-<details class="premium-faq-item">
-  <summary>Wie lange habe ich Zugriff?</summary>
-  <p>
-    Du zahlst einmal und behältst dauerhaft Zugriff auf alle freigeschalteten
-    Premium-Inhalte. Es gibt kein Abo und keine monatlichen Kosten.
-  </p>
-</details>
-
-    <details class="premium-faq-item">
-      <summary>Was bekomme ich konkret?</summary>
-      <p>
-        6 Premium-E-Books, 240 Lernskripte, 45 Prüfungsfälle und 61 Examensfragen
-        in einem dauerhaften Zugang.
-      </p>
-    </details>
-  </div>
-</section>
-
-    <section class="premium-section premium-proof-section">
-  <div class="premium-proof-box">
-    <h2>Premium gibt dir einen klaren Lernweg statt planloses Wiederholen</h2>
-
-    <p class="premium-proof-intro">
-      Du lernst nicht einfach mehr Inhalte. Du lernst strukturierter, verstehst Fälle besser
-      und kannst deine Antworten sicherer begründen.
-    </p>
-
-    <ul class="premium-proof-list">
-      <li>du erkennst schneller, worum es in einer Fallsituation wirklich geht</li>
-      <li>du begründest Prioritäten sicherer und fachlicher</li>
-      <li>du schreibst Pflegeplanungen strukturierter und nachvollziehbarer</li>
-      <li>du nutzt E-Books, Skripte, Fälle und Examensfragen als zusammenhängenden Lernweg</li>
-    </ul>
-
-{!hasPremiumCookie && (
-  <p class="premium-pressure">
-    Viele merken erst kurz vor der Prüfung, dass ihnen Struktur und klare Falllogik fehlen.
-  </p>
-)}
-
-        <div class="premium-price-actions">
-          {hasPremiumCookie ? (
-            <a href="/pruefung/" class="btn premium-buy-btn">Zu den Prüfungsfällen</a>
-          ) : (
-            <a href="/premium-interesse" class="btn premium-buy-btn">Jetzt alle Premium-Inhalte freischalten</a>
-          )}
+        <div class="premium-mobile-sticky-cta">
+          <a
+            href="/premium-interesse"
+            class="premium-mobile-sticky-cta__button"
+            data-ga-event="premium_mobile_sticky_cta_click"
+          >
+            Premium für 39 € freischalten
+          </a>
         </div>
-
-        <p class="premium-price-note">
-          {hasPremiumCookie ? "Dein Zugang ist aktiv." : "Einmal zahlen, sofort freischalten."}
-        </p>
-      </div>
-    </section>
-
-   {!hasPremiumCookie && (
-  <section class="premium-section premium-final-cta">
-    <h2>Sicherer durch Ausbildung und Abschlussprüfung</h2>
-
-    <p>
-      Premium hilft dir dabei, Fallsituationen besser zu verstehen,
-      Pflegeplanungen sicherer zu schreiben und in Prüfungen
-      strukturierter zu denken.
-    </p>
-
-    <p class="premium-final-benefit">
-      Einmal freischalten. Dauerhaft nutzen. Kein Abo.
-    </p>
-
-    <div class="premium-final-price">
-      39 € einmalig
-      <span>kein Abo, keine laufenden Kosten</span>
-    </div>
-
-    <a
-      href="/premium-interesse"
-      class="btn premium-buy-btn"
-      data-ga-event="premium_final_cta_click"
-    >
-      Jetzt Premium freischalten
-    </a>
-  </section>
-)}
-
-{!hasPremiumCookie && (
-  <div class="premium-mobile-sticky-cta">
-    <a
-      href="/premium-interesse"
-      class="premium-mobile-sticky-cta__button"
-      data-ga-event="premium_mobile_sticky_cta_click"
-    >
-      Premium für 39 € freischalten
-    </a>
-  </div>
-)}
-
       </>
     )}
   </section>
@@ -549,6 +559,39 @@ const premiumExamQuizCount = premiumExamQuiz.length;
     line-height: 1.75;
   }
 
+  .premium-problem-box {
+    margin-top: 1.5rem;
+    padding: 1.3rem;
+    border-radius: 20px;
+    background: #fffaf3;
+    border: 1px solid rgba(208, 122, 95, 0.24);
+    box-shadow: 0 10px 24px rgba(24, 50, 74, 0.06);
+  }
+
+  .premium-problem-box h2 {
+    margin-top: 0;
+    margin-bottom: 0.7rem;
+    color: #18324a;
+    font-size: 1.35rem;
+  }
+
+  .premium-problem-box p {
+    color: #556270;
+    line-height: 1.7;
+  }
+
+  .premium-problem-box ul {
+    margin: 1rem 0;
+    padding-left: 1.25rem;
+  }
+
+  .premium-problem-box li {
+    margin-bottom: 0.45rem;
+    color: #18324a;
+    font-weight: 700;
+    line-height: 1.55;
+  }
+
   .premium-price-inline {
     margin-top: 1.4rem;
     display: flex;
@@ -586,12 +629,13 @@ const premiumExamQuizCount = premiumExamQuiz.length;
     font-weight: 700;
   }
 
-.premium-main-btn {
-  width: 100%;
-  max-width: 420px;
-  font-size: 1.05rem;
-  padding: 1.1rem 1.2rem;
-}
+  .premium-main-btn {
+    width: 100%;
+    max-width: 420px;
+    font-size: 1.05rem;
+    padding: 1.1rem 1.2rem;
+  }
+
   .premium-main-btn:hover,
   .premium-buy-btn:hover {
     opacity: 0.95;
@@ -617,6 +661,76 @@ const premiumExamQuizCount = premiumExamQuiz.length;
     line-height: 1.7;
   }
 
+  .premium-founder-section {
+    margin-top: 2.5rem;
+  }
+
+  .premium-founder-box {
+    display: grid;
+    grid-template-columns: 1.5fr 0.9fr;
+    gap: 1.5rem;
+    align-items: start;
+    padding: 1.6rem;
+    border-radius: 24px;
+    background: #fffaf3;
+    border: 1px solid rgba(208, 122, 95, 0.22);
+    box-shadow: 0 14px 34px rgba(24, 50, 74, 0.08);
+  }
+
+  .premium-founder-eyebrow {
+    display: inline-block;
+    margin-bottom: 0.7rem;
+    color: #d07a5f;
+    font-weight: 800;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .premium-founder-content h2 {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    color: #18324a;
+  }
+
+  .premium-founder-content p {
+    color: #556270;
+    line-height: 1.75;
+  }
+
+  .premium-founder-content ul {
+    margin: 1rem 0;
+    padding-left: 1.25rem;
+  }
+
+  .premium-founder-content li {
+    margin-bottom: 0.45rem;
+    line-height: 1.6;
+    color: #18324a;
+    font-weight: 700;
+  }
+
+  .premium-founder-proof {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    padding: 1.2rem;
+    border-radius: 18px;
+    background: #ffffff;
+    border: 1px solid rgba(24, 50, 74, 0.1);
+  }
+
+  .premium-founder-proof strong {
+    margin-bottom: 0.3rem;
+    color: #18324a;
+    font-size: 1.05rem;
+  }
+
+  .premium-founder-proof span {
+    color: #556270;
+    line-height: 1.5;
+  }
+
   .premium-benefits-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -629,25 +743,25 @@ const premiumExamQuizCount = premiumExamQuiz.length;
     gap: 1rem;
   }
 
-.premium-overview-card {
-  display: block;
-  background: #ffffff;
-  border: 1px solid #e5e5e5;
-  border-radius: 18px;
-  padding: 1.2rem;
-  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
-  text-align: center;
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
-}
+  .premium-overview-card {
+    display: block;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 18px;
+    padding: 1.2rem;
+    box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+  }
 
-.premium-overview-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 30px rgba(24, 50, 74, 0.1);
-  border-color: rgba(24, 50, 74, 0.22);
-  text-decoration: none;
-}
+  .premium-overview-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 30px rgba(24, 50, 74, 0.1);
+    border-color: rgba(24, 50, 74, 0.22);
+    text-decoration: none;
+  }
 
   .premium-overview-card strong {
     display: block;
@@ -663,18 +777,18 @@ const premiumExamQuizCount = premiumExamQuiz.length;
     font-size: 0.95rem;
   }
 
-.premium-overview-card em {
-  display: block;
-  margin-top: 0.9rem;
-  font-style: normal;
-  font-weight: 700;
-  color: #d07a5f;
-  transition: color 0.2s ease;
-}
+  .premium-overview-card em {
+    display: block;
+    margin-top: 0.9rem;
+    font-style: normal;
+    font-weight: 700;
+    color: #d07a5f;
+    transition: color 0.2s ease;
+  }
 
-.premium-overview-card:hover em {
-  color: #18324a;
-}
+  .premium-overview-card:hover em {
+    color: #18324a;
+  }
 
   .premium-content-grid {
     display: grid;
@@ -748,386 +862,342 @@ const premiumExamQuizCount = premiumExamQuiz.length;
     line-height: 1.6;
   }
 
-  @media (max-width: 900px) {
-    .premium-benefits-grid,
-    .premium-overview-grid,
-    .premium-content-grid {
-      grid-template-columns: 1fr;
-    }
+  .premium-loss {
+    margin-top: 0.8rem;
+    color: #7f1d1d;
+    font-weight: 600;
+    line-height: 1.7;
   }
-.premium-loss {
-  margin-top: 0.8rem;
-  color: #7f1d1d;
-  font-weight: 600;
-  line-height: 1.7;
-}
 
-.premium-trust {
-  margin-top: 0.8rem;
-  color: #6b7280;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-.premium-compare {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  margin-bottom: 1.2rem;
-}
-
-.compare-box {
-  background: #ffffff;
-  border: 1px solid #e5e5e5;
-  border-radius: 18px;
-  padding: 1.15rem;
-  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
-}
-
-.compare-box h3 {
-  margin-top: 0;
-  margin-bottom: 0.75rem;
-}
-
-.compare-box ul {
-  margin: 0;
-  padding-left: 1.2rem;
-}
-
-.compare-box li {
-  margin-bottom: 0.45rem;
-  line-height: 1.6;
-}
-
-.compare-box.highlight {
-  border-color: rgba(24, 50, 74, 0.22);
-  background: #f8fbff;
-}
-
-.premium-pressure {
-  margin: 0.8rem 0 0;
-  color: #7f1d1d;
-  font-weight: 600;
-  line-height: 1.7;
-}
-.premium-content-link {
-  display: block;
-  text-decoration: none;
-  color: inherit !important;
-}
-
-.premium-content-link:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 30px rgba(24, 50, 74, 0.08);
-  border-color: #cfdceb;
-  text-decoration: none;
-}
-
-.premium-showcase li {
-  margin-bottom: 0.5rem;
-}
-
-@media (max-width: 900px) {
-  .premium-showcase {
-    grid-template-columns: 1fr;
+  .premium-trust {
+    margin-top: 0.8rem;
+    color: #6b7280;
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
-}
 
-.premium-included-box {
-  margin-top: 1rem;
-  padding: 1rem;
-  border-radius: 16px;
-  background: #f8fbff;
-  border: 1px solid rgba(24, 50, 74, 0.14);
-}
+  .premium-compare {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+  }
 
-.premium-included-box strong {
-  display: block;
-  margin-bottom: 0.6rem;
-  color: #18324a;
-}
+  .compare-box {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 18px;
+    padding: 1.15rem;
+    box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  }
 
-.premium-included-box ul {
-  margin: 0;
-  padding-left: 1.2rem;
-}
+  .compare-box h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+  }
 
-.premium-included-box li {
-  margin-bottom: 0.35rem;
-  line-height: 1.5;
-}
+  .compare-box ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
 
-.premium-ebook-preview {
-  display: grid;
-  grid-template-columns: 360px 1fr;
-  gap: 2rem;
-  align-items: center;
-  margin: 1.5rem 0 2rem;
-  padding: 1.6rem;
-  border-radius: 22px;
-  background: #ffffff;
-  border: 1px solid #e5e5e5;
-  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
-}
+  .compare-box li {
+    margin-bottom: 0.45rem;
+    line-height: 1.6;
+  }
 
-.premium-ebook-preview-text h3 {
-  margin-top: 0;
-  margin-bottom: 0.6rem;
-  font-size: 1.45rem;
-}
+  .compare-box.highlight {
+    border-color: rgba(24, 50, 74, 0.22);
+    background: #f8fbff;
+  }
 
-.premium-ebook-preview-text p {
-  margin: 0;
-  color: #556270;
-  line-height: 1.7;
-}
+  .premium-pressure {
+    margin: 0.8rem 0 0;
+    color: #7f1d1d;
+    font-weight: 600;
+    line-height: 1.7;
+  }
 
-.premium-ebook-cover-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(160px, 1fr));
-  gap: 1rem;
-  align-items: center;
-}
+  .premium-content-link {
+    display: block;
+    text-decoration: none;
+    color: inherit !important;
+  }
 
-.premium-ebook-cover-grid img {
-  width: 100%;
-  max-height: 170px;
-  object-fit: contain;
-  border-radius: 12px;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
-}
-@media (max-width: 900px) {
+  .premium-content-link:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 30px rgba(24, 50, 74, 0.08);
+    border-color: #cfdceb;
+    text-decoration: none;
+  }
+
+  .premium-showcase li {
+    margin-bottom: 0.5rem;
+  }
+
+  .premium-included-box {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 16px;
+    background: #f8fbff;
+    border: 1px solid rgba(24, 50, 74, 0.14);
+  }
+
+  .premium-included-box strong {
+    display: block;
+    margin-bottom: 0.6rem;
+    color: #18324a;
+  }
+
+  .premium-included-box ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
+  .premium-included-box li {
+    margin-bottom: 0.35rem;
+    line-height: 1.5;
+  }
+
   .premium-ebook-preview {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin: 1.5rem 0 2rem;
+    padding: 1.6rem;
+    border-radius: 22px;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  }
+
+  .premium-ebook-preview-text h3 {
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+    font-size: 1.45rem;
+  }
+
+  .premium-ebook-preview-text p {
+    margin: 0;
+    color: #556270;
+    line-height: 1.7;
   }
 
   .premium-ebook-cover-grid {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(160px, 1fr));
+    gap: 1rem;
+    align-items: center;
   }
 
   .premium-ebook-cover-grid img {
-    max-height: none;
+    width: 100%;
+    max-height: 170px;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
   }
-}
 
-.premium-value-badge {
-  display: inline-block;
-  margin: 0.75rem 0;
-  padding: 0.55rem 1rem;
-  border-radius: 999px;
-  background: #eef5ff;
-  color: #18324a;
-  font-weight: 700;
-  font-size: 0.9rem;
-}
+  .premium-value-badge {
+    display: inline-block;
+    margin: 0.75rem 0;
+    padding: 0.55rem 1rem;
+    border-radius: 999px;
+    background: #eef5ff;
+    color: #18324a;
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
 
-.premium-value-badge {
-  display: inline-block;
-  margin: 0.75rem 0;
-  padding: 0.55rem 1rem;
-  border-radius: 999px;
-  background: #eef5ff;
-  color: #18324a;
-  font-weight: 700;
-  font-size: 0.9rem;
-}
+  .premium-ebook-benefits {
+    margin: 1rem 0 0;
+    padding-left: 1.25rem;
+  }
 
-.premium-ebook-benefits {
-  margin: 1rem 0 0;
-  padding-left: 1.25rem;
-}
+  .premium-ebook-benefits li {
+    margin-bottom: 0.45rem;
+    line-height: 1.55;
+  }
 
-.premium-ebook-benefits li {
-  margin-bottom: 0.45rem;
-  line-height: 1.55;
-}
+  .premium-target-group {
+    margin: 3rem 0;
+  }
 
-.premium-target-group {
-  margin: 3rem 0;
-}
-
-.premium-target-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.2rem;
-}
-
-.premium-target-card {
-  padding: 1.4rem;
-  border-radius: 18px;
-  background: #ffffff;
-  border: 1px solid #e5e5e5;
-  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
-}
-
-.premium-target-card h3 {
-  margin-top: 0;
-  margin-bottom: 0.75rem;
-}
-
-.premium-target-card p {
-  margin: 0;
-  line-height: 1.7;
-  color: #556270;
-}
-
-@media (max-width: 900px) {
   .premium-target-grid {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
   }
-}
 
-.premium-after-showcase-cta {
+  .premium-target-card {
+    padding: 1.4rem;
+    border-radius: 18px;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  }
+
+  .premium-target-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+  }
+
+  .premium-target-card p {
+    margin: 0;
+    line-height: 1.7;
+    color: #556270;
+  }
+
+  .premium-after-showcase-cta {
   margin: 2rem 0 3rem;
-  padding: 1.5rem;
+  padding: 1.6rem;
   border-radius: 22px;
-  background: #18324a;
-  color: #ffffff;
+  background: #fffaf3;
+  color: #18324a;
+  border: 1px solid rgba(208, 122, 95, 0.22);
+  box-shadow: 0 14px 34px rgba(24, 50, 74, 0.08);
 }
 
 .premium-after-showcase-cta h3 {
   margin-top: 0;
   margin-bottom: 0.7rem;
-  color: #ffffff;
+  color: #18324a;
 }
 
 .premium-after-showcase-cta p {
   max-width: 720px;
   margin-bottom: 1.2rem;
   line-height: 1.7;
-  color: #eef5ff;
-}
-
-.premium-result-box {
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
-  padding: 1.5rem;
-  background: #ffffff;
-  border: 1px solid rgba(24, 50, 74, 0.08);
-  border-radius: 20px;
-  box-shadow: 0 12px 30px rgba(24, 50, 74, 0.08);
-}
-
-.premium-result-box h2 {
-  margin-top: 0;
-  margin-bottom: 0.8rem;
-  font-size: 1.35rem;
-}
-
-.premium-result-box ul {
-  margin: 0;
-  padding-left: 1.25rem;
-}
-
-.premium-result-box li {
-  margin-bottom: 0.45rem;
-  line-height: 1.55;
-}
-
-.premium-social-proof {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin: 1rem 0 1.5rem;
-}
-
-.premium-social-proof span {
-  background: #ffffff;
-  padding: 0.65rem 1rem;
-  border-radius: 999px;
-  font-weight: 600;
-  border: 1px solid rgba(24, 50, 74, 0.08);
-}
-
-.premium-faq-section {
-  margin-top: 3rem;
-}
-
-.premium-faq-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  max-width: 900px;
-}
-
-.premium-faq-card {
-  padding: 1.4rem 1.6rem;
-  border-radius: 18px;
-  background: #ffffff;
-  border: 1px solid #e5e5e5;
-  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
-}
-
-.premium-faq-card h3 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
-
-.premium-faq-card p {
-  margin: 0;
-  line-height: 1.7;
   color: #556270;
 }
 
-@media (max-width: 900px) {
-  .premium-faq-grid {
-    grid-template-columns: 1fr;
+  .premium-result-box {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #ffffff;
+    border: 1px solid rgba(24, 50, 74, 0.08);
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(24, 50, 74, 0.08);
   }
-}
 
-.premium-preview-box {
-  display: block;
-  max-width: 640px;
-  margin: 2rem 0 3rem;
-  padding: 1.5rem;
-  border-radius: 22px;
-  background: #ffffff;
-  border: 1px solid rgba(24, 50, 74, 0.12);
-  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
-}
+  .premium-result-box h2 {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    font-size: 1.35rem;
+  }
 
-.premium-preview-box h3 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
+  .premium-result-box ul {
+    margin: 0;
+    padding-left: 1.25rem;
+  }
 
-.premium-preview-box p {
-  margin: 0;
-  max-width: 680px;
-  color: #556270;
-  line-height: 1.7;
-}
+  .premium-result-box li {
+    margin-bottom: 0.45rem;
+    line-height: 1.55;
+  }
 
-.premium-preview-btn {
-  display: inline-flex;
-  margin-top: 1.2rem;
-  white-space: nowrap;
-  background: #d07a5f;
-  color: #ffffff !important;
-  padding: 0.9rem 1.2rem;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: 700;
-}
+  .premium-social-proof {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 1rem 0 1.5rem;
+  }
 
-.premium-final-cta {
+  .premium-social-proof span {
+    background: #ffffff;
+    padding: 0.65rem 1rem;
+    border-radius: 999px;
+    font-weight: 600;
+    border: 1px solid rgba(24, 50, 74, 0.08);
+  }
+
+  .premium-faq-section {
+    margin-top: 3rem;
+  }
+
+  .premium-faq-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 900px;
+  }
+
+  .premium-faq-card {
+    padding: 1.4rem 1.6rem;
+    border-radius: 18px;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  }
+
+  .premium-faq-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .premium-faq-card p {
+    margin: 0;
+    line-height: 1.7;
+    color: #556270;
+  }
+
+  .premium-preview-box {
+    display: block;
+    max-width: 640px;
+    margin: 2rem 0 3rem;
+    padding: 1.5rem;
+    border-radius: 22px;
+    background: #ffffff;
+    border: 1px solid rgba(24, 50, 74, 0.12);
+    box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  }
+
+  .premium-preview-box h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .premium-preview-box p {
+    margin: 0;
+    max-width: 680px;
+    color: #556270;
+    line-height: 1.7;
+  }
+
+  .premium-preview-btn {
+    display: inline-flex;
+    margin-top: 1.2rem;
+    white-space: nowrap;
+    background: #d07a5f;
+    color: #ffffff !important;
+    padding: 0.9rem 1.2rem;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  .premium-final-cta {
   margin-top: 4rem;
   padding: 2rem;
   border-radius: 24px;
-  background: #18324a;
-  color: #ffffff;
+  background: #fffaf3;
+  color: #18324a;
   text-align: center;
+  border: 1px solid rgba(208, 122, 95, 0.22);
+  box-shadow: 0 14px 34px rgba(24, 50, 74, 0.08);
 }
 
 .premium-final-cta h2 {
-  color: #ffffff;
+  color: #18324a;
   margin-top: 0;
 }
 
 .premium-final-cta p {
   max-width: 680px;
   margin: 0 auto 1.4rem;
-  color: #eef5ff;
+  color: #556270;
   line-height: 1.7;
 }
 
@@ -1135,6 +1205,7 @@ const premiumExamQuizCount = premiumExamQuiz.length;
   margin-bottom: 1.4rem;
   font-size: 1.8rem;
   font-weight: 800;
+  color: #18324a;
 }
 
 .premium-final-price span {
@@ -1142,253 +1213,332 @@ const premiumExamQuizCount = premiumExamQuiz.length;
   margin-top: 0.3rem;
   font-size: 1rem;
   font-weight: 500;
-  color: #dbeafe;
+  color: #556270;
 }
 
-@media (max-width: 900px) {
-  .premium-preview-box {
-    flex-direction: column;
-    align-items: flex-start;
+  .premium-mid-cta {
+    margin: 3.5rem 0;
   }
 
-  .premium-preview-btn {
-    width: 100%;
+  .premium-mid-cta-box {
+    padding: 2rem;
+    border-radius: 24px;
+    background: #18324a;
+    color: #ffffff;
     text-align: center;
+    box-shadow: 0 16px 36px rgba(24, 50, 74, 0.16);
   }
-}
 
-.premium-mid-cta {
-  margin: 3.5rem 0;
-}
+  .premium-mid-cta-box h2 {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    color: #ffffff;
+  }
 
-.premium-mid-cta-box {
-  padding: 2rem;
+  .premium-mid-cta-box p {
+    max-width: 620px;
+    margin: 0 auto 1.4rem;
+    color: #eef5ff;
+    line-height: 1.7;
+  }
+
+  .premium-mid-price {
+    margin-bottom: 1.4rem;
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  .premium-mid-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.95rem 1.4rem;
+    border-radius: 999px;
+    background: #d07a5f;
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: 800;
+  }
+
+  .premium-mid-note {
+    display: block;
+    margin-top: 1rem;
+    color: #dbeafe;
+    font-size: 0.95rem;
+  }
+
+  .premium-price-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+  }
+
+  .premium-price-benefits span {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.65rem 1rem;
+    border-radius: 999px;
+    background: #f5f7fb;
+    border: 1px solid rgba(24, 50, 74, 0.08);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #18324a;
+  }
+
+  .premium-mobile-sticky-cta {
+    display: none;
+  }
+
+  .premium-faq-accordion {
+    display: grid;
+    gap: 0.8rem;
+    max-width: 900px;
+  }
+
+  .premium-faq-item {
+    border-radius: 18px;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+    overflow: hidden;
+  }
+
+  .premium-faq-item summary {
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    padding: 1.2rem 3.2rem 1.2rem 1.3rem;
+    font-weight: 800;
+    color: #18324a;
+    line-height: 1.45;
+  }
+
+  .premium-faq-item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .premium-faq-item summary::after {
+    content: "+";
+    position: absolute;
+    right: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #18324a;
+  }
+
+  .premium-faq-item[open] summary::after {
+    content: "−";
+  }
+
+  .premium-faq-item p {
+    margin: 0;
+    padding: 0 1.3rem 1.2rem;
+    color: #556270;
+    line-height: 1.7;
+  }
+
+  .premium-quick-cta {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 20px;
+    background: #f8fbff;
+    border: 1px solid rgba(24, 50, 74, 0.12);
+  }
+
+  .premium-quick-cta p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #18324a;
+  }
+
+  .premium-above-fold-cta {
+    margin-top: 1.2rem;
+  }
+
+  .premium-above-fold-note {
+    margin-top: 0.75rem;
+    color: #6b7280;
+    font-size: 0.95rem;
+  }
+
+  .premium-dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .premium-dashboard-card {
+    display: block;
+    padding: 1.2rem;
+    border-radius: 18px;
+    background: #ffffff;
+    border: 1px solid rgba(24, 50, 74, 0.12);
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease,
+      border-color 0.2s ease;
+    box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  }
+
+  .premium-dashboard-card:hover {
+    transform: translateY(-4px);
+    border-color: #d07a5f;
+    box-shadow: 0 16px 32px rgba(24, 50, 74, 0.12);
+  }
+
+  .premium-dashboard-card strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #18324a;
+    font-size: 1.05rem;
+  }
+
+  .premium-dashboard-card span {
+    display: block;
+    color: #5b6b7a;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 900px) {
+    .premium-benefits-grid,
+    .premium-overview-grid,
+    .premium-content-grid,
+    .premium-target-grid,
+    .premium-dashboard-grid,
+    .premium-founder-box {
+      grid-template-columns: 1fr;
+    }
+
+    .premium-showcase {
+      grid-template-columns: 1fr;
+    }
+
+    .premium-ebook-preview {
+      grid-template-columns: 1fr;
+    }
+
+    .premium-ebook-cover-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .premium-ebook-cover-grid img {
+      max-height: none;
+    }
+
+    .premium-faq-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .premium-preview-box {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .premium-preview-btn,
+    .premium-mid-button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .premium-mobile-sticky-cta {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 999;
+      display: block;
+      padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom));
+      background: rgba(255, 255, 255, 0.96);
+      border-top: 1px solid rgba(24, 50, 74, 0.12);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 -8px 24px rgba(24, 50, 74, 0.12);
+    }
+
+    .premium-mobile-sticky-cta__button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 56px;
+      border-radius: 14px;
+      background: #111827;
+      color: #ffffff !important;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    body {
+      padding-bottom: 90px;
+    }
+  }
+
+/* ===========================
+   Transformation
+=========================== */
+
+.premium-transformation {
+  margin: 4rem 0;
+  padding: 2.5rem;
+  background: #fffaf3;
+  border: 1px solid rgba(230, 126, 34, 0.15);
   border-radius: 24px;
-  background: #18324a;
-  color: #ffffff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+}
+
+.premium-transformation h2 {
   text-align: center;
-  box-shadow: 0 16px 36px rgba(24, 50, 74, 0.16);
-}
-
-.premium-mid-cta-box h2 {
   margin-top: 0;
-  margin-bottom: 0.8rem;
-  color: #ffffff;
+  margin-bottom: 1rem;
+  color: #18324a;
 }
 
-.premium-mid-cta-box p {
-  max-width: 620px;
-  margin: 0 auto 1.4rem;
-  color: #eef5ff;
+.premium-transformation-intro {
+  max-width: 760px;
+  margin: 0 auto 2rem;
+  text-align: center;
+  color: #5b6470;
   line-height: 1.7;
 }
 
-.premium-mid-price {
-  margin-bottom: 1.4rem;
-  font-size: 2rem;
-  font-weight: 800;
+.premium-transformation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
 }
 
-.premium-mid-button {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.95rem 1.4rem;
-  border-radius: 999px;
-  background: #d07a5f;
-  color: #ffffff !important;
-  text-decoration: none;
-  font-weight: 800;
+.premium-transformation-item {
+  background: white;
+  border-radius: 16px;
+  padding: 1rem 1.2rem;
+  border: 1px solid rgba(230, 126, 34, 0.12);
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
 }
 
-.premium-mid-note {
-  display: block;
-  margin-top: 1rem;
-  color: #dbeafe;
-  font-size: 0.95rem;
-}
-
-@media (max-width: 900px) {
-  .premium-mid-button {
-    width: 100%;
-  }
-}
-
-.premium-price-benefits {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 1.25rem;
-}
-
-.premium-price-benefits span {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.65rem 1rem;
-  border-radius: 999px;
-  background: #f5f7fb;
-  border: 1px solid rgba(24, 50, 74, 0.08);
-  font-size: 0.95rem;
+.premium-transformation-note {
+  margin-top: 2rem;
+  text-align: center;
   font-weight: 600;
   color: #18324a;
 }
 
-.premium-mobile-sticky-cta {
-  display: none;
-}
-
-@media (max-width: 760px) {
-  .premium-mobile-sticky-cta {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 999;
-    display: block;
-    padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom));
-    background: rgba(255, 255, 255, 0.96);
-    border-top: 1px solid rgba(24, 50, 74, 0.12);
-    backdrop-filter: blur(8px);
-    box-shadow: 0 -8px 24px rgba(24, 50, 74, 0.12);
+@media (max-width: 768px) {
+  .premium-transformation {
+    padding: 1.5rem;
   }
 
-  .premium-mobile-sticky-cta__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: 56px;
-    border-radius: 14px;
-    background: #111827;
-    color: #ffffff !important;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1rem;
-  }
-
-  body {
-    padding-bottom: 90px;
-  }
-}
-
-.premium-faq-accordion {
-  display: grid;
-  gap: 0.8rem;
-  max-width: 900px;
-}
-
-.premium-faq-item {
-  border-radius: 18px;
-  background: #ffffff;
-  border: 1px solid #e5e5e5;
-  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
-  overflow: hidden;
-}
-
-.premium-faq-item summary {
-  cursor: pointer;
-  list-style: none;
-  position: relative;
-  padding: 1.2rem 3.2rem 1.2rem 1.3rem;
-  font-weight: 800;
-  color: #18324a;
-  line-height: 1.45;
-}
-
-.premium-faq-item summary::-webkit-details-marker {
-  display: none;
-}
-
-.premium-faq-item summary::after {
-  content: "+";
-  position: absolute;
-  right: 1.2rem;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.4rem;
-  font-weight: 800;
-  color: #18324a;
-}
-
-.premium-faq-item[open] summary::after {
-  content: "−";
-}
-
-.premium-faq-item p {
-  margin: 0;
-  padding: 0 1.3rem 1.2rem;
-  color: #556270;
-  line-height: 1.7;
-}
-
-.premium-quick-cta {
-  margin-top: 2rem;
-  padding: 1.5rem;
-  text-align: center;
-  border-radius: 20px;
-  background: #f8fbff;
-  border: 1px solid rgba(24, 50, 74, 0.12);
-}
-
-.premium-quick-cta p {
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #18324a;
-}
-
-.premium-above-fold-cta {
-  margin-top: 1.2rem;
-}
-
-.premium-above-fold-note {
-  margin-top: 0.75rem;
-  color: #6b7280;
-  font-size: 0.95rem;
-}
-
-.premium-dashboard-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
-
-.premium-dashboard-card {
-  display: block;
-  padding: 1.2rem;
-  border-radius: 18px;
-  background: #ffffff;
-  border: 1px solid rgba(24, 50, 74, 0.12);
-  color: inherit;
-  text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease,
-    border-color 0.2s ease;
-  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
-}
-
-.premium-dashboard-card:hover {
-  transform: translateY(-4px);
-  border-color: #d07a5f;
-  box-shadow: 0 16px 32px rgba(24, 50, 74, 0.12);
-}
-
-.premium-dashboard-card strong {
-  display: block;
-  margin-bottom: 0.5rem;
-  color: #18324a;
-  font-size: 1.05rem;
-}
-
-.premium-dashboard-card span {
-  display: block;
-  color: #5b6b7a;
-  line-height: 1.6;
-}
-
-@media (max-width: 900px) {
-  .premium-dashboard-grid {
+  .premium-transformation-grid {
     grid-template-columns: 1fr;
   }
 }
+
 </style>

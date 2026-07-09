@@ -1,190 +1,128 @@
 ---
-
 title: Standardhygiene
-
-description: Grundlegende Hygienemaßnahmen zur Vermeidung von Infektionen in der Pflege.
-
+description: Standardhygiene in der Pflege einfach erklärt. Lerne die wichtigsten Hygienemaßnahmen, ihre Bedeutung und typische Prüfungsfragen.
 level: grundlagen
-
+cluster: hygiene
+order: 1
 ---
-
-
 
 # Standardhygiene
 
+Die Standardhygiene umfasst alle grundlegenden Hygienemaßnahmen, die bei **jeder Patientin und jedem Patienten** angewendet werden.
 
+Sie gilt unabhängig davon, ob eine Infektion bekannt ist oder nicht.
 
-Standardhygiene bezeichnet grundlegende Hygienemaßnahmen, die bei **allen Patienten und Bewohner** angewendet werden.  
+Ziel der Standardhygiene ist es, die Übertragung von Krankheitserregern zu verhindern und Patientinnen, Patienten sowie Pflegekräfte zu schützen.
 
+## Warum ist Standardhygiene wichtig?
 
+Nicht jeder Krankheitserreger ist sofort erkennbar.
 
-Diese Maßnahmen gelten unabhängig davon, ob eine Infektion bekannt ist oder nicht.
+Viele Menschen können Erreger übertragen, ohne selbst Symptome zu zeigen.
 
+Deshalb gelten die Maßnahmen der Standardhygiene immer und bei allen Patientinnen und Patienten.
 
+## Ziele der Standardhygiene
 
-Das Ziel der Standardhygiene ist es, **die Übertragung von Krankheitserregern grundsätzlich zu verhindern**.
+Die Standardhygiene soll:
 
+- Infektionsketten unterbrechen
+- nosokomiale Infektionen verhindern
+- Patientinnen und Patienten schützen
+- Pflegekräfte schützen
+- die Patientensicherheit erhöhen
+- eine sichere Versorgung gewährleisten
 
+## Bestandteile der Standardhygiene
 
-## Warum Standardhygiene wichtig ist
+Zur Standardhygiene gehören verschiedene Hygienemaßnahmen.
 
-
-
-Viele Menschen können Krankheitserreger übertragen, ohne sichtbare Symptome zu haben. Deshalb müssen Hygienemaßnahmen immer eingehalten werden.
-
-
-
-Standardhygiene schützt:
-
-
-
-- Patienten und Bewohner
-
-- Pflegepersonal
-
-- Angehörige
-
-- andere Mitarbeiter
-
-
-
-## Wichtige Maßnahmen der Standardhygiene
-
-
-
-Zur Standardhygiene gehören mehrere grundlegende Maßnahmen.
-
-
+Diese Themen werden im weiteren Verlauf dieses Themenclusters ausführlich behandelt.
 
 ### Händehygiene
 
+Die Händehygiene ist die wichtigste Einzelmaßnahme der Infektionsprävention.
 
+Sie umfasst das Händewaschen und die hygienische Händedesinfektion.
 
-Die Händehygiene ist die wichtigste Maßnahme zur Infektionsvermeidung.
+### Persönliche Schutzausrüstung (PSA)
 
-
-
-Dazu gehören:
-
-
-
-- Händedesinfektion
-
-- Händewaschen bei sichtbarer Verschmutzung
-
-- Hautschutz und Hautpflege
-
-
-
-### Persönliche Schutzausrüstung
-
-
-
-Je nach Situation wird Schutzkleidung verwendet.
-
-
-
-Beispiele:
-
-
+Je nach Tätigkeit kommen unter anderem folgende Schutzmaßnahmen zum Einsatz:
 
 - Einmalhandschuhe
-
 - Schutzkittel
-
 - Mund-Nasen-Schutz
-
+- FFP2-Masken
 - Schutzbrille
 
+### Flächendesinfektion
 
+Patientennahe Flächen und häufig berührte Gegenstände müssen regelmäßig desinfiziert werden.
 
-### Husten- und Niesetikette
+### Sterile und unsterile Arbeitsweise
 
+Je nach Maßnahme gelten unterschiedliche hygienische Anforderungen, um Kontaminationen zu vermeiden.
 
+### Isolationsmaßnahmen
 
-Beim Husten oder Niesen sollten:
+Bei bestimmten Infektionskrankheiten reichen die Maßnahmen der Standardhygiene allein nicht aus.
 
+Dann werden zusätzliche Isolationsmaßnahmen erforderlich.
 
+## Standardhygiene im Praxisbesuch
 
-- Mund und Nase bedeckt werden
+Lehrkräfte achten besonders darauf,
 
-- Einmaltaschentücher verwendet werden
+- ob hygienisch gearbeitet wird,
+- ob die Händehygiene korrekt durchgeführt wird,
+- ob Schutzkleidung situationsgerecht eingesetzt wird,
+- ob Arbeitsabläufe sauber geplant werden,
+- ob Kontaminationen vermieden werden.
 
-- anschließend eine Händedesinfektion erfolgen
+## Typische Fehler
 
+### Fehler 1
 
+Handschuhe ersetzen keine Händedesinfektion.
 
-### Hygiene bei medizinischen Maßnahmen
+### Fehler 2
 
+Schutzkleidung wird getragen, obwohl sie nicht notwendig ist.
 
+### Fehler 3
 
-Bei pflegerischen und medizinischen Maßnahmen müssen hygienische Regeln eingehalten werden, zum Beispiel:
+Patientennahe Flächen werden nach der Versorgung nicht desinfiziert.
 
+### Fehler 4
 
+Standardhygiene wird nur bei bekannten Infektionen angewendet.
 
-- sterile Arbeitsweise bei Wundversorgung
+Das ist falsch.
 
-- hygienischer Umgang mit Kathetern
+Sie gilt immer.
 
-- korrekte Vorbereitung von Materialien
+## Mini-Quiz
 
+### Wann gilt die Standardhygiene?
 
+A) Nur bei MRSA
 
-### Reinigung und Desinfektion
+B) Nur auf Isolierstationen
 
+C) Bei allen Patientinnen und Patienten
 
+D) Nur im OP
 
-Flächen, Materialien und Geräte müssen regelmäßig gereinigt oder desinfiziert werden.
+### Lösung
 
+✅ C) Bei allen Patientinnen und Patienten
 
+## Zusammenfassung
 
-Besonders wichtig sind häufig berührte Flächen wie:
+Die Standardhygiene bildet die Grundlage aller Hygienemaßnahmen in der Pflege.
 
+Sie schützt alle Beteiligten und trägt wesentlich dazu bei, Infektionen zu vermeiden.
 
+## Merksatz
 
-- Nachttische
-
-- Bettgitter
-
-- Türklinken
-
-- Arbeitsflächen
-
-
-
-<div class="merkbox">
-
-<div class="merkbox-title">Merke: Standardhygiene gilt immer</div>
-
-
-
-Standardhygiene wird **bei allen Patienten angewendet**, auch wenn keine Infektion bekannt ist.
-
-
-
-Viele Krankheitserreger werden übertragen, ohne dass Symptome sichtbar sind.
-
-
-
-</div>
-
-
-
-## Bedeutung für die Pflegepraxis
-
-
-
-Die Standardhygiene bildet die Grundlage für alle weiteren Hygienemaßnahmen. Sie hilft dabei, Infektionen frühzeitig zu verhindern und die Sicherheit im Pflegealltag zu erhöhen.
-
-
-
-## Typische Prüfungsfragen
-
-
-
-- Was versteht man unter Standardhygiene?
-
-- Warum wird Standardhygiene bei allen Patienten angewendet?
-
-- Nennen Sie wichtige Maßnahmen der Standardhygiene.
-
+**Standardhygiene gilt immer, unabhängig davon, ob eine Infektion bekannt ist oder nicht.**
