@@ -1,0 +1,219 @@
+---
+const contents = [
+  {
+    icon: "🎯",
+    title: "Prioritäten richtig setzen",
+    text: "Erkenne, welche Situation zuerst deine Aufmerksamkeit braucht und wie du deine Entscheidung fachlich begründest.",
+  },
+  {
+    icon: "🧠",
+    title: "Pflegerisch denken",
+    text: "Lerne, Zusammenhänge zu verstehen, statt Antworten und Abläufe nur auswendig wiederzugeben.",
+  },
+  {
+    icon: "🩺",
+    title: "Pflegediagnosen einordnen",
+    text: "Unterscheide medizinische Diagnosen vom pflegerischen Handlungsbedarf des einzelnen Patienten.",
+  },
+  {
+    icon: "💬",
+    title: "Maßnahmen sicher begründen",
+    text: "Formuliere nicht nur, was du tun möchtest, sondern erkläre verständlich, warum es notwendig ist.",
+  },
+  {
+    icon: "⚠️",
+    title: "Warnzeichen früh erkennen",
+    text: "Nimm Veränderungen bewusst wahr, schätze Risiken ein und leite rechtzeitig die nächsten Schritte ein.",
+  },
+  {
+    icon: "✅",
+    title: "Typische Fehler vermeiden",
+    text: "Erkenne zehn wiederkehrende Denkfehler, die Pflegeazubis im Praxisbesuch unnötig verunsichern.",
+  },
+];
+---
+
+<section class="starterguide-inhalte" aria-labelledby="starterguide-inhalte-title">
+  <div class="starterguide-inhalte__intro">
+    <p class="starterguide-inhalte__eyebrow">
+      Praxisnah und verständlich
+    </p>
+
+    <h2 id="starterguide-inhalte-title">
+      Das erwartet dich im kostenlosen E-Book
+    </h2>
+
+    <p>
+      Du bekommst keine Ansammlung auswendig zu lernender Antworten. Der Guide
+      zeigt dir, wie du Situationen einschätzt, Entscheidungen triffst und dein
+      pflegerisches Handeln nachvollziehbar begründest.
+    </p>
+  </div>
+
+  <div class="starterguide-inhalte__grid">
+    {
+      contents.map((item) => (
+        <article class="starterguide-inhalte__card">
+          <span class="starterguide-inhalte__icon" aria-hidden="true">
+            {item.icon}
+          </span>
+
+          <h3>{item.title}</h3>
+
+          <p>{item.text}</p>
+        </article>
+      ))
+    }
+  </div>
+
+  <div class="starterguide-inhalte__summary">
+    <div>
+      <strong>35 Seiten</strong>
+      <span>kompakt und hochwertig aufbereitet</span>
+    </div>
+
+    <div>
+      <strong>10 Fehler</strong>
+      <span>mit Merksätzen und Praxistipps</span>
+    </div>
+
+    <div>
+      <strong>Ein Ziel</strong>
+      <span>sicherer im Praxisbesuch handeln</span>
+    </div>
+  </div>
+</section>
+
+<style>
+  .starterguide-inhalte {
+    padding: clamp(4rem, 8vw, 7rem) 0;
+  }
+
+  .starterguide-inhalte__intro {
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .starterguide-inhalte__eyebrow {
+    display: inline-flex;
+    margin: 0 0 1rem;
+    padding: 0.5rem 0.85rem;
+    border-radius: 999px;
+    background: #fff3e8;
+    color: #b9550d;
+    font-size: 0.9rem;
+    font-weight: 800;
+  }
+
+  .starterguide-inhalte h2 {
+    margin: 0;
+    color: #173850;
+    font-size: clamp(2rem, 4vw, 3.35rem);
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+  }
+
+  .starterguide-inhalte__intro > p:last-child {
+    max-width: 700px;
+    margin: 1.3rem auto 0;
+    color: #555555;
+    font-size: clamp(1rem, 1.8vw, 1.15rem);
+    line-height: 1.7;
+  }
+
+  .starterguide-inhalte__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+    margin-top: clamp(2.5rem, 5vw, 4rem);
+  }
+
+  .starterguide-inhalte__card {
+    min-height: 100%;
+    padding: 1.65rem;
+    border: 1px solid #efddcc;
+    border-radius: 1.2rem;
+    background: #ffffff;
+    box-shadow: 0 14px 36px rgb(80 52 31 / 7%);
+  }
+
+  .starterguide-inhalte__icon {
+    display: grid;
+    place-items: center;
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: 1rem;
+    background: #fff3e8;
+    font-size: 1.55rem;
+  }
+
+  .starterguide-inhalte__card h3 {
+    margin: 1.2rem 0 0;
+    color: #173850;
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+
+  .starterguide-inhalte__card p {
+    margin: 0.75rem 0 0;
+    color: #5b5b5b;
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+
+  .starterguide-inhalte__summary {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 1.4rem;
+    border: 1px solid #efddcc;
+    border-radius: 1.2rem;
+    background: #fff8f1;
+  }
+
+  .starterguide-inhalte__summary div {
+    display: grid;
+    gap: 0.25rem;
+    padding: 0.4rem 1rem;
+    text-align: center;
+  }
+
+  .starterguide-inhalte__summary div + div {
+    border-left: 1px solid #e8cfb8;
+  }
+
+  .starterguide-inhalte__summary strong {
+    color: #e67e22;
+    font-size: 1.2rem;
+  }
+
+  .starterguide-inhalte__summary span {
+    color: #565656;
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+
+  @media (max-width: 900px) {
+    .starterguide-inhalte__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 640px) {
+    .starterguide-inhalte__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .starterguide-inhalte__summary {
+      grid-template-columns: 1fr;
+    }
+
+    .starterguide-inhalte__summary div + div {
+      border-top: 1px solid #e8cfb8;
+      border-left: 0;
+      padding-top: 1.2rem;
+    }
+  }
+</style>

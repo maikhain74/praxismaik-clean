@@ -1,0 +1,138 @@
+<section class="starterguide-autor">
+  <div class="starterguide-autor__image">
+    <img
+      src="/images/maik-starterguide.jpg"
+      alt="Maik Hain, Pflegefachkraft, Praxisanleiter und Gründer von PraxisMaik"
+      loading="lazy"
+    />
+  </div>
+
+  <div class="starterguide-autor__content">
+    <p class="starterguide-autor__eyebrow">
+      Wer hinter PraxisMaik steht
+    </p>
+
+    <h2>
+      Hallo, ich bin Maik Hain.
+    </h2>
+
+    <p>
+      Seit über <strong>27 Jahren arbeite ich in der Pflege</strong> und begleite
+      als Praxisanleiter Pflegeazubis auf ihrem Weg durch die Ausbildung.
+    </p>
+
+    <p>
+      In dieser Zeit habe ich unzählige Praxisbesuche begleitet. Dabei habe ich
+      immer wieder dieselben Unsicherheiten und Denkfehler beobachtet.
+      Genau deshalb habe ich diesen kostenlosen StarterGuide geschrieben.
+    </p>
+
+    <p>
+      Mein Ziel ist nicht, dass du Antworten auswendig lernst.
+      Ich möchte, dass du <strong>pflegerisch denkst</strong>,
+      Zusammenhänge verstehst und Entscheidungen sicher begründen kannst.
+    </p>
+
+    <div class="starterguide-autor__facts">
+      <div>
+        <strong>27+</strong>
+        <span>Jahre Berufserfahrung</span>
+      </div>
+
+      <div>
+        <strong>500.000+</strong>
+        <span>TikTok-Aufrufe</span>
+      </div>
+
+      <div>
+        <strong>240+</strong>
+        <span>Lernskripte</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.starterguide-autor{
+display:grid;
+grid-template-columns:340px 1fr;
+gap:4rem;
+align-items:center;
+padding:6rem 0;
+}
+
+.starterguide-autor__image img{
+width:100%;
+display:block;
+border-radius:24px;
+box-shadow:0 25px 60px rgba(0,0,0,.12);
+}
+
+.starterguide-autor__eyebrow{
+display:inline-block;
+padding:.45rem .9rem;
+border-radius:999px;
+background:#FFF3E8;
+color:#B85E17;
+font-weight:700;
+margin-bottom:1rem;
+}
+
+.starterguide-autor h2{
+font-size:3rem;
+line-height:1.1;
+margin:0 0 1.5rem;
+color:#173850;
+}
+
+.starterguide-autor p{
+font-size:1.15rem;
+line-height:1.8;
+color:#444;
+margin:0 0 1.4rem;
+}
+
+.starterguide-autor__facts{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:1rem;
+margin-top:2rem;
+}
+
+.starterguide-autor__facts div{
+background:#fff;
+border:1px solid #EFE0CF;
+border-radius:18px;
+padding:1.5rem;
+text-align:center;
+}
+
+.starterguide-autor__facts strong{
+display:block;
+font-size:2rem;
+color:#E67E22;
+margin-bottom:.3rem;
+}
+
+.starterguide-autor__facts span{
+color:#555;
+font-size:.95rem;
+}
+
+@media(max-width:900px){
+
+.starterguide-autor{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.starterguide-autor__facts{
+grid-template-columns:1fr;
+}
+
+.starterguide-autor h2{
+font-size:2.4rem;
+}
+
+}
+</style>

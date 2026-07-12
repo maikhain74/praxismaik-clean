@@ -1,0 +1,364 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="StarterGuide herunterladen | PraxisMaik"
+  description="Lade den kostenlosen PraxisMaik StarterGuide mit den 10 häufigsten Fehlern im Praxisbesuch herunter."
+>
+  <section class="download-page">
+    <div class="download-page__card">
+      <div class="download-page__icon" aria-hidden="true">✓</div>
+
+      <p class="download-page__eyebrow">Deine Anmeldung war erfolgreich</p>
+
+      <h1>Dein StarterGuide ist bereit</h1>
+
+      <p class="download-page__intro">
+        Vielen Dank für deine Anmeldung. Du kannst den kostenlosen StarterGuide
+        <strong>„Die 10 häufigsten Fehler im Praxisbesuch“</strong>
+        jetzt als PDF herunterladen.
+      </p>
+
+      <div class="download-page__guide">
+        <img
+          src="/images/starterguide-cover.png"
+          alt="Cover des PraxisMaik StarterGuides: Die 10 häufigsten Fehler im Praxisbesuch"
+          width="720"
+          height="1018"
+          loading="eager"
+        />
+
+        <div class="download-page__guide-content">
+          <h2>Das erwartet dich</h2>
+
+          <ul>
+            <li>35 Seiten praxisnahes Wissen</li>
+            <li>10 typische Fehler im Praxisbesuch</li>
+            <li>Merksätze und konkrete Praxistipps</li>
+            <li>Pflegerisch denken statt auswendig lernen</li>
+          </ul>
+
+          <a
+            class="download-page__download"
+            href="/downloads/StarterGuide-10-haeufigsten-Fehler-im-Praxisbesuch.pdf"
+            download
+            data-ga-event="starterguide_pdf_download"
+          >
+            StarterGuide als PDF herunterladen
+          </a>
+
+          <p class="download-page__note">
+            Die PDF-Datei öffnet sich direkt oder wird auf deinem Gerät gespeichert.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="download-page__premium" aria-labelledby="premium-title">
+      <p class="download-page__premium-eyebrow">
+        Du möchtest noch sicherer werden?
+      </p>
+
+      <h2 id="premium-title">
+        Pflege verstehen, sicher entscheiden und fachlich begründen
+      </h2>
+
+      <p>
+        Im Premiumbereich von PraxisMaik findest du alles, was dich während
+        deiner Pflegeausbildung und bei deinen Praxisbesuchen unterstützt.
+      </p>
+
+      <div class="download-page__facts">
+        <div>
+          <strong>240+</strong>
+          <span>Lernskripte</span>
+        </div>
+
+        <div>
+          <strong>45</strong>
+          <span>Prüfungsfälle</span>
+        </div>
+
+        <div>
+          <strong>61</strong>
+          <span>Examensfragen</span>
+        </div>
+
+        <div>
+          <strong>6</strong>
+          <span>Premium-E-Books</span>
+        </div>
+      </div>
+
+      <a
+        class="download-page__premium-link"
+        href="/premium/"
+        data-ga-event="starterguide_download_premium_click"
+      >
+        Premium entdecken
+      </a>
+
+      <p class="download-page__price">
+        39 € einmalig, kein Abo, dauerhafter Zugriff
+      </p>
+    </section>
+  </section>
+</BaseLayout>
+
+<style>
+  .download-page {
+    padding: clamp(2.5rem, 6vw, 5rem) 0 clamp(5rem, 10vw, 8rem);
+  }
+
+  .download-page__card {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: clamp(2rem, 5vw, 4rem);
+    border: 1px solid #efddcc;
+    border-radius: 1.75rem;
+    background: #ffffff;
+    box-shadow: 0 24px 70px rgb(80 52 31 / 10%);
+    text-align: center;
+  }
+
+  .download-page__icon {
+    display: grid;
+    place-items: center;
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto 1.25rem;
+    border-radius: 50%;
+    background: #fff0e2;
+    color: #e67e22;
+    font-size: 1.8rem;
+    font-weight: 900;
+  }
+
+  .download-page__eyebrow,
+  .download-page__premium-eyebrow {
+    margin: 0 0 0.85rem;
+    color: #b9550d;
+    font-size: 0.94rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+  }
+
+  .download-page h1 {
+    margin: 0;
+    color: #173850;
+    font-size: clamp(2.3rem, 5vw, 4rem);
+    line-height: 1.06;
+    letter-spacing: -0.04em;
+  }
+
+  .download-page__intro {
+    max-width: 700px;
+    margin: 1.35rem auto 0;
+    color: #4f4f4f;
+    font-size: clamp(1rem, 1.8vw, 1.17rem);
+    line-height: 1.7;
+  }
+
+  .download-page__guide {
+    display: grid;
+    grid-template-columns: minmax(220px, 330px) minmax(0, 1fr);
+    gap: clamp(2rem, 5vw, 4rem);
+    align-items: center;
+    margin-top: clamp(2.5rem, 5vw, 4rem);
+    text-align: left;
+  }
+
+  .download-page__guide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #ead8c7;
+    border-radius: 1rem;
+    box-shadow: 0 18px 45px rgb(70 44 24 / 14%);
+  }
+
+  .download-page__guide-content h2 {
+    margin: 0;
+    color: #173850;
+    font-size: clamp(1.7rem, 3vw, 2.35rem);
+    line-height: 1.15;
+  }
+
+  .download-page__guide-content ul {
+    display: grid;
+    gap: 0.85rem;
+    margin: 1.5rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .download-page__guide-content li {
+    position: relative;
+    padding-left: 1.9rem;
+    color: #3f3f3f;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .download-page__guide-content li::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #e67e22;
+    content: "✓";
+    font-weight: 900;
+  }
+
+  .download-page__download,
+  .download-page__premium-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 3.7rem;
+    padding: 0.95rem 1.5rem;
+    border-radius: 0.85rem;
+    background: #e67e22;
+    color: #ffffff;
+    box-shadow: 0 14px 30px rgb(230 126 34 / 20%);
+    font-size: 1.02rem;
+    font-weight: 850;
+    line-height: 1.25;
+    text-align: center;
+    text-decoration: none;
+    transition:
+      transform 160ms ease,
+      background-color 160ms ease,
+      box-shadow 160ms ease;
+  }
+
+  .download-page__download {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .download-page__download:hover,
+  .download-page__premium-link:hover {
+    transform: translateY(-2px);
+    background: #d96f16;
+    box-shadow: 0 18px 38px rgb(230 126 34 / 26%);
+  }
+
+  .download-page__download:focus-visible,
+  .download-page__premium-link:focus-visible {
+    outline: 3px solid rgb(230 126 34 / 35%);
+    outline-offset: 4px;
+  }
+
+  .download-page__note {
+    margin: 0.8rem 0 0;
+    color: #707070;
+    font-size: 0.87rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .download-page__premium {
+    max-width: 980px;
+    margin: clamp(3rem, 7vw, 5rem) auto 0;
+    padding: clamp(2.2rem, 5vw, 4rem);
+    border: 1px solid #f0d8c1;
+    border-radius: 1.75rem;
+    background: #fff8f1;
+    text-align: center;
+  }
+
+  .download-page__premium h2 {
+    max-width: 760px;
+    margin: 0 auto;
+    color: #173850;
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+  }
+
+  .download-page__premium > p:not(.download-page__premium-eyebrow):not(.download-page__price) {
+    max-width: 680px;
+    margin: 1.3rem auto 0;
+    color: #505050;
+    font-size: 1.08rem;
+    line-height: 1.7;
+  }
+
+  .download-page__facts {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 2.25rem;
+  }
+
+  .download-page__facts div {
+    display: grid;
+    gap: 0.25rem;
+    padding: 1.25rem 0.8rem;
+    border: 1px solid #efd8c2;
+    border-radius: 1rem;
+    background: #ffffff;
+  }
+
+  .download-page__facts strong {
+    color: #e67e22;
+    font-size: 1.65rem;
+  }
+
+  .download-page__facts span {
+    color: #4f4f4f;
+    font-size: 0.9rem;
+  }
+
+  .download-page__premium-link {
+    margin-top: 2.25rem;
+  }
+
+  .download-page__price {
+    margin: 0.9rem 0 0;
+    color: #686868;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 760px) {
+    .download-page__guide {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    .download-page__guide img {
+      width: min(78%, 330px);
+      margin: 0 auto;
+    }
+
+    .download-page__guide-content ul {
+      width: fit-content;
+      max-width: 100%;
+      margin-inline: auto;
+      text-align: left;
+    }
+
+    .download-page__facts {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 460px) {
+    .download-page__facts {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .download-page__download,
+    .download-page__premium-link {
+      transition: none;
+    }
+
+    .download-page__download:hover,
+    .download-page__premium-link:hover {
+      transform: none;
+    }
+  }
+</style>
