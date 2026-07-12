@@ -1,0 +1,239 @@
+---
+interface Props {
+  title?: string;
+}
+
+const {
+  title = "Maik Hain"
+} = Astro.props;
+---
+
+<section class="expert-box">
+  <div class="expert-image">
+    <img
+      src="/images/maik-starterguide.jpg"
+      alt="Maik Hain, Pflegefachkraft und Praxisanleiter"
+      loading="lazy"
+    />
+  </div>
+
+  <div class="expert-content">
+    <span class="expert-badge">
+      👨‍⚕️ Pflegefachkraft und Praxisanleiter
+    </span>
+
+    <h2>{title}</h2>
+
+    <p class="expert-role">
+      Gründer von PraxisMaik
+    </p>
+
+    <p class="expert-intro">
+      Seit <strong>27 Jahren</strong> arbeite ich in der Pflege.
+      Dabei habe ich viele Auszubildende begleitet und immer wieder erlebt,
+      dass Unsicherheit häufig nicht durch fehlendes Wissen entsteht,
+      sondern durch fehlende Zusammenhänge, Begründungen und klare Entscheidungen.
+    </p>
+
+    <p class="expert-intro">
+      Deshalb habe ich PraxisMaik gegründet.
+      Mein Ziel ist, dass du Pflege nicht nur auswendig lernst,
+      sondern verstehst und im Praxisalltag sicher anwenden kannst.
+    </p>
+
+    <div class="expert-facts" aria-label="Berufserfahrung und Reichweite">
+      <div>
+        <strong>27 Jahre</strong>
+        <span>Erfahrung in der Pflege</span>
+      </div>
+
+      <div>
+        <strong>21 Jahre</strong>
+        <span>Pflegefachkraft</span>
+      </div>
+
+      <div>
+        <strong>5 Jahre</strong>
+        <span>Praxisanleiter</span>
+      </div>
+
+      <div>
+        <strong>500.000+</strong>
+        <span>TikTok-Aufrufe</span>
+      </div>
+    </div>
+
+    <blockquote>
+      „Ich möchte, dass Pflegeauszubildende Zusammenhänge verstehen,
+      pflegerisch denken und ihre Entscheidungen sicher begründen können.“
+    </blockquote>
+
+    <div class="expert-signature">
+      <strong>Maik Hain</strong>
+      <span>Pflegefachkraft und Praxisanleiter</span>
+    </div>
+
+    <a href="/starterguide" class="btn expert-button">
+      📘 Kostenlosen StarterGuide herunterladen
+    </a>
+  </div>
+</section>
+
+<style>
+  .expert-box {
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+    gap: 2.5rem;
+    align-items: center;
+    margin: 3rem 0;
+    padding: 2.5rem;
+    border: 1px solid rgba(230, 126, 34, 0.2);
+    border-radius: 28px;
+    background: linear-gradient(180deg, #fff8f1 0%, #ffffff 100%);
+    box-shadow: 0 18px 42px rgba(24, 50, 74, 0.08);
+  }
+
+  .expert-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 16px 34px rgba(24, 50, 74, 0.12);
+  }
+
+  .expert-badge {
+    display: inline-block;
+    margin-bottom: 0.8rem;
+    padding: 0.45rem 0.85rem;
+    border-radius: 999px;
+    background: #fff1e3;
+    color: #e67e22;
+    font-size: 0.82rem;
+    font-weight: 800;
+  }
+
+  .expert-content h2 {
+    margin: 0;
+    color: #18324a;
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    line-height: 1.15;
+  }
+
+  .expert-role {
+    margin: 0.4rem 0 1.2rem;
+    color: #e67e22;
+    font-size: 1rem;
+    font-weight: 800;
+  }
+
+  .expert-intro {
+    max-width: 720px;
+    margin: 0 0 1rem;
+    color: #556270;
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .expert-facts {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.9rem;
+    margin: 1.8rem 0;
+  }
+
+  .expert-facts div {
+    padding: 1rem;
+    border: 1px solid #ececec;
+    border-radius: 16px;
+    background: #ffffff;
+    text-align: center;
+  }
+
+  .expert-facts strong {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #e67e22;
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
+
+  .expert-facts span {
+    display: block;
+    color: #556270;
+    font-size: 0.84rem;
+    line-height: 1.4;
+  }
+
+  .expert-content blockquote {
+    margin: 0 0 1rem;
+    padding: 0.2rem 0 0.2rem 1.1rem;
+    border-left: 4px solid #e67e22;
+    color: #18324a;
+    font-size: 1.05rem;
+    font-style: italic;
+    line-height: 1.7;
+  }
+
+  .expert-signature {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+
+  .expert-signature strong {
+    color: #18324a;
+    font-size: 1rem;
+  }
+
+  .expert-signature span {
+    margin-top: 0.2rem;
+    color: #6b7280;
+    font-size: 0.9rem;
+  }
+
+  .expert-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 1000px) {
+    .expert-facts {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 800px) {
+    .expert-box {
+      grid-template-columns: 1fr;
+      padding: 1.7rem;
+      text-align: center;
+    }
+
+    .expert-image {
+      width: 100%;
+      max-width: 280px;
+      margin: 0 auto;
+    }
+
+    .expert-content blockquote {
+      padding: 1rem 0 0;
+      border-top: 4px solid #e67e22;
+      border-left: 0;
+    }
+
+    .expert-signature {
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .expert-facts {
+      grid-template-columns: 1fr;
+    }
+
+    .expert-button {
+      width: 100%;
+    }
+  }
+</style>

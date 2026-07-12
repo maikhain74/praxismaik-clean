@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import ExpertBox from "../components/ExpertBox.astro";
 
 const title =
   "PraxisMaik | Pflegeprüfung lernen mit Fällen und Quiz";
@@ -39,6 +40,80 @@ const description =
         <img src="/maik-blau.jpg" alt="PraxisMaik Startseite" />
       </div>
     </section>
+
+   </section>
+
+<p class="starterguide-proof">
+  🧡 Bereits über <strong>500.000 TikTok-Aufrufe</strong> und tausende Pflegeazubis lernen mit PraxisMaik.
+</p>
+
+<section class="starterguide-highlight">
+
+  <div class="starterguide-image">
+    <img
+      src="/images/starterguide-cover.png"
+      alt="StarterGuide – Die 10 häufigsten Fehler im Praxisbesuch"
+      loading="lazy"
+    />
+  </div>
+
+  <div class="starterguide-content">
+
+   <span class="starterguide-badge">
+📘 Kostenloser StarterGuide
+</span>
+
+<h2>
+Die 10 häufigsten Fehler im Praxisbesuch
+</h2>
+
+<p class="starterguide-text">
+
+<strong>Du bist vor deinem nächsten Praxisbesuch unsicher?</strong>
+
+<br><br>
+
+Ich begleite seit über <strong>27 Jahren</strong> Auszubildende in der Pflege.
+Dabei sehe ich immer wieder dieselben Fehler.
+
+Genau deshalb habe ich diesen kostenlosen StarterGuide geschrieben.
+
+Er zeigt dir die 10 häufigsten Fehler im Praxisbesuch und wie du sie sicher vermeidest.
+
+</p>
+
+<ul class="starterguide-list">
+<li>✓ Sofort als PDF herunterladen</li>
+<li>✓ Typische Fehler erkennen und vermeiden</li>
+<li>✓ Sicherer begründen und entscheiden</li>
+<li>✓ 100 % kostenlos</li>
+</ul>
+
+<a
+  href="/starterguide"
+  class="btn"
+  data-ga-event="starterguide_click_home"
+>
+  📘 StarterGuide kostenlos sichern
+</a>
+
+<p class="starterguide-author">
+
+👨‍⚕️ <strong>Erstellt von Maik Hain</strong>
+
+<br>
+
+<span>
+27 Jahre Berufserfahrung in der Pflege •
+21 Jahre Pflegefachkraft •
+5 Jahre Praxisanleiter
+</span>
+
+</p>
+
+  </div>
+
+</section>
 
     <section class="home-proof-strip" aria-label="PraxisMaik in Zahlen">
   <div>
@@ -402,6 +477,7 @@ const description =
   </p>
 </section>
 
+<ExpertBox />
     <section class="section premium-teaser-section">
       <div class="section-headline">
         <h2>Wenn du den kompletten Lernweg freischalten willst</h2>
@@ -1550,5 +1626,153 @@ komplette Prüfungsfälle und Quiztraining für deinen gesamten Ausbildungsweg.
   .kompetenz-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* ===== StarterGuide Highlight ===== */
+
+.starterguide-highlight {
+  display: grid;
+  grid-template-columns: 390px 1fr;
+  gap: 2.5rem;
+  align-items: center;
+
+  margin: 3rem 0;
+
+  padding: 2.5rem;
+
+  border-radius: 28px;
+
+  background: linear-gradient(180deg, #fffaf5 0%, #ffffff 100%);
+
+  border: 2px solid rgba(230, 126, 34, 0.18);
+
+  box-shadow: 0 18px 42px rgba(24, 50, 74, 0.08);
+}
+
+.starterguide-image img {
+  width: 100%;
+  display: block;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(0,0,0,.12);
+}
+
+.starterguide-badge {
+  display: inline-block;
+
+  margin-bottom: 1rem;
+
+  padding: .45rem .9rem;
+
+  border-radius: 999px;
+
+  background: #fff1e3;
+
+  color: #e67e22;
+
+  font-size: .85rem;
+
+  font-weight: 700;
+}
+
+.starterguide-content h2 {
+  margin-bottom: 1rem;
+
+  font-size: clamp(2rem, 3vw, 2.6rem);
+
+  line-height: 1.15;
+
+  color: #18324a;
+}
+
+.starterguide-text {
+  max-width: 620px;
+
+  font-size: 1.08rem;
+
+  line-height: 1.8;
+
+  color: #556270;
+}
+
+.starterguide-list {
+  margin: 1.5rem 0;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.starterguide-list li {
+  margin-bottom: .7rem;
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  color: #18324a;
+}
+
+@media (max-width:900px){
+
+.starterguide-highlight{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.starterguide-text{
+
+max-width:none;
+
+}
+
+.starterguide-list{
+
+text-align:left;
+
+display:inline-block;
+
+}
+
+.starterguide-image{
+
+max-width:280px;
+
+margin:auto;
+
+}
+
+}
+
+.starterguide-author{
+
+margin-top:1.4rem;
+
+font-size:1rem;
+
+line-height:1.7;
+
+color:#18324a;
+
+}
+
+.starterguide-author strong{
+
+color:#e67e22;
+
+}
+
+.starterguide-author span{
+
+display:block;
+
+margin-top:.35rem;
+
+font-size:.92rem;
+
+color:#6b7280;
+
 }
 </style>
