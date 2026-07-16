@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
+import ExpertBox from "../components/ExpertBox.astro";
 
 export const prerender = false;
 
@@ -102,31 +103,40 @@ const premiumExamQuizCount = premiumExamQuiz.length;
       ) : (
         <>
           <div class="premium-eyebrow">
-            Über 500.000 Videoaufrufe • Tausende Pflegeazubis lernen mit PraxisMaik
+            Über 330.000 Videoaufrufe • Praxisnahes Lernen für die generalistische Pflegeausbildung
           </div>
 
-          <h1>
-            Werde sicher in Praxisbesuchen, Fallsituationen und der Abschlussprüfung.
-          </h1>
+         <h1>
+  Bestehe deine Praxisbesuche und deine Abschlussprüfung sicher und entwickle dich zu einer selbstbewussten Pflegefachkraft.
+</h1>
 
-          <p class="premium-lead">
-            Du lernst nicht nur auswendig, was richtig ist. Du verstehst, warum pflegerische Entscheidungen getroffen werden und kannst sie sicher begründen. Genau das macht den Unterschied im Praxisalltag und in der Abschlussprüfung.
-          </p>
+<p class="premium-lead">
+  Mit PraxisMaik lernst du nicht nur Antworten auswendig. Du verstehst pflegerische Zusammenhänge, kannst Entscheidungen sicher begründen und gehst ruhiger in Praxisbesuche, Fallsituationen und die Abschlussprüfung.
+</p>
 
-          <div class="premium-included-box">
-            <strong>Mit Premium erhältst du sofort Zugriff auf:</strong>
+<div class="premium-hero-trust">
+  <div class="premium-hero-trust-item">
+    <strong>👨‍⚕️ 27 Jahre</strong>
+    <span>Erfahrung in der Pflege</span>
+  </div>
 
-            <ul>
-              <li>📖 Über 240 Themen für jede Ausbildungsphase schnell das passende Thema finden</li>
-              <li>🩺 45 Reale Fallsituationen sicher analysieren und begründen</li>
-              <li>🎓 61 Fragen,, um dein Wissen sicher zu überprüfen und sicher in die Abschlussprüfung gehen</li>
-              <li>📚 6 Themenbereiche verständlich und strukturiert lernen</li>
-              <li>✅ Lebenslanger Zugriff</li>
-              <li>✅ Kein Abo, keine Folgekosten</li>
-            </ul>
-          </div>
+  <div class="premium-hero-trust-item">
+    <strong>🩺 21 Jahre</strong>
+    <span>Pflegefachkraft</span>
+  </div>
 
-          <div class="premium-above-fold-cta">
+  <div class="premium-hero-trust-item">
+    <strong>🎓 5 Jahre</strong>
+    <span>Praxisanleiter</span>
+  </div>
+
+  <div class="premium-hero-trust-item">
+    <strong>▶️ 300.000+</strong>
+    <span>TikTok-Aufrufe</span>
+  </div>
+</div>
+
+    <div class="premium-above-fold-cta">
             <a
               href="/premium-interesse"
               class="btn premium-main-btn"
@@ -135,10 +145,48 @@ const premiumExamQuizCount = premiumExamQuiz.length;
               Jetzt Premium dauerhaft freischalten
             </a>
 
-            <p class="premium-above-fold-note">
-              Nur 39 € einmalig • Sofort freigeschaltet • Dauerhaft nutzbar
-            </p>
-          </div>
+         <p class="premium-subtitle">
+  Verstehe Pflege. Triff sichere Entscheidungen. Gehe sicher in Praxisbesuche und deine Abschlussprüfung.
+</p>
+        </div>
+
+        <p class="premium-risk-free">
+  ✓ 39 € einmalig, kein Abo, keine versteckten Kosten, lebenslanger Zugriff.
+</p>
+
+<div class="premium-time-saving">
+  <div class="premium-time-saving-icon">⏰</div>
+
+  <div class="premium-time-saving-content">
+    <strong>Spare wertvolle Lernzeit.</strong>
+
+    <p>
+      Konzentriere dich auf genau die Inhalte, die dich in
+      Praxisbesuchen und der Abschlussprüfung wirklich weiterbringen.
+    </p>
+  </div>
+</div>
+
+<div class="premium-expert-proof">
+  <strong>⭐ Entwickelt von einem Praxisanleiter mit 27 Jahren Berufserfahrung.</strong>
+
+  <span>
+    Alle Inhalte basieren auf echten Praxisbesuchen, Abschlussprüfungen und typischen Situationen aus der generalistischen Pflegeausbildung.
+  </span>
+</div>
+
+      <div class="premium-included-box">
+  <strong>So verändert Premium deinen Pflegealltag:</strong>
+
+  <ul>
+    <li>✅ Pflegeplanungen sicher und logisch erstellen.</li>
+    <li>✅ Pflegediagnosen fachlich korrekt formulieren.</li>
+    <li>✅ Pflegerische Entscheidungen sicher begründen.</li>
+    <li>✅ Praxisbesuche und Abschlussprüfungen ruhiger meistern.</li>
+    <li>✅ Zusammenhänge verstehen, statt Antworten auswendig zu lernen.</li>
+    <li>✅ Sofort auf alle Premium-Inhalte zugreifen, dauerhaft und ohne Abo.</li>
+  </ul>
+</div>
 
           <section class="premium-problem-box">
             <h2>Kommt dir das bekannt vor?</h2>
@@ -164,118 +212,80 @@ const premiumExamQuizCount = premiumExamQuiz.length;
 
     {!hasPremiumCookie && (
       <>
-        <section class="premium-section premium-founder-section">
-          <div class="premium-founder-box">
-            <div class="premium-founder-content">
-              <span class="premium-founder-eyebrow">Warum ich PraxisMaik entwickelt habe</span>
-
-              <h2>Ich bin Maik, Pflegefachkraft und Praxisanleiter.</h2>
-
-              <p>
-                In den vergangenen Jahren habe ich viele Pflegeazubis begleitet.
-                Dabei ist mir immer wieder dasselbe aufgefallen:
-              </p>
-
-              <p>
-                Die meisten scheitern nicht am fehlenden Fleiß.
-                Sie scheitern daran, dass ihnen niemand erklärt, wie pflegerische
-                Entscheidungen wirklich entstehen.
-              </p>
-
-              <ul>
-                <li>Warum hat diese Maßnahme jetzt Priorität?</li>
-                <li>Warum ist genau diese Pflegediagnose sinnvoll?</li>
-                <li>Wie begründe ich meine Entscheidung fachlich?</li>
-                <li>Was erwartet die Lehrkraft im Praxisbesuch wirklich?</li>
-              </ul>
-
-              <p>
-                Genau aus diesem Grund habe ich PraxisMaik aufgebaut.
-                Nicht als unübersichtliche Sammlung von Lernmaterialien,
-                sondern als Lernplattform, die dir hilft, Zusammenhänge zu verstehen
-                und in Praxisbesuchen, Fallsituationen und der Abschlussprüfung sicherer zu werden.
-              </p>
-            </div>
-
-           <div class="premium-founder-proof">
-  <strong>Warum Tausende Pflegeazubis mit PraxisMaik lernen</strong>
-
-  <span>⭐ Bereits über 500.000 Videoaufrufe auf TikTok</span>
-  <span>👨‍⚕️ Entwickelt von einer Pflegefachkraft und Praxisanleiter</span>
-  <span>📚 Mehr als 240 Lernskripte und zahlreiche Praxisbeispiele</span>
-  <span>🧡 Fokus auf Praxisbesuche, Pflegeplanung und pflegerische Entscheidungen</span>
-  <span>🎯 Du verstehst Zusammenhänge, statt Antworten auswendig zu lernen</span>
-</div>
-          </div>
-        </section>
+        <ExpertBox
+  title="Ich bin Maik Hain."
+  showStarterGuideButton={false}
+/>
 
         <section class="premium-section premium-transformation">
-  <h2>Nach Premium kannst du …</h2>
+  <h2>Stell dir vor, du gehst in deinen nächsten Praxisbesuch und …</h2>
 
   <p class="premium-transformation-intro">
-    PraxisMaik wurde entwickelt, damit du nicht nur mehr lernst, sondern
-    pflegerische Entscheidungen sicher verstehst und begründen kannst.
+    Du bist nicht mehr unsicher, sondern weißt genau, wie du fachlich richtig denkst und handelst.
   </p>
 
   <div class="premium-transformation-grid">
     <div class="premium-transformation-item">
-      ✅ Fallsituationen schneller analysieren
+      ✅ Du erkennst sofort, was in einer Fallsituation Priorität hat.
     </div>
 
     <div class="premium-transformation-item">
-      ✅ Pflegediagnosen sicher formulieren
+      ✅ Du begründest deine Entscheidungen sicher und fachlich korrekt.
     </div>
 
     <div class="premium-transformation-item">
-      ✅ Pflegeplanungen logisch aufbauen
+      ✅ Du schreibst Pflegeplanungen ohne langes Überlegen.
     </div>
 
     <div class="premium-transformation-item">
-      ✅ Pflegerische Entscheidungen fachlich begründen
+      ✅ Du beantwortest die Fragen deiner Lehrkraft souverän.
     </div>
 
     <div class="premium-transformation-item">
-      ✅ Ruhiger und sicherer in Praxisbesuche gehen
+      ✅ Du gehst deutlich sicherer in Praxisbesuche und deine Abschlussprüfung.
     </div>
 
     <div class="premium-transformation-item">
-      ✅ Den roten Faden im Pflegeprozess verstehen
+      ✅ Du verstehst pflegerische Zusammenhänge, statt Antworten auswendig zu lernen.
     </div>
   </div>
 
   <p class="premium-transformation-note">
-    Genau darauf sind alle Lernskripte, Prüfungsfälle, Examensfragen und
-    Premium-E-Books aufgebaut.
-  </p>
+  Genau auf dieses Ziel sind alle Lernskripte, Prüfungsfälle, Examensfragen und Premium-E-Books aufgebaut.
+</p>
 </section>
 
-        <section class="premium-section premium-overview-section">
-          <div class="section-headline">
-            <h2>Alles freischalten, was dich sicherer macht</h2>
-            <p class="section-intro">
-              Premium bündelt die wichtigsten Inhalte für Ausbildung, Praxis und Prüfung an einem Ort.
-            </p>
-          </div>
+<section class="premium-section premium-overview-section">
+  <div class="section-headline">
+    <h2>Alles, was du für erfolgreiche Praxisbesuche und deine Abschlussprüfung brauchst.</h2>
 
-          <div class="premium-compare">
-            <div class="compare-box">
-              <h3>Ohne Premium</h3>
-              <ul>
-                <li>du siehst nur Vorschauen und Einstiegstexte</li>
-                <li>viele Lernwege bleiben unvollständig</li>
-                <li>Prüfungsfälle und Lösungen sind nur eingeschränkt nutzbar</li>
-              </ul>
-            </div>
+    <p class="section-intro">
+      Du musst nicht mehr zwischen Büchern, Internetseiten, Mitschriften und verschiedenen Unterlagen wechseln.
+      Mit PraxisMaik findest du alle wichtigen Inhalte an einem Ort, verständlich erklärt und speziell für die generalistische Pflegeausbildung aufgebaut.
+    </p>
+  </div>
 
-            <div class="compare-box highlight">
-              <h3>Mit Premium</h3>
-              <ul>
-                <li>du lernst Grundlagen, Themen und Zusammenhänge vollständig</li>
-                <li>du trainierst Pflegefälle mit Denkstruktur und Lösung</li>
-                <li>du bereitest dich Schritt für Schritt auf Ausbildung, Praxis und Prüfung vor</li>
-              </ul>
-            </div>
-          </div>
+  <div class="premium-compare">
+  <div class="compare-box">
+    <h3>Viele Pflegeazubis kennen das</h3>
+
+    <ul>
+      <li>Du suchst Informationen auf verschiedenen Webseiten und in mehreren Unterlagen.</li>
+      <li>Du bist unsicher, welche Inhalte wirklich wichtig und fachlich richtig sind.</li>
+      <li>Du verlierst viel Zeit, ohne einen klaren Lernweg für Praxisbesuche und Abschlussprüfung zu haben.</li>
+    </ul>
+  </div>
+
+  <div class="compare-box highlight">
+    <h3>Mit PraxisMaik lernst du klarer</h3>
+
+    <ul>
+      <li>Du findest die wichtigsten Themen verständlich erklärt an einem Ort.</li>
+      <li>Du trainierst Fallsituationen mit Prioritäten, Lösungen und fachlichen Begründungen.</li>
+      <li>Du bereitest dich strukturiert auf Praxisbesuche und deine Abschlussprüfung vor.</li>
+    </ul>
+  </div>
+</div>
 
           <div class="premium-overview-grid">
             <a href="/ebooks/" class="premium-overview-card">
@@ -558,6 +568,48 @@ const premiumExamQuizCount = premiumExamQuiz.length;
     color: #5b6b7a;
     line-height: 1.75;
   }
+
+.premium-hero-trust {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.premium-hero-trust-item {
+  background: #ffffff;
+  border: 1px solid rgba(230, 126, 34, 0.18);
+  border-radius: 18px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.06);
+}
+
+.premium-hero-trust-item strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #e67e22;
+  font-size: 1.2rem;
+}
+
+.premium-hero-trust-item span {
+  display: block;
+  color: #556270;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 800px) {
+  .premium-hero-trust {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .premium-hero-trust {
+    grid-template-columns: 1fr;
+  }
+}
 
   .premium-problem-box {
     margin-top: 1.5rem;
@@ -1366,6 +1418,14 @@ const premiumExamQuizCount = premiumExamQuiz.length;
     font-size: 0.95rem;
   }
 
+  .premium-risk-free {
+  margin-top: 0.75rem;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2f6f3e;
+}
+
   .premium-dashboard-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1531,6 +1591,15 @@ const premiumExamQuizCount = premiumExamQuiz.length;
   color: #18324a;
 }
 
+.premium-expert-proof {
+  margin: 1.5rem 0 2rem;
+  padding: 1.2rem 1.4rem;
+  background: #fffaf3;
+  border: 1px solid rgba(230, 126, 34, 0.18);
+  border-left: 5px solid #e67e22;
+  border-radius: 16px;
+}
+
 @media (max-width: 768px) {
   .premium-transformation {
     padding: 1.5rem;
@@ -1539,6 +1608,19 @@ const premiumExamQuizCount = premiumExamQuiz.length;
   .premium-transformation-grid {
     grid-template-columns: 1fr;
   }
+
+.premium-expert-proof strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #18324a;
+  font-size: 1.05rem;
+}
+
+.premium-expert-proof span {
+  display: block;
+  color: #556270;
+  line-height: 1.7;
+}
 }
 
 </style>

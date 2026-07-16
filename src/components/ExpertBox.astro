@@ -1,10 +1,12 @@
 ---
 interface Props {
   title?: string;
+  showStarterGuideButton?: boolean;
 }
 
 const {
-  title = "Maik Hain"
+  title = "Maik Hain",
+  showStarterGuideButton = true,
 } = Astro.props;
 ---
 
@@ -73,9 +75,11 @@ const {
       <span>Pflegefachkraft und Praxisanleiter</span>
     </div>
 
-    <a href="/starterguide" class="btn expert-button">
-      📘 Kostenlosen StarterGuide herunterladen
-    </a>
+    {showStarterGuideButton && (
+      <a href="/starterguide" class="btn expert-button">
+        📘 Kostenlosen StarterGuide herunterladen
+      </a>
+    )}
   </div>
 </section>
 
