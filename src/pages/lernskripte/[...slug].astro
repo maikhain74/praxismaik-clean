@@ -1,5 +1,6 @@
 ---
 export const prerender = false;
+
 import { getCollection, render } from 'astro:content';
 import PremiumGate from '../../components/PremiumGate.astro';
 
@@ -19,7 +20,7 @@ console.log(
   }))
 );
 
-console.log("URL-Slug:", Astro.params.slug);
+console.log('URL-Slug:', Astro.params.slug);
 
 const eintrag = lernskripte.find((item) => item.slug === slug);
 
@@ -35,27 +36,50 @@ const beschreibung = eintrag.data.beschreibung ?? '';
 const preview = eintrag.data.preview ?? '';
 
 const isLocalhost =
-  Astro.url.hostname === 'localhost' || Astro.url.hostname === '127.0.0.1';
+  Astro.url.hostname === 'localhost' ||
+  Astro.url.hostname === '127.0.0.1';
 
 const devUnlock =
-  Astro.url.searchParams.get('freischalten') === '1' && isLocalhost;
+  Astro.url.searchParams.get('freischalten') === '1' &&
+  isLocalhost;
 
-const hasPremiumCookie = Astro.cookies.get('praxismaik_premium')?.value === '1';
+const premiumCookieValue =
+  Astro.cookies.get('praxismaik_premium')?.value;
 
-const showFullContent = !isPremium || devUnlock || hasPremiumCookie;
+const hasPremiumCookie =
+  premiumCookieValue === '1' ||
+  premiumCookieValue === 'true';
+
+const showFullContent =
+  !isPremium ||
+  devUnlock ||
+  hasPremiumCookie;
 ---
 
 <html lang="de">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+
     <title>{title} | PraxisMaik</title>
-    <meta name="description" content={beschreibung} />
+
+    <meta
+      name="description"
+      content={beschreibung}
+    />
   </head>
 
   <body>
     <main class="container">
-      <a href="/lernskripte" class="back-link">← Zurück zu den Lernskripten</a>
+      <a
+        href="/lernskripte"
+        class="back-link"
+      >
+        ← Zurück zu den Lernskripten
+      </a>
 
       <article class="content-card">
         <header class="content-header">
@@ -65,7 +89,11 @@ const showFullContent = !isPremium || devUnlock || hasPremiumCookie;
 
           <h1>{title}</h1>
 
-          {beschreibung && <p class="content-description">{beschreibung}</p>}
+          {beschreibung && (
+            <p class="content-description">
+              {beschreibung}
+            </p>
+          )}
 
           {devUnlock && (
             <div class="status-box">
