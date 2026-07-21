@@ -59,6 +59,7 @@ const showFullContent =
 <html lang="de">
   <head>
     <meta charset="utf-8" />
+
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1"
@@ -109,9 +110,10 @@ const showFullContent =
         </header>
 
         {showFullContent ? (
-          <section class="markdown-content">
-            <Content />
-          </section>
+          <>
+     <section class="markdown-content">
+  <Content />
+</section>
         ) : (
           <>
             {preview && (

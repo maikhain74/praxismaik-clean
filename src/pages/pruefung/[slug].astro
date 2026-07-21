@@ -3,6 +3,7 @@ export const prerender = false;
 
 import { getCollection, render } from 'astro:content';
 import PremiumGate from '../../components/PremiumGate.astro';
+import LernpfadPruefungsfall from '../../components/LernpfadPruefungsfall.astro';
 
 const slug = Astro.params.slug;
 
@@ -31,6 +32,15 @@ const naechsterFall =
   aktuellerIndex < sortiertePruefungen.length - 1
     ? sortiertePruefungen[aktuellerIndex + 1]
     : null;
+
+const verwandteFaelle = sortiertePruefungen
+  .filter((item) => {
+    return (
+      item.slug !== eintrag.slug &&
+      item.data.topic === eintrag.data.topic
+    );
+  })
+  .slice(0, 3); 
 
 const { Content } = await render(eintrag);
 
@@ -140,31 +150,7 @@ const backLabel = sameOriginReferer.includes('/themen/')
       </div>
     </section>
 
-    <div class="fall-navigation">
-      {vorherigerFall ? (
-        <a href={`/pruefung/${vorherigerFall.slug}/`} class="fall-nav-card">
-          <span class="nav-label">Vorheriger Fall</span>
-          <strong>← {vorherigerFall.data.title}</strong>
-        </a>
-      ) : (
-        <a href="/pruefung/" class="fall-nav-card">
-          <span class="nav-label">Zurück</span>
-          <strong>← Übersicht</strong>
-        </a>
-      )}
-
-      {naechsterFall ? (
-        <a href={`/pruefung/${naechsterFall.slug}/`} class="fall-nav-card">
-          <span class="nav-label">Nächster Fall</span>
-          <strong>{naechsterFall.data.title} →</strong>
-        </a>
-      ) : (
-        <a href="/pruefung/" class="fall-nav-card">
-          <span class="nav-label">Fertig</span>
-          <strong>Zurück zur Übersicht →</strong>
-        </a>
-      )}
-    </div>
+<LernpfadPruefungsfall verwandteFaelle={verwandteFaelle} />
   </>
 ) : (
   <>
@@ -941,5 +927,116 @@ activateLearningMode();
   margin-top: 0.8rem;
   color: #6b7280;
   font-size: 0.95rem;
+}
+
+.related-cases {
+  margin-top: 2.5rem;
+  padding: 1.75rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #fffaf6 0%, #ffffff 100%);
+  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+}
+
+.related-cases h2 {
+  margin: 0 0 0.75rem;
+  color: #18324a;
+  font-size: 1.5rem;
+}
+
+.related-cases p {
+  margin: 0 0 1.5rem;
+  color: #556270;
+  line-height: 1.7;
+}
+
+.related-cases-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.related-case-card,
+.related-case-card:visited {
+  display: block;
+  padding: 1rem 1.25rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  background: #ffffff;
+  text-decoration: none;
+  color: #18324a;
+  box-shadow: 0 8px 20px rgba(24, 50, 74, 0.05);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.related-case-card:hover {
+  transform: translateY(-2px);
+  border-color: #E67E22;
+  box-shadow: 0 12px 28px rgba(24, 50, 74, 0.08);
+}
+
+.related-case-card strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.related-case-card span {
+  color: #E67E22;
+  font-weight: 700;
+}
+
+.learning-path {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.learning-step {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  background: #ffffff;
+  color: #18324a;
+  font-weight: 700;
+}
+
+.step-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: #f3f4f6;
+  color: #18324a;
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.learning-step.completed {
+  border-color: rgba(230, 126, 34, 0.35);
+  background: #fff8f1;
+}
+
+.learning-step.completed .step-icon {
+  background: #E67E22;
+  color: #ffffff;
+}
+
+.learning-step.premium-step {
+  border-color: rgba(230, 126, 34, 0.35);
+  background: linear-gradient(180deg, #fff8f1 0%, #ffffff 100%);
+}
+
+.learning-step.premium-step .step-icon {
+  background: #E67E22;
+  color: #ffffff;
 }
 </style>

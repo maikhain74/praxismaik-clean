@@ -1,0 +1,311 @@
+---
+const { verwandteFaelle = [] } = Astro.props;
+---
+
+{verwandteFaelle.length > 0 && (
+  <section class="related-cases">
+    <h2>🚀 Dein PraxisMaik-Lernpfad</h2>
+
+    <p>
+      Einen einzelnen Prüfungsfall zu lösen ist ein guter Anfang. Wirkliche Sicherheit entsteht erst, wenn du verschiedene Situationen vergleichst, Entscheidungen begründest und dein klinisches Denken trainierst.
+    </p>
+
+    <div class="learning-path">
+      <div class="learning-step completed">
+        <span class="step-icon">✓</span>
+        <span>Prüfungsfall bearbeitet</span>
+      </div>
+
+      <div class="learning-step">
+        <span class="step-icon">2</span>
+        <span>Weitere passende Prüfungsfälle bearbeiten</span>
+      </div>
+
+      <div class="learning-step">
+        <span class="step-icon">3</span>
+        <span>Klinisches Denken festigen</span>
+      </div>
+     </div>
+
+     <section class="premium-path-card">
+  <p class="premium-eyebrow">Dein nächster Schritt</p>
+
+  <h3>Mehr Sicherheit durch systematisches Training</h3>
+
+  <p class="premium-path-text">
+    Mit Premium vertiefst du dein Wissen mit weiteren Prüfungsfällen,
+    Lernskripten und Examensfragen.
+  </p>
+
+  <ul class="premium-benefits">
+    <li>Über 240 Lernskripte</li>
+    <li>45 Prüfungsfälle</li>
+    <li>61 Examensfragen</li>
+    <li>6 Premium-E-Books</li>
+  </ul>
+
+  <a
+    href="/premium-interesse"
+    class="premium-path-button"
+    data-ga-event="premium_learning_path_click"
+  >
+    Premium jetzt freischalten
+  </a>
+
+  <p class="premium-note">
+    Einmalig 39 €, kein Abo, dauerhafter Zugriff
+  </p>
+</section>
+
+    <h3 class="related-title">
+      Passende Prüfungsfälle aus diesem Themenbereich
+    </h3>
+
+    <div class="related-cases-grid">
+      {verwandteFaelle.map((fall) => (
+        <a
+          href={`/pruefung/${fall.slug}/`}
+          class="related-case-card"
+        >
+          <strong>{fall.data.title}</strong>
+
+          <span>Prüfungsfall ansehen →</span>
+        </a>
+      ))}
+    </div>
+  </section>
+)}
+
+<style>
+  .related-cases {
+    margin-top: 2.5rem;
+    padding: 1.75rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 18px;
+    background: linear-gradient(180deg, #fffaf6 0%, #ffffff 100%);
+    box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  }
+
+  .related-cases h2 {
+    margin: 0 0 0.75rem;
+    color: #18324a;
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .related-cases > p {
+    margin: 0 0 1.5rem;
+    color: #556270;
+    line-height: 1.7;
+  }
+
+  .learning-path {
+    display: grid;
+    gap: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .learning-step {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.9rem 1rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 14px;
+    background: #ffffff;
+    color: #18324a;
+    font-weight: 700;
+  }
+
+  .step-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 34px;
+    width: 34px;
+    height: 34px;
+    border-radius: 999px;
+    background: #f3f4f6;
+    color: #18324a;
+    font-size: 0.95rem;
+    font-weight: 800;
+  }
+
+  .learning-step.completed {
+    border-color: rgba(230, 126, 34, 0.35);
+    background: #fff8f1;
+  }
+
+  .learning-step.completed .step-icon {
+    background: #e67e22;
+    color: #ffffff;
+  }
+
+  .learning-step.premium-step {
+    border-color: rgba(230, 126, 34, 0.35);
+    background: linear-gradient(180deg, #fff8f1 0%, #ffffff 100%);
+  }
+
+  .learning-step.premium-step .step-icon {
+    background: #e67e22;
+    color: #ffffff;
+  }
+
+  .related-title {
+    margin: 0 0 1rem;
+    color: #18324a;
+    font-size: 1.15rem;
+    line-height: 1.4;
+  }
+
+  .related-cases-grid {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .related-case-card,
+  .related-case-card:visited {
+    display: block;
+    padding: 1rem 1.25rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 14px;
+    background: #ffffff;
+    text-decoration: none;
+    color: #18324a;
+    box-shadow: 0 8px 20px rgba(24, 50, 74, 0.05);
+    transition:
+      transform 0.15s ease,
+      box-shadow 0.15s ease,
+      border-color 0.15s ease;
+  }
+
+  .related-case-card:hover {
+    transform: translateY(-2px);
+    border-color: #e67e22;
+    box-shadow: 0 12px 28px rgba(24, 50, 74, 0.08);
+  }
+
+  .related-case-card strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #18324a;
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+
+  .related-case-card span {
+    display: block;
+    color: #e67e22;
+    font-weight: 700;
+  }
+
+  @media (max-width: 640px) {
+    .related-cases {
+      padding: 1.25rem;
+    }
+  }
+
+  .premium-path-card {
+  margin: 2rem 0;
+  padding: 1.75rem;
+  border: 1px solid rgba(230, 126, 34, 0.35);
+  border-radius: 18px;
+  background: linear-gradient(180deg, #fff8f1 0%, #ffffff 100%);
+  box-shadow: 0 12px 28px rgba(24, 50, 74, 0.07);
+}
+
+.premium-eyebrow {
+  display: inline-block;
+  margin: 0 0 0.8rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(230, 126, 34, 0.12);
+  color: #b45309;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.premium-path-card h3 {
+  margin: 0 0 0.8rem;
+  color: #18324a;
+  font-size: 1.45rem;
+  line-height: 1.3;
+}
+
+.premium-path-text {
+  margin: 0 0 1.2rem;
+  max-width: 62ch;
+  color: #556270;
+  line-height: 1.7;
+}
+
+.premium-benefits {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0 0 1.4rem;
+  padding: 0;
+  list-style: none;
+}
+
+.premium-benefits li {
+  position: relative;
+  padding-left: 1.8rem;
+  color: #18324a;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.premium-benefits li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #e67e22;
+  font-weight: 900;
+}
+
+.premium-path-button,
+.premium-path-button:visited {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.9rem 1.25rem;
+  border-radius: 12px;
+  background: #e67e22;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 800;
+  box-shadow: 0 8px 18px rgba(230, 126, 34, 0.22);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.premium-path-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(230, 126, 34, 0.28);
+}
+
+.premium-note {
+  margin: 0.85rem 0 0;
+  color: #6b7280;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .premium-path-card {
+    padding: 1.25rem;
+  }
+
+  .premium-path-button {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
+</style>
