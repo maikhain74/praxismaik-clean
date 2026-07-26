@@ -2,6 +2,7 @@
 interface Props {
   title: string;
   href: string;
+  buttonText: string;
   premiumSkripte?: number;
   premiumPruefung?: number;
   premiumExamQuiz?: number;
@@ -10,6 +11,7 @@ interface Props {
 const {
   title,
   href,
+  buttonText,
   premiumSkripte = 0,
   premiumPruefung = 0,
   premiumExamQuiz = 0,
@@ -131,7 +133,7 @@ const hatThemenspezifischeInhalte =
       }
 
       <a class="topic-apply-button" href={href}>
-        Jetzt am echten Prüfungsfall trainieren
+        {buttonText}
         <span aria-hidden="true">→</span>
       </a>
 
