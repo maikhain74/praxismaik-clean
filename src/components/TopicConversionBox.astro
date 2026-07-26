@@ -2,9 +2,23 @@
 interface Props {
   title: string;
   href: string;
+  premiumSkripte?: number;
+  premiumPruefung?: number;
+  premiumExamQuiz?: number;
 }
 
-const { title, href } = Astro.props;
+const {
+  title,
+  href,
+  premiumSkripte = 0,
+  premiumPruefung = 0,
+  premiumExamQuiz = 0,
+} = Astro.props;
+
+const hatThemenspezifischeInhalte =
+  premiumSkripte > 0 ||
+  premiumPruefung > 0 ||
+  premiumExamQuiz > 0;
 ---
 
 <section class="topic-apply" aria-labelledby="topic-apply-title">
@@ -27,27 +41,94 @@ const { title, href } = Astro.props;
         Prüfungsfällen.
       </p>
 
-      <div class="topic-apply-benefits">
-        <div class="topic-apply-benefit">
-          <span class="topic-apply-icon" aria-hidden="true">✓</span>
-          <span>echte Praxisbesuche Schritt für Schritt lösen</span>
-        </div>
+      {
+        hatThemenspezifischeInhalte ? (
+          <>
+            <p class="topic-apply-subheading">
+              Zu diesem Thema findest du im Premiumbereich:
+            </p>
 
-        <div class="topic-apply-benefit">
-          <span class="topic-apply-icon" aria-hidden="true">✓</span>
-          <span>typische Prüferfragen sicher beantworten</span>
-        </div>
+            <div class="topic-apply-benefits">
+              {premiumSkripte > 0 && (
+                <div class="topic-apply-benefit">
+                  <span class="topic-apply-icon" aria-hidden="true">📘</span>
+                  <span>
+                    <strong>{premiumSkripte}</strong>{" "}
+                    {premiumSkripte === 1
+                      ? "passendes Premium-Lernskript"
+                      : "passende Premium-Lernskripte"}
+                  </span>
+                </div>
+              )}
 
-        <div class="topic-apply-benefit">
-          <span class="topic-apply-icon" aria-hidden="true">✓</span>
-          <span>klinisches Denken professionell trainieren</span>
-        </div>
+              {premiumPruefung > 0 && (
+                <div class="topic-apply-benefit">
+                  <span class="topic-apply-icon" aria-hidden="true">🧠</span>
+                  <span>
+                    <strong>{premiumPruefung}</strong>{" "}
+                    {premiumPruefung === 1
+                      ? "realistischer Prüfungsfall"
+                      : "realistische Prüfungsfälle"}
+                  </span>
+                </div>
+              )}
 
-        <div class="topic-apply-benefit">
-          <span class="topic-apply-icon" aria-hidden="true">✓</span>
-          <span>Musterlösungen mit vollständiger Begründung vergleichen</span>
-        </div>
-      </div>
+              {premiumExamQuiz > 0 && (
+                <div class="topic-apply-benefit">
+                  <span class="topic-apply-icon" aria-hidden="true">🎯</span>
+                  <span>
+                    <strong>{premiumExamQuiz}</strong>{" "}
+                    {premiumExamQuiz === 1
+                      ? "passende Examensfrage"
+                      : "passende Examensfragen"}
+                  </span>
+                </div>
+              )}
+
+              <div class="topic-apply-benefit">
+                <span class="topic-apply-icon topic-apply-check" aria-hidden="true">
+                  ✓
+                </span>
+                <span>
+                  vollständige Musterlösungen mit fachlichen Begründungen
+                </span>
+              </div>
+            </div>
+          </>
+        ) : (
+          <div class="topic-apply-benefits">
+            <div class="topic-apply-benefit">
+              <span class="topic-apply-icon topic-apply-check" aria-hidden="true">
+                ✓
+              </span>
+              <span>echte Praxisbesuche Schritt für Schritt lösen</span>
+            </div>
+
+            <div class="topic-apply-benefit">
+              <span class="topic-apply-icon topic-apply-check" aria-hidden="true">
+                ✓
+              </span>
+              <span>typische Prüferfragen sicher beantworten</span>
+            </div>
+
+            <div class="topic-apply-benefit">
+              <span class="topic-apply-icon topic-apply-check" aria-hidden="true">
+                ✓
+              </span>
+              <span>klinisches Denken professionell trainieren</span>
+            </div>
+
+            <div class="topic-apply-benefit">
+              <span class="topic-apply-icon topic-apply-check" aria-hidden="true">
+                ✓
+              </span>
+              <span>
+                Musterlösungen mit vollständiger Begründung vergleichen
+              </span>
+            </div>
+          </div>
+        )
+      }
 
       <a class="topic-apply-button" href={href}>
         Jetzt am echten Prüfungsfall trainieren
@@ -55,7 +136,8 @@ const { title, href } = Astro.props;
       </a>
 
       <p class="topic-apply-note">
-        Teil von PraxisMaik Premium · 39 € einmalig · kein Abo · dauerhafter Zugriff
+        Teil von PraxisMaik Premium · 39 € einmalig · kein Abo · dauerhafter
+        Zugriff
       </p>
     </div>
 
@@ -70,7 +152,8 @@ const { title, href } = Astro.props;
 
       <br /><br />
 
-      Genau dieses klinische Denken trainierst du im Premiumbereich Schritt für Schritt.
+      Genau dieses klinische Denken trainierst du im Premiumbereich Schritt für
+      Schritt.
     </blockquote>
   </div>
 </section>
@@ -131,10 +214,21 @@ const { title, href } = Astro.props;
     line-height: 1.75;
   }
 
+  .topic-apply-subheading {
+    margin: 1.35rem 0 0;
+    color: #241b14;
+    font-weight: 800;
+    line-height: 1.5;
+  }
+
   .topic-apply-benefits {
     display: grid;
     gap: 0.7rem;
     margin: 1.35rem 0 1.5rem;
+  }
+
+  .topic-apply-subheading + .topic-apply-benefits {
+    margin-top: 0.8rem;
   }
 
   .topic-apply-benefit {
@@ -150,6 +244,14 @@ const { title, href } = Astro.props;
     flex: 0 0 auto;
     align-items: center;
     justify-content: center;
+    width: 1.65rem;
+    height: 1.65rem;
+    margin-top: 0.02rem;
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .topic-apply-check {
     width: 1.45rem;
     height: 1.45rem;
     margin-top: 0.05rem;
@@ -200,8 +302,8 @@ const { title, href } = Astro.props;
     padding: 1.4rem;
     border-left: 4px solid #e67e22;
     border-radius: 16px;
-    background: #f7f9fc;
-    color: #18324a;
+    background: #fffaf6;
+    color: #3d342d;
     font-size: clamp(1.05rem, 2vw, 1.25rem);
     line-height: 1.35;
   }
