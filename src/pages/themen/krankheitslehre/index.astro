@@ -142,12 +142,13 @@ const getGroupKey = (topic) => {
   }
 
   if (
-    slug.includes("copd") ||
-    slug.includes("pneumonie") ||
-    slug.includes("lungenembolie")
-  ) {
-    return "atmung";
-  }
+  slug.includes("asthma") ||
+  slug.includes("copd") ||
+  slug.includes("pneumonie") ||
+  slug.includes("lungenembolie")
+) {
+  return "atmung";
+}
 
   if (
     slug.includes("verdauungstrakt") ||
