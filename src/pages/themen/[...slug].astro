@@ -4,6 +4,7 @@ export const prerender = true;
 import { getCollection, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ThemenCluster from "../../components/ThemenCluster.astro";
+import TopicConversionBox from "../../components/TopicConversionBox.astro";
 import StarterGuideContentCTA from "../../components/StarterGuideContentCTA.astro";
 
 export async function getStaticPaths() {
@@ -89,6 +90,25 @@ const isCategoryPage = slugParts.length === 1;
 const premiumSkripte = skripteZumThema.filter((item) => item.data.premium === true).length;
 const premiumPruefung = pruefungZumThema.filter((item) => item.data.premium === true).length;
 const premiumExamQuiz = examQuizZumThema.filter((item) => item.data.premium === true).length;
+const ersterPremiumPruefungsfall = pruefungZumThema.find(
+  (item) => item.data.premium === true
+);
+
+const erstesPremiumLernskript = skripteZumThema.find(
+  (item) => item.data.premium === true
+);
+
+const anwendenHref = ersterPremiumPruefungsfall
+  ? `/pruefung/${ersterPremiumPruefungsfall.slug}/`
+  : erstesPremiumLernskript
+    ? `/lernskripte/${erstesPremiumLernskript.slug}/`
+    : "/premium/";
+
+const anwendenButtonText = ersterPremiumPruefungsfall
+  ? "Passenden Prüfungsfall öffnen"
+  : erstesPremiumLernskript
+    ? "Passendes Lernskript öffnen"
+    : "PraxisMaik Premium ansehen";
 const seoTitle = `${thema.data.title} | Pflege lernen mit PraxisMaik`;
 
 const seoDescription =
@@ -124,6 +144,11 @@ const seoDescription =
 </article>
 
 <ThemenCluster currentSlug={thema.slug} />
+
+<TopicConversionBox
+  title={thema.data.title}
+  href={anwendenHref}
+/>
 
 <StarterGuideContentCTA />
 
@@ -745,6 +770,23 @@ const seoDescription =
 
 .topic-premium-button:hover {
   transform: translateY(-2px);
+}
+
+@media (max-width: 760px) {
+  .topic-apply-box {
+    grid-template-columns: 1fr;
+    gap: 1.3rem;
+    padding: 1.4rem;
+    border-radius: 22px;
+  }
+
+  .topic-apply-button {
+    width: 100%;
+  }
+
+  .topic-apply-question {
+    padding: 1.2rem;
+  }
 }
 
 @media (max-width: 900px) {
