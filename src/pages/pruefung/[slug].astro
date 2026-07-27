@@ -2,6 +2,7 @@
 export const prerender = false;
 
 import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
 import PremiumGate from '../../components/PremiumGate.astro';
 import LernpfadPruefungsfall from '../../components/LernpfadPruefungsfall.astro';
 
@@ -70,16 +71,11 @@ const backLabel = sameOriginReferer.includes('/themen/')
   : '← Zurück zu den Prüfungsfällen';
 ---
 
-<html lang="de">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title} | PraxisMaik</title>
-    <meta name="description" content={beschreibung} />
-  </head>
-
-  <body>
-    <main class="container">
+<BaseLayout
+  title={`${title} | PraxisMaik`}
+  description={beschreibung}
+>
+    <div class="container">
       <a href={backHref} class="back-link">{backLabel}</a>
 
       <article class="content-card">
@@ -173,7 +169,7 @@ const backLabel = sameOriginReferer.includes('/themen/')
   </>
 )}
       </article>
-    </main>
+    </div>
 
     <div
       id="case-tracking-data"
@@ -398,8 +394,7 @@ examModeButton?.addEventListener('click', () => {
 activateLearningMode();
 
 </script>
-  </body>
-</html>
+ </BaseLayout>
 
 <style>
   :global(body) {

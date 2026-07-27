@@ -1,32 +1,53 @@
 ---
-export const prerender = true;
+export const prerender = false;
 
-import { getCollection, render } from "astro:content";
+import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ThemenCluster from "../../components/ThemenCluster.astro";
 import TopicConversionBox from "../../components/TopicConversionBox.astro";
 import StarterGuideContentCTA from "../../components/StarterGuideContentCTA.astro";
+import ContentRenderer from "../../components/ContentRenderer.astro";
 
-export async function getStaticPaths() {
-  const themen = await getCollection("themen");
-  const lernskripte = await getCollection("lernskripte");
-  const pruefung = await getCollection("pruefung");
-  const quiz = await getCollection("quiz");
-  const examQuiz = await getCollection("examQuiz");
+const slug = Astro.params.slug;
 
-  return themen.map((thema) => {
-    const slugParts = thema.slug.split("/");
-    const topicKey = slugParts[slugParts.length - 1];
+if (!slug) {
+  throw new Error("Slug fehlt.");
+}
 
-    const unterthemen = themen
+const [
+  themen,
+  lernskripte,
+  pruefung,
+  quiz,
+  examQuiz,
+] = await Promise.all([
+  getCollection("themen"),
+  getCollection("lernskripte"),
+  getCollection("pruefung"),
+  getCollection("quiz"),
+  getCollection("examQuiz"),
+]);
+
+const thema = themen.find((item) => item.slug === slug);
+
+if (!thema) {
+  return Astro.redirect("/themen/");
+}
+
+const slugParts = thema.slug.split("/");
+const topicKey = slugParts[slugParts.length - 1];
+const isCategoryPage = slugParts.length === 1;
+
+const unterthemen = themen
   .filter((item) => item.slug.startsWith(`${thema.slug}/`))
   .sort((a, b) => a.data.title.localeCompare(b.data.title, "de"));
 
 const verwandteThemen = themen
-  .filter((item) =>
-    item.slug !== thema.slug &&
-    !item.slug.startsWith(`${thema.slug}/`) &&
-    item.slug.startsWith(`${thema.slug}-`)
+  .filter(
+    (item) =>
+      item.slug !== thema.slug &&
+      !item.slug.startsWith(`${thema.slug}/`) &&
+      item.slug.startsWith(`${thema.slug}-`)
   )
   .sort((a, b) => a.data.title.localeCompare(b.data.title, "de"))
   .map((item) => ({
@@ -38,58 +59,75 @@ const verwandteThemen = themen
       "Vertiefe dieses Thema mit passenden Beispielen, Prüfungsfragen und Pflegeprüfung-Inhalten.",
   }));
 
-    const skripteZumThema = lernskripte
-      .filter((item) => item.data.topic === thema.slug || item.data.topic === topicKey)
-      .sort((a, b) => (a.data.reihenfolge ?? 999) - (b.data.reihenfolge ?? 999));
+const skripteZumThema = lernskripte
+  .filter(
+    (item) =>
+      item.data.topic === thema.slug ||
+      item.data.topic === topicKey
+  )
+  .sort(
+    (a, b) =>
+      (a.data.reihenfolge ?? 999) -
+      (b.data.reihenfolge ?? 999)
+  );
 
-    const pruefungZumThema = pruefung
-      .filter((item) => item.data.topic === thema.slug || item.data.topic === topicKey)
-      .sort((a, b) => (a.data.reihenfolge ?? 999) - (b.data.reihenfolge ?? 999));
+const pruefungZumThema = pruefung
+  .filter(
+    (item) =>
+      item.data.topic === thema.slug ||
+      item.data.topic === topicKey
+  )
+  .sort(
+    (a, b) =>
+      (a.data.reihenfolge ?? 999) -
+      (b.data.reihenfolge ?? 999)
+  );
 
-    const quizZumThema = quiz
-      .filter((item) => item.data.topic === thema.slug || item.data.topic === topicKey);
+const quizZumThema = quiz.filter(
+  (item) =>
+    item.data.topic === thema.slug ||
+    item.data.topic === topicKey
+);
 
-    const examQuizZumThema = examQuiz
-      .filter((item) => item.data.topic === thema.slug || item.data.topic === topicKey);
+const examQuizZumThema = examQuiz.filter(
+  (item) =>
+    item.data.topic === thema.slug ||
+    item.data.topic === topicKey
+);
 
-return {
-  params: { slug: thema.slug },
-  props: {
-  thema,
-  unterthemen,
-  verwandteThemen,
-  skripteZumThema,
-  pruefungZumThema,
-  quizZumThema,
-  examQuizZumThema,
-},
-};
-  });
-}
+const markdownBody = thema.body ?? "";
 
-const {
-  thema,
-  unterthemen,
-  verwandteThemen,
-  skripteZumThema,
-  pruefungZumThema,
-  quizZumThema,
-  examQuizZumThema,
-} = Astro.props;
+const isLocalhost =
+  Astro.url.hostname === "localhost" ||
+  Astro.url.hostname === "127.0.0.1";
 
-if (!thema) {
-  throw new Error("Thema nicht gefunden.");
-}
+const devUnlock =
+  Astro.url.searchParams.get("freischalten") === "1" &&
+  isLocalhost;
 
-const { Content } = await render(thema);
+const premiumCookieValue =
+  Astro.cookies.get("praxismaik_premium")?.value;
 
-const slugParts = thema.slug.split("/");
-const topicKey = slugParts[slugParts.length - 1];
-const isCategoryPage = slugParts.length === 1;
+const hasPremiumCookie =
+  premiumCookieValue === "1" ||
+  premiumCookieValue === "true";
 
-const premiumSkripte = skripteZumThema.filter((item) => item.data.premium === true).length;
-const premiumPruefung = pruefungZumThema.filter((item) => item.data.premium === true).length;
-const premiumExamQuiz = examQuizZumThema.filter((item) => item.data.premium === true).length;
+const showPremiumContent =
+  devUnlock ||
+  hasPremiumCookie;
+
+const premiumSkripte = skripteZumThema.filter(
+  (item) => item.data.premium === true
+).length;
+
+const premiumPruefung = pruefungZumThema.filter(
+  (item) => item.data.premium === true
+).length;
+
+const premiumExamQuiz = examQuizZumThema.filter(
+  (item) => item.data.premium === true
+).length;
+
 const ersterPremiumPruefungsfall = pruefungZumThema.find(
   (item) => item.data.premium === true
 );
@@ -109,7 +147,9 @@ const anwendenButtonText = ersterPremiumPruefungsfall
   : erstesPremiumLernskript
     ? "Passendes Lernskript öffnen"
     : "PraxisMaik Premium ansehen";
-const seoTitle = `${thema.data.title} | Pflege lernen mit PraxisMaik`;
+
+const seoTitle =
+  `${thema.data.title} | Pflege lernen mit PraxisMaik`;
 
 const seoDescription =
   thema.data.beschreibung ??
@@ -140,21 +180,11 @@ const seoDescription =
     </header>
 
     <article class="topic-content">
-  <Content />
+  <ContentRenderer
+    body={markdownBody}
+    showPremium={showPremiumContent}
+  />
 </article>
-
-<ThemenCluster currentSlug={thema.slug} />
-
-<TopicConversionBox
-  title={thema.data.title}
-  href={anwendenHref}
-  buttonText={anwendenButtonText}
-  premiumSkripte={premiumSkripte}
-  premiumPruefung={premiumPruefung}
-  premiumExamQuiz={premiumExamQuiz}
-/>
-
-<StarterGuideContentCTA />
 
 {verwandteThemen.length > 0 && (
   <section class="topic-section">
@@ -414,6 +444,20 @@ const seoDescription =
         </a>
       </div>
     </section>
+
+<ThemenCluster currentSlug={thema.slug} />
+
+<TopicConversionBox
+  title={thema.data.title}
+  href={anwendenHref}
+  buttonText={anwendenButtonText}
+  premiumSkripte={premiumSkripte}
+  premiumPruefung={premiumPruefung}
+  premiumExamQuiz={premiumExamQuiz}
+/>
+
+<StarterGuideContentCTA />
+
   </section>
 </BaseLayout>
 

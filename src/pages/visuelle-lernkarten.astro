@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import PremiumGate from '../components/PremiumGate.astro';
 
 const title = 'Visuelle Lernkarten für die Pflegeausbildung | PraxisMaik';
 
@@ -122,6 +123,13 @@ const description =
   </article>
   </div>
 </section>
+
+<PremiumGate
+  title="Alle visuellen Lernkarten mit Premium nutzen"
+  text="Mit Premium erhältst du Zugriff auf alle visuellen Lernkarten zu Medikamentenlehre, Hygiene, Wundversorgung, Mobilisation, Vitalzeichen, Notfällen und weiteren prüfungsrelevanten Themen."
+  buttonText="Premium einmalig für 39 € freischalten"
+  buttonHref="/premium"
+>
 
 <section class="topic-group">
   <div class="topic-group-header">
@@ -3716,6 +3724,7 @@ const description =
 
   <img id="lightbox-image" src="" alt="" />
 </div>
+</PremiumGate>
   </main>
 </BaseLayout>
 

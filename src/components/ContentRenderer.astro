@@ -1,0 +1,271 @@
+---
+import { marked } from "marked";
+import PremiumGate from "./PremiumGate.astro";
+
+interface Props {
+  body: string;
+  showPremium: boolean;
+  premiumTitle?: string;
+  premiumText?: string;
+  premiumButtonText?: string;
+  premiumButtonHref?: string;
+}
+
+const {
+  body,
+  showPremium,
+  premiumTitle = "Schalte den vollständigen Premium-Inhalt frei",
+  premiumText = "Mit PraxisMaik Premium lernst du, dieses Thema sicher anzuwenden, Entscheidungen fachlich zu begründen und typische Fehler zu vermeiden.",
+  premiumButtonText = "Premium ansehen",
+  premiumButtonHref = "/premium/",
+} = Astro.props;
+
+const premiumMarker = "<!-- PREMIUM_START -->";
+const markerPosition = body.indexOf(premiumMarker);
+const hasPremiumSection = markerPosition !== -1;
+
+const freeMarkdown = hasPremiumSection
+  ? body.slice(0, markerPosition).trim()
+  : body.trim();
+
+const premiumMarkdown = hasPremiumSection
+  ? body.slice(markerPosition + premiumMarker.length).trim()
+  : "";
+
+const freeHtml = await marked.parse(freeMarkdown);
+const premiumHtml = premiumMarkdown
+  ? await marked.parse(premiumMarkdown)
+  : "";
+---
+
+<div class="content-renderer">
+  {freeHtml && (
+    <section class="rendered-markdown" set:html={freeHtml} />
+  )}
+
+  {hasPremiumSection && premiumHtml && (
+    showPremium ? (
+      <section class="premium-content">
+        <div class="premium-content-heading">
+          <span>PraxisMaik Premium</span>
+          <p>Ab hier beginnt dein vertieftes Anwendungstraining.</p>
+        </div>
+
+        <div class="rendered-markdown" set:html={premiumHtml} />
+      </section>
+    ) : (
+      <section class="locked-premium-section">
+        <div class="premium-transition">
+          <span class="premium-transition-label">
+            Der nächste Lernschritt
+          </span>
+
+          <h2>
+            Wissen reicht nicht. Entscheidend ist, wie du es anwendest.
+          </h2>
+
+          <p>
+            Im Premiumbereich trainierst du typische Fragen aus dem
+            Praxisbesuch, fachliche Begründungen, Entscheidungssituationen
+            und häufige Fehler.
+          </p>
+
+          <ul>
+            <li>Typische Fragen sicher beantworten</li>
+            <li>Entscheidungen nachvollziehbar begründen</li>
+            <li>Risiken und Prioritäten erkennen</li>
+            <li>Wissen auf Praxissituationen übertragen</li>
+          </ul>
+        </div>
+
+        <PremiumGate
+          title={premiumTitle}
+          text={premiumText}
+          buttonText={premiumButtonText}
+          buttonHref={premiumButtonHref}
+        />
+      </section>
+    )
+  )}
+</div>
+
+<style>
+  .content-renderer {
+    display: grid;
+    gap: 1.75rem;
+  }
+
+  .rendered-markdown {
+    color: #29231f;
+    line-height: 1.8;
+  }
+
+  .rendered-markdown :global(h2) {
+    margin: 2.5rem 0 0.9rem;
+    color: #1f1a17;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    line-height: 1.3;
+  }
+
+  .rendered-markdown :global(h2:first-child) {
+    margin-top: 0;
+  }
+
+  .rendered-markdown :global(h3) {
+    margin: 2rem 0 0.75rem;
+    color: #2d2723;
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    line-height: 1.35;
+  }
+
+  .rendered-markdown :global(h4) {
+    margin: 1.6rem 0 0.65rem;
+    color: #3d342e;
+    line-height: 1.4;
+  }
+
+  .rendered-markdown :global(p),
+  .rendered-markdown :global(li) {
+    color: #403934;
+    line-height: 1.8;
+  }
+
+  .rendered-markdown :global(ul),
+  .rendered-markdown :global(ol) {
+    padding-left: 1.4rem;
+  }
+
+  .rendered-markdown :global(a) {
+    color: #a64e0c;
+    font-weight: 700;
+    text-underline-offset: 3px;
+  }
+
+  .rendered-markdown :global(blockquote) {
+    margin: 1.6rem 0;
+    padding: 1rem 1.2rem;
+    border-left: 5px solid #e67e22;
+    border-radius: 0 14px 14px 0;
+    background: #fff8f1;
+    color: #403934;
+  }
+
+  .rendered-markdown :global(img) {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+  }
+
+  .rendered-markdown :global(table) {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    border-collapse: collapse;
+  }
+
+  .rendered-markdown :global(th),
+  .rendered-markdown :global(td) {
+    padding: 0.75rem;
+    border: 1px solid #eadfd5;
+    text-align: left;
+  }
+
+  .rendered-markdown :global(th) {
+    background: #fff8f1;
+  }
+
+  .premium-content {
+    padding-top: 1.75rem;
+    border-top: 2px solid rgba(230, 126, 34, 0.2);
+  }
+
+  .premium-content-heading {
+    margin-bottom: 1.75rem;
+    padding: 1.15rem 1.25rem;
+    border: 1px solid rgba(230, 126, 34, 0.2);
+    border-radius: 16px;
+    background: #fff8f1;
+  }
+
+  .premium-content-heading span {
+    display: inline-block;
+    margin-bottom: 0.35rem;
+    color: #a64e0c;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .premium-content-heading p {
+    margin: 0;
+    color: #403934;
+    font-weight: 700;
+    line-height: 1.6;
+  }
+
+  .locked-premium-section {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .premium-transition {
+    padding: clamp(1.25rem, 3vw, 1.7rem);
+    border-left: 5px solid #e67e22;
+    border-radius: 0 18px 18px 0;
+    background: #ffffff;
+    box-shadow: 0 10px 26px rgba(62, 44, 31, 0.06);
+  }
+
+  .premium-transition-label {
+    display: inline-block;
+    margin-bottom: 0.65rem;
+    color: #b85d16;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .premium-transition h2 {
+    margin: 0 0 0.8rem;
+    color: #1f1a17;
+    font-size: clamp(1.35rem, 3vw, 1.75rem);
+    line-height: 1.3;
+  }
+
+  .premium-transition p {
+    margin: 0;
+    color: #625950;
+    line-height: 1.8;
+  }
+
+  .premium-transition ul {
+    display: grid;
+    gap: 0.65rem;
+    margin: 1.2rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .premium-transition li {
+    position: relative;
+    padding-left: 1.7rem;
+    color: #3e3732;
+    line-height: 1.55;
+  }
+
+  .premium-transition li::before {
+    position: absolute;
+    left: 0;
+    content: "✓";
+    color: #e67e22;
+    font-weight: 900;
+  }
+
+  @media (max-width: 640px) {
+    .premium-transition {
+      border-left-width: 4px;
+    }
+  }
+</style>

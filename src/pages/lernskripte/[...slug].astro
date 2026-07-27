@@ -1,250 +1,412 @@
 ---
 export const prerender = false;
 
-import { getCollection, render } from 'astro:content';
-import PremiumGate from '../../components/PremiumGate.astro';
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PremiumGate from "../../components/PremiumGate.astro";
 
 const slug = Astro.params.slug;
 
 if (!slug) {
-  throw new Error('Slug fehlt.');
+  throw new Error("Slug fehlt.");
 }
 
-const lernskripte = await getCollection('lernskripte');
-
-console.log(
-  lernskripte.slice(0, 10).map((item) => ({
-    slug: item.slug,
-    id: item.id,
-    title: item.data.title,
-  }))
-);
-
-console.log('URL-Slug:', Astro.params.slug);
+const lernskripte = await getCollection("lernskripte");
 
 const eintrag = lernskripte.find((item) => item.slug === slug);
 
 if (!eintrag) {
-  return Astro.redirect('/lernskripte');
+  return Astro.redirect("/lernskripte/");
 }
 
 const { Content } = await render(eintrag);
 
 const isPremium = eintrag.data.premium === true;
-const title = eintrag.data.title ?? 'Lernskript';
-const beschreibung = eintrag.data.beschreibung ?? '';
-const preview = eintrag.data.preview ?? '';
+const title = eintrag.data.title ?? "Lernskript";
+const beschreibung = eintrag.data.beschreibung ?? "";
+const preview = eintrag.data.preview ?? "";
 
 const isLocalhost =
-  Astro.url.hostname === 'localhost' ||
-  Astro.url.hostname === '127.0.0.1';
+  Astro.url.hostname === "localhost" ||
+  Astro.url.hostname === "127.0.0.1";
 
 const devUnlock =
-  Astro.url.searchParams.get('freischalten') === '1' &&
+  Astro.url.searchParams.get("freischalten") === "1" &&
   isLocalhost;
 
 const premiumCookieValue =
-  Astro.cookies.get('praxismaik_premium')?.value;
+  Astro.cookies.get("praxismaik_premium")?.value;
 
 const hasPremiumCookie =
-  premiumCookieValue === '1' ||
-  premiumCookieValue === 'true';
+  premiumCookieValue === "1" ||
+  premiumCookieValue === "true";
 
 const showFullContent =
   !isPremium ||
   devUnlock ||
   hasPremiumCookie;
+
+const metaDescription =
+  beschreibung ||
+  `${title} verständlich erklärt für Pflegeausbildung, Praxisbesuch und Prüfung.`;
 ---
 
-<html lang="de">
-  <head>
-    <meta charset="utf-8" />
+<BaseLayout
+  title={`${title} | PraxisMaik`}
+  description={metaDescription}
+>
+  <div class="lernskript-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Start</a>
+      <span aria-hidden="true">›</span>
+      <a href="/lernskripte/">Lernskripte</a>
+      <span aria-hidden="true">›</span>
+      <span>{title}</span>
+    </nav>
 
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    />
+    <article class="content-card">
+      <header class="content-header">
+        <p class:list={[
+          "content-badge",
+          { "content-badge-premium": isPremium },
+        ]}>
+          {isPremium ? "Premium-Lernskript" : "Kostenloses Lernskript"}
+        </p>
 
-    <title>{title} | PraxisMaik</title>
+        <h1>{title}</h1>
 
-    <meta
-      name="description"
-      content={beschreibung}
-    />
-  </head>
-
-  <body>
-    <main class="container">
-      <a
-        href="/lernskripte"
-        class="back-link"
-      >
-        ← Zurück zu den Lernskripten
-      </a>
-
-      <article class="content-card">
-        <header class="content-header">
-          <p class="content-badge">
-            {isPremium ? 'Premium-Lernskript' : 'Lernskript'}
+        {beschreibung && (
+          <p class="content-description">
+            {beschreibung}
           </p>
-
-          <h1>{title}</h1>
-
-          {beschreibung && (
-            <p class="content-description">
-              {beschreibung}
-            </p>
-          )}
-
-          {devUnlock && (
-            <div class="status-box">
-              Testmodus aktiv, Premium-Inhalt lokal freigeschaltet.
-            </div>
-          )}
-
-          {hasPremiumCookie && (
-            <div class="status-box">
-              Premium ist aktiv.
-            </div>
-          )}
-        </header>
-
-        {showFullContent ? (
-          <>
-     <section class="markdown-content">
-  <Content />
-</section>
-</>
-) : (
-          <>
-            {preview && (
-              <section class="preview-box">
-                <h2>Vorschau</h2>
-                <p>{preview}</p>
-              </section>
-            )}
-
-            <PremiumGate
-              title="Du siehst nur einen Teil dieses Lernskripts"
-              text="Die entscheidenden Inhalte, Prüfungslogik und konkreten Antworten sind nur im Premium-Bereich freigeschaltet."
-              buttonText="Jetzt freischalten"
-              buttonHref="/premium"
-            />
-          </>
         )}
-      </article>
-    </main>
-  </body>
-</html>
+
+        {devUnlock && (
+          <div class="status-box">
+            Testmodus aktiv, Premium-Inhalt lokal freigeschaltet.
+          </div>
+        )}
+
+        {hasPremiumCookie && isPremium && (
+          <div class="status-box">
+            Premium ist aktiv. Du hast vollständigen Zugriff auf dieses Lernskript.
+          </div>
+        )}
+      </header>
+
+      {showFullContent ? (
+        <section class="markdown-content">
+          <Content />
+        </section>
+      ) : (
+        <div class="locked-content">
+          {preview ? (
+            <section class="preview-box">
+              <span class="preview-label">Kostenlose Vorschau</span>
+
+              <h2>Das lernst du in diesem Thema</h2>
+
+              <p>{preview}</p>
+            </section>
+          ) : (
+            <section class="preview-box">
+              <span class="preview-label">Kostenlose Vorschau</span>
+
+              <h2>Grundlagen verstehen</h2>
+
+              <p>
+                Dieses Lernskript zeigt dir, wie du das Thema fachlich einordnest
+                und warum es für Pflegepraxis, Praxisbesuch und Prüfung wichtig ist.
+              </p>
+            </section>
+          )}
+
+          <section class="premium-transition">
+            <span class="premium-transition-label">
+              Der nächste Lernschritt
+            </span>
+
+            <h2>
+              Verstehen ist der Anfang. Sicher anwenden lernst du mit Premium.
+            </h2>
+
+            <p>
+              Im vollständigen Lernskript lernst du, pflegerische Zusammenhänge
+              zu erkennen, Prioritäten zu setzen und deine Entscheidungen
+              fachlich nachvollziehbar zu begründen.
+            </p>
+
+            <ul>
+              <li>Pflegeprobleme sicher erkennen und einordnen</li>
+              <li>Maßnahmen fachlich begründen</li>
+              <li>Typische Fehler in Praxis und Prüfung vermeiden</li>
+              <li>Das Thema auf Fallsituationen übertragen</li>
+            </ul>
+          </section>
+
+          <PremiumGate
+            title="Schalte das vollständige Lernskript frei"
+            text="Mit PraxisMaik Premium lernst du nicht nur, worum es bei diesem Thema geht. Du lernst, wie du es sicher in Pflegepraxis, Praxisbesuch und Prüfung anwendest."
+            buttonText="Premium ansehen"
+            buttonHref="/premium/"
+          />
+        </div>
+      )}
+    </article>
+  </div>
+</BaseLayout>
 
 <style>
-  :global(body) {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f3f4f6;
-    color: #111827;
-  }
-
-  .container {
+  .lernskript-page {
     max-width: 900px;
     margin: 0 auto;
-    padding: 2rem 1rem 4rem;
+    padding: 1rem 0 4rem;
   }
 
-  .back-link {
-    display: inline-block;
-    margin-bottom: 1rem;
+  .breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.45rem;
+    margin-bottom: 1.25rem;
+    color: #6b625b;
+    font-size: 0.92rem;
+  }
+
+  .breadcrumbs a {
+    color: #7a3e11;
     text-decoration: none;
-    font-weight: 600;
-    color: #18324a;
+    font-weight: 700;
   }
 
-  .back-link:hover {
+  .breadcrumbs a:hover {
     text-decoration: underline;
   }
 
   .content-card {
+    overflow: hidden;
+    padding: clamp(1.4rem, 4vw, 2.6rem);
+    border: 1px solid rgba(230, 126, 34, 0.16);
+    border-radius: 24px;
     background: #ffffff;
-    border-radius: 18px;
-    padding: 2rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 14px 36px rgba(62, 44, 31, 0.08);
   }
 
   .content-header {
     margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #f0e4d9;
   }
 
   .content-badge {
     display: inline-block;
     margin: 0 0 1rem;
-    padding: 0.35rem 0.7rem;
+    padding: 0.4rem 0.75rem;
     border-radius: 999px;
-    background: #eef2ff;
-    color: #3730a3;
-    font-size: 0.9rem;
-    font-weight: 700;
+    background: #fff8f1;
+    color: #9a4a0b;
+    font-size: 0.82rem;
+    font-weight: 800;
+  }
+
+  .content-badge-premium {
+    background: #e67e22;
+    color: #ffffff;
   }
 
   h1 {
-    margin: 0 0 0.75rem;
-    font-size: 2rem;
-    line-height: 1.2;
+    margin: 0;
+    max-width: 22ch;
+    color: #1f1a17;
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.12;
+    letter-spacing: -0.025em;
   }
 
   .content-description {
-    margin: 0;
+    max-width: 66ch;
+    margin: 1rem 0 0;
+    color: #625950;
     font-size: 1.05rem;
-    line-height: 1.7;
-    color: #4b5563;
+    line-height: 1.75;
   }
 
   .status-box {
-    margin-top: 1rem;
-    padding: 0.9rem 1rem;
-    border: 1px solid #d1fae5;
-    background: #ecfdf5;
-    color: #065f46;
-    border-radius: 12px;
+    margin-top: 1.25rem;
+    padding: 0.95rem 1rem;
+    border: 1px solid #b9dfc7;
+    border-radius: 14px;
+    background: #effaf3;
+    color: #24613b;
     font-weight: 700;
+    line-height: 1.5;
+  }
+
+  .locked-content {
+    display: grid;
+    gap: 1.5rem;
   }
 
   .preview-box {
-    padding: 1.25rem;
-    border: 1px solid #e5e7eb;
-    border-radius: 14px;
-    background: #fafafa;
+    padding: clamp(1.25rem, 3vw, 1.7rem);
+    border: 1px solid rgba(230, 126, 34, 0.18);
+    border-radius: 18px;
+    background: #fffaf5;
   }
 
-  .preview-box h2 {
-    margin-top: 0;
-    margin-bottom: 0.75rem;
-    font-size: 1.2rem;
+  .preview-label,
+  .premium-transition-label {
+    display: inline-block;
+    margin-bottom: 0.65rem;
+    color: #b85d16;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
   }
 
-  .preview-box p {
+  .preview-box h2,
+  .premium-transition h2 {
+    margin: 0 0 0.8rem;
+    color: #1f1a17;
+    font-size: clamp(1.35rem, 3vw, 1.75rem);
+    line-height: 1.3;
+  }
+
+  .preview-box p,
+  .premium-transition p {
     margin: 0;
+    color: #625950;
     line-height: 1.8;
     white-space: pre-line;
   }
 
+  .premium-transition {
+    padding: clamp(1.25rem, 3vw, 1.7rem);
+    border-left: 5px solid #e67e22;
+    border-radius: 0 18px 18px 0;
+    background: #ffffff;
+    box-shadow: 0 10px 26px rgba(62, 44, 31, 0.06);
+  }
+
+  .premium-transition ul {
+    display: grid;
+    gap: 0.65rem;
+    margin: 1.2rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .premium-transition li {
+    position: relative;
+    padding-left: 1.7rem;
+    color: #3e3732;
+    line-height: 1.55;
+  }
+
+  .premium-transition li::before {
+    position: absolute;
+    left: 0;
+    content: "✓";
+    color: #e67e22;
+    font-weight: 900;
+  }
+
   .markdown-content {
+    color: #29231f;
     line-height: 1.8;
   }
 
-  .markdown-content :global(h2),
-  .markdown-content :global(h3),
-  .markdown-content :global(h4) {
-    margin-top: 2rem;
+  .markdown-content :global(h2) {
+    margin: 2.5rem 0 0.9rem;
+    color: #1f1a17;
+    font-size: clamp(1.5rem, 3vw, 2rem);
     line-height: 1.3;
+  }
+
+  .markdown-content :global(h3) {
+    margin: 2rem 0 0.75rem;
+    color: #2d2723;
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    line-height: 1.35;
+  }
+
+  .markdown-content :global(h4) {
+    margin: 1.6rem 0 0.65rem;
+    color: #3d342e;
+    line-height: 1.4;
   }
 
   .markdown-content :global(p),
   .markdown-content :global(li) {
+    color: #403934;
     line-height: 1.8;
   }
 
   .markdown-content :global(ul),
   .markdown-content :global(ol) {
     padding-left: 1.4rem;
+  }
+
+  .markdown-content :global(a) {
+    color: #a64e0c;
+    font-weight: 700;
+    text-underline-offset: 3px;
+  }
+
+  .markdown-content :global(blockquote) {
+    margin: 1.6rem 0;
+    padding: 1rem 1.2rem;
+    border-left: 5px solid #e67e22;
+    border-radius: 0 14px 14px 0;
+    background: #fff8f1;
+    color: #403934;
+  }
+
+  .markdown-content :global(img) {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+  }
+
+  .markdown-content :global(table) {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    border-collapse: collapse;
+  }
+
+  .markdown-content :global(th),
+  .markdown-content :global(td) {
+    padding: 0.75rem;
+    border: 1px solid #eadfd5;
+    text-align: left;
+  }
+
+  .markdown-content :global(th) {
+    background: #fff8f1;
+  }
+
+  @media (max-width: 640px) {
+    .lernskript-page {
+      padding-top: 0.25rem;
+    }
+
+    .content-card {
+      padding: 1.25rem;
+      border-radius: 18px;
+    }
+
+    .content-header {
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      max-width: none;
+    }
+
+    .premium-transition {
+      border-left-width: 4px;
+    }
   }
 </style>
