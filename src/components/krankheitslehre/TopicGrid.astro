@@ -1,0 +1,39 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { topicDescriptions } from "../../data/krankheitslehre/topicDescriptions";
+
+interface Props {
+  items: CollectionEntry<"themen">[];
+}
+
+const { items } = Astro.props;
+---
+
+<div class="topic-grid">
+  {items.map((topic, index) => (
+    <a class="topic-card" href={`/themen/${topic.slug}/`}>
+      <div class="topic-card-top">
+        <span class="topic-step">
+          Thema {index + 1}
+        </span>
+
+        <span class="topic-type">
+          Krankheitsbild
+        </span>
+      </div>
+
+      <h3>{topic.data.title}</h3>
+
+      <p>
+        {topic.data.beschreibung ??
+          topic.data.description ??
+          topicDescriptions[topic.slug] ??
+          "Lerne dieses Krankheitsbild mit Symptomen, Risiken und Pflegebezug verständlich einzuordnen."}
+      </p>
+
+      <span class="topic-card-link">
+        Thema öffnen →
+      </span>
+    </a>
+  ))}
+</div>

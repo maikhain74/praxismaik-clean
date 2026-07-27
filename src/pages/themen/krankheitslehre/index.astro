@@ -1,6 +1,15 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
+import TopicGrid from "../../../components/krankheitslehre/TopicGrid.astro";
+import ClusterSection from "../../../components/krankheitslehre/ClusterSection.astro";
+import { gruppenConfig } from "../../../data/krankheitslehre/gruppenConfig";
+import {
+  gruppenZuordnung,
+  type GruppenKey,
+} from "../../../data/krankheitslehre/gruppenZuordnung";
+import { clusterRegistry } from "../../../data/krankheitslehre/clusterRegistry";
+import { getCluster } from "../../../data/krankheitslehre/getCluster";
 
 const themen = await getCollection("themen");
 
@@ -8,195 +17,13 @@ const krankheitslehreThemen = themen
   .filter((t) => t.slug.toLowerCase().startsWith("krankheitslehre/"))
   .sort((a, b) => a.data.title.localeCompare(b.data.title, "de"));
 
-const topicDescriptions = {
-  "krankheitslehre/akut-vs-chronisch": "Verstehe den Unterschied zwischen akuten und chronischen Erkrankungen und was das für Pflege bedeutet.",
-  "krankheitslehre/copd": "Lerne typische Beschwerden, Risiken und pflegerische Schwerpunkte bei COPD kennen.",
-  "krankheitslehre/dehydratation": "Erkenne Flüssigkeitsmangel frühzeitig und verstehe passende pflegerische Maßnahmen.",
-  "krankheitslehre/dekubitus": "Verstehe Entstehung, Risikofaktoren und pflegerische Beobachtung beim Dekubitus.",
-  "krankheitslehre/delir": "Lerne, ein Delir zu erkennen und von Demenz oder Verwirrtheit abzugrenzen.",
-  "krankheitslehre/diabetes-mellitus": "Verstehe Diabetes mellitus, Blutzuckerentgleisungen und wichtige Pflegebeobachtungen.",
-  "krankheitslehre/entzuendung": "Grundlagen zu Entzündungszeichen, Ursachen und pflegerischer Einschätzung.",
-  "krankheitslehre/fieber": "Lerne Fieberzeichen, Verlauf und sinnvolle pflegerische Reaktionen einzuordnen.",
-  "krankheitslehre/harnwegsinfektion": "Erkenne typische Symptome, Risiken und Pflegeaspekte bei Harnwegsinfekten.",
-  "krankheitslehre/herzinsuffizienz": "Verstehe Warnzeichen, Belastungsgrenzen und pflegerische Beobachtung bei Herzinsuffizienz.",
-  "krankheitslehre/hypertonie": "Lerne Bluthochdruck, Risiken und pflegerisch relevante Beobachtung kennen.",
-  "krankheitslehre/infektion": "Verstehe Infektionen, typische Zeichen und warum Beobachtung in der Pflege zentral ist.",
-  "krankheitslehre/krankheitslehre-grundlagen": "Grundlagen zum Verständnis von Krankheiten, Symptomen, Verlauf und Pflegebezug.",
-  "krankheitslehre/lungenembolie": "Erkenne Warnzeichen einer Lungenembolie und verstehe die Dringlichkeit pflegerischen Handelns.",
-  "krankheitslehre/mangelernaehrung": "Lerne Anzeichen, Risiken und pflegerische Maßnahmen bei Mangelernährung kennen.",
-  "krankheitslehre/niereninsuffizienz": "Verstehe Einschränkungen der Nierenfunktion und wichtige Beobachtungsschwerpunkte.",
-  "krankheitslehre/oedem": "Lerne Ödeme zu erkennen, zu beobachten und pflegerisch richtig einzuordnen.",
-  "krankheitslehre/parkinson": "Verstehe typische Symptome und Pflegeprobleme bei Parkinson.",
-  "krankheitslehre/pneumonie": "Lerne Symptome, Risiken und pflegerische Maßnahmen bei einer Lungenentzündung kennen.",
-  "krankheitslehre/schlaganfall": "Erkenne Warnzeichen, Folgen und Pflegeziele nach einem Schlaganfall.",
-  "krankheitslehre/schmerz": "Verstehe Schmerzarten, Beobachtung und pflegerische Einschätzung.",
-  "krankheitslehre/schock": "Lerne Warnzeichen eines Schocks zu erkennen und die Situation ernst einzuordnen.",
-  "krankheitslehre/sepsis": "Verstehe Sepsis als lebensbedrohlichen Notfall und erkenne frühe Warnzeichen.",
-  "krankheitslehre/sturz": "Lerne Ursachen, Folgen und pflegerische Einschätzung nach Sturzereignissen.",
-  "krankheitslehre/thrombose": "Erkenne Risiken, Symptome und pflegerische Prävention bei Thrombose."
-};
-
-const gruppenConfig = [
-  {
-    key: "grundlagen",
-    title: "Grundlagen",
-    description: "Basiswissen zu Krankheit, Symptomen, Verlauf und pflegerischer Einschätzung.",
-  },
-  {
-    key: "herz",
-    title: "Herz-Kreislauf",
-    description: "Wichtige Erkrankungen und Risiken rund um Kreislauf, Blutdruck und Gefäße.",
-  },
-  {
-    key: "atmung",
-    title: "Atmung und Lunge",
-    description: "Krankheitsbilder mit Atemnot, Infektion, Sauerstoffversorgung und Notfallbezug.",
-  },
-  {
-    key: "verdauung",
-    title: "Verdauungstrakt",
-    description: "Erkrankungen von Magen, Darm, Leber, Galle und Bauchspeicheldrüse.",
-  },
-  {
-    key: "stoffwechsel",
-    title: "Stoffwechsel und Ernährung",
-    description: "Krankheitsbilder mit Blutzucker, Flüssigkeit, Ernährung und Mangelzuständen.",
-  },
-  {
-    key: "niere",
-    title: "Niere und Harnwege",
-    description: "Erkrankungen rund um Ausscheidung, Infektion und Nierenfunktion.",
-  },
-  {
-    key: "nerven",
-    title: "Nervensystem",
-    description: "Neurologische Erkrankungen, Bewusstseinsveränderungen und Pflegeprobleme.",
-  },
-  {
-    key: "notfall",
-    title: "Akute Risiken und Notfälle",
-    description: "Lebensbedrohliche Zustände und Warnzeichen, die schnelles Handeln erfordern.",
-  },
-  {
-    key: "weitere",
-    title: "Weitere Themen",
-    description: "Weitere wichtige Krankheitsbilder und pflegerische Beobachtungsschwerpunkte.",
-  },
-];
-
-const verdauungCluster = [
-  {
-    title: "Magenprobleme",
-    slugs: ["reflux-gerd", "gastritis", "ulcus"],
-  },
-  {
-    title: "Chronische Darmerkrankungen",
-    slugs: ["morbus-crohn", "colitis-ulcerosa"],
-  },
-  {
-    title: "Akutes Abdomen und Notfälle",
-    slugs: ["appendizitis", "divertikulitis", "ileus", "pankreatitis"],
-  },
-  {
-    title: "Leber, Galle und Pankreas",
-    slugs: ["hepatitis", "leberzirrhose", "gallen", "pankreatitis"],
-  },
-  {
-    title: "Onkologie",
-    slugs: ["kolorektales-karzinom"],
-  },
-];
-
-const getVerdauungCluster = (items) => {
-  return verdauungCluster
-    .map((cluster) => ({
-      ...cluster,
-      items: items.filter((topic) =>
-        cluster.slugs.some((slug) => topic.slug.toLowerCase().includes(slug))
-      ),
-    }))
-    .filter((cluster) => cluster.items.length > 0);
-};
-
-const getGroupKey = (topic) => {
+const getGroupKey = (topic): GruppenKey => {
   const slug = topic.slug.toLowerCase();
 
-  if (
-    slug.includes("krankheitslehre-grundlagen") ||
-    slug.includes("akut-vs-chronisch") ||
-    slug.includes("entzuendung") ||
-    slug.includes("infektion") ||
-    slug.includes("fieber") ||
-    slug.includes("schmerz")
-  ) {
-    return "grundlagen";
-  }
-
-  if (
-    slug.includes("herzinsuffizienz") ||
-    slug.includes("hypertonie") ||
-    slug.includes("thrombose") ||
-    slug.includes("oedem")
-  ) {
-    return "herz";
-  }
-
-  if (
-  slug.includes("asthma") ||
-  slug.includes("copd") ||
-  slug.includes("pneumonie") ||
-  slug.includes("lungenembolie")
-) {
-  return "atmung";
-}
-
-  if (
-    slug.includes("verdauungstrakt") ||
-    slug.includes("reflux") ||
-    slug.includes("gastritis") ||
-    slug.includes("ulcus") ||
-    slug.includes("appendizitis") ||
-    slug.includes("divertikulitis") ||
-    slug.includes("morbus-crohn") ||
-    slug.includes("colitis") ||
-    slug.includes("karzinom") ||
-    slug.includes("ileus") ||
-    slug.includes("gallen") ||
-    slug.includes("hepatitis") ||
-    slug.includes("leberzirrhose") ||
-    slug.includes("pankreatitis")
-  ) {
-    return "verdauung";
-  }
-
-  if (
-    slug.includes("diabetes") ||
-    slug.includes("dehydratation") ||
-    slug.includes("mangelernaehrung")
-  ) {
-    return "stoffwechsel";
-  }
-
-  if (
-    slug.includes("niereninsuffizienz") ||
-    slug.includes("harnwegsinfektion")
-  ) {
-    return "niere";
-  }
-
-  if (
-    slug.includes("schlaganfall") ||
-    slug.includes("parkinson") ||
-    slug.includes("delir")
-  ) {
-    return "nerven";
-  }
-
-  if (
-    slug.includes("sepsis") ||
-    slug.includes("schock")
-  ) {
-    return "notfall";
+  for (const [gruppe, begriffe] of Object.entries(gruppenZuordnung)) {
+    if (begriffe.some((begriff) => slug.includes(begriff))) {
+      return gruppe as GruppenKey;
+    }
   }
 
   return "weitere";
@@ -227,7 +54,9 @@ const gruppen = gruppenConfig
 
     <header class="category-hero">
       <span class="category-eyebrow">Themenbereich</span>
+
       <h1>Krankheitslehre</h1>
+
       <p class="category-intro">
         Krankheitslehre hilft dir, Symptome, Risiken und Verläufe besser zu verstehen.
         Du lernst, Veränderungen zu erkennen, pflegerisch einzuordnen und daraus sinnvolle Maßnahmen abzuleiten.
@@ -236,9 +65,11 @@ const gruppen = gruppenConfig
 
     <section class="category-panel">
       <h2>Warum Krankheitslehre wichtig ist</h2>
+
       <div class="info-grid">
         <div class="info-card">
           <h3>Symptome erkennen</h3>
+
           <p>
             Du lernst, typische Krankheitszeichen zu beobachten und fachlich richtig einzuordnen.
           </p>
@@ -246,6 +77,7 @@ const gruppen = gruppenConfig
 
         <div class="info-card">
           <h3>Risiken verstehen</h3>
+
           <p>
             Du erkennst mögliche Komplikationen früher und weißt, wann eine Situation kritisch wird.
           </p>
@@ -253,6 +85,7 @@ const gruppen = gruppenConfig
 
         <div class="info-card">
           <h3>Pflege begründen</h3>
+
           <p>
             Du verbindest Krankheitswissen mit konkretem pflegerischem Handeln und sicheren Entscheidungen.
           </p>
@@ -262,6 +95,7 @@ const gruppen = gruppenConfig
 
     <section class="category-panel">
       <h2>Was du in diesem Bereich können solltest</h2>
+
       <ul class="learning-list">
         <li>Krankheitsbilder mit Ursachen, Symptomen und Verlauf erklären</li>
         <li>wichtige Beobachtungsschwerpunkte sicher benennen</li>
@@ -274,86 +108,47 @@ const gruppen = gruppenConfig
       <div class="topics-head">
         <div>
           <h2>Alle Krankheitslehre-Themen</h2>
+
           <p class="muted">
             Arbeite dich Schritt für Schritt durch wichtige Krankheitsbilder und Pflegebezüge.
           </p>
         </div>
 
         <div class="topic-count-badge">
-          {krankheitslehreThemen.length} {krankheitslehreThemen.length === 1 ? "Thema" : "Themen"}
+          {krankheitslehreThemen.length}
+          {krankheitslehreThemen.length === 1 ? "Thema" : "Themen"}
         </div>
       </div>
 
       {gruppen.length > 0 ? (
         <div class="disease-groups">
-          {gruppen.map((group) => (
-            <section class="disease-group">
-              <div class="disease-group-head">
-                <div>
-                  <h3>{group.title}</h3>
-                  <p>{group.description}</p>
+          {gruppen.map((group) => {
+            const clusterDefinition = clusterRegistry[group.key];
+
+            return (
+              <section class="disease-group">
+                <div class="disease-group-head">
+                  <div>
+                    <h3>{group.title}</h3>
+                    <p>{group.description}</p>
+                  </div>
+
+                  <span class="disease-group-count">
+                    {group.items.length}
+                    {group.items.length === 1 ? "Thema" : "Themen"}
+                  </span>
                 </div>
 
-                <span class="disease-group-count">
-                  {group.items.length} {group.items.length === 1 ? "Thema" : "Themen"}
-                </span>
-              </div>
-
-             {group.key === "verdauung" ? (
-  <div class="cluster-list">
-    {getVerdauungCluster(group.items).map((cluster) => (
-      <section class="cluster-block">
-        <h4>{cluster.title}</h4>
-
-        <div class="topic-grid">
-          {cluster.items.map((topic, index) => (
-            <a class="topic-card" href={`/themen/${topic.slug}/`}>
-              <div class="topic-card-top">
-                <span class="topic-step">Thema {index + 1}</span>
-                <span class="topic-type">Krankheitsbild</span>
-              </div>
-
-              <h3>{topic.data.title}</h3>
-
-              <p>
-                {topic.data.beschreibung ??
-                  topic.data.description ??
-                  topicDescriptions[topic.slug] ??
-                  "Lerne dieses Krankheitsbild mit Symptomen, Risiken und Pflegebezug verständlich einzuordnen."}
-              </p>
-
-              <span class="topic-card-link">Thema öffnen →</span>
-            </a>
-          ))}
-        </div>
-      </section>
-    ))}
-  </div>
+            {clusterDefinition ? (
+  <ClusterSection
+    clusters={getCluster(group.items, clusterDefinition)}
+  />
 ) : (
-  <div class="topic-grid">
-    {group.items.map((topic, index) => (
-      <a class="topic-card" href={`/themen/${topic.slug}/`}>
-        <div class="topic-card-top">
-          <span class="topic-step">Thema {index + 1}</span>
-          <span class="topic-type">Krankheitsbild</span>
-        </div>
-
-        <h3>{topic.data.title}</h3>
-
-        <p>
-          {topic.data.beschreibung ??
-            topic.data.description ??
-            topicDescriptions[topic.slug] ??
-            "Lerne dieses Krankheitsbild mit Symptomen, Risiken und Pflegebezug verständlich einzuordnen."}
-        </p>
-
-        <span class="topic-card-link">Thema öffnen →</span>
-      </a>
-    ))}
-  </div>
+  <TopicGrid items={group.items} />
 )}
-            </section>
-          ))}
+              </section>
+            );
+          })}
         </div>
       ) : (
         <div class="empty-state">
@@ -365,262 +160,254 @@ const gruppen = gruppenConfig
 </BaseLayout>
 
 <style is:global>
-.category-page {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2.5rem 1rem 3.5rem;
-}
+  .category-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2.5rem 1rem 3.5rem;
+  }
 
-.category-hero {
-  max-width: 760px;
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
-}
+  .category-hero {
+    max-width: 760px;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+  }
 
-.category-eyebrow {
-  display: inline-block;
-  margin-bottom: 0.6rem;
-  padding: 0.35rem 0.65rem;
-  border-radius: 999px;
-  background: #eef5ff;
-  color: #2f5f9b;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
+  .category-eyebrow {
+    display: inline-block;
+    margin-bottom: 0.6rem;
+    padding: 0.35rem 0.65rem;
+    border-radius: 999px;
+    background: #eef5ff;
+    color: #2f5f9b;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
 
-.category-hero h1 {
-  margin: 0 0 0.75rem;
-  font-size: clamp(2rem, 3vw, 2.7rem);
-  line-height: 1.12;
-}
+  .category-hero h1 {
+    margin: 0 0 0.75rem;
+    font-size: clamp(2rem, 3vw, 2.7rem);
+    line-height: 1.12;
+  }
 
-.category-intro {
-  max-width: 58ch;
-  margin: 0;
-  color: #5b6b7a;
-  line-height: 1.7;
-}
+  .category-intro {
+    max-width: 58ch;
+    margin: 0;
+    color: #5b6b7a;
+    line-height: 1.7;
+  }
 
-.category-panel + .category-panel {
-  margin-top: 2rem;
-}
+  .category-panel + .category-panel {
+    margin-top: 2rem;
+  }
 
-.category-panel {
-  background: #ffffff;
-  border: 1px solid #e5e5e5;
-  border-radius: 20px;
-  padding: 1.5rem;
-  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.04);
-}
+  .category-panel {
+    padding: 1.5rem;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 20px;
+    box-shadow: 0 10px 24px rgba(24, 50, 74, 0.04);
+  }
 
-.category-panel h2 {
-  margin-top: 0;
-  margin-bottom: 0.9rem;
-}
+  .category-panel h2 {
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+  }
 
-.info-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-
-.info-card {
-  background: #f8fbff;
-  border: 1px solid #dbe7f5;
-  border-radius: 16px;
-  padding: 1.1rem;
-}
-
-.info-card h3 {
-  margin: 0 0 0.45rem;
-  font-size: 1rem;
-}
-
-.info-card p {
-  margin: 0;
-  color: #556270;
-  line-height: 1.55;
-}
-
-.learning-list {
-  margin: 0;
-  padding-left: 1.2rem;
-}
-
-.learning-list li + li {
-  margin-top: 0.55rem;
-}
-
-.topics-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.topic-count-badge,
-.disease-group-count {
-  flex-shrink: 0;
-  padding: 0.5rem 0.8rem;
-  border-radius: 999px;
-  background: #eef5ff;
-  color: #2f5f9b;
-  font-size: 0.9rem;
-  font-weight: 700;
-}
-
-.disease-groups {
-  display: grid;
-  gap: 2rem;
-}
-
-.disease-group {
-  padding-top: 1.25rem;
-  border-top: 1px solid #e5e7eb;
-}
-
-.disease-group:first-child {
-  padding-top: 0;
-  border-top: 0;
-}
-
-.disease-group-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.disease-group-head h3 {
-  margin: 0 0 0.35rem;
-  font-size: 1.25rem;
-  color: #18324a;
-}
-
-.disease-group-head p {
-  margin: 0;
-  color: #556270;
-  line-height: 1.6;
-}
-
-.topic-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-
-.topic-card,
-.topic-card:link,
-.topic-card:visited {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  min-height: 250px;
-  padding: 1.35rem;
-  border-radius: 18px;
-  border: 1px solid #e5e5e5;
-  background: #ffffff;
-  text-decoration: none;
-  color: inherit !important;
-  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
-  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
-}
-
-.topic-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 30px rgba(24, 50, 74, 0.08);
-  border-color: #cfdceb;
-}
-
-.topic-card-top {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 0.9rem;
-}
-
-.topic-step,
-.topic-type {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.32rem 0.65rem;
-  border-radius: 999px;
-  font-size: 0.78rem;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.topic-step {
-  background: #eef5ff;
-  color: #18324a;
-}
-
-.topic-type {
-  background: #fff4e8;
-  color: #9a3412;
-}
-
-.topic-card h3 {
-  margin: 0 0 0.75rem 0;
-  font-size: 1.08rem;
-  line-height: 1.35;
-  word-break: break-word;
-  overflow-wrap: anywhere;
-}
-
-.topic-card p {
-  margin: 0;
-  color: #556270 !important;
-  line-height: 1.6;
-  word-break: break-word;
-  overflow-wrap: anywhere;
-}
-
-.topic-card-link {
-  margin-top: auto;
-  color: #18324a;
-  font-weight: 700;
-}
-
-.empty-state {
-  padding: 1rem 0 0;
-  color: #5b6b7a;
-}
-
-@media (max-width: 900px) {
   .info-grid {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .info-card {
+    padding: 1.1rem;
+    background: #f8fbff;
+    border: 1px solid #dbe7f5;
+    border-radius: 16px;
+  }
+
+  .info-card h3 {
+    margin: 0 0 0.45rem;
+    font-size: 1rem;
+  }
+
+  .info-card p {
+    margin: 0;
+    color: #556270;
+    line-height: 1.55;
+  }
+
+  .learning-list {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
+  .learning-list li + li {
+    margin-top: 0.55rem;
+  }
+
+  .topics-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .topic-count-badge,
+  .disease-group-count {
+    flex-shrink: 0;
+    padding: 0.5rem 0.8rem;
+    background: #eef5ff;
+    border-radius: 999px;
+    color: #2f5f9b;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  .disease-groups {
+    display: grid;
+    gap: 2rem;
+  }
+
+  .disease-group {
+    padding-top: 1.25rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .disease-group:first-child {
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  .disease-group-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .disease-group-head h3 {
+    margin: 0 0 0.35rem;
+    color: #18324a;
+    font-size: 1.25rem;
+  }
+
+  .disease-group-head p {
+    margin: 0;
+    color: #556270;
+    line-height: 1.6;
   }
 
   .topic-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
   }
 
-  .topics-head,
-  .disease-group-head {
+  .topic-card,
+  .topic-card:link,
+  .topic-card:visited {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
+    min-height: 250px;
+    padding: 1.35rem;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 18px;
+    box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+    color: inherit !important;
+    text-decoration: none;
+    transition:
+      transform 0.15s ease,
+      box-shadow 0.15s ease,
+      border-color 0.15s ease;
   }
-}
 
-.cluster-list {
-  display: grid;
-  gap: 1.6rem;
-}
-
-.cluster-block h4 {
-  margin: 0 0 0.8rem;
-  color: #18324a;
-  font-size: 1.05rem;
-}
-
-@media (max-width: 640px) {
-  .topic-grid {
-    grid-template-columns: 1fr;
+  .topic-card:hover {
+    transform: translateY(-4px);
+    border-color: #cfdceb;
+    box-shadow: 0 16px 30px rgba(24, 50, 74, 0.08);
   }
-}
+
+  .topic-card-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .topic-step,
+  .topic-type {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.32rem 0.65rem;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .topic-step {
+    background: #eef5ff;
+    color: #18324a;
+  }
+
+  .topic-type {
+    background: #fff4e8;
+    color: #9a3412;
+  }
+
+  .topic-card h3 {
+    margin: 0 0 0.75rem;
+    font-size: 1.08rem;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .topic-card p {
+    margin: 0;
+    color: #556270 !important;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .topic-card-link {
+    margin-top: auto;
+    color: #18324a;
+    font-weight: 700;
+  }
+
+  .empty-state {
+    padding: 1rem 0 0;
+    color: #5b6b7a;
+  }
+
+  @media (max-width: 900px) {
+    .info-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .topic-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .topics-head,
+    .disease-group-head {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .topic-grid {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>

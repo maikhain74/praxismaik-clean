@@ -1,0 +1,23 @@
+---
+import { topicDescriptions } from "../../data/krankheitslehre/topicDescriptions";
+
+const { topic, index } = Astro.props;
+---
+
+<a class="topic-card" href={`/themen/${topic.slug}/`}>
+  <div class="topic-card-top">
+    <span class="topic-step">Thema {index + 1}</span>
+    <span class="topic-type">Krankheitsbild</span>
+  </div>
+
+  <h3>{topic.data.title}</h3>
+
+  <p>
+    {topic.data.beschreibung ??
+      topic.data.description ??
+      topicDescriptions[topic.slug] ??
+      "Lerne dieses Krankheitsbild mit Symptomen, Risiken und Pflegebezug verständlich einzuordnen."}
+  </p>
+
+  <span class="topic-card-link">Thema öffnen →</span>
+</a>

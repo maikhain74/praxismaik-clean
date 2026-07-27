@@ -102,16 +102,23 @@ const premiumExamQuizCount = premiumExamQuiz.length;
         </div>
       ) : (
         <>
-          <div class="premium-eyebrow">
-            Über 330.000 Videoaufrufe • Praxisnahes Lernen für die generalistische Pflegeausbildung
-          </div>
+        <div class="premium-eyebrow">
+  Für Pflegeazubis • Praxisbesuch • Abschlussprüfung • Klinisches Denken
+</div>
 
-         <h1>
-  Bestehe deine Praxisbesuche und deine Abschlussprüfung sicher und entwickle dich zu einer selbstbewussten Pflegefachkraft.
+<h1>
+  Du musst in der Pflege nicht alles wissen. Du musst wissen, was jetzt richtig ist.
 </h1>
 
+<p class="premium-brand-statement">
+  Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+  Gute Pflege beginnt mit dem richtigen Denken.
+</p>
+
 <p class="premium-lead">
-  Mit PraxisMaik lernst du nicht nur Antworten auswendig. Du verstehst pflegerische Zusammenhänge, kannst Entscheidungen sicher begründen und gehst ruhiger in Praxisbesuche, Fallsituationen und die Abschlussprüfung.
+  Mit der PraxisMaik-Methode lernst du, pflegerische Situationen zu verstehen,
+  Prioritäten zu setzen und Entscheidungen fachlich sicher zu begründen.
+  So gehst du ruhiger in Praxisbesuche, Fallsituationen und deine Abschlussprüfung.
 </p>
 
 <div class="premium-hero-trust">
@@ -136,22 +143,22 @@ const premiumExamQuizCount = premiumExamQuiz.length;
   </div>
 </div>
 
-    <div class="premium-above-fold-cta">
-            <a
-              href="/premium-interesse"
-              class="btn premium-main-btn"
-              data-ga-event="premium_above_fold_cta_click"
-            >
-              Jetzt Premium dauerhaft freischalten
-            </a>
+<div class="premium-above-fold-cta">
+  <a
+    href="/premium-interesse"
+    class="btn premium-main-btn"
+    data-ga-event="premium_above_fold_cta_click"
+  >
+    Jetzt Premium dauerhaft freischalten
+  </a>
 
-        <p class="premium-subtitle">
-  39 € einmalig · Kein Abo · Sofortiger Zugriff auf über 350 Premium-Inhalte · Dauerhaft freigeschaltet
-</p>
-        </div>
+  <p class="premium-subtitle">
+    Der komplette Lernweg für Pflegeazubis · 39 € einmalig · Kein Abo · Lebenslanger Zugriff
+  </p>
+</div>
 
-        <p class="premium-risk-free">
-  ✓ 39 € einmalig, kein Abo, keine versteckten Kosten, lebenslanger Zugriff.
+<p class="premium-risk-free">
+  ✓ Einmal bezahlen · Sofort freigeschaltet · Dauerhaft nutzen
 </p>
 
 <div class="premium-time-saving">
@@ -201,6 +208,60 @@ const premiumExamQuizCount = premiumExamQuiz.length;
   <p>
     PraxisMaik bündelt alle wichtigen Inhalte an einem Ort – damit du weniger suchst und mehr verstehst.
   </p>
+
+</section>
+
+<section class="premium-learning-path">
+
+  <div class="section-headline">
+    <h2>Der PraxisMaik-Lernweg</h2>
+
+    <p class="section-intro">
+      Premium ist keine Sammlung von Lernskripten.
+      Es ist ein strukturierter Lernweg, der dich Schritt für Schritt sicherer
+      durch Praxisbesuche, Fallsituationen und die Abschlussprüfung führt.
+    </p>
+  </div>
+
+  <div class="premium-learning-grid">
+
+    <div class="learning-step">
+      <div class="learning-number">1</div>
+      <h3>Verstehen</h3>
+      <p>
+        Lerne Krankheiten, Pflegeprozesse und pflegerische Zusammenhänge
+        verständlich statt auswendig.
+      </p>
+    </div>
+
+    <div class="learning-step">
+      <div class="learning-number">2</div>
+      <h3>Anwenden</h3>
+      <p>
+        Trainiere echte Praxisbesuche, Pflegeplanungen und Fallsituationen
+        mit nachvollziehbaren Lösungen.
+      </p>
+    </div>
+
+    <div class="learning-step">
+      <div class="learning-number">3</div>
+      <h3>Begründen</h3>
+      <p>
+        Lerne Prioritäten zu setzen und deine pflegerischen Entscheidungen
+        fachlich sicher zu begründen.
+      </p>
+    </div>
+
+    <div class="learning-step">
+      <div class="learning-number">4</div>
+      <h3>Bestehen</h3>
+      <p>
+        Gehe ruhiger und sicherer in Praxisbesuche,
+        Abschlussprüfung und deinen späteren Berufsalltag.
+      </p>
+    </div>
+
+  </div>
 
 </section>
 
@@ -639,6 +700,19 @@ const premiumExamQuizCount = premiumExamQuiz.length;
     line-height: 1.75;
   }
 
+  .premium-brand-statement {
+  max-width: 680px;
+  margin: 1.2rem 0;
+  padding: 1rem 1.2rem;
+  border-left: 5px solid #e67e22;
+  border-radius: 0 14px 14px 0;
+  background: #fff8f1;
+  color: #18324a;
+  font-size: 1.08rem;
+  font-weight: 800;
+  line-height: 1.65;
+}
+
 .premium-hero-trust {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -852,6 +926,107 @@ const premiumExamQuizCount = premiumExamQuiz.length;
     color: #556270;
     line-height: 1.5;
   }
+
+  /* ===========================
+   PraxisMaik-Lernweg
+=========================== */
+
+.premium-learning-path {
+  margin: 3.5rem 0;
+  padding: 2.5rem;
+  border: 1px solid rgba(230, 126, 34, 0.18);
+  border-radius: 26px;
+  background: #fff8f1;
+  box-shadow: 0 14px 34px rgba(24, 50, 74, 0.07);
+}
+
+.premium-learning-path .section-headline {
+  max-width: 760px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.premium-learning-path .section-headline h2 {
+  margin: 0 0 0.8rem;
+  color: #18324a;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  line-height: 1.2;
+}
+
+.premium-learning-path .section-intro {
+  margin: 0;
+  color: #556270;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.premium-learning-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.learning-step {
+  position: relative;
+  padding: 1.5rem 1.25rem;
+  border: 1px solid rgba(230, 126, 34, 0.14);
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 8px 22px rgba(24, 50, 74, 0.05);
+}
+
+.learning-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  background: #e67e22;
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.learning-step h3 {
+  margin: 0 0 0.6rem;
+  color: #18324a;
+  font-size: 1.2rem;
+}
+
+.learning-step p {
+  margin: 0;
+  color: #556270;
+  line-height: 1.65;
+}
+
+@media (max-width: 900px) {
+  .premium-learning-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .premium-learning-path {
+    margin: 2.5rem 0;
+    padding: 1.5rem 1rem;
+    border-radius: 22px;
+  }
+
+  .premium-learning-path .section-headline {
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+
+  .premium-learning-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .learning-step {
+    padding: 1.25rem;
+  }
+}
 
   .premium-benefits-grid {
     display: grid;

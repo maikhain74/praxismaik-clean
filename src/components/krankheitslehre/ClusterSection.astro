@@ -1,0 +1,45 @@
+---
+import TopicGrid from "./TopicGrid.astro";
+
+type Topic = {
+  slug: string;
+  data: {
+    title: string;
+    [key: string]: unknown;
+  };
+};
+
+type Cluster = {
+  title: string;
+  items: Topic[];
+};
+
+interface Props {
+  clusters: Cluster[];
+}
+
+const { clusters } = Astro.props;
+---
+
+<div class="cluster-list">
+  {clusters.map((cluster) => (
+    <section class="cluster-block">
+      <h4>{cluster.title}</h4>
+
+      <TopicGrid items={cluster.items} />
+    </section>
+  ))}
+</div>
+
+<style>
+  .cluster-list {
+    display: grid;
+    gap: 1.6rem;
+  }
+
+  .cluster-block h4 {
+    margin: 0 0 0.8rem;
+    color: #18324a;
+    font-size: 1.05rem;
+  }
+</style>
