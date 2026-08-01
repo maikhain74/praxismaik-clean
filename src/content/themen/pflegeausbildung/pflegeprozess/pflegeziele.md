@@ -223,3 +223,168 @@ Sie geben der Pflege eine klare Richtung und bilden die Grundlage für die Auswa
 ## Merksatz
 
 **Pflegeziele sagen, was erreicht werden soll. Pflegemaßnahmen beschreiben, wie dieses Ziel erreicht wird.**
+
+---
+
+## So geht es jetzt weiter
+
+Du kennst jetzt die Grundlagen von Pflegezielen und weißt, warum sie dem Pflegeprozess eine klare Richtung geben.
+
+Für die generalistische Pflegeausbildung reicht dieses Wissen jedoch nicht aus.
+
+Im Pflegealltag, in der Praxisanleitung und spätestens in der praktischen Abschlussprüfung musst du Pflegeziele individuell, realistisch und überprüfbar formulieren sowie fachlich begründen können.
+
+Genau diese Kompetenzen entwickelst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Entwickle die Kompetenzen für Pflegealltag und Abschlussprüfung
+
+Pflegeziele sind mehr als gut formulierte Sätze.
+
+Sie verbinden Pflegeprobleme und Ressourcen mit den geplanten Pflegemaßnahmen und ermöglichen später eine nachvollziehbare Evaluation.
+
+---
+
+## Typische Prüfungsfrage
+
+**Praxisanleiter oder Prüfer:**
+
+„Eine Bewohnerin kann nach einer Hüftoperation nur mit Unterstützung aufstehen. Formulieren Sie ein geeignetes Pflegeziel und begründen Sie Ihre Formulierung.“
+
+### Musterantwort
+
+„Frau Schneider kann innerhalb von sieben Tagen mit ihrem Rollator selbstständig und sicher vom Bett bis zur Zimmertür gehen.
+
+Das Ziel ist konkret, überprüfbar, realistisch und zeitlich festgelegt. Es beschreibt den gewünschten Zustand der Bewohnerin und nicht die pflegerische Maßnahme.“
+
+---
+
+## Warum diese Antwort überzeugt
+
+Diese Antwort zeigt, dass du:
+
+- Pflegeziel und Pflegemaßnahme sicher unterscheidest.
+- ein individuelles Ergebnis formulierst.
+- die vorhandenen Ressourcen berücksichtigst.
+- das Ziel überprüfbar und zeitlich festlegst.
+- die SMART-Regel anwenden kannst.
+
+Genau darauf achten Praxisanleiter und Prüfer.
+
+---
+
+## Häufige Fehler
+
+Viele Auszubildende ...
+
+- formulieren Maßnahmen statt Ziele.
+- schreiben Ziele zu allgemein.
+- vergessen den zeitlichen Rahmen.
+- formulieren unrealistische Ergebnisse.
+- berücksichtigen die Ressourcen der Person nicht.
+- wählen Ziele, die später nicht überprüft werden können.
+
+---
+
+## Entscheidungssituation
+
+Herr Berger ist nach einem Schlaganfall beim Ankleiden eingeschränkt.
+
+Den Oberkörper kann er bereits selbstständig anziehen. Beim Anziehen der Hose benötigt er Unterstützung.
+
+**Welches Pflegeziel ist hier fachlich sinnvoll?**
+
+Überlege zunächst selbst.
+
+---
+
+## Fachliche Lösung
+
+Ein geeignetes Pflegeziel lautet:
+
+**Herr Berger zieht innerhalb von zehn Tagen seinen Oberkörper selbstständig an und beteiligt sich beim Anziehen der Hose aktiv an den für ihn möglichen Handlungsschritten.**
+
+Dieses Ziel berücksichtigt sowohl seine Einschränkung als auch seine vorhandenen Ressourcen.
+
+---
+
+## Fachliche Begründung
+
+Ein gutes Pflegeziel orientiert sich an der individuellen Situation der pflegebedürftigen Person.
+
+Es fordert nicht vollständige Selbstständigkeit, wenn diese aktuell unrealistisch ist. Gleichzeitig fördert es vorhandene Fähigkeiten und verhindert unnötige Abhängigkeit.
+
+---
+
+## Transfer in den Pflegealltag
+
+Eine Kollegin dokumentiert als Pflegeziel:
+
+> „Frau Müller wird zweimal täglich mobilisiert.“
+
+Wie würdest du diese Formulierung fachlich korrigieren?
+
+### Fachliche Einordnung
+
+Die Aussage beschreibt eine Pflegemaßnahme, kein Pflegeziel.
+
+Ein mögliches Pflegeziel wäre:
+
+**Frau Müller kann innerhalb von sieben Tagen mit Unterstützung zweimal täglich sicher vom Bett in den Sessel wechseln.**
+
+Das Ziel beschreibt den gewünschten Zustand der pflegebedürftigen Person und kann später überprüft werden.
+
+---
+
+## Das solltest du für die Abschlussprüfung sicher beherrschen
+
+Nach diesem Premium-Lernskript kannst du:
+
+✅ Pflegeziele und Pflegemaßnahmen sicher unterscheiden.
+
+✅ individuelle Pflegeziele formulieren.
+
+✅ die SMART-Regel fachlich anwenden.
+
+✅ kurzfristige und langfristige Pflegeziele unterscheiden.
+
+✅ Ressourcen bei der Zielformulierung berücksichtigen.
+
+✅ Pflegeziele fachlich begründen und überprüfen.
+
+---
+
+## Dein nächster Schritt auf deinem Lernweg
+
+Du hast die Grundlagen der Pflegeziele verstanden.
+
+Jetzt entwickelst du Schritt für Schritt die Kompetenzen, die du für den Pflegealltag und die Abschlussprüfung brauchst.
+
+### 🧠 Lernkarten
+
+Wiederhole die SMART-Regel und die Merkmale guter Pflegeziele aktiv.
+
+### 🩺 Passender Prüfungsfall
+
+Formuliere individuelle Pflegeziele anhand einer realistischen Pflegesituation.
+
+### 🎓 Examensquiz
+
+Überprüfe, ob du Pflegeziele sicher von Pflegemaßnahmen unterscheiden und korrekt formulieren kannst.
+
+### 📚 Passendes Premium-E-Book
+
+Vertiefe dein Wissen zu Pflegezielen, Pflegemaßnahmen und professioneller Pflegeplanung.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**

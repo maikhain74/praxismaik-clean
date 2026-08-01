@@ -209,3 +209,182 @@ Pflegefachpersonen orientieren sich an der Pflegeplanung, beobachten die Situati
 ## Merksatz
 
 **Geplant wird auf dem Papier. Wirksam wird Pflege erst durch die Durchführung.**
+
+---
+
+## So geht es jetzt weiter
+
+Du kennst jetzt die Grundlagen der Durchführung und weißt, warum geplante Pflegemaßnahmen immer an die aktuelle Situation angepasst werden müssen.
+
+Für die generalistische Pflegeausbildung reicht dieses Wissen jedoch nicht aus.
+
+Im Pflegealltag, in der Praxisanleitung und spätestens in der praktischen Abschlussprüfung musst du Pflegemaßnahmen sicher umsetzen, Veränderungen erkennen, Prioritäten setzen und Abweichungen fachlich begründen können.
+
+Genau diese Kompetenzen entwickelst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Entwickle die Kompetenzen für Pflegealltag und Abschlussprüfung
+
+Die Durchführung bedeutet nicht, eine Pflegeplanung starr abzuarbeiten.
+
+Professionelle Pflege verlangt, dass du die geplanten Maßnahmen sicher umsetzt, die aktuelle Situation beobachtest und dein Handeln bei Veränderungen fachlich anpasst.
+
+---
+
+## Typische Prüfungsfrage
+
+**Praxisanleiter oder Prüfer:**
+
+„Herr Schneider soll laut Pflegeplanung mobilisiert werden. Er klagt jedoch über starke Schmerzen und Schwindel. Wie gehen Sie vor und wie begründen Sie Ihre Entscheidung?“
+
+### Musterantwort
+
+„Ich führe die Mobilisation nicht automatisch wie geplant durch.
+
+Zunächst schätze ich die aktuelle Situation ein. Ich erfasse die Schmerzen, kontrolliere relevante Vitalzeichen, beobachte den Allgemeinzustand und prüfe mögliche Ursachen des Schwindels.
+
+Anschließend entscheide ich, ob die Mobilisation angepasst, verschoben oder vorerst unterbrochen werden muss. Bei Auffälligkeiten informiere ich die zuständige Pflegefachperson beziehungsweise den Arzt.
+
+Meine Beobachtungen, die Entscheidung und die Abweichung von der Pflegeplanung dokumentiere ich nachvollziehbar.“
+
+---
+
+## Warum diese Antwort überzeugt
+
+Diese Antwort zeigt, dass du:
+
+- die Pflegeplanung als Orientierung verstehst.
+- die aktuelle Situation der pflegebedürftigen Person berücksichtigst.
+- Risiken erkennst.
+- Prioritäten setzen kannst.
+- Abweichungen fachlich begründest.
+- dein Handeln nachvollziehbar dokumentierst.
+
+Genau darauf achten Praxisanleiter und Prüfer.
+
+---
+
+## Häufige Fehler
+
+Viele Auszubildende ...
+
+- arbeiten die Pflegeplanung starr ab.
+- ignorieren Veränderungen im Gesundheitszustand.
+- führen Maßnahmen trotz erkennbarer Risiken durch.
+- weichen von der Planung ab, ohne dies zu begründen.
+- dokumentieren Besonderheiten nicht.
+- verlieren die Pflegeziele aus dem Blick.
+
+---
+
+## Entscheidungssituation
+
+Frau Meier soll laut Pflegeplanung morgens geduscht werden.
+
+Beim Betreten des Zimmers wirkt sie blass, schwach und kurzatmig.
+
+**Wie gehst du vor?**
+
+Überlege zunächst selbst.
+
+---
+
+## Fachliche Lösung
+
+Ich beginne nicht sofort mit dem Duschen.
+
+Zunächst beurteile ich den aktuellen Zustand von Frau Meier.
+
+Dazu gehören beispielsweise:
+
+- Bewusstseinslage einschätzen.
+- Atmung beobachten.
+- Vitalzeichen kontrollieren.
+- Beschwerden erfragen.
+- mögliche akute Gefährdungen erkennen.
+- bei Auffälligkeiten Unterstützung hinzuziehen.
+
+Die geplante Körperpflege wird angepasst oder verschoben, bis die Situation fachlich geklärt ist.
+
+---
+
+## Fachliche Begründung
+
+Die aktuelle Sicherheit der pflegebedürftigen Person hat Vorrang vor einer geplanten Maßnahme.
+
+Die Pflegeplanung darf nicht starr umgesetzt werden, wenn sich der Zustand verändert hat.
+
+Professionelle Durchführung bedeutet deshalb, Planung, Beobachtung und situative Entscheidung miteinander zu verbinden.
+
+---
+
+## Transfer in den Pflegealltag
+
+Eine Kollegin sagt:
+
+> „Das steht so in der Pflegeplanung. Dann müssen wir es auch genau so machen.“
+
+Wie würdest du reagieren?
+
+### Fachliche Einordnung
+
+Die Pflegeplanung gibt eine fachliche Orientierung.
+
+Sie ersetzt jedoch nicht die aktuelle pflegerische Einschätzung.
+
+Wenn sich der Zustand der pflegebedürftigen Person verändert, müssen Maßnahmen angepasst und Abweichungen nachvollziehbar dokumentiert werden.
+
+---
+
+## Das solltest du für die Abschlussprüfung sicher beherrschen
+
+Nach diesem Premium-Lernskript kannst du:
+
+✅ geplante Pflegemaßnahmen sicher durchführen.
+
+✅ die aktuelle Situation während der Pflege beobachten.
+
+✅ Veränderungen frühzeitig erkennen.
+
+✅ Maßnahmen fachlich anpassen.
+
+✅ Abweichungen von der Pflegeplanung begründen.
+
+✅ die Durchführung und Besonderheiten nachvollziehbar dokumentieren.
+
+---
+
+## Dein nächster Schritt auf deinem Lernweg
+
+Du hast die Grundlagen der Durchführung verstanden.
+
+Jetzt entwickelst du Schritt für Schritt die Kompetenzen, die du für den Pflegealltag und die Abschlussprüfung brauchst.
+
+### 🧠 Lernkarten
+
+Wiederhole die wichtigsten Aufgaben während der Durchführung.
+
+### 🩺 Passender Prüfungsfall
+
+Entscheide in einer realistischen Pflegesituation, ob eine geplante Maßnahme durchgeführt, angepasst oder unterbrochen werden muss.
+
+### 🎓 Examensquiz
+
+Überprüfe, ob du Veränderungen erkennst und dein Vorgehen fachlich begründen kannst.
+
+### 📚 Passendes Premium-E-Book
+
+Vertiefe dein Wissen zum Pflegeprozess, zur Durchführung und zur professionellen Entscheidungsfindung.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**

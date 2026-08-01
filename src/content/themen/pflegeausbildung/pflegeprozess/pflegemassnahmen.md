@@ -206,3 +206,184 @@ Dadurch werden Fehler vermieden und die Pflegeziele können zuverlässiger errei
 ## Merke
 
 **Pflegeziele sagen, was erreicht werden soll. Pflegemaßnahmen beschreiben, wie dieses Ziel erreicht wird.**
+
+---
+
+## So geht es jetzt weiter
+
+Du kennst jetzt die Grundlagen der Pflegemaßnahmen und weißt, warum sie konkret, individuell und nachvollziehbar geplant werden müssen.
+
+Für die generalistische Pflegeausbildung reicht dieses Wissen jedoch nicht aus.
+
+Im Pflegealltag, in der Praxisanleitung und spätestens in der praktischen Abschlussprüfung musst du geeignete Pflegemaßnahmen selbstständig auswählen, vollständig formulieren und fachlich begründen können.
+
+Genau diese Kompetenzen entwickelst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Entwickle die Kompetenzen für Pflegealltag und Abschlussprüfung
+
+Pflegemaßnahmen sind mehr als einzelne Tätigkeiten.
+
+Sie müssen sich aus dem Pflegeproblem und dem Pflegeziel ableiten, individuell zur pflegebedürftigen Person passen und so konkret formuliert sein, dass alle Beteiligten eindeutig wissen, was zu tun ist.
+
+---
+
+## Typische Prüfungsfrage
+
+**Praxisanleiter oder Prüfer:**
+
+„Frau Schneider kann nach einer Hüftoperation nur mit Unterstützung aufstehen. Formulieren Sie zwei geeignete Pflegemaßnahmen und begründen Sie Ihre Auswahl.“
+
+### Musterantwort
+
+„Frau Schneider wird morgens und nachmittags mit ihrem Rollator und Unterstützung einer Pflegefachperson vom Bett bis zur Zimmertür mobilisiert.
+
+Vor und nach jeder Mobilisation wird ihre Schmerzintensität mithilfe der NRS erfasst und dokumentiert.
+
+Die Maßnahmen unterstützen das Pflegeziel, ihre Mobilität schrittweise zu verbessern. Gleichzeitig wird berücksichtigt, dass Schmerzen die Mobilisation erschweren und deshalb regelmäßig eingeschätzt werden müssen.“
+
+---
+
+## Warum diese Antwort überzeugt
+
+Diese Antwort zeigt, dass du:
+
+- die Maßnahmen aus dem Pflegeproblem und dem Pflegeziel ableitest.
+- die 5-W-Fragen berücksichtigst.
+- die Maßnahmen individuell formulierst.
+- Risiken und Belastungen einbeziehst.
+- dein pflegerisches Handeln fachlich begründest.
+
+Genau darauf achten Praxisanleiter und Prüfer.
+
+---
+
+## Häufige Fehler
+
+Viele Auszubildende ...
+
+- formulieren Maßnahmen zu allgemein.
+- nennen Pflegeziele statt Pflegemaßnahmen.
+- vergessen Häufigkeit, Zeitpunkt oder Zuständigkeit.
+- planen Maßnahmen ohne Bezug zum Pflegeproblem.
+- berücksichtigen Ressourcen und Risiken nicht.
+- verwenden Formulierungen, die später nicht eindeutig überprüfbar sind.
+
+---
+
+## Entscheidungssituation
+
+Herr Berger ist nach einem Schlaganfall beim Ankleiden eingeschränkt.
+
+Den Oberkörper kann er selbstständig anziehen. Beim Anziehen der Hose benötigt er Unterstützung.
+
+Eine Pflegekraft schlägt vor:
+
+> „Wir übernehmen das Ankleiden vollständig, dann geht es schneller.“
+
+**Wie planst du die Pflegemaßnahmen fachlich sinnvoll?**
+
+Überlege zunächst selbst.
+
+---
+
+## Fachliche Lösung
+
+Geeignete Pflegemaßnahmen sind:
+
+- Herr Berger zieht den Oberkörper morgens selbstständig an.
+- Beim Anziehen der Hose erhält er nur bei den Handlungsschritten Unterstützung, die er nicht selbstständig bewältigen kann.
+- Die Pflegekraft gibt ihm ausreichend Zeit und motiviert ihn zur Eigenaktivität.
+- Fortschritte und bestehender Unterstützungsbedarf werden dokumentiert.
+
+---
+
+## Fachliche Begründung
+
+Die Maßnahmen orientieren sich an den vorhandenen Ressourcen von Herrn Berger.
+
+Professionelle Pflege übernimmt nicht automatisch alle Tätigkeiten. Sie unterstützt gezielt dort, wo Hilfe notwendig ist, und fördert gleichzeitig Selbstständigkeit und Eigenaktivität.
+
+Dadurch wird unnötige Abhängigkeit vermieden.
+
+---
+
+## Transfer in den Pflegealltag
+
+In der Pflegeplanung steht lediglich:
+
+> „Mobilisation nach Bedarf.“
+
+Warum ist diese Formulierung problematisch?
+
+### Fachliche Einordnung
+
+Die Formulierung ist nicht eindeutig.
+
+Es bleibt offen:
+
+- welche Mobilisation durchgeführt wird.
+- wie sie erfolgt.
+- wann sie stattfindet.
+- wie häufig sie durchgeführt wird.
+- wer sie übernimmt.
+- welche Unterstützung notwendig ist.
+
+Eine fachlich bessere Formulierung wäre:
+
+**Herr Müller wird morgens und nachmittags mit seinem Rollator und Unterstützung einer Pflegefachperson über den Stationsflur mobilisiert.**
+
+---
+
+## Das solltest du für die Abschlussprüfung sicher beherrschen
+
+Nach diesem Premium-Lernskript kannst du:
+
+✅ Pflegemaßnahmen aus Pflegeproblemen und Pflegezielen ableiten.
+
+✅ die 5-W-Fragen sicher anwenden.
+
+✅ Maßnahmen konkret und nachvollziehbar formulieren.
+
+✅ Pflegeziele und Pflegemaßnahmen unterscheiden.
+
+✅ Ressourcen, Risiken und individuelle Bedürfnisse berücksichtigen.
+
+✅ deine Maßnahmen fachlich begründen.
+
+---
+
+## Dein nächster Schritt auf deinem Lernweg
+
+Du hast die Grundlagen der Pflegemaßnahmen verstanden.
+
+Jetzt entwickelst du Schritt für Schritt die Kompetenzen, die du für den Pflegealltag und die Abschlussprüfung brauchst.
+
+### 🧠 Lernkarten
+
+Wiederhole die 5-W-Fragen und die Anforderungen an gute Pflegemaßnahmen.
+
+### 🩺 Passender Prüfungsfall
+
+Plane geeignete Pflegemaßnahmen anhand einer realistischen Pflegesituation.
+
+### 🎓 Examensquiz
+
+Überprüfe, ob du vollständige und fachlich passende Pflegemaßnahmen formulieren kannst.
+
+### 📚 Passendes Premium-E-Book
+
+Vertiefe dein Wissen zu Pflegezielen, Pflegemaßnahmen und professioneller Pflegeplanung.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**
