@@ -202,3 +202,177 @@ Dies beschreibt eine vorhandene Fähigkeit und damit eine Ressource.
 ## Merksatz
 
 **Pflegeprobleme zeigen, wobei Hilfe benötigt wird. Ressourcen zeigen, was die Person noch selbst kann.**
+
+---
+
+## So geht es jetzt weiter
+
+Du kennst jetzt die Grundlagen von Pflegeproblemen und Ressourcen und weißt, warum beide für den Pflegeprozess unverzichtbar sind.
+
+Für die generalistische Pflegeausbildung reicht dieses Wissen jedoch nicht aus.
+
+Im Pflegealltag, in der Praxisanleitung und spätestens in der praktischen Abschlussprüfung musst du Pflegeprobleme sicher erkennen, Ressourcen gezielt fördern und daraus fachlich begründete Entscheidungen ableiten können.
+
+Genau diese Kompetenzen entwickelst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Entwickle die Kompetenzen für Pflegealltag und Abschlussprüfung
+
+Pflegeprobleme und Ressourcen zu erkennen ist eine der wichtigsten Fähigkeiten einer Pflegefachperson.
+
+Nur wenn du beide richtig einschätzt, kannst du passende Pflegeziele formulieren und wirksame Pflegemaßnahmen planen.
+
+---
+
+## Typische Prüfungsfrage
+
+**Praxisanleiter oder Prüfer:**
+
+„Sie haben die Informationssammlung abgeschlossen. Wie erkennen Sie daraus Pflegeprobleme und Ressourcen und warum sind beide für die weitere Pflegeplanung wichtig?“
+
+### Musterantwort
+
+„Nach der Informationssammlung werte ich alle erhobenen Informationen systematisch aus.
+
+Ich erkenne bestehende Pflegeprobleme, mögliche Risiken und vorhandene Ressourcen der pflegebedürftigen Person.
+
+Pflegeprobleme zeigen mir, in welchen Bereichen Unterstützung notwendig ist. Ressourcen zeigen, welche Fähigkeiten erhalten geblieben sind und gezielt gefördert werden können.
+
+Beides bildet die Grundlage für Pflegediagnosen, Pflegeziele und geeignete Pflegemaßnahmen.“
+
+---
+
+## Warum diese Antwort überzeugt
+
+Diese Antwort zeigt, dass du:
+
+- Informationen systematisch auswertest.
+- Probleme und Ressourcen sicher unterscheiden kannst.
+- vorhandene Fähigkeiten bewusst einbeziehst.
+- den Zusammenhang zum weiteren Pflegeprozess verstehst.
+- dein pflegerisches Handeln fachlich begründen kannst.
+
+Genau darauf achten Praxisanleiter und Prüfer.
+
+---
+
+## Häufige Fehler
+
+Viele Auszubildende ...
+
+- konzentrieren sich nur auf Probleme.
+- übersehen vorhandene Ressourcen.
+- verwechseln Risiken mit bestehenden Problemen.
+- nennen medizinische Diagnosen statt Pflegeprobleme.
+- leiten vorschnell Maßnahmen ab.
+
+---
+
+## Entscheidungssituation
+
+Du betreust einen Bewohner nach einem Schlaganfall.
+
+Er benötigt Hilfe beim Anziehen, kann aber selbstständig essen und ist motiviert, bei der Mobilisation mitzuarbeiten.
+
+**Welche Informationen sind Pflegeprobleme und welche Ressourcen?**
+
+Überlege zunächst selbst.
+
+---
+
+## Fachliche Lösung
+
+Pflegeprobleme:
+
+- eingeschränkte Selbstversorgung beim Anziehen
+- eingeschränkte Mobilität
+
+Ressourcen:
+
+- selbstständige Nahrungsaufnahme
+- Motivation zur Mitarbeit
+
+Die Ressourcen werden bewusst in die Pflegeplanung einbezogen, um die Selbstständigkeit möglichst lange zu erhalten und zu fördern.
+
+---
+
+## Fachliche Begründung
+
+Professionelle Pflege bedeutet nicht, möglichst viele Aufgaben zu übernehmen.
+
+Sie bedeutet, vorhandene Fähigkeiten zu erkennen, gezielt zu fördern und notwendige Unterstützung individuell anzupassen.
+
+Dadurch werden Selbstständigkeit, Lebensqualität und Teilhabe erhalten.
+
+---
+
+## Transfer in den Pflegealltag
+
+Eine Kollegin sagt:
+
+> „Der Bewohner braucht Hilfe. Dann übernehmen wir eben alles.“
+
+Wie würdest du reagieren?
+
+### Fachliche Einordnung
+
+Professionelle Pflege orientiert sich nicht nur an Problemen.
+
+Vorhandene Ressourcen müssen gezielt genutzt und gefördert werden.
+
+Nur so kann die Selbstständigkeit der pflegebedürftigen Person erhalten bleiben.
+
+---
+
+## Das solltest du für die Abschlussprüfung sicher beherrschen
+
+Nach diesem Premium-Lernskript kannst du:
+
+✅ Pflegeprobleme sicher erkennen.
+
+✅ Ressourcen gezielt benennen.
+
+✅ Risiken von bestehenden Problemen unterscheiden.
+
+✅ den Zusammenhang mit Pflegediagnosen erklären.
+
+✅ Pflegeprobleme und Ressourcen fachlich begründen.
+
+✅ typische Prüfungsfragen sicher beantworten.
+
+---
+
+## Dein nächster Schritt auf deinem Lernweg
+
+Du hast die Grundlagen von Pflegeproblemen und Ressourcen verstanden.
+
+Jetzt entwickelst du Schritt für Schritt die Kompetenzen, die du für den Pflegealltag und die Abschlussprüfung brauchst.
+
+### 🧠 Lernkarten
+
+Festige die Unterschiede zwischen Pflegeproblemen, Risiken und Ressourcen.
+
+### 🩺 Passender Prüfungsfall
+
+Analysiere eine reale Pflegesituation und leite Pflegeprobleme sowie Ressourcen sicher ab.
+
+### 🎓 Examensquiz
+
+Überprüfe, ob du Pflegeprobleme und Ressourcen sicher unterscheiden kannst.
+
+### 📚 Passendes Premium-E-Book
+
+Vertiefe dein Wissen zum Pflegeprozess und zur professionellen Pflegeplanung.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**
