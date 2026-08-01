@@ -467,3 +467,173 @@ Das PESR-Schema hilft dabei, Pflegediagnosen systematisch und prüfungssicher zu
 ## Merksatz
 
 **Krankheiten diagnostiziert der Arzt. Pflegeprobleme diagnostiziert die Pflegefachperson.**
+
+---
+
+## So geht es jetzt weiter
+
+Du kennst jetzt die Grundlagen der Pflegediagnosen und weißt, warum sie ein zentraler Bestandteil des Pflegeprozesses sind.
+
+Für die generalistische Pflegeausbildung reicht dieses Wissen jedoch nicht aus.
+
+Im Pflegealltag, in der Praxisanleitung und spätestens in der praktischen Abschlussprüfung musst du Pflegediagnosen sicher formulieren, fachlich begründen und daraus geeignete Pflegeziele sowie Maßnahmen ableiten können.
+
+Genau diese Kompetenzen entwickelst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Entwickle die Kompetenzen für Pflegealltag und Abschlussprüfung
+
+Pflegediagnosen bilden die Brücke zwischen der Informationssammlung und der Pflegeplanung.
+
+Nur wenn du Pflegediagnosen fachlich korrekt formulierst, kannst du individuelle Pflegeziele festlegen und passende Maßnahmen planen.
+
+---
+
+## Typische Prüfungsfrage
+
+**Praxisanleiter oder Prüfer:**
+
+„Sie haben alle Informationen gesammelt. Wie formulieren Sie daraus eine Pflegediagnose und warum ist sie für den weiteren Pflegeprozess so wichtig?“
+
+### Musterantwort
+
+„Ich werte zunächst alle Informationen systematisch aus und erkenne daraus Pflegeprobleme, Risiken und Ressourcen.
+
+Anschließend formuliere ich eine fachlich begründete Pflegediagnose, zum Beispiel mithilfe des PESR-Schemas.
+
+Die Pflegediagnose bildet die Grundlage für Pflegeziele, Pflegemaßnahmen und die spätere Evaluation. Dadurch wird der gesamte Pflegeprozess nachvollziehbar und individuell geplant.“
+
+---
+
+## Warum diese Antwort überzeugt
+
+Diese Antwort zeigt, dass du:
+
+- Informationen systematisch analysierst.
+- Pflegeprobleme von medizinischen Diagnosen unterscheiden kannst.
+- Ressourcen bewusst berücksichtigst.
+- den Zusammenhang zwischen Pflegediagnose und Pflegeplanung verstehst.
+- dein pflegerisches Handeln fachlich begründen kannst.
+
+Genau darauf achten Praxisanleiter und Prüfer.
+
+---
+
+## Häufige Fehler
+
+Viele Auszubildende ...
+
+- nennen medizinische Diagnosen statt Pflegediagnosen.
+- verwechseln Symptome und Ursachen.
+- vergessen Ressourcen.
+- formulieren Pflegediagnosen zu allgemein.
+- leiten Maßnahmen ab, bevor die Pflegediagnose eindeutig formuliert ist.
+
+---
+
+## Entscheidungssituation
+
+Du betreust eine Bewohnerin nach einer Hüftoperation.
+
+Sie hat Schmerzen, benötigt Hilfe beim Aufstehen und kann mit einem Rollator kurze Strecken selbstständig gehen.
+
+**Wie formulierst du daraus eine fachlich korrekte Pflegediagnose?**
+
+Überlege zunächst selbst.
+
+---
+
+## Fachliche Lösung
+
+**P:** Beeinträchtigte Mobilität
+
+**E:** Schmerzen nach Hüftoperation
+
+**S:** Unsicherer Gang und Hilfebedarf beim Aufstehen
+
+**R:** Mobilisation mit Rollator möglich, motivierte Mitarbeit
+
+Diese Pflegediagnose beschreibt das Pflegeproblem vollständig und bildet die Grundlage für die weitere Pflegeplanung.
+
+---
+
+## Fachliche Begründung
+
+Eine gute Pflegediagnose beschreibt nicht nur das Problem.
+
+Sie erklärt auch die Ursachen, zeigt erkennbare Symptome und berücksichtigt vorhandene Ressourcen.
+
+Dadurch können Pflegeziele und Maßnahmen individuell geplant und später bewertet werden.
+
+---
+
+## Transfer in den Pflegealltag
+
+Ein Kollege sagt:
+
+> „Die Diagnose Hüftfraktur reicht doch völlig aus.“
+
+Wie würdest du reagieren?
+
+### Fachliche Einordnung
+
+Die medizinische Diagnose erklärt die Erkrankung.
+
+Für die Pflegeplanung ist jedoch entscheidend, welche Auswirkungen diese Erkrankung auf die pflegerische Versorgung hat.
+
+Deshalb benötigt die Pflege eine eigene fachliche Pflegediagnose.
+
+---
+
+## Das solltest du für die Abschlussprüfung sicher beherrschen
+
+Nach diesem Premium-Lernskript kannst du:
+
+✅ Pflegediagnosen fachlich korrekt formulieren.
+
+✅ medizinische Diagnosen von Pflegediagnosen unterscheiden.
+
+✅ das PESR-Schema sicher anwenden.
+
+✅ Ressourcen gezielt berücksichtigen.
+
+✅ Pflegediagnosen fachlich begründen.
+
+✅ typische Prüfungsfragen sicher beantworten.
+
+---
+
+## Dein nächster Schritt auf deinem Lernweg
+
+Du hast die Grundlagen der Pflegediagnosen verstanden.
+
+Jetzt entwickelst du Schritt für Schritt die Kompetenzen, die du für den Pflegealltag und die Abschlussprüfung brauchst.
+
+### 🧠 Lernkarten
+
+Wiederhole den Aufbau einer Pflegediagnose und das PESR-Schema aktiv.
+
+### 🩺 Passender Prüfungsfall
+
+Formuliere Pflegediagnosen anhand einer realistischen Fallsituation.
+
+### 🎓 Examensquiz
+
+Überprüfe, ob du Pflegediagnosen sicher erkennen und formulieren kannst.
+
+### 📚 Passendes Premium-E-Book
+
+Vertiefe dein Wissen zu Pflegediagnosen, PESR-Schema und professioneller Pflegeplanung.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**
