@@ -4,43 +4,115 @@ import { getCollection } from "astro:content";
 
 const themen = await getCollection("themen");
 
-const pflegeprozessThemen = themen
-  .filter((t) =>
-    t.slug.toLowerCase().includes("/pflegeprozess/")
-  )
-  .sort((a, b) => a.data.title.localeCompare(b.data.title, "de"));
+const pflegeprozessReihenfolge = [
+  "pflegeprozess-grundlagen",
+  "informationssammlung",
+  "pflegeprobleme-ressourcen",
+  "pflegediagnosen",
+  "pesr-schema",
+  "pflegeziele",
+  "pflegemassnahmen",
+  "durchfuehrung",
+  "evaluation",
+  "vorbehaltsaufgaben",
+  "vorbehaltsaufgaben-beispiele",
+  "vorbehaltsaufgaben-fallbeispiele",
+  "vorbehaltsaufgaben-pflegepruefung",
+  "pflegediagnosen-bei-asthma",
+  "pflegediagnosen-bei-copd",
+  "pflegediagnosen-beispiele-pesr",
+  "pflegediagnosen-fallbeispiele",
+  "pflegediagnosen-in-der-pflegepruefung",
+];
 
-const topicDescriptions = {
-  "pflegeprozess/pflegeprozess-grundlagen":
-    "Verstehe den Aufbau und die Logik des Pflegeprozesses als zentrales Arbeitsmodell.",
-  "pflegeprozess/informationssammlung":
-    "Lerne, wie du Informationen systematisch erhebst und für die Pflegeplanung nutzt.",
-  "pflegeprozess/pflegeprobleme-ressourcen":
-    "Erkenne Pflegeprobleme und Ressourcen als Grundlage für gezielte Maßnahmen.",
-  "pflegeprozess/pflegediagnosen":
-    "Verstehe, wie Pflegediagnosen formuliert und im Pflegeprozess eingesetzt werden.",
-  "pflegeprozess/pesr-schema":
-    "Lerne, Pflegediagnosen mit dem PESR-Schema systematisch zu formulieren und typische Prüfungsfehler zu vermeiden.",
-  "pflegeprozess/pflegeziele":
-    "Formuliere klare, erreichbare Pflegeziele als Orientierung für Maßnahmen.",
-  "pflegeprozess/pflegemassnahmen":
-    "Plane konkrete pflegerische Maßnahmen passend zu Problemen und Zielen.",
-  "pflegeprozess/durchfuehrung":
-    "Setze geplante Maßnahmen fachgerecht im Pflegealltag um.",
-  "pflegeprozess/evaluation":
-    "Überprüfe, ob Pflegeziele erreicht wurden und passe die Planung an.",
+const getDateiname = (slug) => {
+  const teile = slug.split("/");
+  return teile[teile.length - 1];
 };
 
-const topicTypes = [
-  "Grundlage",
-  "Assessment",
-  "Analyse",
-  "Diagnostik",
-  "Planung",
-  "Umsetzung",
-  "Praxis",
-  "Kontrolle",
-];
+const getReihenfolge = (slug) => {
+  const dateiname = getDateiname(slug);
+  const position = pflegeprozessReihenfolge.indexOf(dateiname);
+
+  return position === -1
+    ? 999
+    : position;
+};
+
+const pflegeprozessThemen = themen
+  .filter((thema) =>
+    thema.slug.startsWith("pflegeausbildung/pflegeprozess/")
+  )
+  .sort((a, b) => {
+    const reihenfolgeA = getReihenfolge(a.slug);
+    const reihenfolgeB = getReihenfolge(b.slug);
+
+    if (reihenfolgeA !== reihenfolgeB) {
+      return reihenfolgeA - reihenfolgeB;
+    }
+
+    return a.data.title.localeCompare(b.data.title, "de");
+  });
+
+const topicDescriptions = {
+  "pflegeprozess-grundlagen":
+    "Verstehe den Aufbau und die Logik des Pflegeprozesses als zentrales Arbeitsmodell.",
+  informationssammlung:
+    "Lerne, wie du Informationen systematisch erhebst und für die Pflegeplanung nutzt.",
+  "pflegeprobleme-ressourcen":
+    "Erkenne Pflegeprobleme und Ressourcen als Grundlage für gezielte Maßnahmen.",
+  pflegediagnosen:
+    "Verstehe, wie Pflegediagnosen formuliert und im Pflegeprozess eingesetzt werden.",
+  "pesr-schema":
+    "Lerne, Pflegediagnosen mit dem PESR-Schema systematisch zu formulieren.",
+  pflegeziele:
+    "Formuliere klare, erreichbare und überprüfbare Pflegeziele.",
+  pflegemassnahmen:
+    "Plane konkrete pflegerische Maßnahmen passend zu Problemen, Ressourcen und Zielen.",
+  durchfuehrung:
+    "Setze geplante Pflegemaßnahmen fachgerecht und individuell um.",
+  evaluation:
+    "Überprüfe die Wirksamkeit der Pflege und passe die Planung bei Bedarf an.",
+  vorbehaltsaufgaben:
+    "Verstehe die vorbehaltenen Aufgaben der Pflegefachperson im Pflegeprozess.",
+  "vorbehaltsaufgaben-beispiele":
+    "Ordne typische Aufgaben aus dem Pflegealltag den Vorbehaltsaufgaben zu.",
+  "vorbehaltsaufgaben-fallbeispiele":
+    "Wende dein Wissen zu den Vorbehaltsaufgaben in realistischen Fällen an.",
+  "vorbehaltsaufgaben-pflegepruefung":
+    "Bereite dich auf Prüfungsfragen zu Pflegeprozess und Vorbehaltsaufgaben vor.",
+  "pflegediagnosen-bei-asthma":
+    "Übertrage Pflegediagnosen auf eine pflegerische Situation bei Asthma.",
+  "pflegediagnosen-bei-copd":
+    "Übertrage Pflegediagnosen auf eine pflegerische Situation bei COPD.",
+  "pflegediagnosen-beispiele-pesr":
+    "Vertiefe das PESR-Schema mit konkreten Beispielen für Pflegediagnosen.",
+  "pflegediagnosen-fallbeispiele":
+    "Trainiere Pflegediagnosen anhand realistischer Fallsituationen.",
+  "pflegediagnosen-in-der-pflegepruefung":
+    "Bereite dich gezielt auf Pflegediagnosen in der Pflegeprüfung vor.",
+};
+
+const topicTypes = {
+  "pflegeprozess-grundlagen": "Grundlage",
+  informationssammlung: "Schritt 1",
+  "pflegeprobleme-ressourcen": "Schritt 2",
+  pflegediagnosen: "Schritt 2",
+  "pesr-schema": "Schritt 2",
+  pflegeziele: "Schritt 3",
+  pflegemassnahmen: "Schritt 4",
+  durchfuehrung: "Schritt 5",
+  evaluation: "Schritt 6",
+  vorbehaltsaufgaben: "Verantwortung",
+  "vorbehaltsaufgaben-beispiele": "Vertiefung",
+  "vorbehaltsaufgaben-fallbeispiele": "Anwendung",
+  "vorbehaltsaufgaben-pflegepruefung": "Prüfung",
+  "pflegediagnosen-bei-asthma": "Praxisbeispiel",
+  "pflegediagnosen-bei-copd": "Praxisbeispiel",
+  "pflegediagnosen-beispiele-pesr": "Vertiefung",
+  "pflegediagnosen-fallbeispiele": "Anwendung",
+  "pflegediagnosen-in-der-pflegepruefung": "Prüfung",
+};
 ---
 
 <BaseLayout
@@ -58,35 +130,44 @@ const topicTypes = [
 
     <section class="category-hero">
       <p class="category-eyebrow">Themenbereich</p>
+
       <h1>Pflegeprozess</h1>
+
       <p class="category-intro">
-        Der Pflegeprozess ist das zentrale Arbeitsmodell in der Pflege. Hier lernst du,
-        Pflege systematisch zu planen, durchzuführen, zu überprüfen und fachlich zu begründen.
+        Der Pflegeprozess ist das zentrale Arbeitsmodell in der Pflege. Hier
+        lernst du, Pflege systematisch zu planen, durchzuführen, zu überprüfen
+        und fachlich zu begründen.
       </p>
     </section>
 
     <section class="category-panel">
-      <h2>Warum Pflegeprozess wichtig ist</h2>
+      <h2>Warum der Pflegeprozess wichtig ist</h2>
 
       <div class="info-grid">
         <article class="info-card">
           <h3>Struktur im Pflegealltag</h3>
+
           <p>
-            Der Pflegeprozess hilft dir, Informationen zu ordnen und pflegerische Entscheidungen nachvollziehbar zu treffen.
+            Der Pflegeprozess hilft dir, Informationen zu ordnen und
+            pflegerische Entscheidungen nachvollziehbar zu treffen.
           </p>
         </article>
 
         <article class="info-card">
           <h3>Gezielte Pflegeplanung</h3>
+
           <p>
-            Du lernst, Pflegeprobleme, Ressourcen, Ziele und Maßnahmen sinnvoll miteinander zu verbinden.
+            Du lernst, Pflegeprobleme, Ressourcen, Ziele und Maßnahmen sinnvoll
+            miteinander zu verbinden.
           </p>
         </article>
 
         <article class="info-card">
           <h3>Wirksamkeit prüfen</h3>
+
           <p>
-            Durch Evaluation erkennst du, ob Pflegeziele erreicht wurden oder ob die Planung angepasst werden muss.
+            Durch die Evaluation erkennst du, ob Pflegeziele erreicht wurden
+            oder ob die Planung angepasst werden muss.
           </p>
         </article>
       </div>
@@ -100,7 +181,9 @@ const topicTypes = [
         <li>Informationen strukturiert sammeln und fachlich einordnen.</li>
         <li>Pflegeprobleme und Ressourcen erkennen und beschreiben.</li>
         <li>Pflegeziele verständlich und überprüfbar formulieren.</li>
-        <li>Pflegemaßnahmen passend planen, durchführen und evaluieren.</li>
+        <li>
+          Pflegemaßnahmen passend planen, durchführen und evaluieren.
+        </li>
       </ul>
     </section>
 
@@ -111,33 +194,44 @@ const topicTypes = [
           <h2>Pflegeprozess Schritt für Schritt lernen</h2>
         </div>
 
-        <span class="topic-count-badge">{pflegeprozessThemen.length} Themen</span>
+        <span class="topic-count-badge">
+          {pflegeprozessThemen.length} Themen
+        </span>
       </div>
 
-<section class="pflegeprozess-info">
-
       <div class="topic-grid">
-        {pflegeprozessThemen.map((topic, index) => (
-          <a class="topic-card" href={`/themen/${topic.slug}/`}>
-            <div class="topic-card-top">
-              <span class="topic-step">Thema {index + 1}</span>
-              <span class="topic-type">{topicTypes[index] ?? "Pflegeplanung"}</span>
-            </div>
+        {pflegeprozessThemen.map((topic, index) => {
+          const dateiname = getDateiname(topic.slug);
 
-            <h3>{topic.data.title}</h3>
+          return (
+            <a class="topic-card" href={`/themen/${topic.slug}/`}>
+              <div class="topic-card-top">
+                <span class="topic-step">
+                  Thema {index + 1}
+                </span>
 
-            <p>
-              {
-                topic.data.beschreibung ??
-                topic.data.description ??
-                topicDescriptions[topic.slug] ??
-                "Lerne dieses Thema im Pflegeprozess und seine Bedeutung für die Pflegepraxis kennen."
-              }
-            </p>
+                <span class="topic-type">
+                  {topicTypes[dateiname] ?? "Vertiefung"}
+                </span>
+              </div>
 
-            <span class="topic-card-link">Thema öffnen →</span>
-          </a>
-        ))}
+              <h3>{topic.data.title}</h3>
+
+              <p>
+                {
+                  topic.data.beschreibung ??
+                  topic.data.description ??
+                  topicDescriptions[dateiname] ??
+                  "Lerne dieses Thema im Pflegeprozess und seine Bedeutung für die Pflegepraxis kennen."
+                }
+              </p>
+
+              <span class="topic-card-link">
+                Thema öffnen →
+              </span>
+            </a>
+          );
+        })}
       </div>
     </section>
   </main>
@@ -172,7 +266,13 @@ const topicTypes = [
   }
 
   .category-hero {
-    background: linear-gradient(135deg, #eff6ff 0%, #ffffff 58%, #f8fafc 100%);
+    background:
+      linear-gradient(
+        135deg,
+        #eff6ff 0%,
+        #ffffff 58%,
+        #f8fafc 100%
+      );
   }
 
   .category-eyebrow {
@@ -212,6 +312,8 @@ const topicTypes = [
   }
 
   .info-card {
+    min-width: 0;
+    overflow-wrap: anywhere;
     border: 1px solid #e2e8f0;
     border-radius: 22px;
     background: #ffffff;
@@ -270,11 +372,11 @@ const topicTypes = [
     display: flex;
     min-height: 220px;
     flex-direction: column;
-    justify-content: space-between;
     border: 1px solid #e2e8f0;
     border-radius: 22px;
     background: #ffffff;
     padding: 22px;
+    color: inherit;
     text-decoration: none;
     box-shadow: 0 14px 32px rgba(15, 23, 42, 0.05);
     transition:
@@ -354,69 +456,4 @@ const topicTypes = [
       min-height: auto;
     }
   }
-
-  .pflegeprozess-info {
-  margin-top: 2rem;
-}
-
-.pflegeprozess-info h2 {
-  margin-bottom: 1rem;
-}
-
-.pesr-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1rem;
-  margin: 2rem 0;
-}
-
-.pesr-card {
-  background: #fff;
-  border: 1px solid #e7e1d8;
-  border-radius: 18px;
-  padding: 1.5rem;
-  min-width: 0;
-  overflow-wrap: anywhere;
-  word-break: normal;
-}
-
-.pesr-card ul {
-  padding-left: 1.2rem;
-  margin-bottom: 0;
-}
-
-.pesr-card li {
-  line-height: 1.45;
-  margin-bottom: 0.4rem;
-}
-
-.pesr-card h3 {
-  margin-bottom: 0.75rem;
-}
-
-.pesr-example {
-  background: #f8fafc;
-  border-radius: 18px;
-  padding: 1.5rem;
-  margin-top: 2rem;
-}
-
-.pesr-example-grid {
-  display: grid;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.exam-tip {
-  background: #fff8ec;
-  border-left: 4px solid #c97b63;
-  padding: 1rem;
-  margin-top: 2rem;
-  border-radius: 12px;
-}
-
-.info-card {
-  min-width: 0;
-  overflow-wrap: anywhere;
-}
 </style>
