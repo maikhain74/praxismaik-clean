@@ -22,177 +22,146 @@ Prüfer möchten häufig wissen:
 
 Genau diese Fähigkeiten gehören zu Kompetenzbereich V.
 
-## Fallbeispiel 1: Schwieriges Gespräch
+## So geht es jetzt weiter
 
-### Situation
+Du hast gesehen, wie Kompetenzbereich V anhand typischer Fallsituationen geprüft wird und warum Selbstreflexion für professionelles Pflegehandeln unverzichtbar ist.
 
-Eine Auszubildende führt ein Gespräch mit einem Angehörigen.
+Für die Abschlussprüfung reicht dieses Grundlagenwissen jedoch nicht aus.
 
-Im Nachhinein hat sie das Gefühl, dass sie zu schnell reagiert und wichtige Fragen nicht ausreichend beantwortet hat.
+Du musst schwierige Situationen reflektieren, aus Erfahrungen lernen und dein Handeln fachlich begründen können.
 
-### Frage
+Genau diese Kompetenzen trainierst du jetzt im Premiumbereich.
 
-Was sollte sie tun?
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
 
-### Lösung
-
-Die Situation reflektieren und analysieren.
-
-### Begründung
-
-Reflexion hilft dabei, zukünftige Gespräche professioneller zu führen.
+👉 Gute Pflege beginnt mit dem richtigen Denken.
 
 ---
 
-## Fallbeispiel 2: Fehler bei der Dokumentation
+<!-- PREMIUM_START -->
 
-### Situation
+# Trainiere Kompetenzbereich V anhand realistischer Fallsituationen
 
-Eine Pflegefachperson bemerkt, dass sie eine wichtige Beobachtung nicht dokumentiert hat.
+In der praktischen Abschlussprüfung wirst du selten nach Definitionen gefragt.
 
-### Frage
-
-Wie sollte professionell gehandelt werden?
-
-### Lösung
-
-Den Fehler offen ansprechen und korrigieren.
-
-### Begründung
-
-Eine konstruktive Fehlerkultur erhöht die Patientensicherheit.
+Stattdessen musst du zeigen, dass du dein eigenes Handeln ehrlich reflektierst, Verbesserungspotenziale erkennst und professionelle Konsequenzen daraus ableitest.
 
 ---
 
-## Fallbeispiel 3: Kritik durch Praxisanleitung
+## Fallbeispiel 1: Schwieriges Angehörigengespräch
 
 ### Situation
 
-Ein Praxisanleiter gibt Rückmeldung zu einer durchgeführten Pflegemaßnahme.
-
-Mehrere Punkte werden kritisch bewertet.
-
-### Frage
-
-Welche Reaktion ist professionell?
-
-### Lösung
-
-Die Rückmeldung annehmen und Entwicklungsmöglichkeiten ableiten.
-
-### Begründung
-
-Kritik ist eine wichtige Grundlage für berufliches Lernen.
+Nach einem Gespräch mit den Angehörigen einer Bewohnerin hast du das Gefühl, zu schnell geantwortet und mehrere Fragen nicht ausreichend beantwortet zu haben.
 
 ---
 
-## Fallbeispiel 4: Belastende Situation
+## Deine Aufgabe
 
-### Situation
+Überlege zunächst selbst.
 
-Eine Pflegefachperson begleitet einen Bewohner über viele Monate.
-
-Nach dessen Tod fühlt sie sich emotional stark belastet.
-
-### Frage
-
-Welcher Kompetenzbereich wird besonders angesprochen?
-
-### Lösung
-
-Kompetenzbereich V.
-
-### Begründung
-
-Der professionelle Umgang mit Belastungen gehört zur Selbstreflexion.
+- Was ist gut gelaufen?
+- Was würdest du beim nächsten Mal anders machen?
+- Welche Erkenntnisse nimmst du für zukünftige Gespräche mit?
 
 ---
 
-## Fallbeispiel 5: Fortbildung
+## Fachliche Lösung
+
+Ich reflektiere das Gespräch in Ruhe und analysiere, warum Unsicherheiten entstanden sind.
+
+Anschließend überlege ich konkrete Verbesserungen für zukünftige Gespräche und bespreche die Situation bei Bedarf mit meinem Praxisanleiter oder einer erfahrenen Kollegin.
+
+---
+
+## Fachliche Begründung
+
+Professionelle Kommunikation entwickelt sich durch kontinuierliche Reflexion.
+
+Nur wer das eigene Verhalten ehrlich hinterfragt, kann seine Gesprächsführung langfristig verbessern.
+
+---
+
+## Zweites Fallbeispiel
 
 ### Situation
 
-Eine Pflegefachperson stellt fest, dass sie bei einem bestimmten Thema Wissenslücken hat.
+Nach einer stressigen Frühschicht bemerkst du, dass eine wichtige Beobachtung nicht dokumentiert wurde.
 
-### Frage
+### Überlege selbst
 
-Wie sollte sie reagieren?
+- Wie gehst du jetzt vor?
+- Welche Verantwortung trägst du?
+- Was kannst du daraus lernen?
 
-### Lösung
+---
 
-Geeignete Fortbildungsangebote nutzen.
+## Fachliche Lösung
 
-### Begründung
+Ich spreche den Fehler offen an und dokumentiere die Beobachtung entsprechend den geltenden Vorgaben nach.
 
-Berufliche Weiterentwicklung ist Teil professioneller Pflege.
+Anschließend analysiere ich die Ursachen und überlege, wie ich ähnliche Situationen künftig vermeiden kann.
 
-## Was haben alle Fallbeispiele gemeinsam?
+---
 
-In allen Situationen müssen Pflegefachpersonen:
+## Transfer in den Pflegealltag
 
-- eigenes Handeln reflektieren
-- aus Erfahrungen lernen
-- Kritik annehmen
-- Verantwortung übernehmen
-- sich weiterentwickeln
+Dein Praxisanleiter gibt dir nach einer Versorgung mehrere Verbesserungsvorschläge.
 
-Genau das beschreibt Kompetenzbereich V.
+Wie reagierst du?
 
-## Typische Prüfungsfrage
+### Fachliche Einordnung
 
-### Was gehört typischerweise zu Kompetenzbereich V?
+Ich nehme das Feedback offen an, reflektiere mein Handeln und prüfe, welche Hinweise ich für meine fachliche Weiterentwicklung nutzen kann.
 
-A) Selbstreflexion
+Eine offene Feedbackkultur stärkt die Pflegequalität und die eigene berufliche Entwicklung.
 
-B) Pflegeplanung
+---
 
-C) Blutentnahme
+## Das solltest du für die Abschlussprüfung sicher beherrschen
 
-D) Medikamentenbestellung
+Nach diesem Premium-Lernskript kannst du:
 
-### Lösung
+✅ eigenes Handeln systematisch reflektieren.
 
-✅ A) Selbstreflexion
+✅ konstruktiv mit Fehlern umgehen.
 
-## Typische Fehler
+✅ Feedback professionell nutzen.
 
-### Fehler 1
+✅ Belastungen wahrnehmen und einordnen.
 
-Eigene Fehler nicht erkennen.
+✅ berufliche Entwicklung aktiv gestalten.
 
-### Fehler 2
+✅ Entscheidungen fachlich begründen.
 
-Kritik ablehnen.
+---
 
-### Fehler 3
+## Dein nächster Schritt auf deinem Lernweg
 
-Belastungen verdrängen.
+Du kannst typische Situationen aus Kompetenzbereich V jetzt systematisch analysieren.
 
-### Fehler 4
+### 🧠 Lernkarten
 
-Keine Bereitschaft zur Weiterentwicklung zeigen.
+Trainiere Selbstreflexion, Fehlerkultur und professionelles Rollenverständnis.
 
-## Pflegeprüfung
+### 🎓 Kompetenzbereich-V-Prüfungsfragen
 
-Prüfer achten häufig darauf:
+Überprüfe dein Wissen mit typischen Prüfungsfragen.
 
-- Wird reflektiert?
-- Werden Entwicklungsmöglichkeiten erkannt?
-- Wird Verantwortung übernommen?
-- Wird professionell mit Fehlern umgegangen?
+[Kompetenzbereich V Prüfungsfragen](/themen/pflegeausbildung/kompetenzbereich-5-pruefungsfragen/)
 
-## Zusammenfassung
+### 📘 Kompetenzbereich V Pflegeprüfung
 
-Kompetenzbereich V wird in Prüfungen häufig über Fallbeispiele geprüft.
+Vertiefe typische Prüfungssituationen und Musterantworten.
 
-Wer das eigene Handeln reflektieren und daraus lernen kann, sammelt wichtige Punkte in der Pflegeprüfung.
+[Kompetenzbereich V Pflegeprüfung](/themen/pflegeausbildung/kompetenzbereich-5-pflegepruefung/)
 
-## Passende Inhalte zum Thema Kompetenzbereich V
+### 📚 Passendes Premium-E-Book
 
-- [Kompetenzbereich V](/themen/pflegeausbildung/kompetenzbereich-5/)
-- [Kompetenzbereich V Pflegeprüfung](/themen/pflegeausbildung/kompetenzbereich-5-pflegepruefung/)
-- [Kompetenzbereich V Prüfungsfragen](/themen/pflegeausbildung/kompetenzbereich-5-pruefungsfragen/)
+Vertiefe Selbstreflexion, professionelles Rollenverständnis und lebenslanges Lernen in der Pflege.
 
-## Merksatz
+---
 
-**Kompetenzbereich V zeigt sich immer dann, wenn eigenes Handeln reflektiert und berufliche Entwicklung aktiv gestaltet wird.**
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**

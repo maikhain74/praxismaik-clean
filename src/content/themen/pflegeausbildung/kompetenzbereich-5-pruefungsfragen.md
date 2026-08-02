@@ -10,205 +10,184 @@ Kompetenzbereich V beschäftigt sich mit Selbstreflexion, beruflicher Entwicklun
 
 Viele Auszubildende unterschätzen diesen Kompetenzbereich, obwohl er regelmäßig in mündlichen, praktischen und schriftlichen Prüfungen vorkommt.
 
+## So geht es jetzt weiter
+
+Du kennst jetzt die Grundlagen typischer Prüfungsfragen zu Kompetenzbereich V und weißt, warum Selbstreflexion, Fehlerkultur und berufliche Weiterentwicklung für professionelles Pflegehandeln unverzichtbar sind.
+
+Für eine sichere Abschlussprüfung reicht dieses Grundlagenwissen jedoch nicht aus.
+
+Du musst dein eigenes Handeln reflektieren, konstruktiv mit Rückmeldungen umgehen und deine Entscheidungen fachlich begründen können.
+
+Genau diese Kompetenzen trainierst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Trainiere Kompetenzbereich V auf Prüfungsniveau
+
+In der Abschlussprüfung geht es nicht darum, fehlerfrei zu sein.
+
+Prüfer möchten erkennen, dass du dein eigenes Handeln ehrlich reflektierst, aus Erfahrungen lernst und dich kontinuierlich weiterentwickelst.
+
+---
+
 ## Prüfungsfrage 1
 
-### Was steht im Mittelpunkt von Kompetenzbereich V?
+### Situation
 
-A) Pflegeplanung
+Nach einer praktischen Prüfung erhältst du folgende Rückmeldung:
 
-B) Selbstreflexion und berufliche Entwicklung
+> „Ihre fachlichen Maßnahmen waren korrekt. In der Kommunikation mit den Angehörigen hätten Sie jedoch stärker auf deren Sorgen eingehen können.“
 
-C) Medikamentenlehre
+### Frage
 
-D) Körperpflege
+Wie reagierst du professionell?
 
-### Lösung
+A) Ich lehne die Rückmeldung ab.
 
-✅ B) Selbstreflexion und berufliche Entwicklung
+B) Ich erkläre, dass die Angehörigen selbst schuld waren.
 
-### Begründung
+C) Ich reflektiere die Rückmeldung und leite konkrete Verbesserungen für zukünftige Gespräche ab.
 
-Kompetenzbereich V beschäftigt sich mit der Reflexion des eigenen Handelns und der kontinuierlichen Weiterentwicklung.
+D) Ich ignoriere das Feedback.
+
+### Richtige Antwort
+
+✅ C)
+
+### Fachliche Begründung
+
+Professionelle Pflegefachpersonen nutzen Rückmeldungen, um ihr eigenes Handeln weiterzuentwickeln und die Qualität ihrer Pflege kontinuierlich zu verbessern.
 
 ---
 
 ## Prüfungsfrage 2
 
-### Warum ist Selbstreflexion wichtig?
+Welche Aussage beschreibt eine konstruktive Fehlerkultur am besten?
 
-A) Damit Fehler vertuscht werden
+A) Fehler dürfen nicht angesprochen werden.
 
-B) Damit berufliche Erfahrungen genutzt werden können
+B) Fehler werden vertuscht.
 
-C) Damit weniger dokumentiert werden muss
+C) Fehler werden analysiert, um daraus zu lernen und ähnliche Situationen künftig zu vermeiden.
 
-D) Damit Kritik vermieden wird
+D) Fehler betreffen ausschließlich Auszubildende.
 
-### Lösung
+### Richtige Antwort
 
-✅ B) Damit berufliche Erfahrungen genutzt werden können
+✅ C)
 
-### Begründung
+### Fachliche Begründung
 
-Reflexion hilft dabei, das eigene Handeln weiterzuentwickeln und professioneller zu werden.
+Eine offene Fehlerkultur verbessert die Patientensicherheit und unterstützt die berufliche Weiterentwicklung.
 
 ---
 
 ## Prüfungsfrage 3
 
-### Welche Aussage zur Fehlerkultur ist richtig?
+Welche Aussage beschreibt Kompetenzbereich V am besten?
 
-A) Fehler dürfen nicht angesprochen werden.
+A) Pflegeplanung und Pflegediagnosen.
 
-B) Fehler sollten vertuscht werden.
+B) Recht und Ethik.
 
-C) Fehler bieten Möglichkeiten zum Lernen und zur Verbesserung.
+C) Selbstreflexion, berufliche Entwicklung und professionelles Rollenverständnis.
 
-D) Fehler betreffen nur Auszubildende.
+D) Medikamentenlehre.
 
-### Lösung
+### Richtige Antwort
 
-✅ C) Fehler bieten Möglichkeiten zum Lernen und zur Verbesserung.
-
-### Begründung
-
-Eine konstruktive Fehlerkultur verbessert die Pflegequalität und Patientensicherheit.
+✅ C)
 
 ---
 
-## Prüfungsfrage 4
+## Entscheidungssituation
 
-### Was gehört zur beruflichen Weiterentwicklung?
+Nach einer stressigen Frühschicht stellst du fest, dass du gegenüber einem Bewohner ungeduldig reagiert hast.
 
-A) Fortbildungen besuchen
+Wie gehst du jetzt professionell vor?
 
-B) Neues Wissen erwerben
+### Musterantwort
 
-C) Feedback annehmen
-
-D) Alle Antworten sind richtig
-
-### Lösung
-
-✅ D) Alle Antworten sind richtig
-
-### Begründung
-
-Berufliche Entwicklung umfasst verschiedene Formen des Lernens und der Weiterqualifikation.
+„Ich reflektiere die Situation ehrlich, analysiere die Ursachen meines Verhaltens und überlege konkrete Maßnahmen, wie ich in vergleichbaren Situationen künftig professioneller reagieren kann. Bei Bedarf bespreche ich die Situation mit meinem Praxisanleiter oder einer erfahrenen Kollegin.“
 
 ---
 
-## Prüfungsfrage 5
+## Warum diese Antwort überzeugt
 
-### Was bedeutet professionelles Rollenverständnis?
+Diese Antwort zeigt, dass du:
 
-A) Die eigenen Aufgaben und Grenzen kennen
+- Verantwortung für dein eigenes Handeln übernimmst.
+- Fehler als Lernchance nutzt.
+- Feedback konstruktiv verarbeitest.
+- deine berufliche Entwicklung aktiv gestaltest.
+- professionell reflektierst.
 
-B) Alles alleine erledigen
-
-C) Kritik ignorieren
-
-D) Verantwortung vermeiden
-
-### Lösung
-
-✅ A) Die eigenen Aufgaben und Grenzen kennen
-
-### Begründung
-
-Professionelle Pflege erfordert Verantwortungsbewusstsein und die Kenntnis der eigenen Kompetenzen.
+Genau diese Fähigkeiten erwarten Praxisanleiter und Prüfer.
 
 ---
-
-## Prüfungsfrage 6
-
-### Welche Aussage zu Kritik ist richtig?
-
-A) Kritik sollte immer abgelehnt werden.
-
-B) Kritik kann helfen, sich weiterzuentwickeln.
-
-C) Kritik ist grundsätzlich unfair.
-
-D) Kritik betrifft nur Auszubildende.
-
-### Lösung
-
-✅ B) Kritik kann helfen, sich weiterzuentwickeln.
-
-### Begründung
-
-Konstruktive Rückmeldungen fördern die berufliche Entwicklung.
-
----
-
-## Fallfrage
-
-### Situation
-
-Eine Auszubildende erhält nach einer praktischen Prüfung die Rückmeldung, dass ihre Kommunikation mit Angehörigen verbessert werden sollte.
-
-### Frage
-
-Welche Reaktion ist am professionellsten?
-
-A) Die Rückmeldung ignorieren
-
-B) Die Prüfer kritisieren
-
-C) Die Rückmeldung reflektieren und Verbesserungsmöglichkeiten ableiten
-
-D) Die Verantwortung anderen zuschieben
-
-### Lösung
-
-✅ C) Die Rückmeldung reflektieren und Verbesserungsmöglichkeiten ableiten
-
-### Begründung
-
-Professionelle Pflegefachpersonen nutzen Feedback zur Weiterentwicklung.
-
-## Was bewerten Prüfer?
-
-Prüfer achten häufig auf:
-
-- Reflexionsfähigkeit
-- Lernbereitschaft
-- Verantwortungsbewusstsein
-- Umgang mit Kritik
-- Fehlerkultur
-- professionelles Rollenverständnis
 
 ## Typische Fehler
 
-### Fehler 1
+Viele Auszubildende ...
 
-Eigene Fehler nicht erkennen.
+- sehen Fehler ausschließlich als persönliches Versagen.
+- lehnen Rückmeldungen ab.
+- reflektieren schwierige Situationen nicht ausreichend.
+- erkennen eigene Belastungsgrenzen zu spät.
+- nutzen Fortbildungs- und Lernmöglichkeiten nicht aktiv.
 
-### Fehler 2
+---
 
-Kritik persönlich nehmen.
+## Das solltest du für die Abschlussprüfung sicher beherrschen
 
-### Fehler 3
+Nach diesem Premium-Lernskript kannst du:
 
-Keine Entwicklungsmöglichkeiten erkennen.
+✅ typische Prüfungsfragen sicher beantworten.
 
-### Fehler 4
+✅ dein eigenes Handeln systematisch reflektieren.
 
-Belastungen ignorieren.
+✅ konstruktiv mit Feedback umgehen.
 
-## Zusammenfassung
+✅ Fehler als Lernchance nutzen.
 
-Prüfungsfragen zu Kompetenzbereich V drehen sich meist um Selbstreflexion, Fehlerkultur, berufliche Entwicklung und professionelles Rollenverständnis.
+✅ berufliche Weiterentwicklung begründen.
 
-Wer diese Zusammenhänge versteht, kann viele Prüfungsaufgaben erfolgreich lösen.
+✅ professionelles Rollenverständnis erläutern.
 
-## Passende Inhalte zum Thema Kompetenzbereich V
+---
 
-- [Kompetenzbereich V](/themen/pflegeausbildung/kompetenzbereich-5/)
-- [Kompetenzbereich V Pflegeprüfung](/themen/pflegeausbildung/kompetenzbereich-5-pflegepruefung/)
-- [Kompetenzbereich V Fallbeispiele](/themen/pflegeausbildung/kompetenzbereich-5-fallbeispiele/)
+## Dein nächster Schritt auf deinem Lernweg
 
-## Merksatz
+Du kennst jetzt typische Prüfungsfragen zu Kompetenzbereich V.
 
-**Kompetenzbereich V prüft die Fähigkeit, das eigene Handeln kritisch zu reflektieren und sich kontinuierlich weiterzuentwickeln.**
+### 🧠 Lernkarten
+
+Wiederhole wichtige Grundlagen zu Selbstreflexion, Fehlerkultur und professioneller Rolle.
+
+### 🩺 Kompetenzbereich-V-Fallbeispiele
+
+Trainiere realistische Situationen aus dem Pflegealltag.
+
+[Kompetenzbereich V Fallbeispiele](/themen/pflegeausbildung/kompetenzbereich-5-fallbeispiele/)
+
+### 📘 Kompetenzbereich V Pflegeprüfung
+
+Vertiefe typische Prüfungssituationen und Musterantworten.
+
+[Kompetenzbereich V Pflegeprüfung](/themen/pflegeausbildung/kompetenzbereich-5-pflegepruefung/)
+
+### 📚 Passendes Premium-E-Book
+
+Vertiefe Selbstreflexion, professionelles Rollenverständnis und lebenslanges Lernen in der Pflege.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**
