@@ -12,209 +12,201 @@ Prüfer möchten wissen, ob Auszubildende professionell kommunizieren, beraten u
 
 Wer die typischen Prüfungsfragen kennt, ist deutlich besser vorbereitet.
 
+## So geht es jetzt weiter
+
+Du kennst jetzt die Grundlagen typischer Prüfungsfragen zu Kompetenzbereich II und weißt, welche kommunikativen Fähigkeiten in der Abschlussprüfung erwartet werden.
+
+Für eine sichere Prüfung reicht dieses Grundlagenwissen jedoch nicht aus.
+
+Du musst Gespräche professionell führen, angemessen auf Gefühle reagieren und dein kommunikatives Handeln fachlich begründen können.
+
+Genau diese Kompetenzen trainierst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Trainiere Kompetenzbereich II auf Prüfungsniveau
+
+Die folgenden Prüfungsfragen orientieren sich an schriftlichen, mündlichen und praktischen Abschlussprüfungen.
+
+Entscheidend ist nicht nur die richtige Antwort, sondern vor allem deine fachliche Begründung.
+
+---
+
 ## Prüfungsfrage 1
 
-### Was steht im Mittelpunkt von Kompetenzbereich II?
+### Situation
 
-A) Dienstplanung
+Herr Meier erhält erstmals die Diagnose COPD.
 
-B) Kommunikation und Beratung
+Er schaut dich an und sagt:
 
-C) Materialwirtschaft
+> „Ich habe Angst, dass ich irgendwann ersticke.“
 
-D) Personalmanagement
+### Frage
 
-### Lösung
+Welche Reaktion ist pflegefachlich am sinnvollsten?
 
-✅ B) Kommunikation und Beratung
+A) „Das wird schon wieder.“
 
-### Begründung
+B) „Darüber müssen Sie sich keine Gedanken machen.“
 
-Kompetenzbereich II beschäftigt sich mit Beziehungsgestaltung, Kommunikation, Anleitung und Beratung.
+C) „Ich verstehe, dass Ihnen das Sorgen macht. Möchten Sie mir erzählen, was Ihnen im Moment am meisten Angst macht?“
+
+D) „Das erklärt Ihnen später der Arzt.“
+
+### Richtige Antwort
+
+✅ C)
+
+### Fachliche Begründung
+
+Die Antwort greift zunächst die Gefühle des Patienten auf und signalisiert Gesprächsbereitschaft.
+
+Professionelle Kommunikation beginnt mit aktivem Zuhören und Verständnis, bevor Informationen vermittelt oder Lösungen angeboten werden.
 
 ---
 
 ## Prüfungsfrage 2
 
-### Was bedeutet professionelle Kommunikation?
+### Situation
 
-A) Möglichst viele Fachbegriffe verwenden
+Eine Bewohnerin mit Demenz fragt innerhalb weniger Minuten erneut:
 
-B) Patienten belehren
+> „Wann kommt mein Mann?“
 
-C) Verständlich, respektvoll und situationsgerecht kommunizieren
+Du weißt, dass ihr Mann bereits vor vielen Jahren verstorben ist.
 
-D) Gespräche möglichst kurz halten
+Welche Reaktion entspricht einer professionellen Kommunikation?
 
-### Lösung
+A) Die Bewohnerin korrigieren.
 
-✅ C) Verständlich, respektvoll und situationsgerecht kommunizieren
+B) Das Gespräch sofort beenden.
 
-### Begründung
+C) Auf ihre Gefühle eingehen und validierend antworten.
 
-Professionelle Kommunikation orientiert sich an den Bedürfnissen des Gesprächspartners.
+D) Das Thema wechseln, ohne zu reagieren.
+
+### Richtige Antwort
+
+✅ C)
+
+### Fachliche Begründung
+
+Bei Menschen mit Demenz stehen Gefühle und subjektives Erleben im Mittelpunkt.
+
+Eine wertschätzende, validierende Kommunikation vermittelt Sicherheit und stärkt die Beziehung.
 
 ---
 
 ## Prüfungsfrage 3
 
-### Was ist aktives Zuhören?
+Welche Aussage beschreibt Kompetenzbereich II am besten?
 
-A) Nur zuhören
+A) Organisation des Dienstplans.
 
-B) Dem Gesprächspartner zeigen, dass man ihn verstanden hat
+B) Kommunikation, Beratung und Beziehungsgestaltung.
 
-C) Eigene Erfahrungen erzählen
+C) Materialverwaltung.
 
-D) Fachinformationen vorlesen
+D) Qualitätsmanagement.
 
-### Lösung
+### Richtige Antwort
 
-✅ B) Dem Gesprächspartner zeigen, dass man ihn verstanden hat
-
-### Begründung
-
-Aktives Zuhören stärkt Vertrauen und verbessert die Kommunikation.
+✅ B)
 
 ---
 
-## Prüfungsfrage 4
+## Entscheidungssituation
 
-### Welche Situation gehört typischerweise zu Kompetenzbereich II?
+Ein Angehöriger sagt verärgert:
 
-A) Pflegeplanung erstellen
+> „Niemand informiert uns hier richtig!“
 
-B) Beratungsgespräch zur Entlassung führen
+Wie reagierst du?
 
-C) Dienstplan schreiben
+### Musterantwort
 
-D) Medikamente bestellen
-
-### Lösung
-
-✅ B) Beratungsgespräch zur Entlassung führen
-
-### Begründung
-
-Im Mittelpunkt stehen Kommunikation und Beratung.
+„Ich höre dem Angehörigen zunächst aktiv zu und nehme seine Sorgen ernst. Anschließend erkläre ich die Situation in verständlicher Sprache und beantworte offene Fragen. Gemeinsam suche ich nach einer Lösung, damit wieder Vertrauen entstehen kann.“
 
 ---
 
-## Prüfungsfrage 5
+## Warum diese Antwort überzeugt
 
-### Warum ist Empathie wichtig?
+Diese Antwort zeigt, dass du:
 
-A) Damit Gespräche länger dauern
+- aktiv zuhörst.
+- empathisch reagierst.
+- verständlich kommunizierst.
+- Angehörige professionell einbeziehst.
+- Konflikte lösungsorientiert bearbeitest.
 
-B) Damit Patienten sich verstanden und ernst genommen fühlen
-
-C) Damit weniger dokumentiert werden muss
-
-D) Damit keine Fragen gestellt werden
-
-### Lösung
-
-✅ B) Damit Patienten sich verstanden und ernst genommen fühlen
-
-### Begründung
-
-Empathie ist eine wichtige Grundlage professioneller Beziehungsgestaltung.
+Genau diese Fähigkeiten erwarten Praxisanleiter und Prüfer.
 
 ---
-
-## Prüfungsfrage 6
-
-### Was ist bei Angehörigengesprächen besonders wichtig?
-
-A) Angehörige möglichst schnell abweisen
-
-B) Nur medizinische Fachbegriffe verwenden
-
-C) Zuhören, informieren und respektvoll kommunizieren
-
-D) Diskussionen vermeiden
-
-### Lösung
-
-✅ C) Zuhören, informieren und respektvoll kommunizieren
-
-### Begründung
-
-Angehörige sind häufig wichtige Bezugspersonen und sollten angemessen einbezogen werden.
-
----
-
-## Fallfrage
-
-### Situation
-
-Herr Meier erhält die Diagnose COPD.
-
-Er sagt:
-
-„Ich habe Angst, dass ich irgendwann ersticke."
-
-### Frage
-
-Welche Reaktion ist am professionellsten?
-
-A) Das wird schon wieder.
-
-B) Darüber müssen Sie sich keine Gedanken machen.
-
-C) Ich verstehe, dass Ihnen das Sorgen macht. Möchten Sie darüber sprechen?
-
-D) Das erklärt Ihnen später der Arzt.
-
-### Lösung
-
-✅ C) Ich verstehe, dass Ihnen das Sorgen macht. Möchten Sie darüber sprechen?
-
-### Begründung
-
-Die Aussage zeigt Empathie, Gesprächsbereitschaft und professionelle Kommunikation.
-
-## Was bewerten Prüfer?
-
-Prüfer achten häufig auf:
-
-- Empathie
-- Gesprächsführung
-- aktives Zuhören
-- Beratungsfähigkeit
-- verständliche Kommunikation
-- professionelles Auftreten
 
 ## Typische Fehler
 
-### Fehler 1
+Viele Auszubildende ...
 
-Zu viel Fachsprache verwenden.
+- reagieren vorschnell mit Erklärungen.
+- übergehen Gefühle und Sorgen.
+- sprechen überwiegend selbst.
+- verwenden unnötige Fachbegriffe.
+- beziehen Angehörige nicht angemessen ein.
+- hören nicht aktiv zu.
 
-### Fehler 2
+---
 
-Patienten unterbrechen.
+## Das solltest du für die Abschlussprüfung sicher beherrschen
 
-### Fehler 3
+Nach diesem Premium-Lernskript kannst du:
 
-Gefühle ignorieren.
+✅ typische Prüfungsfragen sicher beantworten.
 
-### Fehler 4
+✅ schwierige Gespräche professionell führen.
 
-Angehörige nicht einbeziehen.
+✅ empathisch und verständlich kommunizieren.
 
-## Zusammenfassung
+✅ Angehörige angemessen einbeziehen.
 
-Prüfungsfragen zu Kompetenzbereich II drehen sich meist um Kommunikation, Beratung und Beziehungsgestaltung.
+✅ kommunikative Entscheidungen fachlich begründen.
 
-Wer professionell kommunizieren und Menschen begleiten kann, sammelt in vielen Prüfungssituationen wichtige Punkte.
+✅ auch in Konfliktsituationen professionell handeln.
 
-## Passende Inhalte zum Thema Kompetenzbereich II
+---
 
-- [Kompetenzbereich II](/themen/pflegeausbildung/kompetenzbereich-2/)
-- [Kompetenzbereich II Pflegeprüfung](/themen/pflegeausbildung/kompetenzbereich-2-pflegepruefung/)
-- [Kompetenzbereich II Fallbeispiele](/themen/pflegeausbildung/kompetenzbereich-2-fallbeispiele/)
+## Dein nächster Schritt auf deinem Lernweg
 
-## Merksatz
+Du kennst jetzt typische Prüfungsfragen zu Kompetenzbereich II.
 
-**Kompetenzbereich II prüft, ob Kommunikation, Beratung und Beziehungsgestaltung professionell umgesetzt werden können.**
+### 🧠 Lernkarten
+
+Wiederhole wichtige Kommunikationsregeln und Beratungsprinzipien.
+
+### 🩺 Kompetenzbereich-II-Fallbeispiele
+
+Trainiere realistische Gesprächssituationen aus dem Pflegealltag.
+
+[Kompetenzbereich II Fallbeispiele](/themen/pflegeausbildung/kompetenzbereich-2-fallbeispiele/)
+
+### 📘 Kompetenzbereich II Pflegeprüfung
+
+Vertiefe Strategien für schriftliche, mündliche und praktische Prüfungen.
+
+[Kompetenzbereich II Pflegeprüfung](/themen/pflegeausbildung/kompetenzbereich-2-pflegepruefung/)
+
+### 📚 Passendes Premium-E-Book
+
+Vertiefe professionelle Kommunikation, Beratung und Beziehungsgestaltung.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**
