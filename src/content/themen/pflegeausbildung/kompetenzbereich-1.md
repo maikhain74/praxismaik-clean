@@ -45,14 +45,13 @@ Deshalb ist Kompetenzbereich I eng mit dem Pflegeprozess verbunden.
 
 Häufige Prüfungsthemen sind:
 
-- Pflegeprozess
+- [Pflegeprozess](/themen/pflegeausbildung/pflegeprozess/pflegeprozess-grundlagen/)
 - Pflegeplanung
-- Pflegediagnosen
-- PESR-Schema
-- Ressourcen
-- Pflegeprobleme
+- [Pflegediagnosen](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen/)
+- [PESR-Schema](/themen/pflegeausbildung/pflegeprozess/pesr-schema/)
+- [Pflegeprobleme und Ressourcen](/themen/pflegeausbildung/pflegeprozess/pflegeprobleme-ressourcen/)
 - Risikoeinschätzung
-- Evaluation
+- [Evaluation](/themen/pflegeausbildung/pflegeprozess/evaluation/)
 - Mobilisation
 - Körperpflege
 - Ernährung
@@ -76,14 +75,16 @@ Alle diese Schritte gehören zu Kompetenzbereich I.
 
 Der Pflegeprozess ist die wichtigste Grundlage von Kompetenzbereich I.
 
+Dieses Vorgehen orientiert sich konsequent am [Pflegeprozess](/themen/pflegeausbildung/pflegeprozess/pflegeprozess-grundlagen/). Von der [Informationssammlung](/themen/pflegeausbildung/pflegeprozess/informationssammlung/) über die [Pflegediagnosen](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen/) bis zur [Evaluation](/themen/pflegeausbildung/pflegeprozess/evaluation/) bauen alle Schritte logisch aufeinander auf.
+
 Dazu gehören:
 
-1. Informationssammlung
-2. Pflegeprobleme und Ressourcen erkennen
-3. Pflegeziele festlegen
-4. Maßnahmen planen
-5. Durchführung
-6. Evaluation
+1. [Informationssammlung](/themen/pflegeausbildung/pflegeprozess/informationssammlung/)
+2. [Pflegeprobleme und Ressourcen](/themen/pflegeausbildung/pflegeprozess/pflegeprobleme-ressourcen/)
+3. [Pflegeziele](/themen/pflegeausbildung/pflegeprozess/pflegeziele/)
+4. [Pflegemaßnahmen](/themen/pflegeausbildung/pflegeprozess/pflegemassnahmen/)
+5. [Durchführung der Pflege](/themen/pflegeausbildung/pflegeprozess/durchfuehrung/)
+6. [Evaluation](/themen/pflegeausbildung/pflegeprozess/evaluation/)
 
 Wer den Pflegeprozess versteht, versteht auch Kompetenzbereich I.
 
@@ -158,3 +159,171 @@ Wenn du Kompetenzbereich I für Ausbildung und Pflegeprüfung vertiefen möchtes
 ## Merksatz
 
 **Kompetenzbereich I beschreibt die professionelle Planung, Durchführung und Bewertung pflegerischer Versorgung.**
+
+---
+
+## So geht es jetzt weiter
+
+Du kennst jetzt die Grundlagen von Kompetenzbereich I und weißt, warum dieser Kompetenzbereich das Fundament professioneller Pflege bildet.
+
+Für die generalistische Pflegeausbildung reicht dieses Wissen jedoch nicht aus.
+
+Im Pflegealltag, in der Praxisanleitung und spätestens in der praktischen Abschlussprüfung musst du pflegerische Situationen systematisch analysieren, Prioritäten setzen und dein Handeln fachlich begründen können.
+
+Genau diese Kompetenzen entwickelst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Entwickle die Kompetenzen für Pflegealltag und Abschlussprüfung
+
+Kompetenzbereich I ist weit mehr als das Auswendiglernen des Pflegeprozesses.
+
+Er beschreibt die Fähigkeit, pflegerische Situationen professionell einzuschätzen, individuelle Entscheidungen zu treffen und Verantwortung für den gesamten Pflegeprozess zu übernehmen.
+
+Genau diese Fähigkeiten erwarten Praxisanleiter und Prüfer in der Abschlussprüfung.
+
+---
+
+## Typische Prüfungsfrage
+
+**Praxisanleiter oder Prüfer:**
+
+„Warum bildet Kompetenzbereich I die Grundlage professioneller Pflege und welche Bedeutung hat er für Ihr pflegerisches Handeln?“
+
+### Musterantwort
+
+„Kompetenzbereich I umfasst die Planung, Durchführung und Evaluation professioneller Pflege. Dazu gehören die Informationssammlung, das Erkennen von Pflegeproblemen und Ressourcen, das Formulieren von Pflegezielen, die Planung geeigneter Maßnahmen sowie die kontinuierliche Überprüfung ihrer Wirksamkeit.
+
+Dadurch wird Pflege individuell, nachvollziehbar und fachlich begründet. Kompetenzbereich I bildet deshalb die Grundlage professioneller Pflege und ist eng mit dem Pflegeprozess verbunden.“
+
+---
+
+## Warum diese Antwort überzeugt
+
+Diese Antwort zeigt, dass du nicht nur einzelne Fachbegriffe kennst.
+
+Sie macht deutlich, dass du:
+
+- pflegerische Situationen strukturiert analysierst.
+- den Pflegeprozess sicher anwenden kannst.
+- Prioritäten fachlich begründest.
+- Pflegeprobleme und Ressourcen erkennst.
+- professionelles pflegerisches Handeln verstehst.
+
+Genau darauf achten Praxisanleiter und Prüfer.
+
+---
+
+## Häufige Fehler
+
+Viele Auszubildende ...
+
+- lernen den Pflegeprozess nur auswendig.
+- erkennen Zusammenhänge zwischen den einzelnen Schritten nicht.
+- verwechseln Pflegeprobleme mit medizinischen Diagnosen.
+- begründen ihre Entscheidungen nicht.
+- vergessen vorhandene Ressourcen.
+
+---
+
+## Entscheidungssituation
+
+Du übernimmst einen neuen Bewohner nach einem Schlaganfall.
+
+Eine Kollegin möchte sofort mit der Körperpflege beginnen.
+
+**Wie gehst du vor?**
+
+Überlege zunächst selbst.
+
+---
+
+## Fachliche Lösung
+
+Bevor einzelne Pflegemaßnahmen durchgeführt werden, verschaffe ich mir einen Überblick über die aktuelle Situation.
+
+Ich sammle Informationen, erkenne Pflegeprobleme und Ressourcen, lege Pflegeziele fest und plane geeignete Maßnahmen.
+
+Erst anschließend erfolgt die Durchführung der Pflege.
+
+Dadurch orientiere ich mich konsequent am Pflegeprozess und stelle sicher, dass mein Handeln fachlich begründet ist.
+
+---
+
+## Fachliche Begründung
+
+Kompetenzbereich I bedeutet, pflegerische Entscheidungen nicht zufällig oder aus Gewohnheit zu treffen.
+
+Professionelle Pflege basiert auf einer strukturierten Einschätzung der Situation und einer nachvollziehbaren Planung.
+
+Dadurch werden Pflegequalität, Patientensicherheit und individuelle Versorgung verbessert.
+
+---
+
+## Transfer in den Pflegealltag
+
+Ein Kollege sagt:
+
+> „Wir haben heute keine Zeit für den Pflegeprozess. Mach einfach die Versorgung.“
+
+Wie würdest du reagieren?
+
+### Fachliche Einordnung
+
+Auch unter Zeitdruck bleibt der Pflegeprozess die Grundlage professioneller Pflege.
+
+Pflegefachpersonen tragen die Verantwortung dafür, dass Entscheidungen auf einer fachlichen Einschätzung beruhen und nicht ausschließlich aus Routine getroffen werden.
+
+---
+
+## Das solltest du für die Abschlussprüfung sicher beherrschen
+
+Nach diesem Premium-Lernskript kannst du:
+
+✅ Kompetenzbereich I vollständig erklären.
+
+✅ den Zusammenhang zum Pflegeprozess erläutern.
+
+✅ Pflegeprobleme und Ressourcen sicher erkennen.
+
+✅ pflegerische Entscheidungen fachlich begründen.
+
+✅ typische Prüfungssituationen analysieren.
+
+✅ Fragen von Praxisanleitern sicher beantworten.
+
+---
+
+## Dein nächster Schritt auf deinem Lernweg
+
+Du hast die Grundlagen von Kompetenzbereich I verstanden.
+
+Jetzt entwickelst du Schritt für Schritt die Kompetenzen, die du für den Pflegealltag und die Abschlussprüfung brauchst.
+
+### 🧠 Lernkarten
+
+Wiederhole die wichtigsten Inhalte von Kompetenzbereich I aktiv.
+
+### 🩺 Passender Prüfungsfall
+
+Analysiere eine realistische Pflegesituation und begründe dein pflegerisches Handeln.
+
+### 🎓 Examensquiz
+
+Überprüfe, ob du Kompetenzbereich I sicher auf Prüfungsniveau beherrschst.
+
+### 📚 Passendes Premium-E-Book
+
+Vertiefe dein Wissen zu Pflegeprozess, Pflegeplanung und professioneller Pflege.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**

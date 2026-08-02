@@ -28,161 +28,229 @@ Im Mittelpunkt stehen:
 
 Fast jede praktische Prüfung enthält Anteile aus diesem Kompetenzbereich.
 
-## Typische Prüfungsfrage 1
+## So geht es jetzt weiter
 
-### Was gehört zu Kompetenzbereich I?
+Du weißt jetzt, warum Kompetenzbereich I in der Pflegeprüfung eine zentrale Rolle spielt und welche Fähigkeiten Prüfer grundsätzlich erwarten.
 
-#### Antwort
+Für eine sichere Abschlussprüfung reicht dieses Grundlagenwissen jedoch nicht aus.
 
-Kompetenzbereich I umfasst die Planung, Durchführung und Evaluation pflegerischer Versorgung.
+Du musst komplexe Pflegesituationen analysieren, Risiken priorisieren, den Pflegeprozess anwenden und deine Entscheidungen fachlich begründen können.
 
-Dazu gehören insbesondere:
+Genau diese Kompetenzen trainierst du jetzt im Premiumbereich.
 
-- Informationssammlung
-- Pflegeprobleme erkennen
-- Pflegeziele formulieren
-- Maßnahmen planen
-- Ergebnisse bewerten
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
 
-## Typische Prüfungsfrage 2
+👉 Gute Pflege beginnt mit dem richtigen Denken.
 
-### Welche Aufgabe gehört zu Kompetenzbereich I?
+---
 
-A) Dienstplan erstellen
+<!-- PREMIUM_START -->
 
-B) Pflegeplanung erstellen
+# Entwickle die Kompetenzen für Pflegealltag und Abschlussprüfung
 
-C) Budget berechnen
+In der Pflegeprüfung wird Kompetenzbereich I nicht nur über Definitionen geprüft.
 
-D) Material bestellen
+Du musst zeigen, dass du eine pflegerische Situation strukturiert einschätzen, Prioritäten setzen und daraus einen vollständigen Pflegeprozess entwickeln kannst.
 
-### Lösung
+---
 
-✅ B) Pflegeplanung erstellen
+## Typische Prüfungsfrage
 
-## Fallbeispiel
+**Prüfer:**
 
-### Situation
+„Welche Aufgaben gehören zu Kompetenzbereich I und welche Bedeutung hat dieser Kompetenzbereich für Ihr pflegerisches Handeln?“
+
+### Musterantwort
+
+„Kompetenzbereich I umfasst die Planung, Durchführung und Evaluation professioneller Pflege.
+
+Dazu gehören die strukturierte Informationssammlung, das Erkennen von Pflegeproblemen, Risiken und Ressourcen, die Formulierung individueller Pflegeziele, die Planung geeigneter Pflegemaßnahmen sowie die Überprüfung ihrer Wirksamkeit.
+
+Dadurch wird die pflegerische Versorgung individuell, nachvollziehbar und fachlich begründet. Kompetenzbereich I bildet deshalb die Grundlage meines professionellen pflegerischen Handelns.“
+
+---
+
+## Warum diese Antwort überzeugt
+
+Diese Antwort zeigt, dass du Kompetenzbereich I nicht nur als theoretischen Prüfungsstoff verstehst.
+
+Du stellst den Zusammenhang zum gesamten [Pflegeprozess](/themen/pflegeausbildung/pflegeprozess/pflegeprozess-grundlagen/) her und erklärst, wie aus einer pflegerischen Einschätzung konkrete Ziele, Maßnahmen und Entscheidungen entstehen.
+
+Damit zeigst du genau die pflegefachliche Denkstruktur, auf die Prüfer in der Abschlussprüfung achten.
+
+---
+
+## Häufige Fehler
+
+Viele Auszubildende ...
+
+- zählen lediglich einzelne Schritte des Pflegeprozesses auf.
+- erkennen Risiken nicht rechtzeitig.
+- setzen keine nachvollziehbaren Prioritäten.
+- verwechseln medizinische Diagnosen mit Pflegeproblemen.
+- vergessen vorhandene Ressourcen.
+- nennen Maßnahmen, ohne sie fachlich zu begründen.
+- lassen die Evaluation vollständig außer Acht.
+
+---
+
+## Entscheidungssituation
 
 Herr Bauer wird nach einem Schlaganfall aufgenommen.
 
-Bei der pflegerischen Einschätzung fallen auf:
+Bei der pflegerischen Einschätzung stellst du fest:
 
-- Husten beim Trinken
+- wiederholtes Husten beim Trinken
 - unsicheres Gehen
 - Hilfebedarf bei der Körperpflege
+- eingeschränkte Beweglichkeit des rechten Arms
 - verwaschene Sprache
 
-### Prüfungsfrage
+**Welches Problem besitzt zunächst die höchste Priorität und wie gehst du weiter vor?**
 
-Welche Aufgaben aus Kompetenzbereich I werden benötigt?
+Überlege zuerst selbst.
 
-### Lösung
+---
 
-Die Pflegefachperson muss:
+## Fachliche Lösung
 
-- Informationen sammeln
-- Pflegeprobleme erkennen
-- Risiken einschätzen
-- Pflegeziele festlegen
-- Maßnahmen planen
-- Ergebnisse evaluieren
+Das mögliche Aspirationsrisiko besitzt zunächst die höchste Priorität.
 
-## Prioritätensetzung in der Prüfung
+Das wiederholte Husten beim Trinken kann auf eine Schluckstörung hinweisen. Dadurch besteht die Gefahr, dass Nahrung oder Flüssigkeit in die Atemwege gelangt.
 
-Prüfer achten häufig darauf, ob Risiken richtig priorisiert werden.
+Ich unterbreche deshalb zunächst die unkontrollierte orale Flüssigkeitsaufnahme, beurteile die Situation genauer und informiere die zuständige Pflegefachperson beziehungsweise das behandelnde Team.
 
-Im Fallbeispiel hätte das Risiko für Aspiration Vorrang.
+Anschließend führe ich die [Informationssammlung](/themen/pflegeausbildung/pflegeprozess/informationssammlung/) systematisch fort, erkenne weitere Pflegeprobleme und Ressourcen und entwickle daraus geeignete Pflegeziele und Pflegemaßnahmen.
 
-### Merke
+---
 
-Gefährdungen von Atmung und Sicherheit haben häufig Vorrang vor Komfort oder Mobilität.
+## Fachliche Begründung
 
-## Zusammenhang mit dem Pflegeprozess
+Gefährdungen von Atmung und Sicherheit haben Vorrang vor Mobilisation, Körperpflege oder Komfort.
 
-Kompetenzbereich I basiert auf dem Pflegeprozess.
+Die Entscheidung beruht deshalb nicht auf einer festen Reihenfolge einzelner Tätigkeiten, sondern auf einer fachlichen Einschätzung des aktuellen Risikos.
 
-Typische Schritte:
+Genau diese Fähigkeit zur Priorisierung wird in der praktischen Abschlussprüfung erwartet.
 
-1. Informationssammlung
-2. Pflegeprobleme und Ressourcen erkennen
-3. Pflegeziele festlegen
-4. Maßnahmen planen
-5. Durchführung
-6. Evaluation
+---
 
-## Was bewerten Prüfer?
+## Pflegeprozess auf die Situation anwenden
 
-### Pflegefachliches Denken
+### 1. Informationssammlung
 
-Werden Pflegeprobleme erkannt?
+Relevante Beobachtungen, Beschwerden, Risiken und Ressourcen werden vollständig erfasst.
 
-### Prioritätensetzung
+### 2. Pflegeprobleme und Ressourcen
 
-Werden Risiken richtig eingeschätzt?
+Mögliche Probleme sind:
 
-### Pflegeplanung
+- Risiko für Aspiration
+- beeinträchtigte Mobilität
+- Selbstversorgungsdefizit
+- beeinträchtigte Kommunikation
 
-Werden passende Ziele und Maßnahmen formuliert?
+Mögliche Ressourcen sind:
 
-### Evaluation
+- versteht Anweisungen
+- kann Bedürfnisse teilweise äußern
+- kann mit Unterstützung kurze Strecken gehen
 
-Werden Ergebnisse bewertet?
+### 3. Pflegediagnosen
 
-## Typische Fehler
+Eine mögliche prioritäre Pflegediagnose lautet:
 
-### Fehler 1
+**Risiko für Aspiration aufgrund einer möglichen Schluckstörung nach Schlaganfall, erkennbar an wiederholtem Husten beim Trinken.**
 
-Krankheitswissen mit Pflegeplanung verwechseln.
+### 4. Pflegeziele
 
-### Fehler 2
+Ein mögliches Pflegeziel lautet:
 
-Pflegeprobleme nicht priorisieren.
+**Herr Bauer nimmt Flüssigkeit sicher und ohne Hinweise auf Aspiration zu sich.**
 
-### Fehler 3
+### 5. Pflegemaßnahmen
 
-Ressourcen vergessen.
+Mögliche Maßnahmen sind:
 
-### Fehler 4
+- Schlucksituation fachlich einschätzen lassen.
+- Nahrungs- und Flüssigkeitsaufnahme begleiten.
+- aufrechte Position sicherstellen.
+- Husten, Stimme und Atmung beobachten.
+- Auffälligkeiten unmittelbar weitergeben und dokumentieren.
 
-Pflegeziele ungenau formulieren.
+### 6. Evaluation
 
-## Mini-Quiz
+Es wird überprüft, ob die Flüssigkeitsaufnahme ohne Husten, Atemnot oder weitere Aspirationszeichen möglich ist.
 
-### Welche Aussage trifft zu?
+---
 
-A) Kompetenzbereich I beschäftigt sich hauptsächlich mit Dienstplanung.
+## Transfer in den Pflegealltag
 
-B) Kompetenzbereich I umfasst den Pflegeprozess.
+Eine Kollegin sagt:
 
-C) Kompetenzbereich I betrifft nur Krankenhäuser.
+> „Wir kümmern uns zuerst um die Körperpflege. Das Trinken überprüfen wir später.“
 
-D) Kompetenzbereich I spielt in Prüfungen kaum eine Rolle.
+Wie würdest du reagieren?
 
-### Lösung
+### Fachliche Einordnung
 
-✅ B) Kompetenzbereich I umfasst den Pflegeprozess.
+Die Reihenfolge pflegerischer Aufgaben richtet sich nach der aktuellen Gefährdung.
 
-## Zusammenfassung
+Ein mögliches Aspirationsrisiko kann die Atmung und damit die Sicherheit unmittelbar gefährden. Deshalb muss dieses Problem vor der routinemäßigen Körperpflege eingeschätzt werden.
 
-Kompetenzbereich I ist einer der wichtigsten Prüfungsbereiche der generalistischen Pflegeausbildung.
+---
 
-Wer Pflegeprozess, Pflegeplanung, Pflegediagnosen und Prioritätensetzung sicher beherrscht, ist für viele Prüfungssituationen gut vorbereitet.
+## Das solltest du für die Abschlussprüfung sicher beherrschen
 
-## Passende Inhalte zum Thema Kompetenzbereich I
+Nach diesem Premium-Lernskript kannst du:
 
+✅ Kompetenzbereich I vollständig erklären.
 
+✅ den Pflegeprozess auf eine Fallsituation übertragen.
 
-Wenn du Kompetenzbereich I für die Pflegeprüfung vertiefen möchtest:
+✅ Pflegeprobleme, Risiken und Ressourcen erkennen.
 
-- [Kompetenzbereich I](/themen/pflegeausbildung/kompetenzbereich-1/)
-- [Kompetenzbereich I Fallbeispiele](/themen/pflegeausbildung/kompetenzbereich-1-fallbeispiele/)
-- [Kompetenzbereich I Prüfungsfragen](/themen/pflegeausbildung/kompetenzbereich-1-pruefungsfragen/)
-- [Pflegeprozess Grundlagen](/themen/pflegeausbildung/pflegeprozess/pflegeprozess-grundlagen/)
-- [Pflegediagnosen](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen/)
-- [PESR-Schema](/themen/pflegeausbildung/pflegeprozess/pesr-schema/)
-- [Vorbehaltsaufgaben](/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben/)
+✅ pflegerische Probleme fachlich priorisieren.
 
-## Merksatz
+✅ passende Pflegeziele und Pflegemaßnahmen ableiten.
 
-**Kompetenzbereich I prüft, ob pflegerische Situationen fachlich geplant, durchgeführt und bewertet werden können.**
+✅ Entscheidungen nachvollziehbar begründen.
+
+✅ die Evaluation als festen Bestandteil des Pflegeprozesses einbeziehen.
+
+---
+
+## Dein nächster Schritt auf deinem Lernweg
+
+Du kannst Kompetenzbereich I jetzt auf eine typische Prüfungssituation anwenden.
+
+### 🧠 Lernkarten
+
+Wiederhole die zentralen Aufgaben und Entscheidungsschritte aus Kompetenzbereich I.
+
+### 🩺 Kompetenzbereich-I-Fallbeispiele
+
+Trainiere die Analyse realistischer Pflegesituationen:
+
+[Kompetenzbereich I Fallbeispiele](/themen/pflegeausbildung/kompetenzbereich-1-fallbeispiele/)
+
+### 🎓 Kompetenzbereich-I-Prüfungsfragen
+
+Überprüfe dein Wissen mit typischen Fragen:
+
+[Kompetenzbereich I Prüfungsfragen](/themen/pflegeausbildung/kompetenzbereich-1-pruefungsfragen/)
+
+### 📘 Pflegeprozess vertiefen
+
+Wiederhole den vollständigen Ablauf:
+
+[Pflegeprozess Grundlagen](/themen/pflegeausbildung/pflegeprozess/pflegeprozess-grundlagen/)
+
+### 📚 Passendes Premium-E-Book
+
+Vertiefe Pflegeprozess, Pflegeplanung, Prioritätensetzung und fachliche Begründungen.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**

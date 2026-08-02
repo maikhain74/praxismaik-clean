@@ -24,192 +24,184 @@ Prüfer möchten häufig wissen:
 
 Genau diese Fähigkeiten gehören zu Kompetenzbereich I.
 
+## So geht es jetzt weiter
+
+Du hast gesehen, welche Bedeutung Fallbeispiele im Kompetenzbereich I haben und welche Fähigkeiten in der Pflegeprüfung erwartet werden.
+
+Für eine sichere Abschlussprüfung reicht dieses Grundlagenwissen jedoch nicht aus.
+
+Du musst komplexe Pflegesituationen analysieren, Prioritäten setzen, Risiken erkennen und dein pflegerisches Handeln fachlich begründen können.
+
+Genau diese Kompetenzen trainierst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Entwickle deine Handlungskompetenz anhand realistischer Fallsituationen
+
+In der Abschlussprüfung bekommst du keine reinen Wissensfragen.
+
+Du erhältst reale Pflegesituationen und musst daraus fachlich begründete Entscheidungen ableiten.
+
+Genau das trainierst du jetzt.
+
+---
+
 ## Fallbeispiel 1: Schlaganfall
 
 ### Situation
 
 Herr Bauer, 68 Jahre, wurde nach einem Schlaganfall aufgenommen.
 
-Bei der Versorgung fallen auf:
+Bei der pflegerischen Einschätzung fallen auf:
 
-- Husten beim Trinken
-- unsicheres Gehen
+- wiederholtes Husten beim Trinken
+- unsicheres Gangbild
 - verwaschene Sprache
 - Hilfebedarf bei der Körperpflege
-
-### Frage
-
-Welche Aufgabe aus Kompetenzbereich I steht zuerst im Mittelpunkt?
-
-### Lösung
-
-Die Pflegefachperson muss die Situation einschätzen und Pflegeprobleme erkennen.
-
-### Priorität
-
-Das Risiko für Aspiration hat Vorrang.
-
-### Begründung
-
-Eine Aspiration kann lebensbedrohliche Folgen haben.
+- eingeschränkte Beweglichkeit des rechten Arms
 
 ---
 
-## Fallbeispiel 2: COPD
+## Deine Aufgabe
+
+Analysiere die Situation.
+
+Beantworte dabei folgende Fragen:
+
+- Welches Pflegeproblem besitzt die höchste Priorität?
+- Welche Risiken erkennst du?
+- Welche Ressourcen sind vorhanden?
+- Wie würdest du den Pflegeprozess beginnen?
+
+Überlege zunächst selbst.
+
+---
+
+## Fachliche Lösung
+
+Das wiederholte Husten beim Trinken weist zunächst auf ein mögliches Aspirationsrisiko hin.
+
+Dieses Risiko besitzt Vorrang, weil dadurch die Atmung unmittelbar gefährdet sein kann.
+
+Deshalb beginne ich mit einer strukturierten Informationssammlung, beurteile die Schlucksituation und leite daraus den weiteren Pflegeprozess ab.
+
+Erst danach werden weitere Pflegeprobleme, Ressourcen, Pflegeziele und Pflegemaßnahmen geplant.
+
+---
+
+## Fachliche Begründung
+
+Kompetenzbereich I bedeutet, pflegerische Situationen systematisch zu analysieren.
+
+Nicht jede Beobachtung besitzt dieselbe Bedeutung.
+
+Pflegefachpersonen müssen Gefährdungen erkennen, Prioritäten setzen und ihre Entscheidungen fachlich begründen.
+
+Genau diese Kompetenz wird in der praktischen Abschlussprüfung bewertet.
+
+---
+
+## Zweites Fallbeispiel
 
 ### Situation
 
 Herr Meier leidet an COPD.
 
-Während der Körperpflege entwickelt er:
+Während der Körperpflege entwickelt er zunehmende Atemnot.
 
-- Atemnot
+Zusätzlich beobachtest du:
+
 - schnelle Atmung
+- Einsatz der Atemhilfsmuskulatur
 - Unruhe
-
-### Frage
-
-Welche Priorität muss gesetzt werden?
-
-### Lösung
-
-Die Atmung hat Vorrang.
-
-### Begründung
-
-Eine ausreichende Sauerstoffversorgung ist lebenswichtig.
-
----
-
-## Fallbeispiel 3: Sturzgefährdung
-
-### Situation
-
-Frau Schneider möchte nachts allein zur Toilette gehen.
-
-Bei der Beobachtung fallen auf:
-
-- unsicherer Gang
-- Schwindel
-- bereits zwei Stürze in den letzten Wochen
-
-### Frage
-
-Welche Aufgabe aus Kompetenzbereich I wird benötigt?
-
-### Lösung
-
-Risiken erkennen und geeignete Maßnahmen planen.
-
-### Mögliche Maßnahmen
-
-- Sturzrisiko einschätzen
-- Hilfsmittel bereitstellen
-- Umgebung sichern
-- Beobachtung intensivieren
-
----
-
-## Fallbeispiel 4: Asthma
-
-### Situation
-
-Frau Neumann entwickelt plötzlich Atemnot.
-
-Zusätzlich fallen auf:
-
-- pfeifende Atemgeräusche
 - Sprechdyspnoe
-- Angst
 
-### Frage
+### Überlege selbst
 
-Welches Pflegeproblem hat Vorrang?
+Welches Pflegeproblem besitzt jetzt die höchste Priorität?
 
-### Lösung
-
-Beeinträchtigte Atmung.
-
-### Begründung
-
-Die Atmung hat immer Vorrang vor anderen Pflegeproblemen.
+Welche Sofortmaßnahmen leitest du ein?
 
 ---
 
-## Was haben alle Fallbeispiele gemeinsam?
+## Fachliche Lösung
 
-In allen Situationen muss die Pflegefachperson:
+Die beeinträchtigte Atmung besitzt höchste Priorität.
 
-- Informationen sammeln
-- Pflegeprobleme erkennen
-- Prioritäten setzen
-- Maßnahmen planen
-- Ergebnisse bewerten
+Die Körperpflege wird unterbrochen.
 
-Genau das beschreibt Kompetenzbereich I.
+Herr Meier wird in eine atemerleichternde Position gebracht, beruhigt und engmaschig beobachtet.
 
-## Typische Prüfungsfrage
+Je nach Situation werden weitere pflegerische und medizinische Maßnahmen eingeleitet.
 
-### Was steht bei Kompetenzbereich I im Mittelpunkt?
+---
 
-A) Dienstplanung
+## Transfer in den Pflegealltag
 
-B) Pflegeprozess und pflegerische Versorgung
+Eine Kollegin sagt:
 
-C) Materialverwaltung
+> „Die Körperpflege machen wir zuerst fertig. Danach kümmern wir uns um die Atemnot."
 
-D) Budgetplanung
+Wie würdest du reagieren?
 
-### Lösung
+### Fachliche Einordnung
 
-✅ B) Pflegeprozess und pflegerische Versorgung
+Gefährdungen der Atmung besitzen Vorrang.
 
-## Typische Fehler
+Pflegefachpersonen müssen jederzeit entscheiden können, welche Probleme sofortiges Handeln erfordern und welche Maßnahmen warten können.
 
-### Fehler 1
+---
 
-Risiken nicht priorisieren.
+## Das solltest du für die Abschlussprüfung sicher beherrschen
 
-### Fehler 2
+Nach diesem Premium-Lernskript kannst du:
 
-Ressourcen vergessen.
+✅ Fallsituationen systematisch analysieren.
 
-### Fehler 3
+✅ Risiken sicher priorisieren.
 
-Pflegeprobleme mit medizinischen Diagnosen verwechseln.
+✅ Pflegeprobleme erkennen.
 
-### Fehler 4
+✅ Ressourcen berücksichtigen.
 
-Maßnahmen nicht begründen können.
+✅ den Pflegeprozess anwenden.
 
-## Pflegeprüfung
+✅ pflegerische Entscheidungen fachlich begründen.
 
-Prüfer achten häufig darauf:
+---
 
-- Werden Pflegeprobleme erkannt?
-- Werden Risiken richtig eingeschätzt?
-- Wird fachlich begründet?
-- Wird der Pflegeprozess angewendet?
+## Dein nächster Schritt auf deinem Lernweg
 
-## Zusammenfassung
+Du kannst Fallbeispiele jetzt strukturiert analysieren.
 
-Kompetenzbereich I wird in Prüfungen häufig über Fallbeispiele geprüft.
+### 🧠 Lernkarten
 
-Wer typische Situationen analysieren und begründen kann, ist auf viele Prüfungsaufgaben gut vorbereitet.
+Trainiere typische Prüfungssituationen aktiv.
 
+### 🎓 Kompetenzbereich-I-Prüfungsfragen
 
+Überprüfe dein Wissen mit typischen Prüfungsfragen.
 
-## Passende Inhalte zum Thema Kompetenzbereich I
+[Kompetenzbereich I Prüfungsfragen](/themen/pflegeausbildung/kompetenzbereich-1-pruefungsfragen/)
 
-Wenn du Kompetenzbereich I für Ausbildung und Pflegeprüfung vertiefen möchtest:
+### 📘 Kompetenzbereich I Pflegeprüfung
 
-- [Kompetenzbereich I](/themen/pflegeausbildung/kompetenzbereich-1/)
-- [Kompetenzbereich I Pflegeprüfung](/themen/pflegeausbildung/kompetenzbereich-1-pflegepruefung/)
-- [Kompetenzbereich I Prüfungsfragen](/themen/pflegeausbildung/kompetenzbereich-1-pruefungsfragen/)
-- [Pflegeprozess Grundlagen](/themen/pflegeausbildung/pflegeprozess/pflegeprozess-grundlagen/)
-- [Pflegediagnosen](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen/)
-- [Vorbehaltsaufgaben](/themen/pflegeausbildung/pflegeprozess/vorbehaltsaufgaben/)
+Vertiefe Strategien für schriftliche, mündliche und praktische Prüfungen.
 
-## Merksatz
+[Kompetenzbereich I Pflegeprüfung](/themen/pflegeausbildung/kompetenzbereich-1-pflegepruefung/)
 
-**Kompetenzbereich I zeigt sich immer dann, wenn pflegerische Situationen eingeschätzt, geplant, durchgeführt und bewertet werden.**
+### 📚 Passendes Premium-E-Book
+
+Vertiefe Pflegeprozess, Prioritätensetzung und professionelle Entscheidungsfindung.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**
