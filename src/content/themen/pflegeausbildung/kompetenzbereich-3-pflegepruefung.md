@@ -26,158 +26,167 @@ Pflegefachpersonen arbeiten täglich mit:
 
 Deshalb gehört die Zusammenarbeit zu den zentralen Kompetenzen professioneller Pflege.
 
-## Typische Prüfungsfrage 1
+## So geht es jetzt weiter
 
-### Was steht im Mittelpunkt von Kompetenzbereich III?
+Du weißt jetzt, warum Kompetenzbereich III in der Pflegeprüfung eine wichtige Rolle spielt und weshalb Zusammenarbeit sowie eine strukturierte Informationsweitergabe für die Patientensicherheit entscheidend sind.
 
-#### Antwort
+Für eine sichere Abschlussprüfung reicht dieses Grundlagenwissen jedoch nicht aus.
 
-Interprofessionelle Zusammenarbeit, Teamarbeit und strukturierte Kommunikation.
+Du musst Informationen vollständig weitergeben, mit verschiedenen Berufsgruppen professionell zusammenarbeiten und deine Entscheidungen fachlich begründen können.
 
-## Typische Prüfungsfrage 2
+Genau diese Kompetenzen trainierst du jetzt im Premiumbereich.
 
-### Welches Beispiel gehört zu Kompetenzbereich III?
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
 
-A) Pflegeplanung erstellen
+👉 Gute Pflege beginnt mit dem richtigen Denken.
 
-B) Übergabe durchführen
+---
 
-C) Pflegeziel formulieren
+<!-- PREMIUM_START -->
 
-D) Körperpflege planen
+# Entwickle deine Handlungskompetenz für Zusammenarbeit und Patientensicherheit
 
-### Lösung
+In der Pflegeprüfung wird nicht nur bewertet, ob du Fachwissen besitzt.
 
-✅ B) Übergabe durchführen
+Prüfer möchten sehen, ob du Informationen sicher weitergibst, Verantwortlichkeiten erkennst und gemeinsam mit anderen Berufsgruppen eine sichere Versorgung gewährleistest.
 
-## Fallbeispiel
+---
 
-### Situation
+## Typische Prüfungsfrage
+
+**Praxisanleiter oder Prüfer:**
+
+„Warum ist die interprofessionelle Zusammenarbeit für die Patientensicherheit so wichtig?“
+
+### Musterantwort
+
+„Pflegefachpersonen arbeiten täglich mit verschiedenen Berufsgruppen zusammen. Nur wenn Beobachtungen vollständig, verständlich und rechtzeitig weitergegeben werden, können Risiken früh erkannt und geeignete Maßnahmen eingeleitet werden.
+
+Eine strukturierte Zusammenarbeit verhindert Informationsverluste, verbessert die Abstimmung im Behandlungsteam und trägt wesentlich zur Patientensicherheit bei.“
+
+---
+
+## Warum diese Antwort überzeugt
+
+Diese Antwort zeigt, dass du Zusammenarbeit nicht nur als organisatorische Aufgabe verstehst.
+
+Du erklärst den Zusammenhang zwischen Kommunikation, Verantwortung, Patientensicherheit und professioneller Pflege.
+
+Genau diese Zusammenhänge erwarten Praxisanleiter und Prüfer.
+
+---
+
+## Häufige Fehler
+
+Viele Auszubildende ...
+
+- geben Beobachtungen unvollständig weiter.
+- warten mit wichtigen Informationen bis zur Übergabe.
+- kennen Verantwortlichkeiten nicht genau.
+- delegieren Aufgaben ohne klare Absprachen.
+- dokumentieren Veränderungen unzureichend.
+- beziehen andere Berufsgruppen zu spät ein.
+
+---
+
+## Entscheidungssituation
 
 Herr Schneider wurde nach einem Schlaganfall aufgenommen.
 
-Während der Versorgung fällt auf:
+Während des Frühstücks beobachtest du:
 
 - Husten beim Trinken
 - verwaschene Sprache
-- Unsicherheit beim Gehen
+- unsicheres Gangbild
 
-### Prüfungsfrage
+**Wie gehst du jetzt vor?**
 
-Welche Berufsgruppen sollten informiert werden?
+Überlege zunächst selbst.
 
-### Lösung
+---
 
-- ärztlicher Dienst
-- Logopädie
-- Physiotherapie
+## Fachliche Lösung
 
-### Begründung
+Ich nehme die Beobachtungen ernst und unterbreche die unbeaufsichtigte Flüssigkeitsaufnahme.
 
-Mehrere Berufsgruppen müssen gemeinsam handeln.
+Anschließend informiere ich die zuständige Pflegefachperson beziehungsweise den ärztlichen Dienst und dokumentiere die Situation.
 
-## Delegation in der Prüfung
+Zusätzlich stimme ich das weitere Vorgehen mit den beteiligten Berufsgruppen, beispielsweise der Logopädie und Physiotherapie, ab.
 
-Delegation ist ein häufiges Prüfungsthema.
+Alle relevanten Informationen werden vollständig und strukturiert an das Behandlungsteam weitergegeben.
 
-Prüfer fragen beispielsweise:
+---
 
-- Welche Aufgaben dürfen delegiert werden?
-- Welche Verantwortung bleibt bei der Pflegefachperson?
-- Wann darf nicht delegiert werden?
+## Fachliche Begründung
 
-### Merke
+Das Husten beim Trinken kann auf eine Schluckstörung und damit auf ein Aspirationsrisiko hinweisen.
 
-Verantwortung kann nicht vollständig abgegeben werden.
+Damit alle notwendigen diagnostischen und therapeutischen Maßnahmen eingeleitet werden können, müssen Beobachtungen zeitnah, vollständig und nachvollziehbar weitergegeben werden.
 
-## Übergabe
+Genau diese strukturierte Zusammenarbeit verbessert die Patientensicherheit.
 
-Eine sichere Übergabe ist entscheidend für die Patientensicherheit.
+---
 
-Wichtige Inhalte:
+## Transfer in den Pflegealltag
 
-- aktueller Zustand
-- Risiken
-- Veränderungen
-- geplante Maßnahmen
-- Beobachtungen
+Eine Kollegin sagt:
 
-## Zusammenarbeit mit Ärzten
+> „Ich erwähne das später bei der Übergabe. Im Moment haben wir keine Zeit.“
 
-Pflegefachpersonen müssen relevante Veränderungen erkennen und weitergeben.
+Wie würdest du reagieren?
 
-Beispiele:
+### Fachliche Einordnung
 
-- Atemnot
-- Bewusstseinsveränderungen
-- Kreislaufprobleme
-- akute Schmerzen
-- Stürze
+Beobachtungen mit unmittelbarer Bedeutung für die Sicherheit der pflegebedürftigen Person dürfen nicht bis zur nächsten Übergabe warten.
 
-## Was bewerten Prüfer?
+Relevante Veränderungen müssen sofort weitergegeben werden, damit notwendige Maßnahmen unmittelbar eingeleitet werden können.
 
-### Kommunikation
+---
 
-Werden Informationen klar weitergegeben?
+## Das solltest du für die Abschlussprüfung sicher beherrschen
 
-### Teamarbeit
+Nach diesem Premium-Lernskript kannst du:
 
-Werden andere Berufsgruppen sinnvoll einbezogen?
+✅ interprofessionelle Zusammenarbeit fachlich erklären.
 
-### Verantwortung
+✅ wichtige Informationen sicher weitergeben.
 
-Werden Zuständigkeiten erkannt?
+✅ Verantwortlichkeiten richtig einschätzen.
 
-### Patientensicherheit
+✅ Delegation fachlich beurteilen.
 
-Werden Risiken weitergegeben?
+✅ Risiken frühzeitig kommunizieren.
 
-## Typische Fehler
+✅ Entscheidungen nachvollziehbar begründen.
 
-### Fehler 1
+---
 
-Wichtige Beobachtungen nicht weitergeben.
+## Dein nächster Schritt auf deinem Lernweg
 
-### Fehler 2
+Du weißt jetzt, worauf Prüfer bei Kompetenzbereich III besonders achten.
 
-Unstrukturierte Übergaben.
+### 🧠 Lernkarten
 
-### Fehler 3
+Wiederhole wichtige Regeln zur Zusammenarbeit, Übergabe und Delegation.
 
-Verantwortlichkeiten nicht kennen.
+### 🩺 Kompetenzbereich-III-Fallbeispiele
 
-### Fehler 4
+Trainiere realistische Situationen aus dem Pflegealltag.
 
-Andere Berufsgruppen zu spät informieren.
+[Kompetenzbereich III Fallbeispiele](/themen/pflegeausbildung/kompetenzbereich-3-fallbeispiele/)
 
-## Mini-Quiz
+### 🎓 Kompetenzbereich-III-Prüfungsfragen
 
-### Welche Aussage trifft zu?
+Überprüfe dein Wissen mit typischen Prüfungsfragen.
 
-A) Pflege arbeitet unabhängig von anderen Berufsgruppen.
+[Kompetenzbereich III Prüfungsfragen](/themen/pflegeausbildung/kompetenzbereich-3-pruefungsfragen/)
 
-B) Kompetenzbereich III umfasst Zusammenarbeit und Kommunikation.
+### 📚 Passendes Premium-E-Book
 
-C) Kompetenzbereich III beschäftigt sich nur mit Dokumentation.
+Vertiefe interprofessionelle Zusammenarbeit, Delegation und professionelle Teamkommunikation.
 
-D) Kompetenzbereich III spielt in Prüfungen kaum eine Rolle.
+---
 
-### Lösung
-
-✅ B) Kompetenzbereich III umfasst Zusammenarbeit und Kommunikation.
-
-## Zusammenfassung
-
-Kompetenzbereich III prüft die Fähigkeit zur Zusammenarbeit mit anderen Berufsgruppen sowie zur sicheren Weitergabe wichtiger Informationen.
-
-Diese Fähigkeiten sind entscheidend für Patientensicherheit und Pflegequalität.
-
-## Passende Inhalte zum Thema Kompetenzbereich III
-
-- [Kompetenzbereich III](/themen/pflegeausbildung/kompetenzbereich-3/)
-- [Kompetenzbereich III Fallbeispiele](/themen/pflegeausbildung/kompetenzbereich-3-fallbeispiele/)
-- [Kompetenzbereich III Prüfungsfragen](/themen/pflegeausbildung/kompetenzbereich-3-pruefungsfragen/)
-
-## Merksatz
-
-**Kompetenzbereich III prüft, ob Informationen sicher weitergegeben und andere Berufsgruppen professionell eingebunden werden können.**
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**

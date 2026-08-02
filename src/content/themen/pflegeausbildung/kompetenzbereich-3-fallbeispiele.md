@@ -22,197 +22,166 @@ Prüfer möchten häufig wissen:
 
 Genau diese Fähigkeiten gehören zu Kompetenzbereich III.
 
+## So geht es jetzt weiter
+
+Du hast gesehen, wie Kompetenzbereich III anhand typischer Fallsituationen geprüft wird und welche Bedeutung Zusammenarbeit sowie Informationsweitergabe für eine sichere Patientenversorgung haben.
+
+Für die Abschlussprüfung reicht dieses Grundlagenwissen jedoch nicht aus.
+
+Du musst Situationen analysieren, Prioritäten setzen, andere Berufsgruppen gezielt einbeziehen und dein Handeln fachlich begründen können.
+
+Genau diese Kompetenzen trainierst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Trainiere Kompetenzbereich III anhand realistischer Fallsituationen
+
+In der praktischen Abschlussprüfung wirst du selten nach Definitionen gefragt.
+
+Stattdessen erhältst du Situationen aus dem Pflegealltag und musst zeigen, dass du strukturiert handelst, Informationen sicher weitergibst und die Patientensicherheit im Blick behältst.
+
+---
+
 ## Fallbeispiel 1: Schlaganfall
 
 ### Situation
 
 Herr Bauer wurde nach einem Schlaganfall aufgenommen.
 
-Während des Frühstücks fallen auf:
+Während des Frühstücks beobachtest du:
 
 - Husten beim Trinken
 - verwaschene Sprache
-- Unsicherheit beim Gehen
-
-### Frage
-
-Welche Berufsgruppen sollten informiert werden?
-
-### Lösung
-
-- ärztlicher Dienst
-- Logopädie
-- Physiotherapie
-
-### Begründung
-
-Mehrere Berufsgruppen müssen gemeinsam handeln.
+- unsicheres Gangbild
 
 ---
 
-## Fallbeispiel 2: Atemnot bei COPD
+## Deine Aufgabe
 
-### Situation
+Überlege zunächst selbst.
 
-Herr Meier leidet an COPD.
-
-Während der Körperpflege entwickelt er:
-
-- starke Atemnot
-- schnelle Atmung
-- Unruhe
-
-### Frage
-
-Welche Aufgabe aus Kompetenzbereich III wird benötigt?
-
-### Lösung
-
-Die Beobachtungen müssen strukturiert weitergegeben werden.
-
-### Begründung
-
-Eine sichere Kommunikation erhöht die Patientensicherheit.
+- Welche Gefahr erkennst du?
+- Wen informierst du?
+- Welche Maßnahmen leitest du ein?
 
 ---
 
-## Fallbeispiel 3: Entlassung
+## Fachliche Lösung
 
-### Situation
+Ich nehme die Beobachtungen ernst und unterbreche die unbeaufsichtigte Flüssigkeitsaufnahme.
 
-Frau Schneider soll nach einem längeren Krankenhausaufenthalt entlassen werden.
+Anschließend informiere ich die zuständige Pflegefachperson beziehungsweise den ärztlichen Dienst und dokumentiere die Beobachtungen.
 
-Sie benötigt weiterhin Unterstützung bei:
+Zusätzlich werden die Logopädie und bei Bedarf die Physiotherapie eingebunden.
 
-- Körperpflege
-- Medikamenteneinnahme
-- Mobilisation
-
-### Frage
-
-Welche Berufsgruppen sollten einbezogen werden?
-
-### Lösung
-
-- Sozialdienst
-- ambulanter Pflegedienst
-- Hausarzt
-
-### Begründung
-
-Eine sichere Weiterversorgung muss organisiert werden.
+Alle relevanten Informationen werden strukturiert an das Behandlungsteam weitergegeben.
 
 ---
 
-## Fallbeispiel 4: Delegation
+## Fachliche Begründung
 
-### Situation
+Das Husten beim Trinken kann auf eine Schluckstörung und damit auf ein erhöhtes Aspirationsrisiko hinweisen.
 
-Auf einer Station müssen mehrere Aufgaben gleichzeitig erledigt werden.
+Durch die frühzeitige Information aller beteiligten Berufsgruppen können notwendige diagnostische und therapeutische Maßnahmen rechtzeitig eingeleitet werden.
 
-### Frage
-
-Welche Aufgabe darf an eine Pflegehilfskraft delegiert werden?
-
-### Lösung
-
-Einfache, klar definierte Tätigkeiten können delegiert werden.
-
-### Begründung
-
-Die Verantwortung für pflegefachliche Entscheidungen bleibt bei der Pflegefachperson.
+So wird die Patientensicherheit verbessert.
 
 ---
 
-## Fallbeispiel 5: Übergabe
+## Zweites Fallbeispiel
 
 ### Situation
 
-Bei der Schichtübergabe berichtet eine Pflegefachperson:
+Eine Kollegin übernimmt die Spätschicht.
 
-„Alles unauffällig."
+Du weißt, dass Frau Schneider in den letzten Stunden mehrfach beinahe gestürzt wäre.
 
-Später stellt sich heraus, dass ein Patient mehrfach gestürzt war.
+Während der Übergabe sagt eine andere Kollegin:
 
-### Frage
+> „Das erzähle ich später noch.“
 
-Welcher Fehler wurde gemacht?
+### Überlege selbst
 
-### Lösung
+- Reicht das aus?
+- Welche Informationen müssen sofort weitergegeben werden?
+- Welche Folgen könnten fehlende Informationen haben?
 
-Wichtige Informationen wurden nicht weitergegeben.
+---
 
-### Begründung
+## Fachliche Lösung
 
-Eine vollständige Übergabe ist für die Patientensicherheit entscheidend.
+Ich sorge dafür, dass die Sturzgefährdung sofort und vollständig übergeben wird.
 
-## Was haben alle Fallbeispiele gemeinsam?
+Dazu gehören die Beobachtungen, bereits eingeleitete Maßnahmen und notwendige Sicherheitsvorkehrungen.
 
-In allen Situationen müssen Pflegefachpersonen:
+Nur so kann die nachfolgende Schicht angemessen handeln.
 
-- Informationen weitergeben
-- mit anderen Berufsgruppen zusammenarbeiten
-- Verantwortung übernehmen
-- Risiken kommunizieren
-- Patientensicherheit gewährleisten
+---
 
-Genau das beschreibt Kompetenzbereich III.
+## Transfer in den Pflegealltag
 
-## Typische Prüfungsfrage
+Ein Arzt fragt dich kurzfristig nach dem aktuellen Zustand eines Bewohners.
 
-### Was gehört typischerweise zu Kompetenzbereich III?
+Welche Informationen solltest du strukturiert weitergeben?
 
-A) Pflegeplanung
+### Fachliche Einordnung
 
-B) Zusammenarbeit mit anderen Berufsgruppen
+Ich nenne die aktuellen Beobachtungen, relevante Veränderungen, bestehende Risiken, bereits eingeleitete Maßnahmen und die aktuelle Wirkung dieser Maßnahmen.
 
-C) Körperpflege
+Die Informationsweitergabe erfolgt vollständig, verständlich und nachvollziehbar.
 
-D) Medikamentenbestellung
+---
 
-### Lösung
+## Das solltest du für die Abschlussprüfung sicher beherrschen
 
-✅ B) Zusammenarbeit mit anderen Berufsgruppen
+Nach diesem Premium-Lernskript kannst du:
 
-## Typische Fehler
+✅ Risiken frühzeitig erkennen.
 
-### Fehler 1
+✅ Informationen strukturiert weitergeben.
 
-Wichtige Beobachtungen nicht weitergeben.
+✅ andere Berufsgruppen gezielt einbeziehen.
 
-### Fehler 2
+✅ Verantwortlichkeiten sicher einschätzen.
 
-Andere Berufsgruppen zu spät informieren.
+✅ Übergaben professionell durchführen.
 
-### Fehler 3
+✅ Entscheidungen fachlich begründen.
 
-Unstrukturierte Übergaben.
+---
 
-### Fehler 4
+## Dein nächster Schritt auf deinem Lernweg
 
-Verantwortlichkeiten nicht kennen.
+Du kannst typische Situationen aus Kompetenzbereich III jetzt systematisch analysieren.
 
-## Pflegeprüfung
+### 🧠 Lernkarten
 
-Prüfer achten häufig darauf:
+Trainiere wichtige Regeln zur Zusammenarbeit, Übergabe und Delegation.
 
-- Werden Risiken kommuniziert?
-- Werden Informationen weitergegeben?
-- Werden andere Berufsgruppen einbezogen?
-- Wird Verantwortung übernommen?
+### 🎓 Kompetenzbereich-III-Prüfungsfragen
 
-## Zusammenfassung
+Überprüfe dein Wissen mit typischen Prüfungsfragen.
 
-Kompetenzbereich III wird in Prüfungen häufig über Fallbeispiele geprüft.
+[Kompetenzbereich III Prüfungsfragen](/themen/pflegeausbildung/kompetenzbereich-3-pruefungsfragen/)
 
-Wer Informationen sicher weitergeben und professionell mit anderen Berufsgruppen zusammenarbeiten kann, sammelt wichtige Punkte in der Pflegeprüfung.
+### 📘 Kompetenzbereich III Pflegeprüfung
 
-## Passende Inhalte zum Thema Kompetenzbereich III
+Vertiefe typische Prüfungssituationen und Musterantworten.
 
-- [Kompetenzbereich III](/themen/pflegeausbildung/kompetenzbereich-3/)
-- [Kompetenzbereich III Pflegeprüfung](/themen/pflegeausbildung/kompetenzbereich-3-pflegepruefung/)
-- [Kompetenzbereich III Prüfungsfragen](/themen/pflegeausbildung/kompetenzbereich-3-pruefungsfragen/)
+[Kompetenzbereich III Pflegeprüfung](/themen/pflegeausbildung/kompetenzbereich-3-pflegepruefung/)
 
-## Merksatz
+### 📚 Passendes Premium-E-Book
 
-**Kompetenzbereich III zeigt sich immer dann, wenn Informationen, Zusammenarbeit und Verantwortung im Mittelpunkt stehen.**
+Vertiefe interprofessionelle Zusammenarbeit, Delegation und professionelle Teamkommunikation.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**

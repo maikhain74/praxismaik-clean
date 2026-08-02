@@ -58,91 +58,161 @@ Häufige Prüfungsthemen sind:
 - Teamkommunikation
 - Verantwortung bei Aufgabenverteilung
 
-## Beispiel aus der Praxis
+## So geht es jetzt weiter
+
+Du kennst jetzt die Grundlagen von Kompetenzbereich III und weißt, warum Zusammenarbeit, Informationsweitergabe und Verantwortung für eine sichere Patientenversorgung unverzichtbar sind.
+
+Für die generalistische Pflegeausbildung reicht dieses Wissen jedoch nicht aus.
+
+Im Pflegealltag, in der Praxisanleitung und spätestens in der praktischen Abschlussprüfung musst du Informationen strukturiert weitergeben, mit anderen Berufsgruppen zusammenarbeiten und deine Entscheidungen fachlich begründen können.
+
+Genau diese Kompetenzen entwickelst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Entwickle deine Handlungskompetenz für Teamarbeit und Zusammenarbeit
+
+Kompetenzbereich III bedeutet weit mehr als nur Informationen weiterzugeben.
+
+Pflegefachpersonen koordinieren die Versorgung, erkennen Risiken, stimmen Maßnahmen mit anderen Berufsgruppen ab und übernehmen Verantwortung für eine sichere Zusammenarbeit.
+
+Genau diese Fähigkeiten werden in der Abschlussprüfung bewertet.
+
+---
+
+## Typische Prüfungsfrage
+
+**Praxisanleiter oder Prüfer:**
+
+„Warum ist die interprofessionelle Zusammenarbeit ein wesentlicher Bestandteil professioneller Pflege?“
+
+### Musterantwort
+
+„Pflegefachpersonen arbeiten täglich mit verschiedenen Berufsgruppen zusammen. Nur wenn Informationen vollständig, verständlich und rechtzeitig weitergegeben werden, können Risiken erkannt und geeignete Maßnahmen geplant werden. Eine strukturierte Zusammenarbeit verbessert die Patientensicherheit, verhindert Informationsverluste und sorgt für eine kontinuierliche Versorgung.“
+
+---
+
+## Warum diese Antwort überzeugt
+
+Diese Antwort zeigt, dass du Zusammenarbeit nicht nur als organisatorische Aufgabe verstehst.
+
+Du stellst den Zusammenhang zwischen Kommunikation, Verantwortung und Patientensicherheit her und erklärst, warum eine strukturierte Zusammenarbeit für den Pflegeprozess unverzichtbar ist.
+
+Genau darauf achten Praxisanleiter und Prüfer.
+
+---
+
+## Häufige Fehler
+
+Viele Auszubildende ...
+
+- geben wichtige Beobachtungen zu spät weiter.
+- machen unvollständige Übergaben.
+- kennen ihre Verantwortungsgrenzen nicht.
+- delegieren Aufgaben ohne klare Absprachen.
+- dokumentieren Veränderungen unzureichend.
+- beziehen andere Berufsgruppen erst ein, wenn Probleme bereits eskaliert sind.
+
+---
+
+## Entscheidungssituation
 
 Herr Bauer hatte einen Schlaganfall.
 
-Beim Trinken hustet er mehrfach.
+Während des Frühstücks hustet er mehrfach beim Trinken.
 
-Die Pflegefachperson beobachtet eine mögliche Schluckstörung und informiert:
+Du vermutest eine Schluckstörung.
 
-- ärztlichen Dienst
-- Logopädie
-- Kolleginnen und Kollegen im Team
+**Wie gehst du jetzt vor?**
 
-Außerdem wird dokumentiert, dass Herr Bauer vorerst nicht unbeaufsichtigt trinken soll.
+Überlege zunächst selbst.
 
-Diese Situation gehört zu Kompetenzbereich III, weil mehrere Berufsgruppen zusammenarbeiten müssen.
+---
 
-## Kompetenzbereich III in der Pflegeprüfung
+## Fachliche Lösung
 
-Typische Prüfungsfragen sind:
+Ich nehme die Beobachtung ernst und unterbreche die unbeaufsichtigte Flüssigkeitsaufnahme.
 
-- Welche Informationen geben Sie in der Übergabe weiter?
-- Wann informieren Sie den Arzt?
-- Welche Aufgabe darf delegiert werden?
-- Wie arbeiten Sie mit anderen Berufsgruppen zusammen?
-- Welche Verantwortung trägt die Pflegefachperson?
+Anschließend informiere ich die zuständige Pflegefachperson beziehungsweise den ärztlichen Dienst, dokumentiere meine Beobachtungen und stimme das weitere Vorgehen mit den beteiligten Berufsgruppen, beispielsweise der Logopädie, ab.
 
-## Was bewerten Prüfer?
+Alle wichtigen Informationen werden strukturiert an das Team weitergegeben.
 
-Prüfer achten häufig auf:
+---
 
-- strukturierte Informationsweitergabe
-- Verantwortungsbewusstsein
-- Teamfähigkeit
-- sichere Delegation
-- klare Kommunikation
-- Patientensicherheit
+## Fachliche Begründung
 
-## Typische Fehler
+Eine mögliche Schluckstörung kann zu einer Aspiration führen und damit die Patientensicherheit gefährden.
 
-### Fehler 1
+Deshalb ist nicht nur die Beobachtung entscheidend, sondern auch die rechtzeitige und vollständige Informationsweitergabe an alle beteiligten Berufsgruppen.
 
-Wichtige Beobachtungen nicht weitergeben.
+Professionelle Zusammenarbeit verhindert Informationsverluste und unterstützt eine sichere Versorgung.
 
-### Fehler 2
+---
 
-Aufgaben delegieren, ohne Verantwortung zu klären.
+## Transfer in den Pflegealltag
 
-### Fehler 3
+Eine Kollegin sagt:
 
-Unstrukturierte Übergaben machen.
+> „Das erwähne ich später bei der Übergabe. Im Moment ist keine Zeit.“
 
-### Fehler 4
+Wie würdest du reagieren?
 
-Andere Berufsgruppen zu spät einbeziehen.
+### Fachliche Einordnung
 
-## Mini-Quiz
+Informationen mit unmittelbarer Bedeutung für die Patientensicherheit dürfen nicht bis zur nächsten Übergabe warten.
 
-### Welches Thema gehört typischerweise zu Kompetenzbereich III?
+Relevante Beobachtungen müssen zeitnah weitergegeben werden, damit notwendige Maßnahmen sofort eingeleitet werden können.
 
-A) Pflegeplanung erstellen
+---
 
-B) Übergabe und Zusammenarbeit im Team
+## Das solltest du für die Abschlussprüfung sicher beherrschen
 
-C) Selbstreflexion
+Nach diesem Premium-Lernskript kannst du:
 
-D) Körperpflege durchführen
+✅ die Bedeutung interprofessioneller Zusammenarbeit erklären.
 
-### Lösung
+✅ wichtige Informationen strukturiert weitergeben.
 
-✅ B) Übergabe und Zusammenarbeit im Team
+✅ Verantwortlichkeiten sicher einschätzen.
 
-## Zusammenfassung
+✅ Delegation fachlich einordnen.
 
-Kompetenzbereich III umfasst interprofessionelle Zusammenarbeit, Teamkommunikation, Übergabe und Delegation.
+✅ Risiken rechtzeitig kommunizieren.
 
-Wer sicher kommuniziert, Verantwortung erkennt und Informationen strukturiert weitergibt, erfüllt einen wichtigen Teil professioneller Pflege.
+✅ Entscheidungen nachvollziehbar begründen.
 
-## Passende Inhalte zum Thema Kompetenzbereich III
+---
 
-- Übergabe in der Pflege
-- Delegation und Verantwortung
-- Entlassmanagement
-- Zusammenarbeit im Team
-- Kommunikation mit Ärzten
+## Dein nächster Schritt auf deinem Lernweg
 
-## Merksatz
+Du hast die Grundlagen von Kompetenzbereich III verstanden.
 
-**Kompetenzbereich III fragt, ob du im Team und mit anderen Berufsgruppen professionell handeln kannst.**
+Jetzt entwickelst du Schritt für Schritt die Kompetenzen, die du für Pflegealltag und Abschlussprüfung brauchst.
+
+### 🧠 Lernkarten
+
+Wiederhole wichtige Regeln zur Zusammenarbeit, Übergabe und Delegation.
+
+### 🩺 Passender Prüfungsfall
+
+Trainiere realistische Situationen mit Übergaben, Arztkontakten und interprofessioneller Zusammenarbeit.
+
+### 🎓 Examensquiz
+
+Überprüfe dein Wissen zu Teamarbeit, Verantwortung und Informationsweitergabe.
+
+### 📚 Passendes Premium-E-Book
+
+Vertiefe Zusammenarbeit, Delegation und professionelle Kommunikation im multiprofessionellen Team.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**

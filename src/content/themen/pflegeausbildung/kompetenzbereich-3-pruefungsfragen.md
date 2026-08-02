@@ -12,211 +12,197 @@ Prüfer möchten wissen, ob Auszubildende sicher mit anderen Berufsgruppen zusam
 
 Wer typische Prüfungsfragen kennt, kann viele Aufgaben deutlich sicherer lösen.
 
+## So geht es jetzt weiter
+
+Du kennst jetzt die Grundlagen typischer Prüfungsfragen zu Kompetenzbereich III und weißt, warum Zusammenarbeit, Delegation und eine strukturierte Informationsweitergabe für eine sichere Patientenversorgung unverzichtbar sind.
+
+Für eine sichere Abschlussprüfung reicht dieses Grundlagenwissen jedoch nicht aus.
+
+Du musst Risiken erkennen, Informationen vollständig weitergeben und dein Handeln gegenüber anderen Berufsgruppen fachlich begründen können.
+
+Genau diese Kompetenzen trainierst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Trainiere Kompetenzbereich III auf Prüfungsniveau
+
+Die folgenden Prüfungsfragen orientieren sich an schriftlichen, mündlichen und praktischen Abschlussprüfungen.
+
+Entscheidend ist nicht nur die richtige Antwort, sondern vor allem deine fachliche Begründung.
+
+---
+
 ## Prüfungsfrage 1
-
-### Was steht im Mittelpunkt von Kompetenzbereich III?
-
-A) Pflegeplanung
-
-B) Interprofessionelle Zusammenarbeit
-
-C) Körperpflege
-
-D) Arzneimittellehre
-
-### Lösung
-
-✅ B) Interprofessionelle Zusammenarbeit
-
-### Begründung
-
-Kompetenzbereich III beschäftigt sich mit Teamarbeit, Informationsweitergabe und Zusammenarbeit mit anderen Berufsgruppen.
-
----
-
-## Prüfungsfrage 2
-
-### Welche Situation gehört zu Kompetenzbereich III?
-
-A) Pflegeziel formulieren
-
-B) Übergabe durchführen
-
-C) Pflegediagnose erstellen
-
-D) Pflegebedarf erheben
-
-### Lösung
-
-✅ B) Übergabe durchführen
-
-### Begründung
-
-Die Übergabe ist ein klassisches Beispiel für interprofessionelle Kommunikation.
-
----
-
-## Prüfungsfrage 3
-
-### Warum sind Übergaben wichtig?
-
-A) Damit die Schicht schneller endet
-
-B) Damit wichtige Informationen weitergegeben werden
-
-C) Damit weniger dokumentiert werden muss
-
-D) Damit Angehörige informiert werden
-
-### Lösung
-
-✅ B) Damit wichtige Informationen weitergegeben werden
-
-### Begründung
-
-Eine sichere Übergabe verbessert die Patientensicherheit.
-
----
-
-## Prüfungsfrage 4
-
-### Welche Berufsgruppe sollte bei einer Schluckstörung häufig einbezogen werden?
-
-A) Hausmeister
-
-B) Logopädie
-
-C) Verwaltung
-
-D) Reinigungskraft
-
-### Lösung
-
-✅ B) Logopädie
-
-### Begründung
-
-Logopäden unterstützen bei Diagnostik und Therapie von Schluckstörungen.
-
----
-
-## Prüfungsfrage 5
-
-### Was bedeutet Delegation?
-
-A) Verantwortung vollständig abgeben
-
-B) Aufgaben an andere Personen übertragen
-
-C) Dokumentation vermeiden
-
-D) Entscheidungen ignorieren
-
-### Lösung
-
-✅ B) Aufgaben an andere Personen übertragen
-
-### Begründung
-
-Bestimmte Aufgaben können übertragen werden, die Verantwortung bleibt jedoch teilweise bei der Pflegefachperson.
-
----
-
-## Prüfungsfrage 6
-
-### Welche Aussage zur Delegation ist richtig?
-
-A) Alle Aufgaben dürfen delegiert werden.
-
-B) Pflegefachliche Entscheidungen dürfen immer delegiert werden.
-
-C) Die Pflegefachperson trägt weiterhin Verantwortung.
-
-D) Delegation ist in der Pflege verboten.
-
-### Lösung
-
-✅ C) Die Pflegefachperson trägt weiterhin Verantwortung.
-
-### Begründung
-
-Verantwortung endet nicht automatisch durch die Übertragung einer Aufgabe.
-
----
-
-## Fallfrage
 
 ### Situation
 
 Herr Bauer hatte einen Schlaganfall.
 
-Während der Versorgung fällt auf:
+Während des Frühstücks beobachtest du:
 
 - Husten beim Trinken
 - verwaschene Sprache
-- zunehmende Unsicherheit beim Gehen
+- unsicheres Gangbild
 
 ### Frage
 
-Welche Handlung ist am wichtigsten?
+Welche Handlung ist pflegefachlich am wichtigsten?
 
-A) Situation ignorieren
+A) Die Situation bis zur Übergabe beobachten.
 
-B) Beobachtungen dokumentieren und relevante Berufsgruppen informieren
+B) Die Flüssigkeitsaufnahme unterbrechen, Beobachtungen dokumentieren und die zuständige Pflegefachperson beziehungsweise den ärztlichen Dienst informieren.
 
-C) Erst am nächsten Tag berichten
+C) Nur die Angehörigen informieren.
 
-D) Nur Angehörige informieren
+D) Abwarten, ob sich die Situation von selbst verbessert.
 
-### Lösung
+### Richtige Antwort
 
-✅ B) Beobachtungen dokumentieren und relevante Berufsgruppen informieren
+✅ B)
 
-### Begründung
+### Fachliche Begründung
 
-Eine schnelle Informationsweitergabe erhöht die Patientensicherheit.
+Die Beobachtungen können auf eine Schluckstörung mit Aspirationsrisiko hinweisen.
 
-## Was bewerten Prüfer?
+Deshalb müssen relevante Informationen sofort weitergegeben und weitere Berufsgruppen bei Bedarf eingebunden werden.
 
-Prüfer achten häufig auf:
+Dadurch wird die Patientensicherheit verbessert.
 
-- Teamfähigkeit
-- Kommunikation
-- Verantwortungsbewusstsein
-- Delegationsfähigkeit
-- Patientensicherheit
-- Zusammenarbeit mit anderen Berufsgruppen
+---
+
+## Prüfungsfrage 2
+
+Welche Aussage zur Delegation ist richtig?
+
+A) Jede pflegerische Aufgabe darf delegiert werden.
+
+B) Mit der Delegation endet die Verantwortung der Pflegefachperson.
+
+C) Delegiert werden können geeignete Aufgaben, die Verantwortung der Pflegefachperson bleibt jedoch bestehen.
+
+D) Delegation ist in der Pflege grundsätzlich nicht erlaubt.
+
+### Richtige Antwort
+
+✅ C)
+
+### Fachliche Begründung
+
+Die Pflegefachperson muss beurteilen, welche Aufgaben delegiert werden können, und trägt weiterhin Verantwortung für eine sichere Durchführung.
+
+---
+
+## Prüfungsfrage 3
+
+Welche Aussage beschreibt Kompetenzbereich III am besten?
+
+A) Pflegeplanung erstellen.
+
+B) Zusammenarbeit, Informationsweitergabe und Verantwortung im Behandlungsteam.
+
+C) Medikamentenkunde.
+
+D) Körperpflege durchführen.
+
+### Richtige Antwort
+
+✅ B)
+
+---
+
+## Entscheidungssituation
+
+Eine Kollegin sagt:
+
+> „Das erwähne ich später bei der Übergabe. Jetzt ist keine Zeit.“
+
+Du weißt jedoch, dass der Bewohner heute bereits zweimal beinahe gestürzt wäre.
+
+Wie reagierst du?
+
+### Musterantwort
+
+„Ich weise darauf hin, dass diese Information unmittelbar für die Patientensicherheit relevant ist und deshalb sofort weitergegeben werden muss. Anschließend dokumentiere ich die Beobachtung und stelle sicher, dass alle beteiligten Teammitglieder informiert sind.“
+
+---
+
+## Warum diese Antwort überzeugt
+
+Diese Antwort zeigt, dass du:
+
+- Risiken früh erkennst.
+- Verantwortung übernimmst.
+- Patientensicherheit priorisierst.
+- Informationen strukturiert weitergibst.
+- professionell mit anderen Berufsgruppen zusammenarbeitest.
+
+Genau diese Fähigkeiten erwarten Praxisanleiter und Prüfer.
+
+---
 
 ## Typische Fehler
 
-### Fehler 1
+Viele Auszubildende ...
 
-Wichtige Informationen nicht weitergeben.
+- geben Beobachtungen verspätet weiter.
+- unterschätzen die Bedeutung einer vollständigen Übergabe.
+- kennen Verantwortlichkeiten nicht genau.
+- delegieren Aufgaben ohne ausreichende Abstimmung.
+- dokumentieren Veränderungen unvollständig.
+- beziehen andere Berufsgruppen zu spät ein.
 
-### Fehler 2
+---
 
-Verantwortlichkeiten falsch einschätzen.
+## Das solltest du für die Abschlussprüfung sicher beherrschen
 
-### Fehler 3
+Nach diesem Premium-Lernskript kannst du:
 
-Andere Berufsgruppen zu spät einbeziehen.
+✅ typische Prüfungsfragen sicher beantworten.
 
-### Fehler 4
+✅ Informationen vollständig und strukturiert weitergeben.
 
-Unstrukturierte Übergaben durchführen.
+✅ Delegation fachlich beurteilen.
 
-## Zusammenfassung
+✅ Verantwortlichkeiten sicher einschätzen.
 
-Prüfungsfragen zu Kompetenzbereich III drehen sich meist um Zusammenarbeit, Kommunikation, Delegation und Patientensicherheit.
+✅ Risiken frühzeitig kommunizieren.
 
-Wer diese Zusammenhänge versteht, kann viele Prüfungsaufgaben erfolgreich lösen.
+✅ Entscheidungen nachvollziehbar begründen.
 
-## Passende Inhalte zum Thema Kompetenzbereich III
+---
 
-- [Kompetenzbereich III](/themen/pflegeausbildung/kompetenzbereich-3/)
-- [Kompetenzbereich III Pflegeprüfung](/themen/pflegeausbildung/kompetenzbereich-3-pflegepruefung/)
-- [Kompetenzbereich III Fallbeispiele](/themen/pflegeausbildung/kompetenzbereich-3-fallbeispiele/)
+## Dein nächster Schritt auf deinem Lernweg
 
-## Merksatz
+Du kennst jetzt typische Prüfungsfragen zu Kompetenzbereich III.
 
-**Kompetenzbereich III prüft die Fähigkeit, Informationen sicher weiterzugeben und professionell mit anderen Berufsgruppen zusammenzuarbeiten.**
+### 🧠 Lernkarten
+
+Wiederhole wichtige Regeln zu Übergabe, Delegation und Zusammenarbeit.
+
+### 🩺 Kompetenzbereich-III-Fallbeispiele
+
+Trainiere realistische Situationen aus dem Pflegealltag.
+
+[Kompetenzbereich III Fallbeispiele](/themen/pflegeausbildung/kompetenzbereich-3-fallbeispiele/)
+
+### 📘 Kompetenzbereich III Pflegeprüfung
+
+Vertiefe typische Prüfungssituationen und Musterantworten.
+
+[Kompetenzbereich III Pflegeprüfung](/themen/pflegeausbildung/kompetenzbereich-3-pflegepruefung/)
+
+### 📚 Passendes Premium-E-Book
+
+Vertiefe interprofessionelle Zusammenarbeit, Delegation und professionelle Teamkommunikation.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**
