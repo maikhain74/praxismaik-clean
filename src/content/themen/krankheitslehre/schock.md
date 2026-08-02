@@ -174,3 +174,118 @@ Typische Fragen:
 - Welche Maßnahmen sind wichtig?  
 
 👉 Wichtig: Durchblutung + Sauerstoffversorgung + schnelles Handeln verstehen
+
+## So geht es jetzt weiter
+
+Du kennst jetzt die Grundlagen des Schocks und weißt, warum er zu den gefährlichsten medizinischen Notfällen gehört.
+
+Für die Pflegeprüfung reicht dieses Grundlagenwissen jedoch nicht aus.
+
+Du musst Schockzeichen früh erkennen, die verschiedenen Schockformen unterscheiden und dein pflegerisches Handeln fachlich begründen können.
+
+Genau diese Kompetenzen trainierst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Trainiere den Schock auf Prüfungsniveau
+
+In der Abschlussprüfung möchten Prüfer nicht nur wissen, welche Schockformen es gibt.
+
+Sie erwarten, dass du lebensbedrohliche Veränderungen erkennst, Prioritäten setzt und deine Maßnahmen fachlich begründest.
+
+---
+
+## Typische Prüfungssituation
+
+Herr Schneider, 72 Jahre, klagt plötzlich über starke Schwäche.
+
+Du beobachtest:
+
+- blasse, kalte und feuchte Haut,
+- Puls 124/min,
+- Blutdruck 82/50 mmHg,
+- schnelle Atmung,
+- zunehmende Verwirrtheit.
+
+### Deine Aufgabe
+
+Wie gehst du vor?
+
+Überlege zunächst selbst.
+
+---
+
+## Fachliche Lösung
+
+Ich erkenne die Situation als medizinischen Notfall und lasse den Patienten nicht allein.
+
+Ich informiere sofort die zuständige Pflegefachperson beziehungsweise den ärztlichen Dienst, überwache die Vitalzeichen engmaschig, beobachte Bewusstsein und Atmung kontinuierlich und unterstütze die angeordneten Notfallmaßnahmen.
+
+Je nach Ursache und Zustand des Patienten berücksichtige ich geeignete Lagerungsmaßnahmen und dokumentiere alle Beobachtungen nachvollziehbar.
+
+---
+
+## Fachliche Begründung
+
+Die Kombination aus Hypotonie, Tachykardie, kalter Haut und Bewusstseinsveränderung spricht für eine kritische Kreislaufsituation.
+
+Ein frühzeitiges Erkennen und rasches Handeln verbessern die Sauerstoffversorgung der Organe und können lebensrettend sein.
+
+---
+
+## Typische Fehler
+
+Viele Auszubildende ...
+
+- erkennen frühe Schockzeichen nicht.
+- konzentrieren sich nur auf den Blutdruck.
+- unterscheiden die Schockformen nicht.
+- informieren den ärztlichen Dienst zu spät.
+
+---
+
+## Das solltest du für die Abschlussprüfung sicher beherrschen
+
+Nach diesem Premium-Lernskript kannst du:
+
+✅ Schockzeichen sicher erkennen.
+
+✅ die wichtigsten Schockformen unterscheiden.
+
+✅ pflegerische Prioritäten richtig setzen.
+
+✅ Maßnahmen fachlich begründen.
+
+✅ lebensbedrohliche Kreislaufsituationen früh erkennen.
+
+---
+
+## Dein nächster Schritt auf deinem Lernweg
+
+### 🦠 Sepsis
+
+Verstehe den septischen Schock und seine Besonderheiten.
+
+[Sepsis](/themen/krankheitslehre/sepsis/)
+
+### ❤️ Herzinfarkt
+
+Lerne den kardiogenen Schock im Zusammenhang mit einem Herzinfarkt kennen.
+
+[Herzinfarkt](/themen/krankheitslehre/herzinfarkt/)
+
+### 📚 Passendes Premium-E-Book
+
+Trainiere realistische Notfallsituationen, Musterlösungen und pflegerische Begründungen.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**

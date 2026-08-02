@@ -154,3 +154,119 @@ Typische Prüfungsfragen:
 - Welche Symptome treten auf?
 - Was ist der Unterschied zwischen akut und chronisch?
 - Welche pflegerischen Maßnahmen sind wichtig?
+
+## So geht es jetzt weiter
+
+Du kennst jetzt die Grundlagen der Niereninsuffizienz und weißt, welche Aufgaben die Nieren im Körper übernehmen.
+
+Für die Pflegeprüfung reicht dieses Grundlagenwissen jedoch nicht aus.
+
+Du musst Veränderungen früh erkennen, Prioritäten setzen und deine pflegerischen Maßnahmen fachlich begründen können.
+
+Genau diese Kompetenzen trainierst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Trainiere Niereninsuffizienz auf Prüfungsniveau
+
+In der Abschlussprüfung möchten Prüfer nicht nur wissen, was eine Niereninsuffizienz ist.
+
+Sie erwarten, dass du typische Veränderungen erkennst, Komplikationen einschätzt und dein pflegerisches Handeln fachlich begründest.
+
+---
+
+## Typische Prüfungssituation
+
+Herr Schneider, 74 Jahre, leidet an einer chronischen Niereninsuffizienz.
+
+Heute fällt dir auf:
+
+- deutlich verminderte Urinausscheidung,
+- zunehmende Knöchelödeme,
+- zwei Kilogramm Gewichtszunahme innerhalb weniger Tage,
+- erhöhter Blutdruck,
+- zunehmende Müdigkeit.
+
+### Deine Aufgabe
+
+Wie gehst du vor?
+
+Überlege zunächst selbst.
+
+---
+
+## Fachliche Lösung
+
+Ich erkenne die Veränderungen als mögliche Hinweise auf eine Verschlechterung der Nierenfunktion.
+
+Ich kontrolliere die Flüssigkeitsbilanz, beobachte Ödeme und Vitalzeichen, dokumentiere alle Auffälligkeiten und informiere die zuständige Pflegefachperson beziehungsweise den ärztlichen Dienst.
+
+Außerdem achte ich darauf, verordnete Flüssigkeits- und Ernährungsvorgaben einzuhalten und den weiteren Verlauf engmaschig zu beobachten.
+
+---
+
+## Fachliche Begründung
+
+Eine eingeschränkte Nierenfunktion kann zu Flüssigkeitsüberladung, Elektrolytstörungen und einer zunehmenden Belastung des Herz-Kreislauf-Systems führen.
+
+Eine frühzeitige Beobachtung und strukturierte Weitergabe der Veränderungen helfen, Komplikationen rechtzeitig zu erkennen und geeignete Maßnahmen einzuleiten.
+
+---
+
+## Typische Fehler
+
+Viele Auszubildende ...
+
+- beurteilen nur die Urinmenge.
+- achten nicht auf Gewichtszunahmen.
+- unterschätzen Ödeme.
+- erkennen den Zusammenhang zwischen Bluthochdruck und Nierenfunktion nicht.
+- dokumentieren Veränderungen unvollständig.
+
+---
+
+## Das solltest du für die Abschlussprüfung sicher beherrschen
+
+Nach diesem Premium-Lernskript kannst du:
+
+✅ akute und chronische Niereninsuffizienz unterscheiden.
+
+✅ typische Symptome sicher erkennen.
+
+✅ Flüssigkeitsbilanz und Gewicht richtig beurteilen.
+
+✅ pflegerische Maßnahmen fachlich begründen.
+
+✅ Komplikationen früh erkennen.
+
+---
+
+## Dein nächster Schritt auf deinem Lernweg
+
+### 💧 Dehydratation
+
+Lerne, wie Flüssigkeitsmangel die Nierenfunktion beeinflussen kann.
+
+[Dehydratation](/themen/krankheitslehre/dehydratation/)
+
+### ❤️ Herzinsuffizienz
+
+Verstehe den Zusammenhang zwischen Herz- und Nierenfunktion.
+
+[Herzinsuffizienz](/themen/krankheitslehre/herzinsuffizienz/)
+
+### 📚 Passendes Premium-E-Book
+
+Trainiere realistische Prüfungssituationen, Musterlösungen und pflegerische Begründungen rund um Niereninsuffizienz und ihre Komplikationen.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**

@@ -8,56 +8,118 @@ level: pruefung
 
 Die koronare Herzkrankheit gehört zu den häufigsten Krankheitsbildern in der Pflegeprüfung. Entscheidend ist nicht nur das Auswendiglernen von Fakten, sondern das sichere Begründen pflegerischer Entscheidungen.
 
-## Typische Prüfungsfragen
+## So geht es jetzt weiter
 
-Prüfende stellen häufig Fragen wie:
+Du weißt jetzt, warum die koronare Herzkrankheit regelmäßig in der Pflegeprüfung geprüft wird und worauf Prüfer besonders achten.
 
-- Was versteht man unter einer koronaren Herzkrankheit?
-- Warum entstehen Brustschmerzen?
-- Welche Symptome beobachten Sie?
-- Welche Vitalzeichen kontrollieren Sie?
-- Welche pflegerischen Maßnahmen haben Priorität?
-- Wann vermuten Sie einen Herzinfarkt?
-- Welche Risikofaktoren beeinflussen die Erkrankung?
-- Wie beraten Sie die betroffene Person?
+Für eine sichere Abschlussprüfung reicht dieses Grundlagenwissen jedoch nicht aus.
 
-## Worauf achten Prüfende?
+Du musst Symptome richtig einschätzen, Prioritäten setzen und deine pflegerischen Entscheidungen fachlich begründen können.
 
-Prüfende möchten erkennen, ob Sie:
+Genau diese Kompetenzen trainierst du jetzt im Premiumbereich.
 
-- Veränderungen früh wahrnehmen
-- Prioritäten richtig setzen
-- Beobachtungen fachlich begründen
-- Notfallsituationen erkennen
-- ruhig und strukturiert handeln
-- den Pflegeprozess anwenden
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
 
-## Typische Fehler in der Prüfung
+👉 Gute Pflege beginnt mit dem richtigen Denken.
 
-### Fehler 1
+---
 
-Brustschmerzen als harmlos einstufen.
+<!-- PREMIUM_START -->
 
-Brustschmerzen müssen immer sorgfältig eingeschätzt werden.
+# Trainiere die koronare Herzkrankheit auf Prüfungsniveau
 
-### Fehler 2
+In der Pflegeprüfung geht es nicht darum, Definitionen auswendig aufzusagen.
 
-Nur den Blutdruck messen.
+Prüfer möchten erkennen, dass du Symptome richtig einschätzt, Risiken früh erkennst und deine Maßnahmen logisch begründest.
 
-Zur Beurteilung gehören immer der gesamte Allgemeinzustand sowie weitere Vitalzeichen.
+---
 
-### Fehler 3
+## Typische Prüfungssituation
 
-Maßnahmen nennen, aber nicht begründen.
+Herr Schneider, 69 Jahre, leidet an einer bekannten koronaren Herzkrankheit.
 
-In der Prüfung zählt nicht nur *was* Sie tun, sondern *warum* Sie es tun.
+Während der Mobilisation berichtet er plötzlich über:
 
-### Fehler 4
+- starke Schmerzen hinter dem Brustbein,
+- Atemnot,
+- kalten Schweiß,
+- Angst.
 
-Den Menschen aus dem Blick verlieren.
+### Deine Aufgabe
 
-Neben den körperlichen Beschwerden spielen Angst, Unsicherheit und Aufklärung ebenfalls eine wichtige Rolle.
+Wie handelst du?
 
-## Merksatz für die Prüfung
+Überlege zunächst selbst.
 
-**Bei der koronaren Herzkrankheit prüfen Sie immer zuerst die aktuelle Situation, setzen Prioritäten und begründen jede pflegerische Entscheidung nachvollziehbar.**
+---
+
+## Fachliche Lösung
+
+Ich unterbreche die Belastung sofort, beruhige den Patienten und beurteile seinen Allgemeinzustand.
+
+Anschließend kontrolliere ich die Vitalzeichen, informiere umgehend die zuständige Pflegefachperson beziehungsweise den ärztlichen Dienst und beobachte den Patienten kontinuierlich.
+
+Alle Beobachtungen werden nachvollziehbar dokumentiert.
+
+---
+
+## Fachliche Begründung
+
+Die Beschwerden können auf ein akutes Koronarsyndrom oder einen Herzinfarkt hinweisen.
+
+Eine schnelle Einschätzung, Prioritätensetzung und Informationsweitergabe können entscheidend für den weiteren Verlauf sein.
+
+---
+
+## Typische Fehler
+
+Viele Auszubildende ...
+
+- unterschätzen Brustschmerzen.
+- konzentrieren sich nur auf den Blutdruck.
+- begründen ihre Maßnahmen nicht.
+- erkennen Warnzeichen eines Herzinfarkts zu spät.
+
+---
+
+## Das solltest du für die Abschlussprüfung sicher beherrschen
+
+Nach diesem Premium-Lernskript kannst du:
+
+✅ typische Prüfungssituationen sicher einschätzen.
+
+✅ Warnzeichen eines Herzinfarkts erkennen.
+
+✅ pflegerische Prioritäten richtig setzen.
+
+✅ Maßnahmen fachlich begründen.
+
+✅ sicher mit dem Behandlungsteam zusammenarbeiten.
+
+---
+
+## Dein nächster Schritt auf deinem Lernweg
+
+### 🩺 Koronare Herzkrankheit Fallbeispiel
+
+Trainiere dein Wissen anhand einer realistischen Prüfungssituation.
+
+[Koronare Herzkrankheit Fallbeispiel](/themen/krankheitslehre/koronare-herzkrankheit-fallbeispiel/)
+
+### 📋 Koronare Herzkrankheit Pflegeplanung
+
+Vertiefe Ziele, Maßnahmen und pflegerische Schwerpunkte.
+
+[Koronare Herzkrankheit Pflegeplanung](/themen/krankheitslehre/koronare-herzkrankheit-pflegeplanung/)
+
+### ❤️ Koronare Herzkrankheit Grundlagen
+
+Wiederhole Ursachen, Symptome und Therapie.
+
+[Koronare Herzkrankheit](/themen/krankheitslehre/koronare-herzkrankheit/)
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**

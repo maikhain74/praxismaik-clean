@@ -148,3 +148,116 @@ Typische Prüfungsfragen:
 - Welche Symptome treten auf?
 - Warum ist sie lebensbedrohlich?
 - Welche Maßnahmen sind wichtig?
+
+## So geht es jetzt weiter
+
+Du kennst jetzt die Grundlagen der Lungenembolie und weißt, warum sie ein lebensbedrohlicher Notfall ist.
+
+Für die Pflegeprüfung reicht dieses Grundlagenwissen jedoch nicht aus.
+
+Du musst Warnzeichen früh erkennen, Prioritäten setzen und dein pflegerisches Handeln fachlich begründen können.
+
+Genau diese Kompetenzen trainierst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Trainiere die Lungenembolie auf Prüfungsniveau
+
+In der Abschlussprüfung möchten Prüfer nicht nur wissen, wie eine Lungenembolie entsteht.
+
+Sie erwarten, dass du Notfallsituationen erkennst, Risiken richtig einschätzt und deine Maßnahmen fachlich begründest.
+
+---
+
+## Typische Prüfungssituation
+
+Frau Schneider, 74 Jahre, wurde vor drei Tagen an der Hüfte operiert.
+
+Plötzlich klagt sie über:
+
+- starke Atemnot,
+- stechende Brustschmerzen,
+- Unruhe,
+- Herzrasen,
+- Sauerstoffsättigung 86 %.
+
+### Deine Aufgabe
+
+Wie gehst du vor?
+
+Überlege zunächst selbst.
+
+---
+
+## Fachliche Lösung
+
+Ich erkenne die Situation als medizinischen Notfall und lasse die Patientin nicht allein.
+
+Ich informiere sofort die zuständige Pflegefachperson beziehungsweise den ärztlichen Dienst, überwache die Vitalzeichen, unterstütze eine atemerleichternde Lagerung, bereite verordnete Maßnahmen vor und dokumentiere alle Beobachtungen.
+
+---
+
+## Fachliche Begründung
+
+Die Kombination aus plötzlich einsetzender Atemnot, Brustschmerzen und einer deutlich verminderten Sauerstoffsättigung kann auf eine Lungenembolie hinweisen.
+
+Ein rasches Handeln verbessert die Patientensicherheit und ermöglicht eine schnelle medizinische Behandlung.
+
+---
+
+## Typische Fehler
+
+Viele Auszubildende ...
+
+- unterschätzen die plötzliche Atemnot.
+- denken zunächst nur an eine Pneumonie.
+- warten zu lange mit der Informationsweitergabe.
+- erkennen den Zusammenhang mit einer vorausgegangenen Thrombose oder Operation nicht.
+
+---
+
+## Das solltest du für die Abschlussprüfung sicher beherrschen
+
+Nach diesem Premium-Lernskript kannst du:
+
+✅ Warnzeichen einer Lungenembolie sicher erkennen.
+
+✅ Notfallsituationen richtig einschätzen.
+
+✅ pflegerische Prioritäten setzen.
+
+✅ Maßnahmen fachlich begründen.
+
+✅ den Zusammenhang zwischen Thrombose und Lungenembolie erklären.
+
+---
+
+## Dein nächster Schritt auf deinem Lernweg
+
+### 🩸 Thrombose
+
+Vertiefe Ursachen, Risikofaktoren und Vorbeugung.
+
+[Thrombose](/themen/krankheitslehre/thrombose/)
+
+### 🫁 Pneumonie
+
+Lerne die wichtigsten Unterschiede zwischen Pneumonie und Lungenembolie kennen.
+
+[Pneumonie](/themen/krankheitslehre/pneumonie/)
+
+### 📚 Passendes Premium-E-Book
+
+Trainiere realistische Notfallsituationen, Musterlösungen und pflegerische Begründungen.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**

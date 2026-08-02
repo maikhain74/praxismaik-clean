@@ -229,4 +229,143 @@ Pflegefachpersonen erkennen Komplikationen frühzeitig, unterstützen die Therap
 Diabetes mellitus gehört zu den wichtigsten Krankheitsbildern in der Pflege. Ein sicheres Verständnis der Erkrankung, ihrer Komplikationen und der pflegerischen Maßnahmen ist für Ausbildung, Praxis und Pflegeprüfung unverzichtbar.
 
 In den folgenden Themen lernst du unter anderem die Pflegeplanung, typische Pflegeprobleme, Fallbeispiele und prüfungsrelevante Situationen rund um Diabetes mellitus kennen.
-```
+
+## So geht es jetzt weiter
+
+Du kennst jetzt die Grundlagen des Diabetes mellitus und weißt, wie sich Typ-1- und Typ-2-Diabetes unterscheiden.
+
+Für die Pflegeprüfung reicht dieses Grundlagenwissen jedoch nicht aus.
+
+Du musst Blutzuckerveränderungen sicher einschätzen, akute Komplikationen erkennen und deine pflegerischen Entscheidungen fachlich begründen können.
+
+Genau diese Kompetenzen trainierst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Trainiere Diabetes mellitus auf Prüfungsniveau
+
+In der Abschlussprüfung möchten Prüfer nicht nur wissen, wie Diabetes entsteht.
+
+Sie erwarten, dass du Risiken erkennst, Prioritäten setzt und dein pflegerisches Handeln sicher begründen kannst.
+
+---
+
+## Typische Prüfungssituation
+
+Herr Meier, 74 Jahre, lebt im Pflegeheim und hat einen Typ-2-Diabetes.
+
+Vor dem Mittagessen wirkt er plötzlich:
+
+- blass,
+- kaltschweißig,
+- zittrig,
+- unruhig,
+- nur noch eingeschränkt ansprechbar.
+
+### Deine Aufgabe
+
+Wie gehst du vor?
+
+Überlege zunächst selbst.
+
+---
+
+## Fachliche Lösung
+
+Ich denke zunächst an eine mögliche Hypoglykämie.
+
+Ich kontrolliere den Blutzucker, beobachte den Allgemeinzustand und leite entsprechend dem gemessenen Wert die notwendigen Maßnahmen ein.
+
+Anschließend überwache ich den weiteren Verlauf, dokumentiere alle Beobachtungen und informiere die zuständige Pflegefachperson beziehungsweise den ärztlichen Dienst.
+
+---
+
+## Fachliche Begründung
+
+Eine Hypoglykämie kann sich innerhalb kurzer Zeit verschlechtern und zu Krampfanfällen oder Bewusstlosigkeit führen.
+
+Deshalb müssen erste Warnzeichen sofort erkannt und entsprechend bewertet werden.
+
+Eine schnelle Einschätzung verbessert die Patientensicherheit und verhindert schwerwiegende Komplikationen.
+
+---
+
+## Entscheidungssituation
+
+Eine Bewohnerin berichtet über starken Durst und häufiges Wasserlassen.
+
+Seit einigen Tagen wirkt sie zunehmend müde.
+
+**Welche Stoffwechselstörung könnte dahinterstecken?**
+
+### Fachliche Einordnung
+
+Diese Beschwerden sprechen für eine mögliche Hyperglykämie.
+
+Pflegefachpersonen müssen Veränderungen erkennen, den Blutzucker kontrollieren und die Situation fachgerecht weitergeben.
+
+---
+
+## Typische Fehler
+
+Viele Auszubildende ...
+
+- verwechseln Hypoglykämie und Hyperglykämie.
+- reagieren zu spät auf Warnzeichen.
+- dokumentieren Blutzuckerwerte ohne fachliche Bewertung.
+- erkennen das diabetische Fußsyndrom zu spät.
+- unterschätzen die Bedeutung der Patientenschulung.
+
+---
+
+## Das solltest du für die Abschlussprüfung sicher beherrschen
+
+Nach diesem Premium-Lernskript kannst du:
+
+✅ Typ-1- und Typ-2-Diabetes sicher unterscheiden.
+
+✅ Hypoglykämie und Hyperglykämie erkennen.
+
+✅ pflegerische Prioritäten richtig setzen.
+
+✅ Komplikationen früh erkennen.
+
+✅ dein Handeln fachlich begründen.
+
+---
+
+## Dein nächster Schritt auf deinem Lernweg
+
+### 🩸 Diabetes Pflegeplanung
+
+Lerne, wie du pflegerische Probleme erkennst und geeignete Maßnahmen planst.
+
+[Diabetes Pflegeplanung](/themen/krankheitslehre/diabetes-pflegeplanung/)
+
+### 🎓 Diabetes Pflegeprüfung
+
+Trainiere typische Prüfungsfragen und Musterantworten.
+
+[Diabetes Pflegeprüfung](/themen/krankheitslehre/diabetes-pflegepruefung/)
+
+### 📚 Diabetes Fallbeispiel
+
+Übe reale Prüfungssituationen mit ausführlichen Lösungen.
+
+[Diabetes Fallbeispiel](/themen/krankheitslehre/diabetes-fallbeispiel-mit-loesung/)
+
+### 📚 Passendes Premium-E-Book
+
+Vertiefe dein Wissen mit ausführlichen Fallsituationen, Pflegeplanungen und prüfungsrelevanten Begründungen rund um den Diabetes mellitus.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**

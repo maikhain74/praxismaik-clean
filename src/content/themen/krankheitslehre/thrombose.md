@@ -157,3 +157,114 @@ Typische Fragen:
 - Wie verhält man sich bei Verdacht?  
 
 👉 Wichtig: Entstehung + Risiko + richtiges Handeln verstehen
+
+## So geht es jetzt weiter
+
+Du kennst jetzt die Grundlagen der Thrombose und weißt, warum sie früh erkannt werden muss.
+
+Für die Pflegeprüfung reicht dieses Grundlagenwissen jedoch nicht aus.
+
+Du musst Risikopatienten erkennen, eine Thrombose von anderen Beschwerden unterscheiden und deine pflegerischen Maßnahmen fachlich begründen können.
+
+Genau diese Kompetenzen trainierst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Trainiere Thrombose auf Prüfungsniveau
+
+In der Abschlussprüfung möchten Prüfer nicht nur wissen, wie eine Thrombose entsteht.
+
+Sie erwarten, dass du Risiken erkennst, Prioritäten setzt und dein pflegerisches Handeln fachlich begründest.
+
+---
+
+## Typische Prüfungssituation
+
+Herr Meier, 72 Jahre, wurde vor zwei Tagen an der Hüfte operiert.
+
+Heute fällt dir auf:
+
+- das linke Bein ist geschwollen,
+- die Wade ist überwärmt,
+- Herr Meier klagt über Schmerzen beim Auftreten.
+
+### Deine Aufgabe
+
+Wie gehst du vor?
+
+Überlege zunächst selbst.
+
+---
+
+## Fachliche Lösung
+
+Ich nehme die Beschwerden ernst und denke an eine mögliche Thrombose.
+
+Ich vermeide unnötige Bewegung der betroffenen Extremität, informiere sofort die zuständige Pflegefachperson beziehungsweise den ärztlichen Dienst und dokumentiere alle Beobachtungen.
+
+Bis zur ärztlichen Abklärung achte ich darauf, dass keine Maßnahmen durchgeführt werden, die das Risiko einer Embolie erhöhen könnten.
+
+---
+
+## Fachliche Begründung
+
+Eine Thrombose kann zu einer lebensbedrohlichen Lungenembolie führen.
+
+Deshalb müssen typische Symptome früh erkannt, fachgerecht eingeschätzt und unverzüglich weitergegeben werden.
+
+---
+
+## Typische Fehler
+
+Viele Auszubildende ...
+
+- halten die Beschwerden für Muskelkater.
+- massieren das schmerzende Bein.
+- lassen den Patienten weiter umherlaufen.
+- unterschätzen die Gefahr einer Lungenembolie.
+
+---
+
+## Das solltest du für die Abschlussprüfung sicher beherrschen
+
+Nach diesem Premium-Lernskript kannst du:
+
+✅ Risikofaktoren sicher erkennen.
+
+✅ typische Symptome richtig einschätzen.
+
+✅ eine Thrombose von anderen Beschwerden abgrenzen.
+
+✅ pflegerische Prioritäten begründen.
+
+✅ Komplikationen früh erkennen.
+
+---
+
+## Dein nächster Schritt auf deinem Lernweg
+
+### 🫁 Lungenembolie
+
+Lerne, warum sich aus einer Thrombose eine lebensbedrohliche Lungenembolie entwickeln kann.
+
+[Lungenembolie](/themen/krankheitslehre/lungenembolie/)
+
+### 🚶 Thromboseprophylaxe
+
+Vertiefe Maßnahmen zur Vorbeugung und erfahre, wie du das Risiko im Pflegealltag wirksam reduzierst.
+
+### 📚 Passendes Premium-E-Book
+
+Trainiere Fallbeispiele, Musterlösungen und pflegerische Begründungen rund um Thrombosen und ihre Komplikationen.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**

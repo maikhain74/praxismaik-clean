@@ -165,3 +165,114 @@ Typische Fragen:
 - Welche Aufgaben hat die Pflege?  
 
 👉 Wichtig: Infektion → Reaktion → Organversagen verstehen
+
+## So geht es jetzt weiter
+
+Du kennst jetzt die Grundlagen der Sepsis und weißt, warum sie zu den gefährlichsten medizinischen Notfällen gehört.
+
+Für die Pflegeprüfung reicht dieses Grundlagenwissen jedoch nicht aus.
+
+Du musst Frühzeichen erkennen, Prioritäten setzen und dein pflegerisches Handeln fachlich begründen können.
+
+Genau diese Kompetenzen trainierst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Trainiere die Sepsis auf Prüfungsniveau
+
+In der Abschlussprüfung möchten Prüfer nicht nur wissen, wie eine Sepsis entsteht.
+
+Sie erwarten, dass du lebensbedrohliche Veränderungen früh erkennst, Prioritäten richtig setzt und deine Maßnahmen fachlich begründest.
+
+---
+
+## Typische Prüfungssituation
+
+Herr Weber, 81 Jahre, wird wegen einer Pneumonie behandelt.
+
+Im Verlauf fallen auf:
+
+- zunehmende Verwirrtheit,
+- Atemfrequenz 30/min,
+- Blutdruck 88/55 mmHg,
+- Puls 118/min,
+- Temperatur 39,2 °C.
+
+### Deine Aufgabe
+
+Wie gehst du vor?
+
+Überlege zunächst selbst.
+
+---
+
+## Fachliche Lösung
+
+Ich erkenne die Situation als medizinischen Notfall und informiere sofort die zuständige Pflegefachperson beziehungsweise den ärztlichen Dienst.
+
+Ich überwache die Vitalzeichen engmaschig, beobachte Bewusstsein, Atmung und Kreislauf kontinuierlich, dokumentiere alle Veränderungen und unterstütze die angeordneten diagnostischen und therapeutischen Maßnahmen.
+
+---
+
+## Fachliche Begründung
+
+Die Kombination aus Infektion, Fieber, Tachykardie, Hypotonie und Bewusstseinsveränderung kann auf eine Sepsis hinweisen.
+
+Ein frühzeitiges Erkennen und rasches Handeln verbessern die Überlebenschancen und können ein Organversagen verhindern.
+
+---
+
+## Typische Fehler
+
+Viele Auszubildende ...
+
+- unterschätzen Verwirrtheit als Frühzeichen.
+- reagieren erst bei einem deutlichen Blutdruckabfall.
+- erkennen die Verschlechterung des Allgemeinzustands nicht.
+- geben Beobachtungen zu spät weiter.
+
+---
+
+## Das solltest du für die Abschlussprüfung sicher beherrschen
+
+Nach diesem Premium-Lernskript kannst du:
+
+✅ Frühzeichen einer Sepsis sicher erkennen.
+
+✅ lebensbedrohliche Situationen richtig einschätzen.
+
+✅ pflegerische Prioritäten setzen.
+
+✅ Maßnahmen fachlich begründen.
+
+✅ den Zusammenhang zwischen Infektion, Sepsis und septischem Schock erklären.
+
+---
+
+## Dein nächster Schritt auf deinem Lernweg
+
+### ⚠️ Schock
+
+Lerne die verschiedenen Schockformen und ihre Unterschiede kennen.
+
+### 🫁 Pneumonie
+
+Verstehe, warum eine Lungenentzündung häufig die Ursache einer Sepsis sein kann.
+
+[Pneumonie](/themen/krankheitslehre/pneumonie/)
+
+### 📚 Passendes Premium-E-Book
+
+Trainiere realistische Notfallsituationen, Musterlösungen und pflegerische Begründungen.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**

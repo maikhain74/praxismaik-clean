@@ -202,3 +202,119 @@ Warnzeichen müssen frühzeitig erkannt und sofort weitergegeben werden.
 ## Merksatz
 
 **Bei Herzrhythmusstörungen gilt: Nicht nur den Puls zählen – immer den ganzen Menschen und seine Beschwerden beurteilen.**
+
+## So geht es jetzt weiter
+
+Du kennst jetzt die Grundlagen der Herzrhythmusstörungen und weißt, warum nicht jede Veränderung des Herzrhythmus sofort lebensbedrohlich ist.
+
+Für die Pflegeprüfung reicht dieses Grundlagenwissen jedoch nicht aus.
+
+Du musst Beschwerden richtig einschätzen, Warnzeichen erkennen und dein pflegerisches Handeln fachlich begründen können.
+
+Genau diese Kompetenzen trainierst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Trainiere Herzrhythmusstörungen auf Prüfungsniveau
+
+In der Abschlussprüfung möchten Prüfer nicht nur wissen, was eine Herzrhythmusstörung ist.
+
+Sie erwarten, dass du den Allgemeinzustand richtig einschätzt, Prioritäten setzt und deine pflegerischen Entscheidungen fachlich begründest.
+
+---
+
+## Typische Prüfungssituation
+
+Herr Weber, 76 Jahre, klagt plötzlich über Herzrasen.
+
+Du beobachtest:
+
+- unregelmäßigen Puls,
+- Herzfrequenz von 138/min,
+- leichte Atemnot,
+- Schwindel,
+- blasse Haut.
+
+### Deine Aufgabe
+
+Wie gehst du vor?
+
+Überlege zunächst selbst.
+
+---
+
+## Fachliche Lösung
+
+Ich beende körperliche Belastungen, beruhige den Patienten und lasse ihn nicht allein.
+
+Ich kontrolliere Puls, Blutdruck, Atmung und Sauerstoffsättigung, beobachte den Allgemeinzustand und informiere unverzüglich die zuständige Pflegefachperson beziehungsweise den ärztlichen Dienst.
+
+Alle Beobachtungen werden vollständig dokumentiert und der weitere Verlauf engmaschig überwacht.
+
+---
+
+## Fachliche Begründung
+
+Nicht allein die Herzfrequenz entscheidet über die Dringlichkeit, sondern der gesamte klinische Zustand.
+
+Schwindel, Atemnot oder Blutdruckabfall können auf eine hämodynamisch relevante Herzrhythmusstörung hinweisen und erfordern eine rasche medizinische Abklärung.
+
+---
+
+## Typische Fehler
+
+Viele Auszubildende ...
+
+- beurteilen nur die Herzfrequenz.
+- beachten den Allgemeinzustand nicht.
+- erkennen Warnzeichen zu spät.
+- lassen symptomatische Patienten allein.
+- dokumentieren Beschwerden unvollständig.
+
+---
+
+## Das solltest du für die Abschlussprüfung sicher beherrschen
+
+Nach diesem Premium-Lernskript kannst du:
+
+✅ Bradykardie, Tachykardie und unregelmäßige Herzrhythmen unterscheiden.
+
+✅ Warnzeichen sicher erkennen.
+
+✅ pflegerische Prioritäten richtig setzen.
+
+✅ Notfallsituationen einschätzen.
+
+✅ Maßnahmen fachlich begründen.
+
+---
+
+## Dein nächster Schritt auf deinem Lernweg
+
+### ❤️ Herzinfarkt
+
+Lerne, warum Herzrhythmusstörungen im Rahmen eines Herzinfarkts auftreten können.
+
+[Herzinfarkt](/themen/krankheitslehre/herzinfarkt/)
+
+### 🫀 Herzinsuffizienz
+
+Verstehe den Zusammenhang zwischen Herzschwäche und Herzrhythmusstörungen.
+
+[Herzinsuffizienz](/themen/krankheitslehre/herzinsuffizienz/)
+
+### 📚 Passendes Premium-E-Book
+
+Trainiere realistische Prüfungssituationen, Musterlösungen und pflegerische Begründungen rund um Herzrhythmusstörungen.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**

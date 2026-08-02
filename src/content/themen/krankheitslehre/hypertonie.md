@@ -131,3 +131,150 @@ Für Pflegekräfte stehen die regelmäßige Blutdruckkontrolle, die Beobachtung 
 ## Merksatz
 
 **Bei Hypertonie gilt: Blutdruck regelmäßig kontrollieren, Risikofaktoren reduzieren und Folgeerkrankungen frühzeitig vorbeugen.**
+
+## So geht es jetzt weiter
+
+Du kennst jetzt die Grundlagen der Hypertonie und weißt, warum ein dauerhaft erhöhter Blutdruck gefährlich werden kann.
+
+Für die Pflegeprüfung reicht dieses Grundlagenwissen jedoch nicht aus.
+
+Du musst Blutdruckwerte richtig einschätzen, Risiken erkennen und deine pflegerischen Entscheidungen fachlich begründen können.
+
+Genau diese Kompetenzen trainierst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Trainiere Hypertonie auf Prüfungsniveau
+
+In der Abschlussprüfung möchten Prüfer nicht nur wissen, was Hypertonie ist.
+
+Sie erwarten, dass du Blutdruckwerte richtig einordnest, Risiken erkennst und dein pflegerisches Handeln sicher begründen kannst.
+
+---
+
+## Typische Prüfungssituation
+
+Frau Schneider, 78 Jahre, lebt im Pflegeheim.
+
+Bei der morgendlichen Kontrolle misst du einen Blutdruck von **185/105 mmHg**.
+
+Zusätzlich berichtet sie über:
+
+- Kopfschmerzen,
+- Schwindel,
+- Ohrensausen,
+- verschwommenes Sehen.
+
+### Deine Aufgabe
+
+Wie gehst du vor?
+
+Überlege zunächst selbst.
+
+---
+
+## Fachliche Lösung
+
+Ich überprüfe zunächst den Allgemeinzustand der Bewohnerin und messe den Blutdruck nach den geltenden Standards erneut.
+
+Dabei beobachte ich weitere Beschwerden, kontrolliere die Vitalzeichen und informiere entsprechend der Situation die zuständige Pflegefachperson beziehungsweise den ärztlichen Dienst.
+
+Alle Beobachtungen und Maßnahmen werden vollständig dokumentiert.
+
+---
+
+## Fachliche Begründung
+
+Ein deutlich erhöhter Blutdruck kann zu schweren Komplikationen wie Schlaganfall, Herzinfarkt oder einer hypertensiven Krise führen.
+
+Deshalb müssen auffällige Werte immer zusammen mit den Beschwerden beurteilt und zeitnah weitergegeben werden.
+
+---
+
+## Entscheidungssituation
+
+Ein Bewohner sagt:
+
+> „Mir geht es heute gut. Die Blutdrucktabletten brauche ich heute nicht."
+
+**Wie reagierst du?**
+
+### Fachliche Einordnung
+
+Blutdruckmedikamente dürfen nicht eigenständig abgesetzt werden.
+
+Pflegefachpersonen beraten die betroffene Person, beobachten den Zustand und handeln entsprechend der ärztlichen Verordnung.
+
+---
+
+## Typische Fehler
+
+Viele Auszubildende ...
+
+- beurteilen nur den Blutdruckwert.
+- übersehen Begleitsymptome.
+- kontrollieren erhöhte Werte nicht erneut.
+- unterschätzen das Risiko für Folgeerkrankungen.
+- dokumentieren Messwerte ohne fachliche Bewertung.
+
+---
+
+## Das solltest du für die Abschlussprüfung sicher beherrschen
+
+Nach diesem Premium-Lernskript kannst du:
+
+✅ Hypertonie sicher erklären.
+
+✅ Blutdruckwerte richtig einschätzen.
+
+✅ Risikofaktoren erkennen.
+
+✅ pflegerische Prioritäten setzen.
+
+✅ dein Handeln fachlich begründen.
+
+---
+
+## Dein nächster Schritt auf deinem Lernweg
+
+### ❤️ Herzinsuffizienz
+
+Lerne, wie dauerhaft erhöhter Blutdruck das Herz belastet.
+
+[Herzinsuffizienz](/themen/krankheitslehre/herzinsuffizienz/)
+
+### 🧠 Schlaganfall
+
+Verstehe, warum Hypertonie der wichtigste Risikofaktor für einen Schlaganfall ist.
+
+[Schlaganfall](/themen/krankheitslehre/schlaganfall/)
+
+### 📚 Hypertonie Pflegeplanung
+
+Trainiere pflegerische Maßnahmen anhand realistischer Situationen.
+
+[Hypertonie Pflegeplanung](/themen/krankheitslehre/hypertonie-pflegeplanung/)
+
+### 📚 Hypertonie Pflegeprobleme
+
+Vertiefe die häufigsten Pflegeprobleme bei Menschen mit Hypertonie.
+
+[Hypertonie Pflegeprobleme](/themen/krankheitslehre/hypertonie-pflegeprobleme/)
+
+### 🎓 Hypertonie Pflegeprüfung
+
+Trainiere typische Prüfungsfragen mit Musterlösungen.
+
+[Hypertonie Pflegeprüfung](/themen/krankheitslehre/hypertonie-pflegepruefung/)
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**

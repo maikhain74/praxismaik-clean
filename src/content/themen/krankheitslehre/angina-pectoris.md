@@ -157,3 +157,122 @@ Pflegekräfte müssen Beschwerden sorgfältig beobachten, Belastung beenden, die
 ## Merksatz
 
 **Bei Angina pectoris gilt: Brustschmerzen ernst nehmen, Belastung beenden und bei neuen oder anhaltenden Beschwerden sofort handeln.**
+
+## So geht es jetzt weiter
+
+Du kennst jetzt die Grundlagen der Angina pectoris und weißt, warum Brustschmerzen immer ernst genommen werden müssen.
+
+Für die Pflegeprüfung reicht dieses Grundlagenwissen jedoch nicht aus.
+
+Du musst zwischen stabiler und instabiler Angina pectoris unterscheiden, Warnzeichen eines Herzinfarkts erkennen und deine pflegerischen Maßnahmen fachlich begründen können.
+
+Genau diese Kompetenzen trainierst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Trainiere Angina pectoris auf Prüfungsniveau
+
+In der Abschlussprüfung möchten Prüfer nicht nur wissen, was eine Angina pectoris ist.
+
+Sie erwarten, dass du Beschwerden richtig einschätzt, Prioritäten setzt und dein pflegerisches Handeln fachlich begründest.
+
+---
+
+## Typische Prüfungssituation
+
+Herr Schneider, 69 Jahre, leidet an einer bekannten koronaren Herzkrankheit.
+
+Während eines Spaziergangs klagt er plötzlich über:
+
+- Druckgefühl hinter dem Brustbein,
+- Schmerzen mit Ausstrahlung in den linken Arm,
+- Atemnot,
+- Kaltschweißigkeit.
+
+### Deine Aufgabe
+
+Wie gehst du vor?
+
+Überlege zunächst selbst.
+
+---
+
+## Fachliche Lösung
+
+Ich beende die körperliche Belastung sofort und lasse Herrn Schneider in einer bequemen, atemerleichternden Position ruhen.
+
+Ich beruhige ihn, kontrolliere die Vitalzeichen und beobachte Verlauf und Stärke der Beschwerden.
+
+Ich unterstütze die verordnete Bedarfsmedikation nach ärztlicher Anordnung und informiere bei anhaltenden, zunehmenden oder neuartigen Beschwerden unverzüglich den ärztlichen Dienst beziehungsweise den Rettungsdienst.
+
+Alle Beobachtungen werden vollständig dokumentiert.
+
+---
+
+## Fachliche Begründung
+
+Eine instabile Angina pectoris kann Vorbote eines Herzinfarkts sein.
+
+Deshalb müssen Brustschmerzen immer sorgfältig beurteilt und Veränderungen sofort weitergegeben werden.
+
+Eine frühzeitige medizinische Abklärung kann lebensbedrohliche Komplikationen verhindern.
+
+---
+
+## Typische Fehler
+
+Viele Auszubildende ...
+
+- unterschätzen bekannte Brustschmerzen.
+- warten zu lange auf eine Besserung.
+- beobachten nur den Blutdruck.
+- erkennen Warnzeichen eines Herzinfarkts nicht.
+- dokumentieren Beschwerden unvollständig.
+
+---
+
+## Das solltest du für die Abschlussprüfung sicher beherrschen
+
+Nach diesem Premium-Lernskript kannst du:
+
+✅ stabile und instabile Angina pectoris unterscheiden.
+
+✅ Warnzeichen eines Herzinfarkts erkennen.
+
+✅ pflegerische Prioritäten richtig setzen.
+
+✅ Beobachtungen fachlich begründen.
+
+✅ Notfallsituationen sicher einschätzen.
+
+---
+
+## Dein nächster Schritt auf deinem Lernweg
+
+### ❤️ Koronare Herzkrankheit
+
+Vertiefe die Ursachen und Zusammenhänge der Angina pectoris.
+
+[Koronare Herzkrankheit](/themen/krankheitslehre/koronare-herzkrankheit/)
+
+### 🚑 Herzinfarkt
+
+Lerne, wie du einen Herzinfarkt von einer Angina pectoris abgrenzt und welche Maßnahmen Priorität haben.
+
+[Herzinfarkt](/themen/krankheitslehre/herzinfarkt/)
+
+### 📚 Passendes Premium-E-Book
+
+Trainiere realistische Prüfungssituationen, Musterlösungen und pflegerische Begründungen rund um Brustschmerzen, Angina pectoris und Herzinfarkt.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**

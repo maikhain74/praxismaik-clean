@@ -128,3 +128,112 @@ Pflegekräfte müssen Warnzeichen früh erkennen, schnell handeln und die medizi
 ## Merksatz
 
 **Bei Verdacht auf Herzinfarkt gilt: Brustschmerzen ernst nehmen, sofort Hilfe veranlassen und keine Zeit verlieren.**
+
+## So geht es jetzt weiter
+
+Du kennst jetzt die Grundlagen des Herzinfarkts und weißt, warum schnelles Handeln über den weiteren Verlauf entscheiden kann.
+
+Für die Pflegeprüfung reicht dieses Grundlagenwissen jedoch nicht aus.
+
+Du musst Symptome sicher einschätzen, Prioritäten setzen und dein pflegerisches Handeln fachlich begründen können.
+
+Genau diese Kompetenzen trainierst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Trainiere den Herzinfarkt auf Prüfungsniveau
+
+In der Abschlussprüfung möchten Prüfer nicht nur wissen, wie ein Herzinfarkt entsteht.
+
+Sie erwarten, dass du Warnzeichen früh erkennst, richtig priorisierst und deine Maßnahmen fachlich begründest.
+
+---
+
+## Typische Prüfungssituation
+
+Herr Weber, 67 Jahre, klagt plötzlich über:
+
+- starke Schmerzen hinter dem Brustbein,
+- Ausstrahlung in den linken Arm,
+- Atemnot,
+- Kaltschweißigkeit,
+- große Angst.
+
+### Deine Aufgabe
+
+Wie gehst du vor?
+
+Überlege zunächst selbst.
+
+---
+
+## Fachliche Lösung
+
+Ich erkenne die Situation als medizinischen Notfall, lasse den Patienten nicht allein und informiere sofort die zuständige Pflegefachperson beziehungsweise den ärztlichen Dienst.
+
+Ich unterstütze eine entlastende Lagerung, überwache die Vitalzeichen, beobachte Veränderungen kontinuierlich und dokumentiere alle Maßnahmen und Beobachtungen.
+
+---
+
+## Fachliche Begründung
+
+Ein Herzinfarkt kann innerhalb kurzer Zeit zu lebensbedrohlichen Komplikationen führen.
+
+Je schneller Warnzeichen erkannt und die medizinische Versorgung eingeleitet werden, desto größer ist die Chance, Herzmuskelgewebe zu erhalten und Folgeschäden zu begrenzen.
+
+---
+
+## Typische Fehler
+
+Viele Auszubildende ...
+
+- unterschätzen Brustschmerzen.
+- warten zu lange mit der Informationsweitergabe.
+- erkennen atypische Symptome nicht.
+- begründen ihre Maßnahmen nicht.
+
+---
+
+## Das solltest du für die Abschlussprüfung sicher beherrschen
+
+Nach diesem Premium-Lernskript kannst du:
+
+✅ Warnzeichen eines Herzinfarkts sicher erkennen.
+
+✅ Prioritäten richtig setzen.
+
+✅ pflegerische Maßnahmen fachlich begründen.
+
+✅ lebensbedrohliche Situationen früh erkennen.
+
+✅ sicher mit dem Behandlungsteam zusammenarbeiten.
+
+---
+
+## Dein nächster Schritt auf deinem Lernweg
+
+### ❤️ Koronare Herzkrankheit
+
+Vertiefe die Ursachen und Zusammenhänge der Erkrankung.
+
+[Koronare Herzkrankheit](/themen/krankheitslehre/koronare-herzkrankheit/)
+
+### 🩺 Pflegeplanung bei Herzinfarkt
+
+Trainiere pflegerische Ziele, Maßnahmen und Prioritäten.
+
+### 📚 Passendes Premium-E-Book
+
+Vertiefe dein Wissen mit realistischen Prüfungsfällen, Musterlösungen und pflegerischen Begründungen.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**

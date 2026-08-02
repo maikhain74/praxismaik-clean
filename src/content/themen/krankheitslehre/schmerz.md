@@ -170,3 +170,138 @@ Typische Fragen:
 - Warum ist Schmerz subjektiv?  
 
 👉 Wichtig: Schmerz erkennen + einschätzen + handeln
+
+## So geht es jetzt weiter
+
+Du kennst jetzt die Grundlagen des Schmerzes und weißt, warum Schmerzen immer ernst genommen werden müssen.
+
+Für die Pflegeprüfung reicht dieses Grundlagenwissen jedoch nicht aus.
+
+Du musst Schmerzen systematisch einschätzen, Prioritäten setzen und deine pflegerischen Maßnahmen fachlich begründen können.
+
+Genau diese Kompetenzen trainierst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Trainiere Schmerz auf Prüfungsniveau
+
+In der Abschlussprüfung möchten Prüfer nicht nur wissen, welche Schmerzarten es gibt.
+
+Sie erwarten, dass du Schmerzen professionell einschätzt, Beobachtungen richtig einordnest und geeignete Maßnahmen begründest.
+
+---
+
+## Typische Prüfungssituation
+
+Herr Meier wurde vor zwei Stunden am Bauch operiert.
+
+Während deiner Visite berichtet er:
+
+- starke Schmerzen (8 von 10),
+- Schonhaltung,
+- flache Atmung,
+- Angst vor jeder Bewegung.
+
+### Deine Aufgabe
+
+Wie gehst du vor?
+
+Überlege zunächst selbst.
+
+---
+
+## Fachliche Lösung
+
+Ich nehme die Schmerzen ernst und erfasse sie systematisch.
+
+Dabei beurteile ich Schmerzstärke, Lokalisation, Art, Dauer sowie mögliche Auslöser.
+
+Anschließend kontrolliere ich die Vitalzeichen, informiere die zuständige Pflegefachperson beziehungsweise den ärztlichen Dienst entsprechend der Situation und unterstütze die verordnete Schmerztherapie.
+
+Nach den Maßnahmen überprüfe ich erneut die Schmerzstärke und dokumentiere den Verlauf.
+
+---
+
+## Fachliche Begründung
+
+Unbehandelte Schmerzen können die Mobilisation erschweren, die Atmung beeinträchtigen und den Heilungsverlauf verzögern.
+
+Eine strukturierte Schmerzerfassung ermöglicht eine gezielte Behandlung und verbessert die Patientensicherheit sowie die Lebensqualität.
+
+---
+
+## Typische Fehler
+
+Viele Auszubildende ...
+
+- unterschätzen die Angaben der betroffenen Person.
+- dokumentieren Schmerzen unvollständig.
+- kontrollieren die Wirkung der Schmerztherapie nicht.
+- beurteilen nur die Schmerzstärke und nicht die Begleitsymptome.
+- warten zu lange mit der Informationsweitergabe.
+
+---
+
+## Entscheidungssituation
+
+Eine Bewohnerin mit Demenz wirkt plötzlich unruhig, zieht sich zurück und verzieht das Gesicht.
+
+Sie kann ihre Schmerzen nicht sicher beschreiben.
+
+**Was spricht dafür, trotzdem an Schmerzen zu denken?**
+
+### Fachliche Einordnung
+
+Auch Menschen mit eingeschränkter Kommunikation können starke Schmerzen haben.
+
+Verhaltensänderungen, Schonhaltung, Unruhe oder Veränderungen der Vitalzeichen können wichtige Hinweise sein.
+
+Deshalb müssen Schmerzen auch ohne verbale Angaben systematisch beobachtet und eingeschätzt werden.
+
+---
+
+## Das solltest du für die Abschlussprüfung sicher beherrschen
+
+Nach diesem Premium-Lernskript kannst du:
+
+✅ akute und chronische Schmerzen unterscheiden.
+
+✅ Schmerzen systematisch erfassen.
+
+✅ Schmerzbeobachtungen fachlich begründen.
+
+✅ geeignete pflegerische Maßnahmen auswählen.
+
+✅ die Wirkung einer Schmerztherapie beurteilen.
+
+---
+
+## Dein nächster Schritt auf deinem Lernweg
+
+### 🛏️ Dekubitus
+
+Verstehe, warum Schmerzen die Mobilität einschränken und das Dekubitusrisiko erhöhen können.
+
+[Dekubitus](/themen/krankheitslehre/dekubitus/)
+
+### 🧠 Delir
+
+Lerne, warum unbehandelte Schmerzen besonders bei älteren Menschen ein Delir begünstigen können.
+
+[Delir](/themen/krankheitslehre/delir/)
+
+### 📚 Passendes Premium-E-Book
+
+Trainiere prüfungsrelevante Fallsituationen, Musterantworten und pflegerische Begründungen rund um Schmerzerfassung, Schmerztherapie und Patientensicherheit.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**

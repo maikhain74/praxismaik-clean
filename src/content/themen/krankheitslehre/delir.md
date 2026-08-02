@@ -160,3 +160,118 @@ Typische Prüfungsfragen:
 - Woran erkennen Sie ein Delir?
 - Welche Ursachen sind möglich?
 - Wie reagieren Sie pflegerisch?
+
+## So geht es jetzt weiter
+
+Du kennst jetzt die Grundlagen des Delirs und weißt, warum es sich um einen medizinischen Notfall handelt.
+
+Für die Pflegeprüfung reicht dieses Grundlagenwissen jedoch nicht aus.
+
+Du musst ein Delir früh erkennen, von einer Demenz unterscheiden und deine pflegerischen Maßnahmen fachlich begründen können.
+
+Genau diese Kompetenzen trainierst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Trainiere das Delir auf Prüfungsniveau
+
+In der Abschlussprüfung möchten Prüfer nicht nur wissen, was ein Delir ist.
+
+Sie erwarten, dass du akute Veränderungen erkennst, Prioritäten setzt und dein pflegerisches Handeln fachlich begründest.
+
+---
+
+## Typische Prüfungssituation
+
+Frau Müller, 84 Jahre, wurde gestern wegen einer Pneumonie aufgenommen.
+
+Heute fällt auf:
+
+- plötzlich starke Verwirrtheit,
+- Unruhe,
+- Desorientierung,
+- Halluzinationen,
+- Schlaflosigkeit in der Nacht.
+
+### Deine Aufgabe
+
+Wie gehst du vor?
+
+Überlege zunächst selbst.
+
+---
+
+## Fachliche Lösung
+
+Ich erkenne die plötzliche Verhaltensänderung als Warnzeichen und nehme die Situation ernst.
+
+Ich sorge für eine ruhige Umgebung, orientiere die Patientin mit klarer Ansprache, beobachte Bewusstsein und Vitalzeichen, informiere sofort die zuständige Pflegefachperson beziehungsweise den ärztlichen Dienst und dokumentiere alle Veränderungen.
+
+Zusätzlich achte ich auf mögliche Ursachen wie Infektionen, Flüssigkeitsmangel, Schmerzen oder Medikamente.
+
+---
+
+## Fachliche Begründung
+
+Ein Delir entwickelt sich akut und weist häufig auf eine behandlungsbedürftige körperliche Ursache hin.
+
+Je früher das Delir erkannt und die Ursache behandelt wird, desto besser sind die Chancen, Komplikationen zu vermeiden und die Orientierung wiederherzustellen.
+
+---
+
+## Typische Fehler
+
+Viele Auszubildende ...
+
+- verwechseln ein Delir mit einer Demenz.
+- unterschätzen das hypoaktive Delir.
+- beruhigen Betroffene nur, ohne nach der Ursache zu suchen.
+- geben Veränderungen zu spät weiter.
+
+---
+
+## Das solltest du für die Abschlussprüfung sicher beherrschen
+
+Nach diesem Premium-Lernskript kannst du:
+
+✅ ein Delir sicher erkennen.
+
+✅ Delir und Demenz unterscheiden.
+
+✅ häufige Ursachen benennen.
+
+✅ pflegerische Prioritäten richtig setzen.
+
+✅ Maßnahmen fachlich begründen.
+
+---
+
+## Dein nächster Schritt auf deinem Lernweg
+
+### 🦠 Sepsis
+
+Verstehe, warum eine Sepsis ein Delir auslösen kann.
+
+[Sepsis](/themen/krankheitslehre/sepsis/)
+
+### 💧 Dehydratation
+
+Lerne, warum Flüssigkeitsmangel zu den häufigsten Delir-Ursachen gehört.
+
+[Dehydratation](/themen/krankheitslehre/dehydratation/)
+
+### 📚 Passendes Premium-E-Book
+
+Trainiere realistische Prüfungssituationen, Musterlösungen und pflegerische Begründungen.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**

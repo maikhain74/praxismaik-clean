@@ -178,3 +178,110 @@ Typische Fragen:
 - Welche pflegerischen Maßnahmen sind wichtig?  
 
 👉 Wichtig: Gasaustausch + Symptome + Pflege zusammen verstehen
+
+## So geht es jetzt weiter
+
+Du kennst jetzt die Grundlagen der Pneumonie und weißt, warum sie besonders für ältere und geschwächte Menschen gefährlich sein kann.
+
+Für die Pflegeprüfung reicht dieses Grundlagenwissen jedoch nicht aus.
+
+Du musst Symptome richtig einschätzen, Komplikationen früh erkennen und pflegerische Maßnahmen fachlich begründen können.
+
+Genau diese Kompetenzen trainierst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Trainiere die Pneumonie auf Prüfungsniveau
+
+In der Abschlussprüfung geht es nicht nur darum, Symptome aufzuzählen.
+
+Prüfer möchten erkennen, dass du Prioritäten setzt, Veränderungen früh bemerkst und deine pflegerischen Entscheidungen fachlich begründest.
+
+---
+
+## Typische Prüfungssituation
+
+Frau Schneider, 83 Jahre, lebt im Pflegeheim.
+
+Seit dem Morgen fällt auf:
+
+- zunehmende Atemnot
+- Husten
+- Temperatur 38,6 °C
+- Sauerstoffsättigung 89 %
+- zunehmende Verwirrtheit
+
+### Deine Aufgabe
+
+Wie gehst du vor?
+
+Überlege zunächst selbst.
+
+---
+
+## Fachliche Lösung
+
+Ich beurteile zunächst den Allgemeinzustand und die Atmung der Bewohnerin.
+
+Anschließend kontrolliere ich die Vitalzeichen, informiere die zuständige Pflegefachperson beziehungsweise den ärztlichen Dienst und dokumentiere alle Beobachtungen.
+
+Je nach Anordnung unterstütze ich die Oberkörperhochlagerung, fördere die Atemerleichterung und beobachte die Patientin engmaschig weiter.
+
+---
+
+## Fachliche Begründung
+
+Eine Pneumonie kann sich besonders bei älteren Menschen rasch verschlechtern.
+
+Die Kombination aus Atemnot, verminderter Sauerstoffsättigung und Verwirrtheit weist auf eine ernst zu nehmende Verschlechterung hin und erfordert eine schnelle pflegerische Reaktion.
+
+---
+
+## Typische Fehler
+
+Viele Auszubildende ...
+
+- unterschätzen Verwirrtheit als Symptom.
+- kontrollieren die Sauerstoffsättigung nicht.
+- erkennen Atemnot zu spät.
+- begründen ihre Maßnahmen nicht.
+
+---
+
+## Das solltest du für die Abschlussprüfung sicher beherrschen
+
+Nach diesem Premium-Lernskript kannst du:
+
+✅ typische Symptome sicher erkennen.
+
+✅ Warnzeichen richtig einschätzen.
+
+✅ pflegerische Prioritäten setzen.
+
+✅ Maßnahmen fachlich begründen.
+
+✅ Komplikationen früh erkennen.
+
+---
+
+## Dein nächster Schritt auf deinem Lernweg
+
+### 🩺 Pflegeplanung bei Pneumonie
+
+Vertiefe Ziele und Maßnahmen für die pflegerische Versorgung.
+
+### 📚 Passendes Premium-E-Book
+
+Trainiere realistische Prüfungssituationen, Musterlösungen und pflegerische Begründungen.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**

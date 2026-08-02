@@ -148,3 +148,118 @@ Typische Prüfungsfragen:
 - Welche Anzeichen sind typisch?
 - Warum sind ältere Menschen besonders gefährdet?
 - Welche Maßnahmen gehören zur Pflege?
+
+## So geht es jetzt weiter
+
+Du kennst jetzt die Grundlagen der Dehydration und weißt, warum Flüssigkeitsmangel besonders bei älteren und pflegebedürftigen Menschen gefährlich werden kann.
+
+Für die Pflegeprüfung reicht dieses Grundlagenwissen jedoch nicht aus.
+
+Du musst Risikopersonen früh erkennen, typische Anzeichen richtig deuten und deine pflegerischen Maßnahmen fachlich begründen können.
+
+Genau diese Kompetenzen trainierst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Trainiere Dehydration auf Prüfungsniveau
+
+In der Abschlussprüfung möchten Prüfer nicht nur wissen, was eine Dehydration ist.
+
+Sie erwarten, dass du Flüssigkeitsmangel früh erkennst, Prioritäten setzt und deine pflegerischen Entscheidungen fachlich begründest.
+
+---
+
+## Typische Prüfungssituation
+
+Frau Schneider, 86 Jahre, lebt im Pflegeheim.
+
+Heute fällt dir auf:
+
+- trockene Lippen und Schleimhäute,
+- dunkler Urin,
+- Schwindel beim Aufstehen,
+- zunehmende Verwirrtheit,
+- sie hat ihr Getränk kaum angerührt.
+
+### Deine Aufgabe
+
+Wie gehst du vor?
+
+Überlege zunächst selbst.
+
+---
+
+## Fachliche Lösung
+
+Ich erkenne die Hinweise auf einen möglichen Flüssigkeitsmangel und nehme sie ernst.
+
+Ich überprüfe die Trinkmenge, beobachte Vitalzeichen und Allgemeinzustand, dokumentiere meine Beobachtungen und informiere die zuständige Pflegefachperson beziehungsweise den ärztlichen Dienst.
+
+Anschließend unterstütze ich die Patientin aktiv bei der Flüssigkeitsaufnahme und achte auf regelmäßige Verlaufskontrollen.
+
+---
+
+## Fachliche Begründung
+
+Eine Dehydration kann zu Kreislaufproblemen, Delir, Stürzen und Nierenfunktionsstörungen führen.
+
+Je früher Flüssigkeitsmangel erkannt und behandelt wird, desto eher lassen sich schwerwiegende Komplikationen vermeiden.
+
+---
+
+## Typische Fehler
+
+Viele Auszubildende ...
+
+- verlassen sich ausschließlich auf das Durstgefühl.
+- erkennen Verwirrtheit nicht als mögliches Zeichen einer Dehydration.
+- dokumentieren Trinkmengen unvollständig.
+- reagieren erst bei schweren Symptomen.
+
+---
+
+## Das solltest du für die Abschlussprüfung sicher beherrschen
+
+Nach diesem Premium-Lernskript kannst du:
+
+✅ typische Anzeichen einer Dehydration sicher erkennen.
+
+✅ Risikopersonen früh identifizieren.
+
+✅ pflegerische Maßnahmen fachlich begründen.
+
+✅ Komplikationen einschätzen.
+
+✅ Prioritäten im Pflegealltag richtig setzen.
+
+---
+
+## Dein nächster Schritt auf deinem Lernweg
+
+### 🧠 Delir
+
+Verstehe, warum Flüssigkeitsmangel ein Delir auslösen kann.
+
+[Delir](/themen/krankheitslehre/delir/)
+
+### 🩺 Niereninsuffizienz
+
+Lerne, welche Auswirkungen eine Dehydration auf die Nieren haben kann.
+
+[Niereninsuffizienz](/themen/krankheitslehre/niereninsuffizienz/)
+
+### 📚 Passendes Premium-E-Book
+
+Trainiere Fallbeispiele, Musterlösungen und pflegerische Begründungen rund um Flüssigkeitsmangel und seine Folgen.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**

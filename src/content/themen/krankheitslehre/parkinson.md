@@ -192,3 +192,109 @@ Typische Fragen:
 - Warum ist die Medikamenteneinnahme so entscheidend?  
 
 👉 Wichtig: Dopaminmangel + Bewegung + Pflege zusammen verstehen
+
+## So geht es jetzt weiter
+
+Du kennst jetzt die Grundlagen des Morbus Parkinson und weißt, warum die Erkrankung den Alltag und die Selbstständigkeit stark beeinflussen kann.
+
+Für die Pflegeprüfung reicht dieses Grundlagenwissen jedoch nicht aus.
+
+Du musst Symptome richtig einschätzen, Risiken erkennen und pflegerische Maßnahmen fachlich begründen können.
+
+Genau diese Kompetenzen trainierst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Trainiere Morbus Parkinson auf Prüfungsniveau
+
+In der Abschlussprüfung möchten Prüfer nicht nur wissen, welche Symptome Morbus Parkinson verursacht.
+
+Sie erwarten, dass du Prioritäten setzt, Risiken erkennst und deine pflegerischen Entscheidungen fachlich begründest.
+
+---
+
+## Typische Prüfungssituation
+
+Herr Meier, 76 Jahre, lebt seit mehreren Jahren mit Morbus Parkinson.
+
+Während des Frühstücks fällt auf:
+
+- ausgeprägtes Zittern der Hände,
+- verlangsamte Bewegungen,
+- Husten beim Trinken,
+- plötzliches „Freezing“ beim Aufstehen.
+
+### Deine Aufgabe
+
+Wie gehst du vor?
+
+Überlege zunächst selbst.
+
+---
+
+## Fachliche Lösung
+
+Ich beurteile zunächst die aktuelle Situation und unterstütze Herrn Meier sicher beim Aufstehen.
+
+Anschließend beobachte ich die Schluckfähigkeit, achte auf mögliche Aspirationszeichen und unterstütze ihn bei der Nahrungsaufnahme.
+
+Außerdem überprüfe ich, ob die Parkinsonmedikamente planmäßig eingenommen wurden, dokumentiere meine Beobachtungen und informiere bei Veränderungen die zuständige Pflegefachperson beziehungsweise den ärztlichen Dienst.
+
+---
+
+## Fachliche Begründung
+
+Morbus Parkinson erhöht unter anderem das Risiko für Stürze und Aspirationen.
+
+Eine sichere Mobilisation, die Beobachtung der Schluckfunktion sowie die pünktliche Medikamenteneinnahme tragen wesentlich zur Patientensicherheit bei.
+
+---
+
+## Typische Fehler
+
+Viele Auszubildende ...
+
+- unterschätzen Schluckstörungen.
+- geben Parkinsonmedikamente verspätet.
+- setzen Patienten unter Zeitdruck.
+- erkennen das Sturzrisiko nicht rechtzeitig.
+
+---
+
+## Das solltest du für die Abschlussprüfung sicher beherrschen
+
+Nach diesem Premium-Lernskript kannst du:
+
+✅ die Hauptsymptome sicher erkennen.
+
+✅ Sturz- und Aspirationsrisiken einschätzen.
+
+✅ pflegerische Prioritäten richtig setzen.
+
+✅ Maßnahmen fachlich begründen.
+
+✅ den Einfluss der Medikamenteneinnahme erklären.
+
+---
+
+## Dein nächster Schritt auf deinem Lernweg
+
+### 🩺 Pflegeplanung bei Morbus Parkinson
+
+Vertiefe pflegerische Ziele, Maßnahmen und Prioritäten.
+
+### 📚 Passendes Premium-E-Book
+
+Trainiere realistische Prüfungssituationen, Musterlösungen und pflegerische Begründungen.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**
