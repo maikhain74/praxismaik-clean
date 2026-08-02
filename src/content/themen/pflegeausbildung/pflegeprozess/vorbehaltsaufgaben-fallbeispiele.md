@@ -186,3 +186,162 @@ Wer typische Situationen sicher analysieren kann, erkennt Vorbehaltsaufgaben deu
 ## Merksatz
 
 **Vorbehaltsaufgaben erkennt man häufig dort, wo Pflegefachpersonen fachliche Entscheidungen treffen, bewerten oder steuern.**
+
+---
+
+## So geht es jetzt weiter
+
+Du hast jetzt typische Fallbeispiele zu den Vorbehaltsaufgaben kennengelernt und kannst erste Situationen richtig einordnen.
+
+Für die generalistische Pflegeausbildung reicht das jedoch nicht aus.
+
+Im Pflegealltag, in der Praxisanleitung und spätestens in der Abschlussprüfung musst du komplexe Situationen analysieren, Vorbehaltsaufgaben sicher erkennen und deine Entscheidungen fachlich begründen können.
+
+Genau diese Kompetenzen entwickelst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Entwickle die Kompetenzen für Pflegealltag und Abschlussprüfung
+
+In der praktischen Prüfung wirst du selten nach Definitionen gefragt.
+
+Stattdessen musst du reale Situationen beurteilen und erklären, warum eine Aufgabe zu den Vorbehaltsaufgaben gehört oder nicht.
+
+---
+
+## Typische Prüfungsfrage
+
+**Praxisanleiter oder Prüfer:**
+
+„Eine Pflegehilfskraft führt bei einer Neuaufnahme die komplette pflegerische Einschätzung durch und legt eigenständig die Pflegeplanung fest. Wie beurteilen Sie diese Situation?“
+
+### Musterantwort
+
+„Diese Situation ist fachlich nicht korrekt.
+
+Die Erhebung und Feststellung des individuellen Pflegebedarfs sowie die Steuerung des Pflegeprozesses gehören zu den gesetzlichen Vorbehaltsaufgaben der Pflegefachperson.
+
+Eine Pflegehilfskraft kann Beobachtungen mitteilen und unterstützende Tätigkeiten übernehmen. Die pflegefachliche Einschätzung, Planung und Verantwortung müssen jedoch bei der Pflegefachperson liegen.“
+
+---
+
+## Warum diese Antwort überzeugt
+
+Diese Antwort zeigt, dass du:
+
+- Vorbehaltsaufgaben in einer Fallsituation sicher erkennst.
+- Verantwortung und Durchführung unterscheiden kannst.
+- den Zusammenhang mit dem Pflegeprozess verstehst.
+- dein Handeln fachlich begründest.
+
+Genau diese Fähigkeiten werden in der praktischen Abschlussprüfung bewertet.
+
+---
+
+## Häufige Fehler
+
+Viele Auszubildende ...
+
+- beurteilen nur einzelne Tätigkeiten.
+- übersehen die fachliche Verantwortung.
+- verwechseln Delegation mit Vorbehaltsaufgaben.
+- erkennen die Pflegebedarfserhebung nicht als Vorbehaltsaufgabe.
+- begründen ihre Entscheidung nicht.
+
+---
+
+## Entscheidungssituation
+
+Während einer Schicht schlägt eine Pflegehilfskraft vor, die Pflegeplanung eines Bewohners zu ändern, weil sich dessen Gesundheitszustand verschlechtert hat.
+
+**Wie gehst du als Pflegefachperson vor?**
+
+Überlege zunächst selbst.
+
+---
+
+## Fachliche Lösung
+
+Die Beobachtungen der Pflegehilfskraft werden berücksichtigt.
+
+Die erneute Einschätzung des Pflegebedarfs, die Bewertung der Situation und die Anpassung der Pflegeplanung erfolgen jedoch durch die Pflegefachperson.
+
+So bleibt die fachliche Verantwortung dort, wo sie gesetzlich vorgesehen ist.
+
+---
+
+## Fachliche Begründung
+
+Professionelle Pflege lebt von Teamarbeit.
+
+Die Verantwortung für die fachliche Analyse, Bewertung und Steuerung des Pflegeprozesses bleibt jedoch bei der Pflegefachperson und kann nicht vollständig übertragen werden.
+
+---
+
+## Transfer in den Pflegealltag
+
+Ein Kollege sagt:
+
+> „Wenn die Pflegeplanung schon geschrieben ist, kann sie jeder beliebig ändern.“
+
+Wie würdest du reagieren?
+
+### Fachliche Einordnung
+
+Änderungen der Pflegeplanung setzen eine erneute pflegefachliche Einschätzung voraus.
+
+Da die Steuerung des Pflegeprozesses zu den Vorbehaltsaufgaben gehört, trägt die Pflegefachperson auch für Anpassungen die fachliche Verantwortung.
+
+---
+
+## Das solltest du für die Abschlussprüfung sicher beherrschen
+
+Nach diesem Premium-Lernskript kannst du:
+
+✅ Vorbehaltsaufgaben in Fallbeispielen sicher erkennen.
+
+✅ Verantwortung und Durchführung voneinander unterscheiden.
+
+✅ Delegationssituationen fachlich bewerten.
+
+✅ Entscheidungen nachvollziehbar begründen.
+
+✅ den Zusammenhang mit dem Pflegeprozess erklären.
+
+✅ typische Prüfungssituationen sicher lösen.
+
+---
+
+## Dein nächster Schritt auf deinem Lernweg
+
+Du kannst Vorbehaltsaufgaben jetzt anhand realistischer Situationen beurteilen.
+
+Jetzt entwickelst du Schritt für Schritt die Kompetenzen, die du für den Pflegealltag und die Abschlussprüfung brauchst.
+
+### 🧠 Lernkarten
+
+Trainiere typische Fallsituationen zu Vorbehaltsaufgaben.
+
+### 🩺 Passender Prüfungsfall
+
+Bearbeite eine vollständige Prüfungssituation mit Delegation, Verantwortung und Pflegeprozess.
+
+### 🎓 Examensquiz
+
+Überprüfe, ob du Vorbehaltsaufgaben in komplexen Situationen sicher beurteilen kannst.
+
+### 📚 Passendes Premium-E-Book
+
+Vertiefe dein Wissen zu Pflegeprozess, Vorbehaltsaufgaben und professioneller Verantwortung.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**

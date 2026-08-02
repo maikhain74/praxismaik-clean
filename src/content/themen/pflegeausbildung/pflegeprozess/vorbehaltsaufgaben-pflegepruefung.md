@@ -179,3 +179,165 @@ Besonders wichtig sind die gesetzlichen Grundlagen, die Verbindung zum Pflegepro
 ## Merksatz
 
 **Vorbehaltsaufgaben sind prüfungsrelevant, weil sie den fachlichen Kern professioneller Pflege beschreiben.**
+
+---
+
+## So geht es jetzt weiter
+
+Du kennst jetzt die prüfungsrelevanten Grundlagen der Vorbehaltsaufgaben und weißt, welche Inhalte besonders häufig abgefragt werden.
+
+Für die generalistische Pflegeausbildung reicht dieses Wissen jedoch nicht aus.
+
+Im Pflegealltag, in der Praxisanleitung und spätestens in der Abschlussprüfung musst du Vorbehaltsaufgaben sicher erkennen, fachlich begründen und auch in komplexen Prüfungssituationen anwenden können.
+
+Genau diese Kompetenzen entwickelst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Entwickle die Kompetenzen für Pflegealltag und Abschlussprüfung
+
+In der Abschlussprüfung geht es nicht darum, Definitionen auswendig aufzusagen.
+
+Entscheidend ist, dass du Vorbehaltsaufgaben in praktischen Situationen erkennst, rechtlich richtig einordnest und dein Handeln nachvollziehbar begründest.
+
+---
+
+## Typische Prüfungsfrage
+
+**Praxisanleiter oder Prüfer:**
+
+„Warum gehören die Erhebung des Pflegebedarfs und die Steuerung des Pflegeprozesses zu den Vorbehaltsaufgaben der Pflegefachperson?“
+
+### Musterantwort
+
+„Diese Aufgaben erfordern eine pflegefachliche Analyse, professionelle Entscheidungen und die Übernahme fachlicher Verantwortung.
+
+Nur wenn der Pflegebedarf korrekt eingeschätzt und der Pflegeprozess fachgerecht gesteuert wird, können individuelle Pflegeziele festgelegt, geeignete Maßnahmen geplant und die Pflegequalität sichergestellt werden.
+
+Deshalb sind diese Aufgaben gesetzlich Pflegefachpersonen vorbehalten.“
+
+---
+
+## Warum diese Antwort überzeugt
+
+Diese Antwort zeigt, dass du:
+
+- die gesetzlichen Vorbehaltsaufgaben sicher kennst.
+- ihre Bedeutung für die Patientensicherheit verstehst.
+- den Zusammenhang mit dem Pflegeprozess erklären kannst.
+- fachliche Verantwortung begründest.
+- nicht nur Definitionen wiedergibst, sondern Zusammenhänge verstehst.
+
+Genau diese Kompetenz wird in der Abschlussprüfung bewertet.
+
+---
+
+## Häufige Fehler
+
+Viele Auszubildende ...
+
+- lernen nur die Definition auswendig.
+- können Vorbehaltsaufgaben nicht auf Fallbeispiele übertragen.
+- verwechseln Durchführung mit fachlicher Verantwortung.
+- unterschätzen die rechtliche Bedeutung.
+- begründen ihre Antworten nicht.
+
+---
+
+## Entscheidungssituation
+
+Im Examen beobachtest du, dass eine Pflegehilfskraft bei einer Neuaufnahme selbstständig den Pflegebedarf erhebt und die Pflegeplanung erstellt.
+
+**Wie beurteilst du diese Situation?**
+
+Überlege zunächst selbst.
+
+---
+
+## Fachliche Lösung
+
+Die Beobachtungen der Pflegehilfskraft können in die Einschätzung einfließen.
+
+Die Erhebung und Feststellung des Pflegebedarfs sowie die Steuerung des Pflegeprozesses müssen jedoch durch die Pflegefachperson erfolgen.
+
+Diese Aufgaben gehören zu den gesetzlichen Vorbehaltsaufgaben und dürfen nicht vollständig übertragen werden.
+
+---
+
+## Fachliche Begründung
+
+Vorbehaltsaufgaben schützen die Qualität professioneller Pflege.
+
+Sie stellen sicher, dass pflegefachliche Entscheidungen von entsprechend qualifizierten Pflegefachpersonen getroffen werden.
+
+Dadurch werden Patientensicherheit, individuelle Pflegeplanung und Pflegequalität gewährleistet.
+
+---
+
+## Transfer in den Pflegealltag
+
+Ein Auszubildender sagt:
+
+> „Vorbehaltsaufgaben spielen doch nur im Examen eine Rolle.“
+
+Wie würdest du reagieren?
+
+### Fachliche Einordnung
+
+Vorbehaltsaufgaben sind keine Prüfungstheorie.
+
+Sie bestimmen den beruflichen Alltag jeder Pflegefachperson, weil sie festlegen, für welche pflegefachlichen Entscheidungen die gesetzliche Verantwortung übernommen wird.
+
+---
+
+## Das solltest du für die Abschlussprüfung sicher beherrschen
+
+Nach diesem Premium-Lernskript kannst du:
+
+✅ die gesetzlichen Vorbehaltsaufgaben sicher benennen.
+
+✅ ihre Bedeutung fachlich erklären.
+
+✅ Vorbehaltsaufgaben in Prüfungssituationen erkennen.
+
+✅ den Zusammenhang mit dem Pflegeprozess begründen.
+
+✅ Delegationssituationen sicher beurteilen.
+
+✅ typische Prüfungsfragen nachvollziehbar beantworten.
+
+---
+
+## Dein nächster Schritt auf deinem Lernweg
+
+Du kennst jetzt die prüfungsrelevanten Inhalte zu den Vorbehaltsaufgaben.
+
+Jetzt entwickelst du Schritt für Schritt die Kompetenzen, die du für den Pflegealltag und die Abschlussprüfung brauchst.
+
+### 🧠 Lernkarten
+
+Trainiere die gesetzlichen Vorbehaltsaufgaben und ihre Bedeutung.
+
+### 🩺 Passender Prüfungsfall
+
+Bearbeite eine vollständige Prüfungssituation mit Pflegebedarfserhebung, Pflegeprozess und Verantwortung.
+
+### 🎓 Examensquiz
+
+Überprüfe, ob du Vorbehaltsaufgaben auch unter Prüfungsbedingungen sicher anwenden kannst.
+
+### 📚 Passendes Premium-E-Book
+
+Vertiefe dein Wissen zu Pflegeprozess, Vorbehaltsaufgaben und professioneller Verantwortung.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**
