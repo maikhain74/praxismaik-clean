@@ -6,9 +6,9 @@ level: grundlagen
 
 # Informationssammlung im Pflegeprozess
 
-Die Informationssammlung ist der erste Schritt des Pflegeprozesses. Sie bildet die Grundlage für alle weiteren pflegerischen Entscheidungen.
+Die Informationssammlung ist der erste Schritt des [Pflegeprozesses](/themen/pflegeausbildung/pflegeprozess/pflegeprozess-grundlagen/). Sie bildet die Grundlage für alle weiteren pflegerischen Entscheidungen.
 
-Nur wenn ausreichend Informationen vorliegen, können Pflegeprobleme erkannt, Pflegeziele formuliert und passende Maßnahmen geplant werden.
+Nur wenn ausreichend Informationen vorliegen, können [Pflegeprobleme](/themen/pflegeausbildung/pflegeprozess/pflegeprobleme-ressourcen/) erkannt, [Pflegeziele](/themen/pflegeausbildung/pflegeprozess/pflegeziele/) formuliert und passende [Pflegemaßnahmen](/themen/pflegeausbildung/pflegeprozess/pflegemassnahmen/) geplant werden.
 
 Deshalb gilt die Informationssammlung als einer der wichtigsten Schritte im gesamten Pflegeprozess.
 
@@ -126,7 +126,7 @@ Bei der Informationssammlung werden folgende Informationen erhoben:
 - Appetit vermindert
 - motiviert bei der Mobilisation
 
-Diese Informationen bilden die Grundlage für die weitere Pflegeplanung.
+Diese Informationen bilden die Grundlage für die weitere [Pflegeplanung](/themen/pflegeausbildung/pflegeprozess/pflegemassnahmen/).
 
 ## Ressourcen erkennen
 

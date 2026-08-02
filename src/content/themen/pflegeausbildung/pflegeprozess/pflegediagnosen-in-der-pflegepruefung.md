@@ -50,6 +50,24 @@ In Wirklichkeit prüfen viele Prüfer vor allem:
 
 Wer diese Fragen beantworten kann, formuliert meist automatisch eine gute Pflegediagnose.
 
+## So geht es jetzt weiter
+
+Du kennst jetzt die Grundlagen, wie Pflegediagnosen in Prüfungen bewertet werden.
+
+Für die generalistische Pflegeausbildung reicht dieses Wissen jedoch nicht aus.
+
+Im Pflegealltag, in der Praxisanleitung und spätestens in der praktischen Abschlussprüfung musst du Pflegediagnosen sicher formulieren, begründen und daraus den weiteren Pflegeprozess entwickeln können.
+
+Genau diese Kompetenzen entwickelst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
 ## Typischer Prüfungsablauf
 
 ### Fallsituation
@@ -238,3 +256,4 @@ Entscheidend ist nicht das Auswendiglernen einzelner Begriffe, sondern das syste
 ## Merksatz
 
 **Prüfer bewerten nicht nur Fachwissen, sondern vor allem pflegerisches Denken.**
+

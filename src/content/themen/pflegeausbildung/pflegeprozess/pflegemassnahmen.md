@@ -6,7 +6,7 @@ level: grundlagen
 
 # Pflegemaßnahmen planen
 
-Nachdem Pflegeprobleme erkannt und Pflegeziele festgelegt wurden, müssen passende Pflegemaßnahmen geplant werden.
+Nachdem [Pflegeprobleme und Ressourcen](/themen/pflegeausbildung/pflegeprozess/pflegeprobleme-ressourcen/) erkannt und [Pflegeziele](/themen/pflegeausbildung/pflegeprozess/pflegeziele/) festgelegt wurden, müssen passende Pflegemaßnahmen geplant werden.
 
 Pflegemaßnahmen beschreiben konkret, was getan wird, um die vereinbarten Pflegeziele zu erreichen.
 
@@ -94,7 +94,7 @@ Pflegefachkraft.
 
 ## Zusammenhang mit Pflegezielen
 
-Pflegemaßnahmen müssen immer direkt auf ein Pflegeziel abgestimmt sein.
+Pflegemaßnahmen müssen immer direkt auf ein [Pflegeziel](/themen/pflegeausbildung/pflegeprozess/pflegeziele/) abgestimmt sein.
 
 ### Pflegeziel
 
@@ -177,7 +177,7 @@ Richtige Antwort:
 
 ✅ Schmerzmedikation nach ärztlicher Anordnung verabreichen.
 
-(Das sind Maßnahmen.)
+Die Wirksamkeit jeder geplanten Maßnahme wird später in der [Evaluation](/themen/pflegeausbildung/pflegeprozess/evaluation/) überprüft.
 
 ## Mini-Quiz
 

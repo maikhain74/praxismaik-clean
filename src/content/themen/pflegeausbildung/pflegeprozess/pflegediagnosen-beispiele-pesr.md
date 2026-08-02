@@ -305,3 +305,172 @@ Wer PESR sicher anwenden kann, formuliert Pflegeprobleme deutlich professionelle
 ## Merksatz
 
 **PESR bedeutet: Problem erkennen, Ursache begründen, Symptome belegen, Ressourcen nutzen.**
+
+---
+
+## So geht es jetzt weiter
+
+Du kennst jetzt den Aufbau des PESR-Schemas und weißt, wie aus Beobachtungen fachlich begründete Pflegediagnosen entstehen.
+
+Für die generalistische Pflegeausbildung reicht dieses Wissen jedoch nicht aus.
+
+Im Pflegealltag, in der Praxisanleitung und spätestens in der praktischen Abschlussprüfung musst du das PESR-Schema sicher anwenden und daraus den weiteren Pflegeprozess entwickeln können.
+
+Genau diese Kompetenzen entwickelst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Entwickle die Kompetenzen für Pflegealltag und Abschlussprüfung
+
+Das PESR-Schema ist keine reine Merkhilfe.
+
+Es hilft dir, Beobachtungen systematisch zu analysieren, Pflegediagnosen fachlich zu begründen und daraus individuelle Pflegeziele sowie passende Pflegemaßnahmen abzuleiten.
+
+---
+
+## Typische Prüfungsfrage
+
+**Praxisanleiter oder Prüfer:**
+
+„Frau Schneider wurde nach einer Hüftoperation aufgenommen. Sie benötigt Hilfe beim Aufstehen, vermeidet Bewegungen wegen starker Schmerzen und kann ihren Oberkörper selbstständig waschen. Formulieren Sie eine Pflegediagnose nach dem PESR-Schema.“
+
+### Musterantwort
+
+**P:** Beeinträchtigte Mobilität
+
+**E:** Schmerzen nach Hüftoperation
+
+**S:** Hilfebedarf beim Aufstehen, Bewegungsvermeidung
+
+**R:** Selbstständige Körperpflege des Oberkörpers möglich
+
+**Ausformulierte Pflegediagnose:**
+
+„Beeinträchtigte Mobilität aufgrund postoperativer Schmerzen nach einer Hüftoperation, erkennbar an Hilfebedarf beim Aufstehen und Bewegungsvermeidung. Frau Schneider kann ihren Oberkörper selbstständig waschen.“
+
+---
+
+## Warum diese Antwort überzeugt
+
+Diese Antwort zeigt, dass du Beobachtungen systematisch analysierst und alle Bestandteile des PESR-Schemas vollständig berücksichtigst.
+
+Du unterscheidest Pflegeprobleme von medizinischen Diagnosen, erkennst Ursachen und Symptome, beziehst vorhandene Ressourcen ein und formulierst daraus eine fachlich begründete Pflegediagnose.
+
+Damit schaffst du die Grundlage für individuelle Pflegeziele, geeignete Pflegemaßnahmen und einen professionell gesteuerten Pflegeprozess.
+
+Genau diese Kompetenz erwarten Praxisanleiter und Prüfer in der praktischen Abschlussprüfung.
+
+---
+
+## Häufige Fehler
+
+Viele Auszubildende ...
+
+- beginnen mit der medizinischen Diagnose.
+- verwechseln Ursache und Symptom.
+- vergessen den Ressourcenanteil.
+- formulieren unvollständige Pflegediagnosen.
+- leiten daraus keine Pflegeziele oder Maßnahmen ab.
+- begründen ihre Entscheidung nicht.
+
+---
+
+## Entscheidungssituation
+
+Herr Ali leidet an COPD.
+
+Beim Gehen entwickelt er Atemnot, muss mehrfach pausieren und hustet zähes Bronchialsekret ab.
+
+Er kann die Lippenbremse sicher anwenden.
+
+**Wie formulierst du die Pflegediagnose nach dem PESR-Schema?**
+
+Überlege zunächst selbst.
+
+---
+
+## Fachliche Lösung
+
+Im Mittelpunkt steht die **beeinträchtigte Atmung** beziehungsweise eine **ineffektive Atemwegsreinigung**, abhängig vom Schwerpunkt der Fallsituation.
+
+Die Symptome, Ursachen und Ressourcen werden vollständig nach dem PESR-Schema zugeordnet und anschließend zu einer fachlich begründeten Pflegediagnose zusammengeführt.
+
+---
+
+## Fachliche Begründung
+
+Das PESR-Schema sorgt dafür, dass Pflegediagnosen nachvollziehbar und vollständig aufgebaut sind.
+
+Dadurch werden pflegerische Entscheidungen begründbar und bilden die Grundlage für den gesamten weiteren Pflegeprozess.
+
+---
+
+## Transfer in den Pflegealltag
+
+Ein Kollege sagt:
+
+> „Ich schreibe einfach COPD in die Pflegeplanung. Jeder weiß doch, was gemeint ist.“
+
+Wie würdest du reagieren?
+
+### Fachliche Einordnung
+
+COPD beschreibt eine medizinische Diagnose.
+
+Für die Pflegeplanung ist entscheidend, welches pflegerische Problem daraus entsteht, welche Ursachen und Symptome vorliegen und welche Ressourcen die Person besitzt.
+
+Genau dabei unterstützt das PESR-Schema.
+
+---
+
+## Das solltest du für die Abschlussprüfung sicher beherrschen
+
+Nach diesem Premium-Lernskript kannst du:
+
+✅ das PESR-Schema sicher anwenden.
+
+✅ vollständige Pflegediagnosen formulieren.
+
+✅ Ursache, Symptome und Ressourcen sicher unterscheiden.
+
+✅ medizinische Diagnosen von Pflegediagnosen abgrenzen.
+
+✅ aus einer Pflegediagnose passende Pflegeziele und Pflegemaßnahmen ableiten.
+
+✅ deine Entscheidungen fachlich begründen.
+
+---
+
+## Dein nächster Schritt auf deinem Lernweg
+
+Du kannst das PESR-Schema jetzt sicher anwenden.
+
+Jetzt entwickelst du Schritt für Schritt die Kompetenzen, die du für den Pflegealltag und die Abschlussprüfung brauchst.
+
+### 🧠 Lernkarten
+
+Trainiere den Aufbau vollständiger Pflegediagnosen nach dem PESR-Schema.
+
+### 🩺 Passender Prüfungsfall
+
+Bearbeite eine vollständige Fallsituation vom ersten Beobachten bis zur fertigen Pflegeplanung.
+
+### 🎓 Examensquiz
+
+Überprüfe, ob du Pflegediagnosen nach dem PESR-Schema auch unter Prüfungsbedingungen sicher formulieren kannst.
+
+### 📚 Passendes Premium-E-Book
+
+Vertiefe dein Wissen zu Pflegediagnosen, Pflegeplanung und dem gesamten Pflegeprozess.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**

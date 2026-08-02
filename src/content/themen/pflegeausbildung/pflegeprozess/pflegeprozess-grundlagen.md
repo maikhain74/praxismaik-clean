@@ -9,7 +9,7 @@ tags:
 
 # Pflegeprozess – Grundlagen
 
-Der Pflegeprozess ist die wichtigste Arbeitsmethode in der professionellen Pflege. Er hilft Pflegefachpersonen dabei, pflegerische Situationen systematisch zu erfassen, Probleme zu erkennen, Ziele festzulegen und passende Maßnahmen zu planen.
+Der Pflegeprozess ist die wichtigste Arbeitsmethode in der professionellen Pflege. Er hilft Pflegefachpersonen dabei, pflegerische Situationen systematisch zu erfassen, [Pflegeprobleme](/themen/pflegeausbildung/pflegeprozess/pflegeprobleme-ressourcen/) zu erkennen, [Pflegeziele](/themen/pflegeausbildung/pflegeprozess/pflegeziele/) festzulegen und passende [Pflegemaßnahmen](/themen/pflegeausbildung/pflegeprozess/pflegemassnahmen/) zu planen.
 
 Der Pflegeprozess sorgt dafür, dass Pflege nicht zufällig erfolgt, sondern fachlich begründet, nachvollziehbar und individuell auf die Bedürfnisse der pflegebedürftigen Person abgestimmt wird.
 
@@ -80,7 +80,7 @@ Dazu gehören:
 
 ## Die sechs Schritte des Pflegeprozesses
 
-### 1. Informationssammlung
+### 1. [Informationssammlung](/themen/pflegeausbildung/pflegeprozess/informationssammlung/)
 
 Alle wichtigen Informationen über die pflegebedürftige Person werden erfasst.
 
@@ -92,7 +92,7 @@ Beispiele:
 - Ressourcen
 - Bedürfnisse
 
-### 2. Pflegeprobleme und Ressourcen erkennen
+### 2. [Pflegeprobleme und Ressourcen erkennen](/themen/pflegeausbildung/pflegeprozess/pflegeprobleme-ressourcen/)
 
 Die gesammelten Informationen werden ausgewertet.
 
@@ -102,7 +102,7 @@ Dabei wird festgestellt:
 - Welche Risiken bestehen?
 - Welche Ressourcen sind vorhanden?
 
-### 3. Pflegeziele festlegen
+### 3. [Pflegeziele festlegen](/themen/pflegeausbildung/pflegeprozess/pflegeziele/)
 
 Es wird festgelegt, was durch die Pflege erreicht werden soll.
 
@@ -110,7 +110,7 @@ Beispiel:
 
 Herr Müller kann innerhalb einer Woche selbstständig vom Bett in den Sessel wechseln.
 
-### 4. Pflegemaßnahmen planen
+### 4. [Pflegemaßnahmen planen](/themen/pflegeausbildung/pflegeprozess/pflegemassnahmen/)
 
 Es werden konkrete Maßnahmen geplant.
 
@@ -118,11 +118,11 @@ Beispiel:
 
 Zweimal tägliche Mobilisation mit Rollator.
 
-### 5. Durchführung der Pflege
+### 5. [Durchführung der Pflege](/themen/pflegeausbildung/pflegeprozess/durchfuehrung/)
 
 Die geplanten Maßnahmen werden praktisch umgesetzt.
 
-### 6. Evaluation
+### 6. [Evaluation](/themen/pflegeausbildung/pflegeprozess/evaluation/)
 
 Es wird überprüft, ob die Pflegeziele erreicht wurden und ob die Maßnahmen wirksam waren.
 

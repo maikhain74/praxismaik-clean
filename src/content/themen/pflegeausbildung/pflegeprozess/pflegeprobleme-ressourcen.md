@@ -6,11 +6,11 @@ level: grundlagen
 
 # Pflegeprobleme und Ressourcen erkennen
 
-Nachdem alle wichtigen Informationen gesammelt wurden, folgt im Pflegeprozess die Analyse der Situation.
+Nachdem alle wichtigen Informationen in der [Informationssammlung](/themen/pflegeausbildung/pflegeprozess/informationssammlung/) gesammelt wurden, folgt im [Pflegeprozess](/themen/pflegeausbildung/pflegeprozess/pflegeprozess-grundlagen/) die Analyse der Situation.
 
 Dabei werden Pflegeprobleme und vorhandene Ressourcen erkannt und beschrieben.
 
-Dieser Schritt ist besonders wichtig, weil auf seiner Grundlage Pflegeziele und Pflegemaßnahmen geplant werden.
+Dieser Schritt ist besonders wichtig, weil auf seiner Grundlage [Pflegeziele](/themen/pflegeausbildung/pflegeprozess/pflegeziele/) und [Pflegemaßnahmen](/themen/pflegeausbildung/pflegeprozess/pflegemassnahmen/) geplant werden.
 
 Wer Probleme und Ressourcen falsch einschätzt, wird auch die weiteren Schritte des Pflegeprozesses nicht korrekt durchführen können.
 
@@ -139,9 +139,9 @@ Die erkannten Probleme und Ressourcen bilden die Grundlage für die nächsten Sc
 
 Aus ihnen werden:
 
-- Pflegediagnosen
-- Pflegeziele
-- Pflegemaßnahmen
+- [Pflegediagnosen](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen/)
+- [Pflegeziele](/themen/pflegeausbildung/pflegeprozess/pflegeziele/)
+- [Pflegemaßnahmen](/themen/pflegeausbildung/pflegeprozess/pflegemassnahmen/)
 
 abgeleitet.
 

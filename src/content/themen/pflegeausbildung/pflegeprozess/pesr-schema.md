@@ -7,11 +7,11 @@ order: 5
 
 # Das PESR-Schema einfach erklärt
 
-Das PESR-Schema ist eine strukturierte Methode zur Formulierung von Pflegediagnosen.
+Das PESR-Schema ist eine strukturierte Methode zur Formulierung von [Pflegediagnosen](/themen/pflegeausbildung/pflegeprozess/pflegediagnosen/).
 
-Es hilft Pflegefachpersonen dabei, Pflegeprobleme systematisch zu beschreiben und die Grundlage für Pflegeziele sowie Pflegemaßnahmen zu schaffen.
+Es hilft Pflegefachpersonen dabei, [Pflegeprobleme](/themen/pflegeausbildung/pflegeprozess/pflegeprobleme-ressourcen/) systematisch zu beschreiben und die Grundlage für [Pflegeziele](/themen/pflegeausbildung/pflegeprozess/pflegeziele/) sowie [Pflegemaßnahmen](/themen/pflegeausbildung/pflegeprozess/pflegemassnahmen/) zu schaffen.
 
-In der generalistischen Pflegeausbildung gehört das PESR-Schema zu den wichtigsten Grundlagen des Pflegeprozesses und wird häufig in Prüfungen abgefragt.
+In der generalistischen Pflegeausbildung gehört das PESR-Schema zu den wichtigsten Grundlagen des [Pflegeprozesses](/themen/pflegeausbildung/pflegeprozess/pflegeprozess-grundlagen/) und wird häufig in Prüfungen abgefragt.
 
 ## Wofür steht PESR?
 
@@ -116,7 +116,7 @@ Das führt häufig zu Punktverlusten in Prüfungen.
 
 Professionelle Pflege betrachtet immer:
 
-- Probleme
+- [Pflegeprobleme](/themen/pflegeausbildung/pflegeprozess/pflegeprobleme-ressourcen/)
 - Risiken
 - Ressourcen
 

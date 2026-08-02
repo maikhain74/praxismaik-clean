@@ -5,7 +5,7 @@ description: Festlegung von Pflegezielen im Pflegeprozess.
 
 # Pflegeziele festlegen
 
-Nachdem Pflegeprobleme und Ressourcen erkannt wurden, werden im nächsten Schritt des Pflegeprozesses konkrete Pflegeziele formuliert.
+Nachdem [Pflegeprobleme und Ressourcen](/themen/pflegeausbildung/pflegeprozess/pflegeprobleme-ressourcen/) erkannt wurden, werden im nächsten Schritt des [Pflegeprozesses](/themen/pflegeausbildung/pflegeprozess/pflegeprozess-grundlagen/) konkrete Pflegeziele formuliert.
 
 Pflegeziele beschreiben den gewünschten Zustand, den die pflegebedürftige Person durch die pflegerischen Maßnahmen erreichen oder erhalten soll.
 
@@ -149,7 +149,7 @@ Dieses Ziel ist konkret und überprüfbar.
 
 Pflegeziele geben vor, was erreicht werden soll.
 
-Pflegemaßnahmen beschreiben, wie das Ziel erreicht werden soll.
+[Pflegemaßnahmen](/themen/pflegeausbildung/pflegeprozess/pflegemassnahmen/) beschreiben, wie das Ziel erreicht werden soll.
 
 ### Beispiel
 
@@ -218,7 +218,7 @@ Die anderen Antworten beschreiben Pflegemaßnahmen.
 
 Pflegeziele beschreiben den gewünschten Zustand der pflegebedürftigen Person.
 
-Sie geben der Pflege eine klare Richtung und bilden die Grundlage für die Auswahl geeigneter Pflegemaßnahmen sowie die spätere Evaluation.
+Sie geben der Pflege eine klare Richtung und bilden die Grundlage für die Auswahl geeigneter [Pflegemaßnahmen](/themen/pflegeausbildung/pflegeprozess/pflegemassnahmen/) sowie die spätere [Evaluation](/themen/pflegeausbildung/pflegeprozess/evaluation/).
 
 ## Merksatz
 

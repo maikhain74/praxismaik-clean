@@ -6,7 +6,7 @@ level: vertiefung
 
 # Pflegediagnosen einfach erklärt
 
-Pflegediagnosen sind ein zentraler Bestandteil des Pflegeprozesses. Sie helfen Pflegefachpersonen dabei, pflegerische Probleme, Ressourcen und Risiken systematisch zu erkennen und zu beschreiben.
+Pflegediagnosen sind ein zentraler Bestandteil des [Pflegeprozesses](/themen/pflegeausbildung/pflegeprozess/pflegeprozess-grundlagen/). Sie helfen Pflegefachpersonen dabei, pflegerische Probleme, Ressourcen und Risiken systematisch zu erkennen und zu beschreiben.
 
 Im Gegensatz zu medizinischen Diagnosen beschreiben Pflegediagnosen nicht die Erkrankung selbst, sondern die Auswirkungen auf die pflegerische Versorgung.
 
@@ -25,8 +25,8 @@ Wenn du Pflegediagnosen sicherer formulieren möchtest, helfen dir diese vertief
 Pflegediagnosen helfen dabei:
 
 - Pflegeprobleme systematisch zu erfassen
-- Pflegeziele abzuleiten
-- Pflegemaßnahmen zu planen
+- [Pflegeziele](/themen/pflegeausbildung/pflegeprozess/pflegeziele/) abzuleiten
+- [Pflegemaßnahmen](/themen/pflegeausbildung/pflegeprozess/pflegemassnahmen/) zu planen
 - Pflege fachlich zu begründen
 - die Kommunikation im Team zu verbessern
 
@@ -99,7 +99,7 @@ Die Pflegediagnose ist die fachlich begründete Beschreibung dieses Problems.
 
 ## Das PESR-Schema
 
-Pflegediagnosen werden häufig mit dem PESR-Schema formuliert.
+Pflegediagnosen werden häufig mit dem [PESR-Schema](/themen/pflegeausbildung/pflegeprozess/pesr-schema/) formuliert.
 
 Vertiefung:
 
@@ -514,15 +514,13 @@ Die Pflegediagnose bildet die Grundlage für Pflegeziele, Pflegemaßnahmen und d
 
 ## Warum diese Antwort überzeugt
 
-Diese Antwort zeigt, dass du:
+Diese Antwort zeigt, dass du den Pflegeprozess als zusammenhängendes System verstehst.
 
-- Informationen systematisch analysierst.
-- Pflegeprobleme von medizinischen Diagnosen unterscheiden kannst.
-- Ressourcen bewusst berücksichtigst.
-- den Zusammenhang zwischen Pflegediagnose und Pflegeplanung verstehst.
-- dein pflegerisches Handeln fachlich begründen kannst.
+Du erkennst pflegerische Probleme, unterscheidest sie sicher von medizinischen Diagnosen, berücksichtigst Ressourcen und formulierst daraus eine fachlich begründete Pflegediagnose.
 
-Genau darauf achten Praxisanleiter und Prüfer.
+Damit schaffst du die Grundlage, um individuelle Pflegeziele festzulegen, passende Pflegemaßnahmen abzuleiten und den weiteren Pflegeprozess nachvollziehbar zu planen.
+
+Genau diese Fähigkeit erwarten Praxisanleiter und Prüfer in der praktischen Abschlussprüfung.
 
 ---
 
@@ -606,7 +604,7 @@ Nach diesem Premium-Lernskript kannst du:
 
 ✅ Pflegediagnosen fachlich begründen.
 
-✅ typische Prüfungsfragen sicher beantworten.
+✅ aus Pflegediagnosen sichere Pflegeziele und Pflegemaßnahmen ableiten.
 
 ---
 

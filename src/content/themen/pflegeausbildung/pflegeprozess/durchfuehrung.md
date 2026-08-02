@@ -6,7 +6,7 @@ level: grundlagen
 
 # Durchführung der Pflege
 
-Die Durchführung der Pflege ist der fünfte Schritt im Pflegeprozess. In dieser Phase werden die zuvor geplanten Pflegemaßnahmen praktisch umgesetzt.
+Die Durchführung der Pflege ist der fünfte Schritt im [Pflegeprozess](/themen/pflegeausbildung/pflegeprozess/pflegeprozess-grundlagen/). In dieser Phase werden die zuvor geplanten [Pflegemaßnahmen](/themen/pflegeausbildung/pflegeprozess/pflegemassnahmen/) praktisch umgesetzt.
 
 Die Pflegefachperson handelt dabei nicht zufällig, sondern orientiert sich an der Pflegeplanung und den festgelegten Pflegezielen. Gleichzeitig muss sie die aktuelle Situation der pflegebedürftigen Person berücksichtigen und ihr Handeln entsprechend anpassen.
 
@@ -29,7 +29,7 @@ Die Durchführung hilft dabei:
 
 ## Orientierung an der Pflegeplanung
 
-Bei der Durchführung orientiert sich die Pflegefachperson an der zuvor erstellten Pflegeplanung.
+Bei der Durchführung orientiert sich die Pflegefachperson an der zuvor erstellten Pflegeplanung, die auf [Pflegezielen](/themen/pflegeausbildung/pflegeprozess/pflegeziele/) und geplanten [Pflegemaßnahmen](/themen/pflegeausbildung/pflegeprozess/pflegemassnahmen/) basiert.
 
 Die Pflegeplanung beantwortet wichtige Fragen:
 
@@ -204,7 +204,7 @@ Die Pflegeplanung ist eine Orientierung. Die aktuelle Situation der pflegebedür
 
 Die Durchführung der Pflege ist die praktische Umsetzung der geplanten Pflegemaßnahmen.
 
-Pflegefachpersonen orientieren sich an der Pflegeplanung, beobachten die Situation kontinuierlich und passen ihr Handeln an die Bedürfnisse der pflegebedürftigen Person an.
+Pflegefachpersonen orientieren sich an der Pflegeplanung, beobachten die Situation kontinuierlich und passen ihr Handeln an die Bedürfnisse der pflegebedürftigen Person an. Anschließend wird in der [Evaluation](/themen/pflegeausbildung/pflegeprozess/evaluation/) überprüft, ob die Maßnahmen erfolgreich waren.
 
 ## Merksatz
 

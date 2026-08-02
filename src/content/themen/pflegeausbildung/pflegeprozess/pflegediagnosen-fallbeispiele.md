@@ -243,3 +243,170 @@ Wer regelmäßig Fallsituationen analysiert, entwickelt schneller die pflegerisc
 ## Merksatz
 
 **Pflegediagnosen entstehen aus Beobachtungen, nicht aus medizinischen Diagnosen.**
+
+---
+
+## So geht es jetzt weiter
+
+Du hast jetzt typische Fallbeispiele kennengelernt und weißt, wie aus Beobachtungen pflegerische Probleme erkannt werden.
+
+Für die generalistische Pflegeausbildung reicht dieses Wissen jedoch nicht aus.
+
+Im Pflegealltag, in der Praxisanleitung und spätestens in der praktischen Abschlussprüfung musst du Fallsituationen systematisch analysieren, Pflegediagnosen sicher formulieren und daraus die nächsten Schritte im Pflegeprozess ableiten können.
+
+Genau diese Kompetenzen entwickelst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Entwickle die Kompetenzen für Pflegealltag und Abschlussprüfung
+
+In der Abschlussprüfung erhältst du keine fertige Pflegediagnose.
+
+Du musst Beobachtungen aus einer Fallsituation analysieren, pflegerische Probleme erkennen und daraus eine fachlich begründete Pflegediagnose ableiten.
+
+---
+
+## Typische Prüfungsfrage
+
+**Praxisanleiter oder Prüfer:**
+
+„Herr Weber wurde nach einem Schlaganfall aufgenommen. Beim Trinken hustet er mehrfach, spricht verwaschen und benötigt Unterstützung beim Essen. Welche Pflegediagnose stellen Sie und wie begründen Sie Ihre Entscheidung?“
+
+### Musterantwort
+
+„Ich erkenne ein Risiko für Aspiration aufgrund einer möglichen Schluckstörung nach dem Schlaganfall.
+
+Darauf weisen das wiederholte Husten beim Trinken sowie die Schwierigkeiten bei der Nahrungsaufnahme hin.
+
+Gleichzeitig berücksichtige ich vorhandene Ressourcen, beispielsweise wenn Herr Weber Anweisungen versteht und aktiv mitarbeitet.
+
+Aus dieser Pflegediagnose leite ich anschließend geeignete Pflegeziele und Pflegemaßnahmen ab.“
+
+---
+
+## Warum diese Antwort überzeugt
+
+Diese Antwort zeigt, dass du eine Fallsituation systematisch analysierst und pflegerische Probleme sicher erkennst.
+
+Du unterscheidest Beobachtungen von medizinischen Diagnosen, berücksichtigst Ressourcen und leitest daraus eine fachlich begründete Pflegediagnose ab.
+
+Damit schaffst du die Grundlage für individuelle Pflegeziele, passende Pflegemaßnahmen und einen professionell gesteuerten Pflegeprozess.
+
+Genau diese Fähigkeit erwarten Praxisanleiter und Prüfer in der praktischen Abschlussprüfung.
+
+---
+
+## Häufige Fehler
+
+Viele Auszubildende ...
+
+- nennen nur die medizinische Diagnose.
+- übernehmen Beobachtungen ungeordnet.
+- formulieren keine eigentliche Pflegediagnose.
+- vergessen vorhandene Ressourcen.
+- leiten keine Pflegeziele oder Maßnahmen ab.
+- begründen ihre Entscheidung nicht.
+
+---
+
+## Entscheidungssituation
+
+Frau Schneider wurde nach einer Hüftoperation aufgenommen.
+
+Sie vermeidet Bewegungen wegen starker Schmerzen, kann ihren Oberkörper jedoch selbstständig waschen und arbeitet motiviert mit.
+
+**Welche Pflegediagnose stellst du und warum?**
+
+Überlege zunächst selbst.
+
+---
+
+## Fachliche Lösung
+
+Im Mittelpunkt steht die **beeinträchtigte Mobilität** beziehungsweise der **akute Schmerz**, abhängig vom Schwerpunkt der Fallsituation.
+
+Die Entscheidung wird anhand der beobachteten Einschränkungen begründet.
+
+Vorhandene Ressourcen, wie die selbstständige Oberkörperpflege und die Motivation zur Mitarbeit, fließen in die Pflegediagnose ein und bilden die Grundlage für die weitere Pflegeplanung.
+
+---
+
+## Fachliche Begründung
+
+Pflegediagnosen entstehen aus einer systematischen Analyse der gesamten Situation.
+
+Nicht die Erkrankung steht im Mittelpunkt, sondern die pflegerischen Auswirkungen auf den Menschen.
+
+Erst dadurch können individuelle Pflegeziele und wirksame Pflegemaßnahmen geplant werden.
+
+---
+
+## Transfer in den Pflegealltag
+
+Ein Kollege sagt:
+
+> „Der Patient hat COPD. Das reicht doch als Pflegediagnose.“
+
+Wie würdest du reagieren?
+
+### Fachliche Einordnung
+
+COPD ist eine medizinische Diagnose.
+
+Für die Pflegeplanung ist entscheidend, welches pflegerische Problem daraus entsteht, beispielsweise eine beeinträchtigte Atmung oder Aktivitätsintoleranz.
+
+Erst diese pflegerische Sicht ermöglicht eine individuelle und professionelle Pflege.
+
+---
+
+## Das solltest du für die Abschlussprüfung sicher beherrschen
+
+Nach diesem Premium-Lernskript kannst du:
+
+✅ Pflegediagnosen aus Fallsituationen sicher ableiten.
+
+✅ Beobachtungen systematisch analysieren.
+
+✅ medizinische Diagnosen von Pflegediagnosen unterscheiden.
+
+✅ Ressourcen gezielt berücksichtigen.
+
+✅ aus Pflegediagnosen sichere Pflegeziele und Pflegemaßnahmen ableiten.
+
+✅ deine Entscheidungen fachlich begründen.
+
+---
+
+## Dein nächster Schritt auf deinem Lernweg
+
+Du kannst Pflegediagnosen jetzt anhand realistischer Fallsituationen entwickeln.
+
+Jetzt vertiefst du Schritt für Schritt die Kompetenzen, die du für den Pflegealltag und die Abschlussprüfung brauchst.
+
+### 🧠 Lernkarten
+
+Trainiere typische Fallsituationen und passende Pflegediagnosen.
+
+### 🩺 Passender Prüfungsfall
+
+Bearbeite einen vollständigen Pflegefall vom ersten Beobachten bis zur fertigen Pflegeplanung.
+
+### 🎓 Examensquiz
+
+Überprüfe, ob du Pflegediagnosen auch unter Prüfungsbedingungen sicher ableiten kannst.
+
+### 📚 Passendes Premium-E-Book
+
+Vertiefe dein Wissen zu Pflegediagnosen, Pflegeplanung und dem gesamten Pflegeprozess.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**
