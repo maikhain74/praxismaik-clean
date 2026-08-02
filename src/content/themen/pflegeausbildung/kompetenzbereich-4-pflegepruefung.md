@@ -24,170 +24,164 @@ Deshalb müssen sie:
 
 Diese Fähigkeiten werden regelmäßig geprüft.
 
-## Typische Prüfungsfrage 1
+## So geht es jetzt weiter
 
-### Was steht im Mittelpunkt von Kompetenzbereich IV?
+Du weißt jetzt, warum Kompetenzbereich IV in der Pflegeprüfung eine zentrale Rolle spielt und weshalb rechtliche, ethische und qualitative Aspekte professionelles Pflegehandeln bestimmen.
 
-#### Antwort
+Für eine sichere Abschlussprüfung reicht dieses Grundlagenwissen jedoch nicht aus.
 
-Recht, Ethik und Qualitätssicherung in der Pflege.
+Du musst rechtliche Vorgaben anwenden, ethische Konflikte beurteilen und deine Entscheidungen fachlich begründen können.
 
-## Typische Prüfungsfrage 2
+Genau diese Kompetenzen trainierst du jetzt im Premiumbereich.
 
-### Welches Beispiel gehört zu Kompetenzbereich IV?
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
 
-A) Pflegeplanung erstellen
+👉 Gute Pflege beginnt mit dem richtigen Denken.
 
-B) Schweigepflicht beachten
+---
 
-C) Mobilisation durchführen
+<!-- PREMIUM_START -->
 
-D) Körperpflege planen
+# Entwickle deine Handlungskompetenz für Recht, Ethik und Qualität
 
-### Lösung
+In der Pflegeprüfung werden nicht nur Gesetze abgefragt.
 
-✅ B) Schweigepflicht beachten
+Prüfer möchten sehen, ob du schwierige Situationen rechtlich korrekt einordnest, ethische Konflikte erkennst und verantwortungsvolle Entscheidungen triffst.
 
-## Fallbeispiel
+---
 
-### Situation
+## Typische Prüfungsfrage
 
-Die Nachbarin einer Bewohnerin fragt nach deren Gesundheitszustand.
+**Praxisanleiter oder Prüfer:**
 
-### Prüfungsfrage
+„Warum sind rechtliche und ethische Kenntnisse für Pflegefachpersonen unverzichtbar?“
 
-Darf die Pflegefachperson Auskunft geben?
+### Musterantwort
 
-### Lösung
+„Pflegefachpersonen tragen Verantwortung für die ihnen anvertrauten Menschen. Deshalb müssen sie rechtliche Vorgaben, die Patientenrechte und ethische Grundsätze bei jeder pflegerischen Entscheidung berücksichtigen.
 
-Nein.
+Nur so können die Selbstbestimmung geschützt, die Pflegequalität gesichert und professionelle Entscheidungen nachvollziehbar begründet werden.“
 
-### Begründung
+---
 
-Die Schweigepflicht schützt persönliche Gesundheitsdaten.
+## Warum diese Antwort überzeugt
 
-## Patientenverfügung
+Diese Antwort zeigt, dass du Recht, Ethik und Qualität als zusammenhängende Bestandteile professioneller Pflege verstehst.
 
-Patientenverfügungen gehören zu den häufigsten Prüfungsthemen.
+Du stellst den Bezug zu Patientenschutz, Selbstbestimmung und fachlicher Verantwortung her.
 
-Prüfer fragen beispielsweise:
+Genau diese Zusammenhänge erwarten Praxisanleiter und Prüfer.
 
-- Was ist eine Patientenverfügung?
-- Wann ist sie gültig?
-- Welche Bedeutung hat sie für pflegerische Entscheidungen?
+---
 
-### Merke
+## Häufige Fehler
 
-Der Wille des Patienten hat hohe rechtliche Bedeutung.
+Viele Auszubildende ...
 
-## Freiheitsentziehende Maßnahmen
+- unterschätzen die Bedeutung der Schweigepflicht.
+- geben Informationen ohne ausreichende Grundlage weiter.
+- verwechseln persönliche Meinungen mit rechtlichen Vorgaben.
+- erkennen ethische Konflikte nicht.
+- begründen Entscheidungen nicht nachvollziehbar.
 
-Typische Beispiele:
+---
 
-- Bettgitter
-- Fixierungen
-- Abschließen von Türen
+## Entscheidungssituation
 
-### Prüfungsfrage
+Eine orientierte Bewohnerin lehnt das Mittagessen ab.
 
-Wann dürfen solche Maßnahmen durchgeführt werden?
+Die Angehörigen sagen:
 
-### Lösung
+> „Sie müssen dafür sorgen, dass sie endlich etwas isst.“
 
-Nur unter bestimmten rechtlichen Voraussetzungen.
+**Wie gehst du jetzt vor?**
 
-## Datenschutz
+Überlege zunächst selbst.
 
-Pflegefachpersonen arbeiten täglich mit sensiblen Daten.
+---
 
-Typische Prüfungsfragen:
+## Fachliche Lösung
 
-- Was bedeutet Datenschutz?
-- Wer darf Patientendaten einsehen?
-- Wann dürfen Informationen weitergegeben werden?
+Ich respektiere zunächst den Willen der Bewohnerin und kläre in einem ruhigen Gespräch die Gründe für ihre Entscheidung.
 
-## Ethische Konflikte
+Anschließend erkläre ich den Angehörigen das Selbstbestimmungsrecht der Bewohnerin und suche gemeinsam nach möglichen Lösungen, ohne ihren Willen zu missachten.
 
-### Situation
+Bei Unsicherheiten ziehe ich das Behandlungsteam oder eine ethische Fallbesprechung hinzu.
 
-Eine Bewohnerin lehnt Nahrung ab.
+---
 
-Angehörige verlangen, dass sie trotzdem zum Essen gezwungen wird.
+## Fachliche Begründung
 
-### Prüfungsfrage
+Das Selbstbestimmungsrecht ist ein grundlegendes Patientenrecht.
 
-Welcher Kompetenzbereich wird geprüft?
+Pflegefachpersonen müssen rechtliche Vorgaben, ethische Prinzipien und die individuelle Situation gemeinsam berücksichtigen.
 
-### Lösung
+Professionelle Entscheidungen entstehen durch fachliche Abwägung, nicht durch persönlichen Druck oder Wünsche Dritter.
 
-Kompetenzbereich IV.
+---
 
-### Begründung
+## Transfer in den Pflegealltag
 
-Es handelt sich um einen ethischen Konflikt zwischen Fürsorge und Selbstbestimmung.
+Ein Nachbar fragt dich:
 
-## Was bewerten Prüfer?
+> „Wie geht es Frau Müller eigentlich? Ich habe gehört, sie liegt im Krankenhaus.“
 
-### Rechtliche Kenntnisse
+Wie reagierst du?
 
-Werden rechtliche Grundlagen verstanden?
+### Fachliche Einordnung
 
-### Ethisches Denken
+Ich gebe keine personenbezogenen Informationen weiter.
 
-Werden Konflikte erkannt und reflektiert?
+Gesundheitsdaten unterliegen der Schweigepflicht und dem Datenschutz.
 
-### Verantwortung
+Ohne Einwilligung oder rechtliche Grundlage dürfen keine Auskünfte erteilt werden.
 
-Werden Entscheidungen begründet?
+---
 
-### Qualität
+## Das solltest du für die Abschlussprüfung sicher beherrschen
 
-Werden fachliche Standards berücksichtigt?
+Nach diesem Premium-Lernskript kannst du:
 
-## Typische Fehler
+✅ rechtliche Grundlagen sicher erläutern.
 
-### Fehler 1
+✅ ethische Konflikte analysieren.
 
-Schweigepflicht unterschätzen.
+✅ Patientenrechte berücksichtigen.
 
-### Fehler 2
+✅ Schweigepflicht und Datenschutz anwenden.
 
-Datenschutzregeln nicht kennen.
+✅ Entscheidungen fachlich begründen.
 
-### Fehler 3
+✅ Qualität professioneller Pflege erklären.
 
-Patientenrechte ignorieren.
+---
 
-### Fehler 4
+## Dein nächster Schritt auf deinem Lernweg
 
-Ethische Konflikte nicht erkennen.
+Du weißt jetzt, worauf Prüfer bei Kompetenzbereich IV besonders achten.
 
-## Mini-Quiz
+### 🧠 Lernkarten
 
-### Welche Aussage trifft zu?
+Wiederhole wichtige rechtliche Grundlagen und ethische Prinzipien.
 
-A) Datenschutz spielt in der Pflege keine Rolle.
+### 🩺 Kompetenzbereich-IV-Fallbeispiele
 
-B) Schweigepflicht gehört zu Kompetenzbereich IV.
+Trainiere typische Prüfungssituationen zu Recht und Ethik.
 
-C) Kompetenzbereich IV beschäftigt sich nur mit Dokumentation.
+[Kompetenzbereich IV Fallbeispiele](/themen/pflegeausbildung/kompetenzbereich-4-fallbeispiele/)
 
-D) Rechtliche Fragen werden nicht geprüft.
+### 🎓 Kompetenzbereich-IV-Prüfungsfragen
 
-### Lösung
+Überprüfe dein Wissen mit typischen Prüfungsfragen.
 
-✅ B) Schweigepflicht gehört zu Kompetenzbereich IV.
+[Kompetenzbereich IV Prüfungsfragen](/themen/pflegeausbildung/kompetenzbereich-4-pruefungsfragen/)
 
-## Zusammenfassung
+### 📚 Passendes Premium-E-Book
 
-Kompetenzbereich IV prüft die Fähigkeit, rechtliche Vorgaben einzuhalten, ethische Konflikte zu erkennen und professionell begründete Entscheidungen zu treffen.
+Vertiefe rechtliche Grundlagen, ethische Entscheidungsfindung und Qualitätssicherung in der Pflege.
 
-## Passende Inhalte zum Thema Kompetenzbereich IV
+---
 
-- [Kompetenzbereich IV](/themen/pflegeausbildung/kompetenzbereich-4/)
-- [Kompetenzbereich IV Fallbeispiele](/themen/pflegeausbildung/kompetenzbereich-4-fallbeispiele/)
-- [Kompetenzbereich IV Prüfungsfragen](/themen/pflegeausbildung/kompetenzbereich-4-pruefungsfragen/)
-
-## Merksatz
-
-**Kompetenzbereich IV prüft, ob rechtliche, ethische und qualitative Anforderungen professionell berücksichtigt werden.**
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**

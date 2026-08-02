@@ -12,207 +12,192 @@ Prüfer möchten wissen, ob Auszubildende rechtliche Grundlagen kennen, ethische
 
 Wer typische Prüfungsfragen beherrscht, sammelt wichtige Punkte in der Pflegeprüfung.
 
+## So geht es jetzt weiter
+
+Du kennst jetzt die Grundlagen typischer Prüfungsfragen zu Kompetenzbereich IV und weißt, warum rechtliche, ethische und qualitative Aspekte den Pflegealltag entscheidend prägen.
+
+Für eine sichere Abschlussprüfung reicht dieses Grundlagenwissen jedoch nicht aus.
+
+Du musst rechtliche Vorgaben anwenden, ethische Konflikte bewerten und deine Entscheidungen fachlich begründen können.
+
+Genau diese Kompetenzen trainierst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Trainiere Kompetenzbereich IV auf Prüfungsniveau
+
+In der Abschlussprüfung geht es nicht darum, Gesetze oder Definitionen auswendig aufzusagen.
+
+Prüfer möchten sehen, dass du schwierige Situationen rechtlich richtig einordnest, ethisch reflektierst und professionell handelst.
+
+---
+
 ## Prüfungsfrage 1
 
-### Was steht im Mittelpunkt von Kompetenzbereich IV?
+### Situation
 
-A) Körperpflege
+Eine Nachbarin spricht dich im Eingangsbereich an.
 
-B) Recht, Ethik und Qualität
+> „Ich habe gehört, Frau Müller liegt im Krankenhaus. Was hat sie denn?“
 
-C) Mobilisation
+### Frage
 
-D) Krankheitslehre
+Wie reagierst du professionell?
 
-### Lösung
+A) Ich erkläre ihr den Gesundheitszustand.
 
-✅ B) Recht, Ethik und Qualität
+B) Ich gebe nur allgemeine Informationen weiter.
 
-### Begründung
+C) Ich gebe keine Auskunft und erkläre die Schweigepflicht.
 
-Kompetenzbereich IV beschäftigt sich mit rechtlichen, ethischen und qualitativen Anforderungen professioneller Pflege.
+D) Ich frage zuerst andere Kollegen.
+
+### Richtige Antwort
+
+✅ C)
+
+### Fachliche Begründung
+
+Gesundheitsdaten unterliegen der Schweigepflicht und dem Datenschutz.
+
+Ohne Einwilligung oder gesetzliche Grundlage dürfen keine personenbezogenen Informationen weitergegeben werden.
 
 ---
 
 ## Prüfungsfrage 2
 
-### Was bedeutet Schweigepflicht?
+Eine orientierte Bewohnerin lehnt eine pflegerische Maßnahme ab.
 
-A) Informationen an Angehörige weitergeben
+Welche Aussage ist richtig?
 
-B) Gesundheitsdaten vertraulich behandeln
+A) Angehörige entscheiden grundsätzlich.
 
-C) Dokumentation vermeiden
+B) Die Pflegefachperson entscheidet allein.
 
-D) Informationen öffentlich machen
+C) Das Selbstbestimmungsrecht der Bewohnerin ist zu beachten.
 
-### Lösung
+D) Die Maßnahme muss immer durchgeführt werden.
 
-✅ B) Gesundheitsdaten vertraulich behandeln
+### Richtige Antwort
 
-### Begründung
+✅ C)
 
-Gesundheitsdaten dürfen grundsätzlich nicht ohne Berechtigung weitergegeben werden.
+### Fachliche Begründung
+
+Orientierte Menschen dürfen grundsätzlich selbst über pflegerische und medizinische Maßnahmen entscheiden.
 
 ---
 
 ## Prüfungsfrage 3
 
-### Welche Aussage zum Datenschutz ist richtig?
+Welche Aussage beschreibt Kompetenzbereich IV am besten?
 
-A) Jeder Mitarbeitende darf alle Patientendaten einsehen.
+A) Pflegeplanung und Pflegediagnosen.
 
-B) Patientendaten dürfen frei weitergegeben werden.
+B) Kommunikation und Beratung.
 
-C) Patientendaten müssen geschützt werden.
+C) Recht, Ethik und Qualität professioneller Pflege.
 
-D) Datenschutz gilt nur im Krankenhaus.
+D) Medikamentenlehre.
 
-### Lösung
+### Richtige Antwort
 
-✅ C) Patientendaten müssen geschützt werden.
-
-### Begründung
-
-Datenschutz schützt sensible personenbezogene Informationen.
+✅ C)
 
 ---
 
-## Prüfungsfrage 4
+## Entscheidungssituation
 
-### Was ist eine freiheitsentziehende Maßnahme?
+Eine Kollegin fotografiert mit ihrem privaten Smartphone einen Teil der Pflegedokumentation.
 
-A) Mobilisation
+Sie sagt:
 
-B) Bettgitter unter bestimmten Voraussetzungen
+> „Das lösche ich später wieder.“
 
-C) Körperpflege
+Wie reagierst du?
 
-D) Blutdruckmessung
+### Musterantwort
 
-### Lösung
-
-✅ B) Bettgitter unter bestimmten Voraussetzungen
-
-### Begründung
-
-Freiheitsentziehende Maßnahmen greifen in die persönliche Freiheit ein und sind rechtlich streng geregelt.
+„Ich spreche die Kollegin direkt an und weise darauf hin, dass Pflegedokumentationen sensible personenbezogene Gesundheitsdaten enthalten. Private Fotos sind mit Datenschutz und Schweigepflicht nicht vereinbar. Ich fordere sie auf, das Foto sofort zu löschen und informiere bei Bedarf die zuständige Führungskraft.“
 
 ---
 
-## Prüfungsfrage 5
+## Warum diese Antwort überzeugt
 
-### Welche Bedeutung hat eine Patientenverfügung?
+Diese Antwort zeigt, dass du:
 
-A) Keine
+- Datenschutz sicher anwendest.
+- Schweigepflicht ernst nimmst.
+- Verantwortung übernimmst.
+- professionell handelst.
+- Patientenschutz priorisierst.
 
-B) Sie dokumentiert den Willen des Patienten für bestimmte Situationen.
-
-C) Sie ersetzt jede ärztliche Entscheidung.
-
-D) Sie gilt nur im Pflegeheim.
-
-### Lösung
-
-✅ B) Sie dokumentiert den Willen des Patienten für bestimmte Situationen.
-
-### Begründung
-
-Die Patientenverfügung unterstützt die Umsetzung des Selbstbestimmungsrechts.
+Genau diese Fähigkeiten erwarten Praxisanleiter und Prüfer.
 
 ---
-
-## Prüfungsfrage 6
-
-### Was ist ein ethisches Dilemma?
-
-A) Eine einfache Entscheidung
-
-B) Eine Situation ohne Konflikte
-
-C) Eine Situation mit mehreren konkurrierenden Werten oder Interessen
-
-D) Ein Dokumentationsfehler
-
-### Lösung
-
-✅ C) Eine Situation mit mehreren konkurrierenden Werten oder Interessen
-
-### Begründung
-
-Ethische Dilemmata entstehen häufig zwischen Fürsorge und Selbstbestimmung.
-
----
-
-## Fallfrage
-
-### Situation
-
-Ein orientierter Bewohner lehnt eine notwendige Maßnahme ab.
-
-Die Angehörigen fordern die Durchführung gegen seinen Willen.
-
-### Frage
-
-Welcher Aspekt hat besondere Bedeutung?
-
-A) Wünsche der Angehörigen
-
-B) Dienstanweisung
-
-C) Selbstbestimmungsrecht des Bewohners
-
-D) Zimmerbelegung
-
-### Lösung
-
-✅ C) Selbstbestimmungsrecht des Bewohners
-
-### Begründung
-
-Orientierte Menschen dürfen grundsätzlich selbst über medizinische und pflegerische Maßnahmen entscheiden.
-
-## Was bewerten Prüfer?
-
-Prüfer achten häufig auf:
-
-- rechtliche Kenntnisse
-- ethische Reflexion
-- Verantwortungsbewusstsein
-- Patientenschutz
-- Qualitätsverständnis
-- professionelle Begründungen
 
 ## Typische Fehler
 
-### Fehler 1
+Viele Auszubildende ...
 
-Schweigepflicht und Datenschutz verwechseln.
+- unterschätzen die Schweigepflicht.
+- geben Informationen unbedacht weiter.
+- erkennen ethische Konflikte nicht.
+- kennen die Voraussetzungen freiheitsentziehender Maßnahmen nicht.
+- begründen Entscheidungen nicht fachlich.
 
-### Fehler 2
+---
 
-Patientenrechte unterschätzen.
+## Das solltest du für die Abschlussprüfung sicher beherrschen
 
-### Fehler 3
+Nach diesem Premium-Lernskript kannst du:
 
-Freiheitsentziehende Maßnahmen falsch einschätzen.
+✅ typische Prüfungsfragen sicher beantworten.
 
-### Fehler 4
+✅ Schweigepflicht und Datenschutz anwenden.
 
-Ethische Konflikte nicht erkennen.
+✅ Patientenrechte berücksichtigen.
 
-## Zusammenfassung
+✅ ethische Konflikte analysieren.
 
-Prüfungsfragen zu Kompetenzbereich IV drehen sich meist um Recht, Ethik, Patientenrechte, Datenschutz und Qualitätssicherung.
+✅ Entscheidungen fachlich begründen.
 
-Wer diese Zusammenhänge versteht, kann viele Prüfungsaufgaben erfolgreich lösen.
+✅ professionell und verantwortungsvoll handeln.
 
-## Passende Inhalte zum Thema Kompetenzbereich IV
+---
 
-- [Kompetenzbereich IV](/themen/pflegeausbildung/kompetenzbereich-4/)
-- [Kompetenzbereich IV Pflegeprüfung](/themen/pflegeausbildung/kompetenzbereich-4-pflegepruefung/)
-- [Kompetenzbereich IV Fallbeispiele](/themen/pflegeausbildung/kompetenzbereich-4-fallbeispiele/)
+## Dein nächster Schritt auf deinem Lernweg
 
-## Merksatz
+Du kennst jetzt typische Prüfungsfragen zu Kompetenzbereich IV.
 
-**Kompetenzbereich IV prüft die Fähigkeit, rechtlich korrekt, ethisch reflektiert und qualitativ verantwortungsvoll zu handeln.**
+### 🧠 Lernkarten
+
+Wiederhole wichtige rechtliche Grundlagen und ethische Prinzipien.
+
+### 🩺 Kompetenzbereich-IV-Fallbeispiele
+
+Trainiere realistische Situationen aus dem Pflegealltag.
+
+[Kompetenzbereich IV Fallbeispiele](/themen/pflegeausbildung/kompetenzbereich-4-fallbeispiele/)
+
+### 📘 Kompetenzbereich IV Pflegeprüfung
+
+Vertiefe typische Prüfungssituationen und Musterantworten.
+
+[Kompetenzbereich IV Pflegeprüfung](/themen/pflegeausbildung/kompetenzbereich-4-pflegepruefung/)
+
+### 📚 Passendes Premium-E-Book
+
+Vertiefe rechtliche Grundlagen, ethische Entscheidungsfindung und Qualitätssicherung in der Pflege.
+
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**

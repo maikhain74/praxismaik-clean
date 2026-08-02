@@ -22,181 +22,158 @@ Prüfer möchten häufig wissen:
 
 Genau diese Fähigkeiten gehören zu Kompetenzbereich IV.
 
+## So geht es jetzt weiter
+
+Du hast gesehen, wie Kompetenzbereich IV anhand typischer Fallsituationen geprüft wird und warum rechtliche sowie ethische Entscheidungen den Pflegealltag prägen.
+
+Für die Abschlussprüfung reicht dieses Grundlagenwissen jedoch nicht aus.
+
+Du musst schwierige Situationen analysieren, rechtliche Vorgaben anwenden und dein Handeln fachlich begründen können.
+
+Genau diese Kompetenzen trainierst du jetzt im Premiumbereich.
+
+👉 Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+
+👉 Gute Pflege beginnt mit dem richtigen Denken.
+
+---
+
+<!-- PREMIUM_START -->
+
+# Trainiere Kompetenzbereich IV anhand realistischer Fallsituationen
+
+In der praktischen Abschlussprüfung wirst du selten nur nach Definitionen gefragt.
+
+Stattdessen erhältst du Situationen aus dem Pflegealltag und musst zeigen, dass du rechtlich korrekt, ethisch reflektiert und professionell handelst.
+
+---
+
 ## Fallbeispiel 1: Schweigepflicht
 
 ### Situation
 
-Die Nachbarin einer Bewohnerin fragt eine Pflegefachperson:
+Die Nachbarin einer Bewohnerin spricht dich auf dem Flur an und fragt:
 
-„Was hat Frau Müller eigentlich genau?"
-
-### Frage
-
-Darf die Pflegefachperson Auskunft geben?
-
-### Lösung
-
-Nein.
-
-### Begründung
-
-Gesundheitsdaten unterliegen der Schweigepflicht.
+> „Was hat Frau Müller eigentlich genau? Ich mache mir große Sorgen.“
 
 ---
 
-## Fallbeispiel 2: Patientenverfügung
+## Deine Aufgabe
 
-### Situation
+Überlege zunächst selbst.
 
-Ein Patient besitzt eine gültige Patientenverfügung.
-
-Angehörige wünschen jedoch andere Maßnahmen als dort festgelegt.
-
-### Frage
-
-Was muss berücksichtigt werden?
-
-### Lösung
-
-Der dokumentierte Wille des Patienten.
-
-### Begründung
-
-Die Patientenverfügung hat hohe rechtliche Bedeutung.
+- Darfst du Auskunft geben?
+- Wie reagierst du wertschätzend?
+- Welche rechtlichen Vorgaben musst du beachten?
 
 ---
 
-## Fallbeispiel 3: Bettgitter
+## Fachliche Lösung
 
-### Situation
+Ich gebe keine Informationen über den Gesundheitszustand der Bewohnerin weiter.
 
-Eine Bewohnerin ist sturzgefährdet.
+Eine mögliche Antwort lautet:
 
-Die Angehörigen verlangen dauerhaft Bettgitter.
-
-### Frage
-
-Welches Thema wird geprüft?
-
-### Lösung
-
-Freiheitsentziehende Maßnahmen.
-
-### Begründung
-
-Bettgitter können die Freiheit einer Person einschränken und unterliegen rechtlichen Voraussetzungen.
+> „Ich verstehe Ihre Sorge. Bitte haben Sie Verständnis dafür, dass ich aus Gründen der Schweigepflicht keine Auskünfte über Bewohner geben darf.“
 
 ---
 
-## Fallbeispiel 4: Datenschutz
+## Fachliche Begründung
 
-### Situation
+Gesundheitsdaten gehören zu den besonders schützenswerten personenbezogenen Daten.
 
-Ein Pflegeschüler fotografiert eine Pflegedokumentation mit seinem Smartphone.
+Pflegefachpersonen unterliegen der Schweigepflicht und dürfen Informationen nur mit Einwilligung oder auf einer rechtlichen Grundlage weitergeben.
 
-### Frage
-
-Warum ist dies problematisch?
-
-### Lösung
-
-Es handelt sich um sensible Gesundheitsdaten.
-
-### Begründung
-
-Datenschutz und Datensicherheit müssen gewährleistet werden.
+Dadurch werden die Persönlichkeitsrechte der pflegebedürftigen Person geschützt.
 
 ---
 
-## Fallbeispiel 5: Selbstbestimmung
+## Zweites Fallbeispiel
 
 ### Situation
 
-Eine Bewohnerin lehnt das angebotene Mittagessen ab.
+Eine orientierte Bewohnerin lehnt das Mittagessen ab.
 
-Die Angehörigen fordern:
+Die Angehörigen verlangen:
 
-„Sie müssen sie zum Essen bringen."
+> „Sie müssen sie zum Essen bringen.“
 
-### Frage
+### Überlege selbst
 
-Welcher Konflikt entsteht?
+- Wessen Wille ist maßgeblich?
+- Welche rechtlichen und ethischen Aspekte spielen eine Rolle?
+- Wie würdest du den Angehörigen antworten?
 
-### Lösung
+---
 
-Ein ethischer Konflikt zwischen Fürsorge und Selbstbestimmung.
+## Fachliche Lösung
 
-### Begründung
+Ich respektiere zunächst den Willen der Bewohnerin und kläre in einem Gespräch die Gründe für ihre Entscheidung.
 
-Der Wille der Bewohnerin muss berücksichtigt werden.
+Den Angehörigen erkläre ich verständlich, dass das Selbstbestimmungsrecht der Bewohnerin zu beachten ist.
 
-## Was haben alle Fallbeispiele gemeinsam?
+Gemeinsam suche ich nach Lösungen, ohne den Willen der Bewohnerin zu missachten.
 
-In allen Situationen müssen Pflegefachpersonen:
+---
 
-- rechtliche Vorgaben beachten
-- Patientenrechte schützen
-- Entscheidungen begründen
-- ethische Aspekte berücksichtigen
-- professionell handeln
+## Transfer in den Pflegealltag
 
-Genau das beschreibt Kompetenzbereich IV.
+Eine Kollegin fotografiert mit ihrem privaten Smartphone einen Teil der Pflegedokumentation, um später etwas nachzulesen.
 
-## Typische Prüfungsfrage
+Wie reagierst du?
 
-### Welches Thema gehört zu Kompetenzbereich IV?
+### Fachliche Einordnung
 
-A) Übergabe
+Ich spreche die Kollegin darauf an und weise darauf hin, dass Pflegedokumentationen sensible Gesundheitsdaten enthalten.
 
-B) Schweigepflicht
+Private Fotos oder ungesicherte Speicherung sind mit Datenschutz und Schweigepflicht nicht vereinbar.
 
-C) Mobilisation
+---
 
-D) Körperpflege
+## Das solltest du für die Abschlussprüfung sicher beherrschen
 
-### Lösung
+Nach diesem Premium-Lernskript kannst du:
 
-✅ B) Schweigepflicht
+✅ rechtliche Problemsituationen sicher erkennen.
 
-## Typische Fehler
+✅ Patientenrechte anwenden.
 
-### Fehler 1
+✅ Schweigepflicht und Datenschutz richtig einordnen.
 
-Patientendaten unbedacht weitergeben.
+✅ ethische Konflikte analysieren.
 
-### Fehler 2
+✅ Entscheidungen fachlich begründen.
 
-Patientenrechte ignorieren.
+✅ professionell und verantwortungsvoll handeln.
 
-### Fehler 3
+---
 
-Freiheitsentziehende Maßnahmen unterschätzen.
+## Dein nächster Schritt auf deinem Lernweg
 
-### Fehler 4
+Du kannst typische Situationen aus Kompetenzbereich IV jetzt systematisch analysieren.
 
-Ethische Konflikte nicht erkennen.
+### 🧠 Lernkarten
 
-## Pflegeprüfung
+Trainiere wichtige rechtliche Grundlagen und ethische Prinzipien.
 
-Prüfer achten häufig darauf:
+### 🎓 Kompetenzbereich-IV-Prüfungsfragen
 
-- Werden rechtliche Grundlagen angewendet?
-- Werden Patientenrechte berücksichtigt?
-- Werden ethische Konflikte erkannt?
-- Werden Entscheidungen begründet?
+Überprüfe dein Wissen mit typischen Prüfungsfragen.
 
-## Zusammenfassung
+[Kompetenzbereich IV Prüfungsfragen](/themen/pflegeausbildung/kompetenzbereich-4-pruefungsfragen/)
 
-Kompetenzbereich IV wird in Prüfungen häufig über Fallbeispiele geprüft.
+### 📘 Kompetenzbereich IV Pflegeprüfung
 
-Wer rechtliche und ethische Fragestellungen sicher beurteilen kann, sammelt wichtige Punkte in der Pflegeprüfung.
+Vertiefe typische Prüfungssituationen und Musterantworten.
 
-## Passende Inhalte zum Thema Kompetenzbereich IV
+[Kompetenzbereich IV Pflegeprüfung](/themen/pflegeausbildung/kompetenzbereich-4-pflegepruefung/)
 
-- [Kompetenzbereich IV](/themen/pflegeausbildung/kompetenzbereich-4/)
-- [Kompetenzbereich IV Pflegeprüfung](/themen/pflegeausbildung/kompetenzbereich-4-pflegepruefung/)
-- [Kompetenzbereich IV Prüfungsfragen](/themen/pflegeausbildung/kompetenzbereich-4-pruefungsfragen/)
+### 📚 Passendes Premium-E-Book
 
-## Merksatz
+Vertiefe rechtliche Grundlagen, ethische Entscheidungsfindung und Qualitätssicherung in der Pflege.
 
-**Kompetenzbereich IV zeigt sich immer dann, wenn Recht, Ethik und Verantwortung im Mittelpunkt stehen.**
+---
+
+> Gute Pflege beginnt nicht mit auswendig gelerntem Wissen.
+>
+> **Gute Pflege beginnt mit dem richtigen Denken.**
