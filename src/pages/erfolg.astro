@@ -1,118 +1,231 @@
 ---
 export const prerender = false;
 
+import Stripe from "stripe";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-Astro.cookies.set("praxismaik_premium", "1", {
-  path: "/",
-  maxAge: 60 * 60 * 24 * 365,
-  sameSite: "lax",
-  secure: import.meta.env.PROD,
-});
+const stripe = new Stripe(import.meta.env.STRIPE_SECRET_KEY);
+
+const sessionId = Astro.url.searchParams.get("session_id");
+
+let paymentVerified = false;
+let errorMessage = "";
+
+if (!sessionId) {
+  errorMessage =
+    "Die Zahlungsbestätigung fehlt. Bitte rufe diese Seite nur nach dem abgeschlossenen Bezahlvorgang auf.";
+} else {
+  try {
+    const session = await stripe.checkout.sessions.retrieve(sessionId, {
+      expand: ["line_items"],
+    });
+
+    const purchasedPriceId = session.line_items?.data[0]?.price?.id;
+
+    const correctProduct =
+      purchasedPriceId === import.meta.env.STRIPE_PRICE_ID;
+
+    const paymentCompleted =
+      session.status === "complete" &&
+      session.payment_status === "paid";
+
+    const correctMode = session.mode === "payment";
+
+    paymentVerified =
+      paymentCompleted &&
+      correctMode &&
+      correctProduct;
+
+    if (!paymentVerified) {
+      errorMessage =
+        "Die Zahlung konnte noch nicht eindeutig bestätigt werden. Bitte versuche es in wenigen Minuten erneut oder melde dich mit deinem PraxisMaik-Konto an.";
+    }
+  } catch (error) {
+    console.error("Stripe-Session konnte nicht geprüft werden:", error);
+
+    errorMessage =
+      "Die Zahlungsbestätigung konnte nicht geprüft werden. Bitte melde dich mit deinem PraxisMaik-Konto an oder kontaktiere den Support.";
+  }
+}
+
+if (paymentVerified) {
+  Astro.cookies.set("praxismaik_premium", "1", {
+    path: "/",
+    maxAge: 60 * 60 * 24 * 365 * 10,
+    sameSite: "lax",
+    secure: import.meta.env.PROD,
+    httpOnly: false,
+  });
+}
 ---
 
 <BaseLayout
-  title="Premium freigeschaltet"
-  description="Dein PraxisMaik Premium-Zugang ist jetzt aktiv."
+  title={paymentVerified ? "Premium freigeschaltet" : "Zahlung wird geprüft"}
+  description={
+    paymentVerified
+      ? "Dein PraxisMaik Premium-Zugang ist jetzt aktiv."
+      : "Deine PraxisMaik-Zahlung konnte noch nicht bestätigt werden."
+  }
 >
   <section class="success-page">
-    <div class="success-box">
-      <span class="success-badge">Premium aktiv</span>
+    <div class:list={["success-box", { "success-box--error": !paymentVerified }]}>
+      {paymentVerified ? (
+        <>
+          <span class="success-badge">Premium aktiv</span>
 
-      <h1>Danke für deinen Kauf</h1>
+          <h1>Danke für deinen Kauf</h1>
 
-      <p class="success-lead">
-        Dein Premium-Zugang ist jetzt freigeschaltet. Du kannst sofort auf die Premium-Inhalte zugreifen.
-      </p>
+          <p class="success-lead">
+            Deine Zahlung wurde bestätigt. Dein Premium-Zugang ist jetzt
+            freigeschaltet und du kannst sofort auf die Premium-Inhalte
+            zugreifen.
+          </p>
 
-      <div class="success-actions">
-        <a href="/lernskripte" class="btn">Zu den Lernskripten</a>
-        <a href="/pruefung" class="btn secondary">Zu den Prüfungsfällen</a>
-        <a href="/quiz-exam" class="btn secondary">Zum Examensquiz</a>
-      </div>
+          <div class="success-actions">
+            <a href="/lernskripte" class="btn">
+              Zu den Lernskripten
+            </a>
 
-      <p class="success-note">
-        Dein Zugang bleibt auf diesem Gerät gespeichert.
-      </p>
+            <a href="/pruefung" class="btn secondary">
+              Zu den Prüfungsfällen
+            </a>
+
+            <a href="/quiz-exam" class="btn secondary">
+              Zum Examensquiz
+            </a>
+          </div>
+
+          <p class="success-note">
+            Dein Kauf bleibt dauerhaft in deinem PraxisMaik-Konto gespeichert.
+            Melde dich bei einem Geräte- oder Browserwechsel erneut mit deiner
+            E-Mail-Adresse an.
+          </p>
+        </>
+      ) : (
+        <>
+          <span class="success-badge success-badge--error">
+            Prüfung nicht abgeschlossen
+          </span>
+
+          <h1>Zahlung konnte nicht bestätigt werden</h1>
+
+          <p class="success-lead">
+            {errorMessage}
+          </p>
+
+          <div class="success-actions">
+            <a href="/login" class="btn">
+              Zum Login
+            </a>
+
+            <a href="/premium" class="btn secondary">
+              Zur Premium-Seite
+            </a>
+          </div>
+
+          <p class="success-note">
+            Es wurde auf dieser Seite kein Premium-Zugang freigeschaltet.
+          </p>
+        </>
+      )}
     </div>
   </section>
 
- <script is:inline>
-  localStorage.setItem("praxismaik_premium", "1");
+  {paymentVerified && (
+    <script is:inline>
+      localStorage.setItem("praxismaik_premium", "1");
 
-  const purchaseAlreadyTracked = sessionStorage.getItem("praxismaik_purchase_tracked");
+      const purchaseAlreadyTracked = sessionStorage.getItem(
+        "praxismaik_purchase_tracked"
+      );
 
-  if (!purchaseAlreadyTracked && typeof window.trackPraxisMaikEvent === "function") {
-    window.trackPraxisMaikEvent("purchase_success", {
-      value: 39,
-      currency: "EUR",
-      product: "PraxisMaik Premium",
-      page_path: window.location.pathname,
-    });
+      if (
+        !purchaseAlreadyTracked &&
+        typeof window.trackPraxisMaikEvent === "function"
+      ) {
+        window.trackPraxisMaikEvent("purchase_success", {
+          value: 39,
+          currency: "EUR",
+          product: "PraxisMaik Premium",
+          page_path: window.location.pathname,
+        });
 
-    sessionStorage.setItem("praxismaik_purchase_tracked", "1");
-  }
-</script>
+        sessionStorage.setItem("praxismaik_purchase_tracked", "1");
+      }
+    </script>
+  )}
 </BaseLayout>
 
 <style>
-.success-page {
-  max-width: 820px;
-  margin: 0 auto;
-  padding: 3rem 1rem 4rem;
-}
-
-.success-box {
-  text-align: center;
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 22px;
-  padding: 2rem;
-  box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
-}
-
-.success-badge {
-  display: inline-block;
-  margin-bottom: 1rem;
-  padding: 0.4rem 0.75rem;
-  border-radius: 999px;
-  background: #ecfdf5;
-  color: #166534;
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.success-box h1 {
-  margin: 0 0 0.8rem;
-  font-size: clamp(2rem, 3vw, 2.6rem);
-  line-height: 1.12;
-}
-
-.success-lead {
-  max-width: 56ch;
-  margin: 0 auto;
-  color: #5b6b7a;
-  line-height: 1.7;
-}
-
-.success-actions {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.9rem;
-  margin-top: 1.6rem;
-}
-
-.success-note {
-  margin-top: 1.2rem;
-  color: #6b7280;
-  font-size: 0.95rem;
-}
-
-@media (max-width: 640px) {
-  .success-actions {
-    flex-direction: column;
+  .success-page {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 3rem 1rem 4rem;
   }
-}
+
+  .success-box {
+    padding: 2rem;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 22px;
+    box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  }
+
+  .success-box--error {
+    border-color: #fed7aa;
+    background: #fffaf5;
+  }
+
+  .success-badge {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.4rem 0.75rem;
+    border-radius: 999px;
+    background: #ecfdf5;
+    color: #166534;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .success-badge--error {
+    background: #fff7ed;
+    color: #9a3412;
+  }
+
+  .success-box h1 {
+    margin: 0 0 0.8rem;
+    font-size: clamp(2rem, 3vw, 2.6rem);
+    line-height: 1.12;
+  }
+
+  .success-lead {
+    max-width: 56ch;
+    margin: 0 auto;
+    color: #5b6b7a;
+    line-height: 1.7;
+  }
+
+  .success-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin-top: 1.6rem;
+  }
+
+  .success-note {
+    max-width: 60ch;
+    margin: 1.2rem auto 0;
+    color: #6b7280;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 640px) {
+    .success-actions {
+      flex-direction: column;
+    }
+  }
 </style>
