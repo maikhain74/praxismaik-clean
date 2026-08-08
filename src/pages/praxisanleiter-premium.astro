@@ -22,50 +22,109 @@ const hasPraxisanleiterPremium =
     </nav>
 
     {hasPraxisanleiterPremium ? (
-      <section class="active-box">
-        <div class="eyebrow">Praxisanleiter Premium</div>
+  <section class="active-box">
+    <div class="eyebrow">Praxisanleiter Premium</div>
 
-        <h1>Dein Praxisanleiter-Zugang ist aktiv.</h1>
+    <h1>Dein Arbeitsbereich für gute Praxisanleitung.</h1>
+
+    <p class="active-intro">
+      Nutze Praxisanleiter Premium gezielt für die Situationen, die im
+      Ausbildungsalltag wirklich Zeit und Sicherheit kosten: Anleitungen
+      strukturieren, Gespräche professionell führen und schwierige
+      Situationen reflektieren.
+    </p>
+
+    <div class="active-section-heading">
+      <span>Deine Arbeitsbereiche</span>
+      <h2>Was möchtest du gerade lösen?</h2>
+    </div>
+
+    <div class="active-grid">
+      <a
+        href="/ebooks/praxisanleitung/"
+        class="content-card"
+      >
+        <span class="card-icon">📘</span>
+
+        <span class="content-card-kicker">
+          Anleitungen strukturieren
+        </span>
+
+        <h2>Praxisanleitung in der Pflege</h2>
 
         <p>
-          Du kannst direkt mit deinen Premium-Inhalten für die Praxisanleitung
-          weiterarbeiten.
+          Lernziele, Methoden, Gesprächsführung und Reflexion sinnvoll
+          miteinander verbinden und Anleitungen klar vorbereiten.
         </p>
 
-        <div class="active-grid">
-          <a href="/ebooks/praxisanleitung/" class="content-card">
-            <span class="card-icon">📘</span>
-            <h2>Praxisanleitung</h2>
-            <p>
-              Methoden, Gespräche und Strukturen für deinen Ausbildungsalltag.
-            </p>
-            <strong>E-Book öffnen →</strong>
-          </a>
+        <strong>E-Book öffnen →</strong>
+      </a>
 
-          <a
-            href="/ebooks/formulierungen-praxisanleitung/"
-            class="content-card"
-          >
-            <span class="card-icon">📝</span>
-            <h2>Formulierungen für Praxisanleiter</h2>
-            <p>
-              Formulierungshilfen für Gespräche, Feedback und Beurteilungen.
-            </p>
-            <strong>E-Book öffnen →</strong>
-          </a>
+      <a
+        href="/ebooks/formulierungen-praxisanleitung/"
+        class="content-card"
+      >
+        <span class="card-icon">📝</span>
 
-          <a href="/praxisanleitung/faelle/" class="content-card">
-            <span class="card-icon">🩺</span>
-            <h2>Praxisanleiter-Fälle</h2>
-            <p>
-              Typische Situationen aus der Anleitung durchdenken und sicher
-              bearbeiten.
-            </p>
-            <strong>Fälle öffnen →</strong>
-          </a>
-        </div>
-      </section>
-    ) : (
+        <span class="content-card-kicker">
+          Gespräche & Beurteilungen
+        </span>
+
+        <h2>Formulierungen für Praxisanleiter</h2>
+
+        <p>
+          Formulierungshilfen für Erstgespräche, Feedback, Reflexion und
+          Beurteilungssituationen sicher im Alltag einsetzen.
+        </p>
+
+        <strong>Formulierungen öffnen →</strong>
+      </a>
+
+      <a
+        href="/praxisanleitung/faelle/"
+        class="content-card"
+      >
+        <span class="card-icon">🩺</span>
+
+        <span class="content-card-kicker">
+          Schwierige Situationen trainieren
+        </span>
+
+        <h2>Praxisanleiter-Fälle</h2>
+
+        <p>
+          Feedbackgespräche, Prüfungsangst, Fehlerkultur, Konflikte und
+          Bewertungsgespräche anhand typischer Situationen durchdenken.
+        </p>
+
+        <strong>Praxisfälle öffnen →</strong>
+      </a>
+    </div>
+
+    <div class="active-foundation">
+      <div>
+        <span class="content-card-kicker">
+          Ergänzende Wissensbasis
+        </span>
+
+        <h2>Grundlagen nachschlagen</h2>
+
+        <p>
+          Du möchtest einen Begriff, eine Methode oder einen grundlegenden
+          Zusammenhang noch einmal nachlesen? Nutze dafür den offenen
+          Grundlagenbereich der Praxisanleitung.
+        </p>
+      </div>
+
+      <a
+        href="/praxisanleitung/grundlagen/"
+        class="foundation-link"
+      >
+        Grundlagen öffnen →
+      </a>
+    </div>
+  </section>
+) : (
       <>
         <header class="hero">
           <div class="eyebrow">
@@ -869,6 +928,99 @@ const hasPraxisanleiterPremium =
   .card-icon {
     font-size: 2rem;
   }
+
+  .active-intro {
+  max-width: 780px;
+  margin: 0 0 2.5rem;
+  color: #556270;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.active-section-heading {
+  margin-bottom: 1.2rem;
+}
+
+.active-section-heading > span,
+.content-card-kicker {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: #e67e22;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.active-section-heading h2 {
+  margin: 0;
+  color: #18324a;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.25;
+}
+
+.content-card {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.content-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(24, 50, 74, 0.1);
+}
+
+.active-foundation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(230, 126, 34, 0.16);
+  border-radius: 20px;
+  background: #ffffff;
+}
+
+.active-foundation h2 {
+  margin: 0 0 0.5rem;
+  color: #18324a;
+  font-size: 1.2rem;
+}
+
+.active-foundation p {
+  max-width: 680px;
+  margin: 0;
+  color: #556270;
+  line-height: 1.65;
+}
+
+.foundation-link {
+  flex-shrink: 0;
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  background: #e67e22;
+  color: #ffffff !important;
+  text-decoration: none;
+  font-weight: 800;
+  text-align: center;
+}
+
+.foundation-link:hover {
+  opacity: 0.94;
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  .active-foundation {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .foundation-link {
+    width: 100%;
+  }
+}
 
   .mobile-cta {
     display: none;
