@@ -3,9 +3,21 @@ export const prerender = false;
 
 import BaseLayout from "../layouts/BaseLayout.astro";
 
+const praxisanleiterPremiumCookie =
+  Astro.cookies.get("praxismaik_premium_praxisanleiter")?.value;
+
+const isLocalhost =
+  Astro.url.hostname === "localhost" ||
+  Astro.url.hostname === "127.0.0.1";
+
+const devUnlock =
+  Astro.url.searchParams.get("freischalten") === "1" &&
+  isLocalhost;
+
 const hasPraxisanleiterPremium =
-  Astro.cookies.get("praxismaik_premium_praxisanleiter")?.value === "1" ||
-  Astro.cookies.get("praxismaik_premium_praxisanleiter")?.value === "true";
+  praxisanleiterPremiumCookie === "1" ||
+  praxisanleiterPremiumCookie === "true" ||
+  devUnlock;
 ---
 
 <BaseLayout
