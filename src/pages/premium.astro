@@ -423,7 +423,7 @@ const premiumExamQuizCount = premiumExamQuiz.length;
   </div>
 </div>
 
-          <div class="premium-overview-grid">
+          <div class="premium-overview-grid premium-overview-grid-top">
             <a href="/ebooks/" class="premium-overview-card">
               <strong>📚 {premiumEbookCount}</strong>
               <span>Premium-E-Books</span>
@@ -446,6 +446,12 @@ const premiumExamQuizCount = premiumExamQuiz.length;
               <strong>🎓 {premiumExamQuizCount}</strong>
               <span>Examensfragen</span>
               <em>Examensmodus starten →</em>
+            </a>
+
+           <a href="/visuelle-lernkarten/" class="premium-overview-card">
+           <strong>🧠</strong>
+           <span>Lernkarten</span>
+          <em>Visuell wiederholen →</em>
             </a>
           </div>
 
@@ -1035,10 +1041,10 @@ const premiumExamQuizCount = premiumExamQuiz.length;
   }
 
   .premium-overview-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-  }
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
+}
 
   .premium-overview-card {
     display: block;
@@ -1710,15 +1716,18 @@ const premiumExamQuizCount = premiumExamQuiz.length;
     line-height: 1.6;
   }
 
-  @media (max-width: 900px) {
-    .premium-benefits-grid,
-    .premium-overview-grid,
-    .premium-content-grid,
-    .premium-target-grid,
-    .premium-dashboard-grid,
-    .premium-founder-box {
-      grid-template-columns: 1fr;
-    }
+@media (max-width: 900px) {
+  .premium-benefits-grid,
+  .premium-content-grid,
+  .premium-target-grid,
+  .premium-dashboard-grid,
+  .premium-founder-box {
+    grid-template-columns: 1fr;
+  }
+
+  .premium-overview-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
 
     .premium-showcase {
       grid-template-columns: 1fr;

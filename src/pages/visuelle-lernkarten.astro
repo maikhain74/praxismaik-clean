@@ -10,7 +10,7 @@ const description =
 
 <BaseLayout title={title} description={description}>
   <main class="page">
-    <section class="hero">
+    <section class="lernkarten-hero">
       <p class="badge">Pflegeausbildung • Visuelles Lernen</p>
 
       <h1>Visuelle Lernkarten für die Pflegeausbildung</h1>
@@ -3776,10 +3776,11 @@ if (lightbox && lightboxImage instanceof HTMLImageElement && closeButton) {
     padding: 3rem 1rem 5rem;
   }
 
-  .hero {
-    margin-bottom: 2.5rem;
-    max-width: 760px;
-  }
+.lernkarten-hero {
+  display: block;
+  margin-bottom: 2.5rem;
+  max-width: 760px;
+}
 
   .badge {
     display: inline-block;

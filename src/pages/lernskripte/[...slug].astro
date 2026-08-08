@@ -34,17 +34,19 @@ const devUnlock =
   Astro.url.searchParams.get("freischalten") === "1" &&
   isLocalhost;
 
-const premiumCookieValue =
-  Astro.cookies.get("praxismaik_premium")?.value;
+const premiumAzubiCookieValue =
+  Astro.cookies.get("praxismaik_premium_azubi")?.value;
 
-const hasPremiumCookie =
-  premiumCookieValue === "1" ||
-  premiumCookieValue === "true";
+console.log("Cookie:", premiumAzubiCookieValue);
+
+const hasPremiumAzubiCookie =
+  premiumAzubiCookieValue === "1" ||
+  premiumAzubiCookieValue === "true";
 
 const showFullContent =
   !isPremium ||
   devUnlock ||
-  hasPremiumCookie;
+  hasPremiumAzubiCookie;
 
 const metaDescription =
   beschreibung ||
@@ -87,9 +89,9 @@ const metaDescription =
           </div>
         )}
 
-        {hasPremiumCookie && isPremium && (
+        {hasPremiumAzubiCookie && isPremium && (
           <div class="status-box">
-            Premium ist aktiv. Du hast vollständigen Zugriff auf dieses Lernskript.
+            Azubi Premium ist aktiv. Du hast vollständigen Zugriff auf dieses Lernskript.
           </div>
         )}
       </header>
