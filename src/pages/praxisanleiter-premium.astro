@@ -14,6 +14,8 @@ const devUnlock =
   Astro.url.searchParams.get("freischalten") === "1" &&
   isLocalhost;
 
+const devQuery = devUnlock ? "?freischalten=1" : "";
+
 const hasPraxisanleiterPremium =
   praxisanleiterPremiumCookie === "1" ||
   praxisanleiterPremiumCookie === "true" ||
@@ -53,7 +55,7 @@ const hasPraxisanleiterPremium =
 
     <div class="active-grid">
       <a
-        href="/ebooks/praxisanleitung/"
+        href={`/ebooks/praxisanleitung/${devQuery}`}
         class="content-card"
       >
         <span class="card-icon">📘</span>
@@ -73,7 +75,7 @@ const hasPraxisanleiterPremium =
       </a>
 
       <a
-        href="/ebooks/formulierungen-praxisanleitung/"
+        href={`/ebooks/formulierungen-praxisanleitung/${devQuery}`}
         class="content-card"
       >
         <span class="card-icon">📝</span>

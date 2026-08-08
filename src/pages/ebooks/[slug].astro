@@ -222,22 +222,35 @@ const renderedChapters = await Promise.all(
         </div>
       </div>
 
-      <div class="ebook-benefit-box">
-        <h2>Was dich in diesem E-Book erwartet</h2>
+     <div class="ebook-benefit-box">
+  <h2>Was dich in diesem E-Book erwartet</h2>
 
-        <ul>
-          <li>konkrete Formulierungen für Praxisanleiter</li>
-          <li>
-            Beispiele für Erstgespräche, Zwischengespräche und
-            Abschlussgespräche
-          </li>
-          <li>Textbausteine für Beurteilungsbögen</li>
-          <li>
-            Formulierungen nach Kompetenzbereichen und Einsatzbereichen
-          </li>
-          <li>komplette Musterbeurteilungen zum Anpassen</li>
-        </ul>
-      </div>
+  {slug === "praxisanleitung" ? (
+    <ul>
+      <li>Rolle und Aufgaben von Praxisanleitenden sicher einordnen</li>
+      <li>pädagogische und didaktische Grundlagen verständlich anwenden</li>
+      <li>Anleitungen strukturiert planen und passende Methoden auswählen</li>
+      <li>Kompetenzen von Auszubildenden gezielt fördern und einschätzen</li>
+      <li>Feedback, Beurteilungen und schwierige Anleitungssituationen professionell gestalten</li>
+    </ul>
+  ) : slug === "formulierungen-praxisanleitung" ? (
+    <ul>
+      <li>konkrete Formulierungen für Praxisanleiter</li>
+      <li>Beispiele für Erstgespräche, Zwischengespräche und Abschlussgespräche</li>
+      <li>Textbausteine für Beurteilungsbögen</li>
+      <li>Formulierungen nach Kompetenzbereichen und Einsatzbereichen</li>
+      <li>komplette Musterbeurteilungen zum Anpassen</li>
+    </ul>
+  ) : (
+    <ul>
+      <li>praxisnah aufbereitete Inhalte zum direkten Nachlesen</li>
+      <li>strukturierte Kapitel für gezieltes Lernen</li>
+      <li>verständliche Erklärungen wichtiger Zusammenhänge</li>
+      <li>konkrete Beispiele für Pflegepraxis und Prüfung</li>
+      <li>dauerhafter Zugriff im jeweiligen Premium-Bereich</li>
+    </ul>
+  )}
+</div>
 
       {!showFullContent && (
         <div class="ebook-locked-note">
