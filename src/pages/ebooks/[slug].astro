@@ -22,7 +22,9 @@ if (!slug) {
 
 const allEbookEntries = await getCollection("ebooks");
 
-const mainEntry = allEbookEntries.find((entry) => entry.id === `${slug}/index.md`);
+const mainEntry = allEbookEntries.find(
+  (entry) => entry.id === `${slug}/index.md`
+);
 
 if (!mainEntry) {
   throw new Error(`E-Book nicht gefunden: ${slug}`);
@@ -30,26 +32,116 @@ if (!mainEntry) {
 
 const isPremium = mainEntry.data.premium === true;
 
-const premiumCookieValue = Astro.cookies.get("praxismaik_premium")?.value;
+/*
+ * Diese beiden E-Books gehören ausschließlich
+ * zu Praxisanleiter Premium.
+ */
+const praxisanleiterEbookSlugs = [
+  "praxisanleitung",
+  "formulierungen-praxisanleitung",
+];
 
-const hasPremiumCookie =
-  premiumCookieValue === "1" || premiumCookieValue === "true";
+const isPraxisanleiterEbook =
+  praxisanleiterEbookSlugs.includes(slug);
+
+/*
+ * Bestehender Azubi-Premium-Zugang.
+ * Der alte Cookie bleibt während der Übergangsphase erhalten.
+ */
+const premiumCookieValue =
+  Astro.cookies.get("praxismaik_premium")?.value;
+
+const premiumAzubiCookieValue =
+  Astro.cookies.get("praxismaik_premium_azubi")?.value;
+
+const hasAzubiPremium =
+  premiumCookieValue === "1" ||
+  premiumCookieValue === "true" ||
+  premiumAzubiCookieValue === "1" ||
+  premiumAzubiCookieValue === "true";
+
+/*
+ * Separater Praxisanleiter-Premium-Zugang.
+ */
+const praxisanleiterCookieValue =
+  Astro.cookies.get("praxismaik_premium_praxisanleiter")?.value;
+
+const hasPraxisanleiterPremium =
+  praxisanleiterCookieValue === "1" ||
+  praxisanleiterCookieValue === "true";
 
 const isLocalhost =
-  Astro.url.hostname === "localhost" || Astro.url.hostname === "127.0.0.1";
+  Astro.url.hostname === "localhost" ||
+  Astro.url.hostname === "127.0.0.1";
 
 const devUnlock =
-  Astro.url.searchParams.get("freischalten") === "1" && isLocalhost;
+  Astro.url.searchParams.get("freischalten") === "1" &&
+  isLocalhost;
 
-const showFullContent = !isPremium || hasPremiumCookie || devUnlock;
+/*
+ * Zugriffslogik:
+ *
+ * Praxisanleiter-E-Books:
+ * nur Praxisanleiter Premium
+ *
+ * Andere Premium-E-Books:
+ * nur Azubi Premium
+ *
+ * Nicht-Premium:
+ * frei zugänglich
+ *
+ * Lokal:
+ * ?freischalten=1 bleibt als Testmöglichkeit bestehen
+ */
+const hasRequiredPremium =
+  isPraxisanleiterEbook
+    ? hasPraxisanleiterPremium
+    : hasAzubiPremium;
+
+const showFullContent =
+  !isPremium ||
+  hasRequiredPremium ||
+  devUnlock;
+
+/*
+ * Gesperrte Praxisanleiter-E-Books führen zum
+ * 79-Euro-Praxisanleiter-Produkt.
+ *
+ * Andere Premium-E-Books führen weiterhin
+ * zum Azubi-Premium.
+ */
+const premiumPageHref =
+  isPraxisanleiterEbook
+    ? "/praxisanleiter-premium/"
+    : "/premium";
+
+const premiumGateTitle =
+  isPraxisanleiterEbook
+    ? "Du siehst nur die Einleitung"
+    : "Du siehst nur die Einleitung";
+
+const premiumGateText =
+  isPraxisanleiterEbook
+    ? "Die vollständigen Kapitel dieses E-Books sind in Praxisanleiter Premium verfügbar."
+    : "Die vollständigen Kapitel mit allen Inhalten sind nur im Premium-Bereich verfügbar.";
 
 const chapterEntries = allEbookEntries
   .filter((entry) => {
-    return entry.id.startsWith(`${slug}/`) && !entry.id.endsWith("/index.md");
+    return (
+      entry.id.startsWith(`${slug}/`) &&
+      !entry.id.endsWith("/index.md")
+    );
   })
   .sort((a, b) => {
-    const orderA = typeof a.data.reihenfolge === "number" ? a.data.reihenfolge : 999;
-    const orderB = typeof b.data.reihenfolge === "number" ? b.data.reihenfolge : 999;
+    const orderA =
+      typeof a.data.reihenfolge === "number"
+        ? a.data.reihenfolge
+        : 999;
+
+    const orderB =
+      typeof b.data.reihenfolge === "number"
+        ? b.data.reihenfolge
+        : 999;
 
     if (orderA !== orderB) return orderA - orderB;
 
@@ -71,7 +163,10 @@ const renderedChapters = await Promise.all(
 );
 ---
 
-<BaseLayout title={mainEntry.data.title} description={mainEntry.data.beschreibung}>
+<BaseLayout
+  title={mainEntry.data.title}
+  description={mainEntry.data.beschreibung}
+>
   <article class="ebook">
     <header class="ebook-header">
       <p class="ebook-kicker">
@@ -89,12 +184,16 @@ const renderedChapters = await Promise.all(
       )}
 
       {mainEntry.data.beschreibung && (
-        <p class="ebook-description">{mainEntry.data.beschreibung}</p>
+        <p class="ebook-description">
+          {mainEntry.data.beschreibung}
+        </p>
       )}
 
       {mainEntry.data.tags?.length > 0 && (
         <ul class="ebook-tags">
-          {mainEntry.data.tags.map((tag) => <li>{tag}</li>)}
+          {mainEntry.data.tags.map((tag) => (
+            <li>{tag}</li>
+          ))}
         </ul>
       )}
 
@@ -128,21 +227,39 @@ const renderedChapters = await Promise.all(
 
         <ul>
           <li>konkrete Formulierungen für Praxisanleiter</li>
-          <li>Beispiele für Erstgespräche, Zwischengespräche und Abschlussgespräche</li>
+          <li>
+            Beispiele für Erstgespräche, Zwischengespräche und
+            Abschlussgespräche
+          </li>
           <li>Textbausteine für Beurteilungsbögen</li>
-          <li>Formulierungen nach Kompetenzbereichen und Einsatzbereichen</li>
+          <li>
+            Formulierungen nach Kompetenzbereichen und Einsatzbereichen
+          </li>
           <li>komplette Musterbeurteilungen zum Anpassen</li>
         </ul>
       </div>
 
       {!showFullContent && (
         <div class="ebook-locked-note">
-          <strong>Premium-Inhalt</strong>
+          <strong>
+            {isPraxisanleiterEbook
+              ? "Praxisanleiter Premium"
+              : "Premium-Inhalt"}
+          </strong>
+
           <p>
-            Du siehst aktuell nur die Einleitung. Die vollständigen Kapitel sind im Premiumbereich freigeschaltet.
+            {isPraxisanleiterEbook
+              ? "Du siehst aktuell nur die Einleitung. Die vollständigen Kapitel dieses E-Books sind in Praxisanleiter Premium freigeschaltet."
+              : "Du siehst aktuell nur die Einleitung. Die vollständigen Kapitel sind im Premiumbereich freigeschaltet."}
           </p>
-          <a href="/premium" class="ebook-premium-link">
-            Premium freischalten
+
+          <a
+            href={premiumPageHref}
+            class="ebook-premium-link"
+          >
+            {isPraxisanleiterEbook
+              ? "Praxisanleiter Premium ansehen"
+              : "Premium freischalten"}
           </a>
         </div>
       )}
@@ -153,25 +270,39 @@ const renderedChapters = await Promise.all(
     </section>
 
     {showFullContent ? (
-      <section class="ebook-accordion" aria-label="E-Book Kapitel">
+      <section
+        class="ebook-accordion"
+        aria-label="E-Book Kapitel"
+      >
         <div class="ebook-accordion-header">
-          <p class="ebook-section-kicker">Inhaltsverzeichnis</p>
+          <p class="ebook-section-kicker">
+            Inhaltsverzeichnis
+          </p>
+
           <h2>Kapitel öffnen und direkt lesen</h2>
+
           <p>
-            Klicke auf ein Kapitel, um den Inhalt direkt auf dieser Seite zu öffnen.
+            Klicke auf ein Kapitel, um den Inhalt direkt auf dieser
+            Seite zu öffnen.
           </p>
         </div>
 
         <div class="ebook-chapter-grid">
           {renderedChapters.map((chapter, index) => (
-            <details class="ebook-chapter-card" id={`kapitel-${index + 1}`}>
+            <details
+              class="ebook-chapter-card"
+              id={`kapitel-${index + 1}`}
+            >
               <summary>
                 <span class="chapter-number">
                   Kapitel {index + 1}
                 </span>
+
                 <span class="chapter-title">
-                  {chapter.data.title ?? `Kapitel ${index + 1}`}
+                  {chapter.data.title ??
+                    `Kapitel ${index + 1}`}
                 </span>
+
                 <span class="chapter-toggle">
                   öffnen
                 </span>
@@ -186,13 +317,18 @@ const renderedChapters = await Promise.all(
       </section>
     ) : (
       <>
-        <nav class="ebook-toc" aria-label="Inhaltsverzeichnis">
+        <nav
+          class="ebook-toc"
+          aria-label="Inhaltsverzeichnis"
+        >
           <h2>Inhaltsverzeichnis</h2>
+
           <ol>
             {renderedChapters.map((chapter, index) => (
               <li>
                 <span class="locked-chapter-title">
-                  {chapter.data.title ?? `Kapitel ${index + 1}`}
+                  {chapter.data.title ??
+                    `Kapitel ${index + 1}`}
                 </span>
               </li>
             ))}
@@ -200,10 +336,14 @@ const renderedChapters = await Promise.all(
         </nav>
 
         <PremiumGate
-          title="Du siehst nur die Einleitung"
-          text="Die vollständigen Kapitel mit allen Inhalten sind nur im Premium-Bereich verfügbar."
-          buttonText="Jetzt freischalten"
-          buttonHref="/premium"
+          title={premiumGateTitle}
+          text={premiumGateText}
+          buttonText={
+            isPraxisanleiterEbook
+              ? "Praxisanleiter Premium ansehen"
+              : "Jetzt freischalten"
+          }
+          buttonHref={premiumPageHref}
         />
       </>
     )}
