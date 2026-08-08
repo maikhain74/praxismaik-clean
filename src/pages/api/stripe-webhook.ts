@@ -30,9 +30,13 @@ export async function POST({ request }) {
     );
   } catch (err) {
     const message =
-      err instanceof Error ? err.message : "Unbekannter Webhook-Fehler";
+      err instanceof Error
+        ? err.message
+        : "Unbekannter Webhook-Fehler";
 
-    return new Response(`Webhook Error: ${message}`, { status: 400 });
+    return new Response(`Webhook Error: ${message}`, {
+      status: 400,
+    });
   }
 
   if (event.type === "checkout.session.completed") {
@@ -42,11 +46,12 @@ export async function POST({ request }) {
     const premiumType = session.metadata?.premium_type;
 
     if (!customerEmail) {
-      return new Response("Keine Kunden-E-Mail gefunden.", { status: 400 });
+      return new Response("Keine Kunden-E-Mail gefunden.", {
+        status: 400,
+      });
     }
 
     const updateData: {
-      premium?: boolean;
       premium_azubi?: boolean;
       premium_praxisanleiter?: boolean;
       stripe_customer_id: string;
@@ -57,12 +62,21 @@ export async function POST({ request }) {
     };
 
     if (premiumType === "azubi") {
-      updateData.premium = true;
+      /*
+       * Neue Azubi-Käufe erhalten ausschließlich
+       * den neuen Azubi-Premiumstatus.
+       *
+       * Das alte Feld "premium" wird NICHT mehr gesetzt.
+       * Dadurch bleibt "premium = true" als Kennzeichen
+       * für bestehende Altkunden erhalten.
+       */
       updateData.premium_azubi = true;
     } else if (premiumType === "praxisanleiter") {
       updateData.premium_praxisanleiter = true;
     } else {
-      return new Response("Unbekannter Premium-Typ.", { status: 400 });
+      return new Response("Unbekannter Premium-Typ.", {
+        status: 400,
+      });
     }
 
     const { error } = await supabase

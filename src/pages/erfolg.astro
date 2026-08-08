@@ -50,20 +50,13 @@ if (!sessionId) {
       correctMode &&
       purchasedProduct !== null;
 
-    if (paymentVerified && purchasedProduct === "azubi") {
-      Astro.cookies.set("praxismaik_premium_azubi", "true", {
-        path: "/",
-        sameSite: "lax",
-        secure: import.meta.env.PROD,
-      });
-
-      // Übergangskompatibilität für bestehende Premium-Bereiche
-      Astro.cookies.set("praxismaik_premium", "true", {
-        path: "/",
-        sameSite: "lax",
-        secure: import.meta.env.PROD,
-      });
-    }
+if (paymentVerified && purchasedProduct === "azubi") {
+  Astro.cookies.set("praxismaik_premium_azubi", "true", {
+    path: "/",
+    sameSite: "lax",
+    secure: import.meta.env.PROD,
+  });
+}
 
     if (paymentVerified && purchasedProduct === "praxisanleiter") {
       Astro.cookies.set("praxismaik_premium_praxisanleiter", "true", {
@@ -192,7 +185,7 @@ const isPraxisanleiterPurchase =
 
   {isAzubiPurchase && (
     <script is:inline>
-      localStorage.setItem("praxismaik_premium", "1");
+      localStorage.removeItem("praxismaik_premium");
       localStorage.setItem("praxismaik_premium_azubi", "true");
 
       const purchaseAlreadyTracked = sessionStorage.getItem(
