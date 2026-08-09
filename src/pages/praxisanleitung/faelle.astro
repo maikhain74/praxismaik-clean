@@ -4,6 +4,16 @@ import { getCollection } from "astro:content";
 
 const pruefungen = await getCollection("pruefung");
 
+const isLocalhost =
+  Astro.url.hostname === "localhost" ||
+  Astro.url.hostname === "127.0.0.1";
+
+const devUnlock =
+  Astro.url.searchParams.get("freischalten") === "1" &&
+  isLocalhost;
+
+const devQuery = devUnlock ? "?freischalten=1" : "";
+
 const praxisFaelle = pruefungen
   .filter((item) => item.data.topic === "praxisanleitung")
   .sort((a, b) => (a.data.reihenfolge ?? 999) - (b.data.reihenfolge ?? 999));
@@ -23,7 +33,7 @@ const praxisFaelle = pruefungen
 
     <div class="topic-grid">
       {praxisFaelle.map((item) => (
-        <a class="topic-card topic-card-premium" href={`/pruefung/${item.slug}/`}>
+        <a class="topic-card topic-card-premium" href={`/pruefung/${item.slug}/${devQuery}`}>
           <div class="topic-card-top">
             <span class="card-badge card-badge-premium">🔒 Premium</span>
 
