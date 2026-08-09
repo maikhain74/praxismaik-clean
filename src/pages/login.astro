@@ -1,95 +1,402 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const redirectParam = Astro.url.searchParams.get('redirect');
+
+const safeRedirect =
+  redirectParam &&
+  redirectParam.startsWith('/') &&
+  !redirectParam.startsWith('//')
+    ? redirectParam
+    : '/';
 ---
 
-<BaseLayout title="Login | PraxisMaik">
-  <section style="padding: 4rem 1rem; max-width: 500px; margin: 0 auto;">
-    <h1>Login</h1>
+<BaseLayout
+  title="Login | PraxisMaik"
+  description="Melde dich bei deinem PraxisMaik-Konto an."
+>
+  <section class="login-page">
+    <div class="login-card">
+      <span class="eyebrow">PraxisMaik Konto</span>
 
-    <form id="login-form" style="display:flex; flex-direction:column; gap:1rem;">
-      <input type="email" id="email" placeholder="E-Mail" required style="padding:1rem;" />
-      <input type="password" id="password" placeholder="Passwort" required style="padding:1rem;" />
+      <h1>Login</h1>
 
-      <button type="button" id="login-button">
-        Login
-      </button>
-
-      <p style="margin-top:1rem;">
-        <a href="/logout">Logout</a>
+      <p class="intro">
+        Melde dich mit deiner E-Mail-Adresse und deinem Passwort an.
       </p>
-    </form>
 
-    <p id="message"></p>
+      <form id="login-form">
+        <label for="email">E-Mail-Adresse</label>
+
+        <input
+          type="email"
+          id="email"
+          autocomplete="email"
+          placeholder="deine@email.de"
+          required
+        />
+
+        <label for="password">Passwort</label>
+
+        <div class="password-field">
+          <input
+            type="password"
+            id="password"
+            autocomplete="current-password"
+            placeholder="Passwort"
+            required
+          />
+
+          <button
+            type="button"
+            id="password-toggle"
+            class="password-toggle"
+            aria-label="Passwort anzeigen"
+            title="Passwort anzeigen"
+          >
+            👁
+          </button>
+        </div>
+
+        <button type="submit" id="login-button">
+          Login
+        </button>
+      </form>
+
+      <p
+        id="message"
+        class="message"
+        aria-live="polite"
+      ></p>
+
+      <div class="account-links">
+        <p>
+          Noch kein Konto?
+          <a
+            href={`/register?redirect=${encodeURIComponent(safeRedirect)}`}
+          >
+            Konto erstellen
+          </a>
+        </p>
+
+        <p>
+          <a href="/passwort-vergessen">
+            Passwort vergessen?
+          </a>
+        </p>
+      </div>
+    </div>
   </section>
+</BaseLayout>
 
-  <script type="module">
-    import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
+<script>
+  import { createClient } from '@supabase/supabase-js';
 
-    const supabase = createClient(
-      'https://dmjbuijhoiklmgqozxkg.supabase.co',
-      'sb_publishable_SQLOHit8yP0fMjfS3nN1QQ_61E3MOgn'
+  const redirectParam = new URLSearchParams(window.location.search).get('redirect');
+
+  const safeRedirect =
+    redirectParam &&
+    redirectParam.startsWith('/') &&
+    !redirectParam.startsWith('//')
+      ? redirectParam
+      : '/';
+
+  const supabase = createClient(
+    import.meta.env.PUBLIC_SUPABASE_URL,
+    import.meta.env.PUBLIC_SUPABASE_ANON_KEY
+  );
+
+  const form = document.getElementById('login-form');
+  const button = document.getElementById('login-button');
+  const message = document.getElementById('message');
+
+  const emailInput = document.getElementById('email');
+  const passwordInput = document.getElementById('password');
+  const passwordToggle =
+    document.getElementById('password-toggle');
+
+  passwordToggle?.addEventListener('click', () => {
+    if (
+      !(passwordInput instanceof HTMLInputElement) ||
+      !(passwordToggle instanceof HTMLButtonElement)
+    ) {
+      return;
+    }
+
+    const isVisible = passwordInput.type === 'text';
+
+    passwordInput.type = isVisible
+      ? 'password'
+      : 'text';
+
+    passwordToggle.setAttribute(
+      'aria-label',
+      isVisible
+        ? 'Passwort anzeigen'
+        : 'Passwort verbergen'
     );
 
-    const button = document.getElementById('login-button');
-    const message = document.getElementById('message');
+    passwordToggle.setAttribute(
+      'title',
+      isVisible
+        ? 'Passwort anzeigen'
+        : 'Passwort verbergen'
+    );
+  });
 
-    button?.addEventListener('click', async () => {
-      message.textContent = 'Login wird geprüft...';
+  form?.addEventListener('submit', async (event) => {
+    event.preventDefault();
 
-      const email = document.getElementById('email')?.value;
-      const password = document.getElementById('password')?.value;
+    if (
+      !(emailInput instanceof HTMLInputElement) ||
+      !(passwordInput instanceof HTMLInputElement) ||
+      !(button instanceof HTMLButtonElement) ||
+      !(message instanceof HTMLElement)
+    ) {
+      return;
+    }
 
-      const { data, error } = await supabase.auth.signInWithPassword({
+    const email = emailInput.value.trim();
+    const password = passwordInput.value;
+
+    if (!email || !password) {
+      message.textContent =
+        'Bitte E-Mail-Adresse und Passwort eingeben.';
+      return;
+    }
+
+    button.disabled = true;
+    button.textContent = 'Login wird geprüft ...';
+
+    message.textContent = 'Login wird geprüft ...';
+
+    const { data, error } =
+      await supabase.auth.signInWithPassword({
         email,
         password,
       });
 
-      if (error) {
-        message.textContent = error.message;
-        return;
-      }
+    if (error || !data.user) {
+      message.textContent =
+        'E-Mail-Adresse oder Passwort sind nicht korrekt.';
 
-      const user = data.user;
+      button.disabled = false;
+      button.textContent = 'Login';
 
-      const { data: profile, error: profileError } = await supabase
-        .from('profiles')
-        .select('premium_azubi, premium_praxisanleiter')
-        .eq('id', user.id)
-        .single();
+      return;
+    }
 
-      console.log(user);
-      console.log(profile);
-      console.log(profileError);
+    const user = data.user;
 
-      if (profileError) {
-        message.textContent = profileError.message;
-        return;
-      }
+    const {
+      data: profile,
+      error: profileError,
+    } = await supabase
+      .from('profiles')
+      .select(
+        'premium, premium_azubi, premium_praxisanleiter'
+      )
+      .eq('id', user.id)
+      .single();
 
-      if (profile?.premium_azubi === true) {
-        localStorage.setItem('praxismaik_premium_azubi', 'true');
-        document.cookie =
-          'praxismaik_premium_azubi=true; path=/; max-age=315360000; SameSite=Lax';
-      } else {
-        localStorage.removeItem('praxismaik_premium_azubi');
-        document.cookie =
-          'praxismaik_premium_azubi=; path=/; max-age=0; SameSite=Lax';
-      }
+    if (profileError || !profile) {
+      console.error(
+        'Profil konnte nicht geladen werden:',
+        profileError
+      );
 
-      if (profile?.premium_praxisanleiter === true) {
-        localStorage.setItem('praxismaik_premium_praxisanleiter', 'true');
-        document.cookie =
-          'praxismaik_premium_praxisanleiter=true; path=/; max-age=315360000; SameSite=Lax';
-      } else {
-        localStorage.removeItem('praxismaik_premium_praxisanleiter');
-        document.cookie =
-          'praxismaik_premium_praxisanleiter=; path=/; max-age=0; SameSite=Lax';
-      }
+      message.textContent =
+        'Dein PraxisMaik-Profil konnte nicht geladen werden.';
 
-      localStorage.setItem('praxismaik_user_email', email);
+      button.disabled = false;
+      button.textContent = 'Login';
 
-      message.textContent = 'Login erfolgreich.';
-      window.location.href = '/';
-    });
-  </script>
-</BaseLayout>
+      return;
+    }
+
+    const hasAzubiPremium =
+      profile.premium === true ||
+      profile.premium_azubi === true;
+
+    if (hasAzubiPremium) {
+      localStorage.setItem(
+        'praxismaik_premium_azubi',
+        'true'
+      );
+
+      document.cookie =
+        'praxismaik_premium_azubi=true; path=/; max-age=315360000; SameSite=Lax';
+    } else {
+      localStorage.removeItem(
+        'praxismaik_premium_azubi'
+      );
+
+      document.cookie =
+        'praxismaik_premium_azubi=; path=/; max-age=0; SameSite=Lax';
+    }
+
+    if (
+      profile.premium_praxisanleiter === true
+    ) {
+      localStorage.setItem(
+        'praxismaik_premium_praxisanleiter',
+        'true'
+      );
+
+      document.cookie =
+        'praxismaik_premium_praxisanleiter=true; path=/; max-age=315360000; SameSite=Lax';
+    } else {
+      localStorage.removeItem(
+        'praxismaik_premium_praxisanleiter'
+      );
+
+      document.cookie =
+        'praxismaik_premium_praxisanleiter=; path=/; max-age=0; SameSite=Lax';
+    }
+
+    localStorage.setItem(
+      'praxismaik_user_email',
+      user.email ?? email
+    );
+
+    message.textContent = 'Login erfolgreich.';
+
+    window.location.href = safeRedirect;
+  });
+</script>
+
+<style>
+  .login-page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 3rem 1.25rem 5rem;
+  }
+
+  .login-card {
+    background: #ffffff;
+    border: 1px solid #ead9c7;
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: 0 18px 50px rgba(33, 51, 66, 0.07);
+  }
+
+  .eyebrow {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #e67e22;
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    margin: 0 0 1rem;
+  }
+
+  .intro {
+    margin-bottom: 2rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  label {
+    margin-top: 0.5rem;
+    font-weight: 700;
+  }
+
+  input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.95rem 1rem;
+    border: 1px solid #d9d9d9;
+    border-radius: 12px;
+    font: inherit;
+  }
+
+  input:focus {
+    outline: 2px solid rgba(230, 126, 34, 0.25);
+    border-color: #e67e22;
+  }
+
+  .password-field {
+    position: relative;
+  }
+
+  .password-field input {
+    padding-right: 3.5rem;
+  }
+
+  .password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 0.65rem;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.6rem;
+    height: 2.6rem;
+    padding: 0;
+    border: 0;
+    border-radius: 10px;
+    background: transparent;
+    font-size: 1.15rem;
+    cursor: pointer;
+  }
+
+  .password-toggle:hover {
+    background: #fff8f1;
+  }
+
+  #login-button {
+    margin-top: 1rem;
+    padding: 1rem 1.25rem;
+    border: 0;
+    border-radius: 12px;
+    background: #e67e22;
+    color: #ffffff;
+    font: inherit;
+    font-weight: 800;
+    cursor: pointer;
+  }
+
+  #login-button:disabled {
+    opacity: 0.65;
+    cursor: default;
+  }
+
+  .message {
+    min-height: 1.5rem;
+    margin-top: 1.25rem;
+    font-weight: 600;
+  }
+
+  .account-links {
+    margin-top: 1.5rem;
+  }
+
+  .account-links p {
+    margin: 0.5rem 0;
+  }
+
+  .account-links a {
+    color: #e67e22;
+    font-weight: 700;
+  }
+
+  @media (max-width: 640px) {
+    .login-page {
+      padding-top: 1.5rem;
+    }
+
+    .login-card {
+      padding: 1.5rem;
+      border-radius: 18px;
+    }
+  }
+</style>
