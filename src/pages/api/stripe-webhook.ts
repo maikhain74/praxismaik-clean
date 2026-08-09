@@ -12,15 +12,17 @@ const supabase = createClient(
   import.meta.env.SUPABASE_SERVICE_ROLE_KEY
 );
 
-export async function POST({ request }) {
+export async function POST({ request }: { request: Request }) {
   const body = await request.text();
   const signature = request.headers.get("stripe-signature");
 
   if (!signature) {
-    return new Response("Stripe-Signatur fehlt.", { status: 400 });
+    return new Response("Stripe-Signatur fehlt.", {
+      status: 400,
+    });
   }
 
-  let event;
+  let event: Stripe.Event;
 
   try {
     event = stripe.webhooks.constructEvent(
@@ -34,64 +36,164 @@ export async function POST({ request }) {
         ? err.message
         : "Unbekannter Webhook-Fehler";
 
-    return new Response(`Webhook Error: ${message}`, {
-      status: 400,
+    return new Response(
+      `Webhook Error: ${message}`,
+      {
+        status: 400,
+      }
+    );
+  }
+
+  if (event.type !== "checkout.session.completed") {
+    return new Response("OK", {
+      status: 200,
     });
   }
 
-  if (event.type === "checkout.session.completed") {
-    const session = event.data.object as Stripe.Checkout.Session;
+  const session =
+    event.data.object as Stripe.Checkout.Session;
 
-    const customerEmail = session.customer_details?.email;
-    const premiumType = session.metadata?.premium_type;
+  const premiumType =
+    session.metadata?.premium_type;
 
-    if (!customerEmail) {
-      return new Response("Keine Kunden-E-Mail gefunden.", {
-        status: 400,
-      });
+  const userId =
+    session.metadata?.user_id;
+
+  const customerEmail =
+    session.customer_details?.email ??
+    session.customer_email;
+
+  if (premiumType === "azubi") {
+    if (!userId) {
+      console.error(
+        "Azubi-Checkout ohne user_id:",
+        session.id
+      );
+
+      return new Response(
+        "Keine Benutzer-ID für Azubi-Kauf gefunden.",
+        {
+          status: 400,
+        }
+      );
     }
 
-    const updateData: {
-      premium_azubi?: boolean;
-      premium_praxisanleiter?: boolean;
-      stripe_customer_id: string;
-      stripe_checkout_session_id: string;
-    } = {
-      stripe_customer_id: String(session.customer ?? ""),
-      stripe_checkout_session_id: session.id,
+    const updateData = {
+      premium_azubi: true,
+      stripe_customer_id:
+        String(session.customer ?? ""),
+      stripe_checkout_session_id:
+        session.id,
     };
 
-    if (premiumType === "azubi") {
-      /*
-       * Neue Azubi-Käufe erhalten ausschließlich
-       * den neuen Azubi-Premiumstatus.
-       *
-       * Das alte Feld "premium" wird NICHT mehr gesetzt.
-       * Dadurch bleibt "premium = true" als Kennzeichen
-       * für bestehende Altkunden erhalten.
-       */
-      updateData.premium_azubi = true;
-    } else if (premiumType === "praxisanleiter") {
-      updateData.premium_praxisanleiter = true;
-    } else {
-      return new Response("Unbekannter Premium-Typ.", {
-        status: 400,
-      });
-    }
-
-    const { error } = await supabase
+    const { data, error } = await supabase
       .from("profiles")
       .update(updateData)
-      .eq("email", customerEmail);
+      .eq("id", userId)
+      .select("id");
 
     if (error) {
-      console.error("Supabase Update Error:", error);
+      console.error(
+        "Supabase Azubi Update Error:",
+        error
+      );
 
-      return new Response("Supabase Update fehlgeschlagen.", {
-        status: 500,
-      });
+      return new Response(
+        "Supabase Update fehlgeschlagen.",
+        {
+          status: 500,
+        }
+      );
     }
+
+    if (!data || data.length !== 1) {
+      console.error(
+        "Azubi-Profil nicht eindeutig gefunden:",
+        {
+          userId,
+          sessionId: session.id,
+          updatedRows: data?.length ?? 0,
+        }
+      );
+
+      return new Response(
+        "PraxisMaik-Profil konnte nicht eindeutig aktualisiert werden.",
+        {
+          status: 500,
+        }
+      );
+    }
+
+    return new Response("OK", {
+      status: 200,
+    });
   }
 
-  return new Response("OK", { status: 200 });
+  if (premiumType === "praxisanleiter") {
+    if (!customerEmail) {
+      return new Response(
+        "Keine Kunden-E-Mail gefunden.",
+        {
+          status: 400,
+        }
+      );
+    }
+
+    const updateData = {
+      premium_praxisanleiter: true,
+      stripe_customer_id:
+        String(session.customer ?? ""),
+      stripe_checkout_session_id:
+        session.id,
+    };
+
+    const { data, error } = await supabase
+      .from("profiles")
+      .update(updateData)
+      .eq("email", customerEmail)
+      .select("id");
+
+    if (error) {
+      console.error(
+        "Supabase Praxisanleiter Update Error:",
+        error
+      );
+
+      return new Response(
+        "Supabase Update fehlgeschlagen.",
+        {
+          status: 500,
+        }
+      );
+    }
+
+    if (!data || data.length !== 1) {
+      console.error(
+        "Praxisanleiter-Profil nicht eindeutig gefunden:",
+        {
+          customerEmail,
+          sessionId: session.id,
+          updatedRows: data?.length ?? 0,
+        }
+      );
+
+      return new Response(
+        "PraxisMaik-Profil konnte nicht eindeutig aktualisiert werden.",
+        {
+          status: 500,
+        }
+      );
+    }
+
+    return new Response("OK", {
+      status: 200,
+    });
+  }
+
+  return new Response(
+    "Unbekannter Premium-Typ.",
+    {
+      status: 400,
+    }
+  );
 }
