@@ -2,66 +2,466 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Registrieren | PraxisMaik">
-  <section style="padding: 4rem 1rem; max-width: 500px; margin: 0 auto;">
-    <h1>Konto erstellen</h1>
+<BaseLayout
+  title="Konto erstellen | PraxisMaik"
+  description="Erstelle dein persönliches PraxisMaik-Konto."
+>
+  <section class="register-page">
+    <div class="register-card">
+      <span class="eyebrow">PraxisMaik Konto</span>
 
-    <form id="register-form" style="display:flex; flex-direction:column; gap:1rem;">
-      <input type="email" id="email" name="email" placeholder="E-Mail" autocomplete="email" required style="padding:1rem;" />
+      <h1>Konto erstellen</h1>
 
-      <input type="password" id="password" name="password" placeholder="Passwort" autocomplete="new-password" required style="padding:1rem;" />
+      <p class="intro">
+        Erstelle dein persönliches PraxisMaik-Konto.
+      </p>
 
-      <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Passwort wiederholen" autocomplete="new-password" required style="padding:1rem;" />
+      <form id="register-form">
+        <label for="email">E-Mail-Adresse</label>
 
-      <button type="button" id="register-button" class="btn primary">
-        Konto erstellen
-      </button>
-    </form>
+        <input
+          type="email"
+          id="email"
+          autocomplete="email"
+          placeholder="deine@email.de"
+          required
+        />
 
-    <p id="message"></p>
+        <label for="password">Passwort</label>
+
+        <div class="password-field">
+          <input
+            type="password"
+            id="password"
+            autocomplete="new-password"
+            placeholder="Passwort"
+            required
+          />
+
+          <button
+            type="button"
+            class="password-toggle"
+            data-target="password"
+            aria-label="Passwort anzeigen"
+            title="Passwort anzeigen"
+          >
+            👁
+          </button>
+        </div>
+
+        <label for="confirmPassword">Passwort wiederholen</label>
+
+        <div class="password-field">
+          <input
+            type="password"
+            id="confirmPassword"
+            autocomplete="new-password"
+            placeholder="Passwort wiederholen"
+            required
+          />
+
+          <button
+            type="button"
+            class="password-toggle"
+            data-target="confirmPassword"
+            aria-label="Passwort anzeigen"
+            title="Passwort anzeigen"
+          >
+            👁
+          </button>
+        </div>
+
+        <p
+          id="password-match"
+          class="password-match"
+          aria-live="polite"
+        ></p>
+
+        <button
+          type="submit"
+          id="register-button"
+          disabled
+        >
+          Konto erstellen
+        </button>
+      </form>
+
+      <p
+        id="message"
+        class="message"
+        aria-live="polite"
+      ></p>
+
+      <p class="login-link">
+        Du hast bereits ein Konto?
+        <a href="/login">Zum Login</a>
+      </p>
+    </div>
   </section>
+</BaseLayout>
 
-  <script>
-    import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
+<script>
+  import { createClient } from '@supabase/supabase-js';
 
-    const supabase = createClient(
-      import.meta.env.PUBLIC_SUPABASE_URL,
-      import.meta.env.PUBLIC_SUPABASE_ANON_KEY
-    );
+  const supabase = createClient(
+    import.meta.env.PUBLIC_SUPABASE_URL,
+    import.meta.env.PUBLIC_SUPABASE_ANON_KEY
+  );
 
-    const button = document.getElementById('register-button');
-    const message = document.getElementById('message');
+  const form = document.getElementById('register-form');
+  const registerButton = document.getElementById('register-button');
+  const message = document.getElementById('message');
 
-    button?.addEventListener('click', async () => {
-      message.textContent = 'Registrierung wird geprüft...';
+  const emailInput = document.getElementById('email');
+  const passwordInput = document.getElementById('password');
+  const confirmPasswordInput =
+    document.getElementById('confirmPassword');
 
-      const email = document.getElementById('email')?.value;
-      const password = document.getElementById('password')?.value;
-      const confirmPassword = document.getElementById('confirmPassword')?.value;
+  const passwordMatch =
+    document.getElementById('password-match');
 
-      if (!email || !password || !confirmPassword) {
-        message.textContent = 'Bitte alle Felder ausfüllen.';
+  const passwordToggleButtons =
+    document.querySelectorAll('.password-toggle');
+
+  function updatePasswordState() {
+    if (
+      !(passwordInput instanceof HTMLInputElement) ||
+      !(confirmPasswordInput instanceof HTMLInputElement) ||
+      !(registerButton instanceof HTMLButtonElement) ||
+      !(passwordMatch instanceof HTMLElement)
+    ) {
+      return;
+    }
+
+    const password = passwordInput.value;
+    const confirmPassword = confirmPasswordInput.value;
+
+    if (!password || !confirmPassword) {
+      passwordMatch.textContent = '';
+      passwordMatch.classList.remove('match', 'no-match');
+      registerButton.disabled = true;
+      registerButton.classList.remove('ready');
+      return;
+    }
+
+    if (password === confirmPassword) {
+      passwordMatch.textContent =
+        '✓ Passwörter stimmen überein';
+
+      passwordMatch.classList.add('match');
+      passwordMatch.classList.remove('no-match');
+
+      registerButton.disabled = false;
+      registerButton.classList.add('ready');
+    } else {
+      passwordMatch.textContent =
+        'Passwörter stimmen noch nicht überein';
+
+      passwordMatch.classList.add('no-match');
+      passwordMatch.classList.remove('match');
+
+      registerButton.disabled = true;
+      registerButton.classList.remove('ready');
+    }
+  }
+
+  passwordInput?.addEventListener(
+    'input',
+    updatePasswordState
+  );
+
+  confirmPasswordInput?.addEventListener(
+    'input',
+    updatePasswordState
+  );
+
+  passwordToggleButtons.forEach((toggleButton) => {
+    toggleButton.addEventListener('click', () => {
+      if (!(toggleButton instanceof HTMLButtonElement)) {
         return;
       }
 
-      if (password !== confirmPassword) {
-        message.textContent = 'Die Passwörter stimmen nicht überein.';
+      const targetId =
+        toggleButton.dataset.target;
+
+      if (!targetId) return;
+
+      const targetInput =
+        document.getElementById(targetId);
+
+      if (!(targetInput instanceof HTMLInputElement)) {
         return;
       }
 
-      const { data, error } = await supabase.auth.signUp({
-        email,
-        password,
+      const passwordIsVisible =
+        targetInput.type === 'text';
+
+      targetInput.type =
+        passwordIsVisible
+          ? 'password'
+          : 'text';
+
+      toggleButton.setAttribute(
+        'aria-label',
+        passwordIsVisible
+          ? 'Passwort anzeigen'
+          : 'Passwort verbergen'
+      );
+
+      toggleButton.setAttribute(
+        'title',
+        passwordIsVisible
+          ? 'Passwort anzeigen'
+          : 'Passwort verbergen'
+      );
+    });
+  });
+
+  form?.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    if (
+      !(message instanceof HTMLElement) ||
+      !(emailInput instanceof HTMLInputElement) ||
+      !(passwordInput instanceof HTMLInputElement) ||
+      !(confirmPasswordInput instanceof HTMLInputElement) ||
+      !(registerButton instanceof HTMLButtonElement)
+    ) {
+      return;
+    }
+
+    const email = emailInput.value.trim();
+    const password = passwordInput.value;
+    const confirmPassword =
+      confirmPasswordInput.value;
+
+    if (!email || !password || !confirmPassword) {
+      message.textContent =
+        'Bitte alle Felder ausfüllen.';
+      return;
+    }
+
+    if (password !== confirmPassword) {
+      message.textContent =
+        'Die Passwörter stimmen nicht überein.';
+      return;
+    }
+
+    registerButton.disabled = true;
+    registerButton.textContent =
+      'Konto wird erstellt ...';
+
+    message.textContent =
+      'Registrierung wird geprüft ...';
+
+   const emailRedirectTo =
+  window.location.hostname === 'localhost' ||
+  window.location.hostname === '127.0.0.1'
+    ? `${window.location.origin}/login`
+    : 'https://praxismaik.de/login';
+
+const { error } =
+  await supabase.auth.signUp({
+    email,
+    password,
+    options: {
+      emailRedirectTo,
+    },
+  });
+
+    if (error) {
+      message.textContent = error.message;
+
+      registerButton.disabled = false;
+      registerButton.textContent =
+        'Konto erstellen';
+
+      return;
+    }
+
+    message.textContent =
+      'Registrierung erfolgreich. Bitte prüfe deine E-Mails und bestätige deine E-Mail-Adresse.';
+
+    form
+      .querySelectorAll('input')
+      .forEach((input) => {
+        input.value = '';
       });
 
-      if (error) {
-        message.textContent = error.message;
-        return;
-      }
+    if (passwordMatch instanceof HTMLElement) {
+      passwordMatch.textContent = '';
+      passwordMatch.classList.remove(
+        'match',
+        'no-match'
+      );
+    }
 
-      const user = data.user;
+    registerButton.disabled = true;
+    registerButton.textContent =
+      'Konto erstellt';
+  });
+</script>
 
-      message.textContent = 'Registrierung erfolgreich. Bitte prüfe deine E-Mails.';
-    });
-  </script>
-</BaseLayout>
+<style>
+  .register-page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 3rem 1.25rem 5rem;
+  }
+
+  .register-card {
+    background: #ffffff;
+    border: 1px solid #ead9c7;
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: 0 18px 50px rgba(33, 51, 66, 0.07);
+  }
+
+  .eyebrow {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #e67e22;
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    margin: 0 0 1rem;
+  }
+
+  .intro {
+    margin-bottom: 2rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  label {
+    margin-top: 0.5rem;
+    font-weight: 700;
+  }
+
+  input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.95rem 1rem;
+    border: 1px solid #d9d9d9;
+    border-radius: 12px;
+    font: inherit;
+  }
+
+  input:focus {
+    outline: 2px solid rgba(230, 126, 34, 0.25);
+    border-color: #e67e22;
+  }
+
+  .password-field {
+    position: relative;
+  }
+
+  .password-field input {
+    padding-right: 3.5rem;
+  }
+
+  .password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 0.65rem;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.6rem;
+    height: 2.6rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 10px;
+    background: transparent;
+    color: #374151;
+    font-size: 1.15rem;
+    cursor: pointer;
+  }
+
+  .password-toggle:hover {
+    background: #fff8f1;
+  }
+
+  .password-match {
+    min-height: 1.4rem;
+    margin: 0.15rem 0 0;
+    font-size: 0.92rem;
+    font-weight: 700;
+  }
+
+  .password-match.match {
+    color: #166534;
+  }
+
+  .password-match.no-match {
+    color: #b45309;
+  }
+
+  #register-button {
+    margin-top: 0.75rem;
+    padding: 1rem 1.25rem;
+    border: 0;
+    border-radius: 12px;
+    background: #d1d5db;
+    color: #6b7280;
+    font: inherit;
+    font-weight: 800;
+    cursor: not-allowed;
+    transition:
+      background 0.2s ease,
+      color 0.2s ease,
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  #register-button.ready {
+    background: #e67e22;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 8px 22px rgba(230, 126, 34, 0.22);
+  }
+
+  #register-button.ready:hover {
+    transform: translateY(-1px);
+  }
+
+  #register-button:disabled {
+    cursor: not-allowed;
+  }
+
+  .message {
+    min-height: 1.5rem;
+    margin-top: 1.25rem;
+    font-weight: 600;
+  }
+
+  .login-link {
+    margin-top: 1.5rem;
+  }
+
+  .login-link a {
+    color: #e67e22;
+    font-weight: 700;
+  }
+
+  @media (max-width: 640px) {
+    .register-page {
+      padding-top: 1.5rem;
+    }
+
+    .register-card {
+      padding: 1.5rem;
+      border-radius: 18px;
+    }
+  }
+</style>
