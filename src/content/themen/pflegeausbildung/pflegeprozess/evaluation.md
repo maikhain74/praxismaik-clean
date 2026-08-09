@@ -6,7 +6,7 @@ level: grundlagen
 
 # Evaluation im Pflegeprozess
 
-Die Evaluation ist der sechste und letzte Schritt des Pflegeprozesses. In diesem Schritt wird überprüft, ob die festgelegten Pflegeziele erreicht wurden und ob die geplanten Pflegemaßnahmen wirksam waren.
+Die Evaluation ist der sechste und letzte Schritt des [Pflegeprozesses](/themen/pflegeausbildung/pflegeprozess/pflegeprozess-grundlagen/). In diesem Schritt wird überprüft, ob die festgelegten [Pflegeziele](/themen/pflegeausbildung/pflegeprozess/pflegeziele/) erreicht wurden und ob die geplanten [Pflegemaßnahmen](/themen/pflegeausbildung/pflegeprozess/pflegemassnahmen/) wirksam waren.
 
 Die Evaluation ist wichtig, weil Pflege keine starre Handlung ist. Gesundheitszustände verändern sich ständig. Deshalb muss regelmäßig überprüft werden, ob die aktuelle Pflegeplanung noch zur Situation der pflegebedürftigen Person passt.
 
@@ -106,7 +106,7 @@ Die Pflegeplanung muss angepasst werden.
 
 ## Anpassung der Pflegeplanung
 
-Werden Ziele nicht erreicht, müssen Ursachen gesucht werden.
+Werden [Pflegeziele](/themen/pflegeausbildung/pflegeprozess/pflegeziele/) nicht erreicht, müssen Ursachen gesucht und die [Pflegemaßnahmen](/themen/pflegeausbildung/pflegeprozess/pflegemassnahmen/) angepasst werden.
 
 Mögliche Gründe:
 
@@ -132,13 +132,13 @@ Die Ergebnisse der Evaluation fließen in die nächste Informationssammlung ein.
 
 Dadurch entsteht ein kontinuierlicher Kreislauf:
 
-1. Informationssammlung
-2. Pflegeprobleme und Ressourcen
-3. Pflegeziele
-4. Pflegemaßnahmen
-5. Durchführung
+1. [Informationssammlung](/themen/pflegeausbildung/pflegeprozess/informationssammlung/)
+2. [Pflegeprobleme und Ressourcen](/themen/pflegeausbildung/pflegeprozess/pflegeprobleme-ressourcen/)
+3. [Pflegeziele](/themen/pflegeausbildung/pflegeprozess/pflegeziele/)
+4. [Pflegemaßnahmen](/themen/pflegeausbildung/pflegeprozess/pflegemassnahmen/)
+5. [Durchführung der Pflege](/themen/pflegeausbildung/pflegeprozess/durchfuehrung/)
 6. Evaluation
-7. erneute Informationssammlung
+7. erneute [Informationssammlung](/themen/pflegeausbildung/pflegeprozess/informationssammlung/)
 
 ## Typische Prüfungsfragen
 
