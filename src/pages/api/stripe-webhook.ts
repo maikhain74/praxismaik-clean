@@ -12,29 +12,82 @@ const supabase = createClient(
   import.meta.env.SUPABASE_SERVICE_ROLE_KEY
 );
 
-export async function POST({ request }: { request: Request }) {
+function verifyStripeEvent(
+  body: string,
+  signature: string
+): Stripe.Event {
+  const liveSecret =
+    import.meta.env.STRIPE_WEBHOOK_SECRET;
+
+  const testSecret =
+    import.meta.env.STRIPE_WEBHOOK_SECRET_TEST;
+
+  if (liveSecret) {
+    try {
+      return stripe.webhooks.constructEvent(
+        body,
+        signature,
+        liveSecret
+      );
+    } catch {
+      // Wenn es kein Live-Ereignis ist,
+      // wird anschließend der Sandbox-Schlüssel geprüft.
+    }
+  }
+
+  if (testSecret) {
+    try {
+      return stripe.webhooks.constructEvent(
+        body,
+        signature,
+        testSecret
+      );
+    } catch {
+      // Beide Signaturprüfungen sind fehlgeschlagen.
+    }
+  }
+
+  throw new Error(
+    "Stripe-Signatur konnte nicht verifiziert werden."
+  );
+}
+
+export async function POST({
+  request,
+}: {
+  request: Request;
+}) {
   const body = await request.text();
-  const signature = request.headers.get("stripe-signature");
+
+  const signature =
+    request.headers.get("stripe-signature");
 
   if (!signature) {
-    return new Response("Stripe-Signatur fehlt.", {
-      status: 400,
-    });
+    return new Response(
+      "Stripe-Signatur fehlt.",
+      {
+        status: 400,
+      }
+    );
   }
 
   let event: Stripe.Event;
 
   try {
-    event = stripe.webhooks.constructEvent(
+    event = verifyStripeEvent(
       body,
-      signature,
-      import.meta.env.STRIPE_WEBHOOK_SECRET
+      signature
     );
   } catch (err) {
     const message =
       err instanceof Error
         ? err.message
         : "Unbekannter Webhook-Fehler";
+
+    console.error(
+      "Stripe Webhook Signaturfehler:",
+      message
+    );
 
     return new Response(
       `Webhook Error: ${message}`,
@@ -44,7 +97,10 @@ export async function POST({ request }: { request: Request }) {
     );
   }
 
-  if (event.type !== "checkout.session.completed") {
+  if (
+    event.type !==
+    "checkout.session.completed"
+  ) {
     return new Response("OK", {
       status: 200,
     });
@@ -80,13 +136,18 @@ export async function POST({ request }: { request: Request }) {
 
     const updateData = {
       premium_azubi: true,
+
       stripe_customer_id:
         String(session.customer ?? ""),
+
       stripe_checkout_session_id:
         session.id,
     };
 
-    const { data, error } = await supabase
+    const {
+      data,
+      error,
+    } = await supabase
       .from("profiles")
       .update(updateData)
       .eq("id", userId)
@@ -112,7 +173,8 @@ export async function POST({ request }: { request: Request }) {
         {
           userId,
           sessionId: session.id,
-          updatedRows: data?.length ?? 0,
+          updatedRows:
+            data?.length ?? 0,
         }
       );
 
@@ -124,12 +186,23 @@ export async function POST({ request }: { request: Request }) {
       );
     }
 
+    console.log(
+      "Azubi-Premium erfolgreich freigeschaltet:",
+      {
+        userId,
+        sessionId: session.id,
+      }
+    );
+
     return new Response("OK", {
       status: 200,
     });
   }
 
-  if (premiumType === "praxisanleiter") {
+  if (
+    premiumType ===
+    "praxisanleiter"
+  ) {
     if (!customerEmail) {
       return new Response(
         "Keine Kunden-E-Mail gefunden.",
@@ -141,13 +214,18 @@ export async function POST({ request }: { request: Request }) {
 
     const updateData = {
       premium_praxisanleiter: true,
+
       stripe_customer_id:
         String(session.customer ?? ""),
+
       stripe_checkout_session_id:
         session.id,
     };
 
-    const { data, error } = await supabase
+    const {
+      data,
+      error,
+    } = await supabase
       .from("profiles")
       .update(updateData)
       .eq("email", customerEmail)
@@ -173,7 +251,8 @@ export async function POST({ request }: { request: Request }) {
         {
           customerEmail,
           sessionId: session.id,
-          updatedRows: data?.length ?? 0,
+          updatedRows:
+            data?.length ?? 0,
         }
       );
 
@@ -185,10 +264,26 @@ export async function POST({ request }: { request: Request }) {
       );
     }
 
+    console.log(
+      "Praxisanleiter-Premium erfolgreich freigeschaltet:",
+      {
+        customerEmail,
+        sessionId: session.id,
+      }
+    );
+
     return new Response("OK", {
       status: 200,
     });
   }
+
+  console.error(
+    "Unbekannter Premium-Typ:",
+    {
+      premiumType,
+      sessionId: session.id,
+    }
+  );
 
   return new Response(
     "Unbekannter Premium-Typ.",
