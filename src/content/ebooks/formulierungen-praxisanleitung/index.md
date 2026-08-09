@@ -1,6 +1,6 @@
 ---
-title: "Praxisanleitung in der Pflege"
-beschreibung: "500 Formulierungen für Erstgespräche, Zwischengespräche, Abschlussgespräche und Beurteilungsbögen in der Pflegeausbildung."
+title: "Formulierungen für Praxisanleiter"
+beschreibung: "Über 350 Formulierungsbeispiele für Erstgespräche, Zwischengespräche, Abschlussgespräche und Beurteilungsbögen in der Pflegeausbildung."
 premium: true
 ebook: true
 reihenfolge: 1
@@ -9,7 +9,7 @@ cover: "/images/ebooks/formulierungen-praxisanleitung-cover.webp"
 
 # Praxisanleitung in der Pflege
 
-## 500 Formulierungen für Erstgespräche, Zwischengespräche, Abschlussgespräche und Beurteilungsbögen
+Für Erstgespräche, Zwischengespräche, Abschlussgespräche und Beurteilungsbögen
 
 Dieses E-Book richtet sich an Praxisanleiterinnen und Praxisanleiter, die Auszubildende in der generalistischen Pflegeausbildung begleiten und beurteilen.
 
