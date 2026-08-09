@@ -60,7 +60,25 @@ const hasPremiumCookie =
   Astro.cookies.get('praxismaik_premium')?.value === '1' ||
   Astro.cookies.get('praxismaik_premium')?.value === 'true';
 
-const showFullContent = !isPremium || devUnlock || hasPremiumCookie;
+const praxisanleiterPremiumCookieValue =
+  Astro.cookies.get('praxismaik_premium_praxisanleiter')?.value;
+
+const hasPraxisanleiterPremium =
+  praxisanleiterPremiumCookieValue === '1' ||
+  praxisanleiterPremiumCookieValue === 'true';
+
+const isPraxisanleiterFall =
+  eintrag.data.topic === 'praxisanleitung';
+
+const hasRequiredPremium =
+  isPraxisanleiterFall
+    ? hasPraxisanleiterPremium
+    : hasPremiumCookie;
+
+const showFullContent =
+  !isPremium ||
+  devUnlock ||
+  hasRequiredPremium;
 
 const referer = Astro.request.headers.get('referer') ?? '';
 const sameOriginReferer = referer.startsWith(Astro.url.origin) ? referer : '';
