@@ -54,9 +54,6 @@ if (!sessionId) {
      * Bei Sandbox-Käufen reicht die Kombination aus:
      * gültiger Stripe-Session + erfolgreicher Zahlung +
      * korrektem premium_type.
-     *
-     * Die Test-Preis-ID muss dadurch nicht zusätzlich als
-     * Production-Variable gepflegt werden.
      */
     const azubiProduct = isTestSession
       ? premiumType === "azubi"
@@ -186,8 +183,12 @@ const isPraxisanleiterPurchase =
             <p class="success-lead">
               Deine Zahlung wurde bestätigt. Dein
               Premium-Zugang für Pflegeazubis ist jetzt
-              freigeschaltet und du kannst sofort auf die
-              Premium-Inhalte zugreifen.
+              freigeschaltet.
+            </p>
+
+            <p class="success-lead">
+              Du kannst jetzt auf alle zentralen
+              Premium-Bereiche zugreifen:
             </p>
 
             <div class="success-actions">
@@ -201,6 +202,17 @@ const isPraxisanleiterPurchase =
 
               <a href="/quiz-exam" class="btn secondary">
                 Zum Examensquiz
+              </a>
+
+              <a href="/ebooks" class="btn secondary">
+                Zu den Premium-E-Books
+              </a>
+
+              <a
+                href="/visuelle-lernkarten"
+                class="btn secondary"
+              >
+                Zu den Lernkarten
               </a>
             </div>
 
@@ -246,6 +258,7 @@ const isPraxisanleiterPurchase =
   {isAzubiPurchase && (
     <script is:inline>
       localStorage.removeItem("praxismaik_premium");
+
       localStorage.setItem(
         "praxismaik_premium_azubi",
         "true"
