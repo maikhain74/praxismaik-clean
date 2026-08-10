@@ -4,8 +4,6 @@ export const prerender = false;
 import Stripe from "stripe";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-const stripe = new Stripe(import.meta.env.STRIPE_SECRET_KEY);
-
 const sessionId = Astro.url.searchParams.get("session_id");
 
 let paymentVerified = false;
@@ -18,6 +16,30 @@ if (!sessionId) {
     "Die Zahlungsbestätigung fehlt. Bitte rufe diese Seite nur nach dem abgeschlossenen Bezahlvorgang auf.";
 } else {
   try {
+    /*
+     * Stripe Test- und Live-Sessions gehören zu getrennten
+     * Stripe-Umgebungen.
+     *
+     * Eine cs_test_-Session muss deshalb mit dem Testschlüssel
+     * geprüft werden. Echte Käufe verwenden weiterhin ausschließlich
+     * den Live-Schlüssel.
+     */
+    const isTestSession = sessionId.startsWith("cs_test_");
+
+    const stripeSecretKey = isTestSession
+      ? import.meta.env.STRIPE_SECRET_KEY_TEST
+      : import.meta.env.STRIPE_SECRET_KEY;
+
+    if (!stripeSecretKey) {
+      throw new Error(
+        isTestSession
+          ? "STRIPE_SECRET_KEY_TEST fehlt."
+          : "STRIPE_SECRET_KEY fehlt."
+      );
+    }
+
+    const stripe = new Stripe(stripeSecretKey);
+
     const session = await stripe.checkout.sessions.retrieve(sessionId, {
       expand: ["line_items"],
     });
@@ -25,13 +47,27 @@ if (!sessionId) {
     const purchasedPriceId = session.line_items?.data[0]?.price?.id;
     const premiumType = session.metadata?.premium_type;
 
-    const azubiProduct =
-      purchasedPriceId === import.meta.env.STRIPE_PRICE_ID &&
-      premiumType === "azubi";
+    /*
+     * Bei Live-Käufen prüfen wir weiterhin gegen die
+     * Live-Preis-IDs.
+     *
+     * Bei Sandbox-Käufen reicht die Kombination aus:
+     * gültiger Stripe-Session + erfolgreicher Zahlung +
+     * korrektem premium_type.
+     *
+     * Die Test-Preis-ID muss dadurch nicht zusätzlich als
+     * Production-Variable gepflegt werden.
+     */
+    const azubiProduct = isTestSession
+      ? premiumType === "azubi"
+      : purchasedPriceId === import.meta.env.STRIPE_PRICE_ID &&
+        premiumType === "azubi";
 
-    const praxisanleiterProduct =
-      purchasedPriceId === import.meta.env.STRIPE_PRICE_ID_PRAXISANLEITER &&
-      premiumType === "praxisanleiter";
+    const praxisanleiterProduct = isTestSession
+      ? premiumType === "praxisanleiter"
+      : purchasedPriceId ===
+          import.meta.env.STRIPE_PRICE_ID_PRAXISANLEITER &&
+        premiumType === "praxisanleiter";
 
     const paymentCompleted =
       session.status === "complete" &&
@@ -50,20 +86,27 @@ if (!sessionId) {
       correctMode &&
       purchasedProduct !== null;
 
-if (paymentVerified && purchasedProduct === "azubi") {
-  Astro.cookies.set("praxismaik_premium_azubi", "true", {
-    path: "/",
-    sameSite: "lax",
-    secure: import.meta.env.PROD,
-  });
-}
-
-    if (paymentVerified && purchasedProduct === "praxisanleiter") {
-      Astro.cookies.set("praxismaik_premium_praxisanleiter", "true", {
+    if (paymentVerified && purchasedProduct === "azubi") {
+      Astro.cookies.set("praxismaik_premium_azubi", "true", {
         path: "/",
         sameSite: "lax",
         secure: import.meta.env.PROD,
       });
+    }
+
+    if (
+      paymentVerified &&
+      purchasedProduct === "praxisanleiter"
+    ) {
+      Astro.cookies.set(
+        "praxismaik_premium_praxisanleiter",
+        "true",
+        {
+          path: "/",
+          sameSite: "lax",
+          secure: import.meta.env.PROD,
+        }
+      );
     }
 
     if (!paymentVerified) {
@@ -71,7 +114,10 @@ if (paymentVerified && purchasedProduct === "azubi") {
         "Die Zahlung konnte noch nicht eindeutig bestätigt werden. Bitte versuche es in wenigen Minuten erneut oder melde dich mit deinem PraxisMaik-Konto an.";
     }
   } catch (error) {
-    console.error("Stripe-Session konnte nicht geprüft werden:", error);
+    console.error(
+      "Stripe-Session konnte nicht geprüft werden:",
+      error
+    );
 
     errorMessage =
       "Die Zahlungsbestätigung konnte nicht geprüft werden. Bitte melde dich mit deinem PraxisMaik-Konto an oder kontaktiere den Support.";
@@ -86,7 +132,11 @@ const isPraxisanleiterPurchase =
 ---
 
 <BaseLayout
-  title={paymentVerified ? "Premium freigeschaltet" : "Zahlung wird geprüft"}
+  title={
+    paymentVerified
+      ? "Premium freigeschaltet"
+      : "Zahlung wird geprüft"
+  }
   description={
     paymentVerified
       ? "Dein PraxisMaik Premium-Zugang ist jetzt aktiv."
@@ -105,31 +155,39 @@ const isPraxisanleiterPurchase =
         {isPraxisanleiterPurchase ? (
           <>
             <p class="success-lead">
-              Deine Zahlung wurde bestätigt. Dein Praxisanleiter-Premium-Zugang
-              ist jetzt freigeschaltet.
+              Deine Zahlung wurde bestätigt. Dein
+              Praxisanleiter-Premium-Zugang ist jetzt
+              freigeschaltet.
             </p>
 
             <div class="success-actions">
-              <a href="/praxisanleiter-premium/" class="btn">
+              <a
+                href="/praxisanleiter-premium/"
+                class="btn"
+              >
                 Zu Praxisanleiter Premium
               </a>
 
-              <a href="/praxisanleitung/faelle/" class="btn secondary">
+              <a
+                href="/praxisanleitung/faelle/"
+                class="btn secondary"
+              >
                 Zu den Praxisanleiter-Fällen
               </a>
             </div>
 
             <p class="success-note">
-              Dein Praxisanleiter-Premium-Zugang ist vom Premiumbereich für
-              Pflegeazubis getrennt.
+              Dein Praxisanleiter-Premium-Zugang ist vom
+              Premiumbereich für Pflegeazubis getrennt.
             </p>
           </>
         ) : (
           <>
             <p class="success-lead">
-              Deine Zahlung wurde bestätigt. Dein Premium-Zugang für
-              Pflegeazubis ist jetzt freigeschaltet und du kannst sofort auf
-              die Premium-Inhalte zugreifen.
+              Deine Zahlung wurde bestätigt. Dein
+              Premium-Zugang für Pflegeazubis ist jetzt
+              freigeschaltet und du kannst sofort auf die
+              Premium-Inhalte zugreifen.
             </p>
 
             <div class="success-actions">
@@ -147,9 +205,10 @@ const isPraxisanleiterPurchase =
             </div>
 
             <p class="success-note">
-              Dein Kauf bleibt dauerhaft in deinem PraxisMaik-Konto
-              gespeichert. Melde dich bei einem Geräte- oder Browserwechsel
-              erneut mit deiner E-Mail-Adresse an.
+              Dein Kauf bleibt dauerhaft in deinem
+              PraxisMaik-Konto gespeichert. Melde dich bei
+              einem Geräte- oder Browserwechsel erneut mit
+              deiner E-Mail-Adresse an.
             </p>
           </>
         )}
@@ -177,7 +236,8 @@ const isPraxisanleiterPurchase =
         </div>
 
         <p class="success-note">
-          Es wurde auf dieser Seite kein Premium-Zugang freigeschaltet.
+          Es wurde auf dieser Seite kein Premium-Zugang
+          freigeschaltet.
         </p>
       </>
     )}
@@ -186,11 +246,15 @@ const isPraxisanleiterPurchase =
   {isAzubiPurchase && (
     <script is:inline>
       localStorage.removeItem("praxismaik_premium");
-      localStorage.setItem("praxismaik_premium_azubi", "true");
-
-      const purchaseAlreadyTracked = sessionStorage.getItem(
-        "praxismaik_purchase_azubi_tracked"
+      localStorage.setItem(
+        "praxismaik_premium_azubi",
+        "true"
       );
+
+      const purchaseAlreadyTracked =
+        sessionStorage.getItem(
+          "praxismaik_purchase_azubi_tracked"
+        );
 
       if (
         !purchaseAlreadyTracked &&
@@ -218,9 +282,10 @@ const isPraxisanleiterPurchase =
         "true"
       );
 
-      const purchaseAlreadyTracked = sessionStorage.getItem(
-        "praxismaik_purchase_praxisanleiter_tracked"
-      );
+      const purchaseAlreadyTracked =
+        sessionStorage.getItem(
+          "praxismaik_purchase_praxisanleiter_tracked"
+        );
 
       if (
         !purchaseAlreadyTracked &&
