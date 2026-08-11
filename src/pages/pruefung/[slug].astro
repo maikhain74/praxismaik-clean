@@ -175,11 +175,27 @@ const backLabel = sameOriginReferer.includes('/themen/')
       </section>
     )}
 
-   <PremiumGate
-  title="Hier entscheidet sich, ob du den Fall wirklich verstehst"
-  text="Die Vorschau zeigt dir nur die Situation. Die entscheidende Denklogik, Prioritäten und Begründung fehlen hier. Genau das ist der Teil, der in Prüfungen bewertet wird."
-  buttonText="Jetzt sicher durch die Prüfung lernen"
-  buttonHref="/premium-interesse"
+<PremiumGate
+  title={
+    isPraxisanleiterFall
+      ? "Dieser Praxisanleiter-Fall gehört zu Praxisanleiter Premium"
+      : "Hier entscheidet sich, ob du den Fall wirklich verstehst"
+  }
+  text={
+    isPraxisanleiterFall
+      ? "Die vollständige Fallanalyse mit Denkstruktur, Reflexion und fachlicher Einordnung ist Teil von Praxisanleiter Premium."
+      : "Die Vorschau zeigt dir nur die Situation. Die entscheidende Denklogik, Prioritäten und Begründung fehlen hier. Genau das ist der Teil, der in Prüfungen bewertet wird."
+  }
+  buttonText={
+    isPraxisanleiterFall
+      ? "Praxisanleiter Premium ansehen"
+      : "Jetzt sicher durch die Prüfung lernen"
+  }
+  buttonHref={
+    isPraxisanleiterFall
+      ? "/praxisanleiter-premium"
+      : "/premium-interesse"
+  }
 />
 <p class="preview-warning">
   Wenn du nur bis hier lernst, fehlt dir genau der Teil, der in der Prüfung bewertet wird.

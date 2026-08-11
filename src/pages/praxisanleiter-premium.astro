@@ -705,10 +705,19 @@ const hasPraxisanleiterPremium =
     text-decoration: none;
   }
 
-  .hero {
-    max-width: 850px;
-    margin-bottom: 4rem;
-  }
+ .pa-premium-page .hero {
+  display: block !important;
+  grid-template-columns: none !important;
+  max-width: none !important;
+  width: 100%;
+  margin-bottom: 4rem;
+  padding: 0 !important;
+}
+
+.pa-premium-page .hero h1 {
+  max-width: none !important;
+  width: 100%;
+}
 
   .eyebrow,
   .section-label,
