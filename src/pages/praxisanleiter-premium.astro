@@ -180,7 +180,7 @@ const hasPraxisanleiterPremium =
 
           <div class="hero-cta">
             <a
-              href="/api/checkout-praxisanleiter"
+              href="#praxisanleiter-kaufen"
               class="buy-button"
               data-ga-event="praxisanleiter_premium_hero_checkout"
             >
@@ -454,7 +454,7 @@ const hasPraxisanleiterPremium =
           </div>
         </section>
 
-        <section class="final-cta">
+        <section class="final-cta" id="praxisanleiter-kaufen">
           <span>PraxisMaik Praxisanleiter Premium</span>
 
           <h2>Mach dir gute Praxisanleitung leichter.</h2>
@@ -469,18 +469,44 @@ const hasPraxisanleiterPremium =
             <small>einmalig · kein Abo · dauerhafter Zugriff</small>
           </div>
 
-          <a
-            href="/api/checkout-praxisanleiter"
-            class="buy-button"
-            data-ga-event="praxisanleiter_premium_final_checkout"
-          >
-            Praxisanleiter Premium freischalten
-          </a>
+         <form
+  id="praxisanleiter-checkout-form"
+  class="pa-checkout-form"
+>
+  <label class="withdrawal-consent">
+    <input
+      type="checkbox"
+      id="praxisanleiter-withdrawal-consent"
+      required
+    />
+
+    <span>
+      Ich stimme zu, dass der Zugriff auf die digitalen
+      Premium-Inhalte sofort nach dem Kauf beginnt. Mir ist
+      bekannt, dass mein Widerrufsrecht dadurch erlischt.
+    </span>
+  </label>
+
+  <button
+    type="submit"
+    id="praxisanleiter-checkout-button"
+    class="buy-button"
+    data-ga-event="praxisanleiter_premium_final_checkout"
+  >
+    Praxisanleiter Premium freischalten
+  </button>
+
+  <p
+    id="praxisanleiter-checkout-message"
+    class="checkout-message"
+    aria-live="polite"
+  ></p>
+</form>
         </section>
 
         <div class="mobile-cta">
           <a
-            href="/api/checkout-praxisanleiter"
+           href="#praxisanleiter-kaufen" 
             data-ga-event="praxisanleiter_premium_mobile_checkout"
           >
             Praxisanleiter Premium · 79 €
@@ -490,6 +516,172 @@ const hasPraxisanleiterPremium =
     )}
   </section>
 </BaseLayout>
+
+<script>
+  import { createClient } from "@supabase/supabase-js";
+
+  const supabase = createClient(
+    import.meta.env.PUBLIC_SUPABASE_URL,
+    import.meta.env.PUBLIC_SUPABASE_ANON_KEY
+  );
+
+  const form =
+    document.getElementById(
+      "praxisanleiter-checkout-form"
+    );
+
+  const button =
+    document.getElementById(
+      "praxisanleiter-checkout-button"
+    );
+
+  const message =
+    document.getElementById(
+      "praxisanleiter-checkout-message"
+    );
+
+  function setMessage(text) {
+    if (message instanceof HTMLElement) {
+      message.textContent = text;
+    }
+  }
+
+  function resetButton() {
+    if (button instanceof HTMLButtonElement) {
+      button.disabled = false;
+      button.textContent =
+        "Praxisanleiter Premium freischalten";
+    }
+  }
+
+  form?.addEventListener(
+    "submit",
+    async (event) => {
+      event.preventDefault();
+
+      if (!(button instanceof HTMLButtonElement)) {
+        return;
+      }
+
+      button.disabled = true;
+      button.textContent =
+        "Anmeldung wird geprüft ...";
+
+      setMessage(
+        "Dein PraxisMaik-Konto wird geprüft ..."
+      );
+
+      try {
+        const {
+          data: { session },
+          error: sessionError,
+        } = await supabase.auth.getSession();
+
+        if (
+          sessionError ||
+          !session ||
+          !session.access_token
+        ) {
+          window.location.href =
+            "/login?redirect=%2Fpraxisanleiter-premium";
+          return;
+        }
+
+        const {
+          data: { user },
+          error: userError,
+        } = await supabase.auth.getUser();
+
+        if (userError || !user) {
+          await supabase.auth.signOut({
+            scope: "local",
+          });
+
+          window.location.href =
+            "/login?redirect=%2Fpraxisanleiter-premium";
+          return;
+        }
+
+        button.textContent =
+          "Stripe wird geöffnet ...";
+
+        setMessage(
+          "Alles geprüft. Du wirst jetzt sicher zu Stripe weitergeleitet."
+        );
+
+        const response = await fetch(
+          "/api/checkout-praxisanleiter",
+          {
+            method: "POST",
+
+            headers: {
+              Authorization:
+                `Bearer ${session.access_token}`,
+              "Content-Type":
+                "application/json",
+            },
+          }
+        );
+
+        let result = {};
+
+        try {
+          result = await response.json();
+        } catch {
+          result = {};
+        }
+
+        if (response.status === 401) {
+          await supabase.auth.signOut({
+            scope: "local",
+          });
+
+          window.location.href =
+            "/login?redirect=%2Fpraxisanleiter-premium";
+          return;
+        }
+
+        if (!response.ok) {
+          const errorMessage =
+            typeof result.error === "string"
+              ? result.error
+              : "Der Bezahlvorgang konnte nicht gestartet werden.";
+
+          setMessage(errorMessage);
+          resetButton();
+
+          return;
+        }
+
+        if (
+          typeof result.url !== "string" ||
+          !result.url.startsWith("https://")
+        ) {
+          setMessage(
+            "Stripe konnte nicht geöffnet werden. Bitte versuche es erneut."
+          );
+
+          resetButton();
+
+          return;
+        }
+
+        window.location.href = result.url;
+      } catch (error) {
+        console.error(
+          "Praxisanleiter Checkout Fehler:",
+          error
+        );
+
+        setMessage(
+          "Der Bezahlvorgang konnte nicht gestartet werden. Bitte versuche es erneut."
+        );
+
+        resetButton();
+      }
+    }
+  );
+</script>
 
 <style>
   .pa-premium-page {
@@ -1023,6 +1215,51 @@ const hasPraxisanleiterPremium =
 .foundation-link:hover {
   opacity: 0.94;
   text-decoration: none;
+}
+
+.pa-checkout-form {
+  max-width: 720px;
+  margin: 1.5rem auto 0;
+}
+
+.withdrawal-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  margin-bottom: 1.2rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(24, 50, 74, 0.1);
+  border-radius: 14px;
+  background: #ffffff;
+  color: #374151;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.withdrawal-consent input {
+  flex: 0 0 auto;
+  margin-top: 0.35rem;
+}
+
+.pa-checkout-form button.buy-button {
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+.pa-checkout-form button.buy-button:disabled {
+  cursor: default;
+  opacity: 0.65;
+}
+
+.checkout-message {
+  min-height: 1.4rem;
+  margin: 0.85rem 0 0;
+  color: #556270;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 @media (max-width: 800px) {
