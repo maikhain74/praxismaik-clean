@@ -1,0 +1,720 @@
+---
+export const prerender = false;
+
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const praxisanleiterPremiumCookie =
+  Astro.cookies.get("praxismaik_premium_praxisanleiter")?.value;
+
+const isLocalhost =
+  Astro.url.hostname === "localhost" ||
+  Astro.url.hostname === "127.0.0.1";
+
+const devUnlock =
+  Astro.url.searchParams.get("freischalten") === "1" &&
+  isLocalhost;
+
+const hasPraxisanleiterPremium =
+  praxisanleiterPremiumCookie === "1" ||
+  praxisanleiterPremiumCookie === "true" ||
+  devUnlock;
+
+if (!hasPraxisanleiterPremium) {
+  return Astro.redirect("/praxisanleiter-premium");
+}
+---
+
+<BaseLayout
+  title="Anleitungsplanung & Vorlagen | Praxisanleiter Premium"
+  description="Direkt nutzbare Vorlagen für Anleitungsplanung, Reflexion, Feedback und Beurteilung in der Praxisanleitung."
+>
+  <main class="tools-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Start</a>
+      <span>›</span>
+      <a href="/praxisanleitung/">Praxisanleitung</a>
+      <span>›</span>
+      <a href="/praxisanleiter-premium/">Premium</a>
+      <span>›</span>
+      <span>Vorlagen</span>
+    </nav>
+
+    <header class="tools-hero">
+      <span class="eyebrow">Praxisanleiter Premium</span>
+
+      <h1>Anleitungsplanung & Vorlagen</h1>
+
+      <p>
+        Nutze die Vorlagen direkt zur Vorbereitung, Durchführung und
+        Nachbereitung deiner Praxisanleitungen. Statt jedes Dokument neu
+        aufzubauen, bekommst du eine klare Struktur für typische Situationen
+        im Ausbildungsalltag.
+      </p>
+    </header>
+
+    <section class="tool-navigation">
+      <div class="section-heading">
+        <span>Deine Werkzeuge</span>
+        <h2>Was möchtest du gerade vorbereiten?</h2>
+      </div>
+
+      <div class="tool-grid">
+        <a href="#anleitungsplanung" class="tool-card">
+          <span class="tool-number">01</span>
+          <h3>Anleitungsplanung</h3>
+          <p>
+            Eine geplante Anleitung von Ausgangssituation und Lernziel bis
+            Reflexion und Evaluation strukturieren.
+          </p>
+          <strong>Vorlage öffnen →</strong>
+        </a>
+
+        <a href="#reflexionsbogen" class="tool-card">
+          <span class="tool-number">02</span>
+          <h3>Reflexionsbogen</h3>
+          <p>
+            Eine durchgeführte Anleitung gemeinsam mit dem Auszubildenden
+            systematisch reflektieren.
+          </p>
+          <strong>Vorlage öffnen →</strong>
+        </a>
+
+        <a href="#feedbackbogen" class="tool-card">
+          <span class="tool-number">03</span>
+          <h3>Feedbackbogen</h3>
+          <p>
+            Beobachtungen, Stärken, Entwicklungsfelder und nächste Lernziele
+            nachvollziehbar festhalten.
+          </p>
+          <strong>Vorlage öffnen →</strong>
+        </a>
+
+        <a href="#beurteilungsbogen" class="tool-card">
+          <span class="tool-number">04</span>
+          <h3>Beurteilungsbogen</h3>
+          <p>
+            Die Entwicklung des Auszubildenden entlang der fünf
+            Kompetenzbereiche strukturiert einschätzen.
+          </p>
+          <strong>Vorlage öffnen →</strong>
+        </a>
+
+         <a href="#selbstreflexion" class="tool-card">
+           <span class="tool-number">05</span>
+           <h3>Selbstreflexion für Auszubildende</h3>
+         <p>
+          Auszubildende reflektieren nach der Anleitung ihr eigenes Handeln,
+          ihre Entscheidungen, Unsicherheiten und nächsten Lernschritte.
+         </p>
+           <strong>Vorlage öffnen →</strong>
+        </a>
+      </div>
+    </section>
+
+    <section class="template" id="anleitungsplanung">
+      <div class="template-heading">
+        <span>Vorlage 01</span>
+        <h2>Anleitungsplanung</h2>
+        <p>
+          Nutze diese Struktur vor einer geplanten Praxisanleitung. Sie hilft
+          dir, Lernziel, Methode, Durchführung und Auswertung sinnvoll
+          miteinander zu verbinden.
+        </p>
+      </div>
+
+      <div class="form-grid">
+        <label>
+          <span>Thema der Praxisanleitung</span>
+          <textarea rows="3"></textarea>
+        </label>
+
+        <label>
+          <span>Ausbildungsstand</span>
+          <textarea
+            rows="3"
+            placeholder="Zum Beispiel Ausbildungsjahr, Einsatzbereich oder bisheriger Lernstand"
+          ></textarea>
+        </label>
+
+        <label class="full-width">
+          <span>Ausgangssituation und vorhandene Vorkenntnisse</span>
+          <textarea
+            rows="4"
+            placeholder="Was kann der Auszubildende bereits? Wo besteht Lernbedarf?"
+          ></textarea>
+        </label>
+
+        <label class="full-width">
+          <span>Konkretes Lernziel</span>
+          <textarea
+            rows="4"
+            placeholder="Was soll der Auszubildende nach der Anleitung wissen, verstehen oder selbstständig durchführen können?"
+          ></textarea>
+        </label>
+
+        <label>
+          <span>Geplante Anleitungsmethode</span>
+          <textarea
+            rows="3"
+            placeholder="Zum Beispiel Vier-Stufen-Methode, Demonstration, begleitetes Handeln"
+          ></textarea>
+        </label>
+
+        <label>
+          <span>Zeitrahmen</span>
+          <textarea rows="3"></textarea>
+        </label>
+
+        <label class="full-width">
+          <span>Benötigte Materialien und Vorbereitung</span>
+          <textarea rows="4"></textarea>
+        </label>
+
+        <label class="full-width">
+          <span>Geplanter Ablauf</span>
+          <textarea
+            rows="7"
+            placeholder="Einstieg, Vorkenntnisse, Erklärung, Durchführung, Übungsphase und Abschluss"
+          ></textarea>
+        </label>
+
+        <label class="full-width">
+          <span>Beobachtungskriterien</span>
+          <textarea
+            rows="5"
+            placeholder="Worauf möchtest du während der Durchführung besonders achten?"
+          ></textarea>
+        </label>
+
+        <label class="full-width">
+          <span>Reflexion</span>
+          <textarea
+            rows="5"
+            placeholder="Welche Fragen möchtest du anschließend gemeinsam besprechen?"
+          ></textarea>
+        </label>
+
+        <label class="full-width">
+          <span>Evaluation und weiterer Lernbedarf</span>
+          <textarea
+            rows="5"
+            placeholder="Wurde das Lernziel erreicht? Was sollte weiter geübt oder vertieft werden?"
+          ></textarea>
+        </label>
+      </div>
+    </section>
+
+    <section class="template" id="reflexionsbogen">
+      <div class="template-heading">
+        <span>Vorlage 02</span>
+        <h2>Reflexionsbogen</h2>
+        <p>
+          Die Reflexion soll nicht nur klären, ob etwas funktioniert hat,
+          sondern warum und was daraus für den nächsten Lernschritt folgt.
+        </p>
+      </div>
+
+      <div class="form-grid">
+        <label class="full-width">
+          <span>Thema der Praxisanleitung</span>
+          <textarea rows="3"></textarea>
+        </label>
+
+        <label class="full-width">
+          <span>Was ist gut gelungen?</span>
+          <textarea rows="5"></textarea>
+        </label>
+
+        <label class="full-width">
+          <span>Wo gab es Unsicherheiten oder Schwierigkeiten?</span>
+          <textarea rows="5"></textarea>
+        </label>
+
+        <label class="full-width">
+          <span>Was habe ich heute neu verstanden oder gelernt?</span>
+          <textarea rows="5"></textarea>
+        </label>
+
+        <label class="full-width">
+          <span>Was würde ich beim nächsten Mal anders machen?</span>
+          <textarea rows="5"></textarea>
+        </label>
+
+        <label class="full-width">
+          <span>Welche Unterstützung oder Übung brauche ich noch?</span>
+          <textarea rows="5"></textarea>
+        </label>
+
+        <label class="full-width">
+          <span>Nächster vereinbarter Lernschritt</span>
+          <textarea rows="4"></textarea>
+        </label>
+      </div>
+    </section>
+
+    <section class="template" id="feedbackbogen">
+      <div class="template-heading">
+        <span>Vorlage 03</span>
+        <h2>Feedbackbogen</h2>
+        <p>
+          Halte konkrete Beobachtungen fest und leite daraus nachvollziehbare
+          Entwicklungsziele ab.
+        </p>
+      </div>
+
+      <div class="form-grid">
+        <label class="full-width">
+          <span>Situation oder Thema</span>
+          <textarea rows="3"></textarea>
+        </label>
+
+        <label class="full-width">
+          <span>Positive Beobachtungen und erkennbare Stärken</span>
+          <textarea rows="5"></textarea>
+        </label>
+
+        <label class="full-width">
+          <span>Konkrete Entwicklungsfelder</span>
+          <textarea rows="5"></textarea>
+        </label>
+
+        <label class="full-width">
+          <span>Rückmeldung des Auszubildenden</span>
+          <textarea rows="5"></textarea>
+        </label>
+
+        <label class="full-width">
+          <span>Gemeinsam vereinbarte Ziele</span>
+          <textarea rows="5"></textarea>
+        </label>
+
+        <label>
+          <span>Termin zur Überprüfung</span>
+          <textarea rows="3"></textarea>
+        </label>
+
+        <label>
+          <span>Weitere Unterstützung</span>
+          <textarea rows="3"></textarea>
+        </label>
+      </div>
+    </section>
+
+    <section class="template" id="beurteilungsbogen">
+      <div class="template-heading">
+        <span>Vorlage 04</span>
+        <h2>Beurteilungsbogen</h2>
+        <p>
+          Nutze die fünf Kompetenzbereiche als strukturierte Orientierung.
+          Ergänze deine Einschätzung immer durch konkrete Beobachtungen.
+        </p>
+      </div>
+
+      <div class="competence-grid">
+        <article class="competence-card">
+          <h3>Kompetenzbereich I</h3>
+          <p>
+            Pflegeprozesse und Pflegediagnostik in akuten und dauerhaften
+            Pflegesituationen verantwortlich planen, organisieren, gestalten,
+            durchführen, steuern und evaluieren.
+          </p>
+
+          <label>
+            <span>Einschätzung und Beobachtungen</span>
+            <textarea rows="5"></textarea>
+          </label>
+        </article>
+
+        <article class="competence-card">
+          <h3>Kompetenzbereich II</h3>
+          <p>
+            Kommunikation und Beratung personen- und situationsorientiert
+            gestalten.
+          </p>
+
+          <label>
+            <span>Einschätzung und Beobachtungen</span>
+            <textarea rows="5"></textarea>
+          </label>
+        </article>
+
+        <article class="competence-card">
+          <h3>Kompetenzbereich III</h3>
+          <p>
+            Intra- und interprofessionelles Handeln in unterschiedlichen
+            systemischen Kontexten verantwortlich gestalten und mitgestalten.
+          </p>
+
+          <label>
+            <span>Einschätzung und Beobachtungen</span>
+            <textarea rows="5"></textarea>
+          </label>
+        </article>
+
+        <article class="competence-card">
+          <h3>Kompetenzbereich IV</h3>
+          <p>
+            Das eigene Handeln auf Grundlage von Gesetzen, Verordnungen und
+            ethischen Leitlinien reflektieren und begründen.
+          </p>
+
+          <label>
+            <span>Einschätzung und Beobachtungen</span>
+            <textarea rows="5"></textarea>
+          </label>
+        </article>
+
+        <article class="competence-card">
+          <h3>Kompetenzbereich V</h3>
+          <p>
+            Das eigene Handeln auf Grundlage wissenschaftlicher Erkenntnisse
+            und berufsethischer Werthaltungen reflektieren und begründen.
+          </p>
+
+          <label>
+            <span>Einschätzung und Beobachtungen</span>
+            <textarea rows="5"></textarea>
+          </label>
+        </article>
+      </div>
+
+      <div class="form-grid summary-grid">
+        <label class="full-width">
+          <span>Gesamtstärken</span>
+          <textarea rows="5"></textarea>
+        </label>
+
+        <label class="full-width">
+          <span>Zentrale Entwicklungsfelder</span>
+          <textarea rows="5"></textarea>
+        </label>
+
+        <label class="full-width">
+          <span>Vereinbarte nächste Lernziele</span>
+          <textarea rows="5"></textarea>
+        </label>
+      </div>
+    </section>
+
+   <section class="template" id="selbstreflexion">
+  <div class="template-heading">
+    <span>Vorlage 05</span>
+    <h2>Selbstreflexion für Auszubildende</h2>
+    <p>
+      Dieser Bogen unterstützt Auszubildende dabei, nach einer Praxisanleitung
+      das eigene Handeln bewusst zu reflektieren. Die Selbsteinschätzung kann
+      anschließend als Grundlage für das gemeinsame Reflexionsgespräch genutzt
+      werden.
+    </p>
+  </div>
+
+  <div class="form-grid">
+    <label class="full-width">
+      <span>Thema der Praxisanleitung</span>
+      <textarea rows="3"></textarea>
+    </label>
+
+    <label class="full-width">
+      <span>Was war heute das Ziel der Anleitung?</span>
+      <textarea rows="4"></textarea>
+    </label>
+
+    <label class="full-width">
+      <span>Was ist mir besonders gut gelungen?</span>
+      <textarea rows="5"></textarea>
+    </label>
+
+    <label class="full-width">
+      <span>Wobei war ich noch unsicher?</span>
+      <textarea rows="5"></textarea>
+    </label>
+
+    <label class="full-width">
+      <span>Welche Entscheidungen konnte ich selbstständig treffen?</span>
+      <textarea rows="5"></textarea>
+    </label>
+
+    <label class="full-width">
+      <span>Wie kann ich mein Vorgehen fachlich begründen?</span>
+      <textarea rows="5"></textarea>
+    </label>
+
+    <label class="full-width">
+      <span>Was habe ich heute neu verstanden oder gelernt?</span>
+      <textarea rows="5"></textarea>
+    </label>
+
+    <label class="full-width">
+      <span>Was würde ich beim nächsten Mal anders machen?</span>
+      <textarea rows="5"></textarea>
+    </label>
+
+    <label class="full-width">
+      <span>Was möchte ich als Nächstes üben oder vertiefen?</span>
+      <textarea rows="5"></textarea>
+    </label>
+
+    <label class="full-width">
+      <span>Welche Unterstützung wünsche ich mir von meinem Praxisanleiter?</span>
+      <textarea rows="5"></textarea>
+    </label>
+  </div>
+</section>
+
+    <div class="back-box">
+      <div>
+        <span>Praxisanleiter Premium</span>
+        <strong>Zurück zu deinem Arbeitsbereich</strong>
+      </div>
+
+      <a href="/praxisanleiter-premium/">
+        Premium-Arbeitsbereich öffnen →
+      </a>
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .tools-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2.2rem 1rem 4rem;
+    color: #18324a;
+  }
+
+  .breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-bottom: 2rem;
+    color: #6b7280;
+    font-size: 0.92rem;
+  }
+
+  .breadcrumbs a {
+    color: #18324a;
+    text-decoration: none;
+  }
+
+  .tools-hero {
+    max-width: 850px;
+    margin-bottom: 3.5rem;
+  }
+
+  .eyebrow,
+  .section-heading > span,
+  .template-heading > span,
+  .back-box span {
+    display: inline-block;
+    margin-bottom: 0.6rem;
+    color: #e67e22;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .tools-hero h1 {
+    margin: 0 0 1rem;
+    color: #18324a;
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+    line-height: 1.1;
+  }
+
+  .tools-hero p,
+  .template-heading p {
+    color: #556270;
+    line-height: 1.75;
+  }
+
+  .section-heading {
+    margin-bottom: 1.5rem;
+  }
+
+  .section-heading h2,
+  .template-heading h2 {
+    margin: 0 0 0.7rem;
+    color: #18324a;
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    line-height: 1.2;
+  }
+
+  .tool-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .tool-card {
+    display: block;
+    padding: 1.4rem;
+    border: 1px solid rgba(24, 50, 74, 0.1);
+    border-radius: 20px;
+    background: #ffffff;
+    color: inherit;
+    text-decoration: none;
+    box-shadow: 0 10px 24px rgba(24, 50, 74, 0.05);
+  }
+
+  .tool-card:hover {
+    transform: translateY(-2px);
+  }
+
+  .tool-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #e67e22;
+    color: #ffffff;
+    font-weight: 800;
+  }
+
+  .tool-card h3 {
+    margin: 1rem 0 0.6rem;
+  }
+
+  .tool-card p {
+    color: #556270;
+    line-height: 1.65;
+  }
+
+  .tool-card strong {
+    color: #e67e22;
+  }
+
+  .template {
+    scroll-margin-top: 2rem;
+    margin-top: 4rem;
+    padding: 2rem;
+    border: 1px solid rgba(230, 126, 34, 0.18);
+    border-radius: 26px;
+    background: #fffaf6;
+  }
+
+  .template-heading {
+    max-width: 800px;
+    margin-bottom: 1.8rem;
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .form-grid label,
+  .competence-card label {
+    display: block;
+  }
+
+  .form-grid label > span,
+  .competence-card label > span {
+    display: block;
+    margin-bottom: 0.45rem;
+    color: #18324a;
+    font-weight: 800;
+  }
+
+  .full-width {
+    grid-column: 1 / -1;
+  }
+
+  textarea {
+    width: 100%;
+    resize: vertical;
+    padding: 0.9rem 1rem;
+    border: 1px solid #d7dce1;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #18324a;
+    font: inherit;
+    line-height: 1.55;
+    box-sizing: border-box;
+  }
+
+  textarea:focus {
+    outline: 2px solid rgba(230, 126, 34, 0.28);
+    border-color: #e67e22;
+  }
+
+  .competence-grid {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .competence-card {
+    padding: 1.4rem;
+    border: 1px solid rgba(24, 50, 74, 0.1);
+    border-radius: 18px;
+    background: #ffffff;
+  }
+
+  .competence-card h3 {
+    margin: 0 0 0.6rem;
+    color: #18324a;
+  }
+
+  .competence-card p {
+    color: #556270;
+    line-height: 1.65;
+  }
+
+  .summary-grid {
+    margin-top: 1rem;
+  }
+
+  .back-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    border-radius: 20px;
+    background: #ffffff;
+    border: 1px solid rgba(24, 50, 74, 0.1);
+  }
+
+  .back-box strong {
+    display: block;
+    color: #18324a;
+    font-size: 1.1rem;
+  }
+
+  .back-box a {
+    flex-shrink: 0;
+    padding: 0.85rem 1rem;
+    border-radius: 12px;
+    background: #e67e22;
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: 800;
+  }
+
+  @media (max-width: 760px) {
+    .tool-grid,
+    .form-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .full-width {
+      grid-column: auto;
+    }
+
+    .template {
+      padding: 1.3rem;
+    }
+
+    .back-box {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .back-box a {
+      text-align: center;
+    }
+  }
+</style>
