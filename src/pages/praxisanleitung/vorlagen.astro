@@ -122,6 +122,16 @@ if (!hasPraxisanleiterPremium) {
         </p>
       </div>
 
+     <div class="template-actions">
+  <button
+    type="button"
+    class="print-button"
+    data-print-template="anleitungsplanung"
+  >
+    Drucken / als PDF speichern
+  </button>
+</div> 
+
       <div class="form-grid">
         <label>
           <span>Thema der Praxisanleitung</span>
@@ -160,8 +170,8 @@ if (!hasPraxisanleiterPremium) {
           ></textarea>
         </label>
 
-        <label>
-          <span>Zeitrahmen</span>
+       <label class="print-section-start">
+       <span>Zeitrahmen</span>
           <textarea rows="3"></textarea>
         </label>
 
@@ -194,8 +204,8 @@ if (!hasPraxisanleiterPremium) {
           ></textarea>
         </label>
 
-        <label class="full-width">
-          <span>Evaluation und weiterer Lernbedarf</span>
+        <label class="full-width print-section-start">
+  <span>Evaluation und weiterer Lernbedarf</span>
           <textarea
             rows="5"
             placeholder="Wurde das Lernziel erreicht? Was sollte weiter geübt oder vertieft werden?"
@@ -213,6 +223,16 @@ if (!hasPraxisanleiterPremium) {
           sondern warum und was daraus für den nächsten Lernschritt folgt.
         </p>
       </div>
+
+      <div class="template-actions">
+  <button
+    type="button"
+    class="print-button"
+    id="print-reflexionsbogen"
+  >
+    Drucken / als PDF speichern
+  </button>
+</div>
 
       <div class="form-grid">
         <label class="full-width">
@@ -262,6 +282,16 @@ if (!hasPraxisanleiterPremium) {
         </p>
       </div>
 
+      <div class="template-actions">
+  <button
+    type="button"
+    class="print-button"
+    id="print-feedbackbogen"
+  >
+    Drucken / als PDF speichern
+  </button>
+</div>
+
       <div class="form-grid">
         <label class="full-width">
           <span>Situation oder Thema</span>
@@ -278,7 +308,7 @@ if (!hasPraxisanleiterPremium) {
           <textarea rows="5"></textarea>
         </label>
 
-        <label class="full-width">
+        <label class="full-width print-section-start">
           <span>Rückmeldung des Auszubildenden</span>
           <textarea rows="5"></textarea>
         </label>
@@ -309,6 +339,16 @@ if (!hasPraxisanleiterPremium) {
           Ergänze deine Einschätzung immer durch konkrete Beobachtungen.
         </p>
       </div>
+
+      <div class="template-actions">
+  <button
+    type="button"
+    class="print-button"
+    id="print-beurteilungsbogen"
+  >
+    Drucken / als PDF speichern
+  </button>
+</div>
 
       <div class="competence-grid">
         <article class="competence-card">
@@ -408,6 +448,16 @@ if (!hasPraxisanleiterPremium) {
     </p>
   </div>
 
+<div class="template-actions">
+  <button
+    type="button"
+    class="print-button"
+    id="print-selbstreflexion"
+  >
+    Drucken / als PDF speichern
+  </button>
+</div>
+
   <div class="form-grid">
     <label class="full-width">
       <span>Thema der Praxisanleitung</span>
@@ -429,7 +479,7 @@ if (!hasPraxisanleiterPremium) {
       <textarea rows="5"></textarea>
     </label>
 
-    <label class="full-width">
+    <label class="full-width print-section-start">
       <span>Welche Entscheidungen konnte ich selbstständig treffen?</span>
       <textarea rows="5"></textarea>
     </label>
@@ -473,6 +523,146 @@ if (!hasPraxisanleiterPremium) {
     </div>
   </main>
 </BaseLayout>
+
+<script>
+  const printButton = document.querySelector(
+    '[data-print-template="anleitungsplanung"]'
+  );
+
+  printButton?.addEventListener("click", () => {
+    const template =
+      document.getElementById("anleitungsplanung");
+
+    if (!template) {
+      return;
+    }
+
+    document.body.classList.add("print-anleitungsplanung");
+
+    window.print();
+
+    window.setTimeout(() => {
+      document.body.classList.remove("print-anleitungsplanung");
+    }, 500);
+  });
+
+  const reflexionsPrintButton =
+  document.getElementById("print-reflexionsbogen");
+
+reflexionsPrintButton?.addEventListener("click", () => {
+  const template =
+    document.getElementById("reflexionsbogen");
+
+  if (!template) {
+    return;
+  }
+
+  document.body.classList.add("print-reflexionsbogen");
+
+  window.print();
+
+  window.setTimeout(() => {
+    document.body.classList.remove("print-reflexionsbogen");
+  }, 500);
+});
+
+const feedbackPrintButton =
+  document.getElementById("print-feedbackbogen");
+
+feedbackPrintButton?.addEventListener("click", () => {
+  const template =
+    document.getElementById("feedbackbogen");
+
+  if (!template) {
+    return;
+  }
+
+  document.body.classList.add("print-feedbackbogen");
+
+  const cleanupFeedbackPrint = () => {
+    document.body.classList.remove("print-feedbackbogen");
+
+    window.removeEventListener(
+      "afterprint",
+      cleanupFeedbackPrint
+    );
+  };
+
+  window.addEventListener(
+    "afterprint",
+    cleanupFeedbackPrint
+  );
+
+  window.setTimeout(() => {
+    window.print();
+  }, 100);
+});
+
+const beurteilungsPrintButton =
+  document.getElementById("print-beurteilungsbogen");
+
+beurteilungsPrintButton?.addEventListener("click", () => {
+  const template =
+    document.getElementById("beurteilungsbogen");
+
+  if (!template) {
+    return;
+  }
+
+  document.body.classList.add("print-beurteilungsbogen");
+
+  const cleanupBeurteilungsPrint = () => {
+    document.body.classList.remove("print-beurteilungsbogen");
+
+    window.removeEventListener(
+      "afterprint",
+      cleanupBeurteilungsPrint
+    );
+  };
+
+  window.addEventListener(
+    "afterprint",
+    cleanupBeurteilungsPrint
+  );
+
+  window.setTimeout(() => {
+    window.print();
+  }, 100);
+});
+
+const selbstreflexionPrintButton =
+  document.getElementById("print-selbstreflexion");
+
+selbstreflexionPrintButton?.addEventListener("click", () => {
+  const template =
+    document.getElementById("selbstreflexion");
+
+  if (!template) {
+    return;
+  }
+
+  document.body.classList.add("print-selbstreflexion");
+
+  const cleanupSelbstreflexionPrint = () => {
+    document.body.classList.remove("print-selbstreflexion");
+
+    window.removeEventListener(
+      "afterprint",
+      cleanupSelbstreflexionPrint
+    );
+  };
+
+  window.addEventListener(
+    "afterprint",
+    cleanupSelbstreflexionPrint
+  );
+
+  window.setTimeout(() => {
+    window.print();
+  }, 100);
+});
+
+</script>
 
 <style>
   .tools-page {
@@ -717,4 +907,237 @@ if (!hasPraxisanleiterPremium) {
       text-align: center;
     }
   }
+
+  .template-actions {
+  margin-bottom: 2rem;
+}
+
+@media print {
+  :global(body.print-anleitungsplanung .site-header),
+  :global(body.print-anleitungsplanung .site-footer),
+  :global(body.print-anleitungsplanung .back-button) {
+    display: none !important;
+  }
+
+  body.print-anleitungsplanung .tools-page > * {
+    display: none !important;
+  }
+
+  body.print-anleitungsplanung #anleitungsplanung {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: #ffffff !important;
+  }
+
+  body.print-anleitungsplanung #anleitungsplanung .template-actions {
+    display: none !important;
+  }
+
+  body.print-anleitungsplanung #anleitungsplanung textarea {
+    resize: none !important;
+    border: 1px solid #999 !important;
+    background: #ffffff !important;
+    box-shadow: none !important;
+    break-before: avoid;
+    page-break-before: avoid;
+  }
+
+  body.print-anleitungsplanung #anleitungsplanung label {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  body.print-anleitungsplanung #anleitungsplanung label > span {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  body.print-anleitungsplanung #anleitungsplanung .print-section-start {
+    padding-top: 12mm;
+  }
+
+  :global(body.print-reflexionsbogen .site-header),
+:global(body.print-reflexionsbogen .site-footer),
+:global(body.print-reflexionsbogen .back-button) {
+  display: none !important;
+}
+
+body.print-reflexionsbogen .tools-page > * {
+  display: none !important;
+}
+
+body.print-reflexionsbogen #reflexionsbogen {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: #ffffff !important;
+}
+
+body.print-reflexionsbogen #reflexionsbogen .template-actions {
+  display: none !important;
+}
+
+body.print-reflexionsbogen #reflexionsbogen textarea {
+  resize: none !important;
+  border: 1px solid #999 !important;
+  background: #ffffff !important;
+  box-shadow: none !important;
+  break-before: avoid;
+  page-break-before: avoid;
+}
+
+body.print-reflexionsbogen #reflexionsbogen label {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+body.print-reflexionsbogen #reflexionsbogen label > span {
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+:global(body.print-feedbackbogen .site-header),
+:global(body.print-feedbackbogen .site-footer),
+:global(body.print-feedbackbogen .back-button) {
+  display: none !important;
+}
+
+body.print-feedbackbogen .tools-page > * {
+  display: none !important;
+}
+
+body.print-feedbackbogen #feedbackbogen {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: #ffffff !important;
+}
+
+body.print-feedbackbogen #feedbackbogen .template-actions {
+  display: none !important;
+}
+
+body.print-feedbackbogen #feedbackbogen textarea {
+  resize: none !important;
+  border: 1px solid #999 !important;
+  background: #ffffff !important;
+  box-shadow: none !important;
+  break-before: avoid;
+  page-break-before: avoid;
+}
+
+body.print-feedbackbogen #feedbackbogen label {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+body.print-feedbackbogen #feedbackbogen label > span {
+  break-after: avoid;
+  page-break-after: avoid;
+}
+body.print-feedbackbogen #feedbackbogen .print-section-start {
+  padding-top: 12mm;
+}
+
+:global(body.print-beurteilungsbogen .site-header),
+:global(body.print-beurteilungsbogen .site-footer),
+:global(body.print-beurteilungsbogen .back-button) {
+  display: none !important;
+}
+
+body.print-beurteilungsbogen .tools-page > * {
+  display: none !important;
+}
+
+body.print-beurteilungsbogen #beurteilungsbogen {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: #ffffff !important;
+}
+
+body.print-beurteilungsbogen #beurteilungsbogen .template-actions {
+  display: none !important;
+}
+
+body.print-beurteilungsbogen #beurteilungsbogen textarea {
+  resize: none !important;
+  border: 1px solid #999 !important;
+  background: #ffffff !important;
+  box-shadow: none !important;
+  break-before: avoid;
+  page-break-before: avoid;
+}
+
+body.print-beurteilungsbogen #beurteilungsbogen label,
+body.print-beurteilungsbogen #beurteilungsbogen .competence-card {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+body.print-beurteilungsbogen #beurteilungsbogen label > span {
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+:global(body.print-selbstreflexion .site-header),
+:global(body.print-selbstreflexion .site-footer),
+:global(body.print-selbstreflexion .back-button) {
+  display: none !important;
+}
+
+body.print-selbstreflexion .tools-page > * {
+  display: none !important;
+}
+
+body.print-selbstreflexion #selbstreflexion {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: #ffffff !important;
+}
+
+body.print-selbstreflexion #selbstreflexion .template-actions {
+  display: none !important;
+}
+
+body.print-selbstreflexion #selbstreflexion textarea {
+  resize: none !important;
+  border: 1px solid #999 !important;
+  background: #ffffff !important;
+  box-shadow: none !important;
+  break-before: avoid;
+  page-break-before: avoid;
+}
+
+body.print-selbstreflexion #selbstreflexion label {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+body.print-selbstreflexion #selbstreflexion label > span {
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+body.print-selbstreflexion #selbstreflexion .print-section-start {
+  padding-top: 12mm;
+}
+}
 </style>
