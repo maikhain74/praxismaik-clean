@@ -1,0 +1,400 @@
+---
+export const prerender = false;
+
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+const slug = Astro.params.slug;
+
+if (!slug) {
+  throw new Error("Slug fehlt.");
+}
+
+const aufgaben = await getCollection("anleitungsaufgaben");
+
+const eintrag = aufgaben.find((item) => item.slug === slug);
+
+if (!eintrag) {
+  return Astro.redirect("/praxisanleitung/anleitungsaufgaben/");
+}
+
+const { Content } = await render(eintrag);
+
+const praxisanleiterPremiumCookie =
+  Astro.cookies.get("praxismaik_premium_praxisanleiter")?.value;
+
+const isLocalhost =
+  Astro.url.hostname === "localhost" ||
+  Astro.url.hostname === "127.0.0.1";
+
+const devUnlock =
+  Astro.url.searchParams.get("freischalten") === "1" &&
+  isLocalhost;
+
+const hasPraxisanleiterPremium =
+  praxisanleiterPremiumCookie === "1" ||
+  praxisanleiterPremiumCookie === "true" ||
+  devUnlock;
+
+if (!hasPraxisanleiterPremium) {
+  return Astro.redirect("/praxisanleiter-premium");
+}
+
+const devQuery = devUnlock ? "?freischalten=1" : "";
+
+const ausbildungsstandLabels = {
+  ausbildungsbeginn: "Ausbildungsbeginn · erste Wochen",
+  "erstes-drittel": "1. Ausbildungsdrittel",
+  "zweites-drittel": "2. Ausbildungsdrittel",
+  "drittes-drittel": "3. Ausbildungsdrittel",
+};
+
+const settingLabels = {
+  settinguebergreifend: "Settingübergreifend",
+  klinik: "Klinik",
+  "stationaere-langzeitpflege": "Stationäre Langzeitpflege",
+  "ambulante-pflege": "Ambulante Pflege",
+};
+
+const title = eintrag.data.title;
+const beschreibung = eintrag.data.beschreibung;
+---
+
+<BaseLayout
+  title={`${title} | Praxisanleiter Premium`}
+  description={beschreibung}
+>
+  <main class="task-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Start</a>
+      <span>›</span>
+      <a href="/praxisanleitung/">Praxisanleitung</a>
+      <span>›</span>
+      <a href={`/praxisanleitung/anleitungsaufgaben/${devQuery}`}>
+        Anleitungsaufgaben
+      </a>
+      <span>›</span>
+      <span>Aufgabe {eintrag.data.reihenfolge ?? ""}</span>
+    </nav>
+
+    <header class="task-hero">
+      <div class="task-topline">
+        <span class="task-number">
+          Aufgabe {String(eintrag.data.reihenfolge ?? "").padStart(2, "0")}
+        </span>
+
+        <span class="premium-badge">
+          Praxisanleiter Premium
+        </span>
+      </div>
+
+      <div class="meta-row">
+        <span>
+          {ausbildungsstandLabels[eintrag.data.ausbildungsstand]}
+        </span>
+
+        {eintrag.data.dauer && (
+          <span>{eintrag.data.dauer}</span>
+        )}
+      </div>
+
+      <h1>{title}</h1>
+
+      <p>{beschreibung}</p>
+
+      <div class="topic-box">
+        <strong>Themenbereich</strong>
+        <span>{eintrag.data.themenbereich}</span>
+      </div>
+
+      <div class="settings">
+        {eintrag.data.setting.map((setting) => (
+          <span>{settingLabels[setting]}</span>
+        ))}
+      </div>
+    </header>
+
+    {
+      eintrag.data.setting.length > 1 && (
+        <section class="setting-info">
+          <span>Versorgungssetting</span>
+          <h2>Wähle die passende Variante</h2>
+          <p>
+            Diese Anleitungsaufgabe berücksichtigt unterschiedliche
+            Bedingungen in den Versorgungsbereichen. Nutze die Variante,
+            die zu deinem aktuellen Einsatz passt.
+          </p>
+
+          <div class="setting-links">
+            {eintrag.data.setting.includes("klinik") && (
+              <a href="#variante-klinik">Klinik</a>
+            )}
+
+            {eintrag.data.setting.includes(
+              "stationaere-langzeitpflege"
+            ) && (
+              <a href="#variante-stationaere-langzeitpflege">
+                Stationäre Langzeitpflege
+              </a>
+            )}
+
+            {eintrag.data.setting.includes("ambulante-pflege") && (
+              <a href="#variante-ambulante-pflege">
+                Ambulante Pflege
+              </a>
+            )}
+          </div>
+        </section>
+      )
+    }
+
+    <article class="content-card">
+      <section class="markdown-content">
+        <Content />
+      </section>
+    </article>
+
+    <div class="bottom-navigation">
+      <a href={`/praxisanleitung/anleitungsaufgaben/${devQuery}`}>
+        ← Zurück zu den Anleitungsaufgaben
+      </a>
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .task-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2.2rem 1rem 4rem;
+    color: #18324a;
+  }
+
+  .breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-bottom: 2rem;
+    color: #6b7280;
+    font-size: 0.92rem;
+  }
+
+  .breadcrumbs a {
+    color: #18324a;
+    text-decoration: none;
+  }
+
+  .task-hero {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border: 1px solid rgba(230, 126, 34, 0.18);
+    border-radius: 24px;
+    background: #fff8f1;
+  }
+
+  .task-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .task-number {
+    color: #e67e22;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .premium-badge {
+    padding: 0.42rem 0.7rem;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #b85f15;
+    font-size: 0.75rem;
+    font-weight: 800;
+  }
+
+  .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .meta-row span,
+  .settings span {
+    padding: 0.4rem 0.65rem;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #556270;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  .task-hero h1 {
+    margin: 0 0 1rem;
+    color: #18324a;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.12;
+  }
+
+  .task-hero > p {
+    margin: 0 0 1.4rem;
+    color: #556270;
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+
+  .topic-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .topic-box strong {
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .topic-box span {
+    color: #556270;
+  }
+
+  .settings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .setting-info {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 1px solid rgba(24, 50, 74, 0.1);
+    border-radius: 20px;
+    background: #ffffff;
+  }
+
+  .setting-info > span {
+    display: inline-block;
+    margin-bottom: 0.45rem;
+    color: #e67e22;
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .setting-info h2 {
+    margin: 0 0 0.6rem;
+    font-size: 1.45rem;
+  }
+
+  .setting-info p {
+    margin: 0 0 1.1rem;
+    color: #556270;
+    line-height: 1.7;
+  }
+
+  .setting-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  .setting-links a {
+    display: inline-flex;
+    padding: 0.7rem 1rem;
+    border: 1px solid rgba(230, 126, 34, 0.25);
+    border-radius: 999px;
+    background: #fff8f1;
+    color: #18324a;
+    font-weight: 800;
+    text-decoration: none;
+  }
+
+  .content-card {
+    padding: 2rem;
+    border: 1px solid rgba(24, 50, 74, 0.1);
+    border-radius: 24px;
+    background: #ffffff;
+    box-shadow: 0 12px 30px rgba(24, 50, 74, 0.05);
+  }
+
+  .markdown-content :global(h1:first-child) {
+  display: none;
+}
+
+.markdown-content :global(h1:not(:first-child)) {
+  margin: 2.8rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgba(230, 126, 34, 0.22);
+  color: #18324a;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+  .markdown-content :global(h2) {
+    margin: 2.4rem 0 0.8rem;
+    color: #18324a;
+    font-size: 1.65rem;
+    line-height: 1.2;
+  }
+
+  .markdown-content :global(h3) {
+    margin: 1.8rem 0 0.65rem;
+    color: #18324a;
+    font-size: 1.25rem;
+  }
+
+  .markdown-content :global(p) {
+    color: #384d61;
+    line-height: 1.8;
+  }
+
+  .markdown-content :global(li) {
+    margin-bottom: 0.55rem;
+    color: #384d61;
+    line-height: 1.65;
+  }
+
+  .markdown-content :global(strong) {
+    color: #18324a;
+  }
+
+  .markdown-content :global(hr) {
+    margin: 2.5rem 0;
+    border: 0;
+    border-top: 1px solid rgba(230, 126, 34, 0.22);
+  }
+
+  .bottom-navigation {
+    margin-top: 2rem;
+  }
+
+  .bottom-navigation a {
+    display: inline-flex;
+    padding: 0.8rem 1rem;
+    border: 1px solid rgba(230, 126, 34, 0.3);
+    border-radius: 999px;
+    color: #18324a;
+    font-weight: 800;
+    text-decoration: none;
+  }
+
+  @media (max-width: 700px) {
+    .task-hero,
+    .content-card {
+      padding: 1.35rem;
+    }
+
+    .task-topline {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+</style>

@@ -70,6 +70,32 @@ const lernpfade = defineCollection({
   }),
 });
 
+const anleitungsaufgaben = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    beschreibung: z.string(),
+    ausbildungsstand: z.enum([
+      'ausbildungsbeginn',
+      'erstes-drittel',
+      'zweites-drittel',
+      'drittes-drittel',
+    ]),
+    themenbereich: z.string(),
+    setting: z.array(
+      z.enum([
+        'settinguebergreifend',
+        'klinik',
+        'stationaere-langzeitpflege',
+        'ambulante-pflege',
+      ])
+    ),
+    dauer: z.string().optional(),
+    reihenfolge: z.number().optional(),
+    tags: z.array(z.string()).default([]),
+    premium: z.boolean().default(true),
+  }),
+});
+
 export const collections = {
   lernskripte,
   themen,
@@ -80,4 +106,5 @@ export const collections = {
   quiz,
   vorlagen,
   lernpfade,
+  anleitungsaufgaben,
 };
