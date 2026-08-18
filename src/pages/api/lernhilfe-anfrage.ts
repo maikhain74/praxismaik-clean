@@ -8,6 +8,10 @@ const supabase = createClient(
   import.meta.env.SUPABASE_SERVICE_ROLE_KEY
 );
 
+const resendApiKey = import.meta.env.RESEND_API_KEY;
+
+const notificationEmail = "praxismaik.pflege@gmail.com";
+
 export const POST: APIRoute = async ({ request }) => {
   try {
     const body = await request.json();
@@ -81,6 +85,63 @@ export const POST: APIRoute = async ({ request }) => {
           },
         }
       );
+    }
+
+    if (!resendApiKey) {
+      console.error(
+        "Lernhilfe Resend Fehler: RESEND_API_KEY ist nicht gesetzt."
+      );
+    } else {
+      try {
+        const emailText = [
+          "Neue 1:1 Lernhilfe-Anfrage bei PraxisMaik",
+          "",
+          `Vorname: ${vorname}`,
+          `E-Mail: ${email}`,
+          `Themenbereich: ${themenbereich}`,
+          `Gewünschter Zeitpunkt: ${zeitpunkt || "Keine Angabe"}`,
+          "",
+          "Problem / Unterstützungsbedarf:",
+          problem,
+          "",
+          "Die vollständige Anfrage wurde zusätzlich in Supabase gespeichert.",
+        ].join("\n");
+
+        const resendResponse = await fetch(
+          "https://api.resend.com/emails",
+          {
+            method: "POST",
+            headers: {
+              Authorization: `Bearer ${resendApiKey}`,
+              "Content-Type": "application/json",
+              "User-Agent": "PraxisMaik/1.0",
+            },
+            body: JSON.stringify({
+              from: "PraxisMaik <kontakt@praxismaik.de>",
+              to: [notificationEmail],
+              reply_to: email,
+              subject: `Neue 1:1 Lernhilfe-Anfrage von ${vorname}`,
+              text: emailText,
+            }),
+          }
+        );
+
+        if (!resendResponse.ok) {
+          const resendError =
+            await resendResponse.text();
+
+          console.error(
+            "Lernhilfe Resend Fehler:",
+            resendResponse.status,
+            resendError
+          );
+        }
+      } catch (resendError) {
+        console.error(
+          "Lernhilfe Resend Versandfehler:",
+          resendError
+        );
+      }
     }
 
     return new Response(
