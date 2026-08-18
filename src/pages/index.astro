@@ -514,6 +514,25 @@ Deshalb habe ich diesen kostenlosen StarterGuide entwickelt. Er zeigt dir die h�
   </p>
 </section>
 
+<section class="section lernhilfe-home">
+  <div class="lernhilfe-home-inner">
+    <div class="lernhilfe-home-text">
+      <span class="lernhilfe-home-badge">Persönliche 1:1 Lernhilfe</span>
+
+      <h2>Du kommst bei einem Pflegethema gerade nicht weiter?</h2>
+
+      <p>
+        Manchmal reicht ein Lernskript oder Video nicht aus. Wenn du bei einem
+        konkreten Thema festhängst, können wir genau daran gemeinsam arbeiten.
+      </p>
+
+      <a href="/lernhilfe" class="btn">
+        1:1 Lernhilfe ansehen
+      </a>
+    </div>
+  </div>
+</section>
+
 <ExpertBox />
 
 <section class="starterguide-reminder">
@@ -2084,5 +2103,60 @@ grid-template-columns:1fr;
 
 }
 
+}
+
+/* 1:1 Lernhilfe auf der Startseite */
+.lernhilfe-home {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.lernhilfe-home-inner {
+  background: #ffffff;
+  border: 1px solid #ead8c7;
+  border-radius: 24px;
+  padding: 2.5rem 3rem;
+  box-shadow: 0 14px 35px rgba(34, 48, 62, 0.06);
+}
+
+.lernhilfe-home-text {
+  max-width: 900px;
+}
+
+.lernhilfe-home-badge {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  background: #fff1e5;
+  color: #9f3515;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.lernhilfe-home h2 {
+  margin: 0 0 0.8rem;
+}
+
+.lernhilfe-home p {
+  margin: 0 0 1.5rem;
+  max-width: 760px;
+  line-height: 1.65;
+}
+
+.lernhilfe-home a.btn {
+  display: inline-flex;
+  width: auto;
+  background: #E67E22 !important;
+  color: #ffffff !important;
+}
+
+@media (max-width: 700px) {
+  .lernhilfe-home-inner {
+    padding: 1.75rem 1.4rem;
+    border-radius: 20px;
+  }
 }
 </style>
