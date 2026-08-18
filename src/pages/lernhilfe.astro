@@ -36,7 +36,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <section class="section">
       <div class="section-heading">
         <span class="eyebrow">So funktioniert es</span>
-        <h2>45 Minuten nur für dein konkretes Problem</h2>
+        <h2>bis zu 40 Minuten nur für dein konkretes Problem</h2>
 
         <p>
           Du beschreibst mir vorher, wobei du gerade nicht weiterkommst.
@@ -178,7 +178,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <h2>Individuell vorbereitet auf dein Lernproblem</h2>
 
         <div class="price">
-          <strong>49 €</strong>
+          <strong>39 €</strong>
           <span>für 45 Minuten</span>
         </div>
 
@@ -202,21 +202,23 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
     <section class="section" id="interesse">
       <div class="form-wrapper">
-        <div class="section-heading">
-          <span class="eyebrow">Interesse vormerken</span>
+   <div class="section-heading">
+  <span class="eyebrow">Unverbindliche Terminanfrage</span>
 
-          <h2>Möchtest du zu den Ersten gehören?</h2>
+  <h2>Beschreibe mir kurz, wobei du Unterstützung brauchst</h2>
 
-          <p>
-            Das 1:1-Angebot befindet sich gerade im Aufbau. Trag dich ein und
-            beschreibe mir kurz, wobei du Unterstützung brauchst.
-          </p>
+  <p>
+    Schick mir zunächst dein Thema und deinen gewünschten Zeitraum.
+    Ich prüfe persönlich, ob ich dich dabei sinnvoll unterstützen kann
+    und ob ein passender Termin verfügbar ist.
+  </p>
 
-          <p class="test-note">
-            Die 45-minütige Lernhilfe ist mit <strong>49 €</strong> geplant.
-            Mit deiner Anfrage buchst und bezahlst du noch nichts.
-          </p>
-        </div>
+  <p class="test-note">
+    Die persönliche 1:1-Lernhilfe kostet <strong>39 €</strong> für bis zu
+    40 Minuten. Mit dieser Anfrage buchst und bezahlst du noch nichts.
+    Wenn ein Termin passt, erhältst du anschließend den Zahlungslink per E-Mail.
+  </p>
+</div>
 
         <form id="lernhilfe-form" class="lernhilfe-form">
           <div class="form-field">
@@ -335,7 +337,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             class="primary-button submit-button"
             data-ga-event="lernhilfe_interesse_submit"
           >
-            Interesse an 1:1 Lernhilfe senden
+            Unverbindliche Terminanfrage senden
           </button>
 
           <p
@@ -391,7 +393,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
     button.disabled = false;
     button.textContent =
-      "Interesse an 1:1 Lernhilfe senden";
+      "Unverbindliche Terminanfrage senden";
   }
 
   form?.addEventListener("submit", async (event) => {
@@ -471,7 +473,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         "Interesse vorgemerkt";
 
       setMessage(
-        "Danke! Deine Anfrage ist angekommen. Ich melde mich, sobald die ersten 1:1-Termine verfügbar sind.",
+        "Danke! Deine Anfrage ist angekommen. Ich prüfe dein Thema und deinen Terminwunsch und melde mich persönlich per E-Mail bei dir. Wenn ein passender Termin möglich ist, erhältst du anschließend den Zahlungslink.",
         "success"
       );
 
