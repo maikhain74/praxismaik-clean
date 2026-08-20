@@ -234,6 +234,33 @@ const topicTypes = {
         })}
       </div>
     </section>
+
+    <section class="category-panel lernhilfe-cta">
+  <p class="category-eyebrow">Persönliche 1:1-Lernhilfe</p>
+
+  <h2>Du verstehst den Pflegeprozess, aber bei deiner eigenen Pflegeplanung hängst du fest?</h2>
+
+  <p class="lernhilfe-cta-text">
+    Dann schauen wir uns genau dein Problem gemeinsam an. Du beschreibst mir vorher,
+    wobei du nicht weiterkommst, ich bereite mich auf dein Thema vor und wir arbeiten
+    gezielt daran.
+  </p>
+
+  <ul class="lernhilfe-cta-list">
+    <li>Persönliches Videogespräch mit mir</li>
+    <li>Individuell auf dein Thema vorbereitet</li>
+    <li>Bis zu 40 Minuten konzentrierte Lernzeit</li>
+    <li><strong>39 € einmalig</strong></li>
+  </ul>
+
+  <a
+    href="/lernhilfe"
+    class="lernhilfe-cta-button"
+    data-ga-event="lernhilfe_click_pflegeprozess"
+  >
+    1:1-Lernhilfe ansehen
+  </a>
+</section>
   </main>
 </BaseLayout>
 
@@ -432,6 +459,82 @@ const topicTypes = {
     margin-top: auto;
     color: #2563eb;
     font-weight: 800;
+  }
+
+    .lernhilfe-cta {
+    background: #fff8f1;
+    border-color: #ead8c7;
+  }
+
+  .lernhilfe-cta h2 {
+    max-width: 760px;
+    margin-bottom: 14px;
+  }
+
+  .lernhilfe-cta-text {
+    max-width: 760px;
+    margin: 0;
+    color: #475569;
+    font-size: 1.02rem;
+    line-height: 1.7;
+  }
+
+  .lernhilfe-cta-list {
+    display: grid;
+    gap: 10px;
+    margin: 22px 0 24px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .lernhilfe-cta-list li {
+    position: relative;
+    padding-left: 28px;
+    color: #3f3f3f;
+    line-height: 1.55;
+  }
+
+  .lernhilfe-cta-list li::before {
+    position: absolute;
+    left: 0;
+    color: #e67e22;
+    content: "✓";
+    font-weight: 900;
+  }
+
+  .lernhilfe-cta-list strong {
+    color: #0f172a;
+  }
+
+  .lernhilfe-cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 13px 22px;
+    border-radius: 14px;
+    background: #e67e22;
+    color: #ffffff;
+    font-weight: 800;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 12px 26px rgba(230, 126, 34, 0.2);
+    transition:
+      transform 0.18s ease,
+      background-color 0.18s ease,
+      box-shadow 0.18s ease;
+  }
+
+  .lernhilfe-cta-button:hover {
+    transform: translateY(-2px);
+    background: #d96f16;
+    box-shadow: 0 16px 32px rgba(230, 126, 34, 0.26);
+  }
+
+  .lernhilfe-cta-button:focus-visible {
+    outline: 3px solid rgba(230, 126, 34, 0.3);
+    outline-offset: 4px;
   }
 
   @media (max-width: 900px) {
