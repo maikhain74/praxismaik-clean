@@ -179,6 +179,37 @@ Deshalb habe ich diesen kostenlosen StarterGuide entwickelt. Er zeigt dir die h�
   </div>
 </section>
 
+<section class="section lernhilfe-home">
+  <div class="lernhilfe-home-inner">
+    <div class="lernhilfe-home-text">
+      <span class="lernhilfe-home-badge">Persönliche 1:1-Lernhilfe</span>
+
+      <h2>Du hängst bei einem Pflegethema fest und kommst alleine nicht weiter?</h2>
+
+      <p>
+        Wir arbeiten gemeinsam genau an deinem Problem. Ich bereite mich auf dein
+        Thema vor und erkläre dir die Zusammenhänge so, dass du sie wirklich
+        verstehst und in Praxis oder Prüfung anwenden kannst.
+      </p>
+
+      <ul class="lernhilfe-home-list">
+        <li>Persönliches Videogespräch mit mir</li>
+        <li>Individuell auf dein Thema vorbereitet</li>
+        <li>Bis zu 40 Minuten konzentrierte Lernzeit</li>
+        <li><strong>39 € einmalig</strong></li>
+      </ul>
+
+      <a
+        href="/lernhilfe"
+        class="btn"
+        data-ga-event="lernhilfe_click_home"
+      >
+        1:1-Lernhilfe ansehen
+      </a>
+    </div>
+  </div>
+</section>
+
 <section class="home-audience">
   <div class="section-headline">
     <h2>Für wen ist PraxisMaik?</h2>
@@ -512,25 +543,6 @@ Deshalb habe ich diesen kostenlosen StarterGuide entwickelt. Er zeigt dir die h�
   <p class="all-topics-link">
     <a href="/themen/">Alle Themen anzeigen →</a>
   </p>
-</section>
-
-<section class="section lernhilfe-home">
-  <div class="lernhilfe-home-inner">
-    <div class="lernhilfe-home-text">
-      <span class="lernhilfe-home-badge">Persönliche 1:1 Lernhilfe</span>
-
-      <h2>Du kommst bei einem Pflegethema gerade nicht weiter?</h2>
-
-      <p>
-        Manchmal reicht ein Lernskript oder Video nicht aus. Wenn du bei einem
-        konkreten Thema festhängst, können wir genau daran gemeinsam arbeiten.
-      </p>
-
-      <a href="/lernhilfe" class="btn">
-        1:1 Lernhilfe ansehen
-      </a>
-    </div>
-  </div>
 </section>
 
 <ExpertBox />
@@ -2112,10 +2124,10 @@ grid-template-columns:1fr;
 }
 
 .lernhilfe-home-inner {
-  background: #ffffff;
+  background: #fff8f1;
   border: 1px solid #ead8c7;
   border-radius: 24px;
-  padding: 2.5rem 3rem;
+  padding: 2.75rem 3rem;
   box-shadow: 0 14px 35px rgba(34, 48, 62, 0.06);
 }
 
@@ -2134,6 +2146,54 @@ grid-template-columns:1fr;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.lernhilfe-home-text h2 {
+  margin: 0 0 1rem;
+  color: #18324a;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  line-height: 1.2;
+}
+
+.lernhilfe-home-text > p {
+  max-width: 760px;
+  margin: 0;
+  color: #556270;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.lernhilfe-home-list {
+  display: grid;
+  gap: 0.65rem;
+  margin: 1.5rem 0 1.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+.lernhilfe-home-list li {
+  position: relative;
+  padding-left: 1.8rem;
+  color: #3f3f3f;
+  line-height: 1.5;
+}
+
+.lernhilfe-home-list li::before {
+  position: absolute;
+  left: 0;
+  color: #e67e22;
+  content: "✓";
+  font-weight: 900;
+}
+
+.lernhilfe-home-list strong {
+  color: #18324a;
+}
+
+@media (max-width: 640px) {
+  .lernhilfe-home-inner {
+    padding: 2rem 1.4rem;
+  }
 }
 
 .lernhilfe-home h2 {
