@@ -1,0 +1,294 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Zahlung erfolgreich | PraxisMaik 1:1-Lernhilfe"
+  description="Deine Buchung der PraxisMaik 1:1-Lernhilfe war erfolgreich. Ich melde mich persönlich bei dir, um den Termin abzustimmen."
+>
+  <section class="success-page">
+    <div class="success-page__card">
+      <div class="success-page__icon" aria-hidden="true">✓</div>
+
+      <p class="success-page__eyebrow">Zahlung erfolgreich</p>
+
+      <h1>Deine 1:1-Lernhilfe ist gebucht</h1>
+
+      <p class="success-page__intro">
+        Vielen Dank für deine Buchung. Deine Zahlung ist erfolgreich eingegangen.
+        Ich melde mich persönlich per E-Mail bei dir, damit wir deinen konkreten
+        Termin abstimmen.
+      </p>
+
+      <div class="success-page__next">
+        <h2>So geht es jetzt weiter</h2>
+
+        <div class="success-page__steps">
+          <div class="success-page__step">
+            <span>1</span>
+            <div>
+              <strong>Ich prüfe deine Buchung</strong>
+              <p>
+                Ich ordne deine Zahlung deiner ursprünglichen Anfrage zur
+                1:1-Lernhilfe zu.
+              </p>
+            </div>
+          </div>
+
+          <div class="success-page__step">
+            <span>2</span>
+            <div>
+              <strong>Du erhältst eine persönliche E-Mail</strong>
+              <p>
+                Darin bestätigen wir Datum und Uhrzeit für deine Lernhilfe.
+              </p>
+            </div>
+          </div>
+
+          <div class="success-page__step">
+            <span>3</span>
+            <div>
+              <strong>Du bekommst deinen Zoom-Link</strong>
+              <p>
+                Vor dem Termin erhältst du alle wichtigen Informationen und
+                deinen persönlichen Teilnahme-Link.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="success-page__notice">
+        <strong>Bitte prüfe auch deinen Spam-Ordner.</strong>
+        <p>
+          Falls meine Nachricht nicht direkt in deinem Posteingang erscheint,
+          kann sie dort gelandet sein.
+        </p>
+      </div>
+
+      <div class="success-page__prepare">
+        <h2>Für deine Lernhilfe</h2>
+
+        <p>
+          Du kannst dir bereits die Fragen oder Punkte notieren, bei denen du
+          aktuell unsicher bist. Falls du Unterlagen verwenden möchtest, halte
+          sie zum Termin bereit.
+        </p>
+
+        <p>
+          <strong>Wichtig:</strong> Bitte verwende keine Namen, Geburtsdaten
+          oder andere personenbezogene Daten von Patienten oder Bewohnern.
+          Fallinformationen müssen vollständig anonymisiert sein.
+        </p>
+      </div>
+
+      <a
+        class="success-page__link"
+        href="/"
+        data-ga-event="lernhilfe_success_home_click"
+      >
+        Zurück zu PraxisMaik
+      </a>
+
+      <p class="success-page__note">
+        Persönliche 1:1-Lernhilfe · bis zu 40 Minuten
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .success-page {
+    padding: clamp(2.5rem, 6vw, 5rem) 0 clamp(5rem, 10vw, 8rem);
+  }
+
+  .success-page__card {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: clamp(2rem, 5vw, 4rem);
+    border: 1px solid #efddcc;
+    border-radius: 1.75rem;
+    background: #ffffff;
+    box-shadow: 0 24px 70px rgb(80 52 31 / 10%);
+    text-align: center;
+  }
+
+  .success-page__icon {
+    display: grid;
+    place-items: center;
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto 1.25rem;
+    border-radius: 50%;
+    background: #fff0e2;
+    color: #e67e22;
+    font-size: 1.8rem;
+    font-weight: 900;
+  }
+
+  .success-page__eyebrow {
+    margin: 0 0 0.85rem;
+    color: #b9550d;
+    font-size: 0.94rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+  }
+
+  .success-page h1 {
+    max-width: 760px;
+    margin: 0 auto;
+    color: #171717;
+    font-size: clamp(2.3rem, 5vw, 4rem);
+    line-height: 1.06;
+    letter-spacing: -0.04em;
+  }
+
+  .success-page__intro {
+    max-width: 700px;
+    margin: 1.35rem auto 0;
+    color: #4f4f4f;
+    font-size: clamp(1rem, 1.8vw, 1.17rem);
+    line-height: 1.7;
+  }
+
+  .success-page__next {
+    margin-top: clamp(2.5rem, 5vw, 4rem);
+    padding: clamp(1.75rem, 4vw, 2.75rem);
+    border: 1px solid #f0d8c1;
+    border-radius: 1.4rem;
+    background: #fff8f1;
+    text-align: left;
+  }
+
+  .success-page__next h2,
+  .success-page__prepare h2 {
+    margin: 0;
+    color: #171717;
+    font-size: clamp(1.55rem, 3vw, 2rem);
+    line-height: 1.15;
+  }
+
+  .success-page__steps {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 1.75rem;
+  }
+
+  .success-page__step {
+    display: grid;
+    grid-template-columns: 2.5rem minmax(0, 1fr);
+    gap: 1rem;
+    align-items: start;
+  }
+
+  .success-page__step > span {
+    display: grid;
+    place-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: #e67e22;
+    color: #ffffff;
+    font-weight: 900;
+  }
+
+  .success-page__step strong {
+    color: #202020;
+    font-size: 1.05rem;
+  }
+
+  .success-page__step p {
+    margin: 0.35rem 0 0;
+    color: #555555;
+    line-height: 1.6;
+  }
+
+  .success-page__notice {
+    margin-top: 2rem;
+    padding: 1.35rem 1.5rem;
+    border: 1px solid #efd8c2;
+    border-radius: 1rem;
+    background: #ffffff;
+  }
+
+  .success-page__notice strong {
+    color: #b9550d;
+  }
+
+  .success-page__notice p {
+    margin: 0.4rem 0 0;
+    color: #5a5a5a;
+    line-height: 1.6;
+  }
+
+  .success-page__prepare {
+    margin-top: 2.5rem;
+    text-align: left;
+  }
+
+  .success-page__prepare p {
+    margin: 1rem 0 0;
+    color: #505050;
+    line-height: 1.7;
+  }
+
+  .success-page__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 3.7rem;
+    margin-top: 2.5rem;
+    padding: 0.95rem 1.6rem;
+    border-radius: 0.85rem;
+    background: #e67e22;
+    color: #ffffff;
+    box-shadow: 0 14px 30px rgb(230 126 34 / 20%);
+    font-size: 1.02rem;
+    font-weight: 850;
+    line-height: 1.25;
+    text-align: center;
+    text-decoration: none;
+    transition:
+      transform 160ms ease,
+      background-color 160ms ease,
+      box-shadow 160ms ease;
+  }
+
+  .success-page__link:hover {
+    transform: translateY(-2px);
+    background: #d96f16;
+    box-shadow: 0 18px 38px rgb(230 126 34 / 26%);
+  }
+
+  .success-page__link:focus-visible {
+    outline: 3px solid rgb(230 126 34 / 35%);
+    outline-offset: 4px;
+  }
+
+  .success-page__note {
+    margin: 0.9rem 0 0;
+    color: #707070;
+    font-size: 0.87rem;
+  }
+
+  @media (max-width: 560px) {
+    .success-page__step {
+      grid-template-columns: 2.25rem minmax(0, 1fr);
+    }
+
+    .success-page__step > span {
+      width: 2.25rem;
+      height: 2.25rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .success-page__link {
+      transition: none;
+    }
+
+    .success-page__link:hover {
+      transform: none;
+    }
+  }
+</style>
