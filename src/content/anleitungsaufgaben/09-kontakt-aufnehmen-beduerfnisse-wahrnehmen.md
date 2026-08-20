@@ -1,7 +1,7 @@
 ---
 title: Kontakt aufnehmen, Gespräche beginnen und Bedürfnisse wahrnehmen
 beschreibung: Eine praxisnahe Anleitungsaufgabe für den Ausbildungsbeginn zur respektvollen Kontaktaufnahme, zum aufmerksamen Zuhören und zum bewussten Wahrnehmen verbaler und nonverbaler Reaktionen.
-ausbildungsstand: ausbildungsbeginn
+ausbildungsstand: erstes-drittel
 themenbereich: Kommunikation & Beziehungsgestaltung
 setting:
   - klinik

@@ -3,7 +3,7 @@ title: Eine einfache Pflegesituation vorbereiten, durchführen und nachbereiten
 
 beschreibung: Eine praxisnahe Anleitungsaufgabe für den Ausbildungsbeginn zum strukturierten Vorbereiten, Durchführen und Nachbereiten einer einfachen Pflegesituation unter Anleitung.
 
-ausbildungsstand: ausbildungsbeginn
+ausbildungsstand: erstes-drittel
 
 themenbereich: Pflegeprozess & strukturiertes Handeln
 

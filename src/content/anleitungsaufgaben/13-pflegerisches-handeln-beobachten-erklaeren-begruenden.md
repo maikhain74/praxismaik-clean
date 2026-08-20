@@ -3,7 +3,7 @@ title: Pflegerisches Handeln beobachten, erklären und einfach begründen
 
 beschreibung: Eine praxisnahe Anleitungsaufgabe für den Ausbildungsbeginn zum bewussten Beobachten pflegerischen Handelns und zum einfachen Begründen von Entscheidungen anhand der konkreten Pflegesituation.
 
-ausbildungsstand: ausbildungsbeginn
+ausbildungsstand: erstes-drittel
 
 themenbereich: Pflegerisches Denken & Begründen
 

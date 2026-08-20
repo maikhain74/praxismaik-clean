@@ -3,7 +3,7 @@ title: Schmerzen und Beschwerden wahrnehmen und angemessen reagieren
 
 beschreibung: Eine praxisnahe Anleitungsaufgabe für den Ausbildungsbeginn zum Wahrnehmen von Schmerzen und anderen Beschwerden, zum gezielten Nachfragen, Beobachten und sicheren Weitergeben relevanter Informationen.
 
-ausbildungsstand: ausbildungsbeginn
+ausbildungsstand: erstes-drittel
 
 themenbereich: Schmerzen & Beschwerden
 

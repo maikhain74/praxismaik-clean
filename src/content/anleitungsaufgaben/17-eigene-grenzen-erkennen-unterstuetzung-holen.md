@@ -3,7 +3,7 @@ title: Eigene Grenzen erkennen und rechtzeitig Unterstützung holen
 
 beschreibung: Eine praxisnahe Anleitungsaufgabe für den Ausbildungsbeginn zum Erkennen der eigenen Kompetenzgrenzen, zum sicheren Unterbrechen von Situationen und zum rechtzeitigen Hinzuziehen einer Pflegefachperson.
 
-ausbildungsstand: ausbildungsbeginn
+ausbildungsstand: erstes-drittel
 
 themenbereich: Verantwortung & Patientensicherheit
 

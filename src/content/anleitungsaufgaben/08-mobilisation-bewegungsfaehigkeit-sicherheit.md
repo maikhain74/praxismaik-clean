@@ -1,7 +1,7 @@
 ---
 title: Bei der Mobilisation unterstützen, Bewegungsfähigkeit einschätzen und Sicherheit fördern
 beschreibung: Eine praxisnahe Anleitungsaufgabe für den Ausbildungsbeginn zur ressourcenorientierten Mobilisation, zur Einschätzung vorhandener Bewegungsfähigkeiten und zum Erkennen von Veränderungen während der Bewegung.
-ausbildungsstand: ausbildungsbeginn
+ausbildungsstand: erstes-drittel
 themenbereich: Mobilität & Bewegungsförderung
 setting:
   - klinik

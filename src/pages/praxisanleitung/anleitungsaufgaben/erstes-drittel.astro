@@ -1,0 +1,380 @@
+---
+export const prerender = false;
+
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const praxisanleiterPremiumCookie =
+  Astro.cookies.get("praxismaik_premium_praxisanleiter")?.value;
+
+const isLocalhost =
+  Astro.url.hostname === "localhost" ||
+  Astro.url.hostname === "127.0.0.1";
+
+const devUnlock =
+  Astro.url.searchParams.get("freischalten") === "1" &&
+  isLocalhost;
+
+const hasPraxisanleiterPremium =
+  praxisanleiterPremiumCookie === "1" ||
+  praxisanleiterPremiumCookie === "true" ||
+  devUnlock;
+
+if (!hasPraxisanleiterPremium) {
+  return Astro.redirect("/praxisanleiter-premium");
+}
+
+const aufgaben = await getCollection("anleitungsaufgaben");
+
+const aufgabenErstesDrittel = aufgaben
+  .filter(
+    (item) =>
+      item.data.ausbildungsstand === "ausbildungsbeginn" ||
+      item.data.ausbildungsstand === "erstes-drittel"
+  )
+  .sort(
+    (a, b) =>
+      (a.data.reihenfolge ?? 999) -
+      (b.data.reihenfolge ?? 999)
+  );
+
+const ausbildungsstandLabels = {
+  ausbildungsbeginn: "Ausbildungsbeginn",
+  "erstes-drittel": "1. Ausbildungsdrittel",
+  "zweites-drittel": "2. Ausbildungsdrittel",
+  "drittes-drittel": "3. Ausbildungsdrittel",
+};
+
+const settingLabels = {
+  settinguebergreifend: "Settingübergreifend",
+  klinik: "Klinik",
+  "stationaere-langzeitpflege": "Stationäre Langzeitpflege",
+  "ambulante-pflege": "Ambulante Pflege",
+};
+---
+
+<BaseLayout
+  title="1. Ausbildungsdrittel | Anleitungsaufgaben | PraxisMaik"
+  description="Strukturierte Anleitungsaufgaben für den Ausbildungsbeginn und das erste Ausbildungsdrittel der generalistischen Pflegeausbildung."
+>
+  <main class="tasks-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Start</a>
+      <span>›</span>
+      <a href="/praxisanleitung/">Praxisanleitung</a>
+      <span>›</span>
+      <a
+        href={`/praxisanleitung/anleitungsaufgaben/${devUnlock ? "?freischalten=1" : ""}`}
+      >
+        Anleitungsaufgaben
+      </a>
+      <span>›</span>
+      <span>1. Ausbildungsdrittel</span>
+    </nav>
+
+    <header class="tasks-hero">
+      <span class="eyebrow">Praxisanleiter Premium</span>
+
+      <h1>Anleitungsaufgaben für das 1. Ausbildungsdrittel</h1>
+
+      <p>
+        Vom Ausbildungsbeginn bis zum zunehmend selbstständigen Handeln:
+        Wähle eine Aufgabe passend zur aktuellen Lernsituation deines
+        Auszubildenden.
+      </p>
+    </header>
+
+    <section class="progress-box">
+      <div>
+        <strong>{aufgabenErstesDrittel.length} Anleitungsaufgaben</strong>
+        <span>für Ausbildungsbeginn und 1. Ausbildungsdrittel</span>
+      </div>
+
+      <p>
+        Die Aufgaben bauen schrittweise aufeinander auf, müssen aber nicht
+        starr in dieser Reihenfolge bearbeitet werden. Entscheidend ist der
+        tatsächliche Lernstand des Auszubildenden.
+      </p>
+    </section>
+
+    <section class="task-section">
+      <div class="section-heading">
+        <span>Ausbildungsbeginn bis 1. Ausbildungsdrittel</span>
+        <h2>Alle Anleitungsaufgaben</h2>
+        <p>
+          Grundlagen, pflegerische Alltagssituationen, Beobachtung,
+          Begründung, Dokumentation, Übergabe und zunehmend selbstständiges
+          Handeln.
+        </p>
+      </div>
+
+      <div class="task-grid">
+        {
+          aufgabenErstesDrittel.map((item) => (
+            <article class="task-card">
+              <div class="task-card-top">
+                <span class="task-number">
+                  Aufgabe {String(item.data.reihenfolge ?? "").padStart(2, "0")}
+                </span>
+
+                <span class="premium-badge">
+                  Praxisanleiter Premium
+                </span>
+              </div>
+
+              <div class="task-meta">
+                <span>
+                  {ausbildungsstandLabels[item.data.ausbildungsstand]}
+                </span>
+
+                {item.data.dauer && (
+                  <span>{item.data.dauer}</span>
+                )}
+              </div>
+
+              <h3>{item.data.title}</h3>
+
+              <p>{item.data.beschreibung}</p>
+
+              <div class="task-topic">
+                <strong>Themenbereich</strong>
+                <span>{item.data.themenbereich}</span>
+              </div>
+
+              <div class="task-settings">
+                {item.data.setting.map((setting) => (
+                  <span>{settingLabels[setting]}</span>
+                ))}
+              </div>
+
+              <a
+                class="task-link"
+                href={`/praxisanleitung/anleitungsaufgaben/${item.slug}/${devUnlock ? "?freischalten=1" : ""}`}
+              >
+                Anleitungsaufgabe öffnen →
+              </a>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .tasks-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2.2rem 1rem 4rem;
+    color: #18324a;
+  }
+
+  .breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-bottom: 2rem;
+    color: #6b7280;
+    font-size: 0.92rem;
+  }
+
+  .breadcrumbs a {
+    color: #18324a;
+    text-decoration: none;
+  }
+
+  .tasks-hero {
+    max-width: 850px;
+    margin-bottom: 2rem;
+  }
+
+  .eyebrow,
+  .section-heading > span {
+    display: inline-block;
+    margin-bottom: 0.7rem;
+    color: #e67e22;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .tasks-hero h1 {
+    margin: 0 0 1rem;
+    color: #18324a;
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+    line-height: 1.08;
+  }
+
+  .tasks-hero p,
+  .section-heading p {
+    color: #556270;
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+
+  .progress-box {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.4fr);
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 3.5rem;
+    padding: 1.5rem 1.6rem;
+    border: 1px solid rgba(230, 126, 34, 0.2);
+    border-radius: 18px;
+    background: #fff8f1;
+  }
+
+  .progress-box strong {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #18324a;
+    font-size: 1.3rem;
+  }
+
+  .progress-box span {
+    color: #e67e22;
+    font-weight: 700;
+  }
+
+  .progress-box p {
+    margin: 0;
+    color: #556270;
+    line-height: 1.7;
+  }
+
+  .section-heading {
+    max-width: 760px;
+    margin-bottom: 1.7rem;
+  }
+
+  .section-heading h2 {
+    margin: 0 0 0.7rem;
+    font-size: clamp(1.7rem, 3vw, 2.3rem);
+    line-height: 1.15;
+  }
+
+  .section-heading p {
+    margin: 0;
+  }
+
+  .task-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.2rem;
+  }
+
+  .task-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border: 1px solid rgba(24, 50, 74, 0.1);
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 10px 28px rgba(24, 50, 74, 0.05);
+  }
+
+  .task-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .task-number {
+    color: #e67e22;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .premium-badge {
+    padding: 0.4rem 0.65rem;
+    border-radius: 999px;
+    background: #fff3e7;
+    color: #b85f15;
+    font-size: 0.72rem;
+    font-weight: 800;
+  }
+
+  .task-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .task-meta span,
+  .task-settings span {
+    padding: 0.38rem 0.6rem;
+    border-radius: 999px;
+    background: #f6f7f8;
+    color: #556270;
+    font-size: 0.78rem;
+    font-weight: 700;
+  }
+
+  .task-card h3 {
+    margin: 0 0 0.75rem;
+    color: #18324a;
+    font-size: 1.3rem;
+    line-height: 1.3;
+  }
+
+  .task-card > p {
+    margin: 0 0 1.2rem;
+    color: #556270;
+    line-height: 1.7;
+  }
+
+  .task-topic {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .task-topic strong {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .task-topic span {
+    color: #556270;
+  }
+
+  .task-settings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .task-link {
+    display: inline-flex;
+    align-items: center;
+    margin-top: auto;
+    color: #18324a;
+    font-weight: 800;
+    text-decoration: none;
+  }
+
+  .task-link:hover {
+    color: #e67e22;
+  }
+
+  @media (max-width: 760px) {
+    .progress-box,
+    .task-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .task-card-top {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+</style>

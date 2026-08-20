@@ -1,7 +1,7 @@
 ---
 title: Veränderungen wahrnehmen, Beobachtungen beschreiben und weitergeben
 beschreibung: Eine praxisnahe Anleitungsaufgabe für den Ausbildungsbeginn zum gezielten Wahrnehmen pflegerisch relevanter Beobachtungen, zum Unterscheiden von Beobachtung und Interpretation und zur strukturierten Weitergabe von Veränderungen.
-ausbildungsstand: ausbildungsbeginn
+ausbildungsstand: erstes-drittel
 themenbereich: Pflegebeobachtung & Informationsweitergabe
 setting:
   - klinik

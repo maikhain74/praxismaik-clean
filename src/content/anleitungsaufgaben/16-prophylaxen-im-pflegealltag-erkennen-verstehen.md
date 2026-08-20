@@ -3,7 +3,7 @@ title: Prophylaxen im Pflegealltag erkennen und verstehen
 
 beschreibung: Eine praxisnahe Anleitungsaufgabe für den Ausbildungsbeginn zum Erkennen prophylaktischer Aspekte in alltäglichen Pflegesituationen, zum Verstehen einfacher Zusammenhänge und zum sicheren Handeln unter Anleitung.
 
-ausbildungsstand: ausbildungsbeginn
+ausbildungsstand: erstes-drittel
 
 themenbereich: Prophylaxen & Prävention
 

@@ -3,7 +3,7 @@ title: Ausscheidung beobachten und bei der Ausscheidung unterstützen
 
 beschreibung: Eine praxisnahe Anleitungsaufgabe für den Ausbildungsbeginn zum achtsamen Unterstützen bei der Ausscheidung, zum Wahrnehmen und Beschreiben einfacher Beobachtungen sowie zum Wahrnehmen von Intimsphäre, Selbstständigkeit und Sicherheit.
 
-ausbildungsstand: ausbildungsbeginn
+ausbildungsstand: erstes-drittel
 
 themenbereich: Ausscheidung & Unterstützung
 

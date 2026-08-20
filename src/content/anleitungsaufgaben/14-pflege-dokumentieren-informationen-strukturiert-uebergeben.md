@@ -3,7 +3,7 @@ title: Pflege dokumentieren und Informationen strukturiert übergeben
 
 beschreibung: Eine praxisnahe Anleitungsaufgabe für den Ausbildungsbeginn zum Erkennen relevanter Pflegeinformationen, zur sachlichen Dokumentation und zur strukturierten mündlichen Übergabe.
 
-ausbildungsstand: ausbildungsbeginn
+ausbildungsstand: erstes-drittel
 
 themenbereich: Dokumentation & Übergabe
 
