@@ -26,30 +26,28 @@ if (!hasPraxisanleiterPremium) {
 
 const aufgaben = await getCollection("anleitungsaufgaben");
 
-const sortierteAufgaben = aufgaben.sort(
-  (a, b) =>
-    (a.data.reihenfolge ?? 999) -
-    (b.data.reihenfolge ?? 999)
+const erstesDrittelAufgaben = aufgaben.filter(
+  (item) =>
+    item.data.ausbildungsstand === "ausbildungsbeginn" ||
+    item.data.ausbildungsstand === "erstes-drittel"
 );
 
-const ausbildungsstandLabels = {
-  ausbildungsbeginn: "Ausbildungsbeginn",
-  "erstes-drittel": "1. Ausbildungsdrittel",
-  "zweites-drittel": "2. Ausbildungsdrittel",
-  "drittes-drittel": "3. Ausbildungsdrittel",
-};
+const zweitesDrittelAufgaben = aufgaben.filter(
+  (item) => item.data.ausbildungsstand === "zweites-drittel"
+);
 
-const settingLabels = {
-  settinguebergreifend: "Settingübergreifend",
-  klinik: "Klinik",
-  "stationaere-langzeitpflege": "Stationäre Langzeitpflege",
-  "ambulante-pflege": "Ambulante Pflege",
-};
+const drittesDrittelAufgaben = aufgaben.filter(
+  (item) => item.data.ausbildungsstand === "drittes-drittel"
+);
+
+const erstesDrittelHref = `/praxisanleitung/anleitungsaufgaben/erstes-drittel/${
+  devUnlock ? "?freischalten=1" : ""
+}`;
 ---
 
 <BaseLayout
   title="Anleitungsaufgaben | Praxisanleiter Premium"
-  description="Praxisnahe Anleitungsaufgaben für Praxisanleitende, abgestimmt auf Ausbildungsstand, Themenbereich und Versorgungssetting."
+  description="Praxisnahe Anleitungsaufgaben für Praxisanleitende, strukturiert nach Ausbildungsdritteln und abgestimmt auf den jeweiligen Lernstand."
 >
   <main class="tasks-page">
     <nav class="breadcrumbs" aria-label="Breadcrumb">
@@ -65,85 +63,148 @@ const settingLabels = {
     <header class="tasks-hero">
       <span class="eyebrow">Praxisanleiter Premium</span>
 
-      <h1>Anleitungsaufgaben für deinen Ausbildungsalltag</h1>
+      <h1>Anleitungsaufgaben für die praktische Pflegeausbildung</h1>
 
       <p>
-        Wähle eine Aufgabe passend zum Ausbildungsstand und zur aktuellen
-        Lernsituation. Jede Aufgabe verbindet praktisches Handeln mit
-        Beobachtung, Begründung, Reflexion und einem konkreten nächsten
-        Lernschritt.
+        Wähle den passenden Ausbildungsabschnitt. Die Aufgaben begleiten
+        Auszubildende schrittweise vom Ausbildungsbeginn bis zu zunehmend
+        komplexeren und selbstständigeren Pflegesituationen.
       </p>
     </header>
 
     <section class="intro-box">
-      <strong>Nicht nur Tätigkeiten üben.</strong>
+      <strong>Strukturiert nach Ausbildungsstand.</strong>
       <p>
-        Die Anleitungsaufgaben helfen dir dabei, Auszubildende schrittweise vom
-        Beobachten und angeleiteten Handeln zum selbstständigen Einschätzen,
-        Entscheiden und Begründen zu führen.
+        Statt einer langen Sammlung findest du die Anleitungsaufgaben hier
+        nach Ausbildungsdritteln geordnet. So kannst du schneller auswählen,
+        was zum aktuellen Lernstand deines Auszubildenden passt.
       </p>
     </section>
 
-    <section class="task-section">
+    <section class="training-section">
       <div class="section-heading">
-        <span>Ausbildungsbeginn · erste Wochen</span>
-        <h2>Die ersten Anleitungsaufgaben</h2>
+        <span>Ausbildungsweg</span>
+        <h2>Wähle das Ausbildungsdrittel</h2>
         <p>
-          Für Auszubildende, die gerade in die praktische Pflegeausbildung
-          starten und zunächst Orientierung, Sicherheit und grundlegende
-          Handlungskompetenz entwickeln.
+          Die Anforderungen entwickeln sich mit dem Ausbildungsstand weiter.
+          Jeder Bereich baut auf den zuvor erworbenen Kompetenzen auf.
         </p>
       </div>
 
-      <div class="task-grid">
-        {
-          sortierteAufgaben.map((item) => (
-            <article class="task-card">
-              <div class="task-card-top">
-                <span class="task-number">
-                  Aufgabe {String(item.data.reihenfolge ?? "").padStart(2, "0")}
-                </span>
+      <div class="training-grid">
+        <article class="training-card training-card-active">
+          <div class="card-top">
+            <span class="number">01</span>
+            <span class="status status-active">Verfügbar</span>
+          </div>
 
-                <span class="premium-badge">
-                  Praxisanleiter Premium
-                </span>
+          <span class="card-eyebrow">Ausbildungsbeginn inklusive</span>
+
+          <h3>1. Ausbildungsdrittel</h3>
+
+          <p>
+            Grundlagen für den Einstieg in die praktische Pflegeausbildung.
+            Von Orientierung und grundlegenden Pflegesituationen bis zu
+            Beobachtung, Begründung, Übergabe und zunehmend selbstständigem
+            Handeln.
+          </p>
+
+          <div class="card-count">
+            <strong>{erstesDrittelAufgaben.length}</strong>
+            <span>Anleitungsaufgaben</span>
+          </div>
+
+          <a class="card-link" href={erstesDrittelHref}>
+            Aufgaben öffnen →
+          </a>
+        </article>
+
+        <article class="training-card">
+          <div class="card-top">
+            <span class="number">02</span>
+
+            {
+              zweitesDrittelAufgaben.length > 0 ? (
+                <span class="status status-active">Verfügbar</span>
+              ) : (
+                <span class="status">In Vorbereitung</span>
+              )
+            }
+          </div>
+
+          <span class="card-eyebrow">Kompetenzen vertiefen</span>
+
+          <h3>2. Ausbildungsdrittel</h3>
+
+          <p>
+            Aufbauend auf den Grundlagen werden Pflegesituationen
+            anspruchsvoller. Beobachtung, Einschätzung, Pflegeprozess und
+            begründetes Handeln rücken stärker in den Mittelpunkt.
+          </p>
+
+          {
+            zweitesDrittelAufgaben.length > 0 ? (
+              <div class="card-count">
+                <strong>{zweitesDrittelAufgaben.length}</strong>
+                <span>Anleitungsaufgaben</span>
               </div>
-
-              <div class="task-meta">
-                <span>
-                  {ausbildungsstandLabels[item.data.ausbildungsstand]}
-                </span>
-
-                {item.data.dauer && (
-                  <span>{item.data.dauer}</span>
-                )}
+            ) : (
+              <div class="coming-soon">
+                Neue Anleitungsaufgaben folgen.
               </div>
+            )
+          }
+        </article>
 
-              <h3>{item.data.title}</h3>
+        <article class="training-card">
+          <div class="card-top">
+            <span class="number">03</span>
 
-              <p>{item.data.beschreibung}</p>
+            {
+              drittesDrittelAufgaben.length > 0 ? (
+                <span class="status status-active">Verfügbar</span>
+              ) : (
+                <span class="status">In Vorbereitung</span>
+              )
+            }
+          </div>
 
-              <div class="task-topic">
-                <strong>Themenbereich</strong>
-                <span>{item.data.themenbereich}</span>
+          <span class="card-eyebrow">Richtung Examen</span>
+
+          <h3>3. Ausbildungsdrittel</h3>
+
+          <p>
+            Zunehmend komplexe Pflegesituationen, Prioritätensetzung,
+            begründete Entscheidungen und die Vorbereitung auf
+            selbstständigeres Handeln und die praktische Prüfung.
+          </p>
+
+          {
+            drittesDrittelAufgaben.length > 0 ? (
+              <div class="card-count">
+                <strong>{drittesDrittelAufgaben.length}</strong>
+                <span>Anleitungsaufgaben</span>
               </div>
-
-              <div class="task-settings">
-                {item.data.setting.map((setting) => (
-                  <span>{settingLabels[setting]}</span>
-                ))}
+            ) : (
+              <div class="coming-soon">
+                Neue Anleitungsaufgaben folgen.
               </div>
-
-             <a
-  class="task-link"
-  href={`/praxisanleitung/anleitungsaufgaben/${item.slug}/${devUnlock ? "?freischalten=1" : ""}`}
->
-  Anleitungsaufgabe öffnen →
-</a>
-            </article>
-          ))
-        }
+            )
+          }
+        </article>
       </div>
+    </section>
+
+    <section class="outlook-box">
+      <span>Die Bibliothek wächst weiter</span>
+
+      <h2>20 Anleitungsaufgaben für das 1. Ausbildungsdrittel sind jetzt verfügbar.</h2>
+
+      <p>
+        Die Anleitungsaufgaben für das 2. und 3. Ausbildungsdrittel werden
+        schrittweise ergänzt. So entsteht eine strukturierte
+        Anleitungsbibliothek für den gesamten Verlauf der Pflegeausbildung.
+      </p>
     </section>
   </main>
 </BaseLayout>
@@ -176,7 +237,8 @@ const settingLabels = {
   }
 
   .eyebrow,
-  .section-heading > span {
+  .section-heading > span,
+  .outlook-box > span {
     display: inline-block;
     margin-bottom: 0.7rem;
     color: #e67e22;
@@ -211,6 +273,7 @@ const settingLabels = {
   .intro-box strong {
     display: block;
     margin-bottom: 0.45rem;
+    color: #18324a;
     font-size: 1.05rem;
   }
 
@@ -220,6 +283,10 @@ const settingLabels = {
     line-height: 1.7;
   }
 
+  .training-section {
+    margin-bottom: 3.5rem;
+  }
+
   .section-heading {
     max-width: 760px;
     margin-bottom: 1.7rem;
@@ -227,6 +294,7 @@ const settingLabels = {
 
   .section-heading h2 {
     margin: 0 0 0.7rem;
+    color: #18324a;
     font-size: clamp(1.7rem, 3vw, 2.3rem);
     line-height: 1.15;
   }
@@ -235,115 +303,166 @@ const settingLabels = {
     margin: 0;
   }
 
-  .task-grid {
+  .training-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.2rem;
   }
 
-  .task-card {
-    padding: 1.5rem;
+  .training-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 430px;
+    padding: 1.6rem;
     border: 1px solid rgba(24, 50, 74, 0.1);
-    border-radius: 20px;
+    border-radius: 22px;
     background: #ffffff;
     box-shadow: 0 10px 28px rgba(24, 50, 74, 0.05);
   }
 
-  .task-card-top {
+  .training-card-active {
+    border-color: rgba(230, 126, 34, 0.35);
+    background: linear-gradient(180deg, #fffaf5 0%, #ffffff 100%);
+  }
+
+  .card-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
-  .task-number {
+  .number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    background: #fff3e7;
     color: #e67e22;
-    font-size: 0.78rem;
+    font-size: 1rem;
+    font-weight: 900;
+  }
+
+  .status {
+    padding: 0.4rem 0.7rem;
+    border-radius: 999px;
+    background: #f3f4f6;
+    color: #7a8793;
+    font-size: 0.72rem;
+    font-weight: 800;
+  }
+
+  .status-active {
+    background: #fff0df;
+    color: #b85f15;
+  }
+
+  .card-eyebrow {
+    display: block;
+    margin-bottom: 0.45rem;
+    color: #e67e22;
+    font-size: 0.75rem;
     font-weight: 800;
     letter-spacing: 0.05em;
     text-transform: uppercase;
   }
 
-  .premium-badge {
-    padding: 0.4rem 0.65rem;
-    border-radius: 999px;
-    background: #fff3e7;
-    color: #b85f15;
-    font-size: 0.72rem;
-    font-weight: 800;
-  }
-
-  .task-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .task-meta span,
-  .task-settings span {
-    padding: 0.38rem 0.6rem;
-    border-radius: 999px;
-    background: #f6f7f8;
-    color: #556270;
-    font-size: 0.78rem;
-    font-weight: 700;
-  }
-
-  .task-card h3 {
-    margin: 0 0 0.75rem;
+  .training-card h3 {
+    margin: 0 0 1rem;
     color: #18324a;
-    font-size: 1.3rem;
-    line-height: 1.3;
+    font-size: 1.55rem;
+    line-height: 1.2;
   }
 
-  .task-card > p {
-    margin: 0 0 1.2rem;
+  .training-card > p {
+    margin: 0 0 1.5rem;
     color: #556270;
     line-height: 1.7;
   }
 
-  .task-topic {
+  .card-count {
     display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    margin-bottom: 1rem;
-  }
-
-  .task-topic strong {
-    font-size: 0.78rem;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-  }
-
-  .task-topic span {
-    color: #556270;
-  }
-
-  .task-settings {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.45rem;
+    align-items: baseline;
+    gap: 0.55rem;
+    margin-top: auto;
     margin-bottom: 1.2rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid rgba(24, 50, 74, 0.08);
   }
 
-  .task-status {
-    padding-top: 1rem;
-    border-top: 1px solid rgba(24, 50, 74, 0.08);
-    color: #7a8793;
-    font-size: 0.88rem;
+  .card-count strong {
+    color: #e67e22;
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .card-count span {
+    color: #556270;
+    font-size: 0.9rem;
     font-weight: 700;
   }
 
-  @media (max-width: 760px) {
-    .task-grid {
+  .coming-soon {
+    margin-top: auto;
+    padding-top: 1.2rem;
+    border-top: 1px solid rgba(24, 50, 74, 0.08);
+    color: #7a8793;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  .card-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border-radius: 12px;
+    background: #e67e22;
+    color: #ffffff;
+    font-weight: 800;
+    text-decoration: none;
+    transition:
+      transform 0.15s ease,
+      background 0.15s ease;
+  }
+
+  .card-link:hover {
+    background: #cf6f1d;
+    transform: translateY(-1px);
+  }
+
+  .outlook-box {
+    padding: 2rem;
+    border-radius: 22px;
+    background: #fff8f1;
+    border: 1px solid rgba(230, 126, 34, 0.18);
+  }
+
+  .outlook-box h2 {
+    margin: 0 0 0.8rem;
+    color: #18324a;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    line-height: 1.2;
+  }
+
+  .outlook-box p {
+    max-width: 800px;
+    margin: 0;
+    color: #556270;
+    line-height: 1.75;
+  }
+
+  @media (max-width: 900px) {
+    .training-grid {
       grid-template-columns: 1fr;
     }
 
-    .task-card-top {
-      align-items: flex-start;
-      flex-direction: column;
+    .training-card {
+      min-height: auto;
     }
   }
 </style>
