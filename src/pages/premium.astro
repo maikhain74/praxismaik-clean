@@ -265,9 +265,7 @@ const premiumExamQuizCount = premiumExamQuiz.length;
         Abschlussprüfung und deinen späteren Berufsalltag.
       </p>
     </div>
-
-  </div>
-
+</div>
 </section>
 
  <section class="premium-section premium-showcase-compact">
@@ -278,15 +276,7 @@ const premiumExamQuizCount = premiumExamQuiz.length;
             </p>
           </div>
 
-          <div class="premium-ebook-cover-grid">
-            <a href="/ebooks/praxisanleitung/">
-              <img src="/images/ebooks/ebook-praxisanleitung-cover.webp" alt="Praxisanleitung E-Book" />
-            </a>
-
-            <a href="/ebooks/formulierungen-praxisanleitung/">
-              <img src="/images/ebooks/formulierungen-praxisanleitung-cover.webp" alt="Formulierungen für Praxisanleiter E-Book" />
-            </a>
-
+           <div class="premium-ebook-cover-grid">
             <a href="/ebooks/pruefungsfaelle-pflegepruefung/">
               <img src="/images/ebooks/pruefungsfaelle-cover.webp" alt="Prüfungsfälle E-Book" />
             </a>
@@ -305,7 +295,7 @@ const premiumExamQuizCount = premiumExamQuiz.length;
           </div>
 
           <div class="premium-after-showcase-cta">
-            <h3>6 E-Books, 240 Lernskripte, 45 Prüfungsfälle und 61 Examensfragen in einem Zugang.</h3>
+            <h3>4 E-Books, 240 Lernskripte, 45 Prüfungsfälle und 61 Examensfragen in einem Zugang.</h3>
             <p>
               Wenn du für Ausbildung, Praxis oder Examen lernst, bekommst du hier einen klaren Lernweg statt einzelner Sucherei.
             </p>
@@ -331,6 +321,7 @@ const premiumExamQuizCount = premiumExamQuiz.length;
             </p>
           </section>
         </>
+
       )}
     </header>
 
@@ -475,28 +466,6 @@ const premiumExamQuizCount = premiumExamQuiz.length;
           </div>
         </section>
 
-<section class="premium-testimonials">
-
-  <h2>Das sagen Pflegeauszubildende über PraxisMaik</h2>
-
-  <div class="testimonial-placeholder">
-
-  ⭐⭐⭐⭐⭐
-
-  <p>
-    <strong>PraxisMaik wächst gerade.</strong>
-  </p>
-
-  <p>
-    Die ersten Premium-Nutzer sammeln aktuell ihre Erfahrungen.
-    Sobald die ersten Rückmeldungen vorliegen, findest du hier echte,
-    unveränderte Bewertungen aus der Pflegeausbildung.
-  </p>
-
-</div>
-
-</section>
-
         <section class="premium-section premium-faq-section">
           <div class="section-headline">
             <h2>Häufige Fragen</h2>
@@ -543,7 +512,7 @@ const premiumExamQuizCount = premiumExamQuiz.length;
               <p>
                 Mein Ziel ist, Pflegeazubis einen bezahlbaren Zugang zu hochwertigen
                 Lernmaterialien zu ermöglichen. Du zahlst einmal und erhältst Zugriff auf
-                240 Lernskripte, 45 Prüfungsfälle, 61 Examensfragen und 6 Premium-E-Books,
+                240 Lernskripte, 45 Prüfungsfälle, 61 Examensfragen und 4 Premium-E-Books,
                 ohne Abo und ohne weitere Kosten.
               </p>
             </details>
@@ -569,7 +538,7 @@ const premiumExamQuizCount = premiumExamQuiz.length;
             <details class="premium-faq-item">
               <summary>Was bekomme ich konkret?</summary>
               <p>
-                6 Premium-E-Books, 240 Lernskripte, 45 Prüfungsfälle und 61 Examensfragen
+                4 Premium-E-Books, 240 Lernskripte, 45 Prüfungsfälle und 61 Examensfragen
                 in einem dauerhaften Zugang.
               </p>
             </details>
@@ -584,7 +553,7 @@ const premiumExamQuizCount = premiumExamQuiz.length;
     <li>✓ Über 240 Lernskripte mit verständlichen Erklärungen</li>
     <li>✓ 45 praxisnahe Prüfungsfälle mit Lösungen</li>
     <li>✓ 61 Examensfragen zum Selbsttest</li>
-    <li>✓ 6 Premium-E-Books</li>
+    <li>✓ 4 Premium-E-Books</li>
     <li>✓ Dauerhafter Zugriff – kein Abo</li>
     <li>✓ Einmalig 39 €</li>
   </ul>
@@ -1294,7 +1263,7 @@ const premiumExamQuizCount = premiumExamQuiz.length;
 
   .premium-ebook-cover-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(160px, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1rem;
     align-items: center;
   }
@@ -1743,12 +1712,12 @@ const premiumExamQuizCount = premiumExamQuiz.length;
     }
 
     .premium-ebook-cover-grid {
-      grid-template-columns: 1fr;
-    }
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 
-    .premium-ebook-cover-grid img {
-      max-height: none;
-    }
+.premium-ebook-cover-grid img {
+  max-height: 170px;
+}
 
     .premium-faq-grid {
       grid-template-columns: 1fr;
