@@ -17,6 +17,7 @@
     "@astrojs/node": "^9.5.5",
     "@astrojs/sitemap": "^3.7.0",
     "@astrojs/vercel": "^9.0.5",
+    "@supabase/ssr": "^0.12.4",
     "@supabase/supabase-js": "^2.105.4",
     "marked": "^18.0.7",
     "stripe": "^22.0.1"
