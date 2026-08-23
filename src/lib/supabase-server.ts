@@ -20,19 +20,23 @@ export function createSupabaseServerClient(
     supabaseAnonKey,
     {
       cookies: {
-        getAll() {
-          return cookies.getAll().map(({ name, value }) => ({
-            name,
-            value,
-          }));
+        get(name: string) {
+          return cookies.get(name)?.value;
         },
 
-        setAll(cookiesToSet) {
-          cookiesToSet.forEach(
-            ({ name, value, options }) => {
-              cookies.set(name, value, options);
-            }
-          );
+        set(
+          name: string,
+          value: string,
+          options: Record<string, any>
+        ) {
+          cookies.set(name, value, options);
+        },
+
+        remove(
+          name: string,
+          options: Record<string, any>
+        ) {
+          cookies.delete(name, options);
         },
       },
     }

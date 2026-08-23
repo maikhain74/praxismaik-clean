@@ -4,6 +4,7 @@ export const prerender = false;
 import { getCollection, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PremiumGate from "../../components/PremiumGate.astro";
+import { createSupabaseServerClient } from "../../lib/supabase-server";
 
 const slug = Astro.params.slug;
 
@@ -34,19 +35,37 @@ const devUnlock =
   Astro.url.searchParams.get("freischalten") === "1" &&
   isLocalhost;
 
-const premiumAzubiCookieValue =
-  Astro.cookies.get("praxismaik_premium_azubi")?.value;
+const supabase =
+  createSupabaseServerClient(Astro.cookies);
 
-console.log("Cookie:", premiumAzubiCookieValue);
+const {
+  data: { user },
+  error: userError,
+} = await supabase.auth.getUser();
 
-const hasPremiumAzubiCookie =
-  premiumAzubiCookieValue === "1" ||
-  premiumAzubiCookieValue === "true";
+let hasPremiumAzubi = false;
+
+if (!userError && user) {
+  const {
+    data: profile,
+    error: profileError,
+  } = await supabase
+    .from("profiles")
+    .select("premium, premium_azubi")
+    .eq("id", user.id)
+    .single();
+
+  if (!profileError && profile) {
+    hasPremiumAzubi =
+      profile.premium === true ||
+      profile.premium_azubi === true;
+  }
+}
 
 const showFullContent =
   !isPremium ||
   devUnlock ||
-  hasPremiumAzubiCookie;
+  hasPremiumAzubi;
 
 const metaDescription =
   beschreibung ||
@@ -89,7 +108,7 @@ const metaDescription =
           </div>
         )}
 
-        {hasPremiumAzubiCookie && isPremium && (
+        {hasPremiumAzubi && isPremium && (
           <div class="status-box">
             Azubi Premium ist aktiv. Du hast vollständigen Zugriff auf dieses Lernskript.
           </div>

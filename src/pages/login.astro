@@ -90,9 +90,11 @@ const safeRedirect =
 </BaseLayout>
 
 <script>
-  import { createClient } from '@supabase/supabase-js';
+  import { createSupabaseBrowserClient } from '../lib/supabase-browser';
 
-  const redirectParam = new URLSearchParams(window.location.search).get('redirect');
+  const redirectParam = new URLSearchParams(
+    window.location.search
+  ).get('redirect');
 
   const safeRedirect =
     redirectParam &&
@@ -101,17 +103,24 @@ const safeRedirect =
       ? redirectParam
       : '/';
 
-  const supabase = createClient(
-    import.meta.env.PUBLIC_SUPABASE_URL,
-    import.meta.env.PUBLIC_SUPABASE_ANON_KEY
-  );
+  const supabase =
+    createSupabaseBrowserClient();
 
-  const form = document.getElementById('login-form');
-  const button = document.getElementById('login-button');
-  const message = document.getElementById('message');
+  const form =
+    document.getElementById('login-form');
 
-  const emailInput = document.getElementById('email');
-  const passwordInput = document.getElementById('password');
+  const button =
+    document.getElementById('login-button');
+
+  const message =
+    document.getElementById('message');
+
+  const emailInput =
+    document.getElementById('email');
+
+  const passwordInput =
+    document.getElementById('password');
+
   const passwordToggle =
     document.getElementById('password-toggle');
 
@@ -123,7 +132,8 @@ const safeRedirect =
       return;
     }
 
-    const isVisible = passwordInput.type === 'text';
+    const isVisible =
+      passwordInput.type === 'text';
 
     passwordInput.type = isVisible
       ? 'password'
@@ -144,125 +154,118 @@ const safeRedirect =
     );
   });
 
-  form?.addEventListener('submit', async (event) => {
-    event.preventDefault();
+  form?.addEventListener(
+    'submit',
+    async (event) => {
+      event.preventDefault();
 
-    if (
-      !(emailInput instanceof HTMLInputElement) ||
-      !(passwordInput instanceof HTMLInputElement) ||
-      !(button instanceof HTMLButtonElement) ||
-      !(message instanceof HTMLElement)
-    ) {
-      return;
-    }
+      if (
+        !(emailInput instanceof HTMLInputElement) ||
+        !(passwordInput instanceof HTMLInputElement) ||
+        !(button instanceof HTMLButtonElement) ||
+        !(message instanceof HTMLElement)
+      ) {
+        return;
+      }
 
-    const email = emailInput.value.trim();
-    const password = passwordInput.value;
+      const email =
+        emailInput.value.trim();
 
-    if (!email || !password) {
+      const password =
+        passwordInput.value;
+
+      if (!email || !password) {
+        message.textContent =
+          'Bitte E-Mail-Adresse und Passwort eingeben.';
+
+        return;
+      }
+
+      button.disabled = true;
+      button.textContent =
+        'Login wird geprüft ...';
+
       message.textContent =
-        'Bitte E-Mail-Adresse und Passwort eingeben.';
-      return;
-    }
+        'Login wird geprüft ...';
 
-    button.disabled = true;
-    button.textContent = 'Login wird geprüft ...';
-
-    message.textContent = 'Login wird geprüft ...';
-
-    const { data, error } =
-      await supabase.auth.signInWithPassword({
+      const {
+        data,
+        error,
+      } = await supabase.auth.signInWithPassword({
         email,
         password,
       });
 
-    if (error || !data.user) {
-      message.textContent =
-        'E-Mail-Adresse oder Passwort sind nicht korrekt.';
+      if (
+        error ||
+        !data.user ||
+        !data.session
+      ) {
+        message.textContent =
+          'E-Mail-Adresse oder Passwort sind nicht korrekt.';
 
-      button.disabled = false;
-      button.textContent = 'Login';
+        button.disabled = false;
+        button.textContent = 'Login';
 
-      return;
-    }
+        return;
+      }
 
-    const user = data.user;
+      const user = data.user;
 
-    const {
-      data: profile,
-      error: profileError,
-    } = await supabase
-      .from('profiles')
-      .select(
-        'premium, premium_azubi, premium_praxisanleiter'
-      )
-      .eq('id', user.id)
-      .single();
+      const {
+        data: profile,
+        error: profileError,
+      } = await supabase
+        .from('profiles')
+        .select(
+          'premium, premium_azubi, premium_praxisanleiter'
+        )
+        .eq('id', user.id)
+        .single();
 
-    if (profileError || !profile) {
-      console.error(
-        'Profil konnte nicht geladen werden:',
-        profileError
-      );
+      if (profileError || !profile) {
+        console.error(
+          'Profil konnte nicht geladen werden:',
+          profileError
+        );
 
-      message.textContent =
-        'Dein PraxisMaik-Profil konnte nicht geladen werden.';
+        await supabase.auth.signOut();
 
-      button.disabled = false;
-      button.textContent = 'Login';
+        message.textContent =
+          'Dein PraxisMaik-Profil konnte nicht geladen werden.';
 
-      return;
-    }
+        button.disabled = false;
+        button.textContent = 'Login';
 
-    const hasAzubiPremium =
-      profile.premium === true ||
-      profile.premium_azubi === true;
+        return;
+      }
 
-    if (hasAzubiPremium) {
-      localStorage.setItem(
-        'praxismaik_premium_azubi',
-        'true'
-      );
-
-      document.cookie =
-        'praxismaik_premium_azubi=true; path=/; max-age=315360000; SameSite=Lax';
-    } else {
       localStorage.removeItem(
         'praxismaik_premium_azubi'
       );
 
-      document.cookie =
-        'praxismaik_premium_azubi=; path=/; max-age=0; SameSite=Lax';
-    }
-
-    if (
-      profile.premium_praxisanleiter === true
-    ) {
-      localStorage.setItem(
-        'praxismaik_premium_praxisanleiter',
-        'true'
-      );
-
-      document.cookie =
-        'praxismaik_premium_praxisanleiter=true; path=/; max-age=315360000; SameSite=Lax';
-    } else {
       localStorage.removeItem(
         'praxismaik_premium_praxisanleiter'
       );
 
       document.cookie =
+        'praxismaik_premium_azubi=; path=/; max-age=0; SameSite=Lax';
+
+      document.cookie =
         'praxismaik_premium_praxisanleiter=; path=/; max-age=0; SameSite=Lax';
+
+      localStorage.setItem(
+        'praxismaik_user_email',
+        user.email ?? email
+      );
+
+      message.textContent =
+        'Login erfolgreich.';
+
+      window.location.href =
+        safeRedirect;
     }
-
-    localStorage.setItem(
-      'praxismaik_user_email',
-      user.email ?? email
-    );
-
-    message.textContent = 'Login erfolgreich.';
-
-    window.location.href = safeRedirect;
-  });
+  );
 </script>
 
 <style>
