@@ -30,8 +30,8 @@ function verifyStripeEvent(
         liveSecret
       );
     } catch {
-      // Wenn es kein Live-Ereignis ist,
-      // wird anschließend der Sandbox-Schlüssel geprüft.
+      // Kein gültiges Live-Ereignis.
+      // Anschließend wird das Sandbox-Geheimnis geprüft.
     }
   }
 
@@ -43,7 +43,7 @@ function verifyStripeEvent(
         testSecret
       );
     } catch {
-      // Beide Signaturprüfungen sind fehlgeschlagen.
+      // Auch die Sandbox-Signatur ist ungültig.
     }
   }
 
@@ -97,6 +97,31 @@ export async function POST({
     );
   }
 
+  /*
+   * Sandbox-Ereignisse niemals für produktive
+   * Premium-Freischaltungen verwenden.
+   *
+   * Stripe erhält trotzdem HTTP 200 und versucht
+   * das Ereignis deshalb nicht erneut zuzustellen.
+   */
+  if (!event.livemode) {
+    console.log(
+      "Stripe Sandbox-Ereignis ignoriert:",
+      {
+        eventId: event.id,
+        eventType: event.type,
+      }
+    );
+
+    return new Response("OK", {
+      status: 200,
+    });
+  }
+
+  /*
+   * Für PraxisMaik interessiert uns hier nur
+   * ein erfolgreich abgeschlossener Checkout.
+   */
   if (
     event.type !==
     "checkout.session.completed"
@@ -118,6 +143,27 @@ export async function POST({
   const customerEmail =
     session.customer_details?.email ??
     session.customer_email;
+
+  /*
+   * Checkout ohne Premium-Kennzeichnung.
+   *
+   * Das kann zum Beispiel die 1:1-Lernhilfe
+   * oder ein anderes Produkt sein.
+   *
+   * Das Ereignis ist gültig, deshalb HTTP 200.
+   */
+  if (!premiumType) {
+    console.log(
+      "Nicht-Premium-Checkout ignoriert:",
+      {
+        sessionId: session.id,
+      }
+    );
+
+    return new Response("OK", {
+      status: 200,
+    });
+  }
 
   if (premiumType === "azubi") {
     if (!userId) {
@@ -277,18 +323,22 @@ export async function POST({
     });
   }
 
+  /*
+   * Es gibt zwar premium_type, aber keinen
+   * von PraxisMaik unterstützten Wert.
+   *
+   * Keine Freischaltung, aber auch kein
+   * unnötiger Stripe-Wiederholungsversuch.
+   */
   console.error(
-    "Unbekannter Premium-Typ:",
+    "Unbekannter Premium-Typ ignoriert:",
     {
       premiumType,
       sessionId: session.id,
     }
   );
 
-  return new Response(
-    "Unbekannter Premium-Typ.",
-    {
-      status: 400,
-    }
-  );
+  return new Response("OK", {
+    status: 200,
+  });
 }
