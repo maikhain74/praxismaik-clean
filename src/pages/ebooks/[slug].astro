@@ -4,6 +4,7 @@ export const prerender = false;
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 import PremiumGate from "../../components/PremiumGate.astro";
+import { createSupabaseServerClient } from "../../lib/supabase-server";
 
 const slug = Astro.params.slug;
 
@@ -44,31 +45,38 @@ const praxisanleiterEbookSlugs = [
 const isPraxisanleiterEbook =
   praxisanleiterEbookSlugs.includes(slug);
 
-/*
- * Bestehender Azubi-Premium-Zugang.
- * Der alte Cookie bleibt während der Übergangsphase erhalten.
- */
-const premiumCookieValue =
-  Astro.cookies.get("praxismaik_premium")?.value;
+const supabase =
+  createSupabaseServerClient(Astro.cookies);
 
-const premiumAzubiCookieValue =
-  Astro.cookies.get("praxismaik_premium_azubi")?.value;
+const {
+  data: { user },
+  error: userError,
+} = await supabase.auth.getUser();
 
-const hasAzubiPremium =
-  premiumCookieValue === "1" ||
-  premiumCookieValue === "true" ||
-  premiumAzubiCookieValue === "1" ||
-  premiumAzubiCookieValue === "true";
+let hasAzubiPremium = false;
+let hasPraxisanleiterPremium = false;
 
-/*
- * Separater Praxisanleiter-Premium-Zugang.
- */
-const praxisanleiterCookieValue =
-  Astro.cookies.get("praxismaik_premium_praxisanleiter")?.value;
+if (!userError && user) {
+  const {
+    data: profile,
+    error: profileError,
+  } = await supabase
+    .from("profiles")
+    .select(
+      "premium, premium_azubi, premium_praxisanleiter"
+    )
+    .eq("id", user.id)
+    .single();
 
-const hasPraxisanleiterPremium =
-  praxisanleiterCookieValue === "1" ||
-  praxisanleiterCookieValue === "true";
+  if (!profileError && profile) {
+    hasAzubiPremium =
+      profile.premium === true ||
+      profile.premium_azubi === true;
+
+    hasPraxisanleiterPremium =
+      profile.premium_praxisanleiter === true;
+  }
+}
 
 const isLocalhost =
   Astro.url.hostname === "localhost" ||
