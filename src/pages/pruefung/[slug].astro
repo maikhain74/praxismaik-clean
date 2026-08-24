@@ -5,6 +5,7 @@ import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PremiumGate from '../../components/PremiumGate.astro';
 import LernpfadPruefungsfall from '../../components/LernpfadPruefungsfall.astro';
+import { createSupabaseServerClient } from '../../lib/supabase-server';
 
 const slug = Astro.params.slug;
 
@@ -56,16 +57,38 @@ const isLocalhost =
 const devUnlock =
   Astro.url.searchParams.get('freischalten') === '1' && isLocalhost;
 
-const hasPremiumCookie =
-  Astro.cookies.get('praxismaik_premium')?.value === '1' ||
-  Astro.cookies.get('praxismaik_premium')?.value === 'true';
+const supabase =
+  createSupabaseServerClient(Astro.cookies);
 
-const praxisanleiterPremiumCookieValue =
-  Astro.cookies.get('praxismaik_premium_praxisanleiter')?.value;
+const {
+  data: { user },
+  error: userError,
+} = await supabase.auth.getUser();
 
-const hasPraxisanleiterPremium =
-  praxisanleiterPremiumCookieValue === '1' ||
-  praxisanleiterPremiumCookieValue === 'true';
+let hasAzubiPremium = false;
+let hasPraxisanleiterPremium = false;
+
+if (!userError && user) {
+  const {
+    data: profile,
+    error: profileError,
+  } = await supabase
+    .from('profiles')
+    .select(
+      'premium, premium_azubi, premium_praxisanleiter'
+    )
+    .eq('id', user.id)
+    .single();
+
+  if (!profileError && profile) {
+    hasAzubiPremium =
+      profile.premium === true ||
+      profile.premium_azubi === true;
+
+    hasPraxisanleiterPremium =
+      profile.premium_praxisanleiter === true;
+  }
+}
 
 const isPraxisanleiterFall =
   eintrag.data.topic === 'praxisanleitung';
@@ -73,7 +96,7 @@ const isPraxisanleiterFall =
 const hasRequiredPremium =
   isPraxisanleiterFall
     ? hasPraxisanleiterPremium
-    : hasPremiumCookie;
+    : hasAzubiPremium;
 
 const showFullContent =
   !isPremium ||
@@ -112,7 +135,7 @@ const backLabel = sameOriginReferer.includes('/themen/')
             </div>
           )}
 
-          {hasPremiumCookie && !devUnlock && (
+          {hasRequiredPremium && !devUnlock && (
             <div class="status-box">
               Premium ist aktiv.
             </div>
