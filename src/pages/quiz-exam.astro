@@ -4,6 +4,7 @@ export const prerender = false;
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 import PremiumGate from "../components/PremiumGate.astro";
+import { createSupabaseServerClient } from "../lib/supabase-server";
 
 const examEntries = await getCollection("examQuiz");
 
@@ -13,10 +14,33 @@ const isLocalhost =
 const devUnlock =
   Astro.url.searchParams.get("freischalten") === "1" && isLocalhost;
 
-const premiumCookieValue = Astro.cookies.get("praxismaik_premium")?.value;
+const supabase =
+  createSupabaseServerClient(Astro.cookies);
 
-const hasPremiumCookie =
-  premiumCookieValue === "1" || premiumCookieValue === "true";
+const {
+  data: { user },
+  error: userError,
+} = await supabase.auth.getUser();
+
+let hasPremiumAzubi = false;
+
+if (!userError && user) {
+  const {
+    data: profile,
+    error: profileError,
+  } = await supabase
+    .from("profiles")
+    .select("premium, premium_azubi")
+    .eq("id", user.id)
+    .single();
+
+  if (!profileError && profile) {
+    hasPremiumAzubi =
+      profile.premium === true ||
+      profile.premium_azubi === true;
+  }
+}
+
 const examQuestions = examEntries.map((entry) => ({
   id: entry.id,
   slug: entry.slug,
@@ -29,7 +53,7 @@ const examQuestions = examEntries.map((entry) => ({
   premium: entry.data.premium === true,
 }));
 
-const visibleQuestions = (devUnlock || hasPremiumCookie)
+const visibleQuestions = (devUnlock || hasPremiumAzubi)
   ? examQuestions
   : examQuestions.filter((question) => !question.premium);
 
@@ -65,7 +89,7 @@ const hasEnoughForExam = availableModes.length > 0;
       </div>
     )}
 
-{hasPremiumCookie && !devUnlock && (
+{hasPremiumAzubi && !devUnlock && (
   <div class="dev-box">
     Premium ist aktiv, alle Examensfragen sind freigeschaltet.
   </div>
@@ -113,7 +137,7 @@ const hasEnoughForExam = availableModes.length > 0;
             Simuliere deine Abschlussprüfung unter Zeitdruck. Die Auswertung erscheint erst am Ende.
           </p>
 
-          {!devUnlock && !hasPremiumCookie && premiumQuestionCount > 0 && (
+          {!devUnlock && !hasPremiumAzubi && premiumQuestionCount > 0 && (
             <div class="notice-box">
               Kostenlos sichtbar: {freeQuestionCount} Frage{freeQuestionCount === 1 ? "" : "n"}.
               Premium-Fragen bleiben gesperrt.
