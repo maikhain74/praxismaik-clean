@@ -1,11 +1,41 @@
 ---
+export const prerender = false;
+
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PremiumGate from '../components/PremiumGate.astro';
+import { createSupabaseServerClient } from '../lib/supabase-server';
 
 const title = 'Visuelle Lernkarten für die Pflegeausbildung | PraxisMaik';
 
 const description =
   'Visuelle Lernkarten für Pflegeazubis: Positionierungen, Prophylaxen, Pflegepraxis und prüfungsrelevante Maßnahmen einfach erklärt.';
+
+  const supabase =
+  createSupabaseServerClient(Astro.cookies);
+
+const {
+  data: { user },
+  error: userError,
+} = await supabase.auth.getUser();
+
+let hasPremiumAzubi = false;
+
+if (!userError && user) {
+  const {
+    data: profile,
+    error: profileError,
+  } = await supabase
+    .from('profiles')
+    .select('premium, premium_azubi')
+    .eq('id', user.id)
+    .single();
+
+  if (!profileError && profile) {
+    hasPremiumAzubi =
+      profile.premium === true ||
+      profile.premium_azubi === true;
+  }
+}
 ---
 
 <BaseLayout title={title} description={description}>
@@ -124,12 +154,8 @@ const description =
   </div>
 </section>
 
-<PremiumGate
-  title="Alle visuellen Lernkarten mit Premium nutzen"
-  text="Mit Premium erhältst du Zugriff auf alle visuellen Lernkarten zu Medikamentenlehre, Hygiene, Wundversorgung, Mobilisation, Vitalzeichen, Notfällen und weiteren prüfungsrelevanten Themen."
-  buttonText="Premium einmalig für 39 € freischalten"
-  buttonHref="/premium"
->
+{hasPremiumAzubi ? (
+  <>
 
 <section class="topic-group">
   <div class="topic-group-header">
@@ -3724,7 +3750,16 @@ const description =
 
   <img id="lightbox-image" src="" alt="" />
 </div>
-</PremiumGate>
+</>
+
+) : (
+  <PremiumGate
+    title="Alle visuellen Lernkarten mit Premium nutzen"
+    text="Mit Premium erhältst du Zugriff auf alle visuellen Lernkarten zu Medikamentenlehre, Hygiene, Wundversorgung, Mobilisation, Vitalzeichen, Notfällen und weiteren prüfungsrelevanten Themen."
+    buttonText="Premium einmalig für 39 € freischalten"
+    buttonHref="/premium"
+  />
+)}
   </main>
 </BaseLayout>
 
