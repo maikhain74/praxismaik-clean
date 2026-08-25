@@ -3,9 +3,7 @@ export const prerender = false;
 
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
-
-const praxisanleiterPremiumCookie =
-  Astro.cookies.get("praxismaik_premium_praxisanleiter")?.value;
+import { createSupabaseServerClient } from "../../../lib/supabase-server";
 
 const isLocalhost =
   Astro.url.hostname === "localhost" ||
@@ -15,13 +13,34 @@ const devUnlock =
   Astro.url.searchParams.get("freischalten") === "1" &&
   isLocalhost;
 
-const hasPraxisanleiterPremium =
-  praxisanleiterPremiumCookie === "1" ||
-  praxisanleiterPremiumCookie === "true" ||
-  devUnlock;
+const supabase =
+  createSupabaseServerClient(Astro.cookies);
 
-if (!hasPraxisanleiterPremium) {
-  return Astro.redirect("/praxisanleiter-premium");
+const {
+  data: { user },
+  error: userError,
+} = await supabase.auth.getUser();
+
+let hasPraxisanleiterPremium = false;
+
+if (!userError && user) {
+  const {
+    data: profile,
+    error: profileError,
+  } = await supabase
+    .from("profiles")
+    .select("premium_praxisanleiter")
+    .eq("id", user.id)
+    .single();
+
+  if (!profileError && profile) {
+    hasPraxisanleiterPremium =
+      profile.premium_praxisanleiter === true;
+  }
+}
+
+if (devUnlock) {
+  hasPraxisanleiterPremium = true;
 }
 
 const aufgaben = await getCollection("anleitungsaufgaben");

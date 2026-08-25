@@ -3,6 +3,7 @@ export const prerender = false;
 
 import { getCollection, render } from "astro:content";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { createSupabaseServerClient } from "../../../lib/supabase-server";
 
 const slug = Astro.params.slug;
 
@@ -20,9 +21,6 @@ if (!eintrag) {
 
 const { Content } = await render(eintrag);
 
-const praxisanleiterPremiumCookie =
-  Astro.cookies.get("praxismaik_premium_praxisanleiter")?.value;
-
 const isLocalhost =
   Astro.url.hostname === "localhost" ||
   Astro.url.hostname === "127.0.0.1";
@@ -31,10 +29,35 @@ const devUnlock =
   Astro.url.searchParams.get("freischalten") === "1" &&
   isLocalhost;
 
-const hasPraxisanleiterPremium =
-  praxisanleiterPremiumCookie === "1" ||
-  praxisanleiterPremiumCookie === "true" ||
-  devUnlock;
+const supabase =
+  createSupabaseServerClient(Astro.cookies);
+
+const {
+  data: { user },
+  error: userError,
+} = await supabase.auth.getUser();
+
+let hasPraxisanleiterPremium = false;
+
+if (!userError && user) {
+  const {
+    data: profile,
+    error: profileError,
+  } = await supabase
+    .from("profiles")
+    .select("premium_praxisanleiter")
+    .eq("id", user.id)
+    .single();
+
+  if (!profileError && profile) {
+    hasPraxisanleiterPremium =
+      profile.premium_praxisanleiter === true;
+  }
+}
+
+if (devUnlock) {
+  hasPraxisanleiterPremium = true;
+}
 
 if (!hasPraxisanleiterPremium) {
   return Astro.redirect("/praxisanleiter-premium");
