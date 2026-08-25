@@ -1,6 +1,6 @@
 ---
-title: Pflegeplanung bei Diabetes mellitus
-description: Erfahre, wie eine Pflegeplanung bei Diabetes mellitus aufgebaut wird. Mit Pflegezielen, Pflegemaßnahmen und einem praxisnahen Beispiel für Ausbildung, Praxis und Pflegeprüfung.
+title: "Pflegeplanung bei Diabetes mellitus: Beispiel, Ziele & Maßnahmen"
+description: "Pflegeplanung bei Diabetes mellitus einfach erklärt: Pflegeprobleme, konkrete Pflegeziele, Pflegemaßnahmen und ein vollständiges Beispiel für Ausbildung und Prüfung."
 tags:
   - diabetes
   - pflegeplanung
@@ -40,6 +40,22 @@ Häufige Pflegeprobleme sind:
 - Risiko eines diabetischen Fußsyndroms
 - Wissensdefizite
 - Unsicherheit im Umgang mit Insulin oder Medikamenten
+
+## Was gehört in einen vollständigen Diabetespflegeplan?
+
+Ein vollständiger Pflegeplan bei Diabetes mellitus sollte mindestens folgende Bestandteile enthalten:
+
+- ein klar formuliertes Pflegeproblem oder eine Pflegediagnose,
+- vorhandene Ressourcen der pflegebedürftigen Person,
+- konkrete und überprüfbare Pflegeziele,
+- individuell passende Pflegemaßnahmen,
+- Beobachtungskriterien für Hypo- und Hyperglykämien,
+- Maßnahmen zur Förderung des Selbstmanagements,
+- Haut- und Fußkontrollen,
+- Beratung zu Ernährung, Bewegung und Therapie,
+- eine regelmäßige Evaluation der Pflegeplanung.
+
+Entscheidend ist, dass Pflegeproblem, Pflegeziel und Pflegemaßnahmen logisch zusammenpassen und regelmäßig an den aktuellen Gesundheitszustand angepasst werden.
 
 ## Beispiel einer Pflegeplanung
 
