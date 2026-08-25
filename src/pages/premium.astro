@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 import ExpertBox from "../components/ExpertBox.astro";
+import { createSupabaseServerClient } from "../lib/supabase-server";
 
 export const prerender = false;
 
@@ -10,9 +11,32 @@ const lernskripte = await getCollection("lernskripte");
 const pruefung = await getCollection("pruefung");
 const examQuiz = await getCollection("examQuiz");
 
-const hasPremiumCookie =
-  Astro.cookies.get("praxismaik_premium")?.value === "1" ||
-  Astro.cookies.get("praxismaik_premium")?.value === "true";
+const supabase =
+  createSupabaseServerClient(Astro.cookies);
+
+const {
+  data: { user },
+  error: userError,
+} = await supabase.auth.getUser();
+
+let hasPremiumAzubi = false;
+
+if (!userError && user) {
+  const {
+    data: profile,
+    error: profileError,
+  } = await supabase
+    .from("profiles")
+    .select("premium, premium_azubi")
+    .eq("id", user.id)
+    .single();
+
+  if (!profileError && profile) {
+    hasPremiumAzubi =
+      profile.premium === true ||
+      profile.premium_azubi === true;
+  }
+}
 
 /* Nur index.md zählen = echte E-Books */
 const premiumEbooks = ebooks.filter(
@@ -49,7 +73,7 @@ const premiumExamQuizCount = premiumExamQuiz.length;
     </nav>
 
     <header class="premium-hero">
-      {hasPremiumCookie ? (
+      {hasPremiumAzubi ? (
         <div class="premium-active-box">
           <strong>Premium ist bereits aktiv.</strong>
           <span>Willkommen zurück. Wähle direkt den Bereich, in dem du heute weiterlernen möchtest.</span>
@@ -277,7 +301,7 @@ const premiumExamQuizCount = premiumExamQuiz.length;
       )}
     </header>
 
-    {!hasPremiumCookie && (
+    {!hasPremiumAzubi && (
       <>
         <ExpertBox
   title="Ich bin Maik Hain."
