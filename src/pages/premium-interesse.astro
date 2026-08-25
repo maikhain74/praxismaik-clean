@@ -2,18 +2,34 @@
 export const prerender = false;
 
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { createSupabaseServerClient } from "../lib/supabase-server";
 
-const oldPremiumCookie =
-  Astro.cookies.get("praxismaik_premium")?.value;
+const supabase =
+  createSupabaseServerClient(Astro.cookies);
 
-const azubiPremiumCookie =
-  Astro.cookies.get("praxismaik_premium_azubi")?.value;
+const {
+  data: { user },
+  error: userError,
+} = await supabase.auth.getUser();
 
-const hasPremiumCookie =
-  oldPremiumCookie === "1" ||
-  oldPremiumCookie === "true" ||
-  azubiPremiumCookie === "1" ||
-  azubiPremiumCookie === "true";
+let hasPremiumAzubi = false;
+
+if (!userError && user) {
+  const {
+    data: profile,
+    error: profileError,
+  } = await supabase
+    .from("profiles")
+    .select("premium, premium_azubi")
+    .eq("id", user.id)
+    .single();
+
+  if (!profileError && profile) {
+    hasPremiumAzubi =
+      profile.premium === true ||
+      profile.premium_azubi === true;
+  }
+}
 ---
 
 <BaseLayout
@@ -22,7 +38,7 @@ const hasPremiumCookie =
 >
   <section class="premium-interest-page">
     <div class="premium-interest-box">
-      {hasPremiumCookie ? (
+      {hasPremiumAzubi ? (
         <>
           <span class="premium-label">PraxisMaik Premium</span>
 
