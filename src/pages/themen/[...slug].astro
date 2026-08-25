@@ -7,6 +7,7 @@ import ThemenCluster from "../../components/ThemenCluster.astro";
 import TopicConversionBox from "../../components/TopicConversionBox.astro";
 import StarterGuideContentCTA from "../../components/StarterGuideContentCTA.astro";
 import ContentRenderer from "../../components/ContentRenderer.astro";
+import { createSupabaseServerClient } from "../../lib/supabase-server";
 
 const slug = Astro.params.slug;
 
@@ -105,16 +106,36 @@ const devUnlock =
   Astro.url.searchParams.get("freischalten") === "1" &&
   isLocalhost;
 
-const premiumCookieValue =
-  Astro.cookies.get("praxismaik_premium")?.value;
+const supabase =
+  createSupabaseServerClient(Astro.cookies);
 
-const hasPremiumCookie =
-  premiumCookieValue === "1" ||
-  premiumCookieValue === "true";
+const {
+  data: { user },
+  error: userError,
+} = await supabase.auth.getUser();
+
+let hasPremiumAzubi = false;
+
+if (!userError && user) {
+  const {
+    data: profile,
+    error: profileError,
+  } = await supabase
+    .from("profiles")
+    .select("premium, premium_azubi")
+    .eq("id", user.id)
+    .single();
+
+  if (!profileError && profile) {
+    hasPremiumAzubi =
+      profile.premium === true ||
+      profile.premium_azubi === true;
+  }
+}
 
 const showPremiumContent =
   devUnlock ||
-  hasPremiumCookie;
+  hasPremiumAzubi;
 
 const premiumSkripte = skripteZumThema.filter(
   (item) => item.data.premium === true
