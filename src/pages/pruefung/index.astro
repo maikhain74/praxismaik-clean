@@ -2,6 +2,7 @@
 export const prerender = false;
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
+import { createSupabaseServerClient } from "../../lib/supabase-server";
 
 const pruefungen = await getCollection("pruefung");
 
@@ -32,9 +33,34 @@ const groupedPruefungen = Array.from(groupedPruefungenMap.entries()).map(([topic
 const premiumCount = pruefungen.filter((item) => item.data.premium === true).length;
 const freeCount = pruefungen.filter((item) => item.data.premium !== true).length;
 
-const hasPremiumCookie = Astro.cookies.get("praxismaik_premium")?.value === "1";
+const supabase =
+  createSupabaseServerClient(Astro.cookies);
 
-const startablePruefungen = hasPremiumCookie
+const {
+  data: { user },
+  error: userError,
+} = await supabase.auth.getUser();
+
+let hasPremiumAzubi = false;
+
+if (!userError && user) {
+  const {
+    data: profile,
+    error: profileError,
+  } = await supabase
+    .from("profiles")
+    .select("premium, premium_azubi")
+    .eq("id", user.id)
+    .single();
+
+  if (!profileError && profile) {
+    hasPremiumAzubi =
+      profile.premium === true ||
+      profile.premium_azubi === true;
+  }
+}
+
+const startablePruefungen = hasPremiumAzubi
   ? sortedPruefungen
   : sortedPruefungen.filter((item) => item.data.premium !== true);
 
