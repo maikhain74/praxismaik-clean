@@ -140,10 +140,6 @@ export async function POST({
   const userId =
     session.metadata?.user_id;
 
-  const customerEmail =
-    session.customer_details?.email ??
-    session.customer_email;
-
   /*
    * Checkout ohne Premium-Kennzeichnung.
    *
@@ -165,21 +161,28 @@ export async function POST({
     });
   }
 
+  /*
+   * Jeder Premium-Kauf muss eindeutig einem
+   * angemeldeten PraxisMaik-Konto zugeordnet sein.
+   */
+  if (!userId) {
+    console.error(
+      "Premium-Checkout ohne user_id:",
+      {
+        premiumType,
+        sessionId: session.id,
+      }
+    );
+
+    return new Response(
+      "Keine Benutzer-ID für Premium-Kauf gefunden.",
+      {
+        status: 400,
+      }
+    );
+  }
+
   if (premiumType === "azubi") {
-    if (!userId) {
-      console.error(
-        "Azubi-Checkout ohne user_id:",
-        session.id
-      );
-
-      return new Response(
-        "Keine Benutzer-ID für Azubi-Kauf gefunden.",
-        {
-          status: 400,
-        }
-      );
-    }
-
     const updateData = {
       premium_azubi: true,
 
@@ -249,15 +252,6 @@ export async function POST({
     premiumType ===
     "praxisanleiter"
   ) {
-    if (!customerEmail) {
-      return new Response(
-        "Keine Kunden-E-Mail gefunden.",
-        {
-          status: 400,
-        }
-      );
-    }
-
     const updateData = {
       premium_praxisanleiter: true,
 
@@ -274,7 +268,7 @@ export async function POST({
     } = await supabase
       .from("profiles")
       .update(updateData)
-      .eq("email", customerEmail)
+      .eq("id", userId)
       .select("id");
 
     if (error) {
@@ -295,7 +289,7 @@ export async function POST({
       console.error(
         "Praxisanleiter-Profil nicht eindeutig gefunden:",
         {
-          customerEmail,
+          userId,
           sessionId: session.id,
           updatedRows:
             data?.length ?? 0,
@@ -313,7 +307,7 @@ export async function POST({
     console.log(
       "Praxisanleiter-Premium erfolgreich freigeschaltet:",
       {
-        customerEmail,
+        userId,
         sessionId: session.id,
       }
     );
@@ -326,9 +320,6 @@ export async function POST({
   /*
    * Es gibt zwar premium_type, aber keinen
    * von PraxisMaik unterstützten Wert.
-   *
-   * Keine Freischaltung, aber auch kein
-   * unnötiger Stripe-Wiederholungsversuch.
    */
   console.error(
     "Unbekannter Premium-Typ ignoriert:",
