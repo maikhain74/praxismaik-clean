@@ -725,7 +725,20 @@ const supabase =
           return;
         }
 
-        window.location.href = result.url;
+        if (
+  typeof window.trackPraxisMaikEvent === "function"
+) {
+  window.trackPraxisMaikEvent(
+    "praxisanleiter_stripe_opened",
+    {
+      value: 79,
+      currency: "EUR",
+      product: "PraxisMaik Praxisanleiter Premium",
+    }
+  );
+}
+
+window.location.href = result.url;
       } catch (error) {
         console.error(
           "Praxisanleiter Checkout Fehler:",
