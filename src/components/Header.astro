@@ -26,8 +26,40 @@ const { pathname, navItems } = Astro.props;
         );
       })}
 
-<a href="/dashboard">Mein Konto</a>
-      <a href="/logout">Logout</a>
+<span id="auth-nav">
+  <a href="/login">Login</a>
+</span>
     </nav>
   </div>
 </header>
+
+<script>
+  import { createSupabaseBrowserClient } from "../lib/supabase-browser";
+
+  const supabase = createSupabaseBrowserClient();
+
+  async function updateAuthNavigation() {
+    const authNav = document.getElementById("auth-nav");
+
+    if (!authNav) {
+      return;
+    }
+
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
+
+    if (user) {
+      authNav.innerHTML = `
+        <a href="/dashboard">Mein Konto</a>
+        <a href="/logout">Logout</a>
+      `;
+    } else {
+      authNav.innerHTML = `
+        <a href="/login">Login</a>
+      `;
+    }
+  }
+
+  updateAuthNavigation();
+</script>
