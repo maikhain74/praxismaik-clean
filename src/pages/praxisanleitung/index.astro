@@ -11,47 +11,102 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     <h1>Praxisanleitung</h1>
 
     <div class="intro-section">
-  <div>
-   <div class="intro-section">
-  <div>
-    <p>
-      Dieser Bereich richtet sich an Praxisanleitende, Pflegefachpersonen und Auszubildende,
-      die Anleitungssituationen besser verstehen, planen und reflektieren möchten.
-    </p>
-  </div>
-</div>
+      <div>
+        <p>
+          Dieser Bereich richtet sich an Praxisanleitende,
+          Pflegefachpersonen und Auszubildende, die
+          Anleitungssituationen besser verstehen, planen und
+          reflektieren möchten.
+        </p>
+      </div>
+    </div>
+
+    <div class="praxisanleiter-premium-cta">
+      <span class="praxisanleiter-premium-cta__badge">
+        Für Praxisanleitende
+      </span>
+
+      <h2>Praxisanleiter Premium</h2>
+
+      <p>
+        Weniger Zeit für Vorbereitung. Mehr Sicherheit in
+        Anleitungssituationen. Nutze Vorlagen,
+        Formulierungshilfen, Praxisanleiter-Fälle und E-Books
+        für deinen Anleitungsalltag.
+      </p>
+
+      <a
+        href="/praxisanleiter-premium/"
+        class="btn"
+        data-ga-event="praxisanleitung_premium_cta_click"
+      >
+        Praxisanleiter Premium ansehen
+      </a>
+
+      <p class="praxisanleiter-premium-cta__price">
+        79 € einmalig · kein Abo · dauerhafter Zugriff
+      </p>
+    </div>
 
     <div class="topic-grid">
-      <a class="topic-card topic-card-free" href="/praxisanleitung/grundlagen/">
+      <a
+        class="topic-card topic-card-free"
+        href="/praxisanleitung/grundlagen/"
+      >
         <h3>Grundlagen</h3>
-        <p>Grundlagen, Lernziele, Feedback, Reflexion und Anleitungsmethoden.</p>
-        <span class="topic-card-link-text">Grundlagen öffnen</span>
+        <p>
+          Grundlagen, Lernziele, Feedback, Reflexion und
+          Anleitungsmethoden.
+        </p>
+        <span class="topic-card-link-text">
+          Grundlagen öffnen
+        </span>
       </a>
 
-     <a
-  class="topic-card topic-card-premium"
-  href="/praxisanleitung/anleitungsaufgaben/"
->
-  <h3>Anleitungsaufgaben</h3>
-  <p>
-    Strukturierte Aufgaben für die Praxisanleitung, passend zum Ausbildungsstand
-    und direkt im Pflegealltag einsetzbar.
-  </p>
-  <span class="topic-card-link-text">Anleitungsaufgaben ansehen</span>
-</a> 
+      <a
+        class="topic-card topic-card-premium"
+        href="/praxisanleitung/anleitungsaufgaben/"
+      >
+        <h3>Anleitungsaufgaben</h3>
+        <p>
+          Strukturierte Aufgaben für die Praxisanleitung,
+          passend zum Ausbildungsstand und direkt im
+          Pflegealltag einsetzbar.
+        </p>
+        <span class="topic-card-link-text">
+          Anleitungsaufgaben ansehen
+        </span>
+      </a>
 
-      <a class="topic-card topic-card-premium" href="/praxisanleitung/faelle/">
+      <a
+        class="topic-card topic-card-premium"
+        href="/praxisanleitung/faelle/"
+      >
         <h3>Praxisanleiter-Fälle</h3>
-        <p>Typische Anleitungssituationen mit Prüfungslogik und Denkstruktur.</p>
-        <span class="topic-card-link-text">Fälle ansehen</span>
+        <p>
+          Typische Anleitungssituationen mit Prüfungslogik
+          und Denkstruktur.
+        </p>
+        <span class="topic-card-link-text">
+          Fälle ansehen
+        </span>
       </a>
 
-      <a class="topic-card topic-card-premium" href="/praxisanleiter-premium/">
-        <h3>Vorlagen & E-Books</h3>
-        <p>Anleitungsplanung, Reflexionsbogen, Feedbackbogen und Praxisanleiter-E-Book.</p>
-        <span class="topic-card-link-text">Premium ansehen</span>
+      <a
+        class="topic-card topic-card-premium"
+        href="/praxisanleiter-premium/"
+        data-ga-event="praxisanleitung_premium_card_click"
+      >
+        <h3>Praxisanleiter Premium</h3>
+        <p>
+          Vorlagen, Formulierungshilfen,
+          Praxisanleiter-Fälle und E-Books für deinen
+          Anleitungsalltag.
+        </p>
+        <span class="topic-card-link-text">
+          Premium ansehen
+        </span>
       </a>
     </div>
   </section>
 </BaseLayout>
-
