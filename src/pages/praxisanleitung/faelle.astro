@@ -16,7 +16,11 @@ const devQuery = devUnlock ? "?freischalten=1" : "";
 
 const praxisFaelle = pruefungen
   .filter((item) => item.data.topic === "praxisanleitung")
-  .sort((a, b) => (a.data.reihenfolge ?? 999) - (b.data.reihenfolge ?? 999));
+  .sort(
+    (a, b) =>
+      (a.data.reihenfolge ?? 999) -
+      (b.data.reihenfolge ?? 999)
+  );
 ---
 
 <BaseLayout
@@ -27,18 +31,53 @@ const praxisFaelle = pruefungen
     <h1>Praxisanleiter-Fälle</h1>
 
     <p class="page-intro">
-      Hier findest du typische Situationen aus der Praxisanleitung:
-      Feedbackgespräche, Prüfungsangst, Fehlerkultur, Konflikte und Bewertungsgespräche.
+      Hier findest du typische Situationen aus der
+      Praxisanleitung: Feedbackgespräche, Prüfungsangst,
+      Fehlerkultur, Konflikte und Bewertungsgespräche.
     </p>
+
+    <div class="praxisanleiter-faelle-cta">
+      <span class="praxisanleiter-faelle-cta__badge">
+        Praxisanleiter Premium
+      </span>
+
+      <h2>Alle Praxisanleiter-Fälle freischalten</h2>
+
+      <p>
+        Arbeite typische Anleitungssituationen vollständig
+        durch und nutze zusätzlich Vorlagen,
+        Formulierungshilfen und Praxisanleiter-E-Books für
+        deinen Anleitungsalltag.
+      </p>
+
+      <a
+        href="/praxisanleiter-premium/"
+        class="btn"
+        data-ga-event="praxisanleiter_faelle_premium_cta_click"
+      >
+        Praxisanleiter Premium ansehen
+      </a>
+
+      <p class="praxisanleiter-faelle-cta__price">
+        79 € einmalig · kein Abo · dauerhafter Zugriff
+      </p>
+    </div>
 
     <div class="topic-grid">
       {praxisFaelle.map((item) => (
-        <a class="topic-card topic-card-premium" href={`/pruefung/${item.slug}/${devQuery}`}>
+        <a
+          class="topic-card topic-card-premium"
+          href={`/pruefung/${item.slug}/${devQuery}`}
+        >
           <div class="topic-card-top">
-            <span class="card-badge card-badge-premium">🔒 Premium</span>
+            <span class="card-badge card-badge-premium">
+              🔒 Premium
+            </span>
 
             {typeof item.data.reihenfolge === "number" && (
-              <span class="card-step">Fall {item.data.reihenfolge}</span>
+              <span class="card-step">
+                Fall {item.data.reihenfolge}
+              </span>
             )}
           </div>
 
@@ -50,9 +89,59 @@ const praxisFaelle = pruefungen
               "Kein Beschreibungstext vorhanden."}
           </p>
 
-          <span class="topic-card-link-text">Fall öffnen</span>
+          <span class="topic-card-link-text">
+            Fall öffnen
+          </span>
         </a>
       ))}
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  .praxisanleiter-faelle-cta {
+    margin: 1.75rem 0 2rem;
+    padding: 1.6rem 1.75rem;
+    background: #ffffff;
+    border: 1px solid #ead8c8;
+    border-left: 5px solid #e67e22;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(43, 35, 28, 0.05);
+  }
+
+  .praxisanleiter-faelle-cta__badge {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 0.7rem;
+    padding: 0.35rem 0.75rem;
+    background: #fff3e8;
+    color: #b85f16;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 700;
+  }
+
+  .praxisanleiter-faelle-cta h2 {
+    margin: 0 0 0.65rem;
+  }
+
+  .praxisanleiter-faelle-cta > p:not(
+      .praxisanleiter-faelle-cta__price
+    ) {
+    max-width: 850px;
+    margin-bottom: 1.1rem;
+  }
+
+  .praxisanleiter-faelle-cta__price {
+    margin: 0.75rem 0 0;
+    font-size: 0.92rem;
+    font-weight: 600;
+  }
+
+  @media (max-width: 700px) {
+    .praxisanleiter-faelle-cta {
+      padding: 1.3rem;
+      border-radius: 16px;
+    }
+  }
+</style>
