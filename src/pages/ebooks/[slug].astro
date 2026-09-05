@@ -260,35 +260,33 @@ const renderedChapters = await Promise.all(
   )}
 </div>
 
-      {!showFullContent && (
-        <div class="ebook-locked-note">
-          <strong>
-            {isPraxisanleiterEbook
-              ? "Praxisanleiter Premium"
-              : "Premium-Inhalt"}
-          </strong>
-
-          <p>
-            {isPraxisanleiterEbook
-              ? "Du siehst aktuell nur die Einleitung. Die vollständigen Kapitel dieses E-Books sind in Praxisanleiter Premium freigeschaltet."
-              : "Du siehst aktuell nur die Einleitung. Die vollständigen Kapitel sind im Premiumbereich freigeschaltet."}
-          </p>
-
-          <a
-            href={premiumPageHref}
-            class="ebook-premium-link"
-          >
-            {isPraxisanleiterEbook
-              ? "Praxisanleiter Premium ansehen"
-              : "Premium freischalten"}
-          </a>
-        </div>
-      )}
     </section>
 
     <section class="ebook-intro">
       <IntroContent />
     </section>
+
+   {isPraxisanleiterEbook && !hasPraxisanleiterPremium && (
+  <section class="praxisanleiter-premium-cta">
+    <span class="praxisanleiter-premium-badge">
+      Praxisanleiter Premium
+    </span>
+
+    <h2>Mehr Sicherheit und weniger Vorbereitungszeit in der Praxisanleitung</h2>
+
+    <p>
+      Nutze nicht nur dieses E-Book, sondern auch Praxisanleiter-Fälle,
+      Formulierungshilfen, Vorlagen und weitere Inhalte für deinen
+      Anleitungsalltag.
+    </p>
+
+    <a href="/praxisanleiter-premium/">
+      Praxisanleiter Premium ansehen
+    </a>
+
+    <strong>79 € einmalig · kein Abo · dauerhafter Zugriff</strong>
+  </section>
+)}
 
     {showFullContent ? (
       <section
@@ -667,4 +665,63 @@ const renderedChapters = await Promise.all(
       width: fit-content;
     }
   }
+
+  .praxisanleiter-premium-cta {
+  margin: 2rem 0 2.5rem;
+  padding: 1.6rem 1.75rem;
+  background: #ffffff;
+  border: 1px solid #ead8c8;
+  border-left: 5px solid #e67e22;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(43, 35, 28, 0.05);
+}
+
+.praxisanleiter-premium-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 0.7rem;
+  padding: 0.35rem 0.75rem;
+  background: #fff3e8;
+  color: #b85f16;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.praxisanleiter-premium-cta h2 {
+  margin: 0 0 0.7rem;
+  color: #18324a;
+}
+
+.praxisanleiter-premium-cta p {
+  max-width: 850px;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.praxisanleiter-premium-cta a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.1rem;
+  border-radius: 12px;
+  background: #e67e22;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-weight: 700;
+}
+
+.praxisanleiter-premium-cta strong {
+  display: block;
+  margin-top: 0.8rem;
+  font-size: 0.92rem;
+  color: #18324a;
+}
+
+@media (max-width: 700px) {
+  .praxisanleiter-premium-cta {
+    padding: 1.3rem;
+    border-radius: 16px;
+  }
+}
 </style>
