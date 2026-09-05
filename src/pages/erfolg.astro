@@ -2,6 +2,7 @@
 export const prerender = false;
 
 import Stripe from "stripe";
+import { createClient } from "@supabase/supabase-js";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const sessionId = Astro.url.searchParams.get("session_id");
@@ -46,6 +47,7 @@ if (!sessionId) {
 
     const purchasedPriceId = session.line_items?.data[0]?.price?.id;
     const premiumType = session.metadata?.premium_type;
+    const userId = session.metadata?.user_id;
 
     /*
      * Bei Live-Käufen prüfen wir weiterhin gegen die
@@ -83,14 +85,84 @@ if (!sessionId) {
       correctMode &&
       purchasedProduct !== null;
 
+    /*
+     * Bei einem erfolgreich verifizierten LIVE-Kauf wird
+     * Premium zusätzlich direkt im Supabase-Profil gespeichert.
+     *
+     * Der Stripe-Webhook bleibt weiterhin als zweite,
+     * unabhängige Absicherung bestehen.
+     *
+     * Test-Sessions dürfen niemals ein echtes Benutzerkonto
+     * freischalten.
+     */
+    if (paymentVerified && !isTestSession) {
+      if (!userId) {
+        throw new Error(
+          "Die Stripe-Session enthält keine user_id."
+        );
+      }
+
+      const supabase = createClient(
+        import.meta.env.PUBLIC_SUPABASE_URL,
+        import.meta.env.SUPABASE_SERVICE_ROLE_KEY
+      );
+
+      if (purchasedProduct === "azubi") {
+        const { data, error } = await supabase
+          .from("profiles")
+          .update({
+            premium_azubi: true,
+            stripe_customer_id: String(session.customer ?? ""),
+            stripe_checkout_session_id: session.id,
+          })
+          .eq("id", userId)
+          .select("id");
+
+        if (error) {
+          throw new Error(
+            `Azubi-Premium konnte nicht gespeichert werden: ${error.message}`
+          );
+        }
+
+        if (!data || data.length !== 1) {
+          throw new Error(
+            "Azubi-Premium konnte keinem eindeutigen Benutzerkonto zugeordnet werden."
+          );
+        }
+      }
+
+      if (purchasedProduct === "praxisanleiter") {
+        const { data, error } = await supabase
+          .from("profiles")
+          .update({
+            premium_praxisanleiter: true,
+            stripe_customer_id: String(session.customer ?? ""),
+            stripe_checkout_session_id: session.id,
+          })
+          .eq("id", userId)
+          .select("id");
+
+        if (error) {
+          throw new Error(
+            `Praxisanleiter-Premium konnte nicht gespeichert werden: ${error.message}`
+          );
+        }
+
+        if (!data || data.length !== 1) {
+          throw new Error(
+            "Praxisanleiter-Premium konnte keinem eindeutigen Benutzerkonto zugeordnet werden."
+          );
+        }
+      }
+    }
+
     if (paymentVerified && purchasedProduct === "azubi") {
       Astro.cookies.set("praxismaik_premium_azubi", "true", {
         path: "/",
         sameSite: "lax",
         secure: import.meta.env.PROD,
-       maxAge: 315360000, 
-      }
-    );
+        maxAge: 315360000,
+      });
     }
 
     if (
@@ -114,12 +186,15 @@ if (!sessionId) {
     }
   } catch (error) {
     console.error(
-      "Stripe-Session konnte nicht geprüft werden:",
+      "Stripe-Session konnte nicht geprüft oder Premium nicht gespeichert werden:",
       error
     );
 
+    paymentVerified = false;
+    purchasedProduct = null;
+
     errorMessage =
-      "Die Zahlungsbestätigung konnte nicht geprüft werden. Bitte melde dich mit deinem PraxisMaik-Konto an oder kontaktiere den Support.";
+      "Die Zahlungsbestätigung konnte nicht vollständig verarbeitet werden. Bitte melde dich mit deinem PraxisMaik-Konto an oder kontaktiere den Support.";
   }
 }
 
