@@ -221,7 +221,11 @@ const backLabel = sameOriginReferer.includes('/themen/')
   }
 />
 <p class="preview-warning">
-  Wenn du nur bis hier lernst, fehlt dir genau der Teil, der in der Prüfung bewertet wird.
+  {
+    isPraxisanleiterFall
+      ? "Entscheidend ist nicht nur, was dein Azubi tut, sondern wie du ihn dabei unterstützt, selbstständig und sicher zu handeln."
+      : "Wenn du nur bis hier lernst, fehlt dir genau der Teil, der in der Prüfung bewertet wird."
+  }
 </p>
   </>
 )}
