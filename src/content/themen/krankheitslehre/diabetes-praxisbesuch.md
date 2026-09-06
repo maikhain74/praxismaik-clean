@@ -16,6 +16,8 @@ order: 5
 
 Diabetes mellitus gehört zu den häufigsten Krankheitsbildern in Praxisbesuchen der generalistischen Pflegeausbildung. Lehrkräfte möchten dabei nicht nur dein Fachwissen überprüfen, sondern vor allem sehen, wie du pflegerische Entscheidungen begründest und sicher handelst.
 
+Wenn du dein Grundlagenwissen vorher auffrischen möchtest, beginne mit dem Überblick zu [Diabetes mellitus](/themen/krankheitslehre/diabetes-mellitus/). Für die Vorbereitung auf Pflegeziele, Pflegeprobleme und konkrete Maßnahmen hilft dir außerdem die [Diabetes Pflegeplanung](/themen/krankheitslehre/diabetes-pflegeplanung/).
+
 ## Darauf achten Lehrkräfte
 
 Im Praxisbesuch beobachten Lehrkräfte insbesondere,
