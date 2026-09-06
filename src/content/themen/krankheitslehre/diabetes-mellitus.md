@@ -342,23 +342,37 @@ Nach diesem Premium-Lernskript kannst du:
 
 ## Dein nächster Schritt auf deinem Lernweg
 
+Du möchtest Diabetes mellitus nicht nur verstehen, sondern auch sicher in Pflege, Praxisbesuch und Prüfung anwenden? Dann arbeite dich Schritt für Schritt durch die weiterführenden Themen.
+
+### 🩺 Pflegeprobleme bei Diabetes mellitus
+
+Erkenne typische Pflegeprobleme und lerne, welche Beobachtungen und Risiken für deine pflegerische Einschätzung wichtig sind.
+
+[Pflegeprobleme bei Diabetes mellitus](/themen/krankheitslehre/diabetes-pflegeprobleme/)
+
 ### 🩸 Diabetes Pflegeplanung
 
-Lerne, wie du pflegerische Probleme erkennst und geeignete Maßnahmen planst.
+Lerne, wie du aus Pflegeproblemen konkrete Pflegeziele und geeignete Pflegemaßnahmen ableitest.
 
 [Diabetes Pflegeplanung](/themen/krankheitslehre/diabetes-pflegeplanung/)
 
+### 👩‍⚕️ Diabetes im Praxisbesuch
+
+Trainiere, worauf es bei der Versorgung eines Menschen mit Diabetes im Praxisbesuch ankommt und wie du dein pflegerisches Handeln begründest.
+
+[Diabetes im Praxisbesuch](/themen/krankheitslehre/diabetes-praxisbesuch/)
+
 ### 🎓 Diabetes Pflegeprüfung
 
-Trainiere typische Prüfungsfragen und Musterantworten.
+Trainiere typische Prüfungsfragen und lerne, pflegerische Entscheidungen fachlich zu begründen.
 
 [Diabetes Pflegeprüfung](/themen/krankheitslehre/diabetes-pflegepruefung/)
 
-### 📚 Diabetes Fallbeispiel
+### 📚 Diabetes Fallbeispiel mit Lösung
 
-Übe reale Prüfungssituationen mit ausführlichen Lösungen.
+Übe dein Wissen an einer konkreten Fallsituation mit Prüfungsfragen und ausführlicher Lösung.
 
-[Diabetes Fallbeispiel](/themen/krankheitslehre/diabetes-fallbeispiel-mit-loesung/)
+[Diabetes Fallbeispiel mit Lösung](/themen/krankheitslehre/diabetes-fallbeispiel-mit-loesung/)
 
 ### 📚 Passendes Premium-E-Book
 
