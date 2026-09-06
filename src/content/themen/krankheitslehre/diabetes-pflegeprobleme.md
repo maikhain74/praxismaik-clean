@@ -18,6 +18,8 @@ Menschen mit Diabetes mellitus haben je nach Krankheitsverlauf unterschiedliche 
 
 Gerade in der generalistischen Pflegeausbildung gehören Pflegeprobleme bei Diabetes zu den häufigen Themen in schriftlichen, mündlichen und praktischen Prüfungen.
 
+Wenn du zunächst das Krankheitsbild, die Unterschiede zwischen Typ-1- und Typ-2-Diabetes sowie typische Symptome und Komplikationen wiederholen möchtest, findest du diese Grundlagen im Überblick [Diabetes mellitus](/themen/krankheitslehre/diabetes-mellitus/).
+
 ## Was sind Pflegeprobleme?
 
 Pflegeprobleme beschreiben gesundheitliche Einschränkungen oder Risiken, bei denen pflegerisches Handeln erforderlich ist.
