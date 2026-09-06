@@ -18,6 +18,8 @@ Eine Pflegeplanung bei Diabetes mellitus verbindet Pflegeprobleme, Ressourcen, P
 
 Gerade in der generalistischen Pflegeausbildung reicht es deshalb nicht aus, nur Blutzuckerwerte zu kontrollieren oder einzelne Maßnahmen aufzuzählen. Entscheidend ist, dass du erkennst, welches Pflegeproblem vorliegt, welches Ziel erreicht werden soll und warum die ausgewählten Maßnahmen sinnvoll sind.
 
+Wenn du das Krankheitsbild zunächst wiederholen möchtest, beginne mit den [Grundlagen zu Diabetes mellitus](/themen/krankheitslehre/diabetes-mellitus/). Welche pflegerischen Probleme und Risiken sich daraus ergeben können, findest du ausführlich unter [Pflegeprobleme bei Diabetes mellitus](/themen/krankheitslehre/diabetes-pflegeprobleme/).
+
 ## Was sollte in einem vollständigen Diabetespflegeplan enthalten sein?
 
 Ein vollständiger Diabetespflegeplan sollte mindestens folgende Bestandteile enthalten:
