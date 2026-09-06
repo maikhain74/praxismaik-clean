@@ -15,6 +15,31 @@ if (!slug) {
   throw new Error("Slug fehlt.");
 }
 
+const legacyPflegeprozessRedirects: Record<string, string> = {
+  "pflegeprozess/durchfuehrung":
+    "/themen/pflegeausbildung/pflegeprozess/durchfuehrung/",
+  "pflegeprozess/evaluation":
+    "/themen/pflegeausbildung/pflegeprozess/evaluation/",
+  "pflegeprozess/informationssammlung":
+    "/themen/pflegeausbildung/pflegeprozess/informationssammlung/",
+  "pflegeprozess/pflegediagnosen":
+    "/themen/pflegeausbildung/pflegeprozess/pflegediagnosen/",
+  "pflegeprozess/pflegemassnahmen":
+    "/themen/pflegeausbildung/pflegeprozess/pflegemassnahmen/",
+  "pflegeprozess/pflegeprobleme-ressourcen":
+    "/themen/pflegeausbildung/pflegeprozess/pflegeprobleme-ressourcen/",
+  "pflegeprozess/pflegeprozess-grundlagen":
+    "/themen/pflegeausbildung/pflegeprozess/pflegeprozess-grundlagen/",
+  "pflegeprozess/pflegeziele":
+    "/themen/pflegeausbildung/pflegeprozess/pflegeziele/",
+};
+
+const legacyRedirect = legacyPflegeprozessRedirects[slug];
+
+if (legacyRedirect) {
+  return Astro.redirect(legacyRedirect, 301);
+}
+
 const [
   themen,
   lernskripte,
