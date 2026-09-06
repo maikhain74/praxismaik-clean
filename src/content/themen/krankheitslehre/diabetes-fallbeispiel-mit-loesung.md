@@ -16,6 +16,8 @@ order: 4
 
 Fallbeispiele gehören zu den häufigsten Aufgaben in der Pflegeausbildung. Sie helfen dabei, theoretisches Wissen auf reale Pflegesituationen anzuwenden und bereiten gezielt auf Praxisbesuche sowie schriftliche und mündliche Prüfungen vor.
 
+Wenn dir bei der Bearbeitung noch Grundlagen fehlen, wiederhole zunächst [Diabetes mellitus](/themen/krankheitslehre/diabetes-mellitus/). Für die gezielte Prüfungsvorbereitung findest du außerdem typische Fragen und Anforderungen unter [Diabetes mellitus in der Pflegeprüfung](/themen/krankheitslehre/diabetes-pflegepruefung/).
+
 ## Fallbeispiel
 
 Herr Schneider ist 69 Jahre alt und lebt seit vielen Jahren mit einem Typ-2-Diabetes. Er wird nach einer Lungenentzündung stationär behandelt.
