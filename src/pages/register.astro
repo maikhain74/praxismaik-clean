@@ -254,11 +254,25 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     message.textContent =
       'Registrierung wird geprüft ...';
 
-   const emailRedirectTo =
+const redirectParam = new URLSearchParams(
+  window.location.search
+).get('redirect');
+
+const safeRedirect =
+  redirectParam &&
+  redirectParam.startsWith('/') &&
+  !redirectParam.startsWith('//')
+    ? redirectParam
+    : '/';
+
+const loginPath =
+  `/login?redirect=${encodeURIComponent(safeRedirect)}`;
+
+const emailRedirectTo =
   window.location.hostname === 'localhost' ||
   window.location.hostname === '127.0.0.1'
-    ? `${window.location.origin}/login`
-    : 'https://praxismaik.de/login';
+    ? `${window.location.origin}${loginPath}`
+    : `https://praxismaik.de${loginPath}`;
 
 const { error } =
   await supabase.auth.signUp({
