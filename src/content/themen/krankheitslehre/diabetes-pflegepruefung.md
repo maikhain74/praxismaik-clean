@@ -18,6 +18,8 @@ Diabetes mellitus gehört zu den häufigsten Krankheitsbildern in der generalist
 
 Neben medizinischem Grundwissen erwarten Lehrkräfte vor allem, dass du pflegerische Situationen sicher einschätzen und deine Entscheidungen fachlich begründen kannst.
 
+Für die fachlichen Grundlagen kannst du zunächst [Diabetes mellitus](/themen/krankheitslehre/diabetes-mellitus/) wiederholen. Anschließend kannst du dein Wissen mit dem [Diabetes Fallbeispiel mit Lösung](/themen/krankheitslehre/diabetes-fallbeispiel-mit-loesung/) an einer konkreten Prüfungssituation anwenden.
+
 ## Diese Inhalte solltest du sicher beherrschen
 
 Für die Pflegeprüfung solltest du insbesondere folgende Themen wiederholen:
