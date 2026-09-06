@@ -7,6 +7,7 @@ import Footer from "../components/Footer.astro";
 const { title, description } = Astro.props;
 
 const pathname = Astro.url.pathname;
+const canonicalUrl = new URL(pathname, "https://www.praxismaik.de");
 
 const navItems = [
   { label: "Start", href: "/" },
@@ -37,7 +38,7 @@ const navItems = [
 
     {description ? <meta name="description" content={description} /> : null}
 
-    <link rel="canonical" href={Astro.url} />
+    <link rel="canonical" href={canonicalUrl} />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title ?? "PraxisMaik"} />
@@ -48,7 +49,7 @@ const navItems = [
         "Lerne für deine Pflegeausbildung mit realistischen Fallbeispielen, Quizfragen, Lernskripten und Prüfungssimulationen für die Pflegeprüfung."
       }
     />
-    <meta property="og:url" content={Astro.url} />
+   <meta property="og:url" content={canonicalUrl} />
     <meta
       property="og:image"
       content="https://www.praxismaik.de/og-image.jpg"
