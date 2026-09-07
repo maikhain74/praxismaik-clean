@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/pruefung/fallbeispiele/fall-behinderung-kommunikation-eskalation/",
+      "destination": "/pruefung/fallbeispiele/fall-asthma-jugendlicher-nonadherence/",
+      "statusCode": 301
+    }
+  ]
+}
