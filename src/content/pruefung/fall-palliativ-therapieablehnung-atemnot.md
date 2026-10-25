@@ -1,41 +1,51 @@
 ---
-title: Fallbeispiel – Frakturversorgung und Aufklärung bei einem Jugendlichen
-beschreibung: Präoperative Vorbereitung, Kommunikation und kindgerechte Pflege bei einem Jugendlichen mit Fraktur.
-topic: behandlung
-reihenfolge: 1
+title: Fallbeispiel – Therapieablehnung und akute Atemnot in der Palliativpflege
+beschreibung: Patientenautonomie, Einwilligungsfähigkeit, Symptomlinderung und Angehörigenkonflikte bei akuter Atemnot in der palliativen Versorgung.
+topic: palliative-care
+reihenfolge: 5
 premium: true
-preview: Eine Fraktur im Jugendalter erfordert strukturierte Vorbereitung und sichere Versorgung. Dieser Fall zeigt typische Prüfungsentscheidungen in der präoperativen Pflege.
+preview: Eine Patientin mit fortgeschrittener Tumorerkrankung lehnt trotz zunehmender Atemnot eine Krankenhauseinweisung ab. Dieser Fall trainiert den Umgang mit Patientenwillen, akuter Symptomlast und Angehörigenkonflikten.
 ---
 
 <div class="fall-progress">
-  Fall 1 von 35
+  Premium-Prüfungsfall · Palliative Care
 </div>
 
 <div class="fall-block fall-situation">
 
 ## Fallsituation
 
-Sie arbeiten als Pflegefachperson auf einer chirurgischen Kinderstation.
+Sie arbeiten als Pflegefachperson in einem ambulanten Palliativteam.
 
-Der 15-jährige **Tim** wurde nach einem Sportunfall aufgenommen. Er hat sich eine Unterschenkelfraktur zugezogen, die operativ versorgt werden soll.
+Die 68-jährige **Frau Berger** leidet an einer weit fortgeschrittenen Tumorerkrankung. Sie wird zu Hause versorgt. Ihr Wunsch ist es, möglichst in ihrer vertrauten Umgebung zu bleiben.
 
-Das betroffene Bein ist ruhiggestellt. Über einen venösen Zugang erhält Tim Schmerzmittel.
+Bei Ihrem heutigen Besuch wirkt Frau Berger deutlich erschöpft. Sie sitzt mit erhöhtem Oberkörper im Bett, atmet schnell und berichtet über zunehmende Luftnot.
 
-Beim Kontakt fällt auf, dass Tim angespannt und unruhig wirkt. Er stellt gezielte Fragen:
+Sie sagt:
 
-„Warum muss ich operiert werden? Und warum bekomme ich eine Spritze?“
+„Ich bekomme so schlecht Luft. Aber ich möchte nicht mehr ins Krankenhaus.“
 
-Seine Mutter ist anwesend, kann sich jedoch nur eingeschränkt auf Deutsch verständigen. Eine direkte Kommunikation ist erschwert.
+Frau Berger ist wach, kann sich verständlich ausdrücken und beantwortet Ihre Fragen nachvollziehbar. Ob sie die konkrete Entscheidung und ihre Folgen vollständig erfassen kann, muss im Gespräch weiter eingeschätzt werden.
 
-Zusätzlich äußert Tim, dass er großen Hunger hat und nicht versteht, warum er nichts essen darf.
+Ihre Tochter steht neben dem Bett. Sie ist sehr aufgeregt und fordert:
 
-👉 Sie befinden sich jetzt in einer typischen Prüfungssituation:
-- präoperative Vorbereitung
-- eingeschränkte Mobilität
-- Thromboseprophylaxe
-- Wissensdefizit
-- Angst und Unsicherheit
-- Sprachbarriere bei Angehörigen
+„Sie müssen einen Krankenwagen rufen! Meine Mutter kann doch nicht einfach hierbleiben!“
+
+Frau Berger wiederholt:
+
+„Bitte. Ich möchte zu Hause bleiben. Helfen Sie mir, dass ich besser Luft bekomme.“
+
+Im häuslichen Versorgungsplan sind ein palliatives Behandlungsziel und die Erreichbarkeit des zuständigen ärztlichen Teams dokumentiert. Welche Bedarfsmedikation aktuell angeordnet ist, muss anhand des gültigen Medikationsplans überprüft werden.
+
+👉 Sie befinden sich jetzt in einer komplexen Prüfungssituation:
+
+- akute Atemnot und erhebliche Symptomlast
+- mögliche Verschlechterung des Allgemeinzustands
+- ausdrückliche Ablehnung einer Krankenhauseinweisung
+- Einschätzung der Einwilligungsfähigkeit
+- Konflikt zwischen Patientenwillen und Angehörigenwunsch
+- Abstimmung im interprofessionellen Palliativteam
+- sichere Dokumentation und weitere Versorgungsplanung
 
 </div>
 
@@ -49,49 +59,109 @@ Zusätzlich äußert Tim, dass er großen Hunger hat und nicht versteht, warum e
 
 ## 🧠 Wie gehe ich an diesen Fall heran?
 
-Nicht zuerst einfach durchführen, nicht zuerst abwimmeln, nicht zuerst nur beruhigen.
+Der erste Gedanke darf weder sein:
 
-👉 Erst erkennen:
-**Was ist hier pflegerisch das Hauptproblem?**
+„Die Tochter verlangt einen Krankenwagen, also muss ich sofort einen rufen.“
 
-Tim zeigt:
+Noch:
 
-- akute Verletzung
-- bevorstehende Operation
-- eingeschränkte Beweglichkeit
-- Unsicherheit
-- Angst
-- fehlendes Verständnis
+„Die Patientin möchte nicht ins Krankenhaus, also kann ich nichts weiter tun.“
 
-👉 Das spricht für ein deutliches Informationsdefizit mit emotionaler Belastung.
+Beide Schlussfolgerungen greifen zu kurz.
 
-Zusätzlich:
+👉 **Zuerst erkenne ich zwei gleichzeitig bestehende Aufgaben:**
 
-Tim versteht nicht,
+1. Frau Berger leidet akut unter Atemnot und benötigt unverzüglich pflegerische Unterstützung sowie eine fachliche Einschätzung.
+2. Ihr geäußerter Wille muss ernst genommen und bei den weiteren Entscheidungen berücksichtigt werden.
 
-- warum er operiert werden muss
-- warum er nüchtern bleiben soll
-- warum er eine Spritze bekommt
+### 1. Akute Situation einschätzen
 
-👉 Ohne verständliche Erklärung steigt das Risiko für Angst, Ablehnung und fehlende Mitarbeit.
+Ich bleibe bei Frau Berger und erfasse ihre Beschwerden sowie erkennbare Warnzeichen.
 
-Außerdem:
+Wichtige Beobachtungen sind:
 
-Die Mutter ist anwesend, kann sich aber nur eingeschränkt auf Deutsch verständigen.
+- Ausmaß und Verlauf der Atemnot
+- Atemfrequenz und Atemarbeit
+- Bewusstseinslage und Orientierung
+- Hautfarbe und mögliche Zyanose
+- Unruhe, Angst und Erschöpfung
+- weitere akute Beschwerden, beispielsweise Schmerzen
 
-👉 Das erschwert:
-- sichere Information
-- Einbeziehung der Bezugsperson
-- gemeinsame Orientierung in der Situation
+Messwerte können die Einschätzung ergänzen. Das subjektive Empfinden von Atemnot bleibt jedoch entscheidend: Auch bei unauffälliger Sauerstoffsättigung kann eine Patientin erhebliche Luftnot erleben.
 
-Meine Denkstruktur ist:
+### 2. Unmittelbar entlasten
 
-1. Informationsdefizit erkennen  
-2. Ängste wahrnehmen und ernst nehmen  
-3. präoperative Maßnahmen verständlich erklären  
-4. altersgerechte Kommunikation anwenden  
-5. Sprachbarrieren aktiv berücksichtigen  
-6. Verständnis und Mitarbeit fördern  
+Ich unterstütze Frau Berger in einer für sie angenehmen, atemerleichternden Position.
+
+Ich vermeide unnötige Anstrengung, schaffe eine ruhige Umgebung und bleibe ansprechbar.
+
+Je nach Wunsch und Verträglichkeit können beispielsweise ein sanfter Luftstrom im Gesicht oder angeleitete ruhige Atemzüge entlastend wirken.
+
+Ich zwinge Frau Berger nicht zu Atemtechniken, die sie zusätzlich anstrengen.
+
+### 3. Patientenwillen klären
+
+Frau Berger sagt eindeutig, dass sie nicht ins Krankenhaus möchte.
+
+Ich frage ruhig nach:
+
+- Was ist ihr in dieser Situation besonders wichtig?
+- Welche Erfahrungen oder Befürchtungen stehen hinter ihrer Ablehnung?
+- Versteht sie, welche Möglichkeiten und Risiken mit einer Krankenhauseinweisung beziehungsweise dem Verbleib zu Hause verbunden sind?
+- Welche Maßnahmen zur Linderung möchte sie annehmen?
+
+👉 **Eine Ablehnung der Krankenhauseinweisung ist nicht automatisch eine Ablehnung jeder Behandlung.**
+
+Die Einwilligungsfähigkeit ist entscheidungsbezogen und situationsabhängig zu beurteilen. Orientierung allein beweist sie nicht. Bestehen Zweifel, muss eine ärztliche Einschätzung veranlasst werden.
+
+### 4. Fachliche Unterstützung organisieren
+
+Ich kontaktiere unverzüglich das zuständige ärztliche Palliativteam und schildere die Situation strukturiert.
+
+Dabei teile ich insbesondere mit:
+
+- aktuelle Beschwerden und Beobachtungen
+- Veränderung gegenüber dem bisherigen Zustand
+- den ausdrücklich geäußerten Patientenwillen
+- bisherige Maßnahmen und deren Wirkung
+- relevante Angaben aus dem Versorgungs- und Medikationsplan
+
+Verordnete Bedarfsmedikation darf nur entsprechend einer gültigen Anordnung und im Rahmen der eigenen beruflichen Zuständigkeit angewendet werden.
+
+Bei unmittelbar lebensbedrohlicher Entwicklung muss die erforderliche Notfallhilfe unverzüglich organisiert werden. Dabei sind der feststellbare Patientenwille, vorhandene wirksame Festlegungen und die konkrete Situation zu berücksichtigen.
+
+### 5. Tochter begleiten
+
+Die Tochter hat erkennbar Angst, ihre Mutter zu verlieren.
+
+Ich nehme diese Angst ernst, ohne ihr die Entscheidung über eine einwilligungsfähige Patientin zu übertragen.
+
+Ich erkläre verständlich, dass wir die Atemnot behandeln und die Patientin nicht alleinlassen.
+
+Soweit Frau Berger einverstanden ist, beziehe ich ihre Tochter in die Gespräche und die weitere Versorgung ein.
+
+### 6. Wirkung kontrollieren und dokumentieren
+
+Ich überprüfe fortlaufend, ob Frau Berger Entlastung erfährt und ob neue Warnzeichen auftreten.
+
+Ich dokumentiere sachlich:
+
+- beobachtete Symptome
+- Äußerungen der Patientin
+- Einschätzung und Weitergabe der Situation
+- durchgeführte Maßnahmen
+- ärztliche Rücksprachen und Anordnungen
+- Reaktionen und Verlauf
+- vereinbarte weitere Versorgung
+
+**Meine Denkstruktur:**
+
+1. Akute Atemnot und Gefährdung einschätzen
+2. Sofortige pflegerische Entlastung ermöglichen
+3. Patientenwillen und Einwilligungsfähigkeit berücksichtigen
+4. Ärztliches Palliativteam unverzüglich einbeziehen
+5. Angehörige empathisch begleiten
+6. Wirkung überprüfen, dokumentieren und Versorgung absichern
 
 </div>
 
@@ -101,20 +171,31 @@ Meine Denkstruktur ist:
 
 ## Prioritäten im Fall (prüfungsrelevant)
 
-1. **Verständliche Aufklärung sicherstellen**  
-   → Grundlage für Kooperation und Vertrauen  
+**1. Akute Symptomlast erkennen und einschätzen**
 
-2. **Ängste erkennen und reduzieren**  
-   → emotionale Stabilität fördern  
+→ Atemnot ist ein belastendes Symptom und erfordert unmittelbare Aufmerksamkeit.
 
-3. **Thromboseprophylaxe erklären**  
-   → Akzeptanz der Maßnahme sichern  
+**2. Frau Berger nicht alleinlassen und entlasten**
 
-4. **Präoperative Maßnahmen verständlich machen**  
-   → z. B. Nüchternheit erklären  
+→ Eine angenehme Position, Ruhe und zugewandte Begleitung können helfen.
 
-5. **Kommunikation mit Angehörigen sichern**  
-   → Sprachbarrieren aktiv berücksichtigen  
+**3. Patientenautonomie achten**
+
+→ Eine einwilligungsfähige Patientin darf eine Krankenhauseinweisung ablehnen.
+
+**4. Fachliche Behandlung abstimmen**
+
+→ Ärztliche Unterstützung und gültige Verordnungen sichern eine angemessene Symptomtherapie.
+
+**5. Angehörigenkonflikt professionell begleiten**
+
+→ Die Angst der Tochter ist ernst zu nehmen, ersetzt aber nicht den Willen der Patientin.
+
+**6. Verlauf und weitere Versorgung absichern**
+
+→ Wiederholte Einschätzung, klare Absprachen und Dokumentation sind notwendig.
+
+👉 Die Prioritäten stehen nicht isoliert nebeneinander. Akute Unterstützung, Kommunikation und Organisation fachlicher Hilfe laufen teilweise gleichzeitig ab.
 
 </div>
 
@@ -124,13 +205,25 @@ Meine Denkstruktur ist:
 
 ## Pflegeziele
 
-- Tim beschreibt vor der Operation in eigenen Worten, warum die Operation, die Nüchternheit und die Thromboseprophylaxe notwendig sind.
+**Kurzfristiges Ziel 1 – Symptomlinderung**
 
-- Tim wirkt im Verlauf der präoperativen Vorbereitung ruhiger, stellt gezielt Fragen und beteiligt sich aktiv an Gesprächen und Maßnahmen.
+Frau Berger erlebt innerhalb des vereinbarten Beobachtungszeitraums eine subjektiv wahrnehmbare Entlastung ihrer Atemnot. Die Wirkung wird durch wiederholtes Nachfragen und Beobachten überprüft.
 
-- Tim akzeptiert die Heparin-Injektion und lässt diese ohne Widerstand durchführen.
+**Kurzfristiges Ziel 2 – Sicherheit**
 
-- Die Mutter versteht mithilfe geeigneter Unterstützung die wesentlichen Inhalte der Behandlung und kann diese nachvollziehen.
+Frau Berger fühlt sich in der akuten Situation begleitet und weiß, welche Unterstützung unmittelbar verfügbar ist.
+
+**Kurzfristiges Ziel 3 – Selbstbestimmung**
+
+Frau Berger erhält verständliche Informationen und kann ihre Wünsche zu den vorgeschlagenen Maßnahmen äußern.
+
+**Mittelfristiges Ziel 4 – Versorgungskontinuität**
+
+Das Palliativteam stimmt mit Frau Berger einen tragfähigen Plan zur weiteren Symptomkontrolle und zum Vorgehen bei erneuter Verschlechterung ab.
+
+**Mittelfristiges Ziel 5 – Angehörigenbegleitung**
+
+Die Tochter kennt die vereinbarten Ansprechpartner und versteht, wie sie ihre Mutter unterstützen kann, ohne deren Selbstbestimmung zu übergehen.
 
 </div>
 
@@ -140,15 +233,15 @@ Meine Denkstruktur ist:
 
 ## Prüfungsentscheidung
 
-Tim versteht nicht, warum er eine Heparin-Injektion erhält.
+Frau Berger lehnt eine Krankenhauseinweisung ausdrücklich ab. Gleichzeitig leidet sie unter erheblicher Atemnot. Ihre Tochter fordert, sofort gegen den Willen der Mutter einen Rettungswagen zu rufen.
 
-Wie reagieren Sie **fachlich korrekt**?
+Welche Reaktion ist unter den beschriebenen Umständen **am ehesten fachlich richtig**?
 
 <div class="fall-answers">
-  <div class="fall-answer-card">A) „Das ist Standard, das machen wir immer.“</div>
-  <div class="fall-answer-card">B) „Das brauchst du einfach.“</div>
-  <div class="fall-answer-card">C) verständlich erklären, warum die Spritze notwendig ist</div>
-  <div class="fall-answer-card">D) Thema nicht weiter beachten</div>
+  <div class="fall-answer-card">A) Dem Wunsch der Tochter folgen und die Patientin ohne weitere Klärung gegen ihren Willen einweisen lassen.</div>
+  <div class="fall-answer-card">B) Die Ablehnung akzeptieren und deshalb auf weitere Einschätzung und Symptomlinderung verzichten.</div>
+  <div class="fall-answer-card">C) Atemnot unmittelbar einschätzen und lindern, den Patientenwillen klären und unverzüglich das zuständige ärztliche Team einbeziehen.</div>
+  <div class="fall-answer-card">D) Die Tochter auffordern, allein über die weiteren Maßnahmen zu entscheiden.</div>
 </div>
 
 </div>
@@ -160,134 +253,224 @@ Wie reagieren Sie **fachlich korrekt**?
 
 ## Bewertung
 
-**Richtig: C – verständlich erklären, warum die Spritze notwendig ist**
+**Richtig: C – Atemnot einschätzen und lindern, Patientenwillen klären und das ärztliche Team einbeziehen.**
 
-Tim zeigt deutlich, dass er die Situation nicht versteht.
+Diese Antwort verbindet drei zentrale Anforderungen:
 
-👉 Ohne Erklärung entstehen:
-- Unsicherheit
-- Angst
-- mögliche Ablehnung der Maßnahme
+**1. Patientensicherheit**
 
-Eine verständliche Aufklärung:
+Frau Berger benötigt wegen ihrer akuten Atemnot eine unverzügliche Einschätzung und angemessene Unterstützung.
 
-- fördert das Verständnis
-- stärkt das Vertrauen in die Pflege
-- verbessert die Mitarbeit des Patienten
+**2. Selbstbestimmung**
 
-Gerade bei Jugendlichen ist es wichtig, sie ernst zu nehmen und aktiv einzubeziehen.
+Die Ablehnung einer Krankenhauseinweisung muss ernst genommen werden. Ob Frau Berger für diese konkrete Entscheidung einwilligungsfähig ist, muss ausreichend geklärt sein.
 
-Falsche Antworten:
+**3. Fachliche Zusammenarbeit**
 
-- A → vermittelt keine echte Information
-- B → enthält keine Begründung
-- D → ignoriert das Informationsbedürfnis des Patienten
+Eine wirksame palliative Symptomkontrolle erfordert gegebenenfalls ärztliche Entscheidungen und die Anwendung bereits gültig verordneter Maßnahmen.
 
-👉 Prüfungsregel:
-**Erklären vor Durchführen**
+### Warum sind die anderen Antworten falsch?
+
+**A – Gegen den Willen der Patientin einweisen lassen**
+
+Die Forderung einer Angehörigen rechtfertigt für sich genommen keine Maßnahme gegen den wirksamen Willen einer einwilligungsfähigen Patientin.
+
+**B – Auf weitere Unterstützung verzichten**
+
+Eine abgelehnte Krankenhauseinweisung bedeutet nicht, dass die Patientin auf Symptomlinderung oder pflegerische Begleitung verzichten muss.
+
+**D – Die Tochter allein entscheiden lassen**
+
+Angehörige dürfen nicht allein aufgrund ihrer familiären Beziehung die Entscheidung einer einwilligungsfähigen Patientin ersetzen.
+
+### Prüfungsregel
+
+**Patientenautonomie achten bedeutet nicht, Beschwerden unbehandelt zu lassen.**
 
 </details>
 
 ---
 
 <details class="fall-block fall-fragen">
-  <summary>📝 Prüfungsfragen anzeigen</summary>
+  <summary>📝 Vertiefende Prüfungsfragen anzeigen</summary>
 
 ## Prüfungsfragen
 
-1. Warum ist eine Thromboseprophylaxe bei Tim notwendig?
-2. Welche Risiken bestehen bei einer Gipsruhigstellung?
-3. Beschreiben Sie zwei pflegerische Probleme in diesem Fall.
-4. Formulieren Sie eine passende Pflegediagnose.
-5. Nennen Sie zwei realistische Pflegeziele.
-6. Wie sollte die Kommunikation mit Jugendlichen gestaltet werden?
-7. Warum ist der Einsatz eines Dolmetschers sinnvoll?
-8. Nennen Sie zwei Möglichkeiten zur Beschäftigung während des Krankenhausaufenthalts.
+1. Welche Beobachtungen und Informationen sind bei Frau Bergers akuter Atemnot unmittelbar wichtig?
+
+2. Nennen und begründen Sie vier pflegerische Maßnahmen zur nichtmedikamentösen Linderung von Atemnot.
+
+3. Was bedeutet Einwilligungsfähigkeit und weshalb reicht die Feststellung „wach und orientiert“ allein nicht aus?
+
+4. Wie unterscheiden sich die Ablehnung einer Krankenhauseinweisung und die Ablehnung einer symptomlindernden Behandlung?
+
+5. Beschreiben Sie, wie Sie auf die Forderung der Tochter professionell reagieren.
+
+6. Welche Informationen geben Sie bei der Kontaktaufnahme mit dem ärztlichen Palliativteam weiter?
+
+7. Formulieren Sie zwei geeignete Pflegeprobleme beziehungsweise Pflegediagnosen mit passenden Pflegezielen.
+
+8. Beschreiben Sie vier konkrete pflegerische Maßnahmen mit fachlicher Begründung.
+
+9. Welche Bedeutung haben eine Patientenverfügung, eine Vorsorgevollmacht und der aktuell geäußerte Patientenwille in dieser Situation?
+
+10. Welche Informationen müssen Sie im weiteren Verlauf dokumentieren und warum?
 
 </details>
 
 ---
 
 <details class="fall-block fall-loesung">
-  <summary>🔍 Lösung anzeigen</summary>
+  <summary>📚 Ausführliche Musterlösungen anzeigen</summary>
 
 ## Lösungen
 
-### Thromboseprophylaxe
+### 1. Einschätzung der akuten Atemnot
 
-Eine Thromboseprophylaxe ist notwendig, weil Tim sein Bein durch die Ruhigstellung nur eingeschränkt bewegen kann. Dadurch verlangsamt sich der venöse Blutfluss, wodurch das Risiko für die Bildung eines Blutgerinnsels steigt.
+Die Pflegefachperson erfasst zunächst das subjektive Erleben der Patientin und den aktuellen Zustand.
 
-Zusätzlich erhöht die bevorstehende Operation die Gerinnungsneigung des Blutes. Die Heparin-Injektion wirkt diesem Risiko entgegen, indem sie die Blutgerinnung hemmt und so thromboembolischen Komplikationen vorbeugt.
+Wichtig sind Atemfrequenz, Atemarbeit, Sprechfähigkeit, Bewusstseinslage, Hautfarbe, Unruhe, Erschöpfung und mögliche zusätzliche Beschwerden.
 
----
+Außerdem wird erfragt, wann die Atemnot begonnen hat, wie sie sich verändert hat und welche Maßnahmen bisher geholfen haben.
 
-### Risiken bei Gipsbehandlung
+Soweit verfügbar und sinnvoll, können Vitalparameter erhoben werden. Eine Sauerstoffsättigung allein beschreibt jedoch nicht das Ausmaß des subjektiven Leidens.
 
-Ein Gips kann die Durchblutung beeinträchtigen, wenn er zu eng sitzt. Hinweise darauf können Schmerzen, Schwellungen, Blässe, Kältegefühl oder Taubheitsgefühle sein.
+**Begründung:** Nur durch eine strukturierte Einschätzung können dringender Handlungsbedarf, mögliche Gefährdungen und die Wirkung eingeleiteter Maßnahmen erkannt werden.
 
-Außerdem besteht das Risiko von Druckstellen, Hautschäden oder Sensibilitätsstörungen. Deshalb müssen Durchblutung, Motorik, Sensibilität und Schmerzen regelmäßig kontrolliert werden.
+### 2. Nichtmedikamentöse Maßnahmen
 
----
+**Atemerleichternde Positionierung:** Frau Berger wird bei einer angenehmen Oberkörperhochlagerung unterstützt. Dadurch kann die Atemarbeit erleichtert werden.
 
-### Pflegerische Probleme
+**Ruhe und Präsenz:** Die Pflegefachperson bleibt bei der Patientin, spricht ruhig und vermeidet hektische Abläufe. Dies kann Angst und zusätzliche Belastung reduzieren.
 
-Ein wesentliches pflegerisches Problem ist das Wissensdefizit. Tim versteht die Operation, die Nüchternheit und die Heparin-Injektion nicht ausreichend.
+**Luftstrom:** Ein sanfter Luftstrom in Richtung Gesicht kann bei manchen Betroffenen das subjektive Atemnotempfinden verringern. Die Maßnahme erfolgt nach Wunsch und Verträglichkeit.
 
-Ein weiteres pflegerisches Problem ist Angst und Unsicherheit. Diese entstehen durch die ungewohnte Situation, die bevorstehende Operation, die eingeschränkte Beweglichkeit und die unklaren Informationen.
+**Belastung reduzieren:** Unnötige körperliche Anstrengung und belastende Pflegemaßnahmen werden zunächst vermieden.
 
----
+**Begründung:** Nichtmedikamentöse Maßnahmen können die Symptomlinderung unterstützen, ersetzen bei schwerer Atemnot aber keine notwendige medizinische Einschätzung oder Behandlung.
 
-### Pflegediagnose
+### 3. Einwilligungsfähigkeit
 
-Wissensdefizit im Zusammenhang mit unzureichender Information über präoperative Maßnahmen, erkennbar an wiederholten Fragen zur Operation, zur Heparin-Injektion und zum Nüchternbleiben.
+Einwilligungsfähigkeit bedeutet, dass eine Person die wesentlichen Informationen über eine konkrete Maßnahme erfassen, deren Bedeutung und mögliche Folgen für die eigene Situation verstehen, die Handlungsalternativen abwägen und eine Entscheidung treffen beziehungsweise mitteilen kann.
 
----
+Sie ist keine pauschale Eigenschaft, sondern bezieht sich auf die jeweilige Entscheidung und den jeweiligen Zeitpunkt.
 
-### Pflegeziele
+Eine wache und orientierte Patientin kann trotzdem durch schwere Atemnot, Erschöpfung oder andere Faktoren in ihrer Entscheidungsfähigkeit beeinträchtigt sein.
 
-Ein realistisches Pflegeziel ist, dass Tim vor der Operation in eigenen Worten erklären kann, warum die Operation, die Nüchternheit und die Thromboseprophylaxe notwendig sind.
+**Begründung:** Vor einer weitreichenden Entscheidung muss ausreichend geklärt werden, ob die Patientin die konkrete Situation und die Folgen ihrer Ablehnung erfassen kann. Bei Zweifeln ist ärztliche Unterstützung erforderlich.
 
-Ein weiteres Ziel ist, dass Tim im Verlauf der präoperativen Vorbereitung weniger angespannt wirkt, Fragen stellt und Maßnahmen kooperativ zulässt.
+### 4. Unterschied zwischen zwei Ablehnungen
 
----
+Frau Berger sagt, dass sie nicht ins Krankenhaus möchte.
 
-### Maßnahmen
+Daraus folgt nicht, dass sie auch eine Behandlung ihrer Atemnot ablehnt.
 
-- Die Pflegefachperson klärt Tim vor der Operation altersgerecht über den Ablauf der Operation, die Nüchternheit und die Thromboseprophylaxe auf, indem sie einfache Sprache verwendet und gezielt auf seine Fragen eingeht, um Verständnis zu fördern und Angst zu reduzieren.
+Sie kann beispielsweise eine Krankenhauseinweisung ablehnen und gleichzeitig mit einer symptomlindernden Versorgung zu Hause einverstanden sein.
 
-- Die Pflegefachperson erklärt Tim vor der Durchführung die Heparin-Injektion verständlich, indem sie den Zusammenhang zwischen Ruhigstellung und Thromboserisiko erläutert, um die Akzeptanz der Maßnahme zu fördern und Komplikationen vorzubeugen.
+Die Pflegefachperson muss deshalb erfragen, welche Maßnahmen Frau Berger akzeptiert und welche nicht.
 
-- Die Pflegefachperson überprüft direkt im Anschluss an die Aufklärung das Verständnis von Tim, indem sie ihn in eigenen Worten erklären lässt, was er verstanden hat, um Wissensdefizite zu erkennen und gezielt nachzuschulen.
+**Begründung:** Der Patientenwille muss konkret und maßnahmenbezogen berücksichtigt werden. Pauschale Annahmen können zu einer unzureichenden Versorgung oder zu Eingriffen gegen den Willen der Patientin führen.
 
-- Die Pflegefachperson organisiert bei sprachlichen Verständigungsproblemen zeitnah einen Dolmetscher oder geeignete Übersetzungshilfen während des Aufenthalts, um die Mutter einzubeziehen und eine sichere Informationsweitergabe zu gewährleisten.
+### 5. Kommunikation mit der Tochter
 
-- Die Pflegefachperson geht während der gesamten Betreuung aktiv auf Fragen und Ängste von Tim ein, indem sie zuhört, Emotionen ernst nimmt und ruhig reagiert, um Vertrauen aufzubauen und die Kooperation zu fördern.
+Die Pflegefachperson erkennt die Sorge der Tochter an:
 
-- Die Pflegefachperson erklärt Tim vor der Operation den Grund für das Nüchternbleiben, indem sie das Risiko von Komplikationen wie Aspiration verständlich beschreibt, um die Einhaltung der Maßnahme sicherzustellen.
+„Ich sehe, dass Sie große Angst um Ihre Mutter haben. Wir nehmen die Atemnot sehr ernst und kümmern uns sofort um Unterstützung.“
 
----
+Anschließend erklärt sie in verständlicher Sprache, dass der Wille einer einwilligungsfähigen Patientin maßgeblich ist.
 
-### Kommunikation mit Jugendlichen
+Soweit Frau Berger einverstanden ist, wird die Tochter in die weiteren Gespräche einbezogen.
 
-Jugendliche benötigen eine klare, ehrliche und altersgerechte Kommunikation. Fachbegriffe sollten vermieden oder verständlich erklärt werden.
+Die Pflegefachperson vermeidet Vorwürfe und verspricht keine bestimmte Entwicklung.
 
-Wichtig ist, dass ihre Fragen ernst genommen werden und sie aktiv in Gespräche und Entscheidungen einbezogen werden. So werden Vertrauen, Verständnis und Mitarbeit gefördert.
+**Begründung:** Professionelle Kommunikation reduziert Konflikte, vermittelt Sicherheit und schützt zugleich die Selbstbestimmung der Patientin.
 
----
+### 6. Übergabe an das Palliativteam
 
-### Dolmetscher
+Die Übergabe sollte strukturiert erfolgen.
 
-Ein Dolmetscher ist sinnvoll, damit wichtige Informationen zur Behandlung sicher und vollständig an die Mutter übermittelt werden können.
+**Situation:** Frau Berger, 68 Jahre, fortgeschrittene Tumorerkrankung, aktuell zunehmende Atemnot.
 
-Nur so kann sie die Situation verstehen, Tim angemessen unterstützen und in Gespräche sowie Entscheidungen einbezogen werden.
+**Hintergrund:** Ambulante palliative Versorgung mit dokumentiertem Wunsch, möglichst zu Hause zu bleiben.
 
----
+**Einschätzung:** Aktuelle Beobachtungen, Beschwerden, mögliche Warnzeichen, bisherige Maßnahmen und deren Wirkung.
 
-### Beschäftigungsmöglichkeiten
+**Empfehlung beziehungsweise Anliegen:** Dringende ärztliche Einschätzung, Überprüfung geeigneter symptomlindernder Maßnahmen und Abstimmung des weiteren Vorgehens unter Berücksichtigung des Patientenwillens.
 
-Geeignet sind zum Beispiel altersgerechte digitale Angebote wie Spiele, Videos oder Musik, da sie kurzfristig ablenken und Wartezeiten erleichtern können.
+**Begründung:** Eine klare Übergabe reduziert Informationsverluste und erleichtert zeitnahe Entscheidungen.
 
-Auch Gespräche, Bücher oder andere altersgerechte Beschäftigungsmaterialien helfen, Anspannung zu reduzieren und die Situation besser zu bewältigen.
+### 7. Pflegeprobleme und Pflegeziele
+
+**Pflegeproblem 1: Belastende Atemnot**
+
+Frau Berger erlebt ausgeprägte Luftnot bei fortgeschrittener Erkrankung.
+
+**Ziel:** Frau Berger berichtet nach den eingeleiteten und abgestimmten Maßnahmen über eine für sie wahrnehmbare Entlastung. Der Verlauf wird regelmäßig überprüft.
+
+**Pflegeproblem 2: Angst und Unsicherheit im Zusammenhang mit der Atemnot**
+
+Frau Berger ist durch ihre Atemnot belastet; die angespannte Reaktion ihrer Tochter kann zusätzlichen Druck erzeugen.
+
+**Ziel:** Frau Berger fühlt sich begleitet, kann ihre Wünsche äußern und erlebt die Kommunikation als ruhig und respektvoll.
+
+**Begründung:** Die Pflegeplanung berücksichtigt sowohl körperliche Symptome als auch psychosoziale Belastungen und die Selbstbestimmung der Patientin.
+
+### 8. Konkrete pflegerische Maßnahmen
+
+**Maßnahme 1 – Symptomassessment**
+
+Die Pflegefachperson beurteilt unmittelbar die Atemnot anhand der Äußerungen der Patientin, der Atemarbeit und weiterer Beobachtungen. Anschließend kontrolliert sie den Verlauf wiederholt.
+
+**Ziel:** Veränderungen und notwendiger Handlungsbedarf werden frühzeitig erkannt.
+
+**Maßnahme 2 – Atemerleichternde Position**
+
+Die Pflegefachperson unterstützt Frau Berger bei einer individuell angenehmen Oberkörperhochlagerung und achtet darauf, zusätzliche Anstrengung zu vermeiden.
+
+**Ziel:** Die Atemarbeit und das subjektive Atemnotempfinden werden möglichst reduziert.
+
+**Maßnahme 3 – Ärztliche Rücksprache**
+
+Die Pflegefachperson kontaktiert unverzüglich das zuständige ärztliche Team und übermittelt die aktuelle Situation sowie den geäußerten Patientenwillen.
+
+**Ziel:** Eine fachlich abgestimmte Symptomtherapie und ein sicherer weiterer Versorgungsplan werden ermöglicht.
+
+**Maßnahme 4 – Kommunikation und Begleitung**
+
+Die Pflegefachperson bleibt in der akuten Situation bei Frau Berger, erklärt die nächsten Schritte verständlich und erfragt, welche Unterstützung sie wünscht.
+
+**Ziel:** Angst wird möglichst reduziert und die Selbstbestimmung gestärkt.
+
+**Wichtig:** Medikamentöse Maßnahmen erfolgen nur bei gültiger Anordnung und innerhalb der jeweiligen beruflichen Zuständigkeit.
+
+### 9. Patientenverfügung und Vorsorgevollmacht
+
+Eine Patientenverfügung kann verbindliche Festlegungen für bestimmte medizinische Situationen enthalten, sofern sie auf die konkrete Lebens- und Behandlungssituation zutrifft.
+
+Eine bevollmächtigte Person kann bei fehlender Einwilligungsfähigkeit im Umfang ihrer Vollmacht an Entscheidungen beteiligt sein.
+
+Ist Frau Berger für die konkrete Entscheidung einwilligungsfähig, ist grundsätzlich ihr aktuell geäußerter Wille maßgeblich.
+
+Die Tochter erhält nicht allein durch ihre Angehörigeneigenschaft eine Entscheidungsbefugnis.
+
+**Begründung:** Patientenverfügung, Vertretungsbefugnis und aktueller Patientenwille haben unterschiedliche rechtliche Funktionen. Sie dürfen nicht miteinander verwechselt werden.
+
+### 10. Dokumentation
+
+Dokumentiert werden:
+
+- Zeitpunkt und Verlauf der Atemnot
+- subjektive Angaben von Frau Berger
+- objektive pflegerische Beobachtungen
+- Aussagen zur Ablehnung der Krankenhauseinweisung
+- relevante Informationen zur Einschätzung der Einwilligungsfähigkeit
+- durchgeführte Maßnahmen und ihre Wirkung
+- Kontaktaufnahme mit dem ärztlichen Team
+- erhaltene Anordnungen und vereinbarte Schritte
+- Beteiligung der Tochter, soweit relevant
+- erneute Einschätzungen und weitere Versorgungsplanung
+
+**Begründung:** Eine nachvollziehbare Dokumentation unterstützt die Patientensicherheit, die Kontinuität der Versorgung und die fachliche sowie rechtliche Nachvollziehbarkeit des Handelns.
 
 </details>
 
@@ -297,11 +480,33 @@ Auch Gespräche, Bücher oder andere altersgerechte Beschäftigungsmaterialien h
 
 ## Typische Fehler (Prüfung)
 
-- fehlende oder unverständliche Aufklärung  
-- Angst des Jugendlichen nicht ernst nehmen  
-- Sprachbarrieren ignorieren  
-- Maßnahmen ohne Erklärung durchführen  
-- Angehörige nicht einbeziehen  
+**Fehler 1: Angehörige entscheiden automatisch**
+
+→ Eine Tochter oder ein Sohn entscheidet nicht allein aufgrund der familiären Beziehung über eine einwilligungsfähige Person.
+
+**Fehler 2: Ablehnung mit vollständigem Behandlungsverzicht verwechseln**
+
+→ Frau Berger lehnt die Krankenhauseinweisung ab, bittet aber ausdrücklich um Linderung ihrer Atemnot.
+
+**Fehler 3: Atemnot nur anhand eines Messwerts beurteilen**
+
+→ Das subjektive Atemnotempfinden und die klinische Beobachtung sind wesentlich.
+
+**Fehler 4: Einwilligungsfähigkeit allein aus Orientierung ableiten**
+
+→ Entscheidend ist, ob die konkrete Maßnahme und ihre Folgen verstanden und abgewogen werden können.
+
+**Fehler 5: Ohne gültige Anordnung Medikamente verabreichen**
+
+→ Auch in der Palliativpflege gelten die jeweiligen beruflichen Zuständigkeiten und Anforderungen an die Arzneimittelgabe.
+
+**Fehler 6: Palliativversorgung mit Nichtstun gleichsetzen**
+
+→ Palliative Pflege bedeutet aktive Symptomlinderung, Begleitung und Orientierung an den Zielen der Patientin.
+
+**Fehler 7: Bei Verschlechterung keine Hilfe organisieren**
+
+→ Akute Gefährdungen erfordern eine angemessene Reaktion und gegebenenfalls unverzügliche Notfallhilfe unter Berücksichtigung des Patientenwillens.
 
 </div>
 
@@ -311,6 +516,8 @@ Auch Gespräche, Bücher oder andere altersgerechte Beschäftigungsmaterialien h
 
 ## Merksatz
 
-Verstehen führt zu Mitarbeit, Aufklärung ist der Schlüssel dazu.
+**Gute Palliativpflege verbindet Symptomlinderung, Selbstbestimmung und fachliche Verantwortung.**
+
+Eine Patientin darf eine Maßnahme ablehnen. Sie hat trotzdem Anspruch auf professionelle Begleitung und auf die angebotenen, von ihr akzeptierten Möglichkeiten zur Linderung ihrer Beschwerden.
 
 </div>

@@ -3,6 +3,7 @@ title: Praxisanleitung in der Pflege
 beschreibung: Der Leitfaden für Praxisanleitende in der generalistischen Pflegeausbildung.
 description: Das PraxisMaik E-Book für Praxisanleitende in der Pflegeausbildung.
 order: 1
+premium: true
 cover: /images/ebooks/ebook-praxisanleitung-cover.webp
 ---
 

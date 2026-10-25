@@ -48,7 +48,9 @@ const premiumLernskripte = lernskripte.filter(
 );
 
 const premiumPruefungsfaelle = pruefung.filter(
-  (entry) => entry.data.premium === true
+  (entry) =>
+    entry.data.premium === true &&
+    entry.data.topic !== "praxisanleitung"
 );
 
 const premiumExamQuiz = examQuiz.filter(
@@ -136,7 +138,7 @@ const premiumExamQuizCount = premiumExamQuiz.length;
 </div>
 
 <h1>
-  Du musst in der Pflege nicht alles wissen. Du musst wissen, was jetzt richtig ist.
+  Sicherer durch Praxisbesuche und Pflegeexamen – weil du verstehst, was du tust.
 </h1>
 
 <p class="premium-brand-statement">
@@ -145,9 +147,9 @@ const premiumExamQuizCount = premiumExamQuiz.length;
 </p>
 
 <p class="premium-lead">
-  Mit der PraxisMaik-Methode lernst du, pflegerische Situationen zu verstehen,
-  Prioritäten zu setzen und Entscheidungen fachlich sicher zu begründen.
-  So gehst du ruhiger in Praxisbesuche, Fallsituationen und deine Abschlussprüfung.
+  Lerne, Pflegesituationen richtig einzuschätzen, Prioritäten zu setzen
+  und deine Entscheidungen fachlich zu begründen. Mit verständlichen Lernskripten,
+  realistischen Prüfungsfällen und gezieltem Training für deine Abschlussprüfung.
 </p>
 
 <div class="premium-hero-trust">
@@ -263,7 +265,57 @@ const premiumExamQuizCount = premiumExamQuiz.length;
 </div>
 </section>
 
- <section class="premium-section premium-showcase-compact">
+ <section class="premium-section premium-real-case-preview">
+
+  <div class="section-headline">
+    <h2>So lernst du, pflegerische Entscheidungen zu begründen.</h2>
+    <p class="section-intro">
+      Ein echter Einblick in einen unserer Premium-Prüfungsfälle.
+      Hier geht es nicht darum, Antworten auswendig zu lernen,
+      sondern eine Pflegesituation zu verstehen.
+    </p>
+  </div>
+
+  <div class="premium-overview-card">
+    <span>Einblick in dein Premium-Training</span>
+
+    <h3>Schlaganfall – Selbstständigkeit und emotionale Belastung</h3>
+
+    <p>
+      Die 82-jährige Frau König wird nach einem Schlaganfall
+      zu Hause versorgt. Ihre rechte Körperhälfte ist in der
+      Beweglichkeit eingeschränkt. Sie benötigt Unterstützung
+      bei der Körperpflege.
+    </p>
+
+    <p>
+      Beim Verabschieden beginnt sie zu weinen und sagt:
+      <strong>„Ich kann nichts mehr alleine … ich fühle mich wie ein Kind.“</strong>
+    </p>
+
+    <h3>Jetzt bist du gefragt:</h3>
+
+    <p>
+      Wie kannst du Frau Königs Selbstständigkeit fördern
+      und gleichzeitig ihre emotionale Belastung
+      professionell berücksichtigen?
+    </p>
+
+    <p>
+      Im vollständigen Premium-Prüfungsfall lernst du,
+      Ressourcen zu erkennen, Pflegeprioritäten festzulegen,
+      geeignete Maßnahmen abzuleiten und deine Entscheidungen
+      fachlich zu begründen.
+    </p>
+
+    <p>
+      <strong>34 ausführliche Prüfungsfälle sind im Azubi-Premium enthalten.</strong>
+    </p>
+  </div>
+
+</section>
+
+<section class="premium-section premium-showcase-compact">
           <div class="section-headline">
             <h2>Du bekommst sofort Zugriff auf die wichtigsten Premium-Inhalte</h2>
             <p class="section-intro">
@@ -290,7 +342,7 @@ const premiumExamQuizCount = premiumExamQuiz.length;
           </div>
 
           <div class="premium-after-showcase-cta">
-            <h3>4 E-Books, 240 Lernskripte, 45 Prüfungsfälle und 61 Examensfragen in einem Zugang.</h3>
+            <h3>4 E-Books, 240 Lernskripte, 34 Prüfungsfälle und 61 Examensfragen in einem Zugang.</h3>
             <p>
               Wenn du für Ausbildung, Praxis oder Examen lernst, bekommst du hier einen klaren Lernweg statt einzelner Sucherei.
             </p>
@@ -501,7 +553,7 @@ const premiumExamQuizCount = premiumExamQuiz.length;
   }
 
   .premium-hero {
-    max-width: 780px;
+    max-width: 100%;
     margin-bottom: 2.8rem;
   }
 
