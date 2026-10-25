@@ -333,7 +333,7 @@ const isPraxisanleiterPurchase =
   </div>
 
   {isAzubiPurchase && (
-    <script is:inline>
+    <script is:inline define:vars={{ sessionId }}>
       localStorage.removeItem("praxismaik_premium");
 
       localStorage.setItem(
@@ -341,57 +341,67 @@ const isPraxisanleiterPurchase =
         "true"
       );
 
-      const purchaseAlreadyTracked =
-        sessionStorage.getItem(
-          "praxismaik_purchase_azubi_tracked"
-        );
-
       if (
-        !purchaseAlreadyTracked &&
+        sessionId &&
+        sessionId.startsWith("cs_live_") &&
         typeof window.trackPraxisMaikEvent === "function"
       ) {
-        window.trackPraxisMaikEvent("purchase_success", {
-          value: 39,
-          currency: "EUR",
-          product: "PraxisMaik Premium",
-          page_path: window.location.pathname,
-        });
+        const trackingKey =
+          "praxismaik_ga4_purchase_" + sessionId;
 
-        sessionStorage.setItem(
-          "praxismaik_purchase_azubi_tracked",
-          "1"
-        );
+        if (!localStorage.getItem(trackingKey)) {
+          window.trackPraxisMaikEvent("purchase", {
+            transaction_id: sessionId,
+            value: 39,
+            currency: "EUR",
+            items: [
+              {
+                item_id: "praxismaik-premium-azubi",
+                item_name: "PraxisMaik Premium",
+                price: 39,
+                quantity: 1
+              }
+            ]
+          });
+
+          localStorage.setItem(trackingKey, "1");
+        }
       }
     </script>
   )}
 
   {isPraxisanleiterPurchase && (
-    <script is:inline>
+    <script is:inline define:vars={{ sessionId }}>
       localStorage.setItem(
         "praxismaik_premium_praxisanleiter",
         "true"
       );
 
-      const purchaseAlreadyTracked =
-        sessionStorage.getItem(
-          "praxismaik_purchase_praxisanleiter_tracked"
-        );
-
       if (
-        !purchaseAlreadyTracked &&
+        sessionId &&
+        sessionId.startsWith("cs_live_") &&
         typeof window.trackPraxisMaikEvent === "function"
       ) {
-        window.trackPraxisMaikEvent("purchase_success", {
-          value: 79,
-          currency: "EUR",
-          product: "PraxisMaik Praxisanleiter Premium",
-          page_path: window.location.pathname,
-        });
+        const trackingKey =
+          "praxismaik_ga4_purchase_" + sessionId;
 
-        sessionStorage.setItem(
-          "praxismaik_purchase_praxisanleiter_tracked",
-          "1"
-        );
+        if (!localStorage.getItem(trackingKey)) {
+          window.trackPraxisMaikEvent("purchase", {
+            transaction_id: sessionId,
+            value: 79,
+            currency: "EUR",
+            items: [
+              {
+                item_id: "praxismaik-premium-praxisanleiter",
+                item_name: "PraxisMaik Praxisanleiter Premium",
+                price: 79,
+                quantity: 1
+              }
+            ]
+          });
+
+          localStorage.setItem(trackingKey, "1");
+        }
       }
     </script>
   )}
