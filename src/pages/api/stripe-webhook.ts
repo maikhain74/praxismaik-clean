@@ -123,8 +123,8 @@ export async function POST({
    * ein erfolgreich abgeschlossener Checkout.
    */
   if (
-    event.type !==
-    "checkout.session.completed"
+    event.type !== "checkout.session.completed" &&
+    event.type !== "checkout.session.async_payment_succeeded"
   ) {
     return new Response("OK", {
       status: 200,
@@ -133,6 +133,17 @@ export async function POST({
 
   const session =
     event.data.object as Stripe.Checkout.Session;
+
+  if (session.payment_status !== "paid") {
+    console.log("Premium-Freischaltung wartet auf Zahlung:", {
+      sessionId: session.id,
+      paymentStatus: session.payment_status,
+    });
+
+    return new Response("OK", {
+      status: 200,
+    });
+  }
 
   const premiumType =
     session.metadata?.premium_type;
