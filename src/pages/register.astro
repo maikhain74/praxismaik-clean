@@ -101,12 +101,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 </BaseLayout>
 
 <script>
-  import { createClient } from '@supabase/supabase-js';
+  import { createSupabaseBrowserClient } from '../lib/supabase-browser';
 
-  const supabase = createClient(
-    import.meta.env.PUBLIC_SUPABASE_URL,
-    import.meta.env.PUBLIC_SUPABASE_ANON_KEY
-  );
+  const supabase = createSupabaseBrowserClient();
 
   const form = document.getElementById('register-form');
   const registerButton = document.getElementById('register-button');

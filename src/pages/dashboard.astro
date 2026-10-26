@@ -22,12 +22,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   </section>
 
   <script type="module">
-    import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
+    import { createSupabaseBrowserClient } from '../lib/supabase-browser';
 
-    const supabase = createClient(
-      'https://dmjbuijhoiklmgqozxkg.supabase.co',
-      'sb_publishable_SQLOHit8yP0fMjfS3nN1QQ_61E3MOgn'
-    );
+    const supabase = createSupabaseBrowserClient();
 
     const userBox = document.getElementById('user-box');
     const progressBox = document.getElementById('progress-box');
