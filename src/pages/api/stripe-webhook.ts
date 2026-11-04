@@ -2,6 +2,7 @@ export const prerender = false;
 
 import Stripe from "stripe";
 import { createClient } from "@supabase/supabase-js";
+import { sendMasterkitDownload } from "../../lib/masterkit-versand";
 
 const stripe = new Stripe(import.meta.env.STRIPE_SECRET_KEY, {
   apiVersion: "2024-06-20",
@@ -11,6 +12,129 @@ const supabase = createClient(
   import.meta.env.PUBLIC_SUPABASE_URL,
   import.meta.env.SUPABASE_SERVICE_ROLE_KEY
 );
+
+async function processMasterkitPurchase(
+  session: Stripe.Checkout.Session
+): Promise<Response | null> {
+  const masterkitPriceId =
+    import.meta.env.STRIPE_PRICE_ID_MASTERKIT;
+
+  if (!masterkitPriceId) {
+    console.error("STRIPE_PRICE_ID_MASTERKIT fehlt.");
+
+    return new Response("Masterkit-Konfiguration fehlt.", {
+      status: 500,
+    });
+  }
+
+  const lineItems = await stripe.checkout.sessions.listLineItems(
+    session.id,
+    { limit: 100 }
+  );
+
+  const isMasterkitPurchase = lineItems.data.some(
+    (item) => item.price?.id === masterkitPriceId
+  );
+
+  if (!isMasterkitPurchase) {
+    return null;
+  }
+
+  if (
+    session.mode !== "payment" ||
+    session.payment_status !== "paid" ||
+    session.livemode !== true
+  ) {
+    return new Response("OK", { status: 200 });
+  }
+
+  if (lineItems.has_more) {
+    console.error("Masterkit-Checkout enthält zu viele Positionen:", session.id);
+
+    return new Response("Positionen konnten nicht vollständig geprüft werden.", {
+      status: 500,
+    });
+  }
+
+  if (
+    lineItems.data.length !== 1 ||
+    lineItems.data[0].quantity !== 1
+  ) {
+    console.error("Unerwartete Masterkit-Bestellung:", session.id);
+
+    return new Response("Unerwartete Bestellpositionen.", {
+      status: 500,
+    });
+  }
+
+  const customerEmail =
+    session.customer_details?.email ??
+    session.customer_email;
+
+  if (!customerEmail) {
+    console.error("Masterkit-Kauf ohne E-Mail-Adresse:", session.id);
+
+    return new Response("Kunden-E-Mail fehlt.", {
+      status: 500,
+    });
+  }
+
+  if (session.amount_total === null || !session.currency) {
+    return new Response("Zahlungsdaten unvollständig.", {
+      status: 500,
+    });
+  }
+
+  const { error } = await supabase
+    .from("masterkit_orders")
+    .upsert(
+      {
+        stripe_session_id: session.id,
+        stripe_payment_intent_id:
+          typeof session.payment_intent === "string"
+            ? session.payment_intent
+            : session.payment_intent?.id ?? null,
+        stripe_price_id: masterkitPriceId,
+        customer_email: customerEmail,
+        product_key: "medikamentenlehre-masterkit",
+        amount_total: session.amount_total,
+        currency: session.currency,
+        payment_status: "paid",
+      },
+      {
+        onConflict: "stripe_session_id",
+        ignoreDuplicates: true,
+      }
+    );
+
+  if (error) {
+    console.error("Masterkit Supabase Fehler:", error);
+
+    return new Response("Masterkit-Bestellung konnte nicht gespeichert werden.", {
+      status: 500,
+    });
+  }
+
+  console.log("Masterkit-Kauf verarbeitet:", {
+    sessionId: session.id,
+  });
+
+  try {
+    await sendMasterkitDownload(session.id);
+  } catch (error) {
+    console.error("Masterkit-Versand fehlgeschlagen:", {
+      sessionId: session.id,
+      error,
+    });
+
+    return new Response(
+      "Masterkit-Versand fehlgeschlagen.",
+      { status: 500 }
+    );
+  }
+
+  return new Response("OK", { status: 200 });
+}
 
 function verifyStripeEvent(
   body: string,
@@ -143,6 +267,16 @@ export async function POST({
     return new Response("OK", {
       status: 200,
     });
+  }
+
+  /*
+   * Masterkit-Käufe getrennt von Premium verarbeiten.
+   */
+  const masterkitResponse =
+    await processMasterkitPurchase(session);
+
+  if (masterkitResponse) {
+    return masterkitResponse;
   }
 
   const premiumType =

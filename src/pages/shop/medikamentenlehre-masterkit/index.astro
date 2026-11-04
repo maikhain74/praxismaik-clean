@@ -1,0 +1,450 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Medikamentenlehre Masterkit | PraxisMaik Shop"
+  description="Das Medikamentenlehre-Masterkit für die generalistische Pflegeausbildung. 89 Seiten, 19 Kapitel, praxisnahes Lernwissen als digitales PDF für 19,90 €."
+>
+  <div class="pm-product">
+    <nav class="pm-product-breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Start</a>
+      <span>›</span>
+      <a href="/shop/">Shop</a>
+      <span>›</span>
+      <span>Medikamentenlehre Masterkit</span>
+    </nav>
+
+    <section class="pm-product-hero">
+      <div class="pm-product-visual">
+        <img
+          src="/images/medikamentenlehre-masterkit-shop.png"
+          alt="PraxisMaik Medikamentenlehre Masterkit, digitales Lernmaterial für die Pflegeausbildung"
+          width="1170"
+          height="1279"
+        />
+        <p>Produktabbildung zur Veranschaulichung. Du erhältst eine PDF-Datei, kein gedrucktes Buch.</p>
+      </div>
+
+      <div class="pm-product-details">
+        <span class="pm-product-eyebrow">PRAXISMAIK MASTERKIT</span>
+        <h1>Medikamentenlehre verstehen und sicher anwenden</h1>
+
+        <p class="pm-product-lead">
+          Ein strukturiertes Lernmaterial für Auszubildende in der
+          generalistischen Pflegeausbildung. Wiederhole wichtige
+          Grundlagen der Medikamentenlehre und vertiefe dein Wissen
+          für typische Situationen im Pflegealltag.
+        </p>
+
+        <div class="pm-product-facts">
+          <span>89 Seiten</span>
+          <span>19 Kapitel</span>
+          <span>Digitales PDF</span>
+        </div>
+
+        <div class="pm-product-purchase">
+          <span class="pm-product-price-label">Einmaliger Kaufpreis</span>
+          <strong class="pm-product-price">19,90 €</strong>
+          <p class="pm-product-tax-note">
+            Endpreis: 19,90 €. Gemäß § 19 UStG wird keine Umsatzsteuer berechnet. Kein Abonnement.
+          </p>
+          <button type="button" id="masterkit-kaufen">
+            Jetzt für 19,90 € kaufen
+          </button>
+          <p class="pm-product-purchase-note">
+            Sichere Bezahlung über Stripe. Nach erfolgreicher Zahlung erhältst du deinen persönlichen PDF-Downloadlink per E-Mail.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pm-product-section">
+      <span class="pm-product-eyebrow">DEIN LERNMATERIAL</span>
+      <h2>Was dich im Masterkit erwartet</h2>
+      <p>
+        Das Masterkit unterstützt dich dabei, die Medikamentenlehre
+        systematisch zu wiederholen und Zusammenhänge besser
+        zu verstehen.
+      </p>
+
+      <div class="pm-product-topic-grid">
+        <article>
+          <span class="pm-product-topic-icon">01</span>
+          <h3>Grundlagen der Pharmakologie</h3>
+          <p>Wichtige Begriffe und Zusammenhänge der Arzneimittellehre verständlich aufbereitet.</p>
+        </article>
+        <article>
+          <span class="pm-product-topic-icon">02</span>
+          <h3>Arzneimittelsicherheit</h3>
+          <p>Grundlagen für einen verantwortungsvollen und sicheren Umgang mit Medikamenten.</p>
+        </article>
+        <article>
+          <span class="pm-product-topic-icon">03</span>
+          <h3>Dosierungsberechnung</h3>
+          <p>Rechenwege und wichtige Grundlagen zur Vorbereitung auf typische Aufgabenstellungen.</p>
+        </article>
+        <article>
+          <span class="pm-product-topic-icon">04</span>
+          <h3>Praxis- und Prüfungsbezug</h3>
+          <p>Praxisnahe Inhalte, die dir beim Lernen und Einordnen pflegerischer Situationen helfen.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="pm-product-included">
+      <div>
+        <span class="pm-product-eyebrow">AUF EINEN BLICK</span>
+        <h2>Das erhältst du</h2>
+        <ul>
+          <li>Ein digitales Lernskript als PDF</li>
+          <li>89 Seiten Lernmaterial</li>
+          <li>19 strukturierte Kapitel</li>
+          <li>14 Tabellen zur Übersicht und Wiederholung</li>
+          <li>Einmaliger Kauf, kein Abonnement</li>
+        </ul>
+      </div>
+      <div class="pm-product-included-note">
+        <strong>Wichtig zu wissen</strong>
+        <p>
+          Das Masterkit ist eine ergänzende Lernhilfe für die
+          Pflegeausbildung. Es ersetzt keine aktuellen
+          Fachstandards, ärztlichen Anordnungen oder
+          betrieblichen Vorgaben.
+        </p>
+      </div>
+    </section>
+
+    <section class="pm-product-bottom">
+      <h2>Bereit, deine Medikamentenlehre zu vertiefen?</h2>
+      <p>
+        Sichere dir jetzt das Medikamentenlehre-Masterkit als digitalen PDF-Download für einmalig 19,90 €.
+      </p>
+      <span>Digitales PDF · Einmaliger Kauf · Kein Abo</span>
+    </section>
+  </div>
+</BaseLayout>
+
+
+<script>
+  const kaufbutton = document.getElementById("masterkit-kaufen");
+
+  kaufbutton?.addEventListener("click", async () => {
+    if (!(kaufbutton instanceof HTMLButtonElement)) return;
+
+    kaufbutton.disabled = true;
+    kaufbutton.textContent = "Weiter zu Stripe ...";
+
+    try {
+      const response = await fetch("/api/checkout-masterkit", {
+        method: "POST",
+      });
+
+      const data = await response.json();
+
+      if (!response.ok || !data.url) {
+        throw new Error(data.error || "Checkout konnte nicht gestartet werden.");
+      }
+
+      window.location.assign(data.url);
+    } catch (error) {
+      alert(
+        error instanceof Error
+          ? error.message
+          : "Der Kauf konnte nicht gestartet werden."
+      );
+
+      kaufbutton.disabled = false;
+      kaufbutton.textContent = "Jetzt für 19,90 € kaufen";
+    }
+  });
+</script>
+
+<style>
+  .pm-product {
+    --pm-orange: #e67e22;
+    --pm-orange-dark: #b9570d;
+    --pm-cream: #fff5e9;
+    --pm-text: #342b24;
+    --pm-muted: #665d55;
+    --pm-border: #ead9c7;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 18px 60px;
+    color: var(--pm-text);
+  }
+
+  .pm-product-breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 26px;
+    font-size: 0.88rem;
+    color: var(--pm-muted);
+  }
+
+  .pm-product-breadcrumb a {
+    color: var(--pm-orange-dark);
+    text-decoration: none;
+  }
+
+  .pm-product-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+    gap: clamp(24px, 4vw, 55px);
+  }
+
+  .pm-product-visual {
+    padding: 18px;
+    border: 1px solid var(--pm-border);
+    border-radius: 22px;
+    background: var(--pm-cream);
+  }
+
+  .pm-product-visual img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+  }
+
+  .pm-product-visual p {
+    margin: 14px 4px 0;
+    font-size: 0.78rem;
+    line-height: 1.5;
+    color: var(--pm-muted);
+    text-align: center;
+  }
+
+  .pm-product-eyebrow {
+    display: inline-block;
+    color: var(--pm-orange-dark);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.09em;
+  }
+
+  .pm-product-details h1 {
+    margin: 14px 0 20px;
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    line-height: 1.15;
+    color: var(--pm-text);
+  }
+
+  .pm-product-lead {
+    color: var(--pm-muted);
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+
+  .pm-product-facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin: 24px 0;
+  }
+
+  .pm-product-facts span {
+    padding: 9px 12px;
+    border: 1px solid var(--pm-border);
+    border-radius: 999px;
+    background: #fffaf5;
+    color: #674b35;
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+
+  .pm-product-purchase {
+    padding: 24px;
+    border: 1px solid var(--pm-border);
+    border-radius: 20px;
+    background: #fffaf4;
+  }
+
+  .pm-product-price-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.85rem;
+    color: var(--pm-muted);
+  }
+
+  .pm-product-price {
+    display: block;
+    color: var(--pm-text);
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .pm-product-tax-note {
+    margin: 8px 0 20px;
+    color: var(--pm-muted);
+    font-size: 0.78rem;
+  }
+
+  .pm-product-purchase button {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    border: 0;
+    border-radius: 12px;
+    background: #d8c6b5;
+    color: #58483a;
+    font: inherit;
+    font-weight: 800;
+    cursor: not-allowed;
+  }
+
+  .pm-product-purchase-note {
+    margin: 14px 0 0;
+    color: var(--pm-muted);
+    font-size: 0.82rem;
+    line-height: 1.6;
+  }
+
+  .pm-product-section {
+    margin-top: 65px;
+  }
+
+  .pm-product-section h2,
+  .pm-product-included h2,
+  .pm-product-bottom h2 {
+    margin: 12px 0 18px;
+    padding: 0;
+    border: 0;
+    color: var(--pm-text);
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    line-height: 1.2;
+  }
+
+  .pm-product-section > p {
+    max-width: 750px;
+    color: var(--pm-muted);
+    line-height: 1.75;
+  }
+
+  .pm-product-topic-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 28px;
+  }
+
+  .pm-product-topic-grid article {
+    padding: 25px;
+    border: 1px solid var(--pm-border);
+    border-radius: 18px;
+    background: #fff;
+  }
+
+  .pm-product-topic-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 11px;
+    background: var(--pm-cream);
+    color: var(--pm-orange-dark);
+    font-weight: 800;
+  }
+
+  .pm-product-topic-grid h3 {
+    margin: 18px 0 10px;
+    color: var(--pm-text);
+    font-size: 1.12rem;
+  }
+
+  .pm-product-topic-grid p {
+    margin: 0;
+    color: var(--pm-muted);
+    line-height: 1.7;
+  }
+
+  .pm-product-included {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 28px;
+    align-items: center;
+    margin-top: 60px;
+    padding: clamp(24px, 4vw, 42px);
+    border: 1px solid var(--pm-border);
+    border-radius: 22px;
+    background: #fff7ed;
+  }
+
+  .pm-product-included ul {
+    margin: 22px 0 0;
+    padding-left: 22px;
+    color: var(--pm-text);
+    line-height: 2;
+  }
+
+  .pm-product-included li::marker {
+    color: var(--pm-orange);
+  }
+
+  .pm-product-included-note {
+    padding: 25px;
+    border: 1px solid var(--pm-border);
+    border-radius: 16px;
+    background: #fff;
+  }
+
+  .pm-product-included-note strong {
+    color: var(--pm-orange-dark);
+  }
+
+  .pm-product-included-note p {
+    margin: 12px 0 0;
+    color: var(--pm-muted);
+    line-height: 1.7;
+  }
+
+  .pm-product-bottom {
+    margin-top: 60px;
+    padding: 40px 25px;
+    border: 1px solid var(--pm-border);
+    border-radius: 22px;
+    background: linear-gradient(120deg, #fffaf4, #f8e6d1);
+    text-align: center;
+  }
+
+  .pm-product-bottom p {
+    color: var(--pm-muted);
+    line-height: 1.7;
+  }
+
+  .pm-product-bottom span {
+    display: inline-block;
+    margin-top: 12px;
+    color: var(--pm-orange-dark);
+    font-size: 0.85rem;
+    font-weight: 800;
+  }
+
+  @media (max-width: 760px) {
+    .pm-product {
+      padding: 0 12px 40px;
+    }
+
+    .pm-product-hero,
+    .pm-product-included {
+      grid-template-columns: 1fr;
+    }
+
+    .pm-product-topic-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .pm-product-section,
+    .pm-product-included,
+    .pm-product-bottom {
+      margin-top: 42px;
+    }
+
+    .pm-product-purchase {
+      padding: 20px;
+    }
+  }
+</style>

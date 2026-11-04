@@ -1,0 +1,95 @@
+---
+export const prerender = false;
+
+import Stripe from "stripe";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+const sessionId = Astro.url.searchParams.get("session_id");
+
+let paymentVerified = false;
+let errorMessage = "";
+
+if (!sessionId) {
+  errorMessage = "Es wurde keine Zahlungsbestätigung übermittelt.";
+} else {
+  try {
+    const stripe = new Stripe(import.meta.env.STRIPE_SECRET_KEY);
+
+    const session = await stripe.checkout.sessions.retrieve(sessionId, {
+      expand: ["line_items"],
+    });
+
+    const priceId = session.line_items?.data[0]?.price?.id;
+
+    paymentVerified =
+      session.livemode === true &&
+      session.mode === "payment" &&
+      session.status === "complete" &&
+      session.payment_status === "paid" &&
+      priceId === import.meta.env.STRIPE_PRICE_ID_MASTERKIT &&
+      session.line_items?.data.length === 1 &&
+      session.line_items?.data[0]?.quantity === 1;
+
+    if (!paymentVerified) {
+      errorMessage =
+        "Die Zahlung konnte noch nicht eindeutig bestätigt werden.";
+    }
+  } catch (error) {
+    console.error("Masterkit-Zahlungsprüfung fehlgeschlagen:", error);
+
+    errorMessage =
+      "Die Zahlungsbestätigung ist momentan nicht verfügbar.";
+  }
+}
+---
+
+<BaseLayout
+  title="Masterkit Bestellung | PraxisMaik"
+  description="Bestätigung deiner Medikamentenlehre-Masterkit-Bestellung."
+>
+  <main style="max-width:760px;margin:60px auto;padding:30px 22px;text-align:center;">
+    {
+      paymentVerified ? (
+        <>
+          <h1>Vielen Dank für deinen Kauf!</h1>
+
+          <p>
+            Deine Zahlung für das Medikamentenlehre-Masterkit
+            wurde erfolgreich bestätigt.
+          </p>
+
+          <p>
+            Du erhältst deinen persönlichen Downloadlink
+            per E-Mail, sobald die Zustellung abgeschlossen ist.
+            Bitte prüfe auch deinen Spam-Ordner.
+          </p>
+
+          <p>
+            Der Downloadlink ist sieben Tage gültig.
+          </p>
+        </>
+      ) : (
+        <>
+          <h1>Zahlungsbestätigung wird geprüft</h1>
+
+          <p>{errorMessage}</p>
+
+          <p>
+            Falls du bereits bezahlt hast, führe bitte
+            keinen weiteren Kauf durch.
+          </p>
+        </>
+      )
+    }
+
+    <p style="margin-top:30px;">
+      Bei Fragen: <a href="mailto:kontakt@praxismaik.de">
+        kontakt@praxismaik.de
+      </a>
+    </p>
+
+    <p>
+      <a href="/shop/">Zurück zum Shop</a>
+    </p>
+  </main>
+</BaseLayout>
