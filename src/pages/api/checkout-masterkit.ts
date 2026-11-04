@@ -4,9 +4,31 @@ import Stripe from "stripe";
 
 export async function POST() {
   try {
-    const secretKey = import.meta.env.STRIPE_SECRET_KEY;
-    const priceId = import.meta.env.STRIPE_PRICE_ID_MASTERKIT;
-    const siteUrl = import.meta.env.SITE_URL;
+    const vercelEnv = process.env.VERCEL_ENV;
+
+    if (vercelEnv !== "production" && vercelEnv !== "preview") {
+      console.error("Masterkit-Checkout: Unbekannte Vercel-Umgebung.");
+      return new Response(
+        JSON.stringify({ error: "Der Kauf ist derzeit nicht verfügbar." }),
+        { status: 503, headers: { "Content-Type": "application/json" } }
+      );
+    }
+
+    const isProduction = vercelEnv === "production";
+
+    const secretKey = isProduction
+      ? import.meta.env.STRIPE_SECRET_KEY
+      : import.meta.env.STRIPE_SECRET_KEY_TEST;
+
+    const priceId = isProduction
+      ? import.meta.env.STRIPE_PRICE_ID_MASTERKIT
+      : import.meta.env.STRIPE_PRICE_ID_MASTERKIT_TEST;
+
+    const siteUrl = isProduction
+      ? import.meta.env.SITE_URL
+      : process.env.VERCEL_URL
+        ? `https://${process.env.VERCEL_URL}`
+        : undefined;
 
     if (!secretKey || !priceId || !siteUrl) {
       console.error("Masterkit-Checkout: Konfiguration unvollständig.");

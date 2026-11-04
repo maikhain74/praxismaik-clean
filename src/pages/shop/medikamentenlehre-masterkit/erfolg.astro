@@ -13,7 +13,23 @@ if (!sessionId) {
   errorMessage = "Es wurde keine Zahlungsbestätigung übermittelt.";
 } else {
   try {
-    const stripe = new Stripe(import.meta.env.STRIPE_SECRET_KEY);
+    const vercelEnv = process.env.VERCEL_ENV;
+
+    if (vercelEnv !== "production" && vercelEnv !== "preview") {
+      throw new Error("Unbekannte Vercel-Umgebung.");
+    }
+
+    const isProduction = vercelEnv === "production";
+
+    const secretKey = isProduction
+      ? import.meta.env.STRIPE_SECRET_KEY
+      : import.meta.env.STRIPE_SECRET_KEY_TEST;
+
+    if (!secretKey) {
+      throw new Error("Stripe-Schlüssel fehlt.");
+    }
+
+    const stripe = new Stripe(secretKey);
 
     const session = await stripe.checkout.sessions.retrieve(sessionId, {
       expand: ["line_items"],
@@ -22,11 +38,13 @@ if (!sessionId) {
     const priceId = session.line_items?.data[0]?.price?.id;
 
     paymentVerified =
-      session.livemode === true &&
+      session.livemode === isProduction &&
       session.mode === "payment" &&
       session.status === "complete" &&
       session.payment_status === "paid" &&
-      priceId === import.meta.env.STRIPE_PRICE_ID_MASTERKIT &&
+      priceId === (isProduction
+        ? import.meta.env.STRIPE_PRICE_ID_MASTERKIT
+        : import.meta.env.STRIPE_PRICE_ID_MASTERKIT_TEST) &&
       session.line_items?.data.length === 1 &&
       session.line_items?.data[0]?.quantity === 1;
 
