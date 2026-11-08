@@ -232,7 +232,7 @@ const seoDescription =
   />
 </article>
 
-{thema.slug === "medikamente/medikamentengabe-vorbereiten" && (
+{thema.slug === "medikamente" || thema.slug.startsWith("medikamente/") && (
   <aside
     aria-label="Passende Lernvertiefung"
     style="margin: 1.5rem 0; padding: 1.5rem; background: #fff8ef; border: 1px solid #f0d5b4; border-radius: 14px;"
@@ -259,7 +259,7 @@ const seoDescription =
 
     <a
       href="/shop/medikamentenlehre-masterkit/"
-      data-ga-event="masterkit_medikamentengabe_cta_click"
+      data-ga-event="masterkit_medikamentenlehre_cta_click"
       style="display: inline-block; padding: 0.85rem 1.25rem; background: #e67e22; color: #fff; border-radius: 9px; font-weight: 700; text-decoration: none;"
     >
       Masterkit und Leseprobe ansehen
