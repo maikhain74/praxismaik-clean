@@ -1,5 +1,52 @@
 ---
+export const prerender = false;
+
+import Stripe from "stripe";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+const sessionId = Astro.url.searchParams.get("session_id");
+
+let paymentVerified = false;
+let errorMessage = "";
+let purchaseValue = 0;
+let purchaseCurrency = "EUR";
+
+if (!sessionId) {
+  errorMessage = "Es wurde keine Zahlungsbestätigung übermittelt.";
+} else {
+  try {
+    const stripe = new Stripe(import.meta.env.STRIPE_SECRET_KEY);
+
+    const session = await stripe.checkout.sessions.retrieve(sessionId, {
+      expand: ["line_items"],
+    });
+
+    const priceId = session.line_items?.data[0]?.price?.id;
+
+    paymentVerified =
+      session.livemode === true &&
+      session.mode === "payment" &&
+      session.status === "complete" &&
+      session.payment_status === "paid" &&
+      priceId === import.meta.env.STRIPE_PRICE_ID_FACHGESPRAECH &&
+      session.line_items?.data.length === 1 &&
+      session.line_items?.data[0]?.quantity === 1 &&
+      session.amount_total !== null &&
+      session.currency !== null;
+
+    if (paymentVerified) {
+      purchaseValue = session.amount_total! / 100;
+      purchaseCurrency = session.currency!.toUpperCase();
+    } else {
+      errorMessage =
+        "Die Zahlung konnte noch nicht eindeutig bestätigt werden.";
+    }
+  } catch (error) {
+    console.error("Fachgespräch-Zahlungsprüfung fehlgeschlagen:", error);
+    errorMessage =
+      "Die Zahlungsbestätigung ist momentan nicht verfügbar.";
+  }
+}
 ---
 
 <BaseLayout
@@ -14,13 +61,28 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
         PRAXISMAIK SHOP
       </span>
 
-      <h1>Vielen Dank für deine Bestellung!</h1>
+      {
+        paymentVerified ? (
+          <h1>Vielen Dank für deinen Kauf!</h1>
+        ) : (
+          <h1>Zahlungsbestätigung wird geprüft</h1>
+        )
+      }
 
-      <p class="pm-success-lead">
-        Deine Bestellung des
-        <strong>Fachgespräch-Masterkits Generalistik</strong>
-        wird verarbeitet.
-      </p>
+      {
+        paymentVerified ? (
+          <p class="pm-success-lead">
+            Deine Zahlung für das
+            <strong>&nbsp;Fachgespräch-Masterkit Generalistik</strong>
+            wurde erfolgreich bestätigt.
+          </p>
+        ) : (
+          <p class="pm-success-lead">
+            {errorMessage}
+            Falls du bereits bezahlt hast, führe bitte keinen weiteren Kauf durch.
+          </p>
+        )
+      }
 
       <div class="pm-success-info">
         <h2>So erhältst du dein Masterkit</h2>
@@ -55,6 +117,44 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
       </a>
     </div>
   </main>
+
+  {paymentVerified && (
+    <script
+      is:inline
+      define:vars={{ sessionId, purchaseValue, purchaseCurrency }}
+    >
+      if (
+        sessionId &&
+        sessionId.startsWith("cs_live_") &&
+        typeof window.trackPraxisMaikEvent === "function"
+      ) {
+        const trackingKey = "praxismaik_ga4_purchase_" + sessionId;
+
+        try {
+          if (!localStorage.getItem(trackingKey)) {
+            window.trackPraxisMaikEvent("purchase", {
+              transaction_id: sessionId,
+              value: purchaseValue,
+              currency: purchaseCurrency,
+              items: [
+                {
+                  item_id: "fachgespraech-masterkit",
+                  item_name: "Fachgespräch-Masterkit Generalistik",
+                  price: purchaseValue,
+                  quantity: 1
+                }
+              ]
+            });
+
+            localStorage.setItem(trackingKey, "1");
+          }
+        } catch (error) {
+          console.error("GA4-Kauftracking fehlgeschlagen:", error);
+        }
+      }
+    </script>
+  )}
+
 </BaseLayout>
 
 <style>

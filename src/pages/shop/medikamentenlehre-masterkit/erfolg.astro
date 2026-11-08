@@ -9,6 +9,9 @@ const sessionId = Astro.url.searchParams.get("session_id");
 let paymentVerified = false;
 let errorMessage = "";
 
+let purchaseValue = 0;
+let purchaseCurrency = "EUR";
+
 if (!sessionId) {
   errorMessage = "Es wurde keine Zahlungsbestätigung übermittelt.";
 } else {
@@ -29,6 +32,10 @@ if (!sessionId) {
       priceId === import.meta.env.STRIPE_PRICE_ID_MASTERKIT &&
       session.line_items?.data.length === 1 &&
       session.line_items?.data[0]?.quantity === 1;
+    if (paymentVerified) {
+      purchaseValue = (session.amount_total ?? 0) / 100;
+      purchaseCurrency = (session.currency ?? "eur").toUpperCase();
+    }
 
     if (!paymentVerified) {
       errorMessage =
@@ -92,4 +99,42 @@ if (!sessionId) {
       <a href="/shop/">Zurück zum Shop</a>
     </p>
   </main>
+
+  {paymentVerified && (
+    <script
+      is:inline
+      define:vars={{ sessionId, purchaseValue, purchaseCurrency }}
+    >
+      if (
+        sessionId &&
+        sessionId.startsWith("cs_live_") &&
+        typeof window.trackPraxisMaikEvent === "function"
+      ) {
+        const trackingKey = "praxismaik_ga4_purchase_" + sessionId;
+
+        try {
+          if (!localStorage.getItem(trackingKey)) {
+            window.trackPraxisMaikEvent("purchase", {
+              transaction_id: sessionId,
+              value: purchaseValue,
+              currency: purchaseCurrency,
+              items: [
+                {
+                  item_id: "medikamentenlehre-masterkit",
+                  item_name: "Medikamentenlehre-Masterkit",
+                  price: purchaseValue,
+                  quantity: 1
+                }
+              ]
+            });
+
+            localStorage.setItem(trackingKey, "1");
+          }
+        } catch (error) {
+          console.error("GA4-Kauftracking fehlgeschlagen:", error);
+        }
+      }
+    </script>
+  )}
+
 </BaseLayout>
