@@ -232,7 +232,15 @@ const seoDescription =
   />
 </article>
 
-{thema.slug === "medikamente" || thema.slug.startsWith("medikamente/") && (
+{(
+  thema.slug === "medikamente" ||
+  thema.slug.startsWith("medikamente/") ||
+  [
+    "krankheitslehre/diabetes-mellitus",
+    "krankheitslehre/diabetes-praxisbesuch",
+    "krankheitslehre/diabetes-fallbeispiel-mit-loesung"
+  ].includes(thema.slug)
+) && (
   <aside
     aria-label="Passende Lernvertiefung"
     style="margin: 1.5rem 0; padding: 1.5rem; background: #fff8ef; border: 1px solid #f0d5b4; border-radius: 14px;"
