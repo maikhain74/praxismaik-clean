@@ -269,81 +269,107 @@ Alle Inhalte bauen logisch aufeinander auf, damit du Pflege verstehst, statt sie
 
 <section
   id="masterkit-home"
-  class="section starterguide-highlight"
+  class="section"
   aria-labelledby="masterkit-home-title"
 >
-  <div class="starterguide-image">
-    <img
-      src="/images/medikamentenlehre-masterkit-shop.png"
-      alt="PraxisMaik Medikamentenlehre-Masterkit"
-      loading="lazy"
-    />
-    <img
-      src="/images/fachgespraech-masterkit-shop.png"
-      alt="PraxisMaik Fachgespräch-Masterkit Generalistik"
-      loading="lazy"
-      style="margin-top: 1.5rem;"
-    />
-  </div>
-
-  <div class="starterguide-content">
-    <span class="starterguide-badge">
-      📘 PraxisMaik Lernshop
-    </span>
-
+  <div class="section-headline">
+    <span class="starterguide-badge">📘 PraxisMaik Lernshop</span>
     <h2 id="masterkit-home-title">
-      Gezielt auf deine Pflegeprüfung vorbereiten
+      Unsere Masterkits für deine Pflegeausbildung
     </h2>
-
-    <p class="starterguide-text">
-      Zwei praxisnahe Masterkits für unterschiedliche Lernziele.
-      Verständlich aufbereitet, prüfungsorientiert und sofort
-      als PDF verfügbar.
+    <p class="section-intro">
+      Praxisnah lernen, Wissen festigen und gezielt auf Prüfungen vorbereiten.
+      Entdecke unsere digitalen Lernmaterialien.
     </p>
-
-    <h3>Medikamentenlehre-Masterkit</h3>
-
-    <ul class="starterguide-list">
-      <li>✓ 87 Seiten Lernmaterial</li>
-      <li>✓ 19 übersichtlich aufgebaute Kapitel</li>
-      <li>✓ Arzneimittel verstehen und sicher anwenden</li>
-      <li>✓ Digitaler PDF-Download</li>
-    </ul>
-
-    <p class="starterguide-text">
-      <strong>Einmalig 19,90 €</strong>
-    </p>
-
-    <a
-      href="/shop/medikamentenlehre-masterkit/"
-      class="btn"
-      data-ga-event="masterkit_click_home"
-    >
-      Medikamentenlehre-Masterkit entdecken
-    </a>
-
-    <h3 style="margin-top: 2rem;">Fachgespräch-Masterkit Generalistik</h3>
-
-    <ul class="starterguide-list">
-      <li>✓ 27 prüfungsnahe Fragen</li>
-      <li>✓ 36 Seiten Lernmaterial</li>
-      <li>✓ Fachliche Antworten und Begründungen trainieren</li>
-      <li>✓ Digitaler PDF-Download</li>
-    </ul>
-
-    <p class="starterguide-text">
-      <strong>Einmalig 9,90 €</strong>
-    </p>
-
-    <a
-      href="/shop/fachgespraech-masterkit/"
-      class="btn"
-      data-ga-event="fachgespraech_masterkit_click_home"
-    >
-      Fachgespräch-Masterkit entdecken
-    </a>
   </div>
+
+  <div class="pm-carousel-controls">
+    <button
+      type="button"
+      class="pm-carousel-arrow"
+      aria-label="Vorherige Produkte"
+      data-carousel-direction="-1"
+    >&#8592;</button>
+    <button
+      type="button"
+      class="pm-carousel-arrow"
+      aria-label="Weitere Produkte"
+      data-carousel-direction="1"
+    >&#8594;</button>
+  </div>
+
+  <div id="masterkit-carousel" class="pm-product-carousel">
+
+    <article class="pm-product-card">
+      <a href="/shop/medikamentenlehre-masterkit/">
+        <img
+          src="/images/medikamentenlehre-masterkit-shop.png"
+          alt="Medikamentenlehre-Masterkit"
+          loading="lazy"
+        />
+      </a>
+      <div class="pm-product-info">
+        <h3>Medikamentenlehre-Masterkit</h3>
+        <p>87 Seiten · 19 Kapitel · PDF</p>
+        <strong>19,90 €</strong>
+        <a
+          href="/shop/medikamentenlehre-masterkit/"
+          class="pm-product-link"
+          data-ga-event="masterkit_click_home"
+        >Masterkit entdecken</a>
+      </div>
+    </article>
+
+    <article class="pm-product-card">
+      <a href="/shop/fachgespraech-masterkit/">
+        <img
+          src="/images/fachgespraech-masterkit-shop.png"
+          alt="Fachgespräch-Masterkit Generalistik"
+          loading="lazy"
+        />
+      </a>
+      <div class="pm-product-info">
+        <h3>Fachgespräch-Masterkit</h3>
+        <p>36 Seiten · 27 Prüfungsfragen · PDF</p>
+        <strong>9,90 €</strong>
+        <a
+          href="/shop/fachgespraech-masterkit/"
+          class="pm-product-link"
+          data-ga-event="fachgespraech_masterkit_click_home"
+        >Masterkit entdecken</a>
+      </div>
+    </article>
+
+  </div>
+
+  <p class="pm-shop-all">
+    <a href="/shop/">Alle Produkte im Shop ansehen →</a>
+  </p>
 </section>
+
+<script>
+  document.querySelectorAll("[data-carousel-direction]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const carousel = document.getElementById("masterkit-carousel");
+      if (!carousel) return;
+
+      const direction = Number(
+        button.getAttribute("data-carousel-direction")
+      );
+
+      const card = carousel.querySelector(".pm-product-card");
+      if (!card) return;
+
+      const gap = parseFloat(getComputedStyle(carousel).columnGap) || 0;
+      const distance = card.getBoundingClientRect().width + gap;
+
+      carousel.scrollBy({
+        left: direction * distance,
+        behavior: "smooth"
+      });
+    });
+  });
+</script>
 
 <form class="home-search" action="/suche" method="get">
   <label for="home-search-input">Thema suchen</label>
@@ -2169,4 +2195,122 @@ grid-template-columns:1fr;
     border-radius: 20px;
   }
 }
+
+/* PraxisMaik Produktkarussell */
+.pm-carousel-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.pm-carousel-arrow {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid #ead8c7;
+  background: #fff4e8;
+  color: #18324a;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.pm-carousel-arrow:hover {
+  background: #f8dfc7;
+}
+
+.pm-product-carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 2.4rem) / 3);
+  gap: 1.2rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 0.5rem 0 1.5rem;
+  scrollbar-width: thin;
+}
+
+.pm-product-card {
+  min-width: 0;
+  scroll-snap-align: start;
+  background: #ffffff;
+  border: 1px solid #ead8c7;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(24, 50, 74, 0.06);
+}
+
+.pm-product-card img {
+  display: block;
+  width: 100%;
+  height: 230px;
+  object-fit: contain;
+  background: #fffaf5;
+}
+
+.pm-product-info {
+  padding: 1.1rem;
+}
+
+.pm-product-info h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  color: #18324a;
+}
+
+.pm-product-info p {
+  margin: 0 0 0.8rem;
+  font-size: 0.88rem;
+  color: #556270;
+}
+
+.pm-product-info strong {
+  display: block;
+  margin-bottom: 0.9rem;
+  color: #18324a;
+  font-size: 1.2rem;
+}
+
+.pm-product-link {
+  display: inline-block;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  background: #e67e22;
+  color: #ffffff !important;
+  font-weight: 700;
+  text-decoration: none !important;
+  font-size: 0.88rem;
+}
+
+.pm-product-link:hover {
+  background: #c96b16;
+}
+
+.pm-shop-all {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.pm-shop-all a {
+  color: #9a3412;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .pm-product-carousel {
+    grid-auto-columns: calc((100% - 1.2rem) / 2);
+  }
+}
+
+@media (max-width: 600px) {
+  .pm-product-carousel {
+    grid-auto-columns: 82%;
+  }
+
+  .pm-product-card img {
+    height: 200px;
+  }
+}
+
 </style>
