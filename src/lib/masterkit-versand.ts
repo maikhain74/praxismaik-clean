@@ -1,5 +1,9 @@
 import { createClient } from "@supabase/supabase-js";
 import {
+  MASTERKIT_BUCKET,
+  getMasterkitProdukt,
+} from "./masterkit-produkte";
+import {
   createCipheriv,
   createDecipheriv,
   createHash,
@@ -11,8 +15,7 @@ const supabase = createClient(
   import.meta.env.SUPABASE_SERVICE_ROLE_KEY
 );
 
-const BUCKET = "praxismaik-produkte";
-const DATEI = "PraxisMaik_Medikamentenlehre_Masterkit.pdf";
+
 
 function encryptionKey(): Buffer {
   const value = import.meta.env.MASTERKIT_ENCRYPTION_KEY;
@@ -91,11 +94,15 @@ export async function sendMasterkitDownload(
     throw new Error("Masterkit-Bestellung nicht gefunden.");
   }
 
+  const produkt = getMasterkitProdukt(order.product_key);
+
   if (
     order.payment_status !== "paid" ||
-    order.product_key !== "medikamentenlehre-masterkit"
+    !produkt
   ) {
-    throw new Error("Masterkit-Bestellung ist nicht bezahlt.");
+    throw new Error(
+      "Masterkit-Bestellung ist nicht bezahlt oder Produkt unbekannt."
+    );
   }
 
   if (order.email_sent_at || order.delivery_status === "sent") {
@@ -126,8 +133,8 @@ export async function sendMasterkitDownload(
   try {
     const { data: fileInfo, error: fileError } =
       await supabase.storage
-        .from(BUCKET)
-        .info(DATEI);
+        .from(MASTERKIT_BUCKET)
+        .info(produkt.datei);
 
     if (fileError || !fileInfo) {
       throw new Error(
@@ -210,7 +217,7 @@ export async function sendMasterkitDownload(
     const emailText = [
       "Vielen Dank für deinen Einkauf bei PraxisMaik!",
       "",
-      "Dein Medikamentenlehre-Masterkit steht bereit.",
+      "Dein " + produkt.name + " steht bereit.",
       "",
       "Hier kannst du deine PDF herunterladen:",
       downloadUrl.toString(),
@@ -238,7 +245,7 @@ export async function sendMasterkitDownload(
           from: "PraxisMaik <kontakt@praxismaik.de>",
           to: [order.customer_email],
           subject:
-            "Dein Medikamentenlehre-Masterkit von PraxisMaik",
+            produkt.emailBetreff,
           text: emailText,
         }),
       }

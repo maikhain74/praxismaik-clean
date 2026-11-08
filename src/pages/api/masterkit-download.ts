@@ -1,11 +1,15 @@
 import type { APIRoute } from "astro";
 import { createClient } from "@supabase/supabase-js";
 import { createHash } from "node:crypto";
+import {
+  MASTERKIT_BUCKET,
+  getMasterkitProdukt,
+} from "../../lib/masterkit-produkte";
 
 export const prerender = false;
 
-const BUCKET = "praxismaik-produkte";
-const DATEI = "PraxisMaik_Medikamentenlehre_Masterkit.pdf";
+
+
 
 export const GET: APIRoute = async ({ url }) => {
   const token = url.searchParams.get("token");
@@ -44,7 +48,7 @@ export const GET: APIRoute = async ({ url }) => {
   if (
     !order ||
     order.payment_status !== "paid" ||
-    order.product_key !== "medikamentenlehre-masterkit" ||
+    !getMasterkitProdukt(order.product_key) ||
     !order.download_expires_at ||
     new Date(order.download_expires_at).getTime() <= Date.now()
   ) {
@@ -54,9 +58,17 @@ export const GET: APIRoute = async ({ url }) => {
     );
   }
 
+  const produkt = getMasterkitProdukt(order.product_key);
+
+  if (!produkt) {
+    return new Response("Unbekanntes Produkt.", {
+      status: 403,
+    });
+  }
+
   const { data: pdf, error: storageError } = await supabase.storage
-    .from(BUCKET)
-    .download(DATEI);
+    .from(MASTERKIT_BUCKET)
+    .download(produkt.datei);
 
   if (storageError || !pdf) {
     console.error(
@@ -75,7 +87,7 @@ export const GET: APIRoute = async ({ url }) => {
     headers: {
       "Content-Type": "application/pdf",
       "Content-Disposition":
-        'attachment; filename="PraxisMaik_Medikamentenlehre_Masterkit.pdf"',
+        `attachment; filename="${produkt.datei}"`,
       "Cache-Control": "private, no-store",
       "X-Content-Type-Options": "nosniff",
     },

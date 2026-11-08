@@ -3,6 +3,11 @@ export const prerender = false;
 import Stripe from "stripe";
 import { createClient } from "@supabase/supabase-js";
 import { sendMasterkitDownload } from "../../lib/masterkit-versand";
+import {
+  MASTERKIT_PRODUKTE,
+  getMasterkitPreisId,
+  type MasterkitProduktKey,
+} from "../../lib/masterkit-produkte";
 
 const stripe = new Stripe(import.meta.env.STRIPE_SECRET_KEY, {
   apiVersion: "2024-06-20",
@@ -16,15 +21,28 @@ const supabase = createClient(
 async function processMasterkitPurchase(
   session: Stripe.Checkout.Session
 ): Promise<Response | null> {
-  const masterkitPriceId =
-    import.meta.env.STRIPE_PRICE_ID_MASTERKIT;
+  const preisZuordnung = new Map<string, MasterkitProduktKey>();
 
-  if (!masterkitPriceId) {
-    console.error("STRIPE_PRICE_ID_MASTERKIT fehlt.");
+  for (const productKey of Object.keys(
+    MASTERKIT_PRODUKTE
+  ) as MasterkitProduktKey[]) {
+    const priceId = getMasterkitPreisId(productKey);
 
-    return new Response("Masterkit-Konfiguration fehlt.", {
-      status: 500,
-    });
+    if (!priceId) {
+      console.error("Masterkit-Preis-ID fehlt:", productKey);
+      return new Response("Masterkit-Konfiguration fehlt.", {
+        status: 500,
+      });
+    }
+
+    if (preisZuordnung.has(priceId)) {
+      console.error("Doppelte Masterkit-Preis-ID:", productKey);
+      return new Response("Masterkit-Konfiguration ungültig.", {
+        status: 500,
+      });
+    }
+
+    preisZuordnung.set(priceId, productKey);
   }
 
   const lineItems = await stripe.checkout.sessions.listLineItems(
@@ -32,13 +50,33 @@ async function processMasterkitPurchase(
     { limit: 100 }
   );
 
-  const isMasterkitPurchase = lineItems.data.some(
-    (item) => item.price?.id === masterkitPriceId
-  );
+  const gefundeneProdukte = lineItems.data
+    .map((item) => {
+      const priceId = item.price?.id;
+      return priceId ? preisZuordnung.get(priceId) : undefined;
+    })
+    .filter(
+      (key): key is MasterkitProduktKey => Boolean(key)
+    );
 
-  if (!isMasterkitPurchase) {
+  if (gefundeneProdukte.length === 0) {
     return null;
   }
+
+  if (
+    gefundeneProdukte.length !== 1 ||
+    lineItems.has_more ||
+    lineItems.data.length !== 1 ||
+    lineItems.data[0].quantity !== 1
+  ) {
+    console.error("Unerwartete Masterkit-Bestellung:", session.id);
+    return new Response("Unerwartete Bestellpositionen.", {
+      status: 500,
+    });
+  }
+
+  const productKey = gefundeneProdukte[0];
+  const masterkitPriceId = getMasterkitPreisId(productKey)!;
 
   if (
     session.mode !== "payment" ||
@@ -96,7 +134,7 @@ async function processMasterkitPurchase(
             : session.payment_intent?.id ?? null,
         stripe_price_id: masterkitPriceId,
         customer_email: customerEmail,
-        product_key: "medikamentenlehre-masterkit",
+        product_key: productKey,
         amount_total: session.amount_total,
         currency: session.currency,
         payment_status: "paid",

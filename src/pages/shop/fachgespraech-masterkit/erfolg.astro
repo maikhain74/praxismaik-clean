@@ -1,0 +1,164 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Bestellung abgeschlossen | PraxisMaik"
+  description="Informationen zu deiner Bestellung des PraxisMaik Fachgespräch-Masterkits."
+>
+  <main class="pm-success">
+    <div class="pm-success-card">
+      <div class="pm-success-icon" aria-hidden="true">✓</div>
+
+      <span class="pm-success-eyebrow">
+        PRAXISMAIK SHOP
+      </span>
+
+      <h1>Vielen Dank für deine Bestellung!</h1>
+
+      <p class="pm-success-lead">
+        Deine Bestellung des
+        <strong>Fachgespräch-Masterkits Generalistik</strong>
+        wird verarbeitet.
+      </p>
+
+      <div class="pm-success-info">
+        <h2>So erhältst du dein Masterkit</h2>
+
+        <p>
+          Sobald deine Zahlung bestätigt wurde, senden wir
+          deinen persönlichen Downloadlink an die
+          E-Mail-Adresse aus deiner Bestellung.
+        </p>
+
+        <p>
+          Über diesen Link kannst du dein Masterkit
+          als PDF herunterladen.
+        </p>
+
+        <p>
+          Der Downloadlink ist 7 Tage gültig.
+        </p>
+      </div>
+
+      <p class="pm-success-help">
+        Du hast nach bestätigter Zahlung keine E-Mail erhalten?
+        Prüfe bitte auch deinen Spamordner.
+        Bei Problemen erreichst du uns unter
+        <a href="mailto:kontakt@praxismaik.de">
+          kontakt@praxismaik.de
+        </a>.
+      </p>
+
+      <a class="pm-success-link" href="/shop/">
+        Zurück zum PraxisMaik Shop
+      </a>
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .pm-success {
+    --pm-orange: #e67e22;
+    --pm-orange-dark: #b9570d;
+    --pm-text: #342b24;
+    --pm-muted: #665d55;
+    --pm-border: #ead9c7;
+
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 65px 18px 90px;
+  }
+
+  .pm-success-card {
+    padding: clamp(26px, 5vw, 52px);
+    border: 1px solid var(--pm-border);
+    border-radius: 22px;
+    background: #fffaf4;
+    text-align: center;
+  }
+
+  .pm-success-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    background: #fff0dd;
+    color: var(--pm-orange-dark);
+    font-size: 2.4rem;
+    font-weight: 800;
+  }
+
+  .pm-success-eyebrow {
+    color: var(--pm-orange-dark);
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+  }
+
+  .pm-success h1 {
+    margin: 18px 0;
+    color: var(--pm-text);
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    line-height: 1.2;
+  }
+
+  .pm-success-lead {
+    color: var(--pm-muted);
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+
+  .pm-success-lead strong {
+    color: var(--pm-text);
+  }
+
+  .pm-success-info {
+    margin-top: 32px;
+    padding: 25px;
+    border: 1px solid var(--pm-border);
+    border-radius: 16px;
+    background: #fff;
+    text-align: left;
+  }
+
+  .pm-success-info h2 {
+    margin: 0 0 18px;
+    color: var(--pm-text);
+    font-size: 1.3rem;
+  }
+
+  .pm-success-info p {
+    color: var(--pm-muted);
+    line-height: 1.75;
+  }
+
+  .pm-success-help {
+    margin: 28px 0;
+    color: var(--pm-muted);
+    font-size: 0.9rem;
+    line-height: 1.8;
+  }
+
+  .pm-success-help a {
+    color: var(--pm-orange-dark);
+    font-weight: 700;
+  }
+
+  .pm-success-link {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 12px;
+    background: var(--pm-orange);
+    color: #fff;
+    font-weight: 800;
+    text-decoration: none;
+  }
+
+  .pm-success-link:hover {
+    background: var(--pm-orange-dark);
+  }
+</style>
