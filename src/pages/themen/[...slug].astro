@@ -232,6 +232,51 @@ const seoDescription =
   />
 </article>
 
+{[
+  "kompetenzbereich-1-pflegepruefung",
+  "kompetenzbereich-1-pruefungsfragen",
+  "kompetenzbereich-2-pflegepruefung",
+  "kompetenzbereich-2-pruefungsfragen",
+  "kompetenzbereich-3-pflegepruefung",
+  "kompetenzbereich-3-pruefungsfragen",
+  "kompetenzbereich-4-pflegepruefung",
+  "kompetenzbereich-4-pruefungsfragen",
+  "kompetenzbereich-5-pflegepruefung",
+  "kompetenzbereich-5-pruefungsfragen"
+].some((name) => thema.slug === `pflegeausbildung/${name}`) && (
+  <aside
+    aria-label="Passende Prüfungsvorbereitung"
+    style="margin: 1.5rem 0; padding: 1.5rem; background: #fff8ef; border: 1px solid #f0d5b4; border-radius: 14px;"
+  >
+    <p style="margin: 0 0 0.5rem; color: #9a5417; font-size: 0.85rem; font-weight: 700;">
+      PASSENDE PRÜFUNGSVORBEREITUNG
+    </p>
+
+    <h2 style="margin: 0 0 0.75rem; color: #333;">
+      Bereit für dein Fachgespräch?
+    </h2>
+
+    <p style="margin: 0 0 1rem; line-height: 1.6;">
+      Trainiere mit 27 praxisnahen Prüfungsfragen und strukturierten
+      Musterantworten, wie du pflegerische Entscheidungen erklärst
+      und fachlich begründest.
+    </p>
+
+    <p style="margin: 0 0 1rem;">
+      <strong>9,90 € einmalig</strong>
+      <span> · PDF-Download · Kostenlose Leseprobe</span>
+    </p>
+
+    <a
+      href="/shop/fachgespraech-masterkit/"
+      data-ga-event="fachgespraech_masterkit_cta_click"
+      style="display: inline-block; padding: 0.85rem 1.25rem; background: #e67e22; color: #fff; border-radius: 9px; font-weight: 700; text-decoration: none;"
+    >
+      Fachgespräch-Masterkit ansehen
+    </a>
+  </aside>
+)}
+
 {(
   thema.slug === "medikamente" ||
   thema.slug.startsWith("medikamente/") ||
