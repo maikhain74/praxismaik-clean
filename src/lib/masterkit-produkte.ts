@@ -10,7 +10,7 @@ export const MASTERKIT_PRODUKTE = {
 
   "fachgespraech-masterkit": {
     name: "Fachgespräch-Masterkit Generalistik",
-    datei: "Fachgespraech_Masterkit_Generalistik_PraxisMaik.pdf",
+    datei: "PraxisMaik_Fachgespraech_Masterkit_FINAL.pdf",
     emailBetreff: "Dein Fachgespräch-Masterkit von PraxisMaik",
     preisVariable: "STRIPE_PRICE_ID_FACHGESPRAECH",
   },
